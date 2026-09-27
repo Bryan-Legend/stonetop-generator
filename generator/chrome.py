@@ -5,7 +5,6 @@ hand-authored page overrides (``pages/``), the home page, sitemap and robots.
 
 from __future__ import annotations
 
-import datetime
 import html
 import json
 import re
@@ -460,8 +459,17 @@ def write_sitemap(
     *,
     base_url: str,
     extra: list[str] | None = None,
+    previous: dict | None = None,
 ) -> None:
-    """sitemap.xml covering every wiki page and translation."""
+    """sitemap.xml covering every wiki page and translation.
+
+    ``previous`` is ``lastmod.snapshot(out, base_url)`` taken before the build
+    cleared the old pages: a page whose output did not change keeps its old
+    ``<lastmod>`` (see ``generator/lastmod.py``). ``None`` dates every page
+    from git history, falling back to today.
+    """
+    from . import lastmod
+
     base = base_url.rstrip("/")
     locs = [base + "/"]
     for art in articles:
@@ -469,20 +477,19 @@ def write_sitemap(
     for href in extra or []:
         locs.append(base + "/" + href.lstrip("/"))
     locs = list(dict.fromkeys(locs))
-    today = datetime.date.today().isoformat()
-    rows = [
-        "  <url><loc>" + html.escape(u) + "</loc>"
-        "<lastmod>" + today + "</lastmod></url>"
-        for u in locs
-    ]
-    doc = (
-        ['<?xml version="1.0" encoding="UTF-8"?>']
-        + ['<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-        + rows
-        + ["</urlset>", ""]
+    lastmods = lastmod.resolve(
+        locs,
+        out,
+        base_url,
+        previous or {},
+        fallback=lambda: lastmod.git_dates(out),
     )
-    (out / "sitemap.xml").write_text("\n".join(doc), encoding="utf-8")
-    print("  Sitemap: " + str(len(locs)) + " URLs")
+    (out / "sitemap.xml").write_text(
+        lastmod.render_sitemap(lastmods), encoding="utf-8"
+    )
+    today = lastmod.today()
+    fresh = sum(1 for d in lastmods.values() if d == today)
+    print(f"  Sitemap: {len(locs)} URLs ({fresh} dated today)")
 
 
 LLMS_INTRO = (

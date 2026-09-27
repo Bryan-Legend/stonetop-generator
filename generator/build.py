@@ -58,6 +58,7 @@ from .chrome import (
     write_sitemap,
 )
 from . import blocks as blockdata
+from .lastmod import snapshot as lastmod_snapshot
 from .coverage import report as report_unshown
 from .corpus import (
     TEXT_KINDS,
@@ -523,6 +524,9 @@ def main(argv: list[str] | None = None) -> None:
     # full build wrote, and wiping those would take the whole wiki out with
     # the three pages being rebuilt (and --pages doesn't rewrite the
     # manifest, so the next run would do it again).
+    # The sitemap's <lastmod> follows each page's output, not the build date:
+    # note what the pages looked like before they are cleared and rewritten.
+    previous_pages = None if args.pages else lastmod_snapshot(out, args.base_url)
     if not args.pages:
         for name in read_build_manifest(out):
             try:
@@ -1180,7 +1184,13 @@ def main(argv: list[str] | None = None) -> None:
             out, articles, section_navs, lang_source, lang_targets
         )
         clock.phase("sitemap / robots / llms.txt / manifest")
-        write_sitemap(out, articles, base_url=args.base_url, extra=localized)
+        write_sitemap(
+            out,
+            articles,
+            base_url=args.base_url,
+            extra=localized,
+            previous=previous_pages,
+        )
         write_robots(out, base_url=args.base_url)
         write_llms_txt(
             out,

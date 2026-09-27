@@ -110,6 +110,7 @@ generator/                   the package
   structure.py   marker lines → article HTML: headings, tables, stat blocks, playbook sheets, links
   arcana.py      marker lines → arcana card HTML
   chrome.py      page shell, sidebar, hub pages, pages/ overrides, home page, sitemap
+  lastmod.py     sitemap <lastmod>: a page's date moves only when its HTML changes
   i18n.py        translations as data (i18n/)
   build.py       command line and the two phases
 extracted/                   the books' text, one file per article — see extracted/README.md
