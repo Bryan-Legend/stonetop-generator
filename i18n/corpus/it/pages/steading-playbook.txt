@@ -78,7 +78,7 @@ ENDLIST
 NOTES	notes	Note	3
 ENDSHEET
 H2	Contenuto
-P	Tieni questo sincronizzato con il libretto del DJ. Rivedilo all'inizio di ogni sessione.
+P	Tieni questo sincronizzato con il libretto del GM. Rivedilo all'inizio di ogni sessione.
 P	Quando <b><i>qualcuno chiama "tempo,"</i></b> il gioco si ferma. Esci dal personaggio, confrontati con gli altri, magari fate una pausa. Discutete di cosa non va, da giocatore a giocatore.
 P	Se <b><i>è stato incluso un contenuto che non avrebbe dovuto esserci</i></b>, riconosci l'errore, sistema la finzione e andate avanti.
 P	Se <b><i>qualcuno si rende conto che ha bisogno che un contenuto venga escluso, velato, o trattato in un modo particolare</i></b>, aggiornate le liste. Chiarite i dettagli, ora o più tardi, ma non chiedete le ragioni. Sistemate la finzione. Confrontatevi con il giocatore o i giocatori. Quando tutti sono pronti, andate avanti.
@@ -92,7 +92,7 @@ H3	Trattamento speciale
 NOTES	special-handling		1	Trattamento speciale
 EXTRACT	steading-improvements	other-improvements	improvements
 H2	Altre Migliorie
-P	Altre possibili migliorie, rivelate dal DJ.
+P	Altre possibili migliorie, rivelate dal GM.
 DIV	steading-improvement si-other	other-improvement-1
 NAMEHEAD	other-imp0	other-imp0-name	Miglioria	Altra miglioria 1: completata	Altra miglioria 1
 NOTES	other-imp0-summary	Riepilogo	2
@@ -132,7 +132,7 @@ ENDDIV
 H2	Beni
 P	Di proprietà comune dei residenti di Stonetop. Per portarli in una spedizione o comunque metterli a rischio, devi Requisire.
 LIST	fs-items
-ITEM	asset0	Un paio di robusti cavalli da tiro, seguaci (grandi, potenti, dall'olfatto fine, robusti): HP 10 ciascuno; Danno d6+3 (mano, vicino, contundente); Istinto: farsi prendere dal panico; Costo: cura e governo.	Bene
+ITEM	asset0	Un paio di robusti cavalli da tiro, seguaci (grandi, potenti, dall'olfatto fine, robusti): HP 10 ciascuno; Danno d6+3 (mano, vicino, poderoso); Istinto: farsi prendere dal panico; Costo: cura e governo.	Bene
 ITEM	asset1	Un paio di aratri trainati da cavalli, di ferro	Bene
 ITEM	asset2	Un paio di carri (più i finimenti per i cavalli)	Bene
 ITEM	asset3	Un carro (più i finimenti per i cavalli)	Bene
@@ -169,7 +169,7 @@ H3	Nomi
 P	Aderyn, Aeronwen, Afanen, Afon, Alun, Andras, Aneirin, Awstin, Bedwyr, Berwyn, Betrys, Braith, Briallen, Bronwen, Bryn, Cadi, Cadoc, Cadwygan, Caron, Cefin, Ceinwen, Ceridwyn, Cerys, Colwyn, Deiniol, Dilwen, Dylis, Eifion, Eirlys, Eluned, Emrys, Enfys, Eurwen, Gaenor, Garet, Gethin, Glyndir, Heledd, Hywel, Ifan, Iorwerth, Iwan, Lewela, Leuca, Linos, Mado, Maldwyn, Malon, Mared, Marged, Martyn, Meirion, Menwen, Mererid, Neirin, Nia, Ofydd, Olwyn, Owain, Padrig, Parry, Pryce, Pryder, Rheinal, Rhisiart, Rhosyn, Rydderch, Sawyl, Siana, Sioned, Talfryn, Tegid, Tiwlip, Tomos, Tudyr, Winifred, Yorath
 H2	Tratti dei PNG
 P	Assegnali secondo necessità; scegli da questa lista o inventane di tuoi.
-P	maldestro con le mani, ambizioso, amato da tutti, ha una voce meravigliosa per cantare, il miglior cuoco, il miglior tessitore, cieco, ha osato la Torre Diroccata, cauto, allegro, tosse cronica, si lamenta troppo, codardo, brama riconoscimento, curioso, flirtò con i Fae anni fa, sordo, desidera disperatamente un figlio, distilla il miglior whisky, non fa la sua parte, ubriacone, occhio d'aquila, intrepido, trovatello, raccoglie erbe nel Bosco, ottiene i migliori affari, narratore dotato, timorato degli dèi, bravo con i bambini, spensierato, ce l'ha con Bordopalude, ha un buon cuore, ha molto fegato, ha uno sguardo vagabondo, ha un modo speciale con gli animali, ha sangue Fae nelle vene, ha una sfortuna terribile, ha perso il coraggio, non rispetta gli anziani, ha incubi terribili, ha più figli di chiunque altro, ha la testa fra le nuvole, odia il Popolo delle Colline, sente voci, privo di senso dell'umorismo, aspetto impeccabile, geloso, si è appena sposato, se ne sta per conto proprio, conosce tutti i pettegolezzi, zoppo, ama far del male, ha vissuto tra il Popolo del Bosco, ha perso tutti i figli, malato d'amore, ama i suoi cani, amico leale, il più bello, si è trasferito qui di recente, deve approvare ogni matrimonio, muto, non ha paura delle acque profonde, non troppo sveglio, il più vecchio, orfano, iperprotettivo, la più bella, orgoglioso, temerario, rifiuta di sposarsi, risente della sorte che gli è toccata, corre sempre dappertutto, sensibile, sempliciotto, ha ucciso molti crinwin, stoico, testardo, soffre di attacchi, giura di aver incontrato il Cacciatore Pallido, racconta le migliori barzellette, dal cuore tenero, si prende cura del Padiglione degli Dei, assiste malati e feriti, toccato, molto forte, vuole avere figli, colto, viaggiato, vedovo, mangia di tutto
+P	maldestro con le mani, ambizioso, amato da tutti, ha una voce meravigliosa per cantare, il miglior cuoco, il miglior tessitore, cieco, ha osato la Torre Diroccata, cauto, allegro, tosse cronica, si lamenta troppo, codardo, brama riconoscimento, curioso, flirtò con i Fae anni fa, sordo, desidera disperatamente un figlio, distilla il miglior whisky, non fa la sua parte, ubriacone, occhio d'aquila, intrepido, trovatello, raccoglie erbe nel Bosco, ottiene i migliori affari, narratore dotato, timorato degli dèi, bravo con i bambini, spensierato, ce l'ha con Bordopalude, ha un buon cuore, ha molto fegato, ha uno sguardo vagabondo, ha un modo speciale con gli animali, ha sangue Fae nelle vene, ha una sfortuna terribile, ha perso il coraggio, non rispetta gli anziani, ha incubi terribili, ha più figli di chiunque altro, ha la testa fra le nuvole, odia il Popolo delle Colline, sente voci, privo di senso dell'umorismo, aspetto impeccabile, geloso, si è appena sposato, se ne sta per conto proprio, conosce tutti i pettegolezzi, zoppo, ama far del male, ha vissuto tra il Popolo della Foresta, ha perso tutti i figli, malato d'amore, ama i suoi cani, amico leale, il più bello, si è trasferito qui di recente, deve approvare ogni matrimonio, muto, non ha paura delle acque profonde, non troppo sveglio, il più vecchio, orfano, iperprotettivo, la più bella, orgoglioso, temerario, rifiuta di sposarsi, risente della sorte che gli è toccata, corre sempre dappertutto, sensibile, sempliciotto, ha ucciso molti crinwin, stoico, testardo, soffre di attacchi, giura di aver incontrato il Cacciatore Pallido, racconta le migliori barzellette, dal cuore tenero, si prende cura del Padiglione degli Dei, assiste malati e feriti, toccato, molto forte, vuole avere figli, colto, viaggiato, vedovo, mangia di tutto
 H2	Vicini rinomati di Stonetop
 P	Aggiungi PNG dalle zone vicine quando un libretto lo indica, o secondo necessità.
 TABLE	nb	20

@@ -52,7 +52,7 @@ C	<b>Bordopalude</b>: Aiden, Barrfind, Caolan, Ciara, Deirbhile, Moirin, Tiern o
 C	<b>Lygos o un altro luogo del sud</b>: Dana, Eliana, Erez, Fikri, Isra, Persefoni, Spiro o Vahid
 WRITE	Mi chiamano...
 PAGE	134
-STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilitazione è segnata, tiri con svantaggio.", "die": "d6", "hp": "HP (max 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilità è segnata, tiri con svantaggio.", "die": "d6", "hp": "HP (max 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	135
 H2	Possedimenti speciali (Scegline 2, oltre all'occorrente da scriba)
 HR
@@ -76,7 +76,7 @@ C	<b>CONTROMISURE</b> Quando <b><i>assisti a un effetto magico</i></b>, puoi chi
 C	<b>TUTTO SANGUINA</b> Quando <b><i>sfrutti la debolezza o vulnerabilità specifica di un nemico innaturale</i></b>, infliggi +1d6 danni.
 C	<b>TUTTO BRUCIA</b> Quando <b><i>ispezioni un'opera d'artificio o di magia in cerca di un</i></b> <b><i>difetto fatale</i></b>, tira +INT: <b>con 7+</b>, il GM ti rivela il modo migliore per distruggerla/sabotarla; <b>con 10+</b>, tu o un alleato avete anche vantaggio per agire in base all'informazione.
 C	<b>CARATTERISTICA MIGLIORATA</b> Ogni volta che prendi questa mossa, aumenta una delle tue caratteristiche di 1 (fino a un massimo di +2).
-C	<b>INIZIATO ALLE ARTI SEGRETE</b> (Richiede livello 2+ e il Cercatore) Hai un "sacchetto sacro" (3 Scorta, <i>magico</i>), come il Benedetto, ma senza tratti notevoli. Ogni volta che prendi questa mossa, scegli una mossa del Benedetto per cui soddisfi gli altri requisiti. (Non puoi prendere Caratteristica Migliorata né Caratteristica Superiore.)
+C	<b>INIZIATO ALLE ARTI SEGRETE</b> (Richiede livello 2+ e il Cercatore) Hai un "sacchetto sacro" (3 Dotazione, <i>magico</i>), come il Benedetto, ma senza tratti notevoli. Ogni volta che prendi questa mossa, scegli una mossa del Benedetto per cui soddisfi gli altri requisiti. (Non puoi prendere Caratteristica Migliorata né Caratteristica Superiore.)
 C	<b>FACCIAMO UN PATTO</b> Quando <b><i>Cerchi Indizi</i></b>, aggiungi "Cosa vogliono o di cosa hanno davvero bisogno?" alla lista di domande. Quando <b><i>Persuadi offrendo qualcosa che sai</i></b> <b><i>che vogliono o di cui hanno bisogno</i></b>, considera un 7-9 come un 10+.
 C	<b>DIARIO DI BORDO</b> ◇◇ Hai un diario di bordo (2 usi, <i>lento</i>) che non occupa spazio nell'inventario. Quando tu (e solo tu) <b><i>consulti il diario e spendi un uso</i></b>, puoi ignorare un tiro per Sapere le Cose appena fatto e considerare il risultato un 10+. Quando <b><i>Cambia la Stagione</i></b>, riporta il diario a 2 usi.
 C	<b>GAZZA LADRA</b> Quando <b><i>Hai il Necessario</i></b>, puoi tirar fuori qualcosa di strano, specifico, forse perfino prezioso o un po' magico, ma se lo fai, dicci dove l'hai preso e 2 dei seguenti:
@@ -115,7 +115,7 @@ C	<b>INTUIZIONE PROFONDA</b> (Richiede livello 6+ e In sintonia) Quando <b><i>Ce
 C	<b>IMPROVVISARE</b> (Richiede livello 6+ e Apprendimento rapido) Quando <b><i>vuoi usare una mossa o un'opzione di un arcano</i></b> <b><i>senza averla sbloccata</i></b>, chiedi al GM quale rischio folle richiede e/o quali conseguenze subirai. Se ci provi, tira +INT: <b>con 7+</b>, riesci a farla funzionare per questa volta: attiva la mossa o usa l'opzione come se l'avessi sbloccata; e <b>con 10+</b>, segna anche un passo verso lo svelamento dei misteri dell'arcano.
 C	<b>CARATTERISTICA SUPERIORE</b> (Richiede livello 6+) Aumenta una delle tue caratteristiche di +1 (fino a un massimo di +3).
 C	<b>MENTE SULLA MAGIA</b> (Richiede livello 6+) Quando <b><i>tiri per studiare o usare un arcano</i></b>, puoi tirare +INT invece della caratteristica che useresti di solito.
-C	<b>SOVRACCANALIZZARE</b> (Richiede livello 6+ e Condotto di potere) Quando <b><i>dovresti segnare una Conseguenza di un arcano</i></b> <b><i>maggiore</i></b>, puoi invece segnare una debilitazione.
+C	<b>SOVRACCANALIZZARE</b> (Richiede livello 6+ e Condotto di potere) Quando <b><i>dovresti segnare una Conseguenza di un arcano</i></b> <b><i>maggiore</i></b>, puoi invece segnare una debilità.
 C	<b>IMMUNE ALL'INDAGINE</b> (Richiede livello 6+ e Prima la sicurezza) Finché <b><i>tieni Protezione</i></b>, non puoi essere scrutato né percepito con mezzi magici, e hai vantaggio a Sfidare il Pericolo muovendoti furtivamente.
 PAGE	136
 H2	Collezione

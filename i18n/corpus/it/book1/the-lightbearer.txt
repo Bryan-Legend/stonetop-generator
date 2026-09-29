@@ -11,7 +11,7 @@ HR
 H2	Passato (Scegline 1)
 C	<b>NASCITA PROPIZIA</b> ◇ Sei nato a Stonetop, e la tua nascita è stata segnata dal Dio della Luce. Forse sei nato durante un'eclissi, o alla luce di una nuova stella brillante? Forse porti una voglia a forma di sole?
 P	Qualunque fosse il segno, il tuo legame con Helior fu chiaro fin da subito. Hai un posto d'onore a Stonetop, anche se sarebbe una bugia dire che non metti a disagio qualcuno.
-P	Quando <b><i>una delle tue mosse ti fa segnare una debilitazione</i></b>, puoi segnare invece il cerchio di questo passato, senza effetti negativi. Cancellalo quando ti Accampi o sei in Convalescenza.
+P	Quando <b><i>una delle tue mosse ti fa segnare una debilità</i></b>, puoi segnare invece il cerchio di questo passato, senza effetti negativi. Cancellalo quando ti Accampi o sei in Convalescenza.
 C	<b>MISTICO ERRANTE</b> ◇◇◇ Ti considerano uno svitato pieno di sé che passa ogni tanto, parla per enigmi e fa scherzi con la luce. Certo, sanno che c'è qualcosa di sacro in te, ma non è che tu sia un sacerdote o roba simile. I sacerdoti parlano in modo sensato.
 P	Quando <b><i>te ne vai a vagabondare</i></b>, tieni 1 Enigma se stai via per giorni, 2 se per settimane o 3 se per mesi. All'inizio del gioco tieni 3 Enigma. Spendi Enigma 1 a 1 per:
 B	Tornare dal tuo vagabondare esattamente quando e dove c'è bisogno di te, completamente Equipaggiato
@@ -48,7 +48,7 @@ C	<b>Bordopalude</b>: Adfin, Callach, Conlad, Eadna, Fionntan, Niamh, Orlaith o 
 C	<b>Lygos o un altro luogo del sud</b>: Arash, Azar, Hafiz, Murat, Roshan, Shideh, Zara o Zohara
 WRITE	Mi chiamano...
 PAGE	122
-STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilitazione è segnata, tiri con svantaggio.", "die": "d4", "hp": "HP (max 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilità è segnata, tiri con svantaggio.", "die": "d4", "hp": "HP (max 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	123
 H2	Possedimenti speciali (Scegline 2)
 HR
@@ -89,7 +89,7 @@ C	<b>CARATTERISTICA MIGLIORATA</b> Ogni volta che prendi questa mossa, aumenta u
 CX	<b>INVOCARE IL DIO SOLE</b>
 P	Quando <b><i>infondi in una luce sacra il potere di Helior</i></b>, scegli un'Invocazione che conosci e tira +WIS: <b>con</b> <b>10+</b>, funziona come descritto ma devi scegliere 1 conseguenza dalla lista sotto; <b>con 7-9</b>, funziona come descritto, ma tu e il GM ne scegliete 1 ciascuno.
 B	L'Invocazione ha il suo effetto <i>ridotto</i>
-B	Lo sforzo ti prostra; segna una debilitazione
+B	Lo sforzo ti prostra; segna una debilità
 B	La luce si spegne quando l'Invocazione è completa, il suo combustibile consumato
 B	Devi crogiolarti al sole per un'ora circa prima di usare di nuovo quell'Invocazione Vedi l'inserto <b>Invocazioni</b> per i dettagli.
 PAGE	123
@@ -103,7 +103,7 @@ C	<b>SORGERE COME IL SOLE</b> Quando <b><i>attiri l'attenzione su di te con paro
 C	<b>IL PRIMO DISGELO DI PRIMAVERA</b> Quando <b><i>passi del tempo (almeno un'ora, forse di più)</i></b>
 P	<b><i>cercando di risvegliare speranza, gentilezza o misericordia in un PNG</i></b>,
 P	tira +CHA: <b>con 10+</b>, accendi un fuoco nel profondo e produci un cambiamento duraturo; <b>con 7-9</b>, per ora accendi la bontà nel suo cuore, ma prima o poi tornerà alle vecchie abitudini; <b>con 6-</b>, il suo cuore si indurisce e, qualunque altra cosa dica il GM, non puoi più usare questa mossa su di lui.
-C	<b>BRUCIARE CON IL DOPPIO DELLO SPLENDORE</b> (Richiede livello 6+ e Invocare il Dio Sole) Quando <b><i>Invochi il Dio Sole</i></b>, puoi segnare una debilitazione per usare 2 Invocazioni insieme. Tira una volta e applica le conseguenze a entrambe le Invocazioni.
+C	<b>BRUCIARE CON IL DOPPIO DELLO SPLENDORE</b> (Richiede livello 6+ e Invocare il Dio Sole) Quando <b><i>Invochi il Dio Sole</i></b>, puoi segnare una debilità per usare 2 Invocazioni insieme. Tira una volta e applica le conseguenze a entrambe le Invocazioni.
 C	<b>INVOCAZIONI POTENZIATE</b> (Richiede livello 6+ e Invocare il Dio Sole) Quando Invochi il Dio Sole, puoi scegliere una conseguenza extra prima di tirare. Se lo fai, l'Invocazione ha il suo effetto <i>potenziato</i>.
 C	<b>SERVITORE GLORIOSO</b> (Richiede livello 6+ e Invocare il Dio Sole) Quando <b><i>Invochi il Dio Sole e ottieni 10+</i></b>, non devi scegliere una conseguenza; <b>con 7-9</b>, scegli una conseguenza ma il GM no.
 C	<b>FIAMME AFFAMATE</b> (Richiede livello 6+ e Fiamme purificatrici) Quando <b><i>infliggi danni con una luce sacra</i></b>, infliggi +1d6 danni e il bersaglio è avvolto da luce sacra e fiamme.

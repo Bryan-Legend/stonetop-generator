@@ -125,6 +125,7 @@ Pull Together · Deploy · Seasons Change · Death's Door.
 - **Sheet headings:** Passato (Scegline 1) · Istinto (Scegline 1) · Aspetto · Luogo d'origine e nome · Caratteristiche · Possedimenti speciali · Mosse · Presentazioni
 - **Names:** il Gran Bosco · Bordopalude (Marshedge) · il Passo della Barriera · lo Scavo di Gordin · il Popolo delle Colline · le Terre a Gradoni (Steplands) · il Muro ad Anello (Ringwall) · le Vecchie Strade · la Torre Diroccata · la Palude di Ferrier · gli Artefici (Makers) · le Cose di Sotto · l'Ultima Porta · il Cacciatore Pallido · i Fae
 - **Tags:** mano · vicino (close) · presso (near) · lontano (far) · portata (reach) · perforante · area · gruppo
+- **Whole-language pass (2026-09-29; binding list in `i18n/_work/it-brief.md`):** GM/NPC/PC = GM/PNG/PG · harm = danno · Armor = Armatura · site = luogo · expedition = spedizione · Homefront = Fronte interno · countdown = conto alla rovescia · Readiness = Prontezza · Die of Fate = Dado del Fato · debility = debilità · Bolster = Rafforzarsi (hold Preparazione) · Order Followers = Comandare i Seguaci · Make a Plan = Fare un Piano · Stock (Blessed) = Dotazione · threat types: afflizione · bestia · entità magica · istituzione · jolly (wildcard) · malvagio (villain) · marmaglia (rabble) · MacGuffin · impending doom = rovina incombente · grim portents = presagi funesti · soft/hard GM move = mossa leggera/dura del GM · hazard = insidia · Highway = Strada Maestra · West Road = Strada dell'Ovest · Crossroads = il Crocevia · Stormcatcher = Catturatempeste · Lady of Crows = la Signora dei Corvi · Hollow Fae = Fae Cavi · aetherium = eterio · black iron = ferro nero · orichalcum = oricalco · tether = ancoraggio · spirit-talker = parlaspiriti · Flats = le Piane · Forest Folk = il Popolo della Foresta · Golden Oak = la Quercia d'Oro · forceful = poderoso (powerful = potente) · crude = rozzo · immobile = inamovibile · "(page N)" = "(pag. N)" (`page_words` in `ui/it.json`)
 
 ## ru — Русский
 
@@ -441,12 +442,12 @@ ejder · sárkánygyík · traakki.
 | Summary / Requirements / Effects | Résumé / Prérequis / Effets | Podsumowanie / Wymagania / Efekty | Riepilogo / Requisiti / Effetti |
 | Purses / Handfuls / Coins | Bourses / Poignées / Pièces | Sakiewki / Garście / Monety | Borse / Manciate / Monete |
 | NPC | PNJ | BN | PNG |
-| the Flats | les Plaines | Równiny | le Pianure |
+| the Flats | les Plaines | Równiny | le Piane |
 | the Old Wall | le Vieux Mur | Stary Mur | il Vecchio Muro |
 | the Stream | le Ruisseau | Strumień | il Ruscello |
-| Forest Folk | le Peuple de la Forêt | Lud Lasu | il Popolo del Bosco |
+| Forest Folk | le Peuple de la Forêt | Lud Lasu | il Popolo della Foresta |
 | Whitefang (wool) | Croc-Blanc | Białykieł | Zannabianca |
-| forceful (tag) | puissant | silny | contundente |
+| forceful (tag) | puissant | silny | poderoso |
 | Additional Housing | Logements Supplémentaires | Dodatkowe Mieszkania | Alloggi Aggiuntivi |
 | Aurochs Hunting | Chasse à l'Aurochs | Polowanie na Tury | Caccia all'Uro |
 | Expanded Trades | Métiers Élargis | Rozszerzone Rzemiosła | Mestieri Ampliati |

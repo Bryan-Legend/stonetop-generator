@@ -45,7 +45,7 @@ C	<b>Il Manmarch</b>: Berkhard, Gerhild, Hartig, Hilde, Sabrinne, Ulrike, Urrsla
 C	<b>Lygos o un altro luogo del sud</b>: Ameer, Calixta, Hadar, Kelila, Sulaim, Ursa o Xandros
 WRITE	Mi chiamano...
 PAGE	126
-STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilitazione è segnata, tiri con svantaggio.", "die": "d8", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilità è segnata, tiri con svantaggio.", "die": "d8", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	127
 H2	Possedimenti speciali (Scegline 2)
 HR

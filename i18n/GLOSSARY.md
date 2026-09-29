@@ -98,7 +98,7 @@ rendering of *the wider world* and drops *and other wonders*.
 | pt-BR | o Fim do Mundo | Carvalho Dourado |
 | de | das Ende der Welt | Goldene Eiche |
 | fr | le Bout du Monde | Chêne Doré |
-| it | la Fine del Mondo | Quercia Dorata |
+| it | la Fine del Mondo | Quercia d'Oro |
 | nl | het Einde van de Wereld | Gouden Eik |
 | sv | Världens Ände | Gyllene Eken |
 | da · nb | Verdens Ende | Den Gyldne Eg · Den Gylne Eika |

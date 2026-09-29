@@ -50,7 +50,7 @@ C	<b>Bordopalude</b>: Briget, Comhall, Elnor, Liadain, Mirdach, Onghus, Somha o 
 C	<b>Lygos o un'altra città del sud</b>: Abrim, Cassander, Despina, Hypatta, Morecai, Nomika, Sofia o Yose
 WRITE	Mi chiamano...
 PAGE	118
-STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilitazione è segnata, tiri con svantaggio.", "die": "d6", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Assegna questi punteggi: +2, +1, +1, +0, +0, -1. Quando una debilità è segnata, tiri con svantaggio.", "die": "d6", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	119
 H2	Possedimenti speciali
 HR

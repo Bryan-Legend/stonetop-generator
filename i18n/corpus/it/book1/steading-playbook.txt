@@ -101,7 +101,7 @@ HR
 H3	Special handling
 HR
 H2	Migliorie dell'Insediamento
-P	Migliorie conosciute e disponibili che puoi apportare a Stonetop. Il DJ può presentarne altre.
+P	Migliorie conosciute e disponibili che puoi apportare a Stonetop. Il GM può presentarne altre.
 HR
 C	<b>ALLOGGI AGGIUNTIVI</b> Si fa affollato! Ci serve più spazio per vivere.
 P	<b>Richiede</b> una di queste due cose:
@@ -111,7 +111,7 @@ P	E poi:
 C	Fare fronte comune 5 volte, ciascuna richiede 1 stagione, 1 Eccedenza e un carro di legname e altre provviste (Valore 2), per (ri)costruire le case.
 P	Quando <b><i>soddisfi i requisiti</i></b>, aumenta la Fortuna di 1 e aggiungi le nuove case alla mappa.
 P	D'ora in poi, quando <b><i>consumi Eccedenza in</i></b> <b><i>inverno</i></b>, considera la Popolazione 1 punto più bassa di quanto sia.
-C	<b>CACCIA AGLI URI</b> In primavera si formano grandi mandrie nelle Pianure. Il Popolo delle Colline le caccia, ma Stonetop non ha mai imparato a farlo.
+C	<b>CACCIA AGLI URI</b> In primavera si formano grandi mandrie nelle Piane. Il Popolo delle Colline le caccia, ma Stonetop non ha mai imparato a farlo.
 P	<b>Richiede</b> 2 delle seguenti cose:
 C	Una Mandria di Cavalli (e cacciatori che li montino)
 C	Cooperare con il Popolo delle Colline
@@ -123,7 +123,7 @@ P	D'ora in poi, quando <b><i>guidi la caccia agli uri in</i></b> <b><i>primavera
 P	<b>con 7-9</b>, guadagni 1d4 Eccedenza ma scegli 1 dalla lista sottostante; <b>con 6-</b>, scegli 1 dalla lista sottostante, oppure scegline 2 e guadagna 1d4 Eccedenza.
 B	1d4 cavalli della cittadina restano azzoppati o muoiono
 B	Diversi abitanti restano feriti; l'insediamento segna <i>diminuito</i> (svantaggio per Schierare, Radunare o Fare Fronte Comune)
-B	Il DJ sceglie un PNG presente alla caccia; muore
+B	Il GM sceglie un PNG presente alla caccia; muore
 B	Il Popolo delle Colline si offende in qualche modo
 B	La mandria è debole; se cacciate l'anno prossimo verrà sterminata
 PAGE	157
@@ -141,7 +141,7 @@ C	Un fabbro <i>eccezionale</i> con una fucina più nuova e più calda (Valore 3)
 C	Qualche altro artigiano <i>eccezionale</i>, con gli attrezzi e le provviste adeguati (Valore 2 o 3)
 P	Quando <b><i>soddisfi i requisiti</i></b>, aumenta la Prosperità di 1. Se <b><i>smetti di soddisfare i requisiti</i></b>, riduci la Prosperità di 1.
 HR
-C	<b>RACCOLTO MAGGIORE</b> Oltre il Vecchio Muro, l'erba della prateria delle Pianure soffoca ogni raccolto che proviamo a coltivare.
+C	<b>RACCOLTO MAGGIORE</b> Oltre il Vecchio Muro, l'erba della prateria delle Piane soffoca ogni raccolto che proviamo a coltivare.
 P	<b>Richiede</b> 1 delle seguenti cose:
 C	Raddoppiare la resa dei raccolti dentro il Vecchio Muro
 C	Sgomberare/domare nuovi campi oltre il Vecchio Muro
@@ -178,10 +178,10 @@ C	Salvare la vita a molti residenti dello Scavo di Gordin
 C	Salvare qualcuno da oltre Bordopalude
 C	Assumere un menestrello per raccontare le vostre storie (Valore 2)
 P	Quando <b><i>soddisfi i requisiti</i></b>, guadagni la seguente mossa:
-P	Quando <b><i>incontri per la prima volta qualcuno da oltre Stonetop</i></b>, tira +Fortuna: <b>con 10+</b>, di' cosa hanno sentito su di te o su Stonetop, e guadagni vantaggio sulla tua prossima mossa contro di loro; <b>con 7-9</b>, di' cosa hanno sentito; <b>con 6-</b>, il DJ decide cosa hanno sentito.
+P	Quando <b><i>incontri per la prima volta qualcuno da oltre Stonetop</i></b>, tira +Fortuna: <b>con 10+</b>, di' cosa hanno sentito su di te o su Stonetop, e guadagni vantaggio sulla tua prossima mossa contro di loro; <b>con 7-9</b>, di' cosa hanno sentito; <b>con 6-</b>, il GM decide cosa hanno sentito.
 PAGE	158
 H2	Altre Migliorie dell'Insediamento
-P	Migliorie conosciute e disponibili che puoi apportare a Stonetop. Il DJ può presentarne altre nel corso del gioco.
+P	Migliorie conosciute e disponibili che puoi apportare a Stonetop. Il GM può presentarne altre nel corso del gioco.
 HR
 C	<b>LOCANDA</b> La taverna offre una sala comune e riparo per pochi cavalli, ma non è certo una locanda vera e propria.
 P	<b>Richiede</b> tutte le seguenti cose, in ordine:
@@ -191,7 +191,7 @@ C	Arredi, attrezzature e materiali (Valore 3)
 C	Fare fronte comune 2 volte, ciascuna richiede 1 stagione, 1 Eccedenza e legname/provviste (Valore 2)
 C	Un piccolo staff devoto (locandiere, cuoco, stalliere, ecc.)
 P	Quando <b><i>soddisfi i requisiti</i></b>, aumenta la Fortuna di 1. Dai un nome alla locanda, aggiungila sia alla lista delle Risorse sia alla mappa.
-P	D'ora in poi, quando <b><i>cambiano le stagioni</i></b>, chi è più cordiale tira +Fortuna: <b>con 10+</b>, fai al DJ 3 domande sul mondo più ampio; <b>con 7-9,</b> fai 1 domanda; <b>con 6-</b>, fai 1 domanda, ma il DJ descrive qualche problema che nasce dalla locanda o dai suoi ospiti.
+P	D'ora in poi, quando <b><i>cambiano le stagioni</i></b>, chi è più cordiale tira +Fortuna: <b>con 10+</b>, fai al GM 3 domande sul mondo più ampio; <b>con 7-9,</b> fai 1 domanda; <b>con 6-</b>, fai 1 domanda, ma il GM descrive qualche problema che nasce dalla locanda o dai suoi ospiti.
 P	Una volta per stagione, quando <b><i>spendi 1 Eccedenza e</i></b> <b><i>riunisci la gente alla locanda</i></b> (per parlare, per festeggiare, per riprendersi), cancella una delle debilità dell'insediamento.
 HR
 C	<b>MERCATO</b> Stonetop è al massimo un ripensamento per i mercanti della regione. Dobbiamo cambiare le cose.
@@ -281,7 +281,7 @@ C	Cavalleria (richiede una Mandria di Cavalli): combattere a cavallo, cariche
 C	Formazioni: muri di scudi, cunei, falange, ecc.
 C	Prontezza: pattugliare, reagire rapidamente agli allarmi
 C	Schermaglia: imboscate, molestie, mordi e fuggi
-P	Quando <b><i>Schieri usando una delle tattiche addestrate</i></b> <b><i>della milizia</i></b>, probabilmente agisci da una posizione di forza (scegli tu la conseguenza con 7-9, non il DJ).
+P	Quando <b><i>Schieri usando una delle tattiche addestrate</i></b> <b><i>della milizia</i></b>, probabilmente agisci da una posizione di forza (scegli tu la conseguenza con 7-9, non il GM).
 P	Quando la <b><i>milizia si è addestrata in 2+ tattiche</i></b>, aumenta
 P	le Difese di 1.
 P	<b><i>Ogni estate</i></b>, la milizia deve spendere 1 Eccedenza e passare più o meno una settimana ad esercitarsi, altrimenti perde l'addestramento in 1 tattica.
