@@ -151,5 +151,12 @@
   "book_titles": {
     "book1": "I. könyv — Stonetop",
     "book2": "II. könyv — A tágabb világ"
+  },
+  "bestiary": {
+    "title": "Bestiárium",
+    "lede": "Mindkét könyv összes értékblokkja A-tól Z-ig – összesen {n}. Vidd az egeret egy név fölé a teljes blokkért; kattints, hogy odaugorj.",
+    "note": "Nincs benne a nyomtatott könyvekben: a wiki a könyvek értékblokkjaiból állítja össze a listát.",
+    "excerpt": "Mindkét Stonetop-könyv összes értékblokkja A-tól Z-ig – {n} lény, szellem és ember, mindegyik a blokkjához és az oldalához linkelve.",
+    "letters": "Ugrás egy betűhöz"
   }
 }

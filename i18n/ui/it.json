@@ -157,5 +157,12 @@
     "pagina",
     "pagine",
     "pp."
-  ]
+  ],
+  "bestiary": {
+    "title": "Bestiario",
+    "lede": "Tutti i blocchi statistiche dei due libri, dalla A alla Z: {n} in tutto. Passa il cursore su un nome per vedere il blocco intero; fai clic per andarci.",
+    "note": "Non è nei libri stampati: la wiki compone questo elenco a partire dai loro blocchi statistiche.",
+    "excerpt": "Tutti i blocchi statistiche dei due libri di Stonetop, dalla A alla Z: {n} creature, spiriti e persone, ciascuno collegato al suo blocco e alla sua pagina.",
+    "letters": "Vai a una lettera"
+  }
 }

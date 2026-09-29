@@ -151,5 +151,12 @@
   "book_titles": {
     "book1": "Kitap I — Stonetop",
     "book2": "Kitap II — Daha Geniş Dünya"
+  },
+  "bestiary": {
+    "title": "Canavar Kitabı",
+    "lede": "İki kitaptaki tüm istatistik blokları, A'dan Z'ye – toplam {n}. Bloğun tamamını görmek için bir adın üzerine gel; gitmek için tıkla.",
+    "note": "Basılı kitaplarda yok: viki bu listeyi kitapların istatistik bloklarından derler.",
+    "excerpt": "İki Stonetop kitabındaki tüm istatistik blokları, A'dan Z'ye – {n} yaratık, ruh ve insan, her biri kendi bloğuna ve sayfasına bağlantılı.",
+    "letters": "Bir harfe git"
   }
 }

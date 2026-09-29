@@ -151,5 +151,12 @@
   "book_titles": {
     "book1": "Livre I — Stonetop",
     "book2": "Livre II — Le vaste monde"
+  },
+  "bestiary": {
+    "title": "Bestiaire",
+    "lede": "Tous les profils des deux livres, de A à Z — {n} au total. Survolez un nom pour voir le profil entier ; cliquez pour y aller.",
+    "note": "Absent des livres imprimés : le wiki assemble cette liste à partir de leurs profils.",
+    "excerpt": "Tous les profils des deux livres de Stonetop, de A à Z — {n} créatures, esprits et personnes, chacun lié à son profil et à sa page.",
+    "letters": "Aller à une lettre"
   }
 }

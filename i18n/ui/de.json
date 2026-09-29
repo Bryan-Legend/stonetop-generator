@@ -155,5 +155,12 @@
   "book_titles": {
     "book1": "Buch I — Stonetop",
     "book2": "Buch II — Die weite Welt"
+  },
+  "bestiary": {
+    "title": "Bestiarium",
+    "lede": "Jeder Werteblock aus beiden Büchern, von A bis Z – {n} insgesamt. Fahre über einen Namen, um den ganzen Block zu sehen; klicke, um dorthin zu springen.",
+    "note": "Nicht in den gedruckten Büchern: Das Wiki stellt diese Liste aus ihren Werteblöcken zusammen.",
+    "excerpt": "Jeder Werteblock aus beiden Stonetop-Büchern, von A bis Z – {n} Kreaturen, Geister und Personen, jeweils mit ihrem Block und ihrer Seite verlinkt.",
+    "letters": "Zu einem Buchstaben springen"
   }
 }

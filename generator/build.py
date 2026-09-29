@@ -52,6 +52,7 @@ from .chrome import (
     write_index_custom,
     write_llms_txt,
     write_localized_arcana_hubs,
+    write_localized_bestiary,
     write_localized_index,
     write_localized_pages,
     write_robots,
@@ -1058,6 +1059,7 @@ def main(argv: list[str] | None = None) -> None:
         print(f"  {n_drift} block(s) differ from blocks.json, in total")
 
     bestiary = next((a for a in articles if a.get("kind") == "bestiary"), None)
+    bestiary_list: list[dict] = []
     if bestiary:
         clock.phase("bestiary")
         known = previews
@@ -1068,6 +1070,7 @@ def main(argv: list[str] | None = None) -> None:
             # partial build, so it is still that build's).
             known = {**_recorded_previews(out), **previews}
         entries = bestiary_entries(articles, known)
+        bestiary_list = entries
         body = bestiary_html(entries)
         excerpt = bestiary_excerpt(len(entries))
         if only_pages is None or BESTIARY_SLUG in only_pages:
@@ -1182,6 +1185,9 @@ def main(argv: list[str] | None = None) -> None:
         )
         localized += write_localized_arcana_hubs(
             out, articles, section_navs, lang_source, lang_targets
+        )
+        localized += write_localized_bestiary(
+            out, articles, section_navs, lang_source, lang_targets, bestiary_list
         )
         clock.phase("sitemap / robots / llms.txt / manifest")
         write_sitemap(

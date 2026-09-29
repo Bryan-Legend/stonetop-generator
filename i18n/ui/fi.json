@@ -151,5 +151,12 @@
   "book_titles": {
     "book1": "Kirja I — Stonetop",
     "book2": "Kirja II — Laajempi maailma"
+  },
+  "bestiary": {
+    "title": "Bestiaario",
+    "lede": "Kaikki kummankin kirjan arvolohkot A:sta Ö:hön – yhteensä {n}. Vie osoitin nimen päälle nähdäksesi koko lohkon; napsauta siirtyäksesi siihen.",
+    "note": "Ei painetuissa kirjoissa: wiki kokoaa luettelon niiden arvolohkoista.",
+    "excerpt": "Kaikki kummankin Stonetop-kirjan arvolohkot A:sta Ö:hön – {n} olentoa, henkeä ja ihmistä, kukin linkitettynä lohkoonsa ja sivuunsa.",
+    "letters": "Siirry kirjaimeen"
   }
 }

@@ -1043,10 +1043,38 @@ h3 .book-icon,
 /* The bestiary: one line per stat block — the name (hover for the block)
    and, muted, the page it lives on. */
 .be-note { color: var(--muted); font-size: 0.92rem; }
+/* The letter bar: each letter on the same wine-ringed plaque the chapters
+   number their steps with (.step-badge), not as underlined body links. */
 .be-letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.6rem 0 0.9rem;
+  break-inside: avoid;
+}
+.be-letters a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.9em;
+  height: 1.9em;
+  padding: 0 0.4em;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--head);
   font-family: var(--font-serif);
-  font-size: 1.05rem;
-  word-spacing: 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color .12s, background .12s, border-color .12s;
+}
+.be-letters a:hover,
+.be-letters a:focus-visible {
+  background: var(--accent);
+  border-color: rgba(var(--head-rgb), .45);
+  color: var(--link-hover);
 }
 ul.bestiary {
   list-style: none;

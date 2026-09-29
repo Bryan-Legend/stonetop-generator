@@ -151,5 +151,12 @@
   "book_titles": {
     "book1": "Boek I — Stonetop",
     "book2": "Boek II — De wijdere wereld"
+  },
+  "bestiary": {
+    "title": "Bestiarium",
+    "lede": "Elk statblok uit beide boeken, van A tot Z – {n} in totaal. Beweeg over een naam om het hele blok te zien; klik om erheen te gaan.",
+    "note": "Niet in de gedrukte boeken: de wiki stelt deze lijst samen uit hun statblokken.",
+    "excerpt": "Elk statblok uit beide Stonetop-boeken, van A tot Z – {n} wezens, geesten en mensen, elk gelinkt aan zijn blok en zijn pagina.",
+    "letters": "Naar een letter"
   }
 }

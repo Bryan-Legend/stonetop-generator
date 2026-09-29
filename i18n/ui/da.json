@@ -151,5 +151,12 @@
   "book_titles": {
     "book1": "Bog I — Stonetop",
     "book2": "Bog II — Den videre verden"
+  },
+  "bestiary": {
+    "title": "Bestiarium",
+    "lede": "Hver statistikblok i begge bøger, A til Å – {n} i alt. Hold musen over et navn for at se hele blokken; klik for at gå dertil.",
+    "note": "Findes ikke i de trykte bøger: wikien samler listen ud fra deres statistikblokke.",
+    "excerpt": "Hver statistikblok i begge Stonetop-bøger, A til Å – {n} væsner, ånder og mennesker, hver linket til sin blok og sin side.",
+    "letters": "Gå til et bogstav"
   }
 }

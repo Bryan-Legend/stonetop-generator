@@ -163,5 +163,12 @@
   "book_titles": {
     "book1": "Livro I — Stonetop",
     "book2": "Livro II — O Mundo Mais Amplo"
+  },
+  "bestiary": {
+    "title": "Bestiário",
+    "lede": "Todos os blocos de estatísticas dos dois livros, de A a Z — {n} ao todo. Passe o cursor sobre um nome para ver o bloco inteiro; clique para ir até ele.",
+    "note": "Não está nos livros impressos: a wiki monta esta lista a partir dos blocos de estatísticas deles.",
+    "excerpt": "Todos os blocos de estatísticas dos dois livros de Stonetop, de A a Z — {n} criaturas, espíritos e pessoas, cada um ligado ao seu bloco e à sua página.",
+    "letters": "Ir para uma letra"
   }
 }

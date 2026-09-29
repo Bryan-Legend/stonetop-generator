@@ -159,5 +159,12 @@
     "strony",
     "stronach",
     "stron"
-  ]
+  ],
+  "bestiary": {
+    "title": "Bestiariusz",
+    "lede": "Wszystkie bloki statystyk z obu ksiąg, od A do Z – łącznie {n}. Najedź na nazwę, by zobaczyć cały blok; kliknij, by do niego przejść.",
+    "note": "Nie ma go w drukowanych księgach: wiki składa tę listę z ich bloków statystyk.",
+    "excerpt": "Wszystkie bloki statystyk z obu ksiąg Stonetop, od A do Z – {n} istot, duchów i ludzi, każdy z odnośnikiem do bloku i strony.",
+    "letters": "Przejdź do litery"
+  }
 }

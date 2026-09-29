@@ -1021,6 +1021,8 @@ def build_nav_items(
         label = (page_tr or {}).get("nav_label") or ""
         if not label and locale and art.get("kind") == "arcana-hub":
             label = arcana_hub_strings(art, locale.get("ui"))["title"]
+        if not label and locale and art.get("kind") == "bestiary":
+            label = bestiary_strings(locale.get("ui"))["title"]
         if label and art.get("number"):
             label = f"{art['number']}. {label}"  # an arcanum's card number
         label = html.escape(label or nav_label(art))
@@ -1389,7 +1391,7 @@ def write_localized_pages(
         # (write_localized_arcana_hubs), so the sidebar links to them beside
         # this page rather than marking them English-only.
         ui = locale.get("ui") or {}
-        translated = set(locale["pages"]) | arcana_hub_slugs(articles)
+        translated = set(locale["pages"]) | generated_slugs(articles)
         stale = []
         # What this language's own previews / search index are made of.
         # Whether it gets them at all is known before the loop, and building
@@ -1602,6 +1604,16 @@ def arcana_hub_slugs(articles: list[dict]) -> set[str]:
     return {a["slug"] for a in articles if a.get("kind") == "arcana-hub"}
 
 
+def generated_slugs(articles: list[dict]) -> set[str]:
+    """Pages every language directory carries without a translation of its
+    own: the arcana indexes and the bestiary."""
+    return {
+        a["slug"]
+        for a in articles
+        if a.get("kind") in ("arcana-hub", "bestiary")
+    }
+
+
 def write_localized_arcana_hubs(
     out: Path,
     articles: list[dict],
@@ -1727,7 +1739,7 @@ def write_localized_index(
         home = {**HOME_FALLBACK, **((ui.get("home") or {}))}
         book_titles = ui.get("book_titles") or {}
         titles = locale.get("titles") or {}
-        translated = set(locale["pages"]) | arcana_hub_slugs(articles)
+        translated = set(locale["pages"]) | generated_slugs(articles)
 
         books_present: list[tuple] = []
         for art in articles:
@@ -1763,6 +1775,10 @@ def write_localized_index(
                     # (ui → arcana_hub), the same as on the page itself.
                     words = arcana_hub_strings(art, ui)
                     title, excerpt = words["title"], words["lede"]
+                elif art.get("kind") == "bestiary":
+                    count = re.search(r"\d+", excerpt or "")
+                    words = bestiary_strings(ui, int(count.group()) if count else 0)
+                    title, excerpt = words["title"], words["excerpt"]
                 href = f"{slug}.html" if slug in translated else f"../{slug}.html"
                 cards.append(
                     f'<a class="index-card" href="{html.escape(href)}">'
@@ -1882,6 +1898,109 @@ def bestiary_article(book2: dict) -> dict:
     }
 
 
+BESTIARY_FALLBACK = {
+    "title": "Bestiary",
+    "lede": (
+        "Every stat block in both books, A to Z — {n} of them. Hover a name "
+        "for the whole block; click it to go there."
+    ),
+    "note": (
+        "Not in the printed books: the wiki assembles this list from their "
+        "stat blocks."
+    ),
+    "excerpt": (
+        "Every stat block in both Stonetop books, A to Z — {n} creatures, "
+        "spirits and people, each linked to its block and the page it lives on."
+    ),
+    "letters": "Jump to a letter",
+}
+
+
+def bestiary_strings(ui: dict | None = None, count: int = 0) -> dict:
+    """The bestiary's own words, in one language (``ui`` → ``bestiary``),
+    falling back to English key by key, with ``{n}`` filled in."""
+    got = {**BESTIARY_FALLBACK, **(((ui or {}).get("bestiary")) or {})}
+    return {k: str(v).replace("{n}", str(count)) for k, v in got.items()}
+
+
+# Leading articles a reader skips when looking a name up ("The Bear of
+# Winter" under B, "Il Cacciatore Pallido" under C). Elided forms ("l'")
+# take no space after them.
+_ARTICLES = {
+    "en": r"the|a|an",
+    "de": r"der|die|das|ein|eine",
+    "fr": r"le|la|les|un|une",
+    "es": r"el|la|los|las|un|una",
+    "pt-BR": r"o|a|os|as|um|uma",
+    "it": r"il|lo|la|i|gli|le|un|una|uno",
+    "nl": r"de|het|een",
+    "hu": r"a|az|egy",
+}
+_ELIDED = {"fr": r"l['’]", "it": r"l['’]|un['’]|dell['’]"}
+
+# Japanese: kana rows (あ行…わ行), the order of a Japanese index.
+_KANA_ROWS = "アカサタナハマヤラワ"
+_KANA_ROW_ENDS = "オコソトノホモヨロン"
+# Korean: the syllable's initial consonant, tense consonants filed with
+# their plain ones (ㄲ under ㄱ), as a Korean dictionary groups them.
+_HANGUL_INITIALS = "ㄱㄱㄴㄷㄷㄹㅁㅂㅂㅅㅅㅇㅈㅈㅊㅋㅌㅍㅎ"
+
+
+def _strip_article(name: str, code: str) -> str:
+    s = name.strip()
+    el = _ELIDED.get(code)
+    if el:
+        s = re.sub(rf"^(?:{el})(?=\w)", "", s, flags=re.I)
+    arts = _ARTICLES.get(code)
+    if arts:
+        s = re.sub(rf"^(?:{arts})\s+", "", s, flags=re.I)
+    return s
+
+
+def _fold(s: str) -> str:
+    """Case- and accent-folded, so É files with E and Ё with Е."""
+    import unicodedata
+
+    s = unicodedata.normalize("NFD", s.casefold())
+    return "".join(c for c in s if not unicodedata.combining(c))
+
+
+def _bestiary_sort(name: str, code: str = "en") -> tuple[str, str]:
+    """(letter, sort key) for a name in one language."""
+    s = _strip_article(name, code)
+    s = re.sub(r"^[^\w]+", "", s)
+    # hiragana files with katakana (からくり among the カ names)
+    key = _fold("".join(
+        chr(ord(c) + 0x60) if 0x3041 <= ord(c) <= 0x3096 else c for c in s
+    ))
+    first = s[:1]
+    if not first:
+        return "#", key
+    if first.isdigit():
+        return "#", key
+    o = ord(first)
+    if 0xAC00 <= o <= 0xD7A3:  # a Hangul syllable
+        return _HANGUL_INITIALS[(o - 0xAC00) // 588], key
+    if 0x3041 <= o <= 0x3096:  # hiragana → katakana
+        first = chr(o + 0x60)
+        o = ord(first)
+    if 0x30A1 <= o <= 0x30FA:
+        import unicodedata
+
+        base = unicodedata.normalize("NFD", first)[0]
+        # small kana and ヴ file with their full-size rows
+        base = {"ァ": "ア", "ィ": "イ", "ゥ": "ウ", "ェ": "エ", "ォ": "オ",
+                "ッ": "ツ", "ャ": "ヤ", "ュ": "ユ", "ョ": "ヨ", "ヮ": "ワ",
+                "ヵ": "カ", "ヶ": "ケ"}.get(base, base)
+        for row, end in zip(_KANA_ROWS, _KANA_ROW_ENDS):
+            if base <= end:
+                return row, key
+        return "ワ", key
+    if 0x4E00 <= o <= 0x9FFF or 0x3400 <= o <= 0x4DBF:
+        return "他", "￿" + key  # kanji with no reading to file by: last
+    return key[:1].upper(), key
+
+
 def _bestiary_key(name: str) -> str:
     """Sort key: "The Bear of Winter" files under B, as a reader expects."""
     n = re.sub(r"^(the|a|an)\s+", "", name.strip().lower())
@@ -1924,55 +2043,173 @@ def bestiary_entries(articles: list[dict], previews: dict) -> list[dict]:
     return entries
 
 
-def bestiary_excerpt(count: int) -> str:
-    return (
-        f"Every stat block in both Stonetop books, A to Z — {count} "
-        "creatures, spirits and people, each linked to its block and the "
-        "page it lives on."
-    )
+def bestiary_excerpt(count: int, ui: dict | None = None) -> str:
+    return bestiary_strings(ui, count)["excerpt"]
 
 
-def bestiary_html(entries: list[dict]) -> str:
-    """The page body: a letter bar, then one line per stat block."""
+def bestiary_html(
+    entries: list[dict],
+    *,
+    ui: dict | None = None,
+    code: str = "en",
+    rel_prefix: str = "",
+    by_english: bool = False,
+) -> str:
+    """The page body: a letter bar, then one line per stat block.
+
+    ``entries`` carry ``name``/``from`` in the page's language and, for a
+    translation, ``page_href`` (a sibling page, or one up in English) and
+    ``en_name``. ``by_english`` files a translated name under its English
+    one — Chinese, which has no alphabet to file by without a reading.
+    """
     e = html.escape
+    words = bestiary_strings(ui, len(entries))
+    rows = []
+    for ent in entries:
+        filed = (ent.get("en_name") or ent["name"]) if by_english else ent["name"]
+        letter, key = _bestiary_sort(filed, "en" if by_english else code)
+        rows.append((letter, key, ent))
+    rows.sort(key=lambda r: (r[1], r[2]["from"]))
     letters: list[str] = []
     groups: dict[str, list[dict]] = {}
-    for ent in entries:
-        key = _bestiary_key(ent["name"])
-        letter = key[:1].upper() if key[:1].isalpha() else "#"
+    for letter, _key, ent in rows:
         if letter not in groups:
             groups[letter] = []
             letters.append(letter)
         groups[letter].append(ent)
+    # Names opening on a digit, and kanji with no reading, go last.
+    # In a language with its own script, a name still in Latin letters (a
+    # page not translated yet) files after the native alphabet.
+    order = {l: i for i, l in enumerate(letters)}
+    native = code not in ("ru", "uk", "ja", "ko") or by_english
+    letters.sort(
+        key=lambda l: (
+            l in ("#", "他"),
+            not native and l.isascii(),
+            order[l],
+        )
+    )
 
     def letter_id(letter: str) -> str:
-        return "letter-" + ("num" if letter == "#" else letter.lower())
+        if letter == "#":
+            return "letter-num"
+        if letter == "他":
+            return "letter-other"
+        return "letter-" + letter.lower()
 
     parts = [
-        f'<h1 class="page-title">{e(BESTIARY_TITLE)}</h1>',
-        f'<p class="lede">Every stat block in both books, A to Z — '
-        f"{len(entries)} of them. Hover a name for the whole block; click it "
-        "to go there.</p>",
-        '<p class="be-note">Not in the printed books: the wiki assembles '
-        "this list from their stat blocks.</p>",
-        '<p class="be-letters">'
-        + " ".join(f'<a href="#{letter_id(l)}">{e(l)}</a>' for l in letters)
-        + "</p>",
+        f'<h1 class="page-title">{e(words["title"])}</h1>',
+        f'<p class="lede">{e(words["lede"])}</p>',
+        f'<p class="be-note">{e(words["note"])}</p>',
+        f'<nav class="be-letters" aria-label="{e(words["letters"])}">'
+        + "".join(f'<a href="#{e(letter_id(l))}">{e(l)}</a>' for l in letters)
+        + "</nav>",
     ]
     for letter in letters:
-        parts.append(f'<h2 id="{letter_id(letter)}">{e(letter)}</h2>')
+        parts.append(f'<h2 id="{e(letter_id(letter))}">{e(letter)}</h2>')
         items = []
         for ent in groups[letter]:
-            href = f'{ent["slug"]}.html#{ent["id"]}'
+            page = ent.get("page_href") or f'{ent["slug"]}.html'
+            href = f'{page}#{ent["id"]}'
+            icon = ent["icon"]
+            if rel_prefix:
+                icon = icon.replace('src="images/', f'src="{rel_prefix}images/')
+            lang = ' lang="en"' if ent.get("english") else ""
             items.append(
-                f'<li>{ent["icon"]}<a class="wiki-link" href="{e(href)}" '
+                f"<li{lang}>{icon}"
+                f'<a class="wiki-link" href="{e(href)}" '
                 f'data-slug="{e(ent["slug"])}">{e(ent["name"])}</a> '
                 f'<span class="be-from"><a class="wiki-link" '
-                f'href="{e(ent["slug"])}.html" data-slug="{e(ent["slug"])}">'
+                f'href="{e(page)}" data-slug="{e(ent["slug"])}">'
                 f'{e(ent["from"])}</a></span></li>'
             )
         parts.append('<ul class="bestiary">' + "".join(items) + "</ul>")
     return "\n".join(parts)
+
+
+_LOCAL_STAT_RE = re.compile(
+    r'<div class="stat-block[^"]*" id="([^"]+)"><h3 class="stat-name">(.*?)</h3>',
+    re.S,
+)
+
+
+def write_localized_bestiary(
+    out: Path,
+    articles: list[dict],
+    section_navs: dict[str, list[dict]],
+    source: dict,
+    targets: list[dict],
+    entries: list[dict],
+) -> list[str]:
+    """Write ``<out>/<lang>/bestiary.html`` for every language with pages.
+
+    Generated, like the arcana indexes: each name is read off that
+    language's own page (the stat block keeps its English id there), so a
+    creature is listed as its translation calls it and files under its own
+    letter; a page not yet translated lends its English name and link.
+    Runs after the language's pages are written.
+    """
+    written: list[str] = []
+    live = [t for t in targets if t.get("pages")]
+    art = next((a for a in articles if a.get("kind") == "bestiary"), None)
+    if not live or not art or not entries:
+        return written
+    for locale in live:
+        code = locale["code"]
+        lang_dir = out / code
+        ui = locale.get("ui") or {}
+        pages = locale["pages"]
+        titles = locale.get("titles") or {}
+        names: dict[str, dict[str, str]] = {}
+        loc_entries = []
+        for ent in entries:
+            slug = ent["slug"]
+            path = lang_dir / f"{slug}.html"
+            local = slug in pages and path.exists()
+            if local and slug not in names:
+                text = path.read_text(encoding="utf-8")
+                names[slug] = {
+                    sid: html.unescape(re.sub(r"<[^>]+>", "", h)).strip()
+                    for sid, h in _LOCAL_STAT_RE.findall(text)
+                }
+            name = (names.get(slug) or {}).get(ent["id"]) if local else None
+            page_title = (pages.get(slug) or {}).get("title") or titles.get(slug)
+            loc_entries.append(
+                {
+                    **ent,
+                    "name": name or ent["name"],
+                    "en_name": ent["name"],
+                    "english": not name,
+                    "from": page_title if local and page_title else ent["from"],
+                    "page_href": f"{slug}.html" if local else f"../{slug}.html",
+                }
+            )
+        words = bestiary_strings(ui, len(loc_entries))
+        body = bestiary_html(
+            loc_entries,
+            ui=ui,
+            code=code,
+            rel_prefix="../",
+            by_english=code.startswith("zh"),
+        )
+        html_out = page_shell(
+            words["title"],
+            BESTIARY_SLUG,
+            body,
+            articles,
+            rel_prefix="../",
+            section_navs=section_navs,
+            description=words["excerpt"],
+            locale=locale,
+            alternates=alternates_for(BESTIARY_SLUG, source, targets, have=live),
+            translated_slugs=set(pages) | generated_slugs(articles),
+        )
+        lang_dir.mkdir(parents=True, exist_ok=True)
+        (lang_dir / f"{BESTIARY_SLUG}.html").write_text(html_out, encoding="utf-8")
+        written.append(f"{code}/{BESTIARY_SLUG}.html")
+    if written:
+        print(f"  i18n: {len(written)} bestiaries")
+    return written
 
 
 # What each of Book II's two map spreads labels, in reading order. The
