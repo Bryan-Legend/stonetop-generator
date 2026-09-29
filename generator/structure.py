@@ -137,7 +137,7 @@ DAMAGE_ROLL_TITLE = "Roll damage — Shift: advantage · Ctrl: disadvantage"
 def set_translation(
     tm, ui: dict | None = None, titles: dict[str, str] | None = None
 ) -> None:
-    global _TM, _UI, _PAGE_WORDS, _PAGE_AFTER, _TITLES
+    global _TM, _UI, _PAGE_WORDS, _PAGE_AFTER, _BOOK_WORDS, _TITLES
     _TM = tm
     # A page ref carries no label of its own ("(page 200)"), so the link is
     # named after the page it points at. On a translated page that name is
@@ -156,6 +156,16 @@ def set_translation(
     if isinstance(after, str):
         after = [after]
     _PAGE_AFTER = tuple(w for w in after if isinstance(w, str) and w.strip())
+    # "(Buch II, Seite 272)", "（第二册，page 272）", "(제2권, 272쪽)": the
+    # language's own name for a book, cut around its numeral, so a reference
+    # into the other book links there and not into the current one.
+    stems = []
+    books = (ui or {}).get("books") or {}
+    for label in (books.get("book1"), books.get("book2")):
+        m = _BOOK_NUMERAL_RE.search(label or "")
+        if m:
+            stems.append((label[: m.start()], label[m.end():]))
+    _BOOK_WORDS = tuple(sorted(set(stems)))
 
 
 def _page_res() -> tuple:
@@ -196,6 +206,43 @@ def _page_res() -> tuple:
 
 _PAGE_WORDS: tuple = ()
 _PAGE_AFTER: tuple = ()
+_BOOK_WORDS: tuple = ()
+# The numeral in a book's name, as the translations write it.
+_BOOK_NUMERAL_RE = re.compile(r"II|I|2|1|二|一|Ⅱ|Ⅰ")
+# Chinese and Japanese translators use either measure word for a volume.
+_VOLUME_WORDS = {"巻": "巻|卷|册|冊", "卷": "巻|卷|册|冊", "册": "巻|卷|册|冊", "冊": "巻|卷|册|冊"}
+
+
+def _book_ref_re():
+    """The localized cross-book reference, or None for English."""
+    if not _BOOK_WORDS:
+        return None
+    hit = _PAGE_RE_CACHE.get(("book", _BOOK_WORDS, _PAGE_WORDS, _PAGE_AFTER))
+    if hit is not None:
+        return hit
+    fs = r"[\x04-\x07]*"
+    alts = []
+    for pre, post in _BOOK_WORDS:
+        pre_re = r"\s*".join(re.escape(c) for c in pre.strip().split()) if pre.strip() else ""
+        post_s = post.strip()
+        post_re = _VOLUME_WORDS.get(post_s) or (re.escape(post_s) if post_s else "")
+        alts.append(
+            (pre_re + (fs + r"\s*" if pre_re else ""))
+            + fs + r"(?P<num{}>II|I|2|1|二|一|Ⅱ|Ⅰ)".format(len(alts))
+            + fs
+            + (r"\s*(?:" + post_re + ")" + fs if post_re else "")
+        )
+    book = "(?:" + "|".join(alts) + ")"
+    before = "(?:pages?|" + "|".join(re.escape(w) + "s?" for w in _PAGE_WORDS) + ")" if _PAGE_WORDS else "(?:pages?)"
+    nums = r"(?P<pages>" + PAGE_NUMS + r")"
+    pagepart = r"(?P<pagepart>" + before + fs + r"\s+" + fs + nums
+    if _PAGE_AFTER:
+        after = "(?:" + "|".join(re.escape(w) for w in _PAGE_AFTER) + ")"
+        pagepart += r"|(?P<pages2>\d+(?:\s*[,、，–—~〜～-]\s*\d+)*)\s*" + after
+    pagepart += ")"
+    rx = re.compile(book + r"\s*[,:、，]?\s*" + fs + pagepart, re.IGNORECASE)
+    _PAGE_RE_CACHE[("book", _BOOK_WORDS, _PAGE_WORDS, _PAGE_AFTER)] = rx
+    return rx
 _PAGE_RE_CACHE: dict = {}
 _TITLES: dict[str, str] = {}
 
@@ -709,6 +756,28 @@ def linkify_pages(
         work,
         flags=re.IGNORECASE,
     )
+
+    book_rx = _book_ref_re()
+    if book_rx is not None:
+
+        def repl_local_book(m: re.Match) -> str:
+            full = m.group(0)
+            num = next(v for k, v in m.groupdict().items() if k.startswith("num") and v)
+            book_id = "book2" if num in ("II", "2", "二", "Ⅱ") else "book1"
+            if book_id != current_book and (lookups is None or book_id not in lookups):
+                return store(html.escape(full))
+            cut = m.start("pagepart") - m.start()
+            prefix, rest = full[:cut], full[cut:]
+            raw = m.group("pages") or m.group("pages2") or ""
+            pages = parse_page_nums(
+                re.sub(r"[~〜～]", "-", re.sub(r"[、，]", ",", raw))
+            )
+            kept = "".join(ch for ch in rest if ch in _FMT_SET)
+            return store(
+                html.escape(prefix) + links_for_pages(pages, book_id=book_id) + kept
+            )
+
+        work = book_rx.sub(repl_local_book, work)
 
     # Bold cross-ref immediately followed by a page ref:
     # "**Mudslides** (page 376)" / "**Ghosts (**page 76)" → make the *bold*

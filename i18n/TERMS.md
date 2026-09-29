@@ -175,6 +175,7 @@ Pull Together · Deploy · Seasons Change · Death's Door.
 - **Sheet headings:** 배경 (1개 선택) · 본능 (1개 선택) · 외모 · 출신지와 이름 · 능력치 · 특별 소지품 · 무브 · 소개
 - **Names:** 큰숲 (Great Wood) · 마시에지 (Marshedge) · 장벽 고개 (Barrier Pass) · 고르딘 광산 (Gordin's Delve) · 언덕 민족 (Hillfolk) · 계단 지대 (Steplands) · 고리 성벽 (Ringwall) · 옛길 (Old Roads) · 무너진 탑 (Ruined Tower) · 페리어 늪 (Ferrier's Fen) · 만든 이들 (Makers) · 아래 것들 (Things Below) · 마지막 문 (Last Door) · 창백한 사냥꾼 (Pale Hunter) · 페이 (Fae) · 다누 · 헬리오르 · 아라티스 · 토르 (Tor) · 리고스 (Lygos) · 맨마치 (Manmarch) · 크린윈 (Crinwin) · 수아라칸 (suarachan)
 - **Tags:** 근접 (hand) · 지근 (close) · 근거리 (near) · 원거리 (far) · 간격 (reach) · 관통 (piercing) · 범위 (area) · 집단 (group)
+- **Whole-language pass (2026-09-29; binding list in `i18n/_work/ko-brief.md`):** GM/NPC/PC stay Latin · harm = 피해 · Armor = 방어구 · site = 장소 · expedition = 원정 · Homefront = 후방 · countdown = 카운트다운 · Readiness = 대비 (never 태세) · Bolster = 단단히 준비하기 (hold 준비) · Order Followers = 추종자에게 명령하기 · Make a Plan = 계획 세우기 · Burn Brightly = 활활 타오르기 · Stock (Blessed) = 비축 · threat types: 재앙 · 짐승 · 마법적 존재 · 기관 · 악당 · 오합지졸 · 와일드카드 · 맥거핀 · impending doom = 다가오는 파멸 · grim portents = 불길한 징조 · the fiction = 허구 · Hooks (heading) = 떡밥 · adept = 수행자 · Highway = 큰길 · Stormcatcher = 폭풍잡이 · Lady of Crows = 까마귀 부인 · Almtakers = 공물받이들 · Pavilion of the Gods = 신들의 정자 · Cistern = 저수조 · Utterwell = 끝우물 · butcherbird = 때까치 · hdour = 흐도우르 · Yaarowslow = 야로우슬로우 · fragile = 깨지기 쉬움 · "(page N)" = "(N쪽)" (`page_words_after` in `ui/ko.json`; the linker reads number-first refs and "제2권, N쪽" cross-book refs)
 
 ## zh-Hans — 简体中文 (zh-Hant mirrors with traditional forms)
 
@@ -667,7 +668,7 @@ All 20 languages (zh-Hant mirrors zh-Hans). *reduced*/*empowered* and "holy ligh
 | Consecrated Flame | de Geweihte Flamme · fr Flamme Consacrée · it Fiamma Consacrata · es Llama Consagrada · pt-BR Chama Consagrada · pl Uświęcony Płomień · nl Gewijde Vlam · sv Helgad Låga · da Indviet Flamme · nb Innviet Flamme · cs Posvěcený Plamen · fi Pyhitetty Liekki · hu Megszentelt Láng · tr Kutsanmış Alev · ru Освящённое Пламя · uk Освячене Полум'я · ja 聖別の炎 · ko 축성된 불꽃 · zh 圣化之火 |
 | Strengthen Your Bond | de Die Bindung stärken · fr Renforcer le Lien · it Rafforzare il Legame · es Fortalecer el Vínculo · pt-BR Fortalecer o Vínculo · pl Wzmocnienie Więzi · nl De Band Versterken · sv Stärka Bandet · da/nb Styrke Båndet · cs Posílit Pouto · ru Укрепить Узы · uk Зміцнити Узи · ja 絆を深める · ko 유대 강화하기 · zh 加深羁绊 (tr·hu·fi: table above) |
 | Helior the Daybringer | de der Tagbringer · fr le Porteur du Jour · it il Portatore del Giorno · es el Traedor del Día · pt-BR o Portador do Dia · pl Przynoszący Dzień · nl de Dagbrenger · sv/da/nb Dagbringaren/Dagbringeren · cs Přinašeč Dne · fi Päivänkantaja · hu a Nappalhozó · tr Günü Getiren · ru Приносящий День · uk Денносець · ja 昼をもたらす者 · ko 낮을 가져오는 자 · zh 携昼者 |
-| Pavilion of the Gods (ja · ko · es · pt-BR, from existing pages) | ja 神々の殿 · ko 신들의 전각 · es Pabellón de los Dioses · pt-BR Pavilhão dos Deuses |
+| Pavilion of the Gods (ja · ko · es · pt-BR, from existing pages) | ja 神々の殿 · ko 신들의 정자 · es Pabellón de los Dioses · pt-BR Pavilhão dos Deuses |
 
 ### Marshal — corpus route (2026-09-15)
 

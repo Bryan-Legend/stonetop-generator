@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>플레이어 무브 — 스톤탑 웹판</title>
+  <meta name="description" content="스톤탑(Stonetop)의 기본 무브: 발동 조건과 결과, 그리고 GM을 위한 해설과 실제 플레이 예시.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://stonetop-wiki.github.io/ko/player-moves.html">
+  <meta property="og:site_name" content="스톤탑 웹판">
+  <meta property="og:title" content="플레이어 무브 — 스톤탑 웹판">
+  <meta property="og:description" content="스톤탑(Stonetop)의 기본 무브: 발동 조건과 결과, 그리고 GM을 위한 해설과 실제 플레이 예시.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://stonetop-wiki.github.io/ko/player-moves.html">
+  <meta property="og:image" content="https://stonetop-wiki.github.io/images/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://stonetop-wiki.github.io/player-moves.html">
+  <link rel="alternate" hreflang="es" href="https://stonetop-wiki.github.io/es/player-moves.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://stonetop-wiki.github.io/pt-BR/player-moves.html">
+  <link rel="alternate" hreflang="de" href="https://stonetop-wiki.github.io/de/player-moves.html">
+  <link rel="alternate" hreflang="fr" href="https://stonetop-wiki.github.io/fr/player-moves.html">
+  <link rel="alternate" hreflang="pl" href="https://stonetop-wiki.github.io/pl/player-moves.html">
+  <link rel="alternate" hreflang="it" href="https://stonetop-wiki.github.io/it/player-moves.html">
+  <link rel="alternate" hreflang="ru" href="https://stonetop-wiki.github.io/ru/player-moves.html">
+  <link rel="alternate" hreflang="ja" href="https://stonetop-wiki.github.io/ja/player-moves.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://stonetop-wiki.github.io/zh-Hans/player-moves.html">
+  <link rel="alternate" hreflang="ko" href="https://stonetop-wiki.github.io/ko/player-moves.html">
+  <link rel="alternate" hreflang="x-default" href="https://stonetop-wiki.github.io/player-moves.html">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="../images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="stylesheet" href="../css/wiki.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://stonetop-wiki.github.io/ko/player-moves.html#article","url":"https://stonetop-wiki.github.io/ko/player-moves.html","mainEntityOfPage":"https://stonetop-wiki.github.io/ko/player-moves.html","headline":"플레이어 무브","name":"플레이어 무브","inLanguage":"ko","author":{"@type":"Person","name":"Jeremy Strandberg"},"publisher":{"@type":"Organization","name":"Lampblack & Brimstone","url":"https://lampblackandbrimstone.com/"},"license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"about":{"@id":"https://stonetop-wiki.github.io/#game"},"isPartOf":[{"@id":"https://stonetop-wiki.github.io/#book1"},{"@id":"https://stonetop-wiki.github.io/#website"}],"description":"스톤탑(Stonetop)의 기본 무브: 발동 조건과 결과, 그리고 GM을 위한 해설과 실제 플레이 예시.","pagination":"207-236"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Stonetop","item":"https://stonetop-wiki.github.io/ko/"},{"@type":"ListItem","position":2,"name":"플레이어 무브","item":"https://stonetop-wiki.github.io/ko/player-moves.html"}]}]}</script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4536408101e64ba59733ed69779dd45c"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body data-wiki-root="../">
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="탐색 메뉴 열기·닫기">☰</button>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="wiki-title" href="index.html">스톤탑 웹판</a>
+        <input type="search" id="nav-filter" class="nav-filter" placeholder="위키 검색…" autocomplete="off" aria-label="위키 검색">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <nav class="toc" aria-label="주제">
+        <ul id="nav-list">
+          <li class="nav-book-label">제1권</li>
+<li class="has-sections"><a href="welcome-to-stonetop.html">스톤탑에 오신 것을 환영합니다</a><ul class="nav-sections"><li class="nav-section"><a href="welcome-to-stonetop.html#expectations">기대</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#the-setting">배경</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#why-play">왜 플레이하는가?</a></li></ul></li>
+<li class="has-sections"><a href="getting-started.html">시작하기</a><ul class="nav-sections"><li class="nav-section"><a href="getting-started.html#review-the-setting">세계관 검토하기</a></li><li class="nav-section"><a href="getting-started.html#set-expectations">기대치 정하기</a></li><li class="nav-section"><a href="getting-started.html#discuss-tone-and-content">분위기와 내용 논의하기</a></li><li class="nav-section"><a href="getting-started.html#create-characters">캐릭터 만들기</a></li><li class="nav-section"><a href="getting-started.html#intro-the-pcs">PC 소개하기</a></li><li class="nav-section"><a href="getting-started.html#let-spring-burst-forth">봄을 터뜨릴</a></li><li class="nav-section"><a href="getting-started.html#after-the-session">세션이 끝난 뒤</a></li></ul></li>
+<li class="has-sections"><a href="playing-the-game.html">게임 플레이</a><ul class="nav-sections"><li class="nav-section"><a href="playing-the-game.html#the-conversation">대화</a></li><li class="nav-section"><a href="playing-the-game.html#your-agenda">너의 목표</a></li><li class="nav-section"><a href="playing-the-game.html#flow-of-play">플레이의 흐름</a></li><li class="nav-section"><a href="playing-the-game.html#dice-and-moves">주사위와 무브</a></li><li class="nav-section"><a href="playing-the-game.html#your-principles">너의 원칙</a></li><li class="nav-section"><a href="playing-the-game.html#other-things-to-do">그 밖에 할 일</a></li><li class="nav-section"><a href="playing-the-game.html#your-character">너의 캐릭터</a></li><li class="nav-section"><a href="playing-the-game.html#arcana">아르카눔</a></li><li class="nav-section"><a href="playing-the-game.html#followers">추종자</a></li><li class="nav-section"><a href="playing-the-game.html#your-home">너의 집</a></li><li class="nav-section"><a href="playing-the-game.html#moves">무브</a></li><li class="nav-section"><a href="playing-the-game.html#gear-and-possessions">장비와 소지품</a></li><li class="nav-section"><a href="playing-the-game.html#if-you-want-to">이런 걸 하고 싶다면…</a></li></ul></li>
+<li class="nav-hub has-sections"><a href="playbooks-inserts.html">플레이북과 별지</a><ul class="nav-sections"><li class="nav-section"><a href="the-blessed.html">축복받은 자</a></li><li class="nav-section"><a href="the-fox.html">여우</a></li><li class="nav-section"><a href="the-heavy.html">덩치</a></li><li class="nav-section"><a href="the-judge.html">재판관</a></li><li class="nav-section"><a href="the-lightbearer.html">빛을 든 자</a></li><li class="nav-section"><a href="the-marshal.html">통솔자</a></li><li class="nav-section"><a href="the-ranger.html">순찰자</a></li><li class="nav-section"><a href="the-seeker.html">탐구자</a></li><li class="nav-section"><a href="the-would-be-hero.html">영웅 지망생</a></li><li class="nav-section"><a href="inserts.html">별지</a></li><li class="nav-section"><a href="inventory.html">소지품</a></li><li class="nav-section"><a href="animal-companion.html">동물 동료</a></li><li class="nav-section"><a href="crew.html">부대</a></li><li class="nav-section"><a href="initiates-of-danu.html">다누의 입문자</a></li><li class="nav-section"><a href="invocations.html">기원</a></li><li class="nav-section"><a href="followers.html">추종자</a></li><li class="nav-section"><a href="ghost.html">유령</a></li><li class="nav-section"><a href="revenant.html">돌아온 자</a></li><li class="nav-section"><a href="thrall.html">예속자</a></li><li class="nav-section"><a href="steading-playbook.html">정착지 플레이북</a></li></ul></li>
+<li class="has-sections"><a href="running-the-game.html">게임 진행</a><ul class="nav-sections"><li class="nav-section"><a href="running-the-game.html#your-agenda">너의 의제</a></li><li class="nav-section"><a href="running-the-game.html#the-core-loop">핵심 순환</a></li><li class="nav-section"><a href="running-the-game.html#the-spotlight">스포트라이트</a></li><li class="nav-section"><a href="running-the-game.html#scenes-and-loose-play">장면과 느슨한 플레이</a></li><li class="nav-section"><a href="running-the-game.html#your-gm-moves">너의 GM 무브</a></li><li class="nav-section"><a href="running-the-game.html#example-of-play">플레이 예시</a></li><li class="nav-section"><a href="running-the-game.html#your-principles">너의 원칙</a></li><li class="nav-section"><a href="running-the-game.html#other-things-to-do">그 밖에 할 일</a></li><li class="nav-section"><a href="running-the-game.html#gming-is-a-practice">GM은 수련이다</a></li><li class="nav-section"><a href="running-the-game.html#prep">준비</a></li></ul></li>
+<li class="has-sections current"><a href="player-moves.html">플레이어 무브</a><ul class="nav-sections"><li class="nav-section"><a href="player-moves.html#defy-danger">위험에 맞서기</a></li><li class="nav-section"><a href="player-moves.html#aid">돕기</a></li><li class="nav-section"><a href="player-moves.html#clash">맞붙기</a></li><li class="nav-section"><a href="player-moves.html#defend">지키기</a></li><li class="nav-section"><a href="player-moves.html#interfere">방해하기</a></li><li class="nav-section"><a href="player-moves.html#know-things">지식 떠올리기</a></li><li class="nav-section"><a href="player-moves.html#let-fly">쏘아 보내기</a></li><li class="nav-section"><a href="player-moves.html#seek-insight">통찰 구하기</a></li><li class="nav-section"><a href="player-moves.html#special-moves">특수 무브</a></li><li class="nav-section"><a href="player-moves.html#advantage-disadvantage">유리/불리</a></li><li class="nav-section"><a href="player-moves.html#burn-brightly">활활 타오르기</a></li><li class="nav-section"><a href="player-moves.html#end-of-session">세션 종료</a></li><li class="nav-section"><a href="player-moves.html#deaths-door">죽음의 문턱</a></li></ul></li>
+<li class="has-sections"><a href="harm-healing.html">피해와 치유</a><ul class="nav-sections"><li class="nav-section"><a href="harm-healing.html#hit-points-and-damage">HP와 피해</a></li><li class="nav-section"><a href="harm-healing.html#debilities">쇠약</a></li><li class="nav-section"><a href="harm-healing.html#problematic-wounds">골치 아픈 상처</a></li><li class="nav-section"><a href="harm-healing.html#death-and-dying">죽음과 죽어 감</a></li></ul></li>
+<li class="has-sections"><a href="first-adventure.html">첫 모험</a><ul class="nav-sections"><li class="nav-section"><a href="first-adventure.html#structure">구조</a></li><li class="nav-section"><a href="first-adventure.html#background">배경</a></li><li class="nav-section"><a href="first-adventure.html#setup-questions">도입 설정 질문</a></li><li class="nav-section"><a href="first-adventure.html#setting-the-scene">장면 열기</a></li><li class="nav-section"><a href="first-adventure.html#dropping-the-hook">미끼 던지기</a></li><li class="nav-section"><a href="first-adventure.html#heading-out">길을 나서며</a></li></ul></li>
+<li class="has-sections"><a href="threats.html">위협</a><ul class="nav-sections"><li class="nav-section"><a href="threats.html#when-to-write-up-threats">위협을 적어 둘 때</a></li><li class="nav-section"><a href="threats.html#writing-a-threat">위협 작성하기</a></li><li class="nav-section"><a href="threats.html#example-threats">위협의 예</a></li><li class="nav-section"><a href="threats.html#updating-threats">위협 갱신하기</a></li></ul></li>
+<li class="has-sections"><a href="expeditions.html">원정</a><ul class="nav-sections"><li class="nav-section"><a href="expeditions.html#preparations">준비</a></li><li class="nav-section"><a href="expeditions.html#running-the-journey">여정 진행하기</a></li><li class="nav-section"><a href="expeditions.html#player-moves">플레이어 무브</a></li><li class="nav-section"><a href="expeditions.html#going-home">집으로 돌아가기</a></li><li class="nav-section"><a href="expeditions.html#what-to-prep">무엇을 준비할까</a></li></ul></li>
+<li class="has-sections"><a href="sites.html">장소</a><ul class="nav-sections"><li class="nav-section"><a href="sites.html#environmental-storytelling">환경 서사</a></li><li class="nav-section"><a href="sites.html#running-sites">장소 진행하기</a></li><li class="nav-section"><a href="sites.html#exploring-sites">장소 탐험하기</a></li><li class="nav-section"><a href="sites.html#creating-sites">장소 만들기</a></li><li class="nav-section"><a href="sites.html#the-green-lords-tomb">녹색 군주의 무덤</a></li></ul></li>
+<li class="has-sections"><a href="dangers.html">위험</a><ul class="nav-sections"><li class="nav-section"><a href="dangers.html#hazards">위해 요소</a></li><li class="nav-section"><a href="dangers.html#monsters">괴물</a></li><li class="nav-section"><a href="dangers.html#running-combat">전투 진행하기</a></li></ul></li>
+<li class="has-sections"><a href="discoveries.html">발견</a><ul class="nav-sections"><li class="nav-section"><a href="discoveries.html#clues">단서</a></li><li class="nav-section"><a href="discoveries.html#sites">장소</a></li><li class="nav-section"><a href="discoveries.html#encounters">조우</a></li><li class="nav-section"><a href="discoveries.html#opportunities">기회</a></li><li class="nav-section"><a href="discoveries.html#artifacts">유물</a></li><li class="nav-section"><a href="discoveries.html#arcana">아르카눔</a></li></ul></li>
+<li class="has-sections"><a href="npcs-followers.html">NPC와 추종자</a><ul class="nav-sections"><li class="nav-section"><a href="npcs-followers.html#npcs-in-play">플레이 중의 NPC</a></li><li class="nav-section"><a href="npcs-followers.html#creating-npcs">NPC 만들기</a></li><li class="nav-section"><a href="npcs-followers.html#follower-moves">추종자 무브</a></li><li class="nav-section"><a href="npcs-followers.html#order-followers">추종자에게 명령하기</a></li><li class="nav-section"><a href="npcs-followers.html#strengthen-your-bond">유대 다지기</a></li><li class="nav-section"><a href="npcs-followers.html#followers-in-play">플레이 중의 추종자</a></li><li class="nav-section"><a href="npcs-followers.html#creating-followers">추종자 만들기</a></li><li class="nav-section"><a href="npcs-followers.html#updating-followers">추종자 갱신하기</a></li><li class="nav-section"><a href="npcs-followers.html#losing-followers">추종자 잃기</a></li></ul></li>
+<li class="has-sections"><a href="homefront.html">후방</a><ul class="nav-sections"><li class="nav-section"><a href="homefront.html#bringing-the-village-to-life">마을에 숨을 불어넣기</a></li><li class="nav-section"><a href="homefront.html#running-the-homefront">후방 진행하기</a></li><li class="nav-section"><a href="homefront.html#aftermath">여파</a></li><li class="nav-section"><a href="homefront.html#the-steading-playbook">정착지 플레이북</a></li><li class="nav-section"><a href="homefront.html#seasons-change">계절의 변화</a></li><li class="nav-section"><a href="homefront.html#player-moves">플레이어 무브</a></li><li class="nav-section"><a href="homefront.html#bolster">단단히 준비하기</a></li><li class="nav-section"><a href="homefront.html#convalesce">요양하기</a></li><li class="nav-section"><a href="homefront.html#deploy">파견하기</a></li><li class="nav-section"><a href="homefront.html#level-up">레벨 올리기</a></li><li class="nav-section"><a href="homefront.html#make-a-plan">계획 세우기</a></li><li class="nav-section"><a href="homefront.html#meet-with-disaster">재난 맞닥뜨리기</a></li><li class="nav-section"><a href="homefront.html#muster">소집하기</a></li><li class="nav-section"><a href="homefront.html#pull-together">품앗이하기</a></li><li class="nav-section"><a href="homefront.html#trade-barter">교역과 물물교환</a></li><li class="nav-section"><a href="homefront.html#what-to-prep">무엇을 준비할까</a></li></ul></li>
+<li><a href="writing-moves-love-letters.html">무브와 러브레터 쓰기</a></li>
+<li class="has-sections"><a href="the-game-ongoing.html">이어지는 게임</a><ul class="nav-sections"><li class="nav-section"><a href="the-game-ongoing.html#ending-a-session">세션 끝내기</a></li><li class="nav-section"><a href="the-game-ongoing.html#between-sessions">세션 사이에</a></li><li class="nav-section"><a href="the-game-ongoing.html#starting-a-session">세션 시작하기</a></li><li class="nav-section"><a href="the-game-ongoing.html#pacing">속도</a></li><li class="nav-section"><a href="the-game-ongoing.html#advancement">성장</a></li><li class="nav-section"><a href="the-game-ongoing.html#retiring-pcs">PC 은퇴시키기</a></li><li class="nav-section"><a href="the-game-ongoing.html#new-pcs">새 PC</a></li><li class="nav-section"><a href="the-game-ongoing.html#conflict-between-pcs">PC 사이의 갈등</a></li><li class="nav-section"><a href="the-game-ongoing.html#time-skips">시간 건너뛰기</a></li><li class="nav-section"><a href="the-game-ongoing.html#shake-ups">격변</a></li><li class="nav-section"><a href="the-game-ongoing.html#ending-your-game">게임 끝내기</a></li></ul></li>
+<li><a href="acknowledgements.html">감사의 말</a></li>
+<li><a href="mediography.html">참고 작품</a></li>
+<li class="nav-book-label">제2권</li>
+<li><a href="welcome-to-the-worlds-end.html">세상의 끝에 오신 것을 환영합니다</a></li>
+<li><a href="../maps.html" class="nav-en" title="영어로만 제공" hreflang="en">Maps</a></li>
+<li><a href="the-village-of-stonetop.html">스톤탑 마을</a></li>
+<li><a href="aratis-the-lawkeeper.html">법의 수호자 아라티스</a></li>
+<li><a href="barrier-pass.html">장벽 고개</a></li>
+<li><a href="barrow-builders.html">고분 축조자들</a></li>
+<li><a href="blackwater-lake.html">검은물 호수</a></li>
+<li><a href="crinwin.html">크린윈</a></li>
+<li><a href="the-crombil.html">크롬빌</a></li>
+<li><a href="danu-the-earth-mother.html">대지의 어머니 다누</a></li>
+<li><a href="death-and-the-undying.html">죽음과 죽지 않는 자들</a></li>
+<li><a href="the-dread-river.html">공포의 강</a></li>
+<li><a href="fae.html">페이</a></li>
+<li><a href="ferriers-fen.html">페리어 늪</a></li>
+<li><a href="the-flats.html">평원</a></li>
+<li><a href="fomoraij.html">포모라이지</a></li>
+<li><a href="the-foothills.html">산기슭</a></li>
+<li><a href="forest-folk.html">숲의 민족</a></li>
+<li><a href="forge-lords.html">화로의 군주들</a></li>
+<li><a href="the-frozen-wastes.html">얼어붙은 황무지</a></li>
+<li><a href="gods-and-religion.html">신과 종교</a></li>
+<li><a href="the-golden-oak.html">황금 참나무</a></li>
+<li><a href="gordins-delve.html">고르딘 광산</a></li>
+<li><a href="the-great-wood.html">큰숲</a></li>
+<li><a href="green-lords.html">녹색 군주들</a></li>
+<li><a href="helior-the-daybringer.html">낮을 가져오는 자 헬리오르</a></li>
+<li><a href="hillfolk.html">언덕 민족</a></li>
+<li><a href="huffel-peaks.html">허펠 봉우리</a></li>
+<li><a href="the-labyrinth.html">미궁</a></li>
+<li><a href="lygos-and-the-south.html">리고스와 남부</a></li>
+<li><a href="the-makers.html">만든 이들</a></li>
+<li><a href="the-makers-roads.html">만든 이들의 길</a></li>
+<li><a href="marshedge.html">마시에지</a></li>
+<li><a href="the-maw.html">아가리</a></li>
+<li><a href="north-manmarch.html">북 맨마치</a></li>
+<li><a href="the-pale-hunter.html">창백한 사냥꾼</a></li>
+<li><a href="primordial-powers.html">태고의 힘</a></li>
+<li><a href="red-groves.html">붉은 수풀</a></li>
+<li><a href="rime-lords.html">서리 군주들</a></li>
+<li><a href="the-ruined-tower.html">무너진 탑</a></li>
+<li><a href="south-manmarch.html">남 맨마치</a></li>
+<li><a href="spirits-of-the-wild.html">야생의 정령</a></li>
+<li><a href="the-steplands.html">계단 지대</a></li>
+<li><a href="stone-lords.html">돌의 군주들</a></li>
+<li><a href="the-stream.html">시내</a></li>
+<li><a href="tempest-lords.html">폭풍 군주들</a></li>
+<li><a href="the-things-below.html">아래 것들</a></li>
+<li><a href="three-coven-lake.html">세 마녀회 호수</a></li>
+<li><a href="titan-bones.html">티탄의 뼈</a></li>
+<li><a href="tor-the-rain-maker.html">비를 부르는 자 토르</a></li>
+<li><a href="useful-or-valuable-flora.html">쓸모 있거나 값진 식물</a></li>
+<li><a href="ustrina.html">우스트리나</a></li>
+<li><a href="vor-svetelik.html">보르 스베텔리크</a></li>
+<li><a href="waystones.html">길돌</a></li>
+<li><a href="the-whitefang-mountains.html">흰송곳니 산맥</a></li>
+<li><a href="appendix-a-ages-of-the-world.html">부록 A: 세계의 시대</a></li>
+<li><a href="appendix-b-artifact-creation.html">부록 B: 유물 제작</a></li>
+<li class="nav-hub"><a href="appendix-c-minor-arcana.html">부록 C: 소 아르카눔</a></li>
+<li class="nav-arcana"><a href="minor-laoj-daveths-galvanic-infusion.html">1. 라오지 다베스의 전기 주입액</a></li>
+<li class="nav-arcana"><a href="minor-truth-seeds.html">2. 진실의 씨앗</a></li>
+<li class="nav-arcana"><a href="minor-old-mothers-wine.html">3. 늙은 어머니의 포도주</a></li>
+<li class="nav-arcana"><a href="minor-aalz-galts-sudden-sinkhole.html">4. 알즈 갈트의 급작스러운 싱크홀</a></li>
+<li class="nav-arcana"><a href="minor-shell-game-of-souls.html">5. 영혼의 야바위</a></li>
+<li class="nav-arcana"><a href="minor-thunderous-bellow.html">6. 우레 같은 고함</a></li>
+<li class="nav-arcana"><a href="minor-the-fiery-veil.html">7. 불의 장막</a></li>
+<li class="nav-arcana"><a href="minor-the-tomb-bogs-mark.html">8. 무덤늪의 낙인</a></li>
+<li class="nav-arcana"><a href="minor-fear-of-the-flame.html">9. 불꽃에 대한 공포</a></li>
+<li class="nav-arcana"><a href="minor-mantle-wraiths.html">10. 망토의 망령</a></li>
+<li class="nav-arcana"><a href="minor-shattering-words-of-aalz-childric.html">11. 알즈 칠드릭의 부수는 말</a></li>
+<li class="nav-arcana"><a href="minor-ffyrnig-tonic.html">12. 퍼니그 강장제</a></li>
+<li class="nav-arcana"><a href="minor-song-of-the-dool-trees.html">13. 둘 나무의 노래</a></li>
+<li class="nav-arcana"><a href="minor-ward-of-still-waters.html">14. 고요한 물의 결계</a></li>
+<li class="nav-arcana"><a href="minor-ice-weaving.html">15. 얼음 엮기</a></li>
+<li class="nav-arcana"><a href="minor-the-six-locks-of-sajua.html">16. 사주아의 여섯 자물쇠</a></li>
+<li class="nav-arcana"><a href="minor-heliors-shining-ring.html">17. 헬리오르의 빛나는 반지</a></li>
+<li class="nav-arcana"><a href="minor-nerth-serpents-vigor.html">18. 너스 뱀의 활력</a></li>
+<li class="nav-arcana"><a href="minor-goldleaf-cloak.html">19. 금잎 망토</a></li>
+<li class="nav-arcana"><a href="minor-opening-the-way.html">20. 길 열기</a></li>
+<li class="nav-arcana"><a href="minor-the-drowning-scale.html">21. 익사자의 비늘</a></li>
+<li class="nav-arcana"><a href="minor-preserving-runes.html">22. 보존의 룬</a></li>
+<li class="nav-arcana"><a href="minor-peacebond.html">23. 평화의 결속</a></li>
+<li class="nav-arcana"><a href="minor-the-eye-opened.html">24. 열린 눈</a></li>
+<li class="nav-arcana"><a href="minor-sanctifying-mark.html">25. 성별의 표식</a></li>
+<li class="nav-arcana"><a href="minor-the-green-lords-shade.html">26. 녹색 군주의 그림자</a></li>
+<li class="nav-arcana"><a href="minor-chimeric-transmogrification.html">27. 키메라 변성</a></li>
+<li class="nav-arcana"><a href="minor-the-sylvan-web.html">28. 숲의 그물</a></li>
+<li class="nav-arcana"><a href="minor-flying-cloak.html">29. 나는 망토</a></li>
+<li class="nav-arcana"><a href="minor-satchel-of-plenty.html">30. 풍요의 자루</a></li>
+<li class="nav-arcana"><a href="minor-dancing-wind-spirit.html">31. 춤추는 바람 정령</a></li>
+<li class="nav-arcana"><a href="minor-call-of-the-hunt.html">32. 사냥의 부름</a></li>
+<li class="nav-arcana"><a href="minor-convocation-of-the-soil.html">33. 흙의 소집</a></li>
+<li class="nav-arcana"><a href="minor-unliving-chimera.html">34. 생명 없는 키메라</a></li>
+<li class="nav-arcana"><a href="minor-impudent-polymorph.html">35. 뻔뻔한 변신</a></li>
+<li class="nav-arcana"><a href="minor-make-pliant-the-stone.html">36. 돌을 무르게 하기</a></li>
+<li class="nav-arcana"><a href="minor-plaster-of-joining.html">37. 접합의 회반죽</a></li>
+<li class="nav-arcana"><a href="minor-cold-mind-iron-body.html">38. 차가운 정신, 강철의 몸</a></li>
+<li class="nav-arcana"><a href="minor-little-friend.html">39. 작은 친구</a></li>
+<li class="nav-arcana"><a href="minor-revealing-light.html">40. 드러내는 빛</a></li>
+<li class="nav-arcana"><a href="minor-darkwalker-cloak.html">41. 어둠걷는 자의 망토</a></li>
+<li class="nav-arcana"><a href="minor-the-flesh-is-like-clay.html">42. 살은 진흙과 같다</a></li>
+<li class="nav-arcana"><a href="minor-fetchs-mask.html">43. 도플갱어의 가면</a></li>
+<li class="nav-arcana"><a href="minor-witch-bottle.html">44. 마녀의 병</a></li>
+<li class="nav-arcana"><a href="minor-wishing-candles.html">45. 소원의 초</a></li>
+<li class="nav-arcana"><a href="minor-baleful-utterance.html">46. 흉한 말</a></li>
+<li class="nav-arcana"><a href="minor-aetherium-spear.html">47. 에테리움 창</a></li>
+<li class="nav-arcana"><a href="minor-staff-of-magnetism.html">48. 자력의 지팡이</a></li>
+<li class="nav-arcana"><a href="minor-groundskimmer.html">49. 땅스치개</a></li>
+<li class="nav-arcana"><a href="minor-thunderbolt-bow.html">50. 벼락 활</a></li>
+<li class="nav-arcana"><a href="minor-bronze-protector.html">51. 청동 수호자</a></li>
+<li class="nav-arcana"><a href="minor-sublime-words.html">52. 숭고한 말</a></li>
+<li class="nav-arcana"><a href="minor-flaming-sword.html">53. 불타는 검</a></li>
+<li class="nav-arcana"><a href="minor-searing-touch.html">54. 지지는 손길</a></li>
+<li class="nav-arcana"><a href="minor-sigil-of-authority.html">55. 권위의 인장</a></li>
+<li class="nav-arcana"><a href="minor-horn-of-storms.html">56. 폭풍의 뿔나팔</a></li>
+<li class="nav-arcana"><a href="minor-moonstone.html">57. 월장석</a></li>
+<li class="nav-arcana"><a href="minor-hand-of-aals-sannan.html">58. 알스 산난의 손</a></li>
+<li class="nav-arcana"><a href="minor-bittersweet-elixir.html">59. 달콤씁쓸한 영약</a></li>
+<li class="nav-arcana"><a href="minor-the-brooms-lullaby.html">60. 빗자루의 자장가</a></li>
+<li class="nav-arcana"><a href="minor-the-angry-little-god.html">61. 화난 작은 신</a></li>
+<li class="nav-arcana"><a href="minor-the-silver-branch.html">62. 은빛 가지</a></li>
+<li class="nav-arcana"><a href="minor-void-elemental.html">63. 공허의 정령</a></li>
+<li class="nav-arcana"><a href="minor-runes-of-creation.html">64. 창조의 룬</a></li>
+<li class="nav-hub"><a href="appendix-d-major-arcana.html">부록 D: 대 아르카눔</a></li>
+<li class="nav-arcana"><a href="major-staff-of-the-lidless-orb.html">1. 눈꺼풀 없는 구슬의 지팡이</a></li>
+<li class="nav-arcana"><a href="major-twisted-spear.html">2. 뒤틀린 창</a></li>
+<li class="nav-arcana"><a href="major-demonhide-cloak.html">3. 악마 가죽 망토</a></li>
+<li class="nav-arcana"><a href="major-norubas-ice-sphere.html">4. 노루바의 얼음 구체</a></li>
+<li class="nav-arcana"><a href="major-mindgem.html">5. 정신의 보석</a></li>
+<li class="nav-arcana"><a href="major-whispering-rocks.html">6. 속삭이는 바위</a></li>
+<li class="nav-arcana"><a href="major-blood-quenched-sword.html">7. 피로 담금질한 검</a></li>
+<li class="nav-arcana"><a href="major-shield-of-the-wisent-witch.html">8. 들소 마녀의 방패</a></li>
+<li class="nav-arcana"><a href="major-hectumel-codex.html">9. 헥투멜 사본</a></li>
+<li class="nav-arcana"><a href="major-red-scepter.html">10. 붉은 홀</a></li>
+<li class="nav-arcana"><a href="major-ring-of-daagon.html">11. 다곤의 반지</a></li>
+<li class="nav-arcana"><a href="major-rune-laden-scales.html">12. 룬이 새겨진 저울</a></li>
+<li class="nav-arcana"><a href="major-blackwood-fetishes.html">13. 흑목 주물</a></li>
+<li class="nav-arcana"><a href="major-storm-markings.html">14. 폭풍의 문양</a></li>
+<li class="nav-arcana"><a href="major-ineffable-words.html">15. 형언할 수 없는 말</a></li>
+<li class="nav-arcana"><a href="major-redwood-effigy.html">16. 적목 인형</a></li>
+<li class="nav-arcana"><a href="major-hungering-maw-of-hlad.html">17. 흘라드의 굶주린 아가리</a></li>
+<li class="nav-arcana"><a href="major-azure-hand.html">18. 하늘빛 손</a></li>
+<li><a href="bestiary.html">몬스터 도감</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-foot"><details class="lang-switch"><summary title="언어"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code" aria-hidden="true">KO</span><span class="lang-label">언어</span><span class="lang-now">한국어</span></summary><ul class="lang-list"><li><a href="../de/player-moves.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="../player-moves.html" hreflang="en" lang="en">English</a></li><li><a href="../es/player-moves.html" hreflang="es" lang="es">Español</a></li><li><a href="../fr/player-moves.html" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/player-moves.html" hreflang="it" lang="it">Italiano</a></li><li><a href="../pl/player-moves.html" hreflang="pl" lang="pl">Polski</a></li><li><a href="../pt-BR/player-moves.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="../ru/player-moves.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="../ja/player-moves.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../zh-Hans/player-moves.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><span class="lang-current" aria-current="page" lang="ko">한국어</span></li></ul></details><span class="sidebar-credit">본문 출처: Jeremy Strandberg의 <em>Stonetop</em>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></span><a class="sidebar-github" href="https://github.com/Bryan-Legend/stonetop-wiki-generator">GitHub</a><button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true" title="주사위 소리"><span class="sound-on" aria-hidden="true">🔊</span><span class="sound-off" aria-hidden="true">🔇</span><span class="sound-label">주사위 소리</span></button></div>
+    </aside>
+    <div class="main-wrap">
+      <div class="content-scroll" id="main">
+        <main class="content">
+          <h1 class="page-title">플레이어 무브</h1>
+<p>기본 무브는 모든 플레이어와 PC가 쓸 수 있는 무브이며, 가장 자주 쓰이고, 게임의 대부분을 이끌어 가는 무브다.</p>
+<p>무브마다 <strong>발동 조건</strong>이 있어 언제 그 무브가 작동하는지 알려 준다. 발동 조건은 거의 언제나 허구 속의 일이다. 플레이어가 자기 캐릭터가 발동 조건에 맞는 일을 한다고 선언하면, 무브의 나머지 부분이 그 행동을 어떻게 해결할지 알려 준다.</p>
+<p>플레이어는 발동 조건에 맞는다는 걸 알고 행동을 묘사해 일부러 무브를 발동할 수도 있다. 아니면 &quot;맞붙기 할게&quot;나 &quot;지키기 해&quot; 하고 말할 수도 있다. 그래도 괜찮다. 하지만 그럴 때는 그들에게서 허구을 끌어내는 것이 네 일이다. &quot;좋아, 뭘 하는데?&quot; &quot;알았어, 그게 어떤 모습이야?&quot; 그림이 그려지지 않으면 더 자세히 물어라. <strong>하려면, 해야 한다.</strong></p>
+<p>반대도 마찬가지다. <strong>하면, 해야 한다</strong>. 크린윈(crinwin) 옆을 달려 지나간다고 말하는데 네가 그것이 위험하고, 걸린 것이 크고, 운에 맡긴 일이라고 판단한다면, 그들은 위험에 맞서기를 하는 것이다. 물러설 수는 있지만(&quot;아, 몰랐네, 그럼 안 할래&quot;), 그대로 밀고 나가면 무브가 발동하고 굴려야 한다.</p>
+<p>무브가 발동되는지 지켜보는 것은 모두의 일이다. 판정은 대개 네가 내리더라도 말이다. 어떤 플레이어든 언제든 &quot;그거 지키기 아니야?&quot;라고 말할 수 있고, 테이블이 동의하면 발동한 플레이어가 주사위를 굴린다. 무브가 발동되는지, 어떤 무브가 발동되는지 의견이 갈리면 이야기를 나누고, 질문하고, 원칙을 따르며 의제를 추구해야 함을 기억하라.</p>
+<p>무브가 &quot;+[능력치]로 굴린다&quot;고 하면, <button type="button" class="dice-roll" data-dice="2d6" title="클릭하여 2d6 굴림 — Shift: 유리 · Ctrl: 불리">2d6</button>을 굴리고 지정된 능력치(STR, DEX 등)를 더한다는 뜻이다. 10+는 완전 성공, 7-9는 부분 성공(그래도 성공은 성공)이다. 기본 무브는 모두 10+나 7-9에서 무슨 일이 일어나는지 알려 준다.</p>
+<p>6 이하면 실패다. 이는 다음을 뜻한다.</p>
+<ul class="bullets"><li>플레이어는 XP를 표시한다</li><li>너는 <strong>강한 GM 무브</strong><a class="wiki-link" href="running-the-game.html" data-slug="running-the-game" data-ref="page" >게임 진행</a>를 한다. 강한 무브는 PC가 일을 망친 것을 반영할 수도 있지만, 무언가가 그들의 성공을, 심지어 선언한 행동을 시도하는 것 자체를 가로막는 것을 반영할 수도 있다. 하려던 일을 해내긴 했지만 끔찍한 대가가 따르는 것을 반영할 수도 있다.</li></ul>
+<p>기본 무브에는 6-에서 무슨 일이 일어나는지 쓰여 있지 않다. 원래 그렇게 작동하기 때문이다.</p>
+<h2 id="advantage-and-disadvantage">유리와 불리</h2>
+<p>플레이어가 <strong><em>굴림에 유리할 때</em></strong>, 주사위를 하나 더 굴리고 가장 낮은 것을 버린다. 대부분의 무브에서는 <button type="button" class="dice-roll" data-dice="3d6" title="클릭하여 3d6 굴림 — Shift: 유리 · Ctrl: 불리">3d6</button>을 굴려 가장 높은 두 주사위를 합한다는 뜻이다.</p>
+<p>플레이어가 <strong><em>굴림에 불리할 때</em></strong>, 주사위를 하나 더 굴리고 가장 높은 것을 버린다. 대부분의 무브에서는 <button type="button" class="dice-roll" data-dice="3d6" title="클릭하여 3d6 굴림 — Shift: 유리 · Ctrl: 불리">3d6</button>을 굴려 가장 낮은 두 주사위를 합한다는 뜻이다.</p>
+<p>플레이어가 <strong><em>한 굴림에 유리와 불리를 동시에 받을 때</em></strong>, 둘은 서로 상쇄된다.</p>
+<p>유리와 불리에 대한 자세한 설명은 <a class="wiki-link" href="#special-moves" data-slug="player-moves" data-fragment="special-moves" data-ref="page">특수 무브</a>을 참고하라.</p>
+<div class="move-block" id="defy-danger"><h3 class="move-name">Defy Danger</h3><p class="move-trigger"><strong><em>위험이 닥쳐오고, 걸린 것이 크며, 네가 운에 맡긴 일을 할 때</em></strong>, 다른 무브가 적용되는지 확인한다. 그렇지 않다면 다음으로 굴린다...</p><ul class="ellipsis"><li>+STR: 힘으로 밀어붙이거나 완력을 시험할 때</li><li>+DEX: 속도, 민첩함, 기교를 쓸 때</li><li>+CON: 견디거나 버틸 때</li><li>+INT: 전문 지식을 쓰거나 영리한 계획을 실행할 때</li><li>+WIS: 의지력을 발휘하거나 감각에 의지할 때</li><li>+CHA: 매혹하거나, 허세를 부리거나, 감명을 주거나, 섞여들 때</li></ul>
+<p><strong>10+이면</strong> 바랄 수 있는 만큼 잘 해낸다. <strong>7-9면</strong> 해낼 수는 있지만, GM이 불완전한 성공, 대가, 또는 부작용을 제시한다(어쩌면 그 사이에서 고르게 하거나, 물러설 기회를 줄 수도 있다).</p>
+<p>PC의 행동이 위험에 맞서기와 다른 무브를 모두 발동할 수 있다면(다리를 물어뜯고 있는 드레이크에게 손도끼를 휘두르는 것처럼), 다른 무브가 우선한다(이 경우엔 맞붙기).</p>
+<p>&quot;굴려야 마땅하다&quot;고 생각한다는 이유만으로 위험에 맞서기를 요구하지 마라. 캐릭터가 운에 맡긴 일을 하더라도 닥쳐오는 위험이 없거나 걸린 것이 그리 크지 않다면 굴리지 마라. 원칙과 의제에 따라 판정을 내리고 무슨 일이 일어나는지 말하면 된다.</p>
+<p>위험에 맞서기를 요구할 때는 위험이 무엇인지, 또는 걸린 것이 무엇인지 말하라. &quot;위험에 맞서기 같네. 위험은 네가 찌르기 전에 그놈이 알아차리는 거야.&quot;</p>
+<p>아니면 &quot;그건 위험에 맞서기 같아. 실패하면 겁에 질려 얼어붙을 거야.&quot; 위험이나 걸린 것을 분명히 말할 수 없다면, 그들은 위험에 맞서기를 하는 게 아니다.</p>
+<p>어떤 능력치를 쓰는지 불분명하면 분명해질 때까지 질문하라. 어느 쪽이든 될 수 있다면 네 생각을 말하고 플레이어가 고르게 하라. &quot;완력을 시험하는 것일 수도, 버티는 것일 수도 있네. 그러니 STR이나 CON, 네가 골라.&quot;</p>
+<p>헛소리는 봐주지 마라. &quot;화살이 너한테 날아오고 있어, 어떻게 할래?&quot;라고 했는데 &quot;화살에게 미소를 날려서 매력으로 빗나가게 할래&quot; 같은 대답이 돌아온다면, 그건 위험에 맞서기가 아니다. 얼굴에 화살을 맞는 것이다. <strong>결과를 말해 주고</strong> 그래도 그렇게 하고 싶은지 <strong>물어라</strong>.</p>
+<p>10+이면 바랄 수 있는 만큼 잘 해낸다. 무슨 일이 일어나는지 묘사하라(또는 묘사해 달라고 하라). 대개는 행동할 기회를 주게 될 것이다. 하지만 위험이 특히 심각했거나 행동이 특히 필사적(또는 무모)했다면, 바랄 수 있는 최선은 그저 최악을 피하는 것일지도 모른다.</p>
+<p>7-9면 불완전한 성공, 대가, 또는 부작용을 제시하라. 뚜렷한 무언가가 있어야 한다. 그렇지 않다면 그들은 위험에</p>
+<p>맞서고 있는 게 아닐 테니까.</p>
+<ul class="bullets"><li><strong>불완전한 성공</strong>: 원하던 것의 대부분을 얻지만 전부는 아니다. &quot;구덩이를 뛰어넘었지만 몸이 반쯤 걸친 채 매달려. 기어오르려면 시간이 걸릴 거야.&quot;</li><li><strong>대가</strong>: 해내지만 그 과정에서 무언가를 잃거나 겪는다. &quot;구덩이를 뛰어넘었지만 잘못 착지해서 발목을 삐었어.&quot;</li><li><strong>부작용</strong>: 해내지만 달갑지 않은 결과가 따른다. &quot;구덩이를 뛰어넘었지만 네가 뛰는 순간 발판이 무너져. 그쪽으로는 돌아갈 수 없어!&quot;</li></ul>
+<p>둘 이상의 불완전한 성공/대가/부작용 중에서 고르게 하거나, 물러서서 결국 그 일을 하지 않을 기회를 주는 것도 고려하라. 플레이어들은 대개 강요된 역경보다 스스로 고른 역경을 더 기꺼이 받아들인다. 다만 나쁜 선택지들이 상황에 걸맞은 수준이 되게 하라.</p>
+<p>기억하라. 7-9는 근본적으로 여전히 성공이다. 불완전한 성공, 대가, 부작용을 너무 가혹하게 만들어서 차라리 아무것도 하지 않는 편이 나았을 정도가 되게 하지 마라.</p>
+<p>하지만 6-이라면? 마음껏 하라. 그들이 행동하기 전에, 또는 행동하는 도중에 위험이 들이닥친다. 아니면 행동은 성공하지만 그 결과로 상황이 훨씬 나빠진다. 허구과 네 준비에서 자연스럽게 흘러나오는 일을 하라. <strong>다 불타게 두어라.</strong></p></div>
+<hr>
+<blockquote><p><em>카라독(Caradoc)은 나무에 매달려 있고, 손아귀가 미끄러지고 있다. 그는 다리를 휘둘러 가지에 걸고는 몸을 끌어올린다. &quot;그래, 그건 위험에 맞서기야. 위험은 24m쯤 떨어지는 거고. 완력을 시험하는 것 같으니 +STR?&quot;</em></p></blockquote>
+<p><em>&quot;좋아.&quot; 그가 말하고 굴린다. 7-9가 나오면 대가를 주기로 하고, 공포와 피로로</em> 쇠약<em>을 표시하게 할 생각이다.</em></p>
+<blockquote><p><em>하지만 아니, 그는 10을 굴렸다. 그래서 &quot;좋아, 말한 그대로 해내.&quot;라고 말한다. 그러고는</em> <strong><em>기회를 제시한다</em></strong><em>. &quot;숨을 고르는 데 잠깐 걸리지만, 여기서부터 둥지까지는 쉽게 올라갈 수 있어. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>블로드웬(Blodwen)은 풀숲에서 자신을 에워싸는 드레이크들의 떨리는 울음소리를 듣고 얼어붙는다. 그녀는 토기 항아리를 꺼내 던진다. 녀석들의 주의를 돌리길 바라며.</em></p><p><em>&quot;영리한데! INT로 위험에 맞서기 같아.&quot; 그녀는 7을 굴리고, 나는 선택지를 준다. &quot;녀석들이 미끼를 물었지만, 아직 완전히 벗어난 건 아니야. 물자 사용 횟수를 2 더 지우고 녀석들 너머로 물건을 더 던져서 멀리 꾀어낼 수도 있어. 아니면 지금 몰래 빠져나가려고 DEX로 위험에 맞서기를 할 수도 있고. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>리아나(Rhianna)가 크린윈들 옆을 달려 지나간다. &quot;여기선 위험에 맞서기 같아. 속도에 의지하니까 DEX로.&quot; 10+이면 그녀는 문제없이 녀석들을 지나쳐 동굴 입구에 다다를 것이다.</em></p><p><em>하지만 그녀는 9를 굴렸고, 나는 부작용을 고른다. &quot;녀석들 옆을 달려 지나가는데, 두어 마리가 돌아서서 너를 덮쳐.&quot; 리아나의 플레이어가 반칙이라고 외친다. 7-9는 근본적으로 성공이어야 한다고. &quot;아, 맞다!&quot; 나는 말한다. &quot;동굴 입구에 다다르긴 했는데, 크린윈 두 마리가 껑충거리며 바짝 뒤쫓아 와. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<div class="move-block" id="aid"><h3 class="move-name">Aid</h3><p class="move-trigger"><strong><em>아직 굴리지 않은 누군가를 도울 때</em></strong>, GM이 1개를 고른다.</p><ul class="bullets"><li>그 사람은 혼자서보다 더 많은 것을 해낼 수 있다</li><li>그 사람은 굴림에 유리를 얻는다.</li></ul>
+<p>어느 쪽이든, 너는 그 사람의 굴림에 따르는 모든 위험, 대가, 부작용에 노출된다.</p>
+<p>한 PC가 무브를 발동하고 다른 PC(또는 추종자)가 거들 때, 또는 둘 이상의 캐릭터가 동시에 같은 무브를 할 때 이 무브를 쓴다.</p>
+<p>다른 무브와 마찬가지로, 하려면 해야 한다. 플레이어가 &quot;응, 도울게!&quot;나 &quot;도와도 돼?&quot;처럼 모호하게 말하면 &quot;그래, 어떻게 돕는데?&quot;라고 물어라. 그럴듯한 방법을 내놓지 못하면 돕기는 발동하지 않는다.</p>
+<p>도움 없이는 주 무브가 불가능하거나, 돕기 덕분에 주 무브가 시간이 덜 걸리거나 효과가 더 커진다고 생각되면 &quot;혼자서보다 더 많은 것을 해낼 수 있다&quot;를 고른다. 첫 PC가 혼자서도 <em>할 수는</em> 있지만 돕기 덕분에 더 쉬워진다면 &quot;굴림에 유리를 얻는다&quot;를 고른다.</p>
+<p>어느 선택지가 맞는지 확실하지 않으면 플레이어의 의도와 접근 방식을 분명히 하라.</p>
+<p>무브의 부정적인 결과에는 두 캐릭터를 모두 끌어들여라. 뚜렷한 부작용이 없는 10+이라도, 돕는 캐릭터에게 부드러운 무브를 해서 그 도움이 그를 어떻게 위험에 빠뜨렸는지 보여 주는 것을 고려하라.</p>
+<p><strong>선택 기법</strong>: 돕기로 유리를 줄 때, 돕는 플레이어가 추가 <button type="button" class="dice-roll" data-dice="d6" title="클릭하여 d6 굴림 — Shift: 유리 · Ctrl: 불리">d6</button>을 굴리게 하라. 더 참여하고 있다고 느끼게 된다!</p></div>
+<hr>
+<blockquote><p><em>PC들은 프라이더(Pryder)와 레이날(Rheinal)이 습격당한 빈터를 조사하고 있다. 바히드(Vahid)가 단서를 찾아 이리저리 뒤진다. &quot;통찰 구하기를 하는 것 같네.&quot; 내가 말한다.</em></p><p><em>리아나는 자기 부대도 함께 둘러보게 하겠다고 한다. &quot;특히 로리(Lowri). 그 친구가 최고의 추적자거든. 나도 통찰 구하기를 해야 해?&quot;</em></p><p><em>&quot;아니, 그 친구가 바히드를 돕는 걸로 하자.&quot; 내가 말한다. &quot;빈터를 나눠 맡아서 더 빨리 하는 거야? 아니면 함께 머리를 맞대고 의견을 주고받으면서 바히드에게 유리를 주는 거야?&quot;</em></p><p><em>&quot;시간을 얼마나 아낄 수 있는데?&quot; 리아나가 묻는다. 나는 한 30분쯤 아낄 거라고 말해 준다. &quot;흠. 아니, 꼼꼼하게 하자. 로리가 바히드를 뒷받침하고 조언하게 할게.&quot;</em></p><p><em>&quot;좋아! 바히드, 유리로 통찰 구하기를 굴려.&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>카라독은 거대한 거미인 네일래드(nailadd)에게 깔려 있고, 녀석은 그 독 있는 턱으로 그를 물려는 참이다. 그는 몸을 비틀고 녀석을 밀쳐 내며 빠져나가려 하고, 우리는 모두 이것이 STR로 위험에 맞서기라는 데 동의했다.</em></p><p><em>&quot;내가 도와도 돼?&quot; 블로드웬이 묻는다.</em></p><p><em>&quot;그럼, 어떻게 도울 건데?&quot;</em></p><p><em>&quot;다가가서 녀석한테 고함을 지르고, 지팡이로 쿡쿡 찌를게. 그래도 다치게 하고 싶진 않아!&quot; (블로드웬은 작은 짐승들에게 약하다.)</em></p><p><em>&quot;그래애, 거대 거미는 다치게 하지 않기로. 카라독, 유리로 굴려.&quot; 그는 8을 굴렸고, 나는 블로드웬이 얽히는 대가를 고른다. &quot;카라독, 고함 소리가 들리고 녀석이 몸을 트는 게 느껴져서, 굴러서 빠져나와. 그런데 그러면서 녀석이 블로드웬의 손에서 지팡이를 쳐내는 게 보여. 녀석이 그녀에게 달려들려고 해. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>리아나가 &quot;쓰러뜨려!&quot; 하고 외치고, 그녀와 가렛(Garet), 에이라(Eira)(그녀의 부대원들)가 드레이크에게 화살을 퍼붓기 시작한다. 부대가 돕는 쏘아 보내기다. 리아나는 분명히 혼자서도 무브를 할 수 있으니, 유리로 굴리게 된다. </em></p><p><em>아아, 그래도 6이 나왔다. &quot;어쨌든 피해는 굴려.&quot; 내가 말한다. &quot;하지만 쓰러뜨리더라도, 녀석이 돌진해 와서 뼈 볏으로 너를 들이받아 <button type="button" class="dice-roll" data-dice="d8+2" title="클릭하여 d8+2 굴림 — Shift: 유리 · Ctrl: 불리">d8+2</button></em> 강타 <em>피해를 주고 너를 옆으로 내동댕이친 다음, 에이라나 가렛 중 하나를 할퀴어 <button type="button" class="dice-roll" data-dice="d8+2" title="클릭하여 d8+2 굴림 — Shift: 유리 · Ctrl: 불리">d8+2</button> 피해를 더 줘.</em> 유혈<em>, 관통 1이야.</em></p><p><em>누가 당하지?&quot;</em></p><p><em>&quot;내가 골라야 돼?&quot;</em></p><p><em>&quot;응.&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>블로드웬은 바람의 정령을 불러내 무너져 가는 폐허를 정찰해 달라고 부탁하고 있다. &quot;설득하기로 +CHA를 굴려야 할 거야.&quot; 내가 말한다.</em></p><p><em>&quot;내가 도와도 돼?&quot; 바히드가 묻는다. 나는 어떻게 돕는지 묻는다. &quot;어쩌면 내가 이 정령들에 대해 뭔가 알고 있을지도? 뭐가 녀석들을 움직이는지 같은 거.&quot; 하지만 그건 돕기가 아니라 지식 떠올리기다. 어쩌면 그가 지식 떠올리기를 하고 내가 알려 준 걸로 돕기를 할 수도 있겠지만, 지금 돕는 건 아니다!</em></p></blockquote>
+<hr>
+<blockquote><p><em>방이 무너지면서 블로드웬이 잔해와 목재 더미 아래에 깔린다. 카라독이 비틀거리며 다가가 목재 하나를 들어 올린다. &quot;그래도 블로드웬, 넌 아직 돌무더기 아래 끼어 있어. 파헤치고 빠져나오려면 STR로 위험에 맞서기야. 위험은 카라독의 힘이 다하기 전에 빠져나오지 못하는 거고.&quot;</em></p><p><em>카라독이 자기가 돕기를 하는 거냐고 묻는다. &quot;맞아!&quot; 내가 말한다. &quot;네가 그녀에게 빠져나올 기회를 주는 거야. 하지만 네가 말하는 게 그거라면, 그녀가 유리를 얻지는 않아.&quot;</em></p></blockquote>
+<div class="move-block" id="clash"><h3 class="move-name">Clash</h3><p class="move-trigger"><strong><em>근접전이나 좁은 공간에서 싸울 때</em></strong>, +STR로 굴린다. <strong>10+이면</strong> 네 기동은 예상대로 통하고(네 피해를 준다) 1개를 고른다.</p><ul class="bullets"><li>적의 공격을 피하거나, 막거나, 받아친다</li><li>세고 빠르게 쳐서 피해를 <button type="button" class="dice-roll" data-dice="1d6" title="클릭하여 1d6 굴림 — Shift: 유리 · Ctrl: 불리">1d6</button> 더 주지만, 적의 공격을 받는다</li></ul>
+<p><strong>7-9면</strong> 네 기동은 대체로 통하지만(네 피해를 준다), 적의 공격을 받는다.</p>
+<p>이 무브는 맨손이나 근접 무기로 주고받는 한 차례의 공방을 다룬다. PC가 적을 해치거나 제압하려 하고, 적도 적극적으로 그들을 해치거나 제압하려 하거나, 그럴 능력과 의지가 있다. 적이 맞서 싸울 수 없거나 그러지 않으려 한다면 맞붙기가 아니다. PC는 그냥 피해를 준다(아니면 대놓고 죽여 버린다).</p>
+<p>네가 공격을 알리고(&quot;녀석이 너에게 달려들어, 어떻게 할래?&quot;) 캐릭터가 방어하면서 동시에 반격한다면, 그것이 맞붙기다. 이미 위태로운 처지에 있던 것이 아니라면 보통은 먼저 위험에 맞서기를 할 필요가 없다.</p>
+<p>플레이어가 &quot;공격할게&quot;나 &quot;찌를게&quot; 같은 말을 하면 더 자세히 캐물어라. 기동을 그려 볼 수 있고 그 의도를 이해할 때 이 무브를 해결하기가 더 쉽다.</p>
+<p>공격이 도무지 통하지 않을 상황이라면 맞붙기는 발동하지 않는다. 대신 <strong>요구 조건을 알려 주거나</strong>(&quot;먼저 그자의 방어 안쪽으로 파고들어야 해&quot;) <strong>달갑지 않은 진실을 드러내거나</strong>(&quot;창이 그대로 관통해. 안개를 찌르는 것 같아&quot;) <strong>궁지에 몰아넣어라</strong>(&quot;녀석이 네 창을 쳐내고 네 목을 찔러 와, 어떻게 할래?&quot;).</p>
+<p>7+이면 그들의 기동은 통하고(7-9라면 대체로 통하고) 적을 해칠 기회를 얻는다. 얼마나 해치는지는 피해 굴림이 알려 준다. 적을 쓰러뜨리지 못하더라도(또는 방어구를 뚫지 못하더라도) 기동 자체는 기본적으로 통한다. 허구 속 상황이 그것을 반영해 바뀌어야 한다!</p>
+<p>&quot;적의 공격을 받는다&quot;는 단지 피해를 입는다는 뜻이 아니다. 적을 이용해 그 캐릭터에게 공격적인 강한 GM 무브를 한다는 뜻이다. <strong>피해를 입힐</strong> 수도 있지만(&quot;녀석이 네 투구를 후려쳐서 세상이 빙빙 돌아. <button type="button" class="dice-roll" data-dice="1d8+3" title="클릭하여 1d8+3 굴림 — Shift: 유리 · Ctrl: 불리">1d8+3</button> 피해를 받고 <em>몽롱</em>을 표시해&quot;), <strong>궁지에 몰아넣을</strong> 수도 있고(&quot;녀석을 찔렀지만, 녀석이 너를 난간에 처박아 <button type="button" class="dice-roll" data-dice="1d6" title="클릭하여 1d6 굴림 — Shift: 유리 · Ctrl: 불리">1d6</button> 피해를 줘. 난간이 금 가면서 기울기 시작해&quot;), <strong>자원을 소모시킬</strong> 수도 있고(&quot;녀석을 찔렀지만, 녀석이 날뛰며 몸을 틀어서 네 창이 날아가 버려&quot;), 말이 되는 다른 어떤 GM 무브든, 특히 괴물의 무브라면 더욱, 할 수 있다! 그 무브가 PC를 해치거나, 험하게 다루거나, 쓰러뜨릴 수 있다면 무브의 일부로 피해를 준다.</p>
+<p>PC가 피해를 주면서 적의 공격을 받는다면, 적의 공격이 어떤 모습일지 정하기 전에 플레이어에게 피해를 굴리게 하라. PC에게 피해를 주는 일을 하게 될 것을 안다면, 무브를 정하기 전에 괴물의 피해를 굴려도(또는 플레이어에게 굴리게 해도) 된다. 준 피해(그리고 방어구, 태그, 각 전투원이 버티고 서 있는지)를 바탕으로 무브를 정하라.</p>
+<p>6-이면 뻔한 결과는 플레이어의 기동이 실패하고 적의 공격을 받는 것이다. 하지만 원칙을 따르는 무브라면 무엇이든 할 수 있다. 어쩌면 치명타를 날리지만, 쓰러지는 괴물이 추종자를 깔아뭉갤지도 모른다! 어쩌면 이 적은 베어 넘기지만 다음 적이 머리를 후려쳐 PC가 사로잡힐지도 모른다.</p>
+<p>캐릭터의 공격이 여러 적을 해칠 수 있을 법할 때(<em>범위</em> 태그 때문이든, 말이 되게 묘사했기 때문이든), 무리 전체에 대해 맞붙기는 한 번만 굴리지만 피해는 적 하나하나에 대해 따로 굴린다.</p>
+<p>여러 PC나 추종자가 한 적을 동시에 공격하면, 그중 하나가 맞붙기를 하고 나머지는 돕기를 한다.</p></div>
+<hr>
+<blockquote><p><em>네일래드가 카라독을 놓고 블로드웬에게 달려들어 마비 독으로 문다. 카라독은 &quot;공격할게! 맞붙기?&quot;</em></p><p><em>&quot;아마 그렇겠지. 어떤 모습이야?&quot;</em></p><p><em>&quot;굴러서 일어나고, 방패를 집어 들고 달려들어서 녀석을 그녀에게서 쳐낼게.&quot;</em></p><p><em>블로드웬은 녀석이 자기한테 집중하고 있는데 그게 맞붙기이긴 하냐고 묻는다. &quot;그래.&quot; 내가 말한다. &quot;녀석은 방금 너한테 독을 넣었고, 엄청 빨라. 카라독에게서 자신을 지킬 수 있을 것 같아.&quot;</em></p><p><em>그래서 카라독은 +STR로 굴려 11을 얻고, 현명하게 적의 공격을 피하기를 고른다. 아아, 그의 피해는 고작 2라서, 거미의 방어구를 뚫기에 모자라다. &quot;그럼, 아무 일도 안 일어나?&quot; 그가 묻는다.</em></p><p><em>&quot;피해는 안 받지만, 네 기동은 통해. 녀석을 블로드웬에게서 완전히 쳐냈고, 녀석은 뒤집어진 채 몸을 바로 세우려고 한동안 버둥거려. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>크린윈이 리아나를 깔아뭉개고, 목을 조르며 기묘하게 구구거리는 소리를 내고 있다. &quot;한 손으로 녀석을 밀어내고 다른 손으로 칼을 뽑아. 푹푹.&quot; 좁은 공간에서 싸우는 것이니, 그녀는 맞붙기로 +STR을 굴린다. 12가 나왔다!</em></p></blockquote>
+<hr>
+<p>여러 전투원이 한 적에게 피해를 줄 때는, 한 전투원의 피해(대개 가장 좋은 것)를 굴리고 첫 번째 이후 공격할 수 있는 이마다 피해 +1을 더한다. 모든 공격자의 태그를 말이 되는 대로 적용한다.</p>
+<p><strong>전투 진행</strong><a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >위험</a>, 특히 <strong>해칠 수 없는 적</strong><a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >위험</a>, <strong>여러 전투원</strong><a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >위험</a>, <strong>싸움을 흥미롭게 유지하기</strong><a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >위험</a>도 참고하라.</p>
+<blockquote><p><em>&quot;공격을 피할래? 아니면 피해를 더 줄래?&quot; 그녀는 추가 피해를 고르고 <button type="button" class="dice-roll" data-dice="d8" title="클릭하여 d8 굴림 — Shift: 유리 · Ctrl: 불리">d8</button>(그녀의 피해 주사위)에 <button type="button" class="dice-roll" data-dice="d6" title="클릭하여 d6 굴림 — Shift: 유리 · Ctrl: 불리">d6</button>을 더해 굴려, 합계 7 피해를 낸다. 녀석을 쓰러뜨리기에 충분하지만, 그녀도 크린윈의 공격을 받는다. 나는 녀석이 그녀가 찌르는 동안</em> <strong><em>피해를 입히게</em></strong><em>, 돌로 그녀의 머리를 내리치게 할까 생각하다가,</em> <strong><em>달갑지 않은 진실을 드러내기로</em></strong> <em>한다.</em></p><p><em>&quot;그러니까, 녀석을 대여섯 번쯤 찌르고, 녀석의 차갑고 검은 피가 너한테 쏟아져. 그런데 크린윈은 겁쟁이잖아, 그렇지? 제대로 한 번 찌르면 도망쳤어야 해. 이 녀석은? 계속 네 목을 조르면서 구구 구구 소리를 내고, 피를 다 흘릴 때까지 눈도 깜빡이지 않고 움찔하지도 않아. <button type="button" class="dice-roll" data-dice="d6" title="클릭하여 d6 굴림 — Shift: 유리 · Ctrl: 불리">d6</button> 피해를 받아. 그리고 지금 네 머릿속엔 무슨 생각이 스쳐 가?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>스윈(swyn)이 바히드와 눈을 맞추고 그의 의지를 짓밟으려 했지만, 바히드는 버텨 냈고 그렇지 않은 척하는 데 성공했다. &quot;녀석이 스르르 다가와.&quot; 내가 말한다. &quot;쉬익거리며 &#x27;따라아아 오너라&#x27; 하고는 돌아서서 가. 어떻게 할래?&quot;</em></p><p><em>&quot;나 등불 꺼내 들고 있지? 그걸로 녀석의 얼굴을 후려칠게. 맞붙기?&quot;</em></p><p><em>스윈은 바히드가 자기 손아귀에 있다고 생각해서 공격을 전혀 예상하지 못하고 있다. &quot;아니, 맞붙기 아니야. 그냥 피해를 줘!&quot;</em></p></blockquote>
+<div class="move-block" id="defend"><h3 class="move-name">Defend</h3><p class="move-trigger"><strong><em>방어 자세를 취할 때</em></strong> 또는 <strong><em>다른 이들을 지키려 뛰어들 때</em></strong>, +CON으로 굴린다. <strong>10+이면</strong> 대비 3을 홀드한다(방패를 들었다면 4). <strong>7-9면</strong> 대비 1을 홀드한다(방패가 있으면 2). 대비를 1대1로 소모해 다음을 할 수 있다.</p><ul class="bullets"><li>네가 지키는 대상 대신 공격의 피해나 효과를 받는다</li><li>공격의 효과나 피해를 절반으로 줄인다</li><li>지키는 대상에게 쏠린 모든 주의를 너에게로 끌어온다</li><li>공격자에게 반격한다(네 피해를 불리로 준다)</li></ul>
+<p><strong><em>공세로 나서거나, 방어에 집중하기를 그만두거나, 위협이 지나가면</em></strong>, 홀드하고 있는 대비를 모두 잃는다.</p>
+<p>이 무브는 선제적으로도, 대응으로도 발동할 수 있다.</p>
+<p><strong>선제적으로</strong>: 위험이 도사리고 있지만 임박했거나 진행 중인 공격은 없다. 그들은 위험을 맞아 물리칠 준비를 한다.</p>
+<p>발을 단단히 딛고, 방패와 창을 들고, 눈을 부릅뜨는 식이다. 어쩌면 지키려는 사람 가까이, 또는 앞으로 나설지도 모른다.</p>
+<p>어쩌면 자리를 지키거나 값진 물건을 보호하려고 버티고 설지도 모른다. 어쩌면 그냥 자기 자신을 지키는 것일지도 모른다.</p>
+<p><strong>대응으로</strong>: 네가 한 캐릭터에 대한 구체적이고 임박한 공격을 확립하는 무브를 했고, 다른 캐릭터의 플레이어가 &quot;그 앞을 막아설게!&quot;나 &quot;몸을 날려 밀쳐 낼게&quot; 같은 말을 한다.</p>
+<p>이 방식은 다른 누군가(또는 어쩌면 무언가)를 지킬 때만 통한다. 대응으로 자기 자신을 지키는 것이라면, 그건 위험에 맞서기거나 어쩌면 맞붙기다.</p>
+<p>네가 공격이 적중했다고 이미 묘사한 뒤에라도, 캐릭터는 다른 이를 지키려 뛰어들 <em>수</em> 있다. 모두가 &quot;그래, 그럴 수 있었겠네&quot;라고 동의한다면 말이다.</p>
+<p>7+이면 플레이어는 대비를 홀드하고, 그것을 소모해 목록의 선택지 중 하나를 굴림 없이 할 수 있다. 한 번의 공격에 대응해 대비를 여러 번 소모할 수 있지만, 같은 공격에 대해 각 선택지는 한 번씩만 고를 수 있다. <strong>허구으로 시작하고 허구으로 끝내라</strong>는 것을 기억하라. 대비를 소모할 때 그것이 어떤 모습인지 플레이어에게 물어라.</p>
+<p>플레이어는 말이 되는 방식으로만 대비를 소모할 수 있다. 알아차릴 수 없는 공격을 끊거나, 손이 닿지 않는 적에게 반격할 수는 없다.</p>
+<p>공격의 피해나 효과를 절반으로 줄이는 것은 방어구를 적용하기 전에 피해를 줄인다. 효과를 절반으로 줄인다는 것이 무슨 뜻인지 플레이어와 함께 정하라. 어쩌면 쓰러지는 대신 비틀거리거나, 촉수가 온몸을 휘감는 대신 팔 하나만 붙잡을지도 모른다.</p>
+<p>공격자에게 반격한다면, 그들의 피해에 붙은 태그(<em>강타</em>나 <em>유혈</em> 같은)가 적용된다. 이 선택지는 공격자를 쓰러뜨리더라도, 그 자체로 공격을 멈추거나 막지는 못한다. 그들은 공격 전에가 아니라 공격에 <em>대응해</em> 대비를 소모하는 것이다.</p>
+<p>플레이어는 대비를 홀드한 채로 다른 무브를 발동할 수 있고, 그 무브의 결과에 대응해 대비를 소모할 수 있다. 그게 핵심이다!</p>
+<p>하지만 공격적으로 나서거나 방어 자세를 풀면 대비는 사라진다.</p>
+<p>누군가 선제적으로 지키기를 해서 6-이 나오면, 상황을 공격적으로 악화시켜라. <em>대응으로</em> 지키기를 해서 6-이 나왔다면, 음, 네 강한 무브는 아마 꽤 뻔할 것이다.</p></div>
+<hr>
+<blockquote><p><em>레이날(NPC)이 네일래드에게 덮쳐지고, 바히드가 그를 구하려 한다. &quot;그를 붙잡아서 내 뒤로 끌어당길게.&quot; 그건 지키기다! 바히드는 8을 굴리고, 대비 1을 곧바로 소모한다.</em></p><p><em>&quot;녀석이 그를 덮쳐서 <button type="button" class="dice-roll" data-dice="1d8" title="클릭하여 1d8 굴림 — Shift: 유리 · Ctrl: 불리">1d8</button> 피해를 주고, 독을 잔뜩 주입할 거야.&quot; 내가 말한다. &quot;그를 구하고 싶으면 공격을 대신 받거나, 피해/효과를 절반으로 줄일 수 있어.&quot; 그는 정하기 전에 피해를 굴려 봐도 되냐고 묻고, 나는 &quot;물론이지!&quot; 한다. 그는 5를 굴리고, 레이날 대신 독까지 전부 공격을 받기로 한다.</em></p></blockquote>
+<hr>
+<blockquote><p><em>카라독이 드레이크에게서 도망치다 넘어지고, 리아나가 돌아서서 녀석에게 고함을 지르며 둘 사이를 막아선다. &quot;카라독을 지키는 거 같은데, 맞지?&quot;</em></p><p><em>&quot;응. 걔네 엄마한테 무사히 데려오겠다고 약속했거든.&quot; 그녀는 7을 굴리고, 대비를 소모해 지키는 대상에게 쏠린 주의를 자신에게로 끌어온다. &quot;고함을 지르면서 창과 칼을 부딪쳐 쨍그랑거리고, 빙빙 돌아서 녀석이 카라독을 보지 못하게 할게.&quot;</em></p><p><em>&quot;좋아! 카라독, 그 드레이크가 바로 코앞이었는데, 방금 리아나에게 쉿쉿거리려고 돌아섰어. 일어설 수 있겠어. 어떻게 할래?&quot; 그는 당연히 녀석을 찌르기로 한다(그리고 리아나는 작게 욕을 내뱉는다).</em></p></blockquote>
+<hr>
+<blockquote><p><em>블로드웬이 윈포르(Wynfor)에게 다가간다. 윈포르의 얼굴에는 섬뜩하고 황홀한 표정이 떠올라 있다. 바히드는 뒤에 남아 문을 지키고 있다. 그는 지키기를 굴려 대비 1을 홀드하고 있다.</em></p><p><em>윈포르가 난데없이 블로드웬을 찌르자, 바히드가 &quot;대비를 소모해서 피해를 절반으로 줄일게!&quot; 한다. 하지만 나는 그렇게 생각하지 않는다. 그는 문가에, 서너 걸음 떨어져 있고, 윈포르는 아무 경고 없이 블로드웬을 칼로 찔렀다. &quot;대비는 그대로 가지고 있어.&quot; 내가 말한다. &quot;하지만 넌 윈포르에게서 블로드웬을 지킬 수 있는 위치가 전혀 아니었어.&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>블로드웬이 프라이더의 상처를 돌보고 있을 때, 카라독은 뒤죽박죽 섞인 기묘한 짐승 소리가 다가오는 것을 듣는다. 크린윈이다! 그는 침을 꿀꺽 삼키고, 입구로 가서 방패와 창을 치켜든다. 틀림없이 방어 자세이니, 그는 지키기로 +CON을 굴린다. 10+이 나와서 대비 3을 홀드하고, 방패 덕분에 +1을 더한다.</em></p><p><em>&quot;첫 두 크린윈이 너에게 달려들어. 하나는 네 얼굴로 뛰어오르고 다른 하나는 낮게 파고들어! 어떻게 할래?&quot;</em></p><p><em>그는 방패를 든 채 자리를 지키며, 녀석들이 다가오면 찌른다. 근접전이니 맞붙기다. &quot;대비는 그대로야?&quot; 그가 묻고, 응, 그런 것 같다. 싸우고는 있지만 방어적으로 싸우고 있으니까. (녀석들을 맞으러 뛰쳐나갔다면, 그렇지 않다. 대비는 사라졌을 것이다.)</em></p><p><em>아아, 그는 맞붙기에서 4를 굴렸고, 그래서 나는</em> <strong><em>그를 궁지에 몰아넣는다</em></strong><em>. 그것도 세게. &quot;첫 녀석이 너를 넘어뜨리고 둘째 녀석이 네 다리를 붙잡고 꽉 물어! <button type="button" class="dice-roll" data-dice="d6+1" title="클릭하여 d6+1 굴림 — Shift: 유리 · Ctrl: 불리">d6+1</button> 피해야.&quot; 그는 피해 5를 굴렸지만, 대비 1을 소모해 공격의 피해와 효과를 절반으로 줄인다. 그래서 피해 3이 되고, 방어구로 1이 줄어든다. &quot;그럼 어떤 모습이야?&quot; 내가 묻는다. &quot;효과는 어떻게 절반이 돼?&quot;</em></p><p><em>&quot;버티고 서 있긴 한데, 첫 녀석은 내 방패에 매달려 있고 다른 녀석은 내 발목을 물어뜯고 있는 것 같아. 그리고 응, 대비를 하나 더 소모해서 반격할게. 방패에 매달린 녀석을 문틀에 처박는 거야. 괜찮지?&quot;</em></p><p><em>아주 좋다. 그는 피해를 (불리로) 주고, 대비가 아직 2 남아 있다.</em></p><p><em>&quot;좋아, 블로드웬, 이러는 동안...&quot;</em></p></blockquote>
+<div class="move-block" id="interfere"><h3 class="move-name">Interfere</h3><p class="move-trigger">다른 PC의 행동을 좌절시키려 하고 둘 다 물러서지 않을 때, 다음으로 굴린다...</p><ul class="ellipsis"><li>+STR: 힘으로 밀어붙이거나 완력을 시험할 때</li><li>+DEX: 속도, 민첩함, 기교를 쓸 때</li><li>+CON: 견디거나 버틸 때</li><li>+INT: 전문 지식을 쓰거나 영리한 계획을 실행할 때</li><li>+WIS: 의지력을 발휘하거나 감각에 의지할 때</li><li>+CHA: 매혹하거나, 허세를 부리거나, 감명을 주거나, 섞여들 때</li></ul>
+<p><strong>10+이면</strong> 상대는 아래 목록에서 1개를 고른다. <strong>7-9면</strong> 상대는 아래 목록에서 1개를 고르지만, 너는 균형을 잃거나, 무방비해지거나, 달리 취약한 상태가 된다.</p>
+<ul class="bullets"><li>어쨌든 하되, (다음) 굴림에 불리를 받는다</li><li>물러서거나, 방향을 바꾸거나, 달리 자기 무브가 좌절되게 둔다 한 PC가 행동하고, 다른 PC가 그를 막으려 하고, 첫 PC가 고집할 때 이 무브를 쓴다. 멈추고 상황을 논의해서, 두 플레이어 모두에게 물러설 기회를 주어라.</li></ul>
+<p>어느 플레이어든 주사위를 굴리지 않고 물러설 수 있다.</p>
+<p>7+이면 처음 플레이어(방해받는 쪽)가 고른다. 다음 굴림에 불리를 받고 어쨌든 행동하거나, 물러서거나.</p>
+<p>행동하기로 했는데 그것이 무브를 발동하지 않는다면, 다음 굴림에 불리를 받는다. 그 굴림이 무관한 것이라도 말이다. 행동한 플레이어에게 왜 불리가 남아 있는지 물어라. 어쩌면 화가 났거나, 정신이 산만하거나, 자신을 의심하고 있을지도 모른다.</p>
+<p>7-9면 방해하는 캐릭터는 균형을 잃거나, 무방비하거나, 취약해진다. 다른 PC에게 되갚아 줄 기회를 주어라.</p>
+<p>그것이 불가능하거나 그럴 법하지 않다면, 방해하는 캐릭터를 궁지에 몰아넣거나 스포트라이트를 다른 사람에게 옮겨라.</p>
+<p>6-이면 뻔한 결과는 처음 PC의 행동을 막지 못하는 것이다. 처음 PC는 하려던 일을 하고,</p>
+<p>그것이 플레이어 무브를 발동하거나 네가 무슨 일이 일어나는지 말한다. 이제 와서 처음 PC가 물러서게 두지 마라! 그들은 이미 결심했다. 그렇지 않았다면 방해하기를 굴리지 않았을 것이다.</p>
+<p>하지만 엄밀히 말하면, 방해하기에서 6-이 나오면 네가 강한 GM 무브를 하게 된다.</p>
+<p>어쩌면 방해하는 PC가 결국 처음 행동을 좌절시키지만, 그 때문에 상황이 훨씬, 훨씬 나빠질지도 모른다.</p>
+<p>분명히 해 두자. 방해하기는 괴물이나 대부분의 NPC에게는 적용되지 않는다. 추종자가 다른 PC의 명령에 따라 행동할 때는 적용될 수도 있지만, 그건 그때그때 판단해야 할 것이다.</p></div>
+<hr>
+<blockquote><p><em>윈포르가 방금 블로드웬을 찔러서 모두가 놀랐고, 리아나가 반응한다. &quot;아 진짜 못 참겠네. 저놈을 쏠게. 다리를.&quot;</em></p><p><em>방금 그 멍한 눈의 소년에게 찔렸는데도, 블로드웬은 &quot;리아나, 안 돼!&quot; 하고 손을 들어 그녀를 막는다. 나는 리아나에게 쏠 거냐고 묻는다. 쏜다면, 블로드웬은 방해하기를 하게 된다.</em></p><p><em>하지만 리아나는 쏘지 않고 참는다. &quot;그래도 활은 계속 당겨 두고 있어. &#x27;물러서, 꼬마야, 칼 내려놔. 네 엄마한테 네 다리에 난 구멍을 설명하고 싶진 않으니까.&#x27;&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>카라독은 여전히 스윈의 목소리를 듣고 있다. 머릿속에서 나쁜 생각을 쉬익거리는 목소리를. 그리고 리아나는 방금 그를 호되게 꾸짖었다. 나는 몸을 기울이고 말한다. &quot;보여어어? 경멸이야! 네가 어떤 놈인지 보여 줘어어.&quot; 리아나를 공격하면 XP를 주겠다고 제안하고, 그는 받아들인다.</em></p><p><em>&quot;으르렁거리면서 그녀한테 방패를 휘둘러. 닥쳐! 하는 식으로. 맞붙기?&quot;</em></p><p><em>&quot;아마 그렇겠지만, 잠깐. 리아나, 카라독이 너를 공격하고 있어. 어떻게 할래?&quot;</em></p><p><em>&quot;뭐? 안 돼. 뒤로 물러서서 그 방패를 피하고 그의 다리를 걷어차 넘어뜨릴게.&quot;</em></p><p><em>카라독도 리아나도 물러서지 않으니, 그녀는 방해하기로 +DEX를 굴린다. 7이 나온다. 카라독은 불리로 맞붙기를 하거나 공격이 좌절되게 둘 수 있다. 그는 공격이 좌절되게 두지만, 리아나는 균형을 잃거나 취약해진다.</em></p><p><em>&quot;리아나, 네가 카라독의 다리를 걷어찼는데 그가 너한테로 고꾸라져. 둘 다 넘어지고, 그가 위야. 카라독, 넌 등을 대고 있고, 리아나는 네 밑에서 얼굴이 네 팔꿈치 바로 옆에 있어. 그리고 그 목소리가 &#x27;그녀를 쳐어어!&#x27; 하고 쉬익거려. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>리아나가 뒤로 처져서 바히드와 한동안 나란히 걷는다. &quot;바히드, 에이라랑 무슨 일이야? 너 때문에 에이라가 소름 끼쳐 해.&quot; 바히드는 얼버무리고, 리아나는 &quot;그래, 나는 멈춰 서서 그 수수께끼 같은 늙은이 흉내를 꿰뚫어 봐. 통찰 구하기?&quot;</em></p><p><em>&quot;그래.&quot; 내가 말한다. 바히드가 거기에 대해 할 수 있는 게 있냐고 묻는다. &quot;방해하기를 할 수 있어. 그런데 그게 어떤 모습인지 말해 줘.&quot;</em></p><p><em>&quot;어색하게 웃으면서, 외로운 늙은이가 예쁜 젊은 여자를 보는 거라고 뭐 그런 말을 해. 사실 전혀 그런 게 아니지만.&quot; 흥미롭다! 우리는 그가 방해하기를 한다는 데 동의하고, 그는 +CHA로 굴린다. 4가 나온다. </em></p><p><em>나는</em> <strong><em>그의 무브를 그에게 되돌려</em></strong> <em>리아나에게 통찰 구하기에 유리를 주는 것을 생각한다. 하지만 이 문제는 좀 더 끓게 두고 싶어서,</em> <strong><em>문제를 예고하고</em></strong> <em>대화를 끊는다. &quot;리아나, 그가 그 뻔한 핑계를 대는데 네가 그걸 곱씹기도 전에, 가렛이 &#x27;드레이크다!&#x27; 하고 외치고, 앞쪽에서 으르렁 소리와 고함이 들려. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>가시엄지(Thornthumb)가 블로드웬에게 예쁜 꽃을 건네고, 그녀는 그것을 받으려 한다. 바히드가 방해하기를 하며, 스프리건의 손에서 꽃을 쳐내려 한다. 그는 10을 굴렸지만, 블로드웬은 그래도 꽃을 받기로 한다. &quot;그가 꽃을</em> 내 <em>손에서 쳐낸 것 같아. 그리고 나는 &#x27;바히드! 사과해!&#x27; 하는 거지.&quot; 바히드는 이를 악물고 사과한 뒤 쿵쾅거리며 가 버린다. 그가 가는 동안 가시엄지가 씩 웃는다.</em></p><p><em>바히드가 방해하기에서 10+을 굴렸는데도 행동했으니, 블로드웬은 다음 굴림에 불리를 받는다. 나는 그녀에게 왜 그런 것 같냐고 묻는다.</em></p><p><em>&quot;마음이 뒤숭숭해.&quot; 그녀가 말한다. &quot;그 꽃은 그냥 다정한 몸짓이었다고 스스로에게 말하지만, 가시엄지의 그 웃음이 자꾸 떠오르고 바히드가 옳았던 건 아닌지 생각하게 돼.&quot;</em></p></blockquote>
+<div class="move-block" id="know-things"><h3 class="move-name">Know Things</h3><p class="move-trigger"><strong><em>쌓아 온 지식을 되짚을 때</em></strong>, +INT로 굴린다. <strong>10+이면</strong> GM이 지금 다루는 주제에 대해 흥미롭고 쓸모 있는 무언가를 알려 준다. <strong>7-9면</strong> GM이 흥미로운 무언가를 알려 준다. 그것을 쓸모 있게 만드는 건 네 몫이다. <strong>어느 쪽이든</strong> GM이 &quot;그걸 어떻게 알지?&quot;라고 물을 수 있다. 플레이어가 무언가에 대해 무엇을 아는지, 또는 아는지 물으면, 지식 떠올리기를 하고 싶은지 물어라. 이렇게 넌지시 권할 수도 있다. &quot;무두장이 도제로서 이걸 알 수도 있겠네. 지식 떠올리기 할래?&quot; 상식(길이 비교적 안전하다는 사실 같은)을 떠올리거나 그냥 잊어버린 세부 사항(세렌이 2번째 세션에서 페이는 쇠에 닿는 것을 견디지 못한다고 모두에게 말했던 것 같은)을 기억해 내려고 지식 떠올리기를 하게 하지 마라. 그냥 사실을 상기시켜 주고 넘어가라. 무엇에 대해 지식 떠올리기를 하는지, 무엇을 알아내고 싶은지 불분명하면 물어라! 그러면 무브를 해결하기가 훨씬 쉬워진다. 플레이어는 굴리기 전에 그 주제를 어떻게 아는지 설명할 필요가 없다. 먼저 굴리고, 네가 흥미롭거나 쓸모 있는 무언가를 알려 준 뒤 &quot;그걸 어떻게 알지?&quot;라고 물으면 된다. 플레이어들이 지어내는 이야기가 순금일 수도 있다. 캐릭터가 어떤 주제를 알 방법이 정말로 없다면 그렇다고 말하라. &quot;아니, 이건 네 경험 밖이야.&quot; 하지만 아껴서 하라! 조금 억지스럽더라도 플레이어들이 자유롭게 지식 떠올리기를 할 때 게임이 더 좋아진다. 10+이면 그 주제에 대해 흥미롭고 쓸모 있는(그리고 참인) 무언가를 알려 주어라. 그것은 분명한 행동 방침을 제시하거나, 어떤 방침을 배제하거나, 둘 다 해야 한다. &quot;흥미로운 점은 ____&quot;(배경 정보를 주고) &quot;그리고 쓸모 있는 점은 ____&quot;(그 추가의 쓸모 있는 세부를 덧붙이는)으로 시작하면 도움이 된다. 쓸모 있는 것을 주었는지 확실하지 않으면 물어라! 7-9면 흥미로운 무언가를 알려 주어야 하지만, 그것을 쓸모 있게 만드는 건 그들 몫이다. 아이디어가 막히면 다음 중 하나를 시도해 보라.</p><ul class="bullets"><li><strong>쓸모 있고 실행할 수 있는 무언가를 떠올리되</strong>, 그 정보를 딱 잘라 말하지 않고 <em>암시</em>만 하는 무언가를 알려 준다.</li><li><strong>쓸모 있지만 서로 모순되는 두 가지를 드러내되</strong>, 시험해 보기 전까지는 어느 쪽이 참인지 정하지 않는다. PC들이 그 정보에 따라 행동하면, 운명의 주사위나 그들의 무브 결과를 보고 어느 쪽이 참인지 정한다.</li><li><strong>쓸모는 있지만 당장 써먹기 어려운 무언가를 알려 준다</strong>. &quot;녀석들의 깃털은 남부 상인들에게 꽤 값지고, 살아 있는 새끼는 더 값져! 하지만 지금 이 녀석은 너한테 돌진하고 있어. 어떻게 할래?&quot;</li></ul>
+<p>답을 정할 때, 특히 준비하지 않은 주제라면 플레이어들에게 의견을 물어도 좋다. &quot;좋아, 네가 말해 봐. 이 드레이크들은 <em>도대체</em> 어떻게 사냥하고, 넌 그걸 어떻게 유리하게 이용할 수 있지?&quot;</p>
+<p>여러 플레이어가 같은 주제에 대해 지식 떠올리기를 하고 싶어 하면, 한 플레이어가 굴리고 다른 플레이어가 돕게 하라. 같은 주제에 대해 여러 번 지식 떠올리기를 하는 것은 말려라. 그러려고 하면 GM 무브로 장면을 밀고 나가라.</p>
+<p>6-이면 그들이 곰곰이 생각하는 동안 <strong>궁지에 몰아넣거나</strong>, <strong>위험을 등장시킬</strong> 수 있다(갑자기, 하그다!). <strong>달갑지 않은 진실을 드러내거나</strong>, 플레이어에게 드러내 보라고 할 수도 있다. 상당한(어쩌면 보이지 않는) 대가가 따르는 <strong>기회를 제시할</strong> 수도 있다. 보호받으며 자란 탓의 <strong>단점을 보여 주며</strong> 그냥 모른다고 말하거나, <strong>요구 조건을 알려 줄</strong> 수도 있다(&quot;이건 세렌과 이야기해 봐야 할 거야&quot;).</p></div>
+<hr>
+<blockquote><p><em>PC들은 몇 시간째 흔적을 따라가고 있다. 리아나가 묻는다. &quot;이쪽에 뭐가 있어? 나랑 우리 부대는 사냥꾼이라서, 숲을 꽤 잘 알거든.&quot;</em></p><p><em>&quot;붉은 수풀(Red Grove)에서 멀지 않아.&quot; 내가 말한다. 그건 상식이니까. 그녀는 다른 건 없냐고 묻는다. &quot;지식 떠올리기 같은데. 붉은 수풀에 대한 정보를 더 원하는 거야, 아니면 뭐?&quot; 그녀는 다른 관심 지점들, 그러니까 폐허나 소굴 같은 것들을 알고 싶어 한다. &quot;좋아, +INT로 굴려.&quot;</em></p><p><em>6-이면 아마 내 메모에 있는 깃털 드레이크들을 등장시켰을 것이다. 하지만 그녀는 11을 굴렸으니, 정보를 내놓는다. &quot;이쪽으로 하루쯤 더 가면 커다란 만든 이들의 폐허가 있어. 대부분 묻혀 있고, 크린윈이 프라이더만 한 덩치의 소년을 끌고 가기엔 먼 길이야. 하지만 네가 떠올릴 수 있는 가장 눈에 띄는 지형지물이고, 크린윈 둥지와 사람 포로 몇을 가둬 두기에 충분히 커. 이 정도면 충분히 쓸모 있어?&quot; 내가 묻는다.</em></p><p><em>&quot;응. 확실히.&quot; 리아나가 말한다. &quot;그럼 아마 녀석들은 거기로 가고 있겠네.&quot;</em></p><p><em>&quot;그 폐허는 어떻게 알아?&quot; 내가 묻는다.</em></p><p><em>&quot;아, 어렸을 때 아빠랑 광견병 걸린 늑대를 쫓아 이쪽으로 왔던 것 같아. 폐허 근처에서 죽어 있는 걸 찾았는데, 우리 둘 다 겁이 나서 떠났어.&quot;</em></p></blockquote>
+<hr>
+<p>6-이면 <strong>그들의 무브를 그들에게 되돌려</strong>, 그들이 참이라고 믿지만 그대로 행동하면 곤경에 빠지게 될 무언가를 알려 줄 수 있다. 플레이어들은 자신이 실패를 굴렸다는 걸 알기 때문에, 이 방법은 플레이어 모두가 동의할 때만 통한다. 조심하고, 지나치게 쓰지 마라. 거짓말보다 더 흥미로운 일은 거의 언제나 할 수 있다.</p>
+<blockquote><p><em>바히드가 방금 야영지에서 물건을 훔치다 붙잡힌 이 식물 인간에 대해 지식 떠올리기를 한다. 10+이면 이것이 페이(Fae)이며, 페이는 약속을 지키고 빚을 갚도록 매여 있다고 말해 줄 생각이다.</em></p><p><em>아아, 바히드는 6을 굴렸다. 나는 그래도 흥미로운 무언가를 알려 주기로 하고,</em> <strong><em>도발적인 질문을 던진다</em></strong><em>. &quot;아, 그래, 너는 이 녀석을 전에 만난 적이 있어. 네가 스톤탑(Stonetop)에 온 지 얼마 안 됐을 때. 녀석은 페이고, 이름은 가시엄지(Thornthumb)라는 도둑이야. 그때 녀석은 너를 어떻게 속였고, 뭘 훔쳐 갔지?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>블로드웬은 윈포르의 정신을 스윈의 영향에서 어떻게 풀어 줄 수 있을지 궁리하고 있다. 그녀는 지식 떠올리기를 해서 9가 나온다.</em></p><p><em>&quot;약초가 하나 있어.&quot; 내가 말한다. &quot;어… 달풀. 그게 마법에 홀린 정신을 맑게 해 줘. 아니면 그게 은풀이었나? 이런, 하나는 정신을 맑게 하고, 다른 하나는 헛것을 보게 하는데, 어느 게 어느 건지 기억이 안 나. 이건 어떻게 배웠어?&quot;</em></p><p><em>&quot;아, 그웬딜(Gwendyl)한테서. 그런데 그녀가 그리 좋은 선생은 아니고, 나는 두 약초 다 쓸 일이 없었어. 물자를 써서 좀 가지고 있을 수 있지, 그렇지? 집에 약초밭이 있거든.&quot;</em></p><p><em>&quot;그럼.&quot; 내가 말한다. &quot;그런데 어느 쪽?&quot; 그리고 그녀가 뭔가 영리한 일을 하지 않는 한, 그녀가 윈포르에게 약초를 먹일 때까지 기다렸다가 운명의 주사위를 굴리게 할 것이다. 4+이면 제대로 맞힌 것이다!</em></p></blockquote>
+<div class="move-block" id="let-fly"><h3 class="move-name">Let Fly</h3><p class="move-trigger"><strong><em>원거리 무기로 쉬운 사격을 할 때</em></strong>, 네 피해를 준다. <strong><em>사격이 까다롭거나 압박을 받고 있다면</em></strong>, 먼저 +DEX로 굴린다. <strong>10+이면</strong> 시야가 트였으니 네 피해를 준다. <strong>7-9면</strong> 1개를 고른다.</p><ul class="bullets"><li>네 피해를 주지만, 탄약을 소모한다(무기 옆의 다음 상태를 표시한다. 무기에 그런 상태가 없다면 이것을 고르지 않는다)</li><li>자세를 유지하며 시야가 트이기를 기다린다. 그 순간이 오면(GM이 판단한다) 네 피해를 준다</li><li>시야를 확보하려고 움직인다. 위험에 몸을 드러내거나 어떤 이점을 포기하게 된다(GM이 어떻게인지 말한다). 그런 다음 네 피해를 준다</li><li>서둘러 쏘고 네 피해를 주지만, GM이 고르는 대가나 난관이 뒤따른다</li></ul>
+<p>무엇이 &quot;쉬운&quot; 사격인지는 캐릭터와 상황에 따라 다르다. 명사수 순찰자는 엄폐물 뒤에서 아무것도 모르는 적을 쏠 때 그냥 피해를 굴리면 된다. 하지만 한 번도 살생을 해 본 적 없는 탐구자라면 &quot;압박을 받고&quot; 있어서 +DEX로 굴려야 할 것이다.</p>
+<p>맞붙기처럼, 쏘아 보내기도 목표를 해칠 실제 가능성이 있을 때만 발동한다. 그런 가능성이 없는데도 쏜다면 <strong>달갑지 않은 진실을 드러내거나</strong>, <strong>결과를 말해 주거나</strong>, <strong>궁지에 몰아넣어라</strong>.</p>
+<p>사격이 가능은 하지만 정말 어렵다면, <strong>요구 조건을 알려 주거나</strong>(&quot;겨냥할 시간이 필요할 거야&quot;) <strong>결과를 말해 주어라</strong>(&quot;그리고 6-이면 인질을 맞힐 거야&quot;).</p>
+<p>PC가 여러 적을 한꺼번에 공격하게 되면, 쏘아 보내기는 한 번만 굴리지만 피해는 목표마다 따로 굴린다.</p>
+<p>+DEX 굴림은 PC가 시야를 확보하는지, 또는 확보하려면 무엇이 필요한지 알려 준다. 피해 굴림(그리고 적의 방어구와 HP)은 그 사격이 얼마나 효과적인지 알려 준다.</p>
+<p>피해가 미미하다면, 그냥 스친 것이다.</p>
+<p>피해가 무효가 된다면, 방어구에 튕겨 나갔거나 목표가 피한 것이다.</p>
+<p>준 피해와 상관없이, 적이 어떻게 반응하는지 말하라. 고통에 울부짖는가? 엄폐물로 몸을 던지는가? 대개는 그 결과로 PC에게 <strong>기회를 제시하게</strong> 될 것이다. 하지만 어떤 적은 (제대로 맞아도) 움찔하지 않을 만큼 강인하고, 그건 멋지고 무서운 반전이 된다.</p>
+<p>7-9면 그들의 선택이 허구에서 어떤 모습인지 정하라. 말이 되게 만들 수 없다면 다른 선택지를 고르라고 하라.</p>
+<ul class="bullets"><li><strong>탄약 소모</strong>: 몇 발을 쏘거나, 그냥 탄약이 떨어져 간다는 걸 알게 된다. 쏜 탄약은 쉽게 회수할 수 없다.</li><li><strong>자세를 유지하며 기다리기</strong>: 스포트라이트를 옮겨 다른 PC 한 명 이상의 행동을 해결하라. 적당하다 싶을 때 &quot;녀석이 트인 곳으로 나왔어, 피해를 줘!&quot; 같은 말과 함께 이 플레이어에게 돌아오라. 하지만 상황이 바뀌어 그 사격이 더는 말이 되지 않는다면, 그게 기다림의 위험이다!</li><li><strong>시야를 확보하려고 움직이기</strong>: 어디로 가야 하는지 말하고, 그것이 의미 있게 만들어라. 이어서 그들이 이제 처한 위험이나 방금 포기한 위치를 부각하는 부드러운 GM 무브를 하라.</li><li><strong>서둘러 쏘기</strong>: 그들의 공격에서 흘러나오는 GM 무브를 하라. <strong>자원을 소모시키거나</strong>(창이 부러진다), <strong>문제를 예고하거나</strong>(목표가 횃불을 떨어뜨려 불이 붙기 시작한다), <strong>누군가를 궁지에 몰아넣거나</strong>(사격에 아군이 놀라고, 적이 그를 공격한다), 서두른 탓의 <strong>단점을 보여 주는</strong>(피해를 불리로 굴린다) 등이다.</li></ul>
+<p>그들의 선택 때문에 피해를 주기 전에 위험에 맞서기를 해야 할 것 같다면(예를 들어 적들을 피해 지나가거나 빗발치는 공격 속에서 자세를 유지해야 해서), 또는 그 선택이 피할 수 없는 결과(강한 GM 무브)로 이어진다면 플레이어에게 경고하라. 마음을 바꿀 기회를 주어라.</p></div>
+<hr>
+<blockquote><p><em>리아나는 무릎을 짚고 일어나다가, 깃털 드레이크가 방금 가렛을 베어 가른 것을 본다. &quot;화살을 메기고, 당기고, 쏠게.&quot; 그녀가 말한다.</em></p><p><em>&quot;바히드가 바로 거기 있어.&quot; 내가 말한다. &quot;빗나가면 그를 맞힐 거야. 그래도 쏠래?&quot; 나는</em> <strong><em>결과를 말해 주고 묻고 있는</em></strong><em> 것이다. 그녀는 쏘고, 10을 굴렸지만 피해는 2뿐이다. 드레이크의 방어구 1 때문에 그냥 긁힌 정도다. &quot;하지만 좋은 소식은 녀석의 주의를 끌었다는 거야. 녀석이 가렛에게서 고개를 들고 쉭쉭거려. 바히드, 넌 바로 거기 있어. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>네일래드가 바히드에게 막 덮치려는 참인데, 카라독이 녀석에게 창을 던져도 되냐고 묻는다. &quot;그럼.&quot; 내가 말한다. &quot;하지만 까다로운 사격이니, 쏘아 보내기를 굴려야 해.&quot;</em></p><p><em>카라독은 7을 굴린다. &quot;탄약을 소모할 수는 없어. 기다릴 시간도 없고. 시야를 확보하려고 움직일 수 있어?&quot; 물론 할 수 있지만, 그때쯤이면 녀석은 이미 바히드를 덮쳤을 것이다. &quot;그럼 서둘러 던질게.&quot; 그는 피해 4를 굴린다. 거미를 다치게는 하지만 쓰러뜨리기에는 모자라다.</em></p><p><em>&quot;좋아, 네 창이 녀석을 공중에서 떨어뜨려. 바히드, 녀석이 네 오른쪽으로 굴러떨어지는데, 창이 박혀 있고, 몸을 바로 세우려고 버둥거리고 있어. 그런데 카라독이 창을 던졌을 때, 창이 달려가던 에이라 바로 앞을 지나가서, 그녀가 미끄러지고, 비틀거리다 넘어진 것 같아. 그리고 아 젠장, 또 한 마리가 그녀를 쫓아 껑충거리며 와. 바히드, 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<p>6-이면 무슨 일이 일어날지 네가 정하고, 그건 거의 틀림없이 나쁜 일이다. 사격이 빗나간다고 단정하지 마라! 쏘기 전에 방해받을 수도 있고, 쏘고(심지어 맞히고) 나서 그 결과로 나쁜 일이 일어날 수도 있다. 아군이나 구경꾼이 근처에 있었다면 그들이 대신 맞을 수도 있다.</p>
+<blockquote><p><em>블로드웬이 부서진 도로석 조각을 꺼낸다. &quot;이런 건 사악한 영들을 해칠 수 있지, 그렇지? 던질게!&quot; 그녀의 목표는 어두침침한 빛 속에서 휙휙 움직이는 실체 없는 그림자라서, 나는</em> <strong><em>요구 조건을 알려 준다</em></strong><em>. 기회라도 얻으려면 더 가까이 가야 한다고. &quot;알았어.&quot; 그녀가 말한다. 그녀는 다가가서 쏘아 보내기에서 8을 얻는다. &quot;흠… 자세를 유지하며 던질 때를 기다릴게. 내가 던지려는 순간 녀석이 휙 달아나 버리는 식으로?&quot;</em></p><p><em>&quot;완전 좋아! 네가 녀석을 찾아 두리번거리는데, 카라독, 녀석이 어둠 속에서 너에게 덤벼들어. 어떻게 할래?&quot; 그는 허둥지둥 물러서며 위험에 맞서기를 하고, 10을 얻는다. &quot;블로드웬, 저기 있어, 던져!&quot;</em></p><p><em>&quot;좋아! +DEX로 또 굴려야 해?&quot; 아니, 이미 굴렸다. 이제 시야가 트였으니, 그냥 돌을 던지고 피해를 굴리면 된다.</em></p></blockquote>
+<hr>
+<blockquote><p><em>리아나와 그녀의 부대가 발굴 현장에 몰래 다가갔다. 크린윈 세 마리는 그들을 알아차리지 못했고, 그녀는 부대에게 쏘라고 신호한다. &quot;좋아, 너희가 여섯 명쯤 되니까, 세 마리 다 확실히 맞힐 수 있어. 일제 사격 전체에 대해 쏘아 보내기를 한 번 굴려.&quot;</em></p><p><em>&quot;굴릴 필요가 있기는 해?&quot; 그녀가 묻는다. &quot;우리는 전문 사냥꾼이고, 녀석들은 우리가 여기 있는 줄 몰라. 나한텐 쉬운 사격 같은데.&quot;</em></p><p><em>&quot;흠. 그런 것 같네. 그래, 그럼 부대의 피해만 굴려. 크린윈 한 마리마다 한 번씩. 그리고 수가 더 많으니 +1을 더해.&quot;</em></p></blockquote>
+<p>설득하기(NPC 대상)</p>
+<p><strong><em>NPC를 압박하거나 꾈 때</em></strong>, 그가 무엇을 하기를(또는 하지 않기를) 바라는지 말한다. 그가 <strong><em>저항할 이유가 있다면</em></strong>,</p>
+<p>+CHA로 굴린다. <strong>10+이면</strong> 그는 네가 원하는 대로 하거나, 자신을 설득할 가장 쉬운 방법을 드러낸다. <strong>7-9면</strong> 그는 너를 설득하기 위해 네가 할 수 있는 무언가를 드러내지만, 그것은 아마 대가가 크거나, 까다롭거나, 내키지 않는 일일 것이다.</p>
+<p>이 설득하기는 PC가 NPC에게 무언가를 하도록 설득하려 할 때 발동한다. 네가 NPC로서 저항하는데 PC가 고집한다면, 그것이 설득하기다. PC가 NPC에게 무엇을 하기를/하지 않기를 바라는지 분명히 하고, 접근 방식이 말이 되지 않으면 이의를 제기하라. &quot;네가 그걸 원한다는 걸 그녀가 어떻게 알겠어? 그냥, 부탁하는 거야?&quot;</p>
+<p>목표가 정해지면, NPC에게 저항할 이유가 있는지 정하라. 그의 본능, 성격, 배경, 바라는 것, 필요한 것, 두려워하는 것 등을 고려하라. 저항할 이유가 없다면 그는 그렇게 한다. 하지만 NPC에게 이유가 있다면(비이성적인 이유라도) 굴림을 요구하라.</p>
+<p>10+이면 PC의 접근 방식과 NPC의 저항을 저울질하라. 저항이 약했거나 PC의 접근 방식이 강하다면, NPC가 그냥 그렇게 하게 하라. 하지만 PC의 접근 방식으로는 부족하다고 생각되면, PC가 그를 설득할 수 있는 가장 쉬운 방법을 드러내라.</p>
+<p>7-9면 NPC는 아직 설득되지 않았지만 설득될 수 있는 방법을 드러낸다. 그 요구 조건을 까다롭거나, 대가가 크거나, 내키지 않는 것으로 <em>꼭</em> 만들 필요는 없지만, 그렇게 하면 더 재미있다.</p>
+<p>NPC를 설득할 수 있는 것들은 다음과 같다.</p>
+<ul class="bullets"><li>약속/맹세/서약</li><li>안전하게/자유롭게/은밀하게 할 수 있는 기회</li><li>그의 자존심/명예/양심/두려움을 달래거나 그에 호소하기</li><li>그럴듯한 속임수</li><li>더 나은/공정한/과한 제안</li><li>그를 돕기/그와 함께 하기</li><li>폭력(또는 믿을 만한 폭력의 위협)</li><li>그가 원하거나 필요로 하는 것(동전/음식/술 등)</li><li>보증/증거/뒷받침</li><li>____의 압력/허락/도움</li><li>또는 말이 되는 다른 무엇이든</li></ul>
+<p>NPC가 어떻게 설득될 수 있는지를 그의 말이나 반응을 통해, 또는 PC에게 떠오르는 통찰로 드러내라. 쉬울 필요도, 심지어 그럴듯할 필요도 없지만, 드러낸 것은 참이어야 한다.</p>
+<p>NPC를 설득할 수 있는 방법을 둘 이상 제시해도 괜찮다.</p>
+<p>&quot;그는 뇌물을 기다리고 있어. 동전 몇 닢이면 될 거야. 아니면 좀 험하게 다뤄도 되고. 그것도 통할 거라고 꽤 확신해.&quot;</p>
+<p>6-이면 NPC가 흔들리지 않을 것임을 분명히 하거나, 대화를 끊거나, 장면을 끝낼 수 있다. 아니면 NPC가 따르긴 하지만 복잡한 문제(배신, 지나친 열의, 오해 등)가 따르게 할 수도 있다. 아니면 이 모든 상호작용이 다른 누군가의 기분을 상하게 하거나, 사회 질서를 흔들거나, 달리 혼란을 불러올 수도 있다. 여기서는 <strong>위협</strong><a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >위협</a>과 <strong>후방</strong> 무브<a class="wiki-link" href="homefront.html" data-slug="homefront" data-ref="page" >후방</a>가 도움이 될 것이다.</p>
+<hr>
+<blockquote><p><em>PC들은 방금 크린윈 무리를 해치웠지만, 더 많은 창백하고 깜빡이지 않는 눈들이 자신들을 내려다보고 있는 것을 본다. &quot;으.&quot; 리아나가 말한다. &quot;이놈들도 겨우 처리했는데. 겁을 줘서 쫓아 버릴게. 설득하기?&quot;</em></p><p><em>&quot;좋아. 정확히 뭘 하는데?&quot;</em></p><p><em>&quot;가장 가까운 크린윈 시체의 머리를 잡고 치켜들어. 다른 크린윈들을 노려보고. 그런 다음 그 머리를 톱질하듯 잘라 내고, 고함을 지르면서 머리를 숲으로 던져. 그리고 계속 고함을 질러.&quot;</em></p><p><em>으악! 그래도 크린윈이 수가 더 많고 PC들은 꽤 두들겨 맞은 상태라서, 녀석들에게 저항할 이유가 있다고 생각한다. 리아나는 +CHA로 굴려 11을 얻는다. 그 작은 시범이면 충분하다고 생각해서, 나는 말한다. &quot;녀석들이 곧장 줄행랑을 치고, 너는 검은 피를 뒤집어쓴 채 거기 서 있어. 카라독, 지금 리아나에 대해 어떤 기분이야?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>카라독은 가렛과 함께 망을 보다가, 슬쩍 캐묻는다. &quot;&#x27;리아나의 부대에 오래 있었지? 저런 거… 어, 저런 거 본 적 있어?&#x27; 말을 걸어서, 리아나의 과거에 대해 뭔가 알아내 보려는 거야. 설득하기?&quot;</em></p><p><em>굴리게 할까 생각하다가, 가렛에게 딱히 저항할 이유가 없다는 걸 깨닫는다. &quot;그래, 하지만 굴릴 필요 없어. 그는 기꺼이 이야기해. 리아나, 그가 카라독에게 들려줄 만한 좋은 이야기가 뭘까? 그러니까, 네가 피비린내 나고 무자비한 짓을 했던 때 같은 거?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>블로드웬이 니아(Nia)와 눈높이를 맞춰 쪼그려 앉는다. 거리를 두고, 납작빵을 내민다. &quot;얘. 얘야, 배고프니?&quot;</em></p><p><em>그녀가 소녀를 꾀어 무언가를 하게 하려는 건 분명하지만, 그게 무엇인지는 모르겠다. &quot;그러니까, 구석에서 나오게 하려는 거야?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>&quot;그보다는 날 믿고 말을 하게 하려는 거야.&quot; 니아는 겁에 질려 있고, 그건 저항할 이유가 되니, 블로드웬이 굴린다. 그녀는 10을 얻고, 나는 니아를 생각하며 그녀를 설득할 수 있는 것들의 목록을 본다. 두려움을 달래 주면 될 것 같다.</em></p><p><em>&quot;소녀의 눈이 납작빵에 고정되고, 침을 꿀꺽 삼키지만, 곧 눈길이 카라독에게로, 그다음엔 리아나에게로, 그리고 그녀의 부대에게로 휙휙 옮겨 가. 소녀는 전사들을 무서워해. 그들이 사라지면 틀림없이 진정할 거야.&quot; 블로드웬이 다른 이들에게 밖에 나가 달라고 부탁하고, 그들은 동의한다. &quot;좋아. 그들이 나가자마자 소녀가 빵을 낚아채서 너를 빤히 보면서 게걸스레 먹어 치워. 그러고는 침을 삼키고 &#x27;더 있어요?&#x27; 하고 말해. 어떻게 할래?&quot;</em></p></blockquote>
+<hr>
+<blockquote><p><em>바히드는 고르딘 광산(Gordin&#x27;s Delve)에서 은 세공 구체를 팔고 있다. 이빨 무트라(Mutra the Teeth)가 은 두 줌을 불렀다. &quot;아니, 이건 적어도 은 한 주머니의 값어치는 있소.&quot; 바히드가 말한다. &quot;녹이기만 해도 두 줌은 받을 수 있을 거요.&quot;</em></p><p><em>&quot;그러니까 그를 압박해서 돈을 더 받아 내려는 거지? 그는 분명히 저항할 이유가 있으니, 설득하기를 굴려.&quot; 10+이면 무트라가 구체의 내력에 대해 정보를 더 요구하고, 진실이나 그럴듯한 거짓말을 들으면 은을 내줄 것 같다. 그리고 실패하면</em> <strong><em>달갑지 않은 진실을 드러내서</em></strong><em>, 무트라는 거래를 거절하지만 바히드는 그가 나중에 깡패들을 보내 구체를 훔치려 할 거라고 의심하게 할 것이다.</em></p><p><em>하지만 바히드는 8을 얻었고, 나는 내키지 않는 무언가를 고른다. &quot;흥! 이걸 녹여 봤자 한 줌도 겨우 받을까 말까요. 하지만 이렇게 하지… 지금 두 줌을 주고, 당신이 이 아름다운 물건을 찾은 곳을 내 사람 군터(Gunther)에게 보여 주면, 그가 무사히 돌아왔을 때 은 한 주머니의 나머지를 주겠소.&quot; 그가 지나치게 날카로운 이를 드러내며 웃는다. &quot;거래 하시겠소오?&quot;</em></p></blockquote>
+<p>설득하기(PC 대상)</p>
+<p><strong><em>PC를 압박하거나 꾀는데 그가 저항할 때</em></strong>, 그 플레이어에게 묻는다. &quot;내가 너를 이렇게 하게 만들 수 있기는 해? 예, 아니오?&quot;</p>
+<p>&quot;아니오&quot;라고 하면, 그만둔다.</p>
+<p>&quot;예&quot;라고 하면, +CHA로 굴릴 수 있다.</p>
+<p><strong>10+이면</strong> 그들은 네가 원하는 대로 하면 XP를 표시하고, 하지 않는다면 네가 어떻게 그들을 설득할 수 있는지 말해야 한다. <strong>7-9면</strong> 그들은 네가 원하는 대로 하면 XP를 표시한다(하지만 원한다면 거절하거나 역제안할 수 있다).</p>
+<p>한 PC가 다른 PC에게 무언가를 하게 하고 싶은데 다른 PC가 저항한다면, 이 무브를 쓴다.</p>
+<p>무브의 첫 부분, 곧 첫 플레이어가 다른 플레이어의 캐릭터를 설득할 수 있기는 한지 묻는 부분이 핵심이다. 그것은 플레이어가 자기 캐릭터라면 하지 않을 것 같은 일을 규칙이 억지로 하게 만드는 것을 막아 준다.</p>
+<p>답이 &quot;아니오&quot;라면, 대상 플레이어에게 첫 캐릭터가 그걸 어떻게 알아차리는지 물어라. 눈빛에 분명히 드러나는가? 무슨 말을 하는가? 가 버리는가? &quot;어떤 모습이야?&quot; 첫 캐릭터가 계속 압박한다면, 잠시 멈추고 그 플레이어에게 그만두어야 한다고 말하라. 무례하게 굴고, 동료 플레이어를 존중하지 않고, 게임의 규칙을 무시하고 있는 것이다.</p>
+<p>답이 &quot;예&quot;라면, 첫 플레이어(압박하거나 꾀는 캐릭터의 플레이어)에게 굴리고 싶은지 물어라. 굴린다면, 좋다. 굴리지 않는다면, 그만두어야 한다.</p>
+<p>10+이면 대상 플레이어는 더 이상의 설득 없이 요청받은 대로 하면 XP를 표시한다. 거절한다면, 어떻게 설득될 수 있는지 드러내야 한다. 캐릭터로서 드러낼 수도 있고(&quot;할게, 리아나. 하지만 아무도 죽지 않는다고 약속해야 해&quot;), 통찰로 묘사할 수도 있고(&quot;내 눈이 바히드에게로 휙 가. 그가 방에 있는 한 내가 대답하지 않을 거라는 걸 넌 알아차릴 것 같아&quot;), 플레이어끼리 의논할 수도 있다(&quot;남는 데 동의할게. 하지만 저 녀석 시체를 집에 가져가서 내가 연구할 수 있게 해 준다고 약속하면&quot;).</p>
+<p>7-9면 대상 플레이어는 더 이상의 설득 없이 요청받은 대로 하면 XP를 표시한다. 역제안을 한다면(결국 동의하더라도) XP를 표시하지 않는다.</p>
+<p>6-이면 <strong>그의 무브를 그에게 되돌려</strong>, 대상 플레이어가 설득하던 캐릭터에게 무언가를 하게 하려면 어떻게 해야 하는지 묻게 할 수 있다. 아니면 <strong>위협을 등장시키거나 환경을 바꾸는</strong> 것 같은 다른 무브로 대화를 끊을 수도 있다. 어느 플레이어의 행동이나 반응도 멋대로 정하지 말고, 그들이 어떻게 느끼는지 말하지 마라. 막히면 테이블(특히 대상 플레이어)에게 아이디어를 물어라.</p>
+<h2 id="persuade-or-interfere">설득하기인가, 방해하기인가?</h2>
+<p>한 PC가 다른 PC에게 어떤 행동 방침에 <em>동의하게</em> 하려 할 때는 설득하기를 쓴다. 한 PC가 어떤 행동을 <em>시작했고</em> 다른 PC가 그것을 멈추거나 좌절시키려 할 때는 방해하기를 쓴다.</p>
+<p>한 PC가 다른 PC를 설득하기로 설득하려 하면, 다른 PC는 (의지력을 발휘하거나 허세를 부리는 식으로) 그 설득 시도를 방해하기로 막을 수 있다.</p>
+<hr>
+<blockquote><p><em>스윈은 죽었고, 아이들은 구출되었고, 그들은 집으로 향할 채비를 하고 있다. 하지만 바히드는 가고 싶어 하지 않는다. &quot;여긴 배울 게 너무 많아! 그냥 떠날 순 없어!&quot;</em></p><p><em>리아나가 저항하고 있으니, 나는 바히드의 플레이어에게 이 무브를 알려 준다. 그는 리아나의 플레이어에게 자기가 그녀를 설득할 수 있기는 한지 묻는다.</em></p><p><em>리아나의 플레이어는 곧바로 &quot;아니오&quot;라고 한다. 나는 그게 어떤 모습인지, 그녀가 꿈쩍도 하지 않으리라는 걸 바히드가 어떻게 알아차리는지 묻는다. &quot;아, 나 폭발해. &#x27;젠장, 바히드. 우린 간다, 이걸로 끝이야!&#x27;&quot;</em></p><p><em>바히드가 대답한다. &quot;좋아. 그럼 가. 하지만 난 남을 거야. 집에는 나 혼자 갈 수 있어.&quot;</em></p><p><em>리아나는 한숨을 쉬고, 콧등을 꼬집으며, 아주 차분하게 말한다. &quot;아니, 바히드. 넌 못 가. 길을 잃을 거야. 그리고 죽겠지. 제발 우리랑 같이 가.&quot; 그러니 이제</em> 그녀가 <em>압박하고 있는 것이다.</em> 그를<em>.</em></p><p><em>하지만 바히드는 굴하지 않는다. &quot;넌 날 설득할 수도 있어.&quot; 그가 말한다. &quot;하지만 굴려야 할 거야. 그리고 나는 지독하게 고집을 부리는 걸로 방해하기를 할 거고.&quot; 리아나는 설득하기를 굴리겠다고 하고, 바히드는 방해하기를 굴린다(의지력이니 WIS로). 그는 11을 얻고, 리아나는 계속</em></p></blockquote>
+<hr>
+<blockquote><p><em>압박하며 불리로 굴리기로 한다. &quot;내가 도울게.&quot; 블로드웬이 말한다. &quot;리아나 뒤로 다가가서 그에게 애처로운 눈빛을 보내. &#x27;바히드. 제발.&#x27;&quot; 우리는 그게 도움이 된다는 데 동의하고, 그녀의 돕기에서 온 유리가 바히드의 방해하기에서 온 불리를 상쇄한다.</em></p><p><em>&quot;좋아, 그럼 +CHA로 굴리는 거지? 그게 다야?&quot; 그렇다. 그녀는 10을 얻는다. 바히드가 더 이상의 논의 없이 지금 함께 가기로 하면, 그는 XP를 표시한다. 하지만 거절한다면, 그들이 어떻게 자신을 설득할 수 있는지 드러내야 한다.</em></p><p><em>&quot;알았어, 알았어… 갈게. 하지만 입구마다 성별의 표식을 새기게 해 줘야 해. 그리고 이곳을 탐험하러 다시 오겠다고 약속해. 그리고 다른 누구에게도 이곳에 대해 말하지 마. 됐지?&quot;</em></p><p><em>나는 그가 곧바로 동의하는 게 아니라, 그들이 자신을 어떻게 설득할 수 있는지 드러내는 것임을 분명히 한다. 그가 XP를 원한다면, 그런 단서 없이 그냥 동의해야 한다. &quot;응!&quot; 그가 말한다.</em></p><p><em>&quot;좋아.&quot; 리아나가 한숨을 쉰다. &quot;10분 줄게. 가서 표식 새겨. 블로드웬, 그를 잘 지켜봐.&quot;</em></p></blockquote>
+<div class="move-block" id="seek-insight"><h3 class="move-name">Seek Insight</h3><p class="move-trigger"><strong><em>상황이나 사람을 살펴보며</em></strong> GM에게서 통찰을 구할 때, +WIS로 굴린다. <strong>10+이면</strong> 아래 목록에서 GM에게 질문을 3개 한다. <strong>7-9면</strong> 1개를 한다. <strong>어느 쪽이든</strong> 그 답에 따라 행동하는 다음 무브에 유리를 받는다.</p><ul class="questions"><li>최근 여기서 무슨 일이 있었나?</li><li>곧 무슨 일이 일어나려 하나?</li><li>무엇을 경계해야 하나?</li><li>여기서 내게 쓸모 있거나 값진 것은 무엇인가?</li><li>여기를 실제로 좌우하는 것은 누구 또는 무엇인가?</li><li>여기서 보이는 그대로가 아닌 것은 무엇인가?</li></ul>
+<p>통찰 구하기는 캐릭터가 <em>통찰</em>을 얻으려고 무언가를 할 때 발동한다. 플레이어가 무엇이 보이거나 들리는지 묻는다고 해서 이 무브를 요구하지는 마라. 그들이 조각들을 맞추거나 뻔한 것 이상을 드러내 주기를 네게 바랄 때 요구하라.</p>
+<p>PC는 실제로 <strong><em>상황이나 사람을 살펴봐야</em></strong> 한다. 플레이어가 그냥 통찰 구하기를 한다고만 말하면, 그게 어떤 모습인지 물어라. 은근할 수도 있고(&quot;그들이 이야기하는 동안 그의 사무실을 훑어봐&quot;) 대놓고일 수도 있지만(&quot;방을 뒤집어엎어. 선반에서 책을 꺼내고, 저 항아리들 안을 들여다보고, 벽을 두드려 보고&quot;), <em>무언가</em>는 해야 한다.</p>
+<p>7+이면 플레이어는 목록에서 질문을 하나 이상 한다. 목록은 플레이어들이 그저 세부 사항이 아니라 통찰을 주는 의미 있는 질문을 하도록 이끈다. 그렇다고 너무 깐깐하게 굴 필요는 없다. 목록에 없는 좋은 질문을 하면 기꺼이 답해 주어라. 아니면 질문은 받아들이되 목록에 있는 질문에 <em>답해</em> 주어라.</p>
+<p>정직하게, 넉넉하게, 도움이 되게 답하라.</p>
+<p>네 준비와 허구에 대한 감각에 기대라. 세부 사항을 즉석에서 지어내야 할 때가 많을 것이다. 그 세부 사항은 허구의 참된 일부가 된다!</p>
+<p>어떻게 답해야 할지 모르겠으면 플레이어에게 방향을 물어라. &quot;음, 옛 동전은 분명히 값지지만, 어떤 걸 찾고 있었어?&quot;</p>
+<p><strong>허구으로 시작하고 허구으로 끝내라!</strong> 그냥 시오완(Siowan)이 그들을 배신하려 한다고 말하지 마라. 시오완이 초조하게 굴며, 누군가 곧 들이닥칠 것처럼 문 쪽을 흘끗거리는 모습을 묘사하라. 아니면 직접적이고 단순한 답을 준 다음, 어떤 세부 사항 때문에 그런 결론에 이르렀는지 <em>그들에게</em> 물어라.</p>
+<p>허구을 반영해 답을 조정하라.</p>
+<p>이 무브는 마법이 아니다. PC가 알 수 없는 것을 알게 해 주지 않는다. 입구에서 방을 한 번 훑어보는 것은 안에 들어가 이것저것 만져 볼 때보다 덜 구체적이고 덜 쓸모 있는 통찰을 주어야 한다.</p>
+<p>가장 좋은 답은 뻔한 답일 때가 많다.</p>
+<p>&quot;뭐가 값지냐고? 동전. 나머지는 다 잡동사니야.&quot; 때로는 정직한 답이 &quot;아무것도&quot;뿐이다. &quot;경계할 건 아무것도 없어. 여긴 꽤 안전해.&quot;</p>
+<p>&quot;아무도 좌우하지 않아. 그냥 난장판이야.&quot; 이런 답은 의심을 없애고 상황을 분명하게 해 준다(그리고 PC는 여전히 그 답에 따라 행동하는 데 유리를 얻는다).</p>
+<p>10+이면 플레이어는 굴림 하나에만, 곧 답 중 어느 하나에 따라 행동하는 첫 굴림에만 유리를 받는다. 질문을 세 개 해도 유리는 세 번이 아니라 한 번이다.</p>
+<p>긴장되고 위험한 장면에서 6-이 나오면, 네 무브는 대개 캐릭터가 상황을 살피다가 방해받거나 기습당하는 것이 될 것이다.</p>
+<p>&quot;안전한&quot; 상황에서 통찰 구하기로 6-이 나오면, 무브를 써서 전에는 없던 <strong>문제를 예고할</strong> 수 있다. <strong>달갑지 않은 진실을 드러내거나 다가오는 파멸을 향해 나아가서</strong>, 그들이 여기 오기 전에 화면 밖에서 나쁜 일이 일어났다고 정할 수도 있다. 아니면 <strong>자원을 소모시켜</strong>, 그들이 아무것도 알아내지 못하고 횃불만 줄어 간다고 말할 수도 있다.</p></div>
+<hr>
+<blockquote><p><em>PC들이 크린윈 둥지를 올려다보고 있다. 그들은 둥지의 크기(&quot;집채만 해&quot;), 둥지가 있는 나무(&quot;세쿼이아 삼나무 같아&quot;), 둥지 안에 움직임이 있는지(&quot;없어&quot;)를 묻는다. 그러고는 리아나가 &quot;최근에 무슨 활동이 있었어? 발자국 같은 걸 찾아볼게.&quot;라고 묻는다. 나한테는 통찰 구하기로 보인다. 리아나도 동의한다.</em></p><p><em>그녀는 (부대가 도와서 유리로) +WIS를 굴려 10을 얻는다. &quot;둥지가 아직 쓰이고 있어? 최근 활동의 흔적이 있어?&quot; 그녀가 묻는다. 나는 목록에서 질문을 고르라고 알려 준다.</em></p><p><em>&quot;아, 그렇지. 음, 무엇을 경계해야 하지? 그러니까, 크린윈이 아직 근처에 있어?&quot; 나는 아니, 경계할 건 없다고 말한다. 둥지는 비어 있고, 심지어 부서져 있다. 가렛(그녀의 부대원)이 그녀를 불러 덤불 속에서 썩어 가는, 그가 찾은 크린윈 시체들을 보여 준다.</em></p><p><em>&quot;우와. 어… 최근 여기서 무슨 일이 있었지?&quot;</em></p><p><em>그들은 크린윈 시체를 더 찾아내고, 그중 몇은 서로 죽인 것처럼 보인다. &quot;적어도 몇 달은 됐어. 하지만 둥지 하나를 다 채우기엔 시체가 모자라. 그리고 크린윈이 다른 크린윈을 끌고 간 흔적이 보여. 녀석들이 프라이더를 끌고 간 것과 대체로 같은 방향으로.&quot;</em></p><p><em>&quot;이게 대체 뭐야?&quot; 리아나가 내뱉는다. &quot;음… 여기를 실제로 좌우하는 건 누구 또는 무엇이지? 그러니까, 이 뒤에 있는 건 누구 또는 무엇이야?&quot;</em></p></blockquote>
+<hr>
+<p>6-이라고 플레이어의 주체성을 빼앗지 마라. <strong>그의 무브를 그에게 되돌려</strong> 거짓 정보나 나쁜 생각을 줄 수도 있지만, 플레이어가 동의하고 그 극적 아이러니를 즐길 때만 그렇게 하라. 마찬가지로, PC가 플레이어가 무브를 발동한 방식과 다르게 행동한다고 멋대로 정하지 마라. 방을 훑어본다고 했다면, 안으로 들어가 함정을 밟았다고 말하지 마라.</p>
+<blockquote><p><em>나는 스윈 사지라(Sajra)(거대하고, 최면을 거는, 원숭이 머리를 한 뱀)가 습격의 배후라는 걸 알지만, 리아나가 그걸 어떻게 추론할 수 있을지 모르겠다. 그래서 증거가 허락하는 한 쓸모 있는 답을 준다. &quot;길을 따라 내려가다가… 드레이크 비늘을 찾아? 그런데 더 크고, 더 납작하고, 금빛으로 어른거려.&quot;</em></p><p><em>그녀는 그게 뭔지 알아보겠냐고 묻는다. &quot;글쎄.&quot; 내가 말한다. &quot;지식 떠올리기 같은데?&quot; 그녀는 동의하고, 답에 따라 행동하는 것이니 유리로 굴린다.</em></p></blockquote>
+<hr>
+<blockquote><p><em>가시엄지라는 페이가 그들에게 스윈의 소굴에 대해 이야기하는데, 그의 눈길이 바히드의 짐 꾸러미(정신의 보석이 든)에 자꾸 머문다. 바히드는 그게 전혀 마음에 들지 않는다. &quot;그를 뜯어보며, 꿍꿍이가 뭔지 알아내려고 해.&quot; 그건 통찰 구하기지만, 그는 3을 얻는다.</em></p><p><em>나는</em> <strong><em>그의 무브를 그에게 되돌려</em></strong><em>, 페이에게 값진 무언가를 드러낸다. &quot;너는, 그러니까, 짐 꾸러미를 집어 들려다가 떨어뜨리고, 정신의 보석이 굴러 나와!&quot; 하지만 바히드의 플레이어는 받아들이지 않는다. 그는 짐 꾸러미를 건드리지도 않았고, 정신의 보석은 맨 밑바닥에 싸여 있다.</em></p><p><em>&quot;이런, 네 말이 맞아. 이건 어때? 네가 그의 속을 읽어 내기도 전에, 그가 덤불 사이로 껑충 뛰어가며 따라오라고 손짓해. &#x27;길을 보여 주지, 안전하고 은밀하게.&#x27; 그가 말해!&quot; 그런데 그의 미소에는 여전히 너를 불안하게 하는 뭔가가 있어, 바히드. 너희 모두 어떻게 할래?&quot;</em></p></blockquote>
+<h2 id="special-moves">특수 무브</h2>
+<p>이 무브들은 언제나 적용되지만, 다른 무브에 영향을 주거나 아주 특정한 상황에서만 발동한다.</p>
+<div class="move-block" id="advantage-disadvantage"><h3 class="move-name">Advantage/Disadvantage</h3><p class="move-trigger"><strong><em>유리로 굴릴 때</em></strong>, 주사위를 하나 더 굴리고 가장 낮은 결과를 버린다. <strong><em>불리로 굴릴 때</em></strong>, 주사위를 하나 더 굴리고 가장 높은 결과를 버린다. <strong><em>유리와 불리를 동시에 받고 굴릴 때</em></strong>, 둘은 서로 상쇄된다. <strong><em>피해 굴림에 유리/불리를 받는다면</em></strong>, 주 주사위를 두 번 굴려 더 낮은/높은 결과를 버린다. 그런 다음 적용되는 보너스 주사위를 더한다. 유리는 보통 <button type="button" class="dice-roll" data-dice="3d6" title="클릭하여 3d6 굴림 — Shift: 유리 · Ctrl: 불리">3d6</button>을 굴려 가장 높은 두 주사위를 남긴다는 뜻이다. 불리는 보통 <button type="button" class="dice-roll" data-dice="3d6" title="클릭하여 3d6 굴림 — Shift: 유리 · Ctrl: 불리">3d6</button>을 굴려 가장 낮은 두 주사위를 남긴다는 뜻이다. 가장 낮거나 가장 높은 눈이 같다면 그중 하나를 버린다. 어느 것이든 상관없다. 피해 굴림에서 유리/불리는 &quot;주&quot; 주사위에만 적용된다. 플레이어가 보너스 피해 주사위를 얻는다면, 그 주사위는 가장 높은/낮은 주사위를 고른 뒤에 더한다. 예를 들어 덩치(피해를 줄 때 유리를 받는)가 맞붙기에서 10+을 굴려 세고 빠르게 쳐서 +<button type="button" class="dice-roll" data-dice="1d6" title="클릭하여 1d6 굴림 — Shift: 유리 · Ctrl: 불리">1d6</button> 피해를 주기로 한다. 그는 <button type="button" class="dice-roll" data-dice="2d10" title="클릭하여 2d10 굴림 — Shift: 유리 · Ctrl: 불리">2d10</button>을 굴려 두 주사위 중 높은 쪽만큼 피해를 주고, 그 위에 +<button type="button" class="dice-roll" data-dice="1d6" title="클릭하여 1d6 굴림 — Shift: 유리 · Ctrl: 불리">1d6</button> 피해를 더 준다. 유리/불리는 &quot;중첩&quot;되지 않는다. 있거나 없거나, 둘 중 하나다. 예를 들어 누군가 통찰 구하기를 해서 7+을 얻으면, 답에 따라 행동하는 다음 굴림에 유리를 받는다. 그 굴림에 누군가 돕기까지 해도 유리를 한 번 더 받을 수는 없다. <button type="button" class="dice-roll" data-dice="3d6" title="클릭하여 3d6 굴림 — Shift: 유리 · Ctrl: 불리">3d6</button>을 굴려 가장 낮은 주사위를 버린다. 누군가 같은 굴림에 유리와 불리를 모두 받으면, 둘이 서로 상쇄되어 보통대로 굴린다. 기본적으로는 유리의 출처가 여럿이고 불리의 출처가 하나라도(또는 그 반대라도) 상관없다. 하지만 너와 플레이어들이 정말로 플레이어가 받은 유리나 불리의 개수를 세고 싶다면 그래도 된다. 게임이 망가지지는 않겠지만, 느려질 수는 있다. 플레이어가 굴림에 유리를 받는 이유는...</p><ul class="ellipsis"><li>어떤 무브(돕기나 통찰 구하기 같은)가 그렇다고 해서,</li><li>어떤 장비나 아르카눔이 유리를 주어서, 또는</li><li>네가 특정 굴림을 유리로 할 <strong>기회를 제시해서</strong>다(하지만 맞은편 쪽의 곁글을 참고하라).</li></ul>
+<p>플레이어가 굴림에 불리를 받는 이유는...</p>
+<ul class="ellipsis"><li>어떤 무브(방해하기 같은)가 그렇다고 해서,</li><li><strong>쇠약</strong><a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >피해와 치유</a>을 표시했고 영향받는 능력치로 굴려서,</li><li>어떤 장비나 아르카눔이 불리를 부과해서, 또는</li><li>네가 <strong>단점을 드러내거나 결과를 말해 주었는데</strong>, 그것이 불리로 굴리는 것을 포함해서다(하지만 맞은편 쪽의 곁글을 참고하라).</li></ul></div>
+<h2 id="adjusting-difficulty">난이도 조정</h2>
+<p>많은 RPG에서 GM은 과제의 어려움이나 쉬움을 반영해 플레이어의 굴림에 으레 보너스나 페널티를 준다. <em>스톤탑</em>에서도 즉석에서 유리나 불리를 주어 같은 일을 할 수 있지만, 아껴서 하라. 특별히 유리나 불리를 주는 무브, 아르카눔, 쇠약의 무게를 떨어뜨리기 때문이다.</p>
+<p>캐릭터의 행동이 특히 쉽거나 어려워 보인다면, 유리나 불리 대신 다음을 고려하라.</p>
+<p><strong>애초에 무브를 발동하고 있는가?</strong></p>
+<p>그냥 해낸다고, 안다고, 알아낸다고 말해 줄 수 있는가? &quot;아니, 맞붙기 말고 그냥 피해를 줘.&quot; 아니면 그냥 &quot;안 돼&quot;라고 말하고 그걸 해내기 위한 <strong>요구 조건을 알려 줄</strong> 수 있는가?</p>
+<p>&quot;장비를 다 짊어지고는 그렇게 못 뛰어. 먼저 가벼운 짐으로 줄여야 해.&quot;</p>
+<p><strong>위험을 조정할 수 있는가?</strong> 그들이 유리한 위치에 있다면 위험이 덜하다는 것을 분명히 하라. &quot;그의 공격을 받는다는 건 그가 네 방어 안쪽으로 파고든다는 것뿐이야.&quot; 필사적인 처지라면, 얼마나 나빠질 수 있는지 말해 주어라. &quot;7-9면 마지막으로 난간을 붙잡을 기회가 한 번 있지만, 6-이면 죽음의 문턱을 굴리게 돼.&quot;</p>
+<p><strong>범위를 조정할 수 있는가?</strong> PC에게 쉬운 일이라면, 한 번의 굴림으로 더 많은 것을 이루거나 더 많은 것을 드러내게 하라.</p>
+<p>어려운 일이라면, 행동을 더 작은 무브들로 쪼개서 하나하나가 목표의 일부만 이룰 수 있게 하라.</p>
+<div class="move-block" id="burn-brightly"><h3 class="move-name">Burn Brightly</h3><p class="move-trigger"><strong><em>레벨 올리기에 충분한 XP가 있을 때</em></strong>(6 + 현재 레벨의 두 배), 어떤 굴림이든 굴린 뒤 2 XP를 소모해 그 굴림에 +1을 더할 수 있다(굴림당 최대 +1). PC는 원정 중에는 <strong>레벨 올리기</strong><a class="wiki-link" href="homefront.html" data-slug="homefront" data-ref="page" >후방</a>를 할 수 없으니, XP가 남아돌게 될 수도 있다. 이 무브로 그 XP의 일부를 소모해 성공을 확보할 수 있다. PC가 활활 타오르기를 할 수 있다는 사실은 PC가 레벨을 올리는 속도를 늦추고, &quot;두 레벨 한꺼번에 올리기&quot;를 막는 데 도움이 된다. 또한 오랫동안 현장에 나가 여러 차례 좌절을 겪은 뒤에는 은근히 플레이어에게 유리하게 기울여 준다. 플레이어가 6이나 9를 굴리는지 지켜보다가, 활활 타오르기를 할 만큼 XP가 있는지 물어라. 충분하다면 아마 할 것이다. 플레이어가 활활 타오르기를 가장 자주 하는 때는 무브로 <button type="button" class="dice-roll" data-dice="2d6" title="클릭하여 2d6 굴림 — Shift: 유리 · Ctrl: 불리">2d6</button>을 굴릴 때지만, 어떤 굴림에든 쓸 수 있다. 피해 굴림이나 심지어 운명의 주사위에도. 플레이어는 자기가 직접 한 굴림에만 활활 타오르기를 할 수 있다. 남는 XP를 소모해 다른 플레이어의 굴림을 올려 줄 수는 없다.</p></div>
+<div class="move-block" id="end-of-session"><h3 class="move-name">End of Session</h3><p class="move-trigger"><strong><em>세션이 끝날 때</em></strong>, 네가 본능을 어떻게 드러냈는지 또는 본능과 어떻게 씨름했는지 짚어 말한다. 그럴 수 있다면 XP를 표시한다. PC, NPC, 또는 집단과의 관계나 그에 대한 생각이 어떻게 바뀌었는지 말한다. 그럴 수 있다면 XP를 표시한다. 다음 질문들에 모두 함께 답한다. &quot;예&quot;마다 모두가 XP를 표시한다.</p><ul class="questions"><li>우리는 세상이나 그 역사에 대해 더 알게 되었나?</li><li>우리는 스톤탑이나 이 지역에 대한 위협을 물리쳤나?</li><li>우리는 이웃들 사이에서 우리의 입지를 높였나?</li><li>우리는 스톤탑을 오래가게 개선했거나, 그렇게 하는 쪽으로 눈에 보이는 진전을 이루었나?</li></ul>
+<p>세션에서 즐거웠거나 고마웠던 무언가(허구 속이든 테이블에서든)를 칭찬한다.</p>
+<p>끝으로, 앞으로의 세션에 대한 바람을 하나 내놓는다. __을 더, __을 덜, __할 기회, __을 다른 방식으로 다루기 등.</p>
+<p>바람은 허구 속에서 일어나는 일에 대한 것일 수도, 테이블에서 일어나는 일에 대한 것일 수도 있다. GM이 메모해 둔다.</p>
+<p>세션 종료 무브는 하나의 의식이다. 모임이 세션을 돌아보고 게임을 더 낫게 만드는 데 도움이 된다.</p>
+<p>플레이어는 자기 PC의 본능이 플레이에 드러난 순간을, 좋게든 나쁘게든, 의도했든 아니든 짚어 말할 수 있다. 아무도 반대하지 않으면 그 플레이어는 XP를 표시한다. (본능이 여러 번 드러났더라도 세션당 최대 1 XP.)</p>
+<p>그다음 각 플레이어는 자신과 다른 누군가 사이에서 무엇이 바뀌었는지 말할 수 있다.</p>
+<p>그 변화는 서로 같을 필요도, 심지어 이성적일 필요도 없지만, 진심으로 느껴져야 한다. 아무도 반대하지 않으면 그 플레이어는 XP를 표시한다. (관계가 여럿 바뀌었더라도 세션당 최대 1 XP.)</p>
+<p>다른 플레이어들은 제안을 하거나, 질문을 하거나, 주장에 이의를 제기할 수 있다. 목표는 모두가 세션을 돌아보고, 캐릭터에 몰입한 플레이어에게 보상하는 것이다. XP를 얻어 내려고 구슬리는 것이 목표가 아니다.</p>
+<p>네 가지 질문은 모두 함께 논의하라. 모두(GM인 너를 포함해)가 질문의 답이 &quot;예&quot;라는 데 동의해야 한다. 한 사람이라도 반대하면 그 질문에는 XP가 없다. 모두가 같은 생각인지 확인하기 위해, &quot;예&quot;마다 구체적인 예를 물어보는 것이 좋다.</p>
+<p>질문에 답한 뒤, 각 플레이어(GM인 너를 포함해)는 좋았던 것을 하나 짚어야 한다. 한 플레이어의 영리한 아이디어, 롤플레이의 한 장면, 싸움이 없었던 것, 숲의 민족(Forest Folk)이 어디로 갔는지 알게 된 것, 밥(Bob)이 &quot;잠깐 멈춤&quot;을 외치고 모두의 상태를 확인했던 때 등.</p>
+<p>마지막으로 각 플레이어(너를 포함해)는 앞으로의 세션에 대한 바람을 하나 내놓아야 한다. 바람은 이런 것을 나타낼 수 있다.</p>
+<ul class="ellipsis"><li>무슨 일이 일어나기를 바라는 플레이어의 희망(&quot;이완(Iwan)을 쓰러뜨릴 기회가 있으면 좋겠어&quot;),</li><li>특정 장면에 대한 요청(&quot;카라독과 안드라스(Andras)가 좀 가까워지는 걸 보고 싶어&quot;),</li><li>일을 다르게 해 보고 싶다는 바람(&quot;캐릭터로서 말하는 걸 더 해 볼까?&quot;),</li><li>네 GM 진행에 대한 피드백(&quot;싸움이 벌어질 때 주변에 대한 묘사가 더 있으면 좋겠어&quot;), 그리고/또는</li><li>정말로, 게임에 관한 다른 무엇이든.</li></ul>
+<p>메모하고, 분명하지 않은 것은 물어보고, 그 바람들이 이루어지도록 최선을 다하라.</p></div>
+<div class="move-block" id="deaths-door"><h3 class="move-name">Death&#x27;s Door</h3><p class="move-trigger"><strong><em>죽어 갈 때</em></strong>, 너는 마지막 문(Last Door)과 까마귀 부인(Lady of Crows)을 언뜻 본다(그 모습을 묘사한다). 그런 다음 아무것도 더하지 않고 굴린다. <strong>10+이면</strong> 너는 몸부림쳐 산 자들의 영역으로 돌아온다. HP 1로 돌아오되, 죽음을 스친 경험이 네게 어떤 흔적을 남겼는지 말한다. <strong>7-9면</strong> 부인이 손짓해 너를 돌려보낸다. 더는 죽어 가고 있지 않지만 이 싸움에서는 빠진다. <strong>6-이면 네 때가 왔다</strong>. 1개를 고른다.</p><ul class="bullets"><li>12+을 굴린 것처럼 마지막 무브를 하나 하고, 마지막 문을 지나간다</li><li>가기를 거부한다. 돌아온 자 또는 유령 별지를 얻는다</li><li>아래 것들(Things Below) 중 하나를 이름으로 불러 개입해 달라고 애원한다. 예속자 별지를 얻는다</li></ul>
+<p>이 무브에 대한 자세한 설명은</p>
+<p><a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >피해와 치유</a>, <strong>피해와 치유</strong> 장에 있다.</p></div>
+<h2 id="other-player-moves">그 밖의 플레이어 무브</h2>
+<p>그 밖의 플레이어 무브는 다른 곳에서 자세히 다룬다.</p>
+<h3 id="follower-moves">추종자 무브</h3>
+<ul class="bullets"><li>추종자에게 명령하기 462</li><li>유대 다지기 464</li></ul>
+<h3 id="expedition-moves">원정 무브</h3>
+<ul class="bullets"><li>경로 정하기 302</li><li>채비 갖추기 306</li><li>징발하기 308</li><li>필요한 것 챙겨두기 326</li><li>회복하기 328</li><li>식량 구하기 336</li><li>곁에 머물기 332</li><li>야영하기 334</li><li>한마음으로 버티기 328</li><li>개선하기 339</li></ul>
+<h3 id="homefront-moves">후방 무브</h3>
+<ul class="bullets"><li>단단히 준비하기 524</li><li>요양하기 249</li><li>파견하기 526</li><li>레벨 올리기 528</li><li>계획 세우기 530</li><li>재난 맞닥뜨리기 532</li><li>소집하기 534</li><li>품앗이하기 536</li><li>계절의 변화 517</li><li>교역과 물물교환 540</li></ul>
+<p>캐릭터가 하는 일이 둘 이상의 플레이어 무브의 발동 조건에 맞을 수 있다면, 현재 상황에 가장 알맞아 보이는 것을 쓴다. 대체로 더 구체적인 무브가 더 일반적인 무브보다 우선하며, 모든 무브가 위험에 맞서기보다 우선한다.</p>
+<p>플레이어들과 의논해서 할 수 있다면 합의에 이르고, 그럴 수 없다면 판정을 내려라.</p>
+<h2 id="custom-moves">맞춤 무브</h2>
+<p><em>제2권: 더 넓은 세계와 그 밖의 경이</em>에는 게임에 쓸 수 있는 맞춤 무브가 수십 개 들어 있다. 이 무브들은 특정 게임 요소나 설정 요소에만, 그리고 네가 쓰기로 할 때만 적용된다.</p>
+<p>대부분의 맞춤 무브에는 이름이 없다. 그냥 설정 요소의 설명 일부로 제시된다.</p>
+<p>예를 들어 <strong>만든 이들의 길</strong>(<em>제2권</em>, <a class="wiki-link" href="the-makers-roads.html" data-slug="the-makers-roads" data-ref="page" >만든 이들의 길</a>)에는 맞춤 무브가 몇 개 있다. 폭력을 막는 길의 결계와 관련된 것이 하나 있다.</p>
+<p><strong><em>길 위에서 폭력을 저지르려 할 때</em></strong>, 또는 길이나 그 위에 있는 무엇이든 해치려 할 때, 너는 머뭇거린다. 억지로 의지를 내어 계속하려면 HP를 <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button> 잃고 +WIS로 굴린다. <strong>10+이면</strong> 해도 된다.</p>
+<p><strong>7-9면</strong> 행동하지만 폭력을 저지르는 모든 굴림(피해 포함)에 불리를 받는다. <strong>6-이면</strong> 행동하지 못하고 <em>몽롱</em>을 표시한다.</p>
+<p>이것은 무언가가 어떻게 작동하는지 확립하는 맞춤 무브의 예다. PC가 길 위에서 싸우려 하면 무슨 일이 일어나는지, 가능한 결과는 무엇인지 알려 준다.</p>
+<p>그리고 이런 맞춤 무브가 NPC나 괴물에게 직접 적용되지는 않지만, 그들이 어떤 영향을 받을지에 대한 지침으로 쓸 수 있다. 대부분의 사람은 길 위에서 싸우지 못하겠지만, 의지가 강한 NPC라면 억지로 해낼지도 모른다.</p>
+<p>PC가 <strong>추종자에게 명령하기</strong><a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >NPC와 추종자</a>로 맞춤 무브를 발동할 수 있다는 점에 유의하라. 늘 그렇듯 PC의 플레이어가 무브를 굴리고 추종자를 대신해 결정을 내린다.</p>
+<p>길, 특히 갈림길(Crossroads)과 관련된 맞춤 무브가 또 하나 있다. 이것은 무언가가 가능하다는 것(죽은 자를 불러내는 것)과 함께, 걸린 것, 위험, 잠재적인 이득이나 대가 일부를 확립한다.</p>
+<p><strong><em>그믐달 아래 갈림길에 서서 떠난 이를 이름으로 부를 때</em></strong>, 굴리고 다음을 더한다…</p>
+<ul class="ellipsis"><li>그와 피로 이어져 있다면 +1,</li><li>그의 소지품을 지니고 있다면 +1, 그리고/또는</li><li>그가 살아생전 좋아했던 음식이나 음료를 바친다면 +1.</li></ul>
+<p><strong>10+이면</strong> 그의 그림자가 나타나지만 1개를 고른다. <strong>7-9면</strong> 그의 그림자가 나타나지만 2개를 고른다.</p>
+<ul class="bullets"><li>그는 미쳤거나, 혼란스럽거나, 정신이 흐릿하거나, 말이 통하지 않는다</li><li>그는 순순히 안식으로 돌아갈 생각이 전혀 없다</li><li>무언가가 그와 함께 마지막 문을 빠져나온다. 둘 정령, 귈기(gwyllgi), 매이지 않은 망령 등</li></ul>
+<p>맞춤 무브에 6-에서 무슨 일이 일어나는지 쓰여 있지 않다면, 표준 규칙을 따른다. 플레이어는 XP를 표시하고 너는 확립된 상황에 맞는 강한 GM 무브를 한다.</p>
+<p>유물과 관련된 맞춤 무브가 또 하나 있다. 이것에는 <button type="button" class="dice-roll" data-dice="2d6" title="클릭하여 2d6 굴림 — Shift: 유리 · Ctrl: 불리">2d6</button> 굴림이 없다. 무브가 그냥 무슨 일이 일어나는지 말해 준다!</p>
+<p><strong><em>부서진 도로석으로 어둠이나 혼돈이나 죽음의 존재를 칠 때</em></strong>(<em>근접</em>, <em>투척</em>, <em>조잡한</em>), 그 존재는 <button type="button" class="dice-roll" data-dice="1d8" title="클릭하여 1d8 굴림 — Shift: 유리 · Ctrl: 불리">1d8</button> 피해를 받지만(방어구 무시) 돌은 곧 부스러져 먼지가 된다.</p>
+<p>그리고 마지막으로, 위험과 관련된 맞춤 무브의 예가 하나 있다. 밤에 길에서 나그네들을 꾀어내는 수수께끼의 노스갈라우(nosgalau)다.</p>
+<p><strong><em>노스갈라우의 부름을 들을 때</em></strong>, 바람결에 누구의 목소리가 들리는지, 왜 그들에게 가야만 할 것 같은지 말한다. 그런 다음 +WIS로 굴린다. <strong>10+이면</strong> 네가 어떻게 속임수를 꿰뚫어 보는지 말한다. 너는 다시는 그 부름을 듣지 않는다. <strong>7-9면</strong> XP를 표시하고 부름을 따르거나, 이번 한 번은 네가 어떻게 거짓을 알아차리는지 말한다. <strong>6-이면</strong> 동료들이 붙잡지 않는 한, 너는 부름에 응해 노스갈라우에게 간다.</p>
+<p>이 무브가 대응형이라는 점을 눈여겨보라. 플레이어가 발동하기로 하는 게 아니라, 네가 발동한다! 네가 <strong>문제를 예고하는</strong> 것 같은 GM 무브를 하고(&quot;평원(Flats) 저 멀리의 불빛들을 지켜보고 있는데, 바람이 바뀌면서 희미한 속삭임이 들려…&quot;), 그것이 무브를 발동한다. 이렇게 작동하는 맞춤 무브는 대부분 위험과 관련되어 있으며, 특히 고약하거나 교묘한 효과를 반영한다.</p>
+<p>또한 위의 무브가 상황을 구체적이고 주제에 맞는 방식으로 해결한다는 점도 눈여겨보라. PC들을 길 밖으로 꾀어내려 애쓰며 플레이어들이 맞춰 주기를 바랄 필요가 없다. 무브는 PC가 길을 떠나지 않을 수 없다고 못 박고, 플레이어에게 어떻게, 왜 그런지 말하게 한다. 그런 다음 굴림이 PC가 속임수를 꿰뚫어 보는지 아닌지 알려 준다. 이는 가장 조심스러운 플레이어의 PC라도 노스갈라우의 먹이가 될 수 있게 하면서, 그 과정에서 자기 캐릭터에 대해 무언가를 드러내도록 이끈다. 꽤 멋지지 않은가?</p>
+<p>맞춤 무브가 플레이어들과 관련되는 즉시 그 내용을 공개하라. 플레이어들은 무브가 적용되고 있다는 것과 그것이 어떻게 작동하는지 알아야, 그것과 엮일지(또는 피할지) 고를 수 있다. 무브 사본을 테이블이나 단체 대화방에 올리고, 한 플레이어에게 소리 내어 읽어 달라고 하라. 아니면 그냥 네가 소리 내어 읽어라.</p>
+<p>&quot;관련되는 즉시&quot;는 경우마다 다를 것이다. &quot;<strong><em>길 위에서 폭력을 저지르려 할 때</em></strong>…&quot; 무브는 아마 PC들이 길을 나서자마자 알려 주고, 괴물이나 NPC를 만났을 때 다시 상기시키고 싶을 것이다. 하지만 &quot;<strong><em>노스갈라우의 부름을 들을 때</em></strong>…&quot;는 발동할 때까지 공개하지 않을 수도 있다.</p>
+<p>맞춤 무브의 작동 방식이 PC들에게 뻔히 드러나지 않을 것 같다면, 곧바로 공개하지 마라. 어쩌면 그냥 <strong>보이는 것 이상의 무언가를 암시하거나</strong> 달리 알아낼 것이 더 있다고 넌지시 알리고, 그들이 어떻게 하는지 지켜보라.</p>
+<hr>
+<blockquote><p><em>바히드와 카라독이 갈림길에서 걸음을 멈췄다. 나는 근처의 둘 나무들과 그곳의 섬뜩한 느낌을 언급하고, 아니나 다를까, 바히드는 지식 떠올리기를 하기로 한다. 10+이면 앞 쪽의 맞춤 무브를 통째로 알려 줄 것이다. 하지만 그는 7을 얻었으니, 발동 조건만 알려 준다. &quot;그믐달 아래 갈림길에서 이름을 부르면 죽은 영혼을 불러낼 수 있다는 이야기를 들은 적이 있어.&quot; 내가 말한다. &quot;하지만 그게 어떻게 작동하는지 더 알고 싶으면, 조사를 좀 해야 할 거야. 아니면 직접 해 보든가. 마침 오늘 밤이 그믐이야…&quot;</em></p></blockquote>
+<hr>
+<p><strong>맞춤 무브를 직접 쓰는 법</strong>에 대한 안내는 <a class="wiki-link" href="writing-moves-love-letters.html" data-slug="writing-moves-love-letters" data-ref="page" >무브와 러브레터 쓰기</a>을 참고하라.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div id="wiki-preview" class="wiki-preview" hidden></div>
+  <div id="dice-toast" class="dice-toast" hidden></div>
+  <script>window.WIKI_UI={"books": {"book1": "제1권", "book2": "제2권", "sites": "모험 장소"}, "english_only": "영어로만 제공", "js": {"feedback_link": "이 페이지에 대한 의견 보내기", "feedback_head": "의견 보내기", "feedback_about": "대상", "feedback_what": "무엇을 고쳐야 하나요?", "feedback_placeholder": "잘못된 숫자, 빠진 무브, 깨진 표 등…", "feedback_email": "이메일 (선택, 답장용)", "feedback_send": "보내기", "feedback_cancel": "취소", "feedback_close": "닫기", "feedback_sending": "보내는 중…", "feedback_sent": "의견을 보냈습니다. 감사합니다.", "feedback_failed": "보내지 못했습니다({error}). 다시 시도해 주세요.", "feedback_network": "네트워크 오류", "search_empty": "“{query}”에 해당하는 페이지가 없습니다.", "search_pages_one": "1페이지", "search_pages_many": "{n}페이지", "search_showing": " ({n}개 표시)", "search_in_title_text": "제목 + 본문", "search_in_title": "제목", "search_in_text": "본문", "preview_no_summary": "요약이 없습니다.", "preview_missing": "이 링크의 미리보기가 없습니다.", "location_label": "소재", "location_who": "소지자", "location_unknown": "— 알 수 없음 —", "location_other": "다른 곳 / 다른 사람…", "location_placeholder": "어디에 있는지, 또는 누가 가지고 있는지", "arcana_head": "아르카눔", "arcana_none": "가진 것이 없습니다. 아르카눔의 소재를 “{title}”(으)로 정하면 여기에 표시됩니다.", "sync_label": "캠페인", "sync_copied": "{what}을(를) 복사했습니다", "sync_copy_this": "이 링크를 복사하세요", "sync_nothing_export": "아직 내보낼 것이 없습니다", "sync_saved": "{n}개를 {file}에 저장했습니다", "sync_not_json": "그 파일은 JSON이 아닙니다", "sync_not_export": "그것은 캠페인 내보내기 파일이 아닙니다", "sync_data": "캠페인 데이터", "sync_export": "내보내기", "sync_export_title": "이 캠페인의 상태를 파일로 저장", "sync_import": "가져오기", "sync_import_title": "저장된 파일을 이 캠페인에 병합", "sync_nothing_import": "그 파일에는 가져올 것이 없습니다", "sync_imported": "{n}개를 {stores}개 저장소에 가져왔습니다", "sync_skipped": " · 건너뜀: {names}", "sync_read_failed": "그 파일을 읽을 수 없습니다", "sync_sharing_gm": "GM으로 공유 중", "sync_sharing_table": "테이블과 공유 중", "sync_copy_player": "플레이어 링크 복사", "sync_copy_gm": "GM 링크 복사", "sync_copy_mine": "내 링크 복사", "sync_player_link": "플레이어 링크", "sync_gm_link": "GM 링크", "sync_link": "링크", "sync_no_player_token": "이 브라우저는 GM 링크로 참여했기 때문에 플레이어 토큰이 없습니다. 캠페인을 만든 브라우저에서 플레이어 링크를 복사하세요.", "sync_stop": "공유 중지", "sync_stopped": "공유를 중지했습니다. 이 브라우저는 자체 사본을 유지합니다", "sync_what_shared": "체크한 개선 사항, 위험 시계, 답변, 시트, 캐릭터의 HP는 모두와 공유됩니다. 적의 HP는 GM만 봅니다.", "sync_share_head": "이 캠페인 공유", "sync_worker": "동기화 서버", "sync_create": "캠페인 만들기", "sync_creating": "만드는 중…", "sync_enter_endpoint": "먼저 동기화 서버 주소를 입력하세요", "sync_unreachable": "동기화 서버에 연결할 수 없습니다", "sync_paste": "또는 GM이 보낸 링크를 붙여넣으세요:", "sync_join_link": "참여 링크", "sync_join": "참여", "sync_bad_link": "참여 링크가 아닌 것 같습니다", "sync_joined": "{campaign}에 참여했습니다", "sync_the_campaign": "캠페인", "sync_status_on": "이 캠페인을 테이블과 공유하고 있습니다", "sync_status_offline": "동기화 서버에 연결할 수 없습니다. 변경 사항은 여기에 저장되었다가 나중에 반영됩니다", "sync_status_local": "이 브라우저는 자체 사본을 유지합니다"}, "playbooks": {"the-blessed": "축복받은 자", "the-fox": "여우", "the-heavy": "덩치", "the-judge": "재판관", "the-lightbearer": "빛을 든 자", "the-marshal": "통솔자", "the-ranger": "순찰자", "the-seeker": "탐구자", "the-would-be-hero": "영웅 지망생"}};</script>
+  <script src="../js/wiki.js"></script>
+</body>
+</html>
