@@ -137,7 +137,7 @@ DAMAGE_ROLL_TITLE = "Roll damage — Shift: advantage · Ctrl: disadvantage"
 def set_translation(
     tm, ui: dict | None = None, titles: dict[str, str] | None = None
 ) -> None:
-    global _TM, _UI, _PAGE_WORDS, _TITLES
+    global _TM, _UI, _PAGE_WORDS, _PAGE_AFTER, _TITLES
     _TM = tm
     # A page ref carries no label of its own ("(page 200)"), so the link is
     # named after the page it points at. On a translated page that name is
@@ -151,12 +151,17 @@ def set_translation(
     if isinstance(words, str):
         words = [words]
     _PAGE_WORDS = tuple(w for w in words if isinstance(w, str) and w.strip())
+    # Japanese and Korean put the word after the number ("184ページ", "184쪽").
+    after = (ui or {}).get("page_words_after") or ()
+    if isinstance(after, str):
+        after = [after]
+    _PAGE_AFTER = tuple(w for w in after if isinstance(w, str) and w.strip())
 
 
 def _page_res() -> tuple:
     """The page-ref regexes for the language being rendered: the one in
     parentheses, the bare one, and the one that carries a title."""
-    hit = _PAGE_RE_CACHE.get(_PAGE_WORDS)
+    hit = _PAGE_RE_CACHE.get((_PAGE_WORDS, _PAGE_AFTER))
     if hit:
         return hit
     if _PAGE_WORDS:
@@ -176,12 +181,21 @@ def _page_res() -> tuple:
         r"\((?:see\s+)?" + alt + r"\s+" + nums + r"\)",
         re.IGNORECASE,
     )
-    out = (paren, bare, titled)
-    _PAGE_RE_CACHE[_PAGE_WORDS] = out
+    after_paren = after_bare = None
+    if _PAGE_AFTER:
+        # "（184ページ）", "(184, 245쪽)", "184ページ": the number first, CJK
+        # list marks and full-width brackets allowed.
+        word = "(?:" + "|".join(re.escape(w) for w in _PAGE_AFTER) + ")"
+        cjk_nums = r"(\d+(?:\s*[,、，–—~〜～-]\s*\d+)*)"
+        after_paren = re.compile(r"[\(（]\s*" + cjk_nums + r"\s*" + word + r"\s*[\)）]")
+        after_bare = re.compile(r"(?<![\d/])" + cjk_nums + r"\s*" + word)
+    out = (paren, bare, titled, after_paren, after_bare)
+    _PAGE_RE_CACHE[(_PAGE_WORDS, _PAGE_AFTER)] = out
     return out
 
 
 _PAGE_WORDS: tuple = ()
+_PAGE_AFTER: tuple = ()
 _PAGE_RE_CACHE: dict = {}
 _TITLES: dict[str, str] = {}
 
@@ -831,7 +845,7 @@ def linkify_pages(
             return store(html.escape(prefix) + " " + link)
         return store(link)
 
-    paren_re, bare_re, titled_re = _page_res()
+    paren_re, bare_re, titled_re, after_paren_re, after_bare_re = _page_res()
     work = titled_re.sub(repl_title_page, work)
 
     def repl_paren(m: re.Match) -> str:
@@ -849,6 +863,15 @@ def linkify_pages(
         return store(prefix + links_for_pages(pages))
 
     work = bare_re.sub(repl_bare, work)
+
+    if after_paren_re is not None:
+
+        def repl_after(m: re.Match) -> str:
+            pages = parse_page_nums(re.sub(r"[~〜～]", "-", re.sub(r"[、，]", ",", m.group(1))))
+            return store(links_for_pages(pages))
+
+        work = after_paren_re.sub(repl_after, work)
+        work = after_bare_re.sub(repl_after, work)
 
     # Escape remaining text in segments between placeholders
     parts = re.split(r"(\x00\d+\x00)", work)
