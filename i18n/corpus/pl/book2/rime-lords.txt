@@ -211,7 +211,7 @@ ICON	icons/arcana.svg
 H3	Wielkie arkana
 P	Mogą bardzo dobrze być związane z Władcami Szronu lub ich uczniami.
 B	<b>Lodowa Kula Noruby</b> (str. 546)
-B	<b>Runiczna Waga</b> (str. 562)
+B	<b>Runiczna Łuska</b> (str. 562)
 PAGE	324
 H2	Tulpa
 HR

@@ -119,7 +119,7 @@ P	6 Qualche altro arcano minore pericoloso, capace di diffondere il caos, messo 
 HR
 ICON	icons/arcana.svg
 H3	Arcani maggiori
-P	La <b>Bilancia Runica</b> (pag. 562) potrebbe essere associata ad Aratis, o almeno venerata dai suoi seguaci.
+P	Le <b>Scaglie Runiche</b> (pag. 562) potrebbero essere associate ad Aratis, o almeno venerate dai suoi seguaci.
 PAGE	25
 H2	Pericoli
 HR

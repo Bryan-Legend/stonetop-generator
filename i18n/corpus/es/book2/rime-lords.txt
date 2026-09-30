@@ -211,7 +211,7 @@ ICON	icons/arcana.svg
 H3	Arcanos mayores
 P	Es muy posible que estos estén asociados a los Señores de la Escarcha o a sus discípulos.
 B	<b>La Esfera de Hielo de Noruba</b> (página 546)
-B	<b>La Balanza Rúnica</b> (página 562)
+B	<b>Las Escamas Rúnicas</b> (página 562)
 PAGE	324
 H2	Tulpa
 HR

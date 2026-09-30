@@ -119,7 +119,7 @@ P	6 Jakieś inne niebezpieczne mniejsze arkanum, zdolne szerzyć chaos, zamknię
 HR
 ICON	icons/arcana.svg
 H3	Wielkie arkana
-P	<b>Runiczna Waga</b> (str. 562) może być związana z Aratis, a przynajmniej czczona przez jej wyznawców.
+P	<b>Runiczna Łuska</b> (str. 562) może być związana z Aratis, a przynajmniej czczona przez jej wyznawców.
 PAGE	25
 H2	Niebezpieczeństwa
 HR

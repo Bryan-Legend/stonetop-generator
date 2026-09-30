@@ -119,7 +119,7 @@ P	6 Algún otro arcano menor peligroso, capaz de sembrar el caos, guardado bajo 
 HR
 ICON	icons/arcana.svg
 H3	Arcanos mayores
-P	La <b>Balanza Rúnica</b> (Rune-Laden Scales) (página 562) podría estar asociada con Aratis, o al menos ser venerada por sus seguidores.
+P	Las <b>Escamas Rúnicas</b> (Rune-Laden Scales) (página 562) podrían estar asociadas con Aratis, o al menos ser veneradas por sus seguidores.
 PAGE	25
 H2	Peligros
 HR

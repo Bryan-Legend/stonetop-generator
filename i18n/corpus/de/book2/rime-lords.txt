@@ -211,7 +211,7 @@ ICON	icons/arcana.svg
 H3	Große Arkana
 P	Diese könnten sehr wohl mit den Reifherren oder ihren Schülern in Verbindung stehen.
 B	<b>Norubas Eissphäre</b> (Seite 546)
-B	<b>Die Runenwaage</b> (Seite 562)
+B	<b>Der Runenschuppenpanzer</b> (Seite 562)
 PAGE	324
 H2	Tulpa
 HR

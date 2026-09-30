@@ -211,7 +211,7 @@ ICON	icons/arcana.svg
 H3	Arcani maggiori
 P	Questi potrebbero benissimo essere associati ai Signori della Brina o ai loro discepoli.
 B	<b>La Sfera di Ghiaccio di Noruba</b> (pag. 546)
-B	<b>La Bilancia Runica</b> (pag. 562)
+B	<b>Le Scaglie Runiche</b> (pag. 562)
 PAGE	324
 H2	Tulpa
 HR

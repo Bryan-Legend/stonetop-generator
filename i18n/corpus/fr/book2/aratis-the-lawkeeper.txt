@@ -119,7 +119,7 @@ P	6 Quelque autre arcane mineur dangereux, susceptible de répandre le chaos, en
 HR
 ICON	icons/arcana.svg
 H3	Arcane majeur
-P	La <b>Balance chargée de runes</b> (page 562) pourrait être associée à Aratis, ou du moins révérée par ses fidèles.
+P	L'<b>Armure d'écailles runiques</b> (page 562) pourrait être associée à Aratis, ou du moins révérée par ses fidèles.
 PAGE	25
 H2	Dangers
 HR

@@ -211,7 +211,7 @@ ICON	icons/arcana.svg
 H3	Arcane majeur
 P	Ceux-ci pourraient bien être associés aux Seigneurs du Givre ou à leurs disciples.
 B	<b>Sphère de glace de Noruba</b> (page 546)
-B	<b>Balance chargée de runes</b> (page 562)
+B	<b>Armure d'écailles runiques</b> (page 562)
 PAGE	324
 H2	Tulpa
 HR

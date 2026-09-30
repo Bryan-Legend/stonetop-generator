@@ -119,7 +119,7 @@ P	6 Irgendein anderes gefährliches kleines Arkanum, das Chaos verbreiten könnt
 HR
 ICON	icons/arcana.svg
 H3	Große Arkana
-P	Die <b>Runenwaage</b> (Seite 562) könnte mit Aratis in Verbindung stehen oder zumindest von ihren Anhängern verehrt werden.
+P	Der <b>Runenschuppenpanzer</b> (Seite 562) könnte mit Aratis in Verbindung stehen oder zumindest von ihren Anhängern verehrt werden.
 PAGE	25
 H2	Gefahren
 HR

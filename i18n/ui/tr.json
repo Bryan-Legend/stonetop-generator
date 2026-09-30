@@ -158,5 +158,12 @@
     "note": "Basılı kitaplarda yok: viki bu listeyi kitapların istatistik bloklarından derler.",
     "excerpt": "İki Stonetop kitabındaki tüm istatistik blokları, A'dan Z'ye – {n} yaratık, ruh ve insan, her biri kendi bloğuna ve sayfasına bağlantılı.",
     "letters": "Bir harfe git"
-  }
+  },
+  "page_words": [
+    "s.",
+    "sayfa",
+    "sayfada",
+    "sayfalar",
+    "sayfalarda"
+  ]
 }
