@@ -128,10 +128,10 @@ PB
 P	更多例子见<b>废塔</b>（page 332）。
 PAGE	403
 HR
-P	<i>One of the PCs is heading to</i> <b><i>Titan Bones</i></b> (page 448)<i>, and I'd like some sense of what's</i> <i>out there. I think it holds a Tempest Lord ruin, probably once associated with Stormcatcher</i> <i>and the now-</i><b><i>Ruined Tower</i></b> (page 332)<i>.</i>
-P	<i>I roll a 3 for theme ("the heavens: weather and clouds..."), a 4 for structure ("bunker/</i> <i>vault"), a 3 for purpose ("infrastructure"), and an 11 for architectural elementals ("verticality"). I then roll a 5 for condition ("largely buried... hidden"). I ponder a bit and come up</i> <i>with this:</i>
+P	<i>一名PC正前往</i> <b><i>泰坦遗骨</i></b>（page 448）<i>，我想大致知道那里</i> <i>有什么。我认为那里有一座风暴领主废墟，大概曾与风暴捕手</i> <i>和如今的</i><b><i>废塔</i></b>（page 332）<i>有关。</i>
+P	<i>我为题材掷出3（“天空：天气与云……”），为结构掷出4（“地堡/</i> <i>穹库”），为用途掷出3（“基础设施”），为建筑要素掷出11（“垂直性”）。接着我为状况掷出5（“大半被埋……隐匿起来”）。我琢磨了一下，得出</i> <i>这个：</i>
 PB
-P	<i>Stormcatcher erected a spire on Titan Bones, like a lighthouse, topped with an aetherium</i> <i>weathervane that modulated the weather. When the Stone Lords' rebellious servants</i> <i>attacked, the tower's custodian took the weathervane and hid beneath the spire. The spire</i> <i>fell and the custodian was trapped. All that remains are scattered stones and a circular</i> <i>foundation. And beneath centuries of dirt and rubble, there's a locked trapdoor. It reveals a</i> <i>spiral staircase, a deep shaft, an intact cellar, a skeleton, and an aetherium weathervane.</i>
+P	<i>风暴捕手在泰坦遗骨上立起一座尖塔，形似灯塔，塔顶是一只调节天气的以太矿</i> <i>风向标。当石领主的叛乱仆从</i> <i>来袭时，塔的看守者取下风向标，藏到尖塔之下。尖塔</i> <i>倒塌，看守者被困。如今只剩散落的石块和一圈环形的</i> <i>地基。而在数百年的泥土与瓦砾之下，有一扇上锁的活板门。门后是一道</i> <i>螺旋楼梯、一口深井、一间完好的地窖、一具骷髅，和一只以太矿风向标。</i>
 HR
 PAGE	404
 ICON	icons/material.svg

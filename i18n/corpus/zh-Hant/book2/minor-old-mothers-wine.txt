@@ -4,7 +4,7 @@
 # source_sha256: 2a1fb6bb8a668b001934fcc1a2ed1b87ae5aeb910ca76991fe2a3012dab29ad3
 # title: 老母之酒
 # nav_label: 老母之酒
-# description: 老母之酒（Old Mother's Wine），石頂小秘寶：一本葉頁小冊，記載用記憶向接骨木換來的妖精酒。
+# description: 老母之酒（Old Mother's Wine），石頂小祕寶：一本葉頁小冊，記載用記憶向接骨木換來的妖精酒。
 PAGE	509
 H3	一本小小的怪書
 P	<i>易碎</i>

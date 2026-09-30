@@ -8,7 +8,7 @@
 PAGE	146
 P	禱文 持光者，你起始知曉2項禱文。
 P	每當你達到偶數等級，再學會1項新禱文。
-P	While one Invocation is <i>ongoing</i>, you can't use another. You can end an Invocation whenever you wish, and it will end immediately if your holy light is extinguished.
+P	當一項禱文正在<i>持續</i>時，你不能使用另一項。你可以隨時結束一項禱文；若你的聖光熄滅，它會立即結束。
 P	一項禱文的範圍等於其光源的範圍。
 HR
 C	<b>愈光之沐</b> 雙手捧住你的光並聚焦。你的病人……（選2）：

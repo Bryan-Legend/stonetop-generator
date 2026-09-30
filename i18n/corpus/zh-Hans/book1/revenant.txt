@@ -6,7 +6,7 @@
 # nav_label: 还魂者
 # description: 还魂者附页：当你死去却执拗攀住肉身、不肯踏过最后之门时取用——含可怖使命、还魂者行动与恶果。
 PAGE	150
-P	When you <b><i>die but cling stubbornly to your body</i></b>, refusing to pass through the Last Door, you gain this insert, and choose 1 Consequence (see reverse).
+P	当你<b><i>死去却执拗地攀住自己的肉身</i></b>，拒绝穿过最后之门时，你获得这张附页，并选择1项后果（见背面）。
 H3	本能
 P	舍弃你剧本上的本能，换成以下之一（由你选择）：
 HR

@@ -8,20 +8,20 @@
 PAGE	597
 HR
 H2	Jeremy
-P	Thanks to all the folks in the Dungeon World Tavern back on G+, where this version of <i>Stonetop</i> was born. And thanks to the playtesters, backers, and folks who pre-ordered.
-P	Your feedback has been invaluable. Your patience and support have been humbling.
+P	感謝當年 G+ 上 Dungeon World Tavern 的所有朋友，這一版<i>石頂</i>就誕生在那裡。也感謝內測者、支持者和預購的各位。
+P	你們的回饋無比寶貴。你們的耐心與支持令我深感謙卑。
 P	大大感謝我家庭遊戲裡的人：Aubs Johnson、Brian Gratrix、Christian
 P	Herro、Josh Geurink、Josh Whelan、Kat White、Michael Donnelly、Priti Srivastava、Ryan
 P	Engel、Ryan Hansen、Ryan McDonald，以及 Sterling Lynk。
-P	Enormous gratitude to Jason and Lucie for bringing this thing to life. To Luke Jordan, some rando on the internet who became a mentor and a friend. And to my mom, Patricia, for teaching me to dream.
+P	萬分感激 Jason 和 Lucie 讓這東西活了起來。感謝 Luke Jordan，一個網上偶遇的路人，後來成了我的導師和朋友。還要感謝我的媽媽 Patricia，是她教會我做夢。
 P	特別特別感謝Hobbes，斷鏈者，我個人的準英雄。我做成了，Hobbes。我完成了我該死的遊戲。
 P	當然還有：謝謝你，Angel，我的愛。為了一切。我的心與你的相連。
 HR
 H2	Lucie
-P	I would like to thank our backers for their patience and support, and for making this book a reality.
+P	我想感謝我們的支持者，感謝你們的耐心與支持，是你們讓這本書成為現實。
 P	Gottferdom工作室的導師與老師們，教我幻想插畫的一切。
-P	My mum and dad, for a childhood spent reading, and for bookshelves that touched the ceiling.
-P	Most importantly, I would like to thank Jeremy and Jason for finding me, and for inviting me to be part of this extraordinary adventure.
+P	我的爸爸媽媽，給了我在閱讀中度過的童年，和頂到天花板的書架。
+P	最重要的是，我想感謝 Jeremy 和 Jason 找到了我，並邀請我加入這場非凡的冒險。
 HR
 H2	Jason
-P	Thanks to Jeremy, for accepting my invitation to turn his unique vision into a standalone game; to Lucie, whose beautiful drawings imbue these books with warmth and life; to JP Coovert, for being awesome; to Tony Vasinda and Richard Ruane, for their vital expertise; to Quintin Smith, for taking note of our labors; and to our backers, who stuck with us through thick and thin. Much like the village itself, this project would not exist without the enthusiasm, faith, and good will of the entire <i>Stonetop</i> community.
+P	感謝 Jeremy 接受我的邀請，把他獨特的構想做成一款獨立的遊戲；感謝 Lucie，她美麗的畫作為這些書注入了溫暖與生命；感謝 JP Coovert，因為他太棒了；感謝 Tony Vasinda 和 Richard Ruane 不可或缺的專業知識；感謝 Quintin Smith 留意到我們的勞作；也感謝我們的支持者，無論順境逆境都與我們同行。就像這座村莊本身一樣，沒有整個<i>石頂</i>社群的熱情、信念與善意，這個項目就不會存在。

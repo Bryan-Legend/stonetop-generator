@@ -241,9 +241,9 @@ P	如果PC想获得这样的造物，他们可以：
 B	见多识广，了解这类东西能在哪找到，或谁可能有一件（然后设法获得它）
 B	与GM制定计划
 B	放出他们在找这样一件东西的消息，然后在季节更替时选择“贸易机会”
-B	Tell the GM what they're after, and then choose "interesting news" when Seasons change
+B	告诉GM他们在找什么，然后在季节更替时选择“有趣的消息”
 PB
-P	If the PCs do find someone who possesses a specific or magical artifact, and the PCs attempt to negotiate a trade, then you'll have to decide what it's worth. Value 2-3 is typical, with some artifacts worth Value 4.
+P	如果PC确实找到了拥有某件特定或魔法造物的人，并试图谈成一笔交易，你就得决定它值多少。价值 2-3 是常见的，有些造物值价值 4。
 P	但如果NPC没意识到自己手里的是什么，他们可能认为它低至价值1甚至0。
 PAGE	434
 H2	创造造物

@@ -6,7 +6,7 @@
 # nav_label: 太古之力
 # description: 世界尽头的太古之力：初代造物者、地底之物、伟大精魂、化身、执政官、泰坦、地点、门户、黑铁、造物与险境。
 PAGE	298
-P	The village of Stonetop sits upon ancient ruins, built centuries or even millennia ago by the <b>Makers</b> (page 264). But there are things in the world that were old when the Makers were young. And there are things older still, older even than the world, bigger than the world. Strange and alien things. Primordial things and primordial powers, from the very dawn of time.
+P	石顶村坐落在古老的废墟之上，那是<b>匠造者</b>（page 264）在数百乃至数千年前建造的。但世上有些东西，在匠造者还年轻时就已古老。还有些东西更加古老，比世界还古老，比世界还庞大。奇异而陌生的东西。太古之物与太古之力，来自时间最初的黎明。
 H2	主题
 HR
 P	选择或掷出1项，或掷出2项并组合。
@@ -232,7 +232,7 @@ PB
 P	若这样的地点靠近曾经或现在有人居住的地区，考虑当地人对它的态度（敬畏、惊叹、恐惧、回避，等等），以及他们可能留下的额外迹象。
 PAGE	305
 HR
-P	<i>The Seasons Change and the PCs get "interesting news." I want to give them a lead on the</i> <b><i>Ineffable Words</i></b> (page 568)<i>, to be found in a primordial site in the</i> <b><i>Whitefang Mountains</i></b> (page 480)<i>.</i>
+P	<i>季节更替，PC们得到“有趣的消息”。我想给他们一条关于</i> <b><i>不可言说之言</i></b>（page 568）<i>的线索，它可以在</i> <b><i>白牙山脉</i></b>（page 480）<i>的一处太古之力地点找到。</i>
 P	<i>一项标记（“匠造者的废墟”）。在白牙山脉，那多半是一座霜领主废墟。</i>
 P	<i>我为主题掷出10（“神话时代，神祇与传说的生与</i> <i>死”），为起源掷出8（“一个太古存在的死亡”）。特征方面，我掷出4（“一位死去的神祇的</i> <i>残影……”），并选了“一件或多件太古之力的造物”（不可言说之言）。我</i> <i>用 page 320 的表创建霜领主废墟，用 page 184 的步骤创建死去的神祇。</i> <i></i>
 P	<i>我想象一处高地，一个恶魔在那里杀死了南布（Nangbu）——一位掌管书写、智慧与</i> <i>预言的女神。霜领主把一座神殿凿进山坡，以荣耀她并与</i> <i>她的残影交流，但雪崩埋了神殿。剩下的是一片高山草甸，带着</i> <i>空气中的寂静，在其中有时能听见低语的声音。</i>
@@ -244,7 +244,7 @@ B	一座俯瞰河流的小山，一件<b>流溢</b>（page 436）被钉在一根
 B	一座锈铁塔的底座，1.8米宽，耸立在一片充满自然精魂的茂盛草甸上。一头泰坦的骨骸埋在下面。
 B	一块倒下的巨石，半陷在泥炭与泥沼里。星辰排齐时，一个凡人可以在此问一个问题，得到一个彻底、压倒性的答案。
 B	一座孤峰，若不当心，他们的精魂会被从身体里抽出去，升入虚空。
-P	<i>I roll a 4 on the Whitefangs terrain table ("waterlogged soil, frozen or muddy") and a 9 for</i> <i>few chunks of Maker-carved stone sticking out of muddy soil. There's a stillness to the air, in</i>
+P	<i>我在白牙山脉地形表上掷出4（“浸水的土壤，冻结或泥泞”），并为</i> <i>几块匠造者雕凿的石头从泥泞的土里戳出来。空气中有一种寂静，在</i>
 B	一道标着符文的地下拱门，通向一条又长又直的厅堂。厅堂是一个环；你总会回到起点。
 B	大量<b>腐化之地</b>（page 422）
 B	<b>废</b> <b>塔</b>（page 332）下方的某些腔室。

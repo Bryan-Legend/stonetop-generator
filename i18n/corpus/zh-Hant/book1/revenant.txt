@@ -6,7 +6,7 @@
 # nav_label: 還魂者
 # description: 還魂者附頁：當你死去卻執拗攀住肉身、不肯踏過最後之門時取用——含可怖使命、還魂者行動與惡果。
 PAGE	150
-P	When you <b><i>die but cling stubbornly to your body</i></b>, refusing to pass through the Last Door, you gain this insert, and choose 1 Consequence (see reverse).
+P	當你<b><i>死去卻執拗地攀住自己的肉身</i></b>，拒絕穿過最後之門時，你獲得這張附頁，並選擇1項後果（見背面）。
 H3	本能
 P	捨棄你劇本上的本能，換成以下之一（由你選擇）：
 HR
@@ -78,4 +78,4 @@ P	當你<b><i>享用你的特殊食糧時</i></b>，治癒等於上限一半 HP 
 HR
 C	<b>慾壑難填</b>（需要異食之慾）當你<b><i>有機會放縱你的</i></b> <b><i>異食之慾時</i></b>，若你選擇放縱，下一次擲骰獲得優勢；若你選擇不放縱，則直面險境（那險境是你壓倒性的慾望）。
 H3	最終惡果
-P	你與人性那脆弱的聯絡斷裂，你變成一頭由GM控制的怪物。
+P	你與人性那脆弱的聯繫斷裂，你變成一頭由GM控制的怪物。

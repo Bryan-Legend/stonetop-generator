@@ -6,68 +6,68 @@
 # nav_label: 附錄A：世界諸紀
 # description: 世界盡頭（World's End）的年表：太古紀、匠造者時代、災變時代、墳冢建造者時代與當今時代。
 PAGE	496
-P	Most events are listed in the order they occurred, but events in <i>italics</i> and starting with?
-P	are approximate, their specific placement unclear. Did construction begin on the Makers' Roads before or after the Tempest Lords' capital sank? Did Brennan become Marshedge's marshal before or after the Forest Folk disappeared? That's for you and your group to decide, if it matters.
+P	大多數事件按發生先後列出，但以<i>斜體</i>書寫、開頭帶有？
+P	的事件只是大致的，具體位置並不明確。匠造者之路是在風暴領主的都城沉沒之前還是之後開始修建的？布倫南是在森林之民消失之前還是之後成為澤畔統帥的？如果這很重要，就由你和你的團體來決定。
 H2	太古紀
-P	Eons ago, over a span beyond reckoning.
+P	萬古之前，歷時之久無法計算。
 HR
-B	Light fills the void; the <b>Things Below</b> (page 412) were already there
+B	光明充滿虛空；<b>地底之物</b>（page 412）早已在那裡
 B	<b>初代造物者</b>（First Creators）（page 299）意識到自身的存在
 P	？ <i>最初的</i> <b><i>大精魂</i></b>（page 300） <i>興起</i>
 B	地底之物煽動創造者的自我，慫恿開戰
 B	初代造物者鍛造世界，把地底之物困在其中
-B	<b>Tcaventes, Shackle and Key</b> (page 254), is set to guard the <b>Utterwell</b> (page 252) ? <i>The</i> <b><i>gods</i></b> (page 178) <i>do many legendary things</i>
+B	<b>特卡文特斯，枷與鑰</b>（page 254）受命守護<b>極井</b>（page 252） ？ <b><i>諸神</i></b>（page 178） <i>成就諸多傳奇之事</i><i></i>
 P	？ <i>最早的諸族演化而出，或被創造</i>
 H2	匠造者時代
-P	Millennia ago, over a span of centuries (at least).
+P	數千年前，歷時（至少）數百年。
 HR
 B	<b>風暴領主</b>（Tempest Lords）文明興起（page 398）
 B	風暴領主建立帝國
 B	其他<b>匠造者</b>群體興起（page 264）
-B	Tempest Lords found "Northernmost" (the <b>Ruins at Road's End</b>, page 87)
+B	風暴領主建立「極北城」（<b>路盡廢墟</b>，page 87）
 B	風暴領主的故土沉沒，帝國崩解；其他匠造者勢力增長
-P	? <i>Construction of the</i> <b><i>Makers' Roads</i></b> <i>begins</i> (page 270) ? <b><i>Green Lords</i></b> (page 210) <i>breed the</i> <b><i>Fae</i></b> (page 94) ? <b><i>Manmarchers</i></b> (page 282) <i>come from across the</i> <b><i>Dread River</i></b> (page 86)
+P	？ <i>開始修建</i> <b><i>匠造者之路</i></b>（page 270） ？ <b><i>綠領主</i></b>（page 210） <i>培育出</i> <b><i>妖精</i></b>（page 94） ？ <b><i>曼馬奇人</i></b>（page 282） <i>渡過</i> <b><i>懼河</i></b> <i>而來</i>（page 86）
 B	<b>風暴捕手</b>（Stormcatcher）（page 332）在荒原（the Flats）立起她的塔
 B	妖精反叛！綠領主求助於地底之物
-B	<b>Stone Lords</b> (page 382) destroy the heart of the Green Lord's territory, creating what is now <b>Ferrier's Fen</b> (page 116)
-B	Siege of <b>Vor Svetelik</b> (page 468); Green Lords retreat, become <b>Fomoraij</b> (page 136)
-B	Stone Lords' servants start to plot rebellion and embrace the Things Below
+B	<b>石領主</b>（page 382）摧毀綠領主領地的核心，造就了今天的<b>費里爾沼澤</b>（page 116）
+B	<b>沃爾·斯維特里克</b>（page 468）之圍；綠領主撤退，化為<b>福莫萊</b>（page 136）
+B	石領主的僕從開始密謀反叛，並投向地底之物
 PB
-P	Were the civilizations of the <b>South</b> (page 256) founded during the Time of the Makers, or even before? Or perhaps during the Time of the Barrow Builders?
+P	<b>南方</b>（page 256）的諸文明是在匠造者時代建立的，還是更早？抑或是在墳冢建造者時代？
 PAGE	497
 H2	災變時代
-P	Centuries ago, over a span of decades.
+P	數百年前，歷時數十年。
 HR
-B	Stone Lords' servants rebel, unleash the Things Below, sink Dulenn and create <b>Blackwater Lake</b> (page 48) ? <i>"Northernmost" overrun by horrors from the Dread River</i>
+B	石領主的僕從反叛，釋放地底之物，使杜倫沉沒，形成<b>黑水湖</b>（page 48） ？ <i>「極北城」被來自懼河的恐怖之物攻陷</i>
 B	石領主被叛軍獵殺
-B	Teirstered falls, becomes <b>Three Coven Lake</b> (page 438)
+B	泰爾斯特德陷落，變為<b>三巫湖</b>（page 438）
 B	難民開始奔向風暴捕手的塔
-P	? <b><i>Howling Curse</i></b> (page 492) <i>causes</i> <b><i>Rime Lord</i></b> <i>civilization to nearly collapse</i> (page 316) ? <i>Volcanic eruptions, Moratia Rubra destroyed,</i> <b><i>Forge Lord</i></b> <i>society collapses</i> (page 156)
+P	？ <b><i>嚎叫詛咒</i></b>（page 492） <i>使</i> <b><i>霜領主</i></b> <i>文明幾近崩潰</i>（page 316） ？ <i>火山噴發，莫拉蒂亞·魯布拉被毀，</i> <b><i>熔爐領主</i></b> <i>社會崩潰</i>（page 156）
 B	更多難民抵達風暴捕手的塔
 B	倖存的霜領主自我犧牲，以遏制嚎叫詛咒
 B	風暴捕手的塔陷落
 H2	墳冢建造者時代
-P	Centuries ago, over a span of generations.
+P	數百年前，歷時數代人。
 HR
 B	為紀念自由戰士築起第一批古冢
-B	<b>Emanations</b> (page 436) of the Things Below roam freely, are worshipped/appeased
+B	地底之物的<b>流溢</b>（page 436）四處自由遊蕩，受人崇拜/安撫
 B	軍閥/巫王爭權，築起更為繁複的古冢
 B	圍繞三巫湖、路盡廢墟等地爆發戰事
 B	難民、奴役、人祭，處處都是糟心事
 B	墳冢建造者的臣民推翻/拋棄/囚禁他們的暴君
-B	Certain bands of Barrow Builders flee into the <b>Labyrinth</b> (page 242)
+B	部分墳冢建造者群體逃入<b>迷宮</b>（page 242）
 H2	當今時代
 P	始於數百年前。
 HR
 B	地底之物的力量消退（原因不明）
-B	Barrow Builder culture gives rise to <b>Hillfolk</b> culture (page 228) ? <b><i>Marshedge</i></b> <i>founded</i> (page 274) ? <b><i>Stonetop</i></b> <i>founded</i> (page 12)
+B	墳冢建造者文化孕育出<b>丘陵之民</b>文化（page 228） ？ <b><i>澤畔</i></b> <i>建立</i>（page 274） ？ <b><i>石頂</i></b> <i>建立</i>（page 12）
 B	地區安定下來，商路開闢
 B	<b>戈丁礦場</b>（Gordin's Delve）有人定居，鑄坊（Foundry）建立（page 190）
 H2	近時記憶
 P	大約最近十年。
 HR
-P	? <b><i>Brennan and the Claws</i></b> <i>start raiding</i> (page 280)
+P	？ <b><i>布倫南與利爪幫</i></b> <i>開始劫掠</i>（page 280）
 B	地震變得更為頻繁
 B	<b>森林之民</b>（page 150）消失
 P	？ <i>布倫南受僱為澤畔的統帥</i>
-B	<b>Crinwin</b> (page 58), <b>nailadd</b> (page 208), etc. grow in numbers
+B	<b>克林溫</b>（page 58）、<b>奈拉德</b>（page 208）等數量增多

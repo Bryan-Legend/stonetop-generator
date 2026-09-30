@@ -4,7 +4,7 @@
 # source_sha256: dddc9f4550d97dfde91eebf12358fa1c8a3b03733d52254767714604a256eeb2
 # title: 阿爾茲·加爾特的驟陷坑
 # nav_label: 阿爾茲·加爾特的驟陷坑
-# description: 阿爾茲·加爾特的驟陷坑（Aalz Galt's Sudden Sinkhole），石頂小秘寶：一聲低沉的歌讓地表下的土石潰散，留下一口隨時會塌的空穴。
+# description: 阿爾茲·加爾特的驟陷坑（Aalz Galt's Sudden Sinkhole），石頂小祕寶：一聲低沉的歌讓地表下的土石潰散，留下一口隨時會塌的空穴。
 PAGE	509
 H3	巨人宿舍
 P	<i>魔法</i>

@@ -284,9 +284,9 @@ P	2 巨石/一块<b>路石</b>（page 478）
 P	3 一扇门/闸/开口，天然或人造，字面如此或只是一种印象
 P	4 一圈伞菌或其他独特的植物图案（也许<b>有用或珍贵</b>，page 458）
 P	5 一条路/一次攀登/一次下降/一次坠落
-P	6 Only active at certain times (in moonlight, at sunset, in winter, etc.) and roll again
+P	6 只在特定时候开启（月光下、日落时、冬季等），并再掷一次
 PB
-P	If an entrance in the Great Wood is at least 10 years old, it's likely to be marked by Forest Folk <b>glyphs</b> (page 152).
+P	如果大森林中的某个入口至少有10年历史，它很可能刻有森林之民的<b>符记</b>（page 152）。
 P	至于领域本身，选择或掷出一个主题（page 95）、领域原先的目的、维持它的锚，以及 1-2 项要素。也可以掷 1d6 来提示它的大小与尺度。
 P	1d6 目的
 HR

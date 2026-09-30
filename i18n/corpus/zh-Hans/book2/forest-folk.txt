@@ -16,7 +16,7 @@ P	他们的缺席在大森林里回响。他们粗糙的符记仍能找到，刻
 H2	名字
 HR
 P	听来像斯拉夫语，常是小称：
-P	Analiya, Asya, Avo, Boyko, Danja, Dimvo, Dobri, Galya, Genko, Ivka, Inko, Kosta, Lyubo, Milada, Milko, Mincha, Mitko, Nadya, Neli, Penko, Polya, Radko, Raya, Sajka, Sasho, Tsvetanka, Valya, Vasko
+P	阿娜莉娅、阿西娅、阿沃、博伊科、丹娅、迪姆沃、多布里、加莉娅、根科、伊夫卡、因科、科斯塔、柳博、米拉达、米尔科、明查、米特科、娜佳、内莉、彭科、波莉娅、拉德科、拉娅、赛卡、萨肖、茨维坦卡、瓦莉娅、瓦斯科
 H2	问题
 HR
 Q	谁（你们之中/你们亲族之中/你认识的人）长着森林之民那双奇异的眼睛？长什么样？

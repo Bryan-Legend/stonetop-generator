@@ -4,7 +4,7 @@
 # source_sha256: c055199618a593b8fdfd5acd1ca7a0eb0c42c1f3ef26f1a44ef2373d20511ee1
 # title: 薩尤亞的六鎖
 # nav_label: 薩尤亞的六鎖
-# description: 薩尤亞的六鎖（The Six Locks of Sajua），石頂小秘寶：一串鏽鎖，可把垂死者的靈魂關進去，再以諾言放出。
+# description: 薩尤亞的六鎖（The Six Locks of Sajua），石頂小祕寶：一串鏽鎖，可把垂死者的靈魂關進去，再以諾言放出。
 PAGE	515
 H3	一串鏽鎖
 P	◇，<i>魔法</i>

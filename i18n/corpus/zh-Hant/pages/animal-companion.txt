@@ -31,7 +31,7 @@ CK	type0-5	<i>機靈</i>
 CK	type0-6	<i>快腿</i>
 CK	type0-7	<i>學舌</i>
 CK	type0-8	<i>目光銳利</i>
-CK	type0-9	<i>隱秘</i>
+CK	type0-9	<i>隱祕</i>
 CK	type0-10	<i>慣偷</i>
 CKX	<i>微小</i>
 CK	type0-12	<i>不知疲倦</i>
@@ -57,7 +57,7 @@ CK	type1-10	<i>耳尖</i>
 CK	type1-11	<i>眼尖</i>
 CK	type1-12	<i>嗅覺敏銳</i>
 CK	type1-13	<i>迅疾</i>
-CK	type1-14	<i>隱秘</i>
+CK	type1-14	<i>隱祕</i>
 CK	type1-15	<i>臭烘烘</i>
 CKX	<i>微小</i>
 CK	type1-17	<i>慣偷</i>
@@ -105,7 +105,7 @@ CK	type3-11	<i>群獵</i>
 CK	type3-12	<i>嗅覺敏銳</i>
 CK	type3-13	<i>有耐性</i>
 CK	type3-14	<i>力大</i>
-CK	type3-15	<i>隱秘</i>
+CK	type3-15	<i>隱祕</i>
 CK	type3-16	<i>駭人</i>
 CKW	type3-blank0	type3-blank0	自擬
 ENDLIST

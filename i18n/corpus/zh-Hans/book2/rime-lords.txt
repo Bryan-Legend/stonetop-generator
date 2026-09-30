@@ -407,10 +407,10 @@ PAGE	330
 HR
 ICON	icons/beast-large.svg
 H3	霜领主
-P	<i>Solitary</i>, <i>large</i>, <i>cautious</i>, <i>cunning</i>, <i>magical</i>, <i>organized</i>, <i>terrifying</i>
+P	<i>独行</i>，<i>大型</i>，<i>谨慎</i>，<i>狡诈</i>，<i>魔法</i>，<i>有组织</i>，<i>骇人</i>
 P	<b>HP</b> 26；<b>护甲</b> 5（强力结界，技艺）
-P	<b>Damage</b> conjured ice d12+3 (any range, <i>area</i>, <i>grabby</i>, <i>forceful</i>) or heat-drain d12+1 (<i>reach</i>, ignores armor)
-P	<b>Special Qualities</b> spirit sight; telepathic; cold-proof; ageless; no need to eat/drink/sleep/breathe; aura of bitter cold <b>Instinct</b> to seek perfection (in themselves, in their surroundings, in others)
+P	<b>伤害</b> 召唤之冰 d12+3（任意距离，<i>范围</i>，<i>抓取</i>，<i>强力</i>）或汲热 d12+1（<i>触及</i>，无视护甲）
+P	<b>特殊性质</b> 精魂视；心灵感应；不惧严寒；不老；无需饮食/睡眠/呼吸；凛冽寒气的光环 <b>本能</b>追求完美（于自身、于周遭、于他人）
 P	• 震慑在场者
 P	• 同时在物质世界与精魂世界行动
 P	• 把强大的意志加诸世界：静止情感、冻结时间、驱散魔法、重塑现实，等等。

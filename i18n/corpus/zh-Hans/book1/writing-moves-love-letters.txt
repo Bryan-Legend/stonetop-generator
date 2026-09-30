@@ -6,7 +6,7 @@
 # nav_label: 编写行动与情书
 # description: 编写行动与情书（Writing Moves & Love Letters）：盘点、起草触发条件、构思结果、掷骰结构、持有与花费、审阅修订，以及编写情书。
 PAGE	549
-H2	Moves & Love Letters
+H2	行动与情书
 H2	编写行动
 H2	编写情书
 PAGE	550
@@ -175,7 +175,7 @@ PAGE	557
 HR
 P	<i>PC在路石附近吃蘑菇时</i> <i>可能发生的事：</i>
 P	• 感到与彼此/世界/自己之间深刻的联系
-P	• Hallucinate stuff that isn't real • See into the spirit world • Need a bigger dose • Get sick, nauseous, shaky • Get confused, overwhelmed • Freak out, have a bad trip • Draw attention from hostile spirits (maybe the shadowy presence!) • Access the Fae paths
+P	• 看到不真实的幻觉 • 看见灵界 • 需要更大的剂量 • 生病、恶心、发抖 • 困惑、不知所措 • 惊慌失措、糟糕的幻觉之旅 • 引来敌对灵体的注意（也许是阴影存在！） • 进入妖精小径
 P	<i>“生病”和“困惑”选项</i> <i>可以合并为“标记一个虚弱”。</i>
 P	<i>“感到深刻的联系”结果似乎</i> <i>与“惊慌失措、糟糕的幻觉之旅”</i> <i>互斥。它也不太适合</i> <i>“标记一个虚弱”的结果。</i>
 HR
@@ -184,7 +184,7 @@ P	<i>我修改后的结果清单是这样：</i>
 P	肯定
 P	• 进入妖精小径 • 幻觉/看到灵体
 P	可能（好！）
-P	• Feel a profound connection to each other/the world/themselves
+P	• 感到与彼此/世界/自己之间深刻的联系
 P	可能（坏！）
 P	• 需要更大的剂量 • 标记一个虚弱 • 惊慌失措、糟糕的幻觉之旅 • 引来敌对灵体的注意（也许是阴影存在！）
 PAGE	558

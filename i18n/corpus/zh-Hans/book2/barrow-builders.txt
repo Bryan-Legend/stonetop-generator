@@ -108,20 +108,20 @@ PB
 P	更多例子见<b>黑水湖</b> (page 51)和<b>三巫湖</b> (page 442)。
 PAGE	37
 HR
-P	<i>The PCs are searching for the fiery heart of the</i> <b><i>Mindgem</i></b> <i>(page 548). I think it's in a</i> <i>Stone Lord ruin that the Barrow Builders reclaimed. Looking at the tables on page 386, I</i> <i>end up with a warren of multi-storied, brutalist apartments—housing for laborers—built</i> <i>around a single, giant-sized manor where the overseers dwelt. Maybe this was a plantation, with a small army of</i> <b><i>lithic servants</i></b> (page 393) <i>maintaining the complex?</i>
-P	<i>For the Barrow Builders' theme, I roll an 11 ("rulers clinging to power, even from the</i> <i>grave"). For signs, I roll a 5 ("damage/plunder/vandalism/graffiti") and 10 ("crude,</i> <i>human-sized" modifications). For the current condition, I roll a 9 ("buried, overgrown…</i> <i>mostly intact"). I ponder a bit, and come up with this:</i>
+P	<i>PC们正在寻找</i> <b><i>心灵宝石</i></b> <i>（page 548）的炽热之心。我想它在一座被坟冢建造者重新占据的</i> <i>石领主废墟里。查看 page 386 的表格，我</i> <i>得到一片多层、粗野风格的公寓楼群——劳工的住所——环绕着</i> <i>一座监工们居住的巨人尺寸的宅邸而建。也许这里曾是一座种植园，由一小支</i> <b><i>石仆</i></b>（page 393） <i>军队维护着整个建筑群？</i>
+P	<i>对于坟冢建造者的题材，我掷出11（“统治者紧抓权力不放，即使在</i> <i>坟墓里”）。征兆方面，我掷出5（“损坏/劫掠/破坏/涂鸦”）和10（“粗糙的、</i> <i>人类尺寸的”改造）。当前状况方面，我掷出9（“埋着、长满……</i> <i>但大体完好”）。我琢磨了一下，得出这个：</i>
 PB
-P	<i>A sorcerer led the humans here to rise up against their overseers. The sorcerer then claimed</i> <i>the manor as his own, along with the device that charged and controlled the lithic servants</i> <i>—a device powered by the Mindgem's makerglass heart! He turned the manor into a crude</i> <i>palace and sent "his" people back to work the fields. When they eventually rebelled, he was</i> <i>mortally wounded but transferred his soul into the device that ran the lithic servants.</i> <i>With his mind now spread among the many constructs, he squashed the uprising. His rule</i> <i>grew increasingly erratic, brutal, and ineffective. The tenements became more squalid and</i> <i>desperate. Folks fled. The sorcerer didn't care.</i>
+P	<i>一名术士领着这里的人类起来反抗他们的监工。随后术士把</i> <i>宅邸据为己有，连同那台为石仆充能并操控它们的装置</i> <i>——一台由心灵宝石的匠造玻璃之心驱动的装置！他把宅邸改成一座粗陋的</i> <i>宫殿，把“他的”人民送回田里劳作。当他们终于再次反叛时，他</i> <i>受了致命伤，却把灵魂转移进了操控石仆的装置。</i> <i>如今他的心智分散在众多构装体之中，他镇压了起义。他的统治</i> <i>变得越来越反复无常、残暴而无能。廉租房变得愈发肮脏、</i> <i>绝望。人们纷纷逃离。术士毫不在乎。</i>
 P	<i>如今，这座建筑群空着：长满、半埋、剥走任何值钱的东西，只住着</i> <i>一支日渐减少的石仆军队和一个偏执术士破碎的心智。</i>
 HR
 PAGE	38
 HR
-P	<i>The PCs are following the River Sruth out of</i> <b><i>Marshedge</i></b> (page 274) <i>and through the</i> <i>South Manmarch when they encounter a barrow. I roll a 10 for terrain ("tree(s), savannah, thickets"), a 9 for a theme ("conquest/oppression/enslavement"), a 12 for size ("manmade hill"), a 1 for purpose ("to honor the interred"), a 3 for architectural elements ("obvious entrance"), an 11 for condition ("strangely intact, fully visible"), and a 12 for features</i> <i>("roll twice"). I then get a 4 ("corrupted by the Things Below") and a 10 ("treasure," with a</i> <i>2 for the amount remaining). For the corruption, I turn to page 422 and come up with a</i> <i>poisonous place, with themes of death and broken bones, first caused by a blood-offering and</i> <i>then by a seal being broken. I ponder a little, and come up with this:</i>
+P	<i>PC们正沿着斯鲁斯河走出</i> <b><i>泽畔</i></b>（page 274） <i>穿过</i> <i>南曼马奇，这时他们遇见一座坟冢。我为地形掷出10（“树、稀树草原、灌木丛”），为题材掷出9（“征服/压迫/奴役”），为大小掷出12（“人造山丘”），为用途掷出1（“纪念墓中之人”），为建筑要素掷出3（“明显的入口”），为状况掷出11（“出奇地完好，完全可见”），为特征掷出12</i> <i>（“掷两次”）。接着我得到4（“被地底之物腐化”）和10（“宝藏”，余量掷出</i> <i>2）。关于腐化，我翻到 page 422，得出一个</i> <i>有毒之地，主题是死亡与碎骨，起因先是一次血祭，</i> <i>后是一道封印被打破。我琢磨了一下，得出这个：</i>
 PB
-P	<i>A lone hill rising from sparse woods on the river's south bank. The daughter of a warlord commissioned it. Hundreds of slaves built it. When it was done, she had the slave's skulls caved</i> <i>in, to be interred with her father and his riches. After the daughter's brief reign ended, some</i> <i>fools pried open the stone doors to loot the warlord's tomb. They found chambers full of death,</i> <i>madness, and cursed gold. Those few who made it out were never the same. The barrow still</i> <i>lies open and treasure still remains, but no one with a lick of sense goes near it.</i>
+P	<i>河南岸稀疏林地中隆起的一座孤丘。一名军阀的女儿下令修建了它。数百名奴隶建成了它。完工后，她命人砸碎奴隶们的头骨，</i> <i>与她的父亲和他的财宝葬在一起。女儿短暂的统治结束后，一些</i> <i>蠢货撬开石门，要洗劫军阀的坟墓。他们发现墓室里满是死亡、</i> <i>疯狂和受诅咒的黄金。少数逃出来的人再也不复从前。坟冢至今</i> <i>敞开，财宝也仍在，但凡有点头脑的人都不会靠近。</i>
 HR
 PAGE	39
-P	They are the most obvious remnants of these bloody times: dome shaped earthen mounds. Most folks assume they were all tombs, but that's hardly the case.
+P	它们是那段血腥岁月最显眼的遗存：穹顶状的土丘。多数人以为它们全是坟墓，但事实远非如此。
 P	为题材 (page 35)、大小、用途、1或2项建筑要素、状况和一项特征选或掷。把坟冢放在其地区合适的地形里。用坟冢建造者或相应地区的<b>神器</b> (page 40)和<b>危险</b> (page 42)填满它。
 P	<b>1d12</b> 大小
 HR
@@ -382,11 +382,11 @@ P	11 秘密地活跃，追求阴谋
 P	12 掷 1d10 两次
 PAGE	47
 HR
-P	<i> I've established that the Mindgem's fiery heart is in the clutches of a deathless sorcerer, whose</i> <i>soul inhabits an arcane device that controls a number of</i> <b><i>lithic servants</i></b> (see page 393)<i>.</i>
-P	<i>I start with a</i> <b><i>sorcerer</i></b> (page 435)<i>, corrupted by</i> <b><i>El'rash-Orra</i></b> (page 419)<i>. For gifts, I</i> <i>give him a terrifying gaze and the ability to inflict false sensations. For marks, I give him</i> <i>slow-healing wounds and strange fascinations (he's a voyeur).</i>
-P	<i>I already decided that he had "anchored his soul" to an arcane device in a Stone Lord manor</i> <i>(</i>immobile<i>,</i> fragile<i>). For a limitation, I think the device "must be fed/charged/maintained," and that "its destruction results in his final death." For a current state, I think he's</i> <i>"trapped, but with some influence" via the lithic servants he can possess.</i>
+P	<i>我已确定心灵宝石的炽热之心落在一名不死术士手中，他的</i> <i>灵魂栖居于一台奥术装置，那装置操控着若干</i> <b><i>石仆</i></b>（见 page 393）<i>。</i>
+P	<i>我从一名</i> <b><i>术士</i></b>（page 435）<i>开始，他被</i> <b><i>埃尔拉什-奥拉</i></b>（page 419）<i>腐化。天赋方面，我</i> <i>给他可怖的注视和施加虚假感觉的能力。印记方面，我给他</i> <i>难以愈合的伤口和古怪的癖好（他是个偷窥者）。</i>
+P	<i>我已决定他把“灵魂锚定”在一座石领主宅邸里的一台奥术装置上</i> <i>（</i>不可移动<i>，</i>易碎<i>）。至于限制，我认为这台装置“必须被喂养/充能/维护”，并且“它的毁灭会导致他的最终死亡”。至于当前状态，我认为他</i> <i>“被困，但有些影响”，借助他能附身的石仆。</i>
 P	<i>我想象他在那座过大的庄园里，坐在临时的王座上，永久受伤，</i> <i>无法自己移动。十二名无面的石仆侍奉他，需要时像</i> <i>木偶一样移动他。王座后面是一台符文石与水晶的装置，</i> <i>匠造玻璃之心在其核心燃烧。他的心智散布在仆人当中，其中一些</i> <i>在三巫湖搜刮神器、闲话和维持装置的材料。若</i> <i>装置失效，他的意识会碎裂，身体最终死去。仆人，每一个</i> <i>装着他灵魂的一块碎片，会为至高而互相争斗。没有谁会成功。</i>
-P	<i>I write up his stat block like this:</i>
+P	<i>我这样写出他的属性块：</i>
 P	迈哈尔，不死术士
 P	独行，亡灵，腐化，偏执，
 P	魔法，囤积，骇人

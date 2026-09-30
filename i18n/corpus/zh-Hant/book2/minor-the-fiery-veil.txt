@@ -4,7 +4,7 @@
 # source_sha256: 930c0be445095dcb7c55f558c715bcdb0221c90428437e56f62fa09165dd715b
 # title: 火帷
 # nav_label: 火帷
-# description: 火帷（The Fiery Veil），石頂小秘寶：熔爐領主廢殿周圍的流麗符文，把窺探者擋在火簾之外。
+# description: 火帷（The Fiery Veil），石頂小祕寶：熔爐領主廢殿周圍的流麗符文，把窺探者擋在火簾之外。
 PAGE	511
 H3	廢廳周圍的符文
 P	<i>魔法</i>

@@ -4,7 +4,7 @@
 # source_sha256: 71ca59ad28da4da1e49c031a734e5c2b8773cf7db75d40b0e3bc30718e84e614
 # title: 風暴印記
 # nav_label: 風暴印記
-# description: 風暴印記（Storm Markings），石頂大秘寶：皮膚上樹狀的淡藍紋，被閃電擊中後解開風暴之怒。
+# description: 風暴印記（Storm Markings），石頂大祕寶：皮膚上樹狀的淡藍紋，被閃電擊中後解開風暴之怒。
 PAGE	566
 FACE	front
 TH	appendix d: major arcana
@@ -17,7 +17,7 @@ B	深呼吸，數到十，全程生著悶氣
 B	發洩怒火，但告訴我們如何、對什麼
 P	當你<b><i>被閃電或放電擊中</i></b>時，標記1格，不受傷害，不受惡果（可惜，你的裝備沒有這種保護）：
 MARK	3
-P	當你<b><i>做下最後一個標記</i></b>時，你解開風暴印記的奧秘，可以使用風暴之怒（見背面）。
+P	當你<b><i>做下最後一個標記</i></b>時，你解開風暴印記的奧祕，可以使用風暴之怒（見背面）。
 P	當你<b><i>本該做一個標記但3格都已標記</i></b>時，把怒火設為3。
 P	front
 PAGE	567

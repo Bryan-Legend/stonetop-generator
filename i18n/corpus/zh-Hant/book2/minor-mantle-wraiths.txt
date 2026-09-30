@@ -4,7 +4,7 @@
 # source_sha256: e4f9376f94c9c293e62a9b425844ca1c6dc9ef8d19fa2090adc8b8804b640dd6
 # title: 披風怨靈
 # nav_label: 披風怨靈
-# description: 披風怨靈（Mantle Wraiths），石頂小秘寶：一件綴著人牙的破爛披風，鬆開其上繫著的怨靈當作追隨者。
+# description: 披風怨靈（Mantle Wraiths），石頂小祕寶：一件綴著人牙的破爛披風，鬆開其上繫著的怨靈當作追隨者。
 PAGE	512
 H3	一件破爛的披風
 P	◇，<i>保暖，魔法</i>

@@ -108,9 +108,9 @@ P	4 迷宫般的结构，许多相连的房间/建筑
 P	5 凿进山体/基岩的隧道/穹室
 P	6 设防的建筑群，包含上述若干种
 HR
-P	<i>The PCs are in</i> <b><i>Gordin's Delve</i></b> (page 190)
+P	<i>PC们在</i> <b><i>戈丁矿场</i></b>（page 190）
 PB
-P	<i>into the ridges that cradle Gordin's Delve, so I pick "tunnel(s)/vault(s)" for structure, "buried… but mostly intact" for condition, and "none to speak of " for Ustrina presence. I roll a</i> <i>3 for theme (artistry), a 6 for purpose (pleasure), and a 1 for architectural elements (domes/</i> <i>arches/columns/arcades). I envision the following:</i>
+P	<i>深入环抱戈丁矿场的山脊，所以我为结构选“隧道/穹室”，为状况选“埋着……但大体完好”，为乌斯特里纳的存在选“几乎没有”。我掷出</i> <i>3作为题材（艺术），6作为用途（享乐），1作为建筑要素（穹顶/</i> <i>拱/柱/拱廊）。我设想如下：</i>
 HR
 P	1d6 用途
 HR
@@ -165,9 +165,9 @@ P	6 与铅合金，成粉（驱散不洁魔法，价值 2）
 P	7 与镁合金，制成护符（被背誓者触碰时烧成白炽，价值 2）
 P	8 与铁合金，锻成球体（靠近幻象时亮红，揭示其为虚假，价值 2）
 P	9-10 与锡和砷合金，再铸成武器/盾/胸甲（+2 价值），凡需按青铜论处时皆算青铜
-P	11-12 Alloyed as needed and worked into some appropriate form, then imbued with magic related to fire/ truth/purification
+P	11-12 按需合金并制成某种合适的形态，再注入与火/真理/净化相关的魔法
 PB
-P	Consider rolling 1d6 to inform size, quantity, and/or scale.
+P	可考虑掷 1d6 来提示大小、数量和/或规模。
 P	山铜在烧掉杂质时常常熔化或汽化。妥善合金有助于防止这一点，但即便一支做工精良的山铜矛，在击倒被腐化的敌人时也可能化成矿渣。
 PAGE	163
 ICON	icons/material.svg
@@ -301,7 +301,7 @@ P	7-8 雕像，具象（人、野兽、生物）
 P	9-10 雕像，抽象/风格化（形状、图案等）
 P	11-12 掷两次 1d10，组合
 PB
-P	Forge Lord constructs are animated by more than biology (+4 HP). Most have Armor 3 (made of metal) and lack vital organs (another +3 HP, +1 Armor).
+P	熔炉领主的构装体不止靠生物机能驱动（+4 HP）。多数拥有护甲 3（金属制成），且缺乏要害器官（再 +3 HP，+1 护甲）。
 P	发条构装体确实有要害器官（基本上），护甲可以低至 1。
 P	1d12 驱动
 HR
@@ -310,7 +310,7 @@ P	3-4 一缕精魂，附在其上
 P	5-6 火/热，由符文驾驭
 P	7-8 储存在<b>以太矿</b>（page 404）/<b>匠造玻璃</b>（page 388）中的能量
 P	9-10 其创造者力量的一星火花
-P	11-12 Roll 1d10 twice, combine
+P	11-12 掷两次 1d10，组合
 P	1d12 特质
 HR
 P	1 没什么特别，只是被驱动的金属
@@ -325,7 +325,7 @@ P	9 快速/敏捷/机动/会飞
 P	10 与能量/元素/魔法相契
 P	11-12 掷两次 1d10，组合
 PB
-P	Forge Lord constructs are often fireproof.
+P	熔炉领主的构装体往往不惧火焰。
 P	多数是盲的，感知振动，或物体与生物发出的热。
 P	<b>1d12</b> 尺寸
 HR

@@ -43,7 +43,7 @@ P	10 陰謀/背叛/內戰
 P	11 統治者抓住權力不放，甚至從墳墓裡
 P	12 英雄氣概與希望與堅忍，推翻暴君，屠滅怪物；鍛造一個新時代
 H2	提問
-Q	你知道的最近的墳冢丘在哪兒？
+Q	你知道的最近的墳冢丘在哪裡？
 Q	什麼古怪的標誌標示著它？
 Q	你聽過關於它的什麼荒誕故事？
 Q	匠造者隕落後的可怕日子裡，你記得什麼故事？
@@ -55,14 +55,14 @@ B	它們比匠造者廢墟更小、更粗陋
 B	丘陵之民避開它們
 B	據說它們裝著巨大的寶藏和巨大的危險
 P	<b>有人或許知道：</b>
-B	幾座墳冢可以在哪兒找到
+B	幾座墳冢可以在哪裡找到
 B	它們是丘陵之民（被唾棄的）祖先建造的
 B	他們當中一個特別（臭）名昭著的人物
 B	那些日子裡的恐怖
 B	關於一座特定墳冢的故事
 P	<b>極少有人知道：</b>
 B	一座給定的墳冢裝著什麼
-B	一個特定人物埋在哪兒
+B	一個特定人物埋在哪裡
 B	一座墳冢背後的真實故事
 PAGE	36
 H2	地點
@@ -108,20 +108,20 @@ PB
 P	更多例子見<b>黑水湖</b> (page 51)和<b>三巫湖</b> (page 442)。
 PAGE	37
 HR
-P	<i>The PCs are searching for the fiery heart of the</i> <b><i>Mindgem</i></b> <i>(page 548). I think it's in a</i> <i>Stone Lord ruin that the Barrow Builders reclaimed. Looking at the tables on page 386, I</i> <i>end up with a warren of multi-storied, brutalist apartments—housing for laborers—built</i> <i>around a single, giant-sized manor where the overseers dwelt. Maybe this was a plantation, with a small army of</i> <b><i>lithic servants</i></b> (page 393) <i>maintaining the complex?</i>
-P	<i>For the Barrow Builders' theme, I roll an 11 ("rulers clinging to power, even from the</i> <i>grave"). For signs, I roll a 5 ("damage/plunder/vandalism/graffiti") and 10 ("crude,</i> <i>human-sized" modifications). For the current condition, I roll a 9 ("buried, overgrown…</i> <i>mostly intact"). I ponder a bit, and come up with this:</i>
+P	<i>PC們正在尋找</i> <b><i>心靈寶石</i></b> <i>（page 548）的熾熱之心。我想它在一座被墳冢建造者重新佔據的</i> <i>石領主廢墟里。檢視 page 386 的表格，我</i> <i>得到一片多層、粗野風格的公寓樓群——勞工的住所——環繞著</i> <i>一座監工們居住的巨人尺寸的宅邸而建。也許這裡曾是一座種植園，由一小支</i> <b><i>石僕</i></b>（page 393） <i>軍隊維護著整個建築群？</i>
+P	<i>對於墳冢建造者的題材，我擲出11（「統治者緊抓權力不放，即使在</i> <i>墳墓裡」）。徵兆方面，我擲出5（「損壞/劫掠/破壞/塗鴉」）和10（「粗糙的、</i> <i>人類尺寸的」改造）。當前狀況方面，我擲出9（「埋著、長滿……</i> <i>但大體完好」）。我琢磨了一下，得出這個：</i>
 PB
-P	<i>A sorcerer led the humans here to rise up against their overseers. The sorcerer then claimed</i> <i>the manor as his own, along with the device that charged and controlled the lithic servants</i> <i>—a device powered by the Mindgem's makerglass heart! He turned the manor into a crude</i> <i>palace and sent "his" people back to work the fields. When they eventually rebelled, he was</i> <i>mortally wounded but transferred his soul into the device that ran the lithic servants.</i> <i>With his mind now spread among the many constructs, he squashed the uprising. His rule</i> <i>grew increasingly erratic, brutal, and ineffective. The tenements became more squalid and</i> <i>desperate. Folks fled. The sorcerer didn't care.</i>
+P	<i>一名術士領著這裡的人類起來反抗他們的監工。隨後術士把</i> <i>宅邸據為己有，連同那臺為石僕充能並操控它們的裝置</i> <i>——一臺由心靈寶石的匠造玻璃之心驅動的裝置！他把宅邸改成一座粗陋的</i> <i>宮殿，把「他的」人民送回田裡勞作。當他們終於再次反叛時，他</i> <i>受了致命傷，卻把靈魂轉移進了操控石僕的裝置。</i> <i>如今他的心智分散在眾多構裝體之中，他鎮壓了起義。他的統治</i> <i>變得越來越反覆無常、殘暴而無能。廉租房變得愈發骯髒、</i> <i>絕望。人們紛紛逃離。術士毫不在乎。</i>
 P	<i>如今，這座建築群空著：長滿、半埋、剝走任何值錢的東西，只住著</i> <i>一支日漸減少的石僕軍隊和一個偏執術士破碎的心智。</i>
 HR
 PAGE	38
 HR
-P	<i>The PCs are following the River Sruth out of</i> <b><i>Marshedge</i></b> (page 274) <i>and through the</i> <i>South Manmarch when they encounter a barrow. I roll a 10 for terrain ("tree(s), savannah, thickets"), a 9 for a theme ("conquest/oppression/enslavement"), a 12 for size ("manmade hill"), a 1 for purpose ("to honor the interred"), a 3 for architectural elements ("obvious entrance"), an 11 for condition ("strangely intact, fully visible"), and a 12 for features</i> <i>("roll twice"). I then get a 4 ("corrupted by the Things Below") and a 10 ("treasure," with a</i> <i>2 for the amount remaining). For the corruption, I turn to page 422 and come up with a</i> <i>poisonous place, with themes of death and broken bones, first caused by a blood-offering and</i> <i>then by a seal being broken. I ponder a little, and come up with this:</i>
+P	<i>PC們正沿著斯魯斯河走出</i> <b><i>澤畔</i></b>（page 274） <i>穿過</i> <i>南曼馬奇，這時他們遇見一座墳冢。我為地形擲出10（「樹、稀樹草原、灌木叢」），為題材擲出9（「征服/壓迫/奴役」），為大小擲出12（「人造山丘」），為用途擲出1（「紀念墓中之人」），為建築要素擲出3（「明顯的入口」），為狀況擲出11（「出奇地完好，完全可見」），為特徵擲出12</i> <i>（「擲兩次」）。接著我得到4（「被地底之物腐化」）和10（「寶藏」，餘量擲出</i> <i>2）。關於腐化，我翻到 page 422，得出一個</i> <i>有毒之地，主題是死亡與碎骨，起因先是一次血祭，</i> <i>後是一道封印被打破。我琢磨了一下，得出這個：</i>
 PB
-P	<i>A lone hill rising from sparse woods on the river's south bank. The daughter of a warlord commissioned it. Hundreds of slaves built it. When it was done, she had the slave's skulls caved</i> <i>in, to be interred with her father and his riches. After the daughter's brief reign ended, some</i> <i>fools pried open the stone doors to loot the warlord's tomb. They found chambers full of death,</i> <i>madness, and cursed gold. Those few who made it out were never the same. The barrow still</i> <i>lies open and treasure still remains, but no one with a lick of sense goes near it.</i>
+P	<i>河南岸稀疏林地中隆起的一座孤丘。一名軍閥的女兒下令修建了它。數百名奴隸建成了它。完工後，她命人砸碎奴隸們的頭骨，</i> <i>與她的父親和他的財寶葬在一起。女兒短暫的統治結束後，一些</i> <i>蠢貨撬開石門，要洗劫軍閥的墳墓。他們發現墓室裡滿是死亡、</i> <i>瘋狂和受詛咒的黃金。少數逃出來的人再也不復從前。墳冢至今</i> <i>敞開，財寶也仍在，但凡有點頭腦的人都不會靠近。</i>
 HR
 PAGE	39
-P	They are the most obvious remnants of these bloody times: dome shaped earthen mounds. Most folks assume they were all tombs, but that's hardly the case.
+P	它們是那段血腥歲月最顯眼的遺存：穹頂狀的土丘。多數人以為它們全是墳墓，但事實遠非如此。
 P	為題材 (page 35)、大小、用途、1或2項建築要素、狀況和一項特徵選或擲。把墳冢放在其地區合適的地形裡。用墳冢建造者或相應地區的<b>神器</b> (page 40)和<b>危險</b> (page 42)填滿它。
 P	<b>1d12</b> 大小
 HR
@@ -209,9 +209,9 @@ P	當你<b><i>戴著項圈並威脅</i></b> <b><i>某個你視為低於你的人
 P	當你<b><i>戴著項圈一週而沒有</i></b> <b><i>任何人質疑你的權威</i></b>時，代價減小一檔（最小 1d4）。
 HR
 ICON	icons/arcana.svg
-H3	小秘寶
+H3	小祕寶
 P	選1或讓某人擲。
-P	1d6 小秘寶
+P	1d6 小祕寶
 HR
 P	1 <b>一隻舊卷軸筒</b> (page 508)
 P	2 <b>一件破爛的斗篷</b> (page 512)
@@ -221,7 +221,7 @@ P	5 <b>一枚銀色印章戒指</b> (page 535)
 P	6 <b>一隻乾屍的手</b> (page 536)
 HR
 ICON	icons/arcana.svg
-H3	大秘寶
+H3	大祕寶
 P	下列特別可能與墳冢建造者有關：
 B	<b>血淬之劍</b> (page 552)
 B	<b>赫克圖梅爾法典</b>（Hec'tumel Codex）(page 556)
@@ -249,7 +249,7 @@ HR
 ICON	icons/danger.svg
 H3	陷阱
 P	他們花了那麼大力氣建造墳冢。他們不會讓它們無人看守。
-P	要創造一個陷阱，考慮墳冢的用途和它裝著什麼，以及陷阱在哪兒。然後為陷阱的意圖、觸發、徵兆，以及說得通的那麼多項要素選或擲。想象它如何運作。若你願意，為陷阱準備GM行動和/或一項迫近厄運，也許還有一項自定義玩家行動。
+P	要創造一個陷阱，考慮墳冢的用途和它裝著什麼，以及陷阱在哪裡。然後為陷阱的意圖、觸發、徵兆，以及說得通的那麼多項要素選或擲。想象它如何運作。若你願意，為陷阱準備GM行動和/或一項迫近厄運，也許還有一項自定義玩家行動。
 P	1d12 意圖
 HR
 P	1-2 殺死/致殘/傷害
@@ -292,7 +292,7 @@ P	12 先前已被觸發/解除
 PB
 P	特殊材料可能包括<b>危險的生長物</b> (page 219)、<b>山銅</b> (page 162)、<b>黑鐵</b> (page 307)、<b>黑冰</b> (page 322)、<b>匠造玻璃</b> (page 388)、<b>以太礦</b> (page 404)、<b>紅水晶</b> (page 424)，和/或你自擬的其他東西。
 P	<b>例子：</b>
-B	一口坑，深4.5米，底部鋪著生鏽的釘；被繃緊的布、卵石和塵土蓋著
+B	一口坑，深4.5公尺，底部鋪著生鏽的釘；被繃緊的布、卵石和塵土蓋著
 B	一條低矮隧道的天花板上有一道縫；踩上一塊石板會放出一把擺動的斧
 B	一口誘餌棺材上的謎盒；擺弄它會從棺材裡放出會戳人的小構裝體
 B	一具屍體的劍；移動它會拉動一根金屬絲，打翻一甕鹽，放出一隻被困的怨靈
@@ -345,7 +345,7 @@ ICON	icons/undead.svg
 H3	不死者
 P	在墳冢建造者的時代，許多軍閥和術士痴迷於不死。他們當中有一些找到了它——或類似的東西——透過亡靈。
 P	要創造一名不死者，想象一位軍閥（類似<b>曼馬奇</b> <b>酋長</b>，page 289）、一名<b>術士</b> (page 435)、一名<b>死靈師</b> (page 84)或一名<b>赫杜爾</b> (page 234)。考慮讓他們被地底之物<b>腐化</b> (page 432)。加上<i>亡靈</i>標籤，並給他們 +4 HP，因為驅動他們的不只是生物學。
-P	從那兒，為維持他們的繫繩、它如何維持他們，以及它的限制選或擲。然後為不死者當前的狀態選或擲。考慮他們（或他們的影響）可能在何處、以何種方式被遭遇。讓這一切告知他們的故事、個性與屬性塊。
+P	從那裡，為維持他們的繫繩、它如何維持他們，以及它的限制選或擲。然後為不死者當前的狀態選或擲。考慮他們（或他們的影響）可能在何處、以何種方式被遭遇。讓這一切告知他們的故事、個性與屬性塊。
 P	1d12 繫繩
 HR
 P	1-2 小（針、項圈、戒指等）
@@ -370,7 +370,7 @@ P	1-2 他們不能離開它的面前
 P	3-4 它必須被餵養/充能/維持
 P	5-6 它必須經常被挪動
 P	7-8 它的毀滅導致他們瞬間、可怕、最終的死
-P	9-10 若被“殺死”，他們需要外來幫助才能恢復
+P	9-10 若被「殺死」，他們需要外來幫助才能恢復
 P	11-12 擲 1d10 兩次
 P	1d12 當前狀態
 HR
@@ -378,21 +378,21 @@ P	1-3 大為衰落，也許已被摧毀，等待歸來
 P	4-6 被囚，大半被遺忘
 P	7-9 藏著，冷漠，自我沉溺
 P	10 被困，但有些影響
-P	11 秘密地活躍，追求陰謀
+P	11 祕密地活躍，追求陰謀
 P	12 擲 1d10 兩次
 PAGE	47
 HR
-P	<i> I've established that the Mindgem's fiery heart is in the clutches of a deathless sorcerer, whose</i> <i>soul inhabits an arcane device that controls a number of</i> <b><i>lithic servants</i></b> (see page 393)<i>.</i>
-P	<i>I start with a</i> <b><i>sorcerer</i></b> (page 435)<i>, corrupted by</i> <b><i>El'rash-Orra</i></b> (page 419)<i>. For gifts, I</i> <i>give him a terrifying gaze and the ability to inflict false sensations. For marks, I give him</i> <i>slow-healing wounds and strange fascinations (he's a voyeur).</i>
-P	<i>I already decided that he had "anchored his soul" to an arcane device in a Stone Lord manor</i> <i>(</i>immobile<i>,</i> fragile<i>). For a limitation, I think the device "must be fed/charged/maintained," and that "its destruction results in his final death." For a current state, I think he's</i> <i>"trapped, but with some influence" via the lithic servants he can possess.</i>
+P	<i>我已確定心靈寶石的熾熱之心落在一名不死術士手中，他的</i> <i>靈魂棲居於一臺奧術裝置，那裝置操控著若干</i> <b><i>石僕</i></b>（見 page 393）<i>。</i>
+P	<i>我從一名</i> <b><i>術士</i></b>（page 435）<i>開始，他被</i> <b><i>埃爾拉什-奧拉</i></b>（page 419）<i>腐化。天賦方面，我</i> <i>給他可怖的注視和施加虛假感覺的能力。印記方面，我給他</i> <i>難以癒合的傷口和古怪的癖好（他是個偷窺者）。</i>
+P	<i>我已決定他把「靈魂錨定」在一座石領主宅邸裡的一臺奧術裝置上</i> <i>（</i>不可移動<i>，</i>易碎<i>）。至於限制，我認為這臺裝置「必須被餵養/充能/維護」，並且「它的毀滅會導致他的最終死亡」。至於當前狀態，我認為他</i> <i>「被困，但有些影響」，藉助他能附身的石僕。</i>
 P	<i>我想象他在那座過大的莊園裡，坐在臨時的王座上，永久受傷，</i> <i>無法自己移動。十二名無面的石僕侍奉他，需要時像</i> <i>木偶一樣移動他。王座後面是一臺符文石與水晶的裝置，</i> <i>匠造玻璃之心在其核心燃燒。他的心智散佈在僕人當中，其中一些</i> <i>在三巫湖搜刮神器、閒話和維持裝置的材料。若</i> <i>裝置失效，他的意識會碎裂，身體最終死去。僕人，每一個</i> <i>裝著他靈魂的一塊碎片，會為至高而互相爭鬥。沒有誰會成功。</i>
-P	<i>I write up his stat block like this:</i>
+P	<i>我這樣寫出他的屬性塊：</i>
 P	邁哈爾，不死術士
 P	獨行，亡靈，腐化，偏執，
 P	魔法，囤積，駭人
 P	HP 16；護甲 4（結界）
 P	傷害 虛假痛苦之詞 d8（近距，範圍，無視護甲）
-P	特殊性質 被拴在裝置上；殘破的身體；知曉僕人所感知的一切 本能 嫉妒地囤積秘密
+P	特殊性質 被拴在裝置上；殘破的身體；知曉僕人所感知的一切 本能 嫉妒地囤積祕密
 P	> 向他人施加虛假感覺
 P	> 用他可怖的注視盯住某人
 P	> 揭示一項計劃或一樁可怖的真相

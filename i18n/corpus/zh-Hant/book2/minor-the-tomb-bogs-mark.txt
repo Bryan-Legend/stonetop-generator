@@ -4,7 +4,7 @@
 # source_sha256: 0a5ce5a9e855707c25f6e8619c195ec33d68d866df7b67265204986bbdb87ba2
 # title: 冢沼印記
 # nav_label: 冢沼印記
-# description: 冢沼印記（The Tomb-bog's Mark），石頂小秘寶：澤畔附近的泥炭冢，用阿拉蒂斯的印記給罪人立誓咒。
+# description: 冢沼印記（The Tomb-bog's Mark），石頂小祕寶：澤畔附近的泥炭冢，用阿拉蒂斯的印記給罪人立誓咒。
 PAGE	511
 H3	一座陰森的泥炭冢
 P	離澤畔不遠，往費里爾沼澤裡走一段，有一座泥炭冢，鳥不築巢，花不開放。自鎮子建立以來，澤畔的人把某些罪犯活埋在這裡。

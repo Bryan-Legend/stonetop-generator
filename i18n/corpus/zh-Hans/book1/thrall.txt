@@ -6,7 +6,7 @@
 # nav_label: 奴仆
 # description: 奴仆附页：当你死去却呼唤某个地底之物之名、恳求它出手斡旋时取用——含主人、恩宠、印记与恶果。
 PAGE	152
-P	When you <b><i>die but call on one of the Things Below by name and beseech them to intercede</i></b>, they do. Death is averted, but you gain this insert and 1 Mark (see reverse).
+P	当你<b><i>死去，却呼唤某个地底之物之名、恳求它出手斡旋时</i></b>，它应允了。死亡得以避开，但你获得这张附页和1枚印记（见背面）。
 H3	你的主人
 P	你呼唤的那个地底之物？那个把你的灵魂从最后之门前拽回、又替你瞒过苍白猎手的存在？如今它拥有你。
 P	在此写下你主人的名号，以及你所知的一切尊称：

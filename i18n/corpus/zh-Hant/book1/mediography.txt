@@ -21,17 +21,17 @@ B	<i>Trilemma Adventures</i>，Michael Prescott，Trilemma Adventures，2019
 B	<i>Ars Magica</i>，Mark Rein-Hagen 與 Jonathan Tweet，Lion Rampant Games，1987
 H2	部落格
 P	在 Jeremy 的部落格 <i>Spouting Lore</i>（2018-2023）上可以找到大量關於<i>石頂</i>及其開發歷程的文章。此外，以下文章與系列或是影響了本遊戲所呈現的技巧與思路，或是展示了遊戲的實際運作。
-B	“<i>Apocalypse World</i>: Crossing the Line”，John Harper，<i>The Mighty Atom</i>，2010
-B	“Paint the Scene”，Jason Cordova，<i>The Gauntlet Blog</i>，2018
-B	“The 7-3-1 Technique”，Jason Cordova，<i>The Gauntlet Blog</i>，2018
-B	“A 16 HP Dragon”，Stras Acimovic，由 Sage LaTorra 轉載，Latorra.org，2012
-B	“Powered by the Apocalypse”（12篇系列），D. Vincent Baker，<i>lumpley games</i>，2019-2025
-B	<i>A Collection of Unmitigated Pedantry</i>，Bret Devereaux，2019-至今（尤其是“Practical Polytheism”系列與“Iron, How Did They Make It?”系列）
-B	“Xandering the Dungeon”，Justin Alexander，<i>The Alexandrian</i>，2010
-B	“Dungeon Checklist”，Arnold K.，<i>Goblin Punch</i>
-B	“PTFO: Stonetop”（單人實錄系列），SGH，Substack 上的 <i>PTFO</i>，2022-至今
+B	「<i>Apocalypse World</i>: Crossing the Line」，John Harper，<i>The Mighty Atom</i>，2010
+B	「Paint the Scene」，Jason Cordova，<i>The Gauntlet Blog</i>，2018
+B	「The 7-3-1 Technique」，Jason Cordova，<i>The Gauntlet Blog</i>，2018
+B	「A 16 HP Dragon」，Stras Acimovic，由 Sage LaTorra 轉載，Latorra.org，2012
+B	「Powered by the Apocalypse」（12篇系列），D. Vincent Baker，<i>lumpley games</i>，2019-2025
+B	<i>A Collection of Unmitigated Pedantry</i>，Bret Devereaux，2019-至今（尤其是「Practical Polytheism」系列與「Iron, How Did They Make It?」系列）
+B	「Xandering the Dungeon」，Justin Alexander，<i>The Alexandrian</i>，2010
+B	「Dungeon Checklist」，Arnold K.，<i>Goblin Punch</i>
+B	「PTFO: Stonetop」（單人實錄系列），SGH，Substack 上的 <i>PTFO</i>，2022-至今
 H2	參照作品
-P	沒有哪一樣東西可以讓你指著說“<i>石頂</i>就是這樣”。不過這裡有一些東西，你可以從中找找感覺。
+P	沒有哪一樣東西可以讓你指著說「<i>石頂</i>就是這樣」。不過這裡有一些東西，你可以從中找找感覺。
 B	<i>Barbarians</i>（電視劇），Andreas Heckmann 等，Gaumont Germany，2020-2022
 B	<i>The Bear and the Nightingale</i>（書；其次是整個 <i>Winternight</i> 三部曲），Katherine Arden，Del Rey，2017
 B	<i>The Chronicles of Prydain</i>（書系列），Lloyd Alexander；Holt, Reinhart, and Winston；1964-1968
@@ -60,7 +60,7 @@ B	<i>At the Mountains of Madness</i>（中篇小說），H.P. Lovecraft，<i>Ast
 B	<i>The Black Company</i>（書系列），Glen Cook，1984-至今，Tor Fantasy
 B	<i>Black Spot</i>（電視劇），Mathieu Missoffe，Ego Productions 等，2017-2019
 B	<i>Chronos</i>（電影），Guillermo del Toro，Fondo de Fomento Cinematográfico 等，1992
-B	“Conan”系列故事（書及改編作品）；Robert E. Howard、L. Sprague de Camp 與 Lin Carter；多家出版社，1950-1977（尤其是“Red Nails”）
+B	「Conan」系列故事（書及改編作品）；Robert E. Howard、L. Sprague de Camp 與 Lin Carter；多家出版社，1950-1977（尤其是「Red Nails」）
 B	<i>Deadwood</i>（電視劇），David Milch，Roscoe Productions 等，2004-2006
 B	<i>Discern Realities</i>（播客），Jason Cordova 與 David LaFrieniere，The Gauntlet，2015-2019
 B	<i>Gentleman Bastard</i>（書系列），Scott Lynch，Bantam Books，2006-2013
