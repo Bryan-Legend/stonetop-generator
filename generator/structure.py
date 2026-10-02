@@ -1201,6 +1201,7 @@ def render_stat_block(
     variant: str | None = None,
     tags: str = "",
     name_tags: str = "",
+    bold_leads: set[str] | None = None,
 ) -> str:
     """Compact monster/enemy/threat block — minimal vertical space.
 
@@ -1500,7 +1501,14 @@ def render_stat_block(
             # bullet note — keep as a compact list item style paragraph
             parts.append(f'<p class="stat-note">• {rr(pv(_same(o[2:], o)))}</p>')
         else:
-            parts.append(f'<p class="stat-note">{rr(pv(o))}</p>')
+            note = rr(pv(o))
+            # The block is rendered de-tokenized, which costs a note the
+            # bold label the book opens it with ("Something interesting:",
+            # "Stakes:"). Put it back on whatever the label reads as now —
+            # a translation's own words, up to its colon.
+            if bold_leads and _defmt(o).startswith(tuple(bold_leads)):
+                note = _NOTE_LEAD_RE.sub(r"<strong>\1</strong>", note, count=1)
+            parts.append(f'<p class="stat-note">{note}</p>')
     for dice_s, label_s, ents in roll_tables:
         rows_html = "".join(
             f'<tr><th scope="row">{html.escape(num_s)}</th>'
@@ -2286,6 +2294,14 @@ def try_parse_improvement_block(
 
 
 # The last few tags of a wrapped tag line: lowercase words, no digits.
+# A note's lead-in label in rendered HTML: the words up to its first colon.
+_NOTE_LEAD_RE = re.compile(r"^([^<>:：]{1,60}[:：])")
+# ...and in a corpus line: a short bold run closing on, or just before, a colon.
+_BOLD_LEAD_RE = re.compile(r"^\x04([^\x04\x05]{1,40}?)(:?)\x05(:?)")
+# A stat block's own lines open on one of its bold labels.
+_STAT_LINE_OPEN_RE = re.compile(
+    r"^\s*(?:HP|Armor|Damage|Special qualities|Instinct)\b", re.I
+)
 _TAG_TAIL_RE = re.compile(r"^[a-z][a-z\-\']*(?:,\s*[a-z][a-z\-\']*){0,2},?$")
 
 
@@ -2387,16 +2403,23 @@ def structure_html(
     # end-of-block marks blocks.json sets, then dropped.
     para_ends: set[int] = set()
     kept: list[str] = []
-    for ln in lines:
+    for idx, ln in enumerate(lines):
         if ln == M_PB:
+            # ...except above a stat line: the space the book sets between a
+            # creature's tags and its "HP 31; Armor 4" is inside the block
+            # (the Bronze Colossus ended on its tag line).
+            nxt = lines[idx + 1] if idx + 1 < len(lines) else ""
+            if "\x04" in nxt and _STAT_LINE_OPEN_RE.match(_defmt(nxt)):
+                continue
             if kept:
                 para_ends.add(len(kept) - 1)
             continue
         kept.append(ln)
     lines = kept
     listed_starts, listed_ends = block_line_marks(page_blocks or [], lines)
+    para_end = {"kind": "paragraph"}
     for k in para_ends:
-        listed_ends.setdefault(k, {"kind": "paragraph"})
+        listed_ends.setdefault(k, para_end)
     out: list[str] = []
     i = 0
     n = len(lines)
@@ -3312,6 +3335,13 @@ def structure_html(
                             body = _cat(body, nxt)
                             i += 1
                             continue
+                        # …and so does one that stops on a semicolon (Tempest
+                        # Lords' vortex sizes: "1-4 1 to 5 tiny; Armor 1;" /
+                        # "Damage d8-2 (hand)" is no heading or tag line).
+                        if body.rstrip().endswith(";") and not ENTRY_RE.match(nxt):
+                            body = _cat(body, nxt)
+                            i += 1
+                            continue
                         # …and so does a row that stops on "roll": the dice
                         # are its own (The Labyrinth: "11-12 obstruction (see
                         # below), and roll" / "1d10 again" is no dice header).
@@ -3530,6 +3560,16 @@ def structure_html(
                 inline_rest = inline_rest.strip()
             # "Ferocedes Ogran, ghostly" → name + leading tags
             extra_tags: list[str] = []
+            # "Moss spirits (horde, spirits, vain, moody)" → name + tags
+            m_par = inline_rest is not None and re.match(
+                r"^(.+?)\s*\(([^()]+)\)$", name
+            )
+            if m_par and looks_like_inline_creature(line):
+                name = m_par.group(1).strip()
+                extra_tags.extend(
+                    t.strip() for t in m_par.group(2).split(",") if t.strip()
+                )
+                name_tags = ""  # a piece of its line: matched by its words
             m_name = re.match(
                 r"^(.+?),\s*([a-z][\w\-]*(?:\s*,\s*[a-z][\w\-]*)*)$",
                 name,
@@ -3545,8 +3585,22 @@ def structure_html(
             creature_icon = take_icon_html()
             i += 1
             block_lines: list[str] = []
+            bold_leads: set[str] = set()
+
+            def add_block_line(text: str) -> None:
+                # A GM-note creature runs its notes on after its stats
+                # ("…; Instinct to bask in Sajra's presence. Notes: …"):
+                # the notes are a paragraph of their own.
+                head, sep, tail = text.partition(" Notes: ")
+                if sep and "Instinct" in head:
+                    bold_leads.add("Notes:")
+                    block_lines.append(pv(_same(head, text)))
+                    block_lines.append(pv(_same("Notes: " + tail, text)))
+                else:
+                    block_lines.append(pv(text))
+
             if inline_rest:
-                block_lines.append(inline_rest)
+                add_block_line(_same(inline_rest, line))
             tag_prefix = list(extra_tags)  # folded into first real tag line
             lead_tags = ""
             # Boundaries: horizontal rules and the next creature's icon/heading.
@@ -3555,8 +3609,8 @@ def structure_html(
             while i < n:
                 if i in listed_starts:
                     break  # the next block begins here (blocks.json)
-                if (i - 1) in listed_ends:
-                    break  # the line above was its last (blocks.json, or paragraph space)
+                if listed_ends.get(i - 1, para_end)["kind"] != "paragraph":
+                    break  # the line above was its last (blocks.json)
                 L = lines[i]
                 if L == M_HR:
                     # Decorative HR mid-card before roll-table entries
@@ -3624,6 +3678,9 @@ def structure_html(
                 if L.startswith("\x02"):
                     break
                 plain = _plain(L)
+                m_lead = _BOLD_LEAD_RE.match(TAG_RE.sub("", L))
+                if m_lead and (m_lead.group(2) or m_lead.group(3)):
+                    bold_leads.add(_defmt(m_lead.group(1)).strip() + ":")
                 # Next GM-note creature (Sites: Spirit of the spring after
                 # Wynfor & Tiwlip) — don't swallow it into this card.
                 if block_lines and looks_like_inline_creature(plain):
@@ -3705,7 +3762,20 @@ def structure_html(
                                 break  # paragraph space, or blocks.json: the row ends
                             nxt_e = _plain(lines[i])
                             if ENTRY_RE.match(nxt_e):
-                                break
+                                # A number that does not move the table on,
+                                # mid-bracket or after a comma, is the row
+                                # carrying on (the Adept's "6 … (tiny, 8 HP,"
+                                # / "1 armor, 1d4 damage)"), as in a table
+                                # that stands alone.
+                                if not (
+                                    (body_e.count("(") > body_e.count(")")
+                                     or body_e.rstrip().endswith(","))
+                                    and _row_low(nxt_e) <= _row_high(num_e)
+                                ):
+                                    break
+                                body_e = _cat(body_e, nxt_e)
+                                i += 1
+                                continue
                             if looks_like_roll_header(nxt_e) or looks_like_heading(
                                 nxt_e
                             ):
@@ -3732,9 +3802,9 @@ def structure_html(
                 if plain.startswith("•") or plain.startswith("·"):
                     block_lines.append(pv(_same("• " + plain.lstrip("•· ").strip(), plain)))
                 else:
-                    block_lines.append(pv(plain))
+                    add_block_line(plain)
                 i += 1
-                if (i - 1) in listed_ends:
+                if listed_ends.get(i - 1, para_end)["kind"] != "paragraph":
                     break  # the block ends on that line (blocks.json)
             lead_tags = lead_tags or ", ".join(tag_prefix)
             # A Cost is what a follower has and a monster never does
@@ -3759,6 +3829,7 @@ def structure_html(
                     # or a name joined from two lines (Livrothos) matches no
                     # one line of a translation and is shown in English.
                     name_tags=name_tags,
+                    bold_leads=bold_leads,
                 )
             )
             continue

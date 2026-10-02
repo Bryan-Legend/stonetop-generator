@@ -544,23 +544,23 @@
    "sites": [
     {
      "kind": "stat-block",
-     "name": "Moss Spirits (Horde, Spirits, Vain, Moody)",
-     "id": "moss-spirits-horde-spirits-vain-moody"
+     "name": "Moss Spirits",
+     "id": "moss-spirits"
     },
     {
      "kind": "stat-block",
-     "name": "Wynfor & Tiwlip (Small, Entranced, Docile)",
-     "id": "wynfor-tiwlip-small-entranced-docile"
+     "name": "Wynfor & Tiwlip",
+     "id": "wynfor-tiwlip"
     },
     {
      "kind": "stat-block",
-     "name": "Spirit of the Spring (Solitary, Spirit, Anxious)",
-     "id": "spirit-of-the-spring-solitary-spirit-anxious"
+     "name": "Spirit of the Spring",
+     "id": "spirit-of-the-spring"
     },
     {
      "kind": "stat-block",
-     "name": "Pryder (Woods-Wise, Handsome, Concussed)",
-     "id": "pryder-woods-wise-handsome-concussed"
+     "name": "Pryder",
+     "id": "pryder"
     },
     {
      "kind": "roll-table",
@@ -582,7 +582,8 @@
     {
      "kind": "stat-block",
      "name": "Crinwin",
-     "id": "crinwin"
+     "id": "crinwin",
+     "end": "What is it, and why isn't it common knowledge (or at least commonly accepted)?"
     },
     {
      "kind": "roll-table",

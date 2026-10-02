@@ -585,6 +585,11 @@ def _join_dehyphenated(parts) -> str:
     return out
 
 
+# "Name (tag, tag): stats" up to the first label a stat block cuts at.
+_INLINE_CREATURE_RE = re.compile(
+    r"^\s*([^()（）]+?)\s*[(（]([^()（）]+)[)）]\s*[:：]\s*(.*?)\s*(?=$|Instinct|Notes\b)",
+    re.S,
+)
 _CALLOUT_RE = re.compile(r"^(.*\S)\s+(\d{1,2})$")
 
 
@@ -643,6 +648,18 @@ def derive_variants(
         add(_GT_BULLET_RE.sub("", da), _GT_BULLET_RE.sub("", db))
     # A stat line is cut at each label, including the ones those
     # sidebars set in capitals, and shown one label to a line.
+    # A GM-note creature (Sites: "Wynfor & Tiwlip (small, entranced,
+    # docile): HP 3; Damage bronze knife d4 (hand); Instinct …") is shown
+    # as its name, its tags, and each stat on a line of its own.
+    ia, ib = _INLINE_CREATURE_RE.match(da), _INLINE_CREATURE_RE.match(db)
+    if ia and ib:
+        add(ia.group(1), ib.group(1))
+        add(ia.group(2), ib.group(2))
+        qa = [q.strip() for q in re.split(r"[;；]", ia.group(3)) if q.strip()]
+        qb = [q.strip() for q in re.split(r"[;；]", ib.group(3)) if q.strip()]
+        if len(qa) == len(qb):
+            for xa, xb in zip(qa, qb):
+                add(xa, xb)
     # A stat block's heading drops a callout number the book set after it
     # (Book I's anatomy of a monster: "Crinwin 1").
     ca, cb = _CALLOUT_RE.match(da), _CALLOUT_RE.match(db)
