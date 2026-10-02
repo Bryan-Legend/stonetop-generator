@@ -110,7 +110,7 @@ BIG=$(python -c 'print("{\"patches\":[{\"store\":\"stonetop-wiki-checks\",\"set\
 chk "too many keys refused" "413" "$(curl -s -o /dev/null -w '%{http_code}' -X POST "$B/v1/state/$CID" -H "authorization: Bearer $GTOK" -H 'content-type: application/json' -d "$BIG")"
 
 echo "== cors =="
-chk "preflight from the hosted wiki" "204" "$(curl -s -o /dev/null -w '%{http_code}' -X OPTIONS "$B/v1/state/$CID" -H 'origin: https://stonetop-wiki.github.io' -H 'access-control-request-method: GET')"
+chk "preflight from the hosted wiki" "204" "$(curl -s -o /dev/null -w '%{http_code}' -X OPTIONS "$B/v1/state/$CID" -H 'origin: https://stonetop.cc' -H 'access-control-request-method: GET')"
 chk "preflight from a stranger" "403" "$(curl -s -o /dev/null -w '%{http_code}' -X OPTIONS "$B/v1/state/$CID" -H 'origin: https://evil.example' -H 'access-control-request-method: GET')"
 ACAO=$(curl -s -D - -o /dev/null -H "authorization: Bearer $GTOK" -H 'origin: null' "$B/v1/state/$CID?since=0" | tr -d '\r' | grep -i '^access-control-allow-origin:' | cut -d' ' -f2-)
 chk "gm allowed from a file:// page" "null" "$ACAO"

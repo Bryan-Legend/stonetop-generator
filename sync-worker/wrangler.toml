@@ -4,12 +4,13 @@ name = "sync"
 main = "src/index.js"
 compatibility_date = "2026-01-01"
 
-# Origins allowed to call the Worker from a browser. The hosted wiki, plus
+# Origins allowed to call the Worker from a browser. The hosted wiki (and its
+# old github.io address, which now redirects to stonetop.cc), plus
 # "null" — which is what a page opened straight off a disk sends. A null
 # origin is only ever answered for the GM token (see ALLOW_NULL_ORIGIN_GM in
 # src/shared.js); the GM is the one who opens the wiki from Dropbox.
 [vars]
-ALLOWED_ORIGINS = "https://stonetop-wiki.github.io"
+ALLOWED_ORIGINS = "https://stonetop.cc,https://stonetop-wiki.github.io"
 # TOMBSTONE_TTL_MS can be set here to override how long deletions' tombstone
 # rows are kept before the sweep (default 30 days, src/shared.js). The
 # compaction test suite runs its own worker with it at 0.

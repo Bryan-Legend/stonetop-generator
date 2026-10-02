@@ -36,7 +36,7 @@ const chk = (n, want, got) =>
     : bad(n, `expected ${JSON.stringify(want)} got ${JSON.stringify(got)}`);
 
 const WIKI_PAGE = `<!doctype html><html><head>
-<meta property="og:url" content="https://stonetop-wiki.github.io/marshedge.html">
+<meta property="og:url" content="https://stonetop.cc/marshedge.html">
 </head><body>
 <nav class="sidebar">
   <div class="sidebar-head">
@@ -61,7 +61,7 @@ const WIKI_PAGE = `<!doctype html><html><head>
 
 const SHEET_PAGE = `<!doctype html><html><head>
 <meta property="og:url" content="https://bryan-legend.github.io/stonetop-adventures/Underfalls.html">
-</head><body class="site-sheet" data-notes-slug="sites/Underfalls" data-wiki-root="https://stonetop-wiki.github.io/" data-hp-storage="underfalls-hp">
+</head><body class="site-sheet" data-notes-slug="sites/Underfalls" data-wiki-root="https://stonetop.cc/" data-hp-storage="underfalls-hp">
 <nav class="site-nav">
   <a class="nav-title" href="#top">Underfalls</a>
   <a class="nav-wiki-home" href="index.html">← Adventures</a>
@@ -163,7 +163,7 @@ const playerCfg = {
 /* ------------------------------------------------------------------ */
 console.log("== no campaign configured: the wiki as it always was ==");
 {
-  const b = browser(WIKI_PAGE, "https://stonetop-wiki.github.io/marshedge.html");
+  const b = browser(WIKI_PAGE, "https://stonetop.cc/marshedge.html");
   const S = b.w.StonetopStore;
   chk("starts off", "off", S.status());
   chk("no config", null, S.config());
@@ -182,7 +182,7 @@ console.log("== no campaign configured: the wiki as it always was ==");
   /* A key from another page that happens to share a check id stays that
      page's alone — check ids are short ("fire-2", "10-1"), so the page slug
      in the key is what keeps pages apart. */
-  const other = browser(WIKI_PAGE, "https://stonetop-wiki.github.io/marshedge.html", {
+  const other = browser(WIKI_PAGE, "https://stonetop.cc/marshedge.html", {
     seed: [["stonetop-wiki-checks", JSON.stringify({ "stonetop#fire-2": true })]],
   });
   const ob = other.w.document.querySelectorAll("input.wiki-check");
@@ -245,7 +245,7 @@ console.log("== no campaign configured: the wiki as it always was ==");
 
 /* ------------------------------------------------------------------ */
 console.log("\n== the GM joins and ticks a box ==");
-const gm = browser(WIKI_PAGE, "https://stonetop-wiki.github.io/marshedge.html");
+const gm = browser(WIKI_PAGE, "https://stonetop.cc/marshedge.html");
 gm.w.StonetopStore.connect(gmCfg);
 await until(() => gm.w.StonetopStore.status() === "ok");
 {
@@ -271,14 +271,14 @@ console.log("\n== a player joins by clicking the link ==");
   chk(
     "the link points at the published wiki root",
     true,
-    link.startsWith("https://stonetop-wiki.github.io/index.html#join=")
+    link.startsWith("https://stonetop.cc/index.html#join=")
   );
   const parsed = gm.w.StonetopStore.parseJoinLink(link);
   chk("it carries the player token", create.player_token, parsed.token);
   chk("and the player role", "player", parsed.role);
 
   // A player who has been reading the wiki on their own has ticks of their own.
-  const before = browser(WIKI_PAGE, "https://stonetop-wiki.github.io/marshedge.html");
+  const before = browser(WIKI_PAGE, "https://stonetop.cc/marshedge.html");
   tick(before, 0, true);
   chk("they had a tick of their own", ["marshedge#fire-1"], Object.keys(checks(before)));
 
@@ -308,7 +308,7 @@ console.log("\n== the socket ==");
 }
 
 console.log("\n== a tick travels between two browsers ==");
-const player = browser(WIKI_PAGE, "https://stonetop-wiki.github.io/marshedge.html");
+const player = browser(WIKI_PAGE, "https://stonetop.cc/marshedge.html");
 player.w.StonetopStore.connect(playerCfg);
 await until(() => player.w.StonetopStore.status() === "ok");
 {
@@ -449,7 +449,7 @@ if (SITE_JS) {
 /* ------------------------------------------------------------------ */
 console.log("\n== the worker going away ==");
 {
-  const lone = browser(WIKI_PAGE, "https://stonetop-wiki.github.io/marshedge.html");
+  const lone = browser(WIKI_PAGE, "https://stonetop.cc/marshedge.html");
   lone.w.StonetopStore.connect({
     endpoint: "http://127.0.0.1:9",
     campaign: "stonetop-nope",

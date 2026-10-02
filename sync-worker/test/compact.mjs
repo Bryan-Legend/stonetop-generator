@@ -162,7 +162,7 @@ chk(
 
 console.log("\n== a stale browser prunes, but keeps its own edit ==");
 const PAGE = `<!doctype html><html><head>
-<meta property="og:url" content="https://stonetop-wiki.github.io/marshedge.html">
+<meta property="og:url" content="https://stonetop.cc/marshedge.html">
 </head><body>
 <nav class="sidebar"><div class="sidebar-head">
   <a class="wiki-title" href="index.html">Stonetop Wiki</a>
@@ -209,7 +209,7 @@ const PAGE = `<!doctype html><html><head>
   const vc = new VirtualConsole();
   vc.on("jsdomError", () => {});
   const dom = new JSDOM(PAGE, {
-    url: "https://stonetop-wiki.github.io/marshedge.html",
+    url: "https://stonetop.cc/marshedge.html",
     runScripts: "outside-only",
     pretendToBeVisual: true,
     virtualConsole: vc,

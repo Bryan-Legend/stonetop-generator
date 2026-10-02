@@ -23,7 +23,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-HOST = "stonetop-wiki.github.io"
+HOST = "stonetop.cc"
 KEY = "f76aed92590244927c1369c70551a6a3"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 ENDPOINT = "https://api.indexnow.org/indexnow"

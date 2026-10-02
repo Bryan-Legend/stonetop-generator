@@ -3,7 +3,7 @@
 The generator behind the **Stonetop Web Edition** — a free, searchable, hyperlinked
 edition of both *Stonetop* rulebooks, built from the PDFs.
 
-**Read it online: <https://stonetop-wiki.github.io/>**
+**Read it online: <https://stonetop.cc/>**
 
 The Web Edition includes:
 
@@ -155,7 +155,7 @@ The table-ready adventure sheets that used to live under `Stonetop_Wiki/sites/`
 have their own repository and site: [stonetop-adventures](https://github.com/Bryan-Legend/stonetop-adventures),
 published at <https://bryan-legend.github.io/stonetop-adventures/>. They load this
 wiki's chrome (`css/wiki.css`, `js/wiki.js`, the icons and hover previews) from
-<https://stonetop-wiki.github.io/> by absolute URL, so a change to the chrome here
+<https://stonetop.cc/> by absolute URL, so a change to the chrome here
 reaches them on the next deploy. The wiki does not link to them; `Stonetop_Wiki/sites/`
 and `campaign-sites.html` are kept only as redirects to the new addresses.
 

@@ -16,7 +16,7 @@ date. Two places apply the rule, sharing this module:
 
 * **The deploy** (``python -m generator.lastmod deploy``, run by
   ``.github/workflows/pages.yml``). The site about to be published is compared
-  with the site that is live now (a checkout of stonetop-wiki.github.io),
+  with the site that is live now (a checkout of stonetop.cc),
   page by page: see :func:`reconcile_with_live`. That catches anything the
   build did not see (a hand edit, a build from a clean folder) and yields the
   list of URLs that really changed, for IndexNow.
@@ -273,7 +273,7 @@ def _cmd_reseed(args: argparse.Namespace) -> int:
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="python -m generator.lastmod")
-    p.add_argument("--base-url", default="https://stonetop-wiki.github.io")
+    p.add_argument("--base-url", default="https://stonetop.cc")
     sub = p.add_subparsers(dest="cmd", required=True)
     d = sub.add_parser("deploy", help="carry lastmod over from the live site")
     d.add_argument("--site", required=True, help="the site about to be published")

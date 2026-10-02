@@ -241,7 +241,7 @@ shape and assigns ids.
   hosted origin (tighter). Recommend allowing `null` only for the GM token.
 - Cap request body (~64 KB), keys per patch (~500), and total rows per campaign (~20k).
 - Rate-limit campaign creation hard — it's the only unauthenticated endpoint.
-- The wiki is public at `stonetop-wiki.github.io`, so the campaign id must be unguessable
+- The wiki is public at `stonetop.cc`, so the campaign id must be unguessable
   on its own; never derive it from the campaign's name.
 
 ---

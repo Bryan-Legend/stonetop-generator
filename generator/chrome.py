@@ -78,7 +78,7 @@ BUILD_MANIFEST = ".build-manifest"
 # reading the root's, which is right while coverage is partial — results lead
 # to the pages that exist.
 DATA_COVERAGE = 0.5
-SITE_BASE_URL = "https://stonetop-wiki.github.io"
+SITE_BASE_URL = "https://stonetop.cc"
 
 
 SITE_NAME = "Stonetop"

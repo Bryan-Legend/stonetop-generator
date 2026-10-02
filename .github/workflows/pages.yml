@@ -1,6 +1,7 @@
 # Publishes the wiki to the org's user-page repo,
-# stonetop-wiki/stonetop-wiki.github.io, which serves it at the domain root:
-#   https://stonetop-wiki.github.io/marshedge.html
+# stonetop-wiki/stonetop-wiki.github.io, which serves it at stonetop.cc (the
+# custom domain is Stonetop_Wiki/CNAME; GitHub 301s the old github.io URLs):
+#   https://stonetop.cc/marshedge.html
 #
 # Only tracked files are deployed: the built wiki (book text is CC BY-SA 4.0)
 # and its chrome. Book artwork (images/maps/) is gitignored and never published.
