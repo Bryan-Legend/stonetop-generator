@@ -30,10 +30,20 @@ C	<b>RIGHTEOUSNESS</b> To refuse to suffer an injustice or a lesser evil.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	a youthful glow well-weathered old & merry
-C	a lilting voice a melodious voice a soft voice
-C	beatific ethereal intense jovial serene
-C	fine robes threadbare cloak working clothes
+C	a youthful glow
+C	well-weathered
+C	old & merry
+C	a lilting voice
+C	a melodious voice
+C	a soft voice
+C	beatific
+C	ethereal
+C	intense
+C	jovial
+C	serene
+C	fine robes
+C	threadbare cloak
+C	working clothes
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Dai, Eirian, Eurig, Haf, Haul, Hefin, Hulwen, or Tesni
@@ -80,6 +90,7 @@ C	<b>HELIOR'S UNBLINKING EYE</b> When you <b><i>stare into the sun long enough t
 B	The glimpse lasts as long as you wish
 B	Your point of view shifts to very close range
 B	You recover your vision quickly
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 CX	<b>INVOKE THE SUN GOD</b>
 P	When you <b><i>imbue a holy light with Helior's power</i></b>, choose an Invocation you know and roll +WIS: <b>on</b> <b>a 10+</b>, it works as described but you must choose 1 consequence from the list below; <b>on a 7-9</b>, it works as described, but you and the GM each choose 1.
@@ -91,13 +102,10 @@ PAGE	123
 C	<b>KEEP THE HOME-FIRES BURNING</b> When you <b><i>build a camp fire and sprinkle it with ash</i></b> <b><i>from your own hearth,</i></b> anyone who Makes Camp with you is free from nightmares or bad dreams and recovers (extra) HP equal to your CHA.
 C	<b>LAMPLIGHTER</b> When you <b><i>whisper to a flammable object</i></b> (a torch, a wick, kindling, etc.), it ignites in moments.
 C	<b>PIETY</b> ◇ When you <b><i>spend at least an hour in proper worship</i></b> <b><i>to Helior,</i></b> hold 1 Blessing. Other faithful PCs who partake in this worship also hold 1 Blessing. At any time, you can spend 1 Blessing to add +1 to a roll you just made in pursuit of a righteous cause.
-C	<b>PURIFYING FLAMES</b> When you <b><i>wield a holy light against a creature of</i></b> <b><i>darkness</i></b>, it counts as a weapon (d10 damage, <i>hand</i>, <i>close</i>, <i>area</i>, 2 piercing) and you can choose to roll
-P	+WIS to Clash.
+C	<b>PURIFYING FLAMES</b> When you <b><i>wield a holy light against a creature of</i></b> <b><i>darkness</i></b>, it counts as a weapon (d10 damage, <i>hand</i>, <i>close</i>, <i>area</i>, 2 piercing) and you can choose to roll +WIS to Clash.
 C	<b>RADIANT COUNTENANCE</b> When you <b><i>give someone your fond attention</i></b>, you can then Persuade them with advantage. If they are a follower, you can instead choose to Strengthen Your Bond (as if you paid their cost).
 C	<b>RISE LIKE THE SUN</b> When you <b><i>draw attention to yourself by word or deed</i></b>, roll +CHA: <b>on a 10+</b>, everyone turns and looks, and you hold their gaze as long as you keep giving them reason to look; <b>on a 7-9</b>, everyone turns and looks.
-C	<b>SPRING'S FIRST THAW</b> When you <b><i>spend time (an hour at least, maybe more)</i></b>
-P	<b><i>seeking to stir hope, kindness, or mercy in an NPC</i></b>,
-P	roll +CHA: <b>on a 10+</b>, you light a fire deep within them and affect a lasting change; <b>on a 7-9</b>, you kindle goodness in their heart for now, but they will eventually return to their old ways; <b>on a 6-</b>, their heart hardens and, whatever else the GM says, you can't use this move on them again.
+C	<b>SPRING'S FIRST THAW</b> When you <b><i>spend time (an hour at least, maybe more)</i></b> <b><i>seeking to stir hope, kindness, or mercy in an NPC</i></b>, roll +CHA: <b>on a 10+</b>, you light a fire deep within them and affect a lasting change; <b>on a 7-9</b>, you kindle goodness in their heart for now, but they will eventually return to their old ways; <b>on a 6-</b>, their heart hardens and, whatever else the GM says, you can't use this move on them again.
 C	<b>BURN TWICE AS BRIGHT</b> (Requires level 6+ and Invoke the Sun God) When you <b><i>Invoke the Sun God</i></b>, you may mark a debility to use 2 Invocations at once. Roll once, and apply any consequences to both Invocations.
 C	<b>EMPOWERED INVOCATIONS</b> (Requires level 6+ and Invoke the Sun God) When you Invoke the Sun God, you can choose an extra consequence before you roll. If you do, the Invocation has its <i>empowered</i> effect.
 C	<b>GLORIOUS SERVANT</b> (Requires level 6+ and Invoke the Sun God) When you <b><i>Invoke the Sun God and roll a 10+</i></b>, you need not choose a consequence; <b>on a 7-9</b>, you choose a consequence but the GM does not.

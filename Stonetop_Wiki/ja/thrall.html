@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">ムーブ</h2>
 <p>次のすべてを得る：</p>
-<h3 id="favor">恩寵</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 恩寵</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">恩寵</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="恩寵 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="恩寵 1"></label><label class="track-step" for="thrall-favor-1" title="恩寵 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="恩寵 2"></label><label class="track-step" for="thrall-favor-2" title="恩寵 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="恩寵 3"></label></span></div>
 <p>恩寵は0から始まり、3より高くはならない。<strong><em>恩寵が3のときにさらに得ることになった</em></strong>とき、恩寵を0にして1つ選ぶ：</p>
 <ul class="bullets">
 <li>主に質問を1つし、その答えに基づいて動く次のロールで有利を得る。</li>
 <li>好きな刻印を新たに1つ得る。それから、あなたが持っていない刻印をGMに1つ選んでもらい、それに線を引いて消す——それは二度と得られない。</li>
 </ul>
-<h3 id="urges">衝き動かされる</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 衝き動かされる</h3>
 <p><strong><em>GMがあなたに衝動に従って行動するよう強いた</em></strong>とき、命じられたとおりに行動するなら恩寵を1得る。抗うなら、+WISで振る：<strong>10+なら</strong>、あなたの行動はあなた自身のものだ。<strong>7〜9なら</strong>、1つ選ぶ：</p>
 <ul class="bullets">
 <li>何か／誰かに正気に引き戻されるまで、主導権を巡ってもがく</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>6-なら</strong>、後で我に返る。その間に何をしでかしたかは神のみぞ知る。</p>
 <p><strong><em>強いられることなく衝動に従って行動し</em></strong>、その行動があなたや仲間に厄介ごとを招いたとき、恩寵を1得る。</p>
-<h3 id="dark-succor">闇の救い</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 闇の救い</h3>
 <p><strong><em>死にかけているか、即死した</em></strong>とき、主があなたのためにとりなす。あなたは今ここで、あるいはGMが選ぶ時と場所で回復する。それから+恩寵で振る：<strong>10+なら</strong>、1つ選ぶ。<strong>7〜9なら</strong>、2つ選ぶ。<strong>6-なら</strong>、3つすべてが適用される。</p>
 <ul class="bullets">
 <li>GMが選ぶ刻印を新たに1つ得る</li>
@@ -282,47 +287,56 @@
 <li>主があなたに務めを与える。それを果たすまで、恩寵は0のままだ。</li>
 </ul>
 <p>いずれにせよ、恩寵を0に戻す。</p>
-<h3 id="unholy-vessel">穢れた器</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 穢れた器</h3>
 <p><strong><em>刻印を得ることになったが、得られる刻印がもう残っていない</em></strong>とき、あなたの人間性は完全に失われる。あなたはGMの支配下にある脅威となる。新しいキャラクターを作ること。</p>
+</div>
 <h2 id="marks">刻印</h2>
 <p>この別紙を初めて得たとき、GMはあなたの主の本性に基づいて刻印を1つ選ぶ。ムーブに指示されたときにさらに得る。</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>膿み爛れる腐敗</strong> — 毒、病、腐食性の物質、害虫の咬み傷はあなたを害さない。あなたのそばにあるものは腐り、ひび割れ、錆び、傷む。</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> 膿み爛れる腐敗</h3>
+<p>毒、病、腐食性の物質、害虫の咬み傷はあなたを害さない。あなたのそばにあるものは腐り、ひび割れ、錆び、傷む。</p>
 <p><strong><em>ゾロ目を出した</em></strong>とき、あなたの身につけている何かが台無しになる。何が、どのようにかはGMが告げる。</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>深淵の子</strong> — 最大HPを2減らす。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> 深淵の子</h3>
+<p>最大HPを2減らす。</p>
 <p>水中で呼吸でき、冷たさや水圧で害を受けない。肌は鱗状になる。<strong><em>1日水を浴びずに過ごした</em></strong>とき、衰えに印をつける。</p>
 <p>水辺の近くにいる間、恩寵を1消費して、ぬめる触手を呼び出し、命令に従わせられる。従者として扱う：</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">ぬめる触手</h3><p class="stat-tags">隠密、容赦なし</p><p class="stat-stats"><strong>HP</strong> 6、<strong>アーマー</strong> 0<br><strong>ダメージ</strong> <button type="button" class="dice-roll" data-dice="d10" title="クリックでd10をロール — Shift: 有利 · Ctrl: 不利">d10</button>（間合い、強打、掴み）<br><strong>本能</strong>：ものから命を絞り取る<br><strong>代価</strong> 溺れさせた命</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>死の仮面</strong> — おぞましい仮面を見つけるか作る。<strong><em>仮面を着けていない</em></strong>とき、すべてのロールに不利を受ける。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> 死の仮面</h3>
+<p>おぞましい仮面を見つけるか作る。<strong><em>仮面を着けていない</em></strong>とき、すべてのロールに不利を受ける。</p>
 <p><strong><em>仮面を着けている</em></strong>とき、不死のものはあなたを同類として扱う。</p>
 <p><strong><em>仮面を着けている</em></strong>とき、恩寵を1消費して、あなたを見たあらゆる生き物を恐怖で満たせる。相手は選ばねばならない：逃げるか、すくみ上がるか、踏みとどまるか。踏みとどまるなら、あなたは相手への最初のロールで有利を得る。</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>水銀の夢</strong> — 最大HPを2減らす。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> 水銀の夢</h3>
+<p>最大HPを2減らす。</p>
 <p><strong><em>あなたが野営する</em></strong>とき、共にいる全員が悪夢に苦しみ、次のロールで不利を受ける。</p>
 <p>見えている相手なら、恩寵を1消費して偽りの感覚を与えられる。</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>貪り食う者</strong> — あなたは尽きることのない飢えに満たされている。衝動を1つ追加で得る：「みだりに肉を貪る」。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> 貪り食う者</h3>
+<p>あなたは尽きることのない飢えに満たされている。衝動を1つ追加で得る：「みだりに肉を貪る」。</p>
 <p><strong><em>野営する</em></strong>とき、追加で<button type="button" class="dice-roll" data-dice="1d4" title="クリックで1d4をロール — Shift: 有利 · Ctrl: 不利">1d4</button>の食料か物資の使用を消費する。</p>
 <p>恩寵を1消費して、次のことができる：</p>
 <ul class="bullets">
 <li>何かに触れる。あなたがそれを持っている限り、それを見た誰もがそれを欲しがる。</li>
 <li>望むだけの間、鉄をも引き裂くおぞましい顎（<em>至近</em>、貫通3、<em>凄惨</em>）を得て、それとともに何でも食べて消化する力を得る。</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>赤き憤怒</strong> — 最大HPを2減らす。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> 赤き憤怒</h3>
+<p>最大HPを2減らす。</p>
 <p><strong><em>GMがあなたに暴力を強いた</em></strong>とき、抗うのに不利を受ける。</p>
 <p><strong><em>怒りを解き放って誰かに襲いかかる</em></strong>（<em>至近</em>、<em>近接</em>）とき、恩寵を1〜3消費し、+消費した恩寵で振る：<strong>10+なら</strong>、<button type="button" class="dice-roll" data-dice="2d8" title="クリックで2d8をロール — Shift: 有利 · Ctrl: 不利">2d8</button>ダメージ（<em>凄惨</em>、<em>強打</em>）を与え、見ている者すべてに衝撃を与えるか、怯えさせるか、感服させる。<strong>7〜9なら</strong>、10+と同様だが、他の危険を顧みず、思考のない激情のまま犠牲者（あるいはその死体）を攻撃し続ける。</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>影の冷たき抱擁</strong> — 最大HPを2減らす。あなたには影も映る姿もない。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> 影の冷たき抱擁</h3>
+<p>最大HPを2減らす。あなたには影も映る姿もない。</p>
 <p><strong><em>日光や聖なる光にさらされている</em></strong>とき、（いかなる理由でも）恩寵を消費できない。</p>
 <p>それ以外のときは、恩寵を1消費して、次のことができる：</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>行き来の痕跡を何も残さない</li>
 <li>嘘を、明白で疑いようのない真実として通す</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>真実を語り、秘密を囁く</strong> — 最大HPを2減らす。舌は異様に長く伸び、歯は汚れてぎざぎざになる。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> 真実を語り、秘密を囁く</h3>
+<p>最大HPを2減らす。舌は異様に長く伸び、歯は汚れてぎざぎざになる。</p>
 <p>恩寵を1消費して、誰かの目を見つめ、次のことを知れる（1つ選ぶ）：</p>
 <ul class="bullets">
 <li>その者が何よりも欲しているものは何か？</li>
@@ -341,10 +356,12 @@
 <li>その者の最悪の記憶は何か？</li>
 </ul>
 <p><strong><em>その答えを相手に対して使う</em></strong>とき、有利を得る。</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>責め苦の祝福</strong> — 傷の治りが遅い。HPを回復するとき、本来の半分しか回復しない。だが、痛み、失血、傷による衰弱のために危険に抗う必要は決してない。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> 責め苦の祝福</h3>
+<p>傷の治りが遅い。HPを回復するとき、本来の半分しか回復しない。だが、痛み、失血、傷による衰弱のために危険に抗う必要は決してない。</p>
 <p><strong><em>責め苦の言葉を口にする</em></strong>とき、近くの誰かを名指しし、恩寵を1〜3消費し、+消費した恩寵で振る：<strong>10+なら</strong>、相手は<button type="button" class="dice-roll" data-dice="2d4" title="クリックで2d4をロール — Shift: 有利 · Ctrl: 不利">2d4</button>ダメージを受け、苦痛に苛まれる——格下の犠牲者は動けなくなり、強大な敵は一瞬気絶する。<strong>7〜9なら</strong>、相手は<button type="button" class="dice-roll" data-dice="1d6" title="クリックで1d6をロール — Shift: 有利 · Ctrl: 不利">1d6</button>ダメージ（アーマー無視）を受け、格下の犠牲者は一瞬気絶する。</p>
+</div>
         </main>
       </div>
     </div>

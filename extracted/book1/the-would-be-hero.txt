@@ -16,12 +16,33 @@ C	Your idol sacrificed themselves to save many
 C	You stumbled upon a dark mystery
 C	You must make amends for a terrible mistake You always have the option of Burning Brightly; you can spend 2 XP after you roll to add +1, even if you don't have enough XP to level.
 C	<b>DESTINED</b> ◇◇◇ Fate has laid her hand upon you. Choose 3-4 of the items below to describe your destiny:
-C	anointed marked at birth your coming foretold
-C	destroy discover free protect restore
-C	unify blood civilization darkness
-C	earth & stone fire ice light life storms
-C	war water the Fae the gods the Makers
-C	the Stone the Things Below At the <b><i>start of a session</i></b>, roll +Omens: <b>on a 7+</b>, lose all Omens and the GM will describe a vision or portent that points toward your fate and/or clarifies your current situation; also, <b>on a 10+</b>, ask the GM a follow-up question and get a clear, helpful answer;
+C	anointed
+C	marked at birth
+C	your coming foretold
+C	destroy
+C	discover
+C	free
+C	protect
+C	restore
+C	unify
+C	blood
+C	civilization
+C	darkness
+C	earth & stone
+C	fire
+C	ice
+C	light
+C	life
+C	storms
+C	war
+C	water
+C	the Fae
+C	the gods
+C	the Makers
+C	the Stone
+C	the Things Below
+PB
+P	At the <b><i>start of a session</i></b>, roll +Omens: <b>on a 7+</b>, lose all Omens and the GM will describe a vision or portent that points toward your fate and/or clarifies your current situation; also, <b>on a 10+</b>, ask the GM a follow-up question and get a clear, helpful answer;
 P	<b><i>on a 6-</i></b>, don't mark XP, hold +1 Omen, and tell us of your recent nightmares or a troubling vision, and how your fears play into them.
 P	<b><i>Until your destiny is fulfilled</i></b>, treat a 6- on Death's Door as a 7-9, and a 7-9 as a 10+.
 H2	Instinct (Choose 1)
@@ -37,10 +58,20 @@ C	<b>SACRIFICE</b> To put the needs/wants of others above your own.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	still a child young & beautiful all grown up
-C	confident voice earnest voice quiet voice
-C	big scrawny sinewy slender thick
-C	back unbowed jaw firmly set soulful eyes
+C	still a child
+C	young & beautiful
+C	all grown up
+C	confident voice
+C	earnest voice
+C	quiet voice
+C	big
+C	scrawny
+C	sinewy
+C	slender
+C	thick
+C	back unbowed
+C	jaw firmly set
+C	soulful eyes
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Anwen, Caradoc, Dafyd, Glenys, Madoc, Morwenna, Siwan, or Wynfor
@@ -92,6 +123,7 @@ B	You're out of it for a moment Whatever you choose, the GM will describe the de
 C2	<b>BUT I GET UP AGAIN</b>
 P	(Requires I Get Knocked Down)
 P	When you <b><i>use I Get Knocked Down</i></b>, you have advantage on your next roll against whatever dealt the damage and your next blow against them does +1d4 damage.
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 C	<b>IN OVER YOUR HEAD</b> When <b><i>another PC rescues you from danger</i></b>, mark XP.
 C	<b>IRON WILL</b> When you <b><i>are subject to mind control or magic</i></b> <b><i>that affects your feelings</i></b>, you can take 1d4 damage (ignoring armor) to disregard its influence.
@@ -118,6 +150,7 @@ Q	What weighs you down or holds you back?
 Q	What drives you forward?
 Q	What lesson would you have me learn?
 Q	What do you think of me, truly?
+TAKES	3
 C2	<b>VERSATILE</b>
 P	(Requires level 2+, the Would-be Hero)
 P	Choose a move from any other playbook, as long as you meet its requirements. You can pick from a different playbook each time. You can't take Improved

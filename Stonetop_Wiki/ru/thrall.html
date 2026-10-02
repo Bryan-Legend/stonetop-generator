@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">Ходы</h2>
 <p>Ты получаешь все следующие:</p>
-<h3 id="favor">Милость</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="С этим ты начинаешь"><input type="checkbox" checked disabled tabindex="-1"></span> Милость</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">Милость</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="Милость 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="Милость 1"></label><label class="track-step" for="thrall-favor-1" title="Милость 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="Милость 2"></label><label class="track-step" for="thrall-favor-2" title="Милость 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="Милость 3"></label></span></div>
 <p>Твоя Милость начинается с 0 и не может быть выше 3. Когда у тебя <strong><em>3 Милости и ты должен получить ещё</em></strong>, сбрось Милость до 0 и выбери 1:</p>
 <ul class="bullets">
 <li>Задай хозяину вопрос и получи преимущество на следующий бросок, когда действуешь согласно ответу.</li>
 <li>Получи новое Клеймо на свой выбор. Затем попроси Ведущего выбрать Клеймо, которого у тебя нет, и вычеркнуть его — ты никогда не сможешь его получить.</li>
 </ul>
-<h3 id="urges">Позывы</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="С этим ты начинаешь"><input type="checkbox" checked disabled tabindex="-1"></span> Позывы</h3>
 <p>Когда <strong><em>Ведущий вынуждает тебя действовать по своему побуждению</em></strong>, получи 1 Милость, если поступаешь, как велено. Если сопротивляешься, брось +WIS: <strong>на 10+</strong> ты сам себе хозяин; <strong>на 7-9</strong> выбери 1:</p>
 <ul class="bullets">
 <li>Борешься за контроль, пока что-то/кто-то не приведёт тебя в чувство</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>На 6-</strong> ты приходишь в себя позже, натворив боги знают что.</p>
 <p>Когда ты <strong><em>действуешь по своему побуждению, хотя тебя к этому не вынуждали</em></strong>, и твои действия навлекают беду на тебя или твоих союзников, получи 1 Милость.</p>
-<h3 id="dark-succor">Тёмное Заступничество</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="С этим ты начинаешь"><input type="checkbox" checked disabled tabindex="-1"></span> Тёмное Заступничество</h3>
 <p>Когда ты <strong><em>умираешь или погибаешь на месте</em></strong>, твой хозяин заступается за тебя. Ты оправишься — здесь и сейчас или в то время и в том месте, какие выберет Ведущий. Затем брось +Милость: <strong>на 10+</strong> выбери 1; <strong>на 7-9</strong> выбери 2; <strong>на 6-</strong> действуют все 3.</p>
 <ul class="bullets">
 <li>Получи новое Клеймо на выбор Ведущего</li>
@@ -282,47 +287,56 @@
 <li>Хозяин даёт тебе задание; пока ты его не выполнишь, твоя Милость остаётся на 0.</li>
 </ul>
 <p>Так или иначе, сбрось Милость до 0.</p>
-<h3 id="unholy-vessel">Нечестивый Сосуд</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="С этим ты начинаешь"><input type="checkbox" checked disabled tabindex="-1"></span> Нечестивый Сосуд</h3>
 <p>Когда ты <strong><em>должен получить Клеймо, но получать больше нечего</em></strong>, твоя человечность потеряна безвозвратно. Ты становишься угрозой под управлением Ведущего. Создай нового персонажа.</p>
+</div>
 <h2 id="marks">Клейма</h2>
 <p>Когда ты впервые получаешь этот вкладыш, Ведущий выбирает тебе 1 Клеймо, исходя из природы твоего хозяина. Получай новые, когда об этом говорит ход.</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>Гноящаяся Гниль</strong> — Тебе не вредят яд, болезни, едкие вещества и укусы паразитов. Всё рядом с тобой гниёт, трескается, ржавеет и портится.</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> Гноящаяся Гниль</h3>
+<p>Тебе не вредят яд, болезни, едкие вещества и укусы паразитов. Всё рядом с тобой гниёт, трескается, ржавеет и портится.</p>
 <p>Когда ты <strong><em>выбрасываешь дубль</em></strong>, что-то из твоих вещей приходит в негодность. Ведущий скажет, что и как.</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>Дитя Глубин</strong> — Уменьши свой максимум HP на 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> Дитя Глубин</h3>
+<p>Уменьши свой максимум HP на 2.</p>
 <p>Ты можешь дышать водой, и тебе не вредят холод и давление. Твоя кожа покрывается чешуёй. Когда ты <strong><em>проводишь день без купания</em></strong>, отметь слабость.</p>
 <p>Находясь у водоёма, ты можешь потратить 1 Милость, чтобы призвать склизкое щупальце, которое исполнит твою волю. Относись к нему как к последователю:</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">Склизкое щупальце</h3><p class="stat-tags">скрытный, неумолимый</p><p class="stat-stats"><strong>HP</strong> 6; <strong>Броня</strong> 0<br><strong>Урон</strong> <button type="button" class="dice-roll" data-dice="d10" title="Нажмите, чтобы бросить d10 — Shift: преимущество · Ctrl: помеха">d10</button> (досягаемость, мощное, хваткий)<br><strong>Инстинкт</strong>: выжимать из всего жизнь<br><strong>Цена</strong>: утопленные жизни</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>Посмертная Маска</strong> — Ты находишь или мастеришь жуткую маску. Когда ты <strong><em>не носишь маску</em></strong>, все твои броски — с помехой.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> Посмертная Маска</h3>
+<p>Ты находишь или мастеришь жуткую маску. Когда ты <strong><em>не носишь маску</em></strong>, все твои броски — с помехой.</p>
 <p>Когда ты <strong><em>носишь маску</em></strong>, нежить принимает тебя за своего.</p>
 <p>Когда ты <strong><em>носишь маску</em></strong>, ты можешь потратить 1 Милость, чтобы наполнить ужасом любое живое существо, которое тебя видит. Оно должно выбрать: бежать, съёжиться или стоять на своём. Если оно стоит на своём, твой первый бросок против него — с преимуществом.</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>Ртутные Сны</strong> — Уменьши свой максимум HP на 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> Ртутные Сны</h3>
+<p>Уменьши свой максимум HP на 2.</p>
 <p>Когда <strong><em>ты Разбиваешь Лагерь</em></strong>, всех, кто с тобой, мучают кошмары, и их следующий бросок — с помехой.</p>
 <p>Ты можешь потратить 1 Милость, чтобы наслать на кого-то ложные ощущения, если ты его видишь.</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>Ненасытность</strong> — Тебя терзает нескончаемый голод. Получи дополнительное побуждение: «Необузданно пожирать плоть».</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> Ненасытность</h3>
+<p>Тебя терзает нескончаемый голод. Получи дополнительное побуждение: «Необузданно пожирать плоть».</p>
 <p>Когда ты <strong><em>Разбиваешь Лагерь</em></strong>, потрать дополнительно <button type="button" class="dice-roll" data-dice="1d4" title="Нажмите, чтобы бросить 1d4 — Shift: преимущество · Ctrl: помеха">1d4</button> провизии или применений припасов.</p>
 <p>Ты можешь потратить 1 Милость, чтобы:</p>
 <ul class="bullets">
 <li>Коснуться чего-то. Пока ты это держишь, каждый, кто это видит, это вожделеет.</li>
 <li>Обрести жуткую пасть, рвущую железо (<em>вплотную</em>, 3 пробивающее, <em>кровавое</em>), на сколько пожелаешь, а с ней — способность есть и переваривать что угодно.</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>Багровый Гнев</strong> — Уменьши свой максимум HP на 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> Багровый Гнев</h3>
+<p>Уменьши свой максимум HP на 2.</p>
 <p>Когда <strong><em>Ведущий вынуждает тебя к насилию</em></strong>, твой бросок на сопротивление — с помехой.</p>
 <p>Когда <strong><em>ты даёшь волю ярости и набрасываешься на кого-то</em></strong> (<em>вплотную</em>, <em>рядом</em>), потрать 1-3 Милости и брось +потраченную Милость: <strong>на 10+</strong> нанеси <button type="button" class="dice-roll" data-dice="2d8" title="Нажмите, чтобы бросить 2d8 — Shift: преимущество · Ctrl: помеха">2d8</button> урона (<em>кровавое</em>, <em>мощное</em>) и потряси, ужасни или впечатли всех свидетелей; <strong>на 7-9</strong> — как на 10+, но ты продолжаешь бить жертву (или её труп) в слепой ярости, не замечая других опасностей.</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>Холодные Объятия Тени</strong> — Уменьши свой максимум HP на 2. Ты не отбрасываешь тени и не отражаешься.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> Холодные Объятия Тени</h3>
+<p>Уменьши свой максимум HP на 2. Ты не отбрасываешь тени и не отражаешься.</p>
 <p>Когда ты <strong><em>на солнечном или святом свету</em></strong>, ты не можешь тратить Милость (ни на что).</p>
 <p>В остальное время ты можешь потратить 1 Милость, чтобы:</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>Не оставлять следов ни прихода, ни ухода</li>
 <li>Выдать ложь за очевидную, явную правду</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>Говори Правду, Шепчи Тайны</strong> — Уменьши свой максимум HP на 2. Твой язык становится необычно длинным, а зубы — в пятнах и зазубринах.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> Говори Правду, Шепчи Тайны</h3>
+<p>Уменьши свой максимум HP на 2. Твой язык становится необычно длинным, а зубы — в пятнах и зазубринах.</p>
 <p>Ты можешь потратить 1 Милость, чтобы посмотреть кому-то в глаза и узнать (выбери 1):</p>
 <ul class="bullets">
 <li>Чего он желает превыше всего?</li>
@@ -341,10 +356,12 @@
 <li>Какое у него худшее воспоминание?</li>
 </ul>
 <p>Когда ты <strong><em>используешь ответ против него</em></strong>, у тебя преимущество.</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>Благословение Мук</strong> — Твои раны заживают медленно. Когда восстанавливаешь HP, восстанавливай лишь половину того, что положено. Зато тебе никогда не нужно Бросать Вызов Опасности из-за боли, потери крови и слабости от ран.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> Благословение Мук</h3>
+<p>Твои раны заживают медленно. Когда восстанавливаешь HP, восстанавливай лишь половину того, что положено. Зато тебе никогда не нужно Бросать Вызов Опасности из-за боли, потери крови и слабости от ран.</p>
 <p>Когда ты <strong><em>произносишь слово муки</em></strong>, назови кого-то поблизости, потрать 1-3 Милости и брось +потраченную Милость: <strong>на 10+</strong> он получает <button type="button" class="dice-roll" data-dice="2d4" title="Нажмите, чтобы бросить 2d4 — Shift: преимущество · Ctrl: помеха">2d4</button> урона и корчится от боли — слабые жертвы выведены из строя, а могучие враги на миг оглушены; <strong>на 7-9</strong> он получает <button type="button" class="dice-roll" data-dice="1d6" title="Нажмите, чтобы бросить 1d6 — Shift: преимущество · Ctrl: помеха">1d6</button> урона (игнорирует броню), а слабые жертвы на миг оглушены.</p>
+</div>
         </main>
       </div>
     </div>

@@ -41,6 +41,8 @@ from .text import (
     M_H4,
     M_HR,
     M_PB,
+    M_TAKES,
+    M_BAND,
     M_ICON,
     M_Q,
     M_STATS,
@@ -2294,6 +2296,46 @@ def try_parse_improvement_block(
 
 
 # The last few tags of a wrapped tag line: lowercase words, no digits.
+# A sheet's check items, and the bold name a move's opens with (past any
+# provenance tag set after the opening sentinel).
+_CHECK_MARKS = (M_C, M_C2, M_CX, M_CX2)
+_MOVE_NAME_RE = re.compile(r"^\s*(?:• )?\x04([^\x04\x05]+)\x05")
+# The headings a sheet's moves are listed under: a playbook's Moves, an
+# insert's Terrible Purpose and Consequences.
+_MOVE_HEADS = ("moves", "terrible purpose")
+
+
+def _is_named_move(line: str) -> bool:
+    """A check item that opens with a bold name in capitals — a move, where
+    a box without one is a choice the move above it offers. A plain line
+    bulleted the same way (the Ghost's "• UNLIVING …") is a move too, one
+    the insert gives outright."""
+    body = None
+    if line.startswith("• "):
+        body = line
+    for marker in (M_CX2, M_CX, M_C2, M_C):
+        if line.startswith(marker):
+            body = line[len(marker):]
+            break
+    if body is None:
+        return False
+    m = _MOVE_NAME_RE.match(body)
+    if not m:
+        return False
+    name = _defmt(m.group(1))
+    return name == name.upper() and any(c.isalpha() for c in name)
+
+
+def _under_moves(lines: list[str], i: int) -> bool:
+    """Whether line ``i`` sits under a heading that lists a sheet's moves."""
+    for j in range(i - 1, -1, -1):
+        for marker in (M_H2, M_H3):
+            if lines[j].startswith(marker):
+                head = _defmt(lines[j][len(marker):]).strip().lower()
+                return head in _MOVE_HEADS or head.endswith("consequences")
+    return False
+
+
 # A note's lead-in label in rendered HTML: the words up to its first colon.
 _NOTE_LEAD_RE = re.compile(r"^([^<>:：]{1,60}[:：])")
 # ...and in a corpus line: a short bold run closing on, or just before, a colon.
@@ -2499,7 +2541,13 @@ def structure_html(
         line = lines[i]
 
         # --- Structural markers from rich PDF extraction ---
-        if line.startswith("\x02"):
+        # (and a sheet's bulleted move, "• UNLIVING …", which is dealt
+        # with among them: see the move cards below)
+        if line.startswith("\x02") or (
+            line.startswith("• ")
+            and _is_named_move(line)
+            and _under_moves(lines, i)
+        ):
             if line == M_HR:
                 # Collapse consecutive rules; skip under headings (CSS border);
                 # drop hairlines after monster cards (layout between stat blocks).
@@ -2968,6 +3016,145 @@ def structure_html(
                         steps, lambda t: render_rich_text(t, link)
                     )
                 )
+                continue
+            if (
+                line.startswith(_CHECK_MARKS + (M_TAKES,))
+                or (line.startswith("• ") and _is_named_move(line))
+            ) and _under_moves(lines, i):
+                # A playbook's moves: each is a card of its own, holding
+                # everything down to the next move — the outcomes, the
+                # choices, the paragraph after them (Danu's Grasp used to
+                # stop at its "roll +WIS:"). A move's tick is kept under its
+                # own name ("mv-danus-grasp"; a move taken more than once adds
+                # "-2", "-3"), so it stays put whatever changes above it.
+                while i < n and (
+                    lines[i].startswith(_CHECK_MARKS + (M_TAKES,))
+                    or _is_named_move(lines[i])
+                ):
+                    takes = 1
+                    if lines[i].startswith(M_TAKES):
+                        try:
+                            takes = max(1, int(lines[i][len(M_TAKES):].strip()))
+                        except ValueError:
+                            takes = 1
+                        i += 1
+                        if not (i < n and lines[i].startswith(_CHECK_MARKS)):
+                            break
+                    cur = lines[i]
+                    sub, fixed = False, True  # a bulleted move is given outright
+                    text = cur[2:].strip() if cur.startswith("• ") else cur
+                    for marker, sub_m, fixed_m in (
+                        (M_CX2, True, True),
+                        (M_CX, False, True),
+                        (M_C2, True, False),
+                        (M_C, False, False),
+                    ):
+                        if cur.startswith(marker):
+                            text = cur[len(marker):].strip()
+                            sub, fixed = sub_m, fixed_m
+                            break
+                    i += 1
+                    m_name = _MOVE_NAME_RE.match(text)
+                    name_en = _defmt(m_name.group(1)).strip() if m_name else ""
+                    hid = anchors.add(name_en or "move", caps_label=True)
+                    # The move's body: its lines, and any boxes without a
+                    # name of their own — the choices a move offers (the
+                    # Marshal's Veteran Crew, the Seeker's Well Versed) —
+                    # which stay a tick list inside it.
+                    body_parts: list[str] = []
+                    seg: list[str] = []
+                    n_opts = 0
+
+                    def flush_seg() -> None:
+                        keep = [l for l in seg if l != M_HR]
+                        seg.clear()
+                        if not keep:
+                            return
+                        seg_html, _ = structure_html(
+                            keep,
+                            article_title,
+                            lookup,
+                            articles,
+                            current_slug,
+                            section_index=section_index,
+                            anchors=anchors,
+                            lookups=lookups,
+                            section_indexes=section_indexes,
+                            current_book=current_book,
+                        )
+                        body_parts.append(seg_html)
+
+                    while i < n and not lines[i].startswith(
+                        (M_TAKES, M_H2, M_H3, M_STATS, M_WRITE, M_STEP, M_BAND)
+                    ):
+                        if _is_named_move(lines[i]):
+                            break
+                        if lines[i].startswith(_CHECK_MARKS):
+                            flush_seg()
+                            opts: list[str] = []
+                            while (
+                                i < n
+                                and lines[i].startswith(_CHECK_MARKS)
+                                and not _is_named_move(lines[i])
+                            ):
+                                n_opts += 1
+                                oid = html.escape(f"mv-{hid}-pick-{n_opts}")
+                                otext = lines[i].split(" ", 1)[1].strip()
+                                opts.append(
+                                    f'<li class="check-item"><label for="{oid}">'
+                                    '<input type="checkbox" class="wiki-check" '
+                                    f'id="{oid}" data-check-id="{oid}"> '
+                                    f"<span>{render_rich_text(otext, link)}</span>"
+                                    "</label></li>"
+                                )
+                                i += 1
+                            body_parts.append(
+                                '<ul class="check-list sheet-checks">'
+                                + "".join(opts)
+                                + "</ul>"
+                            )
+                            continue
+                        seg.append(lines[i])
+                        i += 1
+                    flush_seg()
+                    head_html = render_rich_text(text, link)
+                    m_head = re.match(
+                        r"^\s*<strong>(.*?)</strong>\s*(.*)$", head_html, re.S
+                    )
+                    if m_head:
+                        name_html, rest_html = m_head.group(1), m_head.group(2)
+                    else:
+                        name_html, rest_html = "", head_html
+                    boxes = []
+                    for b in range(takes):
+                        bid = html.escape(f"mv-{hid}" if b == 0 else f"mv-{hid}-{b + 1}")
+                        if fixed and b == 0:
+                            boxes.append(
+                                '<span class="check-fixed" role="img" aria-label="'
+                                f'{html.escape(UI("start_with", "You start with this"))}">'
+                                '<input type="checkbox" checked disabled tabindex="-1">'
+                                "</span>"
+                            )
+                        else:
+                            boxes.append(
+                                '<input type="checkbox" class="wiki-check" '
+                                f'id="{bid}" data-check-id="{bid}" '
+                                f'aria-label="{html.escape(name_en)}">'
+                            )
+                    kinds = ["sheet"] + (["sub"] if sub else []) + (
+                        ["fixed"] if fixed else []
+                    )
+                    block = (
+                        f'<div class="move-block" id="{html.escape(hid)}" '
+                        f'data-move="{" ".join(kinds)}">'
+                        f'<h3 class="move-name">{"".join(boxes)} {name_html}</h3>'
+                    )
+                    if rest_html.strip():
+                        block += f"<p>{rest_html}</p>"
+                    out.append(block + "".join(body_parts) + "</div>")
+                continue
+            if line.startswith(M_TAKES):
+                i += 1  # a box count outside the moves: nothing to show
                 continue
             if line.startswith((M_C, M_C2, M_CX, M_CX2)):
                 # A sheet's checkbox items carry state the plain list can't:

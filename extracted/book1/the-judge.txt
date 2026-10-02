@@ -32,10 +32,19 @@ C	<b>ZEAL</b> To judge quickly and without doubt.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	eager youth in my prime showing my years
-C	calm voice booming voice a voice that carries
-C	hard body powerful frame slim well-fed
-C	polished gear robes of office modest clothes
+C	eager youth
+C	in my prime
+C	showing my years
+C	calm voice
+C	booming voice
+C	a voice that carries
+C	hard body
+C	powerful frame
+C	slim
+C	well-fed
+C	polished gear
+C	robes of office
+C	modest clothes
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Arianrhod, Caerwyn, Einion, Eleri, Magda, Nerys, Trahaern, or Trefor
@@ -52,15 +61,12 @@ HR
 P	(Pick 1, in addition to your symbol of authority and scribe's kit)
 HR
 CX	<b>Your symbol of authority</b> (pick 1):
-C2	◇◇ <b>Black iron maul</b>, utterly immune to all
-P	magic (<i>close</i>, <i>forceful</i>, <i>awkward</i>, +1 damage)
+C2	◇◇ <b>Black iron maul</b>, utterly immune to all magic (<i>close</i>, <i>forceful</i>, <i>awkward</i>, +1 damage)
 C2	◇◇ <b>Makerglass shield</b>, etched with
 P	Aratis's symbol (<i>indestructible</i>, +1 armor, +1
 P	Readiness on a Defend 7+)
-C2	◇ <b>Helm</b> set with a dark ice "jewel." Grants
-P	advantage to resist mind-affecting magic.
-CX	<b>Scribe's tools</b>: parchment, ink, pigments, vials,
-P	quills, ◇ a notebook, etc.
+C2	◇ <b>Helm</b> set with a dark ice "jewel." Grants advantage to resist mind-affecting magic.
+CX	<b>Scribe's tools</b>: parchment, ink, pigments, vials, quills, ◇ a notebook, etc.
 C	<b>Aviary</b>: thick gloves, bird hoods, tethers, seed, ◇ messenger birds, ◇ birdcages, etc.
 C	<b>Carpenter's tools</b>: chisels, files, nails, pitch, ◇ prybars, ◇ saws, ◇◇ firkins, barrels, etc.
 C	<b>Engineer's tools</b>: rulers, tapes, rods, plumb-bobs, ◇ tripods, ◇ block & tackles, wheelbarrow, etc.
@@ -71,8 +77,7 @@ H2	Moves
 P	You start with Censure, Chronicler of Stonetop, plus 2 more of your choice.
 HR
 C	<b>AEGIS OF FAITH</b> When you <b><i>wield a shield</i></b>, it can turn away spells, magical effects, and insubstantial attacks as if they were physical blows.
-C	<b>ARMORED</b> When you <b><i>carry a shield</i></b>, mark only ◇ (instead of
-P	• ◇◇ ). Also, you can ignore the <i>cumbersome</i> tag on any armor you wear.
+C	<b>ARMORED</b> When you <b><i>carry a shield</i></b>, mark only ◇ (instead of ◇◇). Also, you can ignore the <i>cumbersome</i> tag on any armor you wear.
 P	If you take this move at the start of play, add an ◇◇ iron hauberk, ◇◇ bronze cuirass, or ◇◇ scale coat to your inventory (all are 2 armor, <i>warm</i>, <i>cumbersome</i>).
 C	<b>BEAR WITNESS</b> When you <b><i>speak the truth with conviction and candor</i></b>, none can doubt you. They might deny what you say, but in their hearts they recognize the truth.
 C	<b>BREAK BREAD</b> When you <b><i>share a proper meal with someone and</i></b> <b><i>each of you eats their fill</i></b>, each of you recovers 1d8 (extra) HP.
@@ -98,6 +103,7 @@ C2	<b>LIKE A DOG WITH A BONE</b>
 P	(Requires Hound of Aratis)
 P	When you <b><i>attack something you know to be</i></b> <b><i>tainted by chaos</i></b>, deal +1d6 damage.
 HR
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 C	<b>KNOWLEDGE IS POWER</b> When you <b><i>roll 10+ to Know Things</i></b>, you or an ally gain advantage on the next roll to act on what you learn.
 HR

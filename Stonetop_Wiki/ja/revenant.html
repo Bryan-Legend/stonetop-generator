@@ -238,63 +238,41 @@
 <h3 id="moves">ムーブ</h3>
 <p>次のすべてを得る：</p>
 <hr>
-<ul>
-<li>生なき者 あなたは息をしない。食べることも飲むことも眠ることも要らない。通常の方法では傷が癒えない。魔法の治癒、野営する、療養する、静養するからは何の恩恵も得られない。</li>
-</ul>
-<hr>
-<ul>
-<li>死なざる者 毒も病もあなたを害さない。痛みもほとんど感じない。切る、刺す、潰すことによる ダメージを受けるとき、（アーマーの後で、端数切り上げで）半分のダメージを受ける。</li>
-</ul>
-<p><strong><em>HPが0になった</em></strong>とき、+CONで振る：<strong>10+ なら</strong>、最大HPの半分を回復し、1つ選ぶ。<strong>7〜9 なら</strong>、最大HPの半分を回復し、2つ選ぶ。<strong>6-なら</strong>、1 HPを回復して3つすべてが適用されるか、この別紙を手放して代わりに別紙「亡霊」を得る。</p>
+<div class="move-block" id="unliving" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 生なき者</h3><p>あなたは息をしない。食べることも飲むことも眠ることも要らない。通常の方法では傷が癒えない。魔法の治癒、野営する、療養する、静養するからは何の恩恵も得られない。</p></div>
+<div class="move-block" id="undying" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 死なざる者</h3><p>毒も病もあなたを害さない。痛みもほとんど感じない。<strong><em>切る、刺す、潰すことによる ダメージを受ける</em></strong>とき、（アーマーの後で、端数切り上げで）半分のダメージを受ける。</p><p><strong><em>HPが0になった</em></strong>とき、+CONで振る：<strong>10+ なら</strong>、最大HPの半分を回復し、1つ選ぶ。<strong>7〜9 なら</strong>、最大HPの半分を回復し、2つ選ぶ。<strong>6-なら</strong>、1 HPを回復して3つすべてが適用されるか、この別紙を手放して代わりに別紙「亡霊」を得る。</p>
 <ul class="bullets"><li>代償に印をつける（裏面を参照）</li><li>次の日没まで、行動から外れる</li><li>あなたの体は、GMが選ぶ何らかの形で永久に損なわれる</li></ul>
-<p><strong><em>体が完全に破壊された</em></strong>（灰になるまで焼かれた、ゼリー状になるまで潰されたなど）なら、HPが0になって6-を出したものとして扱う。</p>
-<hr>
-<ul>
-<li>執拗なる者 不死の体を限界まで酷使するとき、<button type="button" class="dice-roll" data-dice="1d4" title="クリックで1d4をロール — Shift: 有利 · Ctrl: 不利">1d4</button> HPを失い、1つ選ぶ：</li>
-</ul>
-<ul class="bullets"><li>人間離れした力業を行う</li><li>人ならぬ速さと優雅さで動く</li><li>動かされることも、引き止められることも、進路から弾かれることも拒む</li></ul>
+<p><strong><em>体が完全に破壊された</em></strong>（灰になるまで焼かれた、ゼリー状になるまで潰されたなど）なら、HPが0になって6-を出したものとして扱う。</p></div>
+<div class="move-block" id="implacable" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="最初から持っている"><input type="checkbox" checked disabled tabindex="-1"></span> 執拗なる者 <em>不死の体を限界まで酷使する</em></h3><p>とき、<button type="button" class="dice-roll" data-dice="1d4" title="クリックで1d4をロール — Shift: 有利 · Ctrl: 不利">1d4</button> HPを失い、1つ選ぶ：</p><ul class="bullets"><li>人間離れした力業を行う</li><li>人ならぬ速さと優雅さで動く</li><li>動かされることも、引き止められることも、進路から弾かれることも拒む</li></ul></div>
 <h3 id="terrible-purpose">恐るべき目的</h3>
 <p>1つ選ぶ：</p>
 <hr>
-<ul class="check-list" data-check-list="4"><li class="check-item"><label for="4-0"><input type="checkbox" class="wiki-check" id="4-0" data-check-id="4-0"> <span><strong>思慕</strong> あなたが手放すことを拒む人物（たち）の名を挙げる。</span></label></li></ul>
-<p><strong><em>彼らを見守って夜を過ごす</em></strong>とき、HPをすべて回復するか、衰えをすべて消す。</p>
+<div class="move-block" id="longing" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-longing" data-check-id="mv-longing" aria-label="LONGING"> 思慕</h3><p>あなたが手放すことを拒む人物（たち）の名を挙げる。</p><p><strong><em>彼らを見守って夜を過ごす</em></strong>とき、HPをすべて回復するか、衰えをすべて消す。</p>
 <p>彼らが<strong><em>恐れも怯えもなく、心からあなたの愛情に応えた</em></strong>とき、HPをすべて回復して衰えを消すか、代償を1つ消す（裏面を参照）。</p>
 <p><strong><em>彼らがあなたを拒むか、あなたから後ずさった</em></strong>とき、代償に印をつける（裏面を参照）。</p>
 <p>彼らが<strong><em>安らかに死に、最後の扉を くぐった</em></strong>とき、あなたもくぐる。</p>
-<p>彼らが<strong><em>暴力によってあなたから奪われた</em></strong>なら、最後の代償に印をつける（裏面を参照）。</p>
-<hr>
-<ul class="check-list" data-check-list="5"><li class="check-item"><label for="5-0"><input type="checkbox" class="wiki-check" id="5-0" data-check-id="5-0"> <span><strong>復讐</strong> 報いを受けねばならない人物（たち）の名を挙げる。</span></label></li></ul>
-<p><strong><em>寂しい場所で泣き叫び、吠え、 荒れ狂って夜を過ごす</em></strong>とき、HPをすべて回復するか、衰えをすべて消す。</p>
+<p>彼らが<strong><em>暴力によってあなたから奪われた</em></strong>なら、最後の代償に印をつける（裏面を参照）。</p></div>
+<div class="move-block" id="vengeance" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-vengeance" data-check-id="mv-vengeance" aria-label="VENGEANCE"> 復讐</h3><p>報いを受けねばならない人物（たち）の名を挙げる。</p><p><strong><em>寂しい場所で泣き叫び、吠え、 荒れ狂って夜を過ごす</em></strong>とき、HPをすべて回復するか、衰えをすべて消す。</p>
 <p><strong><em>彼らの1人に報いを受けさせ、その理由を 必ず思い知らせた</em></strong>とき、HPをすべて回復して衰えを消すか、代償を1つ消す（裏面を参照）。</p>
 <p>彼らが<strong><em>あなたを打ち負かすか、あなたから逃れた</em></strong>とき、代償に印をつける（裏面を参照）。</p>
 <p><strong><em>彼らの最後の1人を殺した</em></strong>とき、最後の扉をくぐる。</p>
-<p>彼らが<strong><em>あなたの手で片をつける前に死んだ</em></strong>なら、最後の代償に印をつける（裏面を参照）。</p>
-<hr>
-<ul class="check-list" data-check-list="6"><li class="check-item"><label for="6-0"><input type="checkbox" class="wiki-check" id="6-0" data-check-id="6-0"> <span><strong>務め</strong> やり残すことを拒む務めの名を挙げる。</span></label></li></ul>
-<p><strong><em>務めに取り組んで夜を過ごす</em></strong>とき、HPをすべて回復するか、衰えをすべて消す。</p>
+<p>彼らが<strong><em>あなたの手で片をつける前に死んだ</em></strong>なら、最後の代償に印をつける（裏面を参照）。</p></div>
+<div class="move-block" id="duty" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-duty" data-check-id="mv-duty" aria-label="DUTY"> 務め</h3><p>やり残すことを拒む務めの名を挙げる。</p><p><strong><em>務めに取り組んで夜を過ごす</em></strong>とき、HPをすべて回復するか、衰えをすべて消す。</p>
 <p><strong><em>務めに向けて重要な節目を 成し遂げた</em></strong>とき、HPをすべて回復して衰えを消すか、代償を1つ消す（裏面を参照）。</p>
 <p><strong><em>務めを果たせなかったか、実質的な後退を被った</em></strong>とき、代償に印をつける（裏面を参照）。</p>
 <p><strong><em>務めがついに果たされた</em></strong>とき、最後の扉をくぐる。</p>
-<p><strong><em>務めを果たすことが不可能になった</em></strong>なら、最後の代償に印をつける（裏面を参照）。</p>
+<p><strong><em>務めを果たすことが不可能になった</em></strong>なら、最後の代償に印をつける（裏面を参照）。</p></div>
 <h2 id="revenant-consequences">甦りし者。代償</h2>
 <p>この別紙を初めて得たとき、1つ選ぶ。</p>
 <p>ムーブに指示されるたびに、もう1つ選ぶ。</p>
-<ul class="check-list" data-check-list="7"><li class="check-item"><label for="7-0"><input type="checkbox" class="wiki-check" id="7-0" data-check-id="7-0"> <span><strong>崩壊</strong> あなたは思考も感情もない激情に駆られて暴れ、それは次の日の出まで続く。何の断片を覚えているかをGMに尋ねる。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="8"><li class="check-item"><label for="8-0"><input type="checkbox" class="wiki-check" id="8-0" data-check-id="8-0"> <span><strong>不安定</strong>（前提：崩壊）あなたは思考も感情もない激情の発作（崩壊と同様）を起こしやすい。<strong><em>6-を 出した</em></strong>とき、GMはあなたをそうした激情に陥らせることを選べる。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="9"><li class="check-item"><label for="9-0"><input type="checkbox" class="wiki-check" id="9-0" data-check-id="9-0"> <span><strong>腐肉の悪臭</strong> あなたには常にひどい臭いがつきまとう。自然の獣はあなたを避け、捕食者でさえあなたと仲間を避ける。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="10"><li class="check-item"><label for="10-0"><input type="checkbox" class="wiki-check" id="10-0" data-check-id="10-0"> <span><strong>死相</strong> あなたを見る誰の目にも、あなたが死んでいることは明らかだ。<strong><em>脅しと不気味な外見を使って 説得する</em></strong>とき、有利を得る。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="11"><li class="check-item"><label for="11-0"><input type="checkbox" class="wiki-check" id="11-0" data-check-id="11-0"> <span><strong>害虫の巣</strong> 虫、蛾、その他の害虫があなたの亡骸に住みついた。頼めば彼らはあなたの役に立つ。従者として扱う：<em>集団</em>、<em>微小</em>、<em>不快</em>、<em>臆病</em>、<em>隠密</em>。HP各1。<strong>本能</strong>：気が散る。代価：心からの愛情。</span></label></li><li class="check-item"><label for="11-1"><input type="checkbox" class="wiki-check" id="11-1" data-check-id="11-1"> <span><strong>夜の眷属</strong> 完全な暗闇の中でもはっきりと見えるが、見えるのは黒と白と赤だけだ。あいにく日光はあなたの目をくらませ、直射日光は肌を焼く。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="12"><li class="check-item"><label for="12-0"><input type="checkbox" class="wiki-check" id="12-0" data-check-id="12-0"> <span><strong>獲物</strong> 蒼ざめた狩人（the Pale Hunter）があなたの臭いを嗅ぎつけた。近いうちに訪問があると思え。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="13"><li class="check-item"><label for="13-0"><input type="checkbox" class="wiki-check" id="13-0" data-check-id="13-0"> <span><strong>奇妙な食欲</strong> 1つ選ぶ：</span></label></li><li class="check-item"><label for="13-1"><input type="checkbox" class="wiki-check" id="13-1" data-check-id="13-1"> <span>まだ温かい血 死に際の息 脳</span></label></li><li class="check-item"><label for="13-2"><input type="checkbox" class="wiki-check" id="13-2" data-check-id="13-2"> <span>骨と髄 腐った肉 目玉</span></label></li></ul>
-<p><strong><em>あなた特有の食物を口にした</em></strong>とき、最大HPの半分に等しいダメージを癒やすか、衰えを1つ消す。</p>
-<hr>
-<ul class="check-list" data-check-list="14"><li class="check-item"><label for="14-0"><input type="checkbox" class="wiki-check" id="14-0" data-check-id="14-0"> <span><strong>飽くなき者</strong>（前提：奇妙な食欲）<strong><em>奇妙な食欲を満たす 機会がある</em></strong>とき、満たすことを選ぶなら次のロールで有利を得る。満たさないことを選ぶなら危険に抗う（危険とは、あなたの抗いがたい欲望だ）。</span></label></li></ul>
+<div class="move-block" id="breakdown" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-breakdown" data-check-id="mv-breakdown" aria-label="BREAKDOWN"> 崩壊</h3><p>あなたは思考も感情もない激情に駆られて暴れ、それは次の日の出まで続く。何の断片を覚えているかをGMに尋ねる。</p></div>
+<div class="move-block" id="unstable" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-unstable" data-check-id="mv-unstable" aria-label="UNSTABLE"> 不安定</h3><p>（前提：崩壊）あなたは思考も感情もない激情の発作（崩壊と同様）を起こしやすい。<strong><em>6-を 出した</em></strong>とき、GMはあなたをそうした激情に陥らせることを選べる。</p></div>
+<div class="move-block" id="carrion-stench" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-carrion-stench" data-check-id="mv-carrion-stench" aria-label="CARRION STENCH"> 腐肉の悪臭</h3><p>あなたには常にひどい臭いがつきまとう。自然の獣はあなたを避け、捕食者でさえあなたと仲間を避ける。</p></div>
+<div class="move-block" id="deathly-visage" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-deathly-visage" data-check-id="mv-deathly-visage" aria-label="DEATHLY VISAGE"> 死相</h3><p>あなたを見る誰の目にも、あなたが死んでいることは明らかだ。<strong><em>脅しと不気味な外見を使って 説得する</em></strong>とき、有利を得る。</p></div>
+<div class="move-block" id="home-to-vermin" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-home-to-vermin" data-check-id="mv-home-to-vermin" aria-label="HOME TO VERMIN"> 害虫の巣</h3><p>虫、蛾、その他の害虫があなたの亡骸に住みついた。頼めば彼らはあなたの役に立つ。従者として扱う：<em>集団</em>、<em>微小</em>、<em>不快</em>、<em>臆病</em>、<em>隠密</em>。HP各1。<strong>本能</strong>：気が散る。代価：心からの愛情。</p></div>
+<div class="move-block" id="nightkin" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-nightkin" data-check-id="mv-nightkin" aria-label="NIGHTKIN"> 夜の眷属</h3><p>完全な暗闇の中でもはっきりと見えるが、見えるのは黒と白と赤だけだ。あいにく日光はあなたの目をくらませ、直射日光は肌を焼く。</p></div>
+<div class="move-block" id="quarry" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-quarry" data-check-id="mv-quarry" aria-label="QUARRY"> 獲物</h3><p>蒼ざめた狩人（the Pale Hunter）があなたの臭いを嗅ぎつけた。近いうちに訪問があると思え。</p></div>
+<div class="move-block" id="strange-appetites" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-strange-appetites" data-check-id="mv-strange-appetites" aria-label="STRANGE APPETITES"> 奇妙な食欲</h3><p>1つ選ぶ：</p><ul class="check-list sheet-checks"><li class="check-item"><label for="mv-strange-appetites-pick-1"><input type="checkbox" class="wiki-check" id="mv-strange-appetites-pick-1" data-check-id="mv-strange-appetites-pick-1"> <span>まだ温かい血</span></label></li><li class="check-item"><label for="mv-strange-appetites-pick-2"><input type="checkbox" class="wiki-check" id="mv-strange-appetites-pick-2" data-check-id="mv-strange-appetites-pick-2"> <span>死に際の息</span></label></li><li class="check-item"><label for="mv-strange-appetites-pick-3"><input type="checkbox" class="wiki-check" id="mv-strange-appetites-pick-3" data-check-id="mv-strange-appetites-pick-3"> <span>脳</span></label></li><li class="check-item"><label for="mv-strange-appetites-pick-4"><input type="checkbox" class="wiki-check" id="mv-strange-appetites-pick-4" data-check-id="mv-strange-appetites-pick-4"> <span>骨と髄 腐った肉 目玉</span></label></li></ul><p><strong><em>あなた特有の食物を口にした</em></strong>とき、最大HPの半分に等しいダメージを癒やすか、衰えを1つ消す。</p></div>
+<div class="move-block" id="insatiable" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-insatiable" data-check-id="mv-insatiable" aria-label="INSATIABLE"> 飽くなき者</h3><p>（前提：奇妙な食欲）<strong><em>奇妙な食欲を満たす 機会がある</em></strong>とき、満たすことを選ぶなら次のロールで有利を得る。満たさないことを選ぶなら危険に抗う（危険とは、あなたの抗いがたい欲望だ）。</p></div>
 <h3 id="the-final-consequence">最後の代償</h3>
 <p>人間性とのかすかなつながりが失われ、あなたはGMの支配下にある怪物となる。</p>
         </main>

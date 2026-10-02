@@ -26,10 +26,18 @@ C	<b>RUTHLESSNESS</b> To do whatever it takes to win or survive.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	upstart youth experienced & sober grizzled
-C	clear voice resonant voice rumbling voice
-C	stern frown grim-set jaw knowing smirk
-C	badge of office spit & polish timeworn gear
+C	upstart youth
+C	experienced & sober
+C	grizzled
+C	clear voice
+C	resonant voice
+C	rumbling voice
+C	stern frown
+C	grim-set jaw
+C	knowing smirk
+C	badge of office
+C	spit & polish
+C	timeworn gear
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Bethan, Cadfael, Ffraid, Gwythyr, Llewelyn, Meredith, Rhianna, or Urien
@@ -59,13 +67,13 @@ H2	Moves
 HR
 P	You start with Crew, Logistics, any moves from your Background, and 1 move of your choice.
 HR
-C	<b>ARMORED</b> When you <b><i>carry a shield</i></b>, mark only ◇ (instead of
-P	• ◇◇ ). Also, you can ignore the <i>cumbersome</i> tag on any armor you wear.
-P	If you take this move at the start of play, add an ◇◇ iron hauberk, ◇◇ bronze cuirass, or ◇◇ scale coat to your inventory (all are 2 armor,
-P	<i>warm</i>, <i>cumbersome</i>).
+C	<b>ARMORED</b> When you <b><i>carry a shield</i></b>, mark only ◇ (instead of ◇◇). Also, you can ignore the <i>cumbersome</i> tag on any armor you wear.
+P	If you take this move at the start of play, add an ◇◇ iron hauberk, ◇◇ bronze cuirass, or ◇◇ scale coat to your inventory (all are 2 armor, <i>warm</i>, <i>cumbersome</i>).
+TAKES	2
 C	<b>ARTS OF WAR</b> (Requires level 2+, the Marshal) Take a move from the Fox, Heavy, Judge, Ranger, or Seeker playbooks, for which you otherwise qualify. You can pick from a different playbook each time. You can't take Improved Stat or Superior Stat.
 CX	<b>CREW</b>
 P	You've got a crew of stalwarts, six or so residents of Stonetop with some steel to them. See the Crew insert for details.
+TAKES	2
 C2	<b>VETERAN CREW</b>
 P	(Requires Crew)
 P	Each time you take this move, pick 1. You can also choose to reselect their Instinct and Cost.
@@ -73,6 +81,7 @@ C2	Select 2 new tags for your Crew
 C2	Increase their damage die from d6 to d8
 C2	Increase their max HP by 2 each
 C	<b>FRONT LINE LEADER</b> ◇◇ When you <b><i>lead your crew into battle</i></b>, hold 2 Presence. Spend Presence in lieu of your crew's Loyalty or as Readiness (as if you Defended them).
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 CX	<b>LOGISTICS</b>
 P	When you <b><i>have a steading Muster or Pull Together</i></b>, or when you <b><i>Requisition</i></b>, you have advantage.
@@ -107,6 +116,7 @@ B	Act fearlessly in the face of terror or overwhelming odds
 B	Keep 1 HP instead of being reduced to 0 HP
 B	Add 1d6 to a damage roll they just made
 C	<b>BATTLEFIELD GRACE</b> (Requires level 6+ and Front Line Leader) When you <b><i>take damage while leading your allies in</i></b> <b><i>battle</i></b>, the damage roll has disadvantage.
+TAKES	2
 C	<b>HEROES TO THE LAST</b> (Requires level 6+ and Veteran Crew) Each time you take this move, pick 1:
 C	They are <i>exceptional</i> (and roll +2 instead of +1)
 C	They are inured to terror & horror

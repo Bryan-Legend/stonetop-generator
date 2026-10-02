@@ -15,9 +15,16 @@ P	• Ask a difficult question
 P	• Wander off
 P	<b>Cost</b> knowledge, secret lore; <b>Loyalty</b> ◇◇◇
 P	Pick 1 on each line: he she they
-C	just a child on the cusp a young adult
-C	carefully chosen marked by Danu orphaned
-C	carefree curious moody secretive
+C	just a child
+C	on the cusp
+C	a young adult
+C	carefully chosen
+C	marked by Danu
+C	orphaned
+C	carefree
+C	curious
+C	moody
+C	secretive
 HR
 ICON	icons/default.svg
 H3	Afon, a fellow initiate
@@ -29,8 +36,12 @@ P	• Appear or disappear unexpectedly
 P	• Speak an uncomfortable truth
 P	<b>Cost</b> wonder, joy; <b>Loyalty</b> ◇◇◇
 P	Pick 1 on each line: he she they
-C	comes and goes in the Wood a hut near town
-C	aloof bawdy and lewd unnerving rites of... ecstasy intoxication moonlight
+C	comes and goes
+C	in the Wood
+C	a hut near town
+C	aloof
+C	bawdy and lewd
+C	unnerving rites of... ecstasy intoxication moonlight
 HR
 ICON	icons/default.svg
 H3	Gwendyl, your mentor
@@ -43,8 +54,13 @@ P	• Weave a talisman of fertility or good luck
 P	• Point out a flaw in a person or plan
 P	<b>Cost</b> consideration, affection; <b>Loyalty</b> ◇◇◇
 P	Pick 1 on each line: he she they
-C	a big family has taken you in lives alone
-C	blunt demanding put upon suffers no fools rites of... earth & soil mourning petition
+C	a big family
+C	has taken you in
+C	lives alone
+C	blunt
+C	demanding
+C	put upon
+C	suffers no fools rites of... earth & soil mourning petition
 ICON	icons/default.svg
 H3	Olwin, your anointed lover
 P	<i>Fates-wise</i>, <i>beautiful</i>, <i>passionate</i>, <i>magical</i>
@@ -55,8 +71,14 @@ P	• Speak a (dire) prophecy
 P	• Make a big deal about something
 P	<b>Cost</b> tenderness, respect; <b>Loyalty</b> ◇◇◇
 P	Pick 1 on each line: he she they
-C	betrothed true love ceremonial complicated
-C	contary dramatic passionate tormented rites of... blood fire sacred union
+C	betrothed
+C	true love
+C	ceremonial
+C	complicated
+C	contary
+C	dramatic
+C	passionate
+C	tormented rites of... blood fire sacred union
 ICON	icons/default.svg
 H3	Seren the Eldest
 P	<i>Exceptional, story-wise, insightful, frail, magical</i>
@@ -67,8 +89,13 @@ P	• Spin a tale to make a point
 P	• Use shame and guilt as leverage
 P	<b>Cost</b> deference, good sense shown; <b>Loyalty</b> ◇◇◇
 P	Pick 1 on each line: he she they
-C	dismissed pitied feared venerated
-C	cagey friendly but firm imperious rites of... iron secret naming winter
+C	dismissed
+C	pitied
+C	feared
+C	venerated
+C	cagey
+C	friendly but firm
+C	imperious rites of... iron secret naming winter
 P	<b>ORDER FOLLOWERS</b>
 P	When you <b><i>direct them to make a move and they</i></b> <b><i>do so,</i></b> roll +1 instead of +STAT if any of their tags apply (or +2 if they're also <i>exceptional</i>). If no tags apply, roll +0. If any of their tags would get in the way, roll with disadvantage.
 P	When they <b><i>are without orders</i></b> or they <b><i>act on</i></b> <b><i>their own initiative</i></b>, the GM says what they do and how it goes.

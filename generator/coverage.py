@@ -37,6 +37,7 @@ from .text import (
     M_ICON,
     M_MARK,
     M_PB,
+    M_TAKES,
     M_STATS,
     M_TH,
     strip_markers,
@@ -55,6 +56,7 @@ _SKIP_MARKERS = (
     M_STATS,
     M_BAND,
     M_PB,
+    M_TAKES,
 )
 
 # The part of a page reference a link takes the place of: "page 438",

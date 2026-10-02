@@ -39,9 +39,12 @@ P	_____ <b>Tags: 1</b> = +<i>craven</i>; <b>2</b> = +<i>ravenous</i>; <b>3</b> =
 P	_____ <b>No. Appearing: 1</b> = <i>horde</i> (quantity 2d6, HP 3, damage 1d6); <b>2-3</b> = <i>group</i> (quantity 1d6+1), HP 6, damage 1d8); <b>4</b> = <i>solitary</i> (HP 12, damage 1d10).
 P	_____ <b>Size: 1</b> = <i>small</i> (-2 HP, -2 damage, <i>hand</i>); <b>2-3</b> = <i>medium</i> (<i>close</i>); <b>4</b> = <i>large</i> (+4 HP, +1 damage, <i>close</i>, <i>reach</i>).
 P	_____ <b>Traits:</b> choose a number equal to the assigned die.
-C	blubbery/scaly hide (2 armor) +<i>stealthy</i> and +<i>cautious</i>
-C	powerful (+2 damage, <i>forceful</i>) tentacles/pincers, etc. (<i>reach</i>, <i>grabby</i>)
-C	big claws/fangs (1 piercing, <i>messy</i>) projectiles (+<i>near</i>)
+C	blubbery/scaly hide (2 armor)
+C	+<i>stealthy</i> and +<i>cautious</i>
+C	powerful (+2 damage, <i>forceful</i>)
+C	tentacles/pincers, etc. (<i>reach</i>, <i>grabby</i>)
+C	big claws/fangs (1 piercing, <i>messy</i>)
+C	projectiles (+<i>near</i>)
 P	_____ <b>Moves:</b> choose a number equal to the assigned die.
 P	• Wriggle free of danger/restraint Heal at a prodigious rate
 P	• Smother/constrict/engulf them Dissolve organic material

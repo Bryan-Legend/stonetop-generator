@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">Manœuvres</h2>
 <p>Tu acquiers tout ce qui suit :</p>
-<h3 id="favor">Faveur</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Tu commences avec ceci"><input type="checkbox" checked disabled tabindex="-1"></span> Faveur</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">Faveur</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="Faveur 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="Faveur 1"></label><label class="track-step" for="thrall-favor-1" title="Faveur 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="Faveur 2"></label><label class="track-step" for="thrall-favor-2" title="Faveur 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="Faveur 3"></label></span></div>
 <p>Ta Faveur commence à 0 et ne peut jamais dépasser 3. Quand tu <strong><em>as 3 Faveur et devrais en gagner davantage</em></strong>, réduis ta Faveur à 0 et choisis 1 option :</p>
 <ul class="bullets">
 <li>Pose une question à ton maître et gagne un avantage sur ton prochain jet pour agir en fonction de la réponse.</li>
 <li>Gagne une nouvelle Marque de ton choix. Demande ensuite au MJ de choisir une Marque que tu n&#x27;as pas, et raye-la — tu ne pourras jamais l&#x27;acquérir.</li>
 </ul>
-<h3 id="urges">Pulsions</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Tu commences avec ceci"><input type="checkbox" checked disabled tabindex="-1"></span> Pulsions</h3>
 <p>Quand <strong><em>le MJ te contraint à agir selon ton impulsion</em></strong>, gagne 1 Faveur si tu obéis. Si tu résistes, lance +SAG : <strong>sur un 10+</strong>, tes actions restent les tiennes ; <strong>sur un 7-9</strong>, choisis 1 option :</p>
 <ul class="bullets">
 <li>Lutte pour garder le contrôle jusqu&#x27;à ce que quelque chose/quelqu&#x27;un t&#x27;en sorte</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>Sur un 6-</strong>, tu reprends tes esprits plus tard, ayant fait Dieux savent quoi.</p>
 <p>Quand tu <strong><em>agis selon ton impulsion sans y être contraint</em></strong>, et que tes actions t&#x27;attirent des ennuis, à toi ou à tes alliés, gagne 1 Faveur.</p>
-<h3 id="dark-succor">Sombre Secours</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Tu commences avec ceci"><input type="checkbox" checked disabled tabindex="-1"></span> Sombre Secours</h3>
 <p>Quand tu <strong><em>es mourant ou tué sur le coup</em></strong>, ton maître intercède en ta faveur. Tu te rétablis, ici et maintenant ou à un moment et un endroit choisis par le MJ. Ensuite, lance +Faveur : <strong>sur un 10+</strong>, choisis 1 option ; <strong>sur un 7-9</strong>, choisis 2 options ; <strong>sur un 6-</strong>, les 3 s&#x27;appliquent.</p>
 <ul class="bullets">
 <li>Gagne une nouvelle Marque au choix du MJ</li>
@@ -282,47 +287,56 @@
 <li>Ton maître te confie une tâche ; tant que tu ne l&#x27;as pas accomplie, ta Faveur reste à 0.</li>
 </ul>
 <p>Dans tous les cas, remets ta Faveur à 0.</p>
-<h3 id="unholy-vessel">Vaisseau Impie</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Tu commences avec ceci"><input type="checkbox" checked disabled tabindex="-1"></span> Vaisseau Impie</h3>
 <p>Quand tu <strong><em>devrais gagner une Marque mais qu&#x27;il n&#x27;en reste plus à gagner</em></strong>, ton humanité est totalement perdue. Tu deviens une menace sous le contrôle du MJ. Crée un nouveau personnage.</p>
+</div>
 <h2 id="marks">Marques</h2>
 <p>Quand tu acquiers cet encart pour la première fois, le MJ choisit 1 Marque pour toi, en fonction de la nature de ton maître. Tu en gagnes davantage quand une manœuvre te l&#x27;indique.</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>Une Pourriture Purulente</strong> — Tu es insensible au poison, à la maladie, aux substances corrosives et aux morsures de vermine. Les choses en ta présence pourrissent, se fissurent, se corrodent et se gâtent.</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> Une Pourriture Purulente</h3>
+<p>Tu es insensible au poison, à la maladie, aux substances corrosives et aux morsures de vermine. Les choses en ta présence pourrissent, se fissurent, se corrodent et se gâtent.</p>
 <p>Quand tu <strong><em>fais un double</em></strong>, quelque chose sur toi est ruiné. Le MJ te dira quoi, et comment.</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>Enfant des Profondeurs</strong> — Réduis tes HP max de 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> Enfant des Profondeurs</h3>
+<p>Réduis tes HP max de 2.</p>
 <p>Tu peux respirer sous l&#x27;eau et ne subis aucun dégât du froid ou de la pression. Ta peau devient squameuse. Quand tu <strong><em>passes une journée sans te baigner</em></strong>, coche un handicap.</p>
 <p>Près d&#x27;un point d&#x27;eau, tu peux dépenser 1 Faveur pour invoquer un tentacule visqueux à ton service. Traite-le comme un suivant :</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">Tentacule Visqueux</h3><p class="stat-tags">furtif, implacable</p><p class="stat-stats"><strong>HP</strong> 6 ; <strong>Armure</strong> 0<br><strong>Dégâts</strong> <button type="button" class="dice-roll" data-dice="d10" title="Clique pour lancer d10 — Maj : avantage · Ctrl : désavantage">d10</button> (allonge, puissant, agrippant)<br><strong>Instinct</strong> étouffer la vie hors des choses<br><strong>Prix</strong> des vies noyées</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>Masque de Mort</strong> — Tu trouves ou fabriques un masque horrible. Quand tu <strong><em>ne portes pas ton masque</em></strong>, tu as un désavantage à tous tes jets.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> Masque de Mort</h3>
+<p>Tu trouves ou fabriques un masque horrible. Quand tu <strong><em>ne portes pas ton masque</em></strong>, tu as un désavantage à tous tes jets.</p>
 <p>Quand tu <strong><em>portes ton masque</em></strong>, les morts-vivants te traitent comme l&#x27;un des leurs.</p>
 <p>Quand tu <strong><em>portes ton masque</em></strong>, tu peux dépenser 1 Faveur pour remplir d&#x27;effroi tout être vivant qui te voit. Il doit choisir : fuir, se recroqueviller, ou tenir bon. S&#x27;il tient bon, tu as un avantage à ton premier jet contre lui.</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>Rêves de Vif-Argent</strong> — Réduis tes HP max de 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> Rêves de Vif-Argent</h3>
+<p>Réduis tes HP max de 2.</p>
 <p>Quand <strong><em>tu Montes le Camp</em></strong>, tout le monde avec toi fait des cauchemars et a un désavantage à son prochain jet.</p>
 <p>Tu peux dépenser 1 Faveur pour infliger de fausses sensations à quelqu&#x27;un, tant que tu peux le voir.</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>Vorace</strong> — Tu es rempli d&#x27;une faim sans fin. Gagne une impulsion supplémentaire : « Dévorer la chair sans retenue ».</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> Vorace</h3>
+<p>Tu es rempli d&#x27;une faim sans fin. Gagne une impulsion supplémentaire : « Dévorer la chair sans retenue ».</p>
 <p>Quand tu <strong><em>Montes le Camp</em></strong>, consomme <button type="button" class="dice-roll" data-dice="1d4" title="Clique pour lancer 1d4 — Maj : avantage · Ctrl : désavantage">1d4</button> provisions ou utilisations de fournitures supplémentaires.</p>
 <p>Tu peux dépenser 1 Faveur pour :</p>
 <ul class="bullets">
 <li>Toucher quelque chose. Tant que tu le tiens, quiconque le voit le désire.</li>
 <li>Gagner une gueule horrible, capable de déchirer le fer (<em>main</em>, 3 perforant, <em>sanglant</em>), aussi longtemps que tu le souhaites, ainsi que la capacité de manger et digérer n&#x27;importe quoi.</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>Colère Rouge</strong> — Réduis tes HP max de 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> Colère Rouge</h3>
+<p>Réduis tes HP max de 2.</p>
 <p>Quand <strong><em>le MJ te contraint à la violence</em></strong>, tu as un désavantage pour résister.</p>
 <p>Quand <strong><em>tu laisses ta fureur exploser et frappes quelqu&#x27;un</em></strong> (<em>main</em>, <em>rapproché</em>), dépense 1 à 3 Faveur et lance +Faveur dépensée : <strong>sur un 10+</strong>, inflige <button type="button" class="dice-roll" data-dice="2d8" title="Clique pour lancer 2d8 — Maj : avantage · Ctrl : désavantage">2d8</button> dégâts (<em>sanglant</em>, <em>puissant</em>) et choque, terrifie ou impressionne les témoins ; <strong>sur un 7-9</strong>, comme un 10+ mais tu continues d&#x27;attaquer ta victime (ou son cadavre) dans une rage irréfléchie, sans te soucier des autres dangers.</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>L&#x27;Étreinte Froide de l&#x27;Ombre</strong> — Réduis tes HP max de 2. Tu ne projettes ni ombre ni reflet.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> L&#x27;Étreinte Froide de l&#x27;Ombre</h3>
+<p>Réduis tes HP max de 2. Tu ne projettes ni ombre ni reflet.</p>
 <p>Quand tu es <strong><em>exposé à la lumière du soleil ou à une lumière sacrée</em></strong>, tu ne peux pas dépenser de Faveur (pour quelque raison que ce soit).</p>
 <p>Sinon, tu peux dépenser 1 Faveur pour :</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>Ne laisser aucune trace de tes allées et venues</li>
 <li>Faire passer un mensonge pour une vérité évidente</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>Dire Vrai, Chuchoter des Secrets</strong> — Réduis tes HP max de 2. Ta langue s&#x27;allonge de façon inhabituelle et tes dents deviennent tachées et déchiquetées.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> Dire Vrai, Chuchoter des Secrets</h3>
+<p>Réduis tes HP max de 2. Ta langue s&#x27;allonge de façon inhabituelle et tes dents deviennent tachées et déchiquetées.</p>
 <p>Tu peux dépenser 1 Faveur pour regarder quelqu&#x27;un dans les yeux et apprendre (choisis 1 option) :</p>
 <ul class="bullets">
 <li>Que désire-t-il plus que tout ?</li>
@@ -341,10 +356,12 @@
 <li>Quel est son pire souvenir ?</li>
 </ul>
 <p>Quand tu <strong><em>utilises la réponse contre lui</em></strong>, tu as un avantage.</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>Bénédiction du Tourment</strong> — Tes blessures guérissent lentement. Quand tu récupères des HP, tu n&#x27;en récupères que la moitié. Mais tu n&#x27;as jamais besoin de Défier le Danger à cause de la douleur, de la perte de sang ou de la faiblesse due à tes blessures.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> Bénédiction du Tourment</h3>
+<p>Tes blessures guérissent lentement. Quand tu récupères des HP, tu n&#x27;en récupères que la moitié. Mais tu n&#x27;as jamais besoin de Défier le Danger à cause de la douleur, de la perte de sang ou de la faiblesse due à tes blessures.</p>
 <p>Quand tu <strong><em>prononces un mot de tourment</em></strong>, désigne quelqu&#x27;un à proximité, dépense 1 à 3 Faveur, et lance +Faveur dépensée : <strong>sur un 10+</strong>, il subit <button type="button" class="dice-roll" data-dice="2d4" title="Clique pour lancer 2d4 — Maj : avantage · Ctrl : désavantage">2d4</button> dégâts et est tenaillé par la douleur — les victimes mineures sont neutralisées, et les ennemis puissants sont momentanément étourdis ; <strong>sur un 7-9</strong>, il subit <button type="button" class="dice-roll" data-dice="1d6" title="Clique pour lancer 1d6 — Maj : avantage · Ctrl : désavantage">1d6</button> dégâts (ignore l&#x27;armure) et les victimes mineures sont momentanément étourdies.</p>
+</div>
         </main>
       </div>
     </div>

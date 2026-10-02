@@ -238,63 +238,43 @@
 <h3 id="moves">行动</h3>
 <p>你获得以下全部：</p>
 <hr>
-<ul>
-<li>不生不死 你没有呼吸。你不必吃、不必喝、不必睡。你不能正常痊愈。魔法治疗、扎营、恢复或休养都对你无益。</li>
-</ul>
-<hr>
-<ul>
-<li>无体 你的肉身已死已逝，但你作为精魂存续。只有银、盐，或伤害精魂或鬼魂之物能伤害你。</li>
-</ul>
-<p>你通常不被看见，对物质世界只有最微弱的影响，对现实只有黯淡、扭曲的感知。当你<strong><em>在阴影或黑暗中显出鬼魂之形 </em></strong>时，世界变得清晰，并选1项。每多选1项，失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP：</p>
+<div class="move-block" id="unliving" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便拥有此项"><input type="checkbox" checked disabled tabindex="-1"></span> 不生不死</h3><p>你没有呼吸。你不必吃、不必喝、不必睡。你不能正常痊愈。魔法治疗、扎营、恢复或休养都对你无益。</p></div>
+<div class="move-block" id="disembodied" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便拥有此项"><input type="checkbox" checked disabled tabindex="-1"></span> 无体</h3><p>你的肉身已死已逝，但你作为精魂存续。只有银、盐，或伤害精魂或鬼魂之物能伤害你。</p><p>你通常不被看见，对物质世界只有最微弱的影响，对现实只有黯淡、扭曲的感知。当你<strong><em>在阴影或黑暗中显出鬼魂之形 </em></strong>时，世界变得清晰，并选1项。每多选1项，失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP：</p>
 <ul class="bullets"><li>你显出坚实完整的模样，很像生前</li><li>你可以清楚明白地说话</li><li>你的触碰（或鬼魂武器）能伤害生者（无视护甲）</li></ul>
-<p>只要你保持专注，你就保持显现；疼痛、震惊或直射阳光肯定会威胁你的专注。</p>
-<hr>
-<ul>
-<li>羁绊 选择某样你被束缚于其上的东西：你的遗骸、你死去的地方、一件对你有个人意义的物品等。</li>
-</ul>
-<p>当你<strong><em>被降到 0 HP 时</em></strong>，标记一项恶果（见背面），你的本质散开直到下一次日落。你在羁绊附近以上限一半的 HP 重组。若你的羁绊已被摧毁，标记最终恶果。</p>
+<p>只要你保持专注，你就保持显现；疼痛、震惊或直射阳光肯定会威胁你的专注。</p></div>
+<div class="move-block" id="tethered" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便拥有此项"><input type="checkbox" checked disabled tabindex="-1"></span> 羁绊</h3><p>选择某样你被束缚于其上的东西：你的遗骸、你死去的地方、一件对你有个人意义的物品等。</p><p>当你<strong><em>被降到 0 HP 时</em></strong>，标记一项恶果（见背面），你的本质散开直到下一次日落。你在羁绊附近以上限一半的 HP 重组。若你的羁绊已被摧毁，标记最终恶果。</p></div>
 <h3 id="terrible-purpose">可怖使命</h3>
 <p>选1项：</p>
 <hr>
-<ul class="check-list" data-check-list="4"><li class="check-item"><label for="4-0"><input type="checkbox" class="wiki-check" id="4-0" data-check-id="4-0"> <span><strong>眷恋</strong> 说出你拒绝放手的那个人或那些人。</span></label></li></ul>
-<p>当你<strong><em>彻夜守望他们时</em></strong>，恢复全部 HP 或清除全部衰弱。</p>
+<div class="move-block" id="longing" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-longing" data-check-id="mv-longing" aria-label="LONGING"> 眷恋</h3><p>说出你拒绝放手的那个人或那些人。</p><p>当你<strong><em>彻夜守望他们时</em></strong>，恢复全部 HP 或清除全部衰弱。</p>
 <p>当他们<strong><em>真心回应你的情意</em></strong>，没有恐惧或惊骇时，要么恢复全部 HP 并清除衰弱，要么清除一项恶果（见背面）。</p>
 <p>当<strong><em>他们回绝你或畏避你时</em></strong>，标记一项恶果（见背面）。</p>
 <p>当他们<strong><em>安然离世、踏过最后之门 </em></strong>时，你也如此。</p>
-<p>若他们<strong><em>被人以横暴之手从你身边夺走</em></strong>，标记最终恶果（见背面）。</p>
-<hr>
-<ul class="check-list" data-check-list="5"><li class="check-item"><label for="5-0"><input type="checkbox" class="wiki-check" id="5-0" data-check-id="5-0"> <span><strong>复仇</strong> 说出必须付出代价的那个人或那些人。</span></label></li></ul>
-<p>当你<strong><em>在无人之地哀嚎、咆哮、 狂怒一整夜时</em></strong>，恢复全部 HP 或清除全部衰弱。</p>
+<p>若他们<strong><em>被人以横暴之手从你身边夺走</em></strong>，标记最终恶果（见背面）。</p></div>
+<div class="move-block" id="vengeance" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-vengeance" data-check-id="mv-vengeance" aria-label="VENGEANCE"> 复仇</h3><p>说出必须付出代价的那个人或那些人。</p><p>当你<strong><em>在无人之地哀嚎、咆哮、 狂怒一整夜时</em></strong>，恢复全部 HP 或清除全部衰弱。</p>
 <p>当你<strong><em>让其中一人付出代价、并确保 他明白缘由时</em></strong>，要么恢复全部 HP 并清除衰弱，要么清除一项恶果（见背面）。</p>
 <p>当他们<strong><em>击败你或从你手中逃脱时</em></strong>，标记一项恶果（见背面）。</p>
 <p>当你<strong><em>杀死他们中的最后一人时</em></strong>，踏过最后之门。</p>
-<p>若他们<strong><em>在你了结恩怨之前先死了</em></strong>，标记最终恶果（见背面）。</p>
-<hr>
-<ul class="check-list" data-check-list="6"><li class="check-item"><label for="6-0"><input type="checkbox" class="wiki-check" id="6-0" data-check-id="6-0"> <span><strong>职责</strong> 说出你拒绝留下未完成的那项任务。</span></label></li></ul>
-<p>当你<strong><em>彻夜为你的使命操劳时</em></strong>，恢复全部 HP 或清除全部衰弱。</p>
+<p>若他们<strong><em>在你了结恩怨之前先死了</em></strong>，标记最终恶果（见背面）。</p></div>
+<div class="move-block" id="duty" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-duty" data-check-id="mv-duty" aria-label="DUTY"> 职责</h3><p>说出你拒绝留下未完成的那项任务。</p><p>当你<strong><em>彻夜为你的使命操劳时</em></strong>，恢复全部 HP 或清除全部衰弱。</p>
 <p>当你<strong><em>朝着使命达成一个重大 进展时</em></strong>，要么恢复全部 HP 并清除衰弱，要么清除一项恶果（见背面）。</p>
 <p>当你<strong><em>未能履行使命或遭受实质挫败时</em></strong>，标记一项恶果（见背面）。</p>
 <p>当<strong><em>使命终告完成时</em></strong>，踏过最后之门。</p>
-<p>若<strong><em>使命再无达成的可能</em></strong>，标记最终恶果（见背面）。</p>
+<p>若<strong><em>使命再无达成的可能</em></strong>，标记最终恶果（见背面）。</p></div>
 <h2 id="ghost-consequences">鬼魂。恶果</h2>
 <p>当你首次取用这张附页时，选1项。</p>
 <p>每当一项行动让你这样做时，再选1项。</p>
-<ul class="check-list" data-check-list="7"><li class="check-item"><label for="7-0"><input type="checkbox" class="wiki-check" id="7-0" data-check-id="7-0"> <span><strong>夺舍</strong> 当你<strong><em>附身于昏迷或自愿之人时</em></strong>，失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP 并控制其行动。他们在你控制下采取的任何行动使用你的属性和行动。</span></label></li></ul>
-<p>当你<strong><em>迫使宿主做出违背其本能、或令其 深恶痛绝之事时</em></strong>，掷 +CHA：<strong>10+</strong>，他们还是做了；<strong>7-9</strong>，他们选1项：</p>
+<div class="move-block" id="bodysnatcher" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-bodysnatcher" data-check-id="mv-bodysnatcher" aria-label="BODYSNATCHER"> 夺舍</h3><p>当你<strong><em>附身于昏迷或自愿之人时</em></strong>，失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP 并控制其行动。他们在你控制下采取的任何行动使用你的属性和行动。</p><p>当你<strong><em>迫使宿主做出违背其本能、或令其 深恶痛绝之事时</em></strong>，掷 +CHA：<strong>10+</strong>，他们还是做了；<strong>7-9</strong>，他们选1项：</p>
 <ul class="bullets"><li>他们抗拒那一举动，你将永远无法再强迫他们做这件事或任何类似的事，但你在其他方面仍保持控制</li><li>他们做了，但你要付出代价——失去 <button type="button" class="dice-roll" data-dice="2d4" title="点击掷 2d4 — Shift: 优势 · Ctrl: 劣势">2d4</button> HP</li></ul>
 <p><strong>6- 时</strong>，他们把你从体内赶出，你标记一项恶果。你将永远无法再附身他们。</p>
-<p>当<strong><em>你的宿主受到伤害时</em></strong>，你失去等量的 HP。若你的宿主在你仍有 HP 时死去，你可以让他们活着直到你的附身结束。</p>
-<hr>
-<ul class="check-list" data-check-list="8"><li class="check-item"><label for="8-0"><input type="checkbox" class="wiki-check" id="8-0" data-check-id="8-0"> <span><strong>崩溃</strong> 你陷入一阵不加思索、没有感情的狂怒，持续到下一次日出。问GM你记得哪些片段。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="9"><li class="check-item"><label for="9-0"><input type="checkbox" class="wiki-check" id="9-0" data-check-id="9-0"> <span><strong>心神不稳</strong>（需要崩溃）你容易陷入不加思索、没有感情的狂怒发作（同崩溃）。当你<strong><em>掷出 6-</em></strong>时，GM可以选择让你进入这样的狂怒。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="10"><li class="check-item"><label for="10-0"><input type="checkbox" class="wiki-check" id="10-0" data-check-id="10-0"> <span><strong>阴气逼人</strong> 你的存在（即便不被看见）会扰乱野兽和孩童。你周围的空气明显更冷，尤其在你显现时。当你<strong><em>借威吓与阴森气场进行说服时</em></strong>，你获得优势。</span></label></li><li class="check-item"><label for="10-1"><input type="checkbox" class="wiki-check" id="10-1" data-check-id="10-1"> <span><strong>异象随身</strong> 当你<strong><em>显出鬼魂之形时</em></strong>，怪事发生：雕像哭泣、岩石流血、植物枯萎、水积在天花板上，等等。</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="11"><li class="check-item"><label for="11-0"><input type="checkbox" class="wiki-check" id="11-0" data-check-id="11-0"> <span><strong>骚灵</strong> ◇◇◇◇ 当你<strong><em>动怒时</em></strong>，失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP 并持有等量怒火。花费怒火，1换1，来：</span></label></li></ul>
-<ul class="bullets"><li>打碎、破坏或摧毁若干小型凡俗物品，或一件大型物品。</li><li>把一件物品砸向某人并掷 +DEX：<strong>10+ </strong>，造成你的伤害（<em>强力</em>）；<strong>7-9</strong>，造成你的伤害（<em>强力</em>）但失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP。</li><li>以心灵动力攻击某人并掷 +INT：<strong>10+</strong>，把他们甩到你能看见的一处并钉在那里，他们每次下定决心挣脱时花费 1 HP；<strong>7-9</strong>，如同10+，但你也失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP。</li></ul>
-<hr>
-<ul class="check-list" data-check-list="12"><li class="check-item"><label for="12-0"><input type="checkbox" class="wiki-check" id="12-0" data-check-id="12-0"> <span><strong>猎物</strong> 苍白猎手已经嗅到你的气息。很快就会来访。</span></label></li><li class="check-item"><label for="12-1"><input type="checkbox" class="wiki-check" id="12-1" data-check-id="12-1"> <span><strong>厉魄</strong> 当你<strong><em>惊骇一名生者、一个与你的可怖使命 无关的人时</em></strong>，恢复 <button type="button" class="dice-roll" data-dice="1d8" title="点击掷 1d8 — Shift: 优势 · Ctrl: 劣势">1d8</button> HP 或清除一项由你选择的衰弱。</span></label></li></ul>
+<p>当<strong><em>你的宿主受到伤害时</em></strong>，你失去等量的 HP。若你的宿主在你仍有 HP 时死去，你可以让他们活着直到你的附身结束。</p></div>
+<div class="move-block" id="breakdown" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-breakdown" data-check-id="mv-breakdown" aria-label="BREAKDOWN"> 崩溃</h3><p>你陷入一阵不加思索、没有感情的狂怒，持续到下一次日出。问GM你记得哪些片段。</p></div>
+<div class="move-block" id="unstable" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-unstable" data-check-id="mv-unstable" aria-label="UNSTABLE"> 心神不稳</h3><p>（需要崩溃）你容易陷入不加思索、没有感情的狂怒发作（同崩溃）。当你<strong><em>掷出 6-</em></strong>时，GM可以选择让你进入这样的狂怒。</p></div>
+<div class="move-block" id="disturbing" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-disturbing" data-check-id="mv-disturbing" aria-label="DISTURBING"> 阴气逼人</h3><p>你的存在（即便不被看见）会扰乱野兽和孩童。你周围的空气明显更冷，尤其在你显现时。当你<strong><em>借威吓与阴森气场进行说服时</em></strong>，你获得优势。</p></div>
+<div class="move-block" id="otherworldly" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-otherworldly" data-check-id="mv-otherworldly" aria-label="OTHERWORLDLY"> 异象随身</h3><p>当你<strong><em>显出鬼魂之形时</em></strong>，怪事发生：雕像哭泣、岩石流血、植物枯萎、水积在天花板上，等等。</p></div>
+<div class="move-block" id="poltergeist" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-poltergeist" data-check-id="mv-poltergeist" aria-label="POLTERGEIST"> 骚灵</h3><p>◇◇◇◇ 当你<strong><em>动怒时</em></strong>，失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP 并持有等量怒火。花费怒火，1换1，来：</p><ul class="bullets"><li>打碎、破坏或摧毁若干小型凡俗物品，或一件大型物品。</li><li>把一件物品砸向某人并掷 +DEX：<strong>10+ </strong>，造成你的伤害（<em>强力</em>）；<strong>7-9</strong>，造成你的伤害（<em>强力</em>）但失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP。</li><li>以心灵动力攻击某人并掷 +INT：<strong>10+</strong>，把他们甩到你能看见的一处并钉在那里，他们每次下定决心挣脱时花费 1 HP；<strong>7-9</strong>，如同10+，但你也失去 <button type="button" class="dice-roll" data-dice="1d4" title="点击掷 1d4 — Shift: 优势 · Ctrl: 劣势">1d4</button> HP。</li></ul></div>
+<div class="move-block" id="quarry" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-quarry" data-check-id="mv-quarry" aria-label="QUARRY"> 猎物</h3><p>苍白猎手已经嗅到你的气息。很快就会来访。</p></div>
+<div class="move-block" id="specter" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-specter" data-check-id="mv-specter" aria-label="SPECTER"> 厉魄</h3><p>当你<strong><em>惊骇一名生者、一个与你的可怖使命 无关的人时</em></strong>，恢复 <button type="button" class="dice-roll" data-dice="1d8" title="点击掷 1d8 — Shift: 优势 · Ctrl: 劣势">1d8</button> HP 或清除一项由你选择的衰弱。</p></div>
 <h3 id="the-final-consequence">最终恶果</h3>
 <p>你与人性那脆弱的联系断裂，你变成一头由GM控制的怪物。</p>
         </main>

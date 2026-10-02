@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">Ходи</h2>
 <p>Ти отримуєш усе наведене нижче:</p>
-<h3 id="favor">Прихильність</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="З цим ти починаєш"><input type="checkbox" checked disabled tabindex="-1"></span> Прихильність</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">Прихильність</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="Прихильність 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="Прихильність 1"></label><label class="track-step" for="thrall-favor-1" title="Прихильність 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="Прихильність 2"></label><label class="track-step" for="thrall-favor-2" title="Прихильність 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="Прихильність 3"></label></span></div>
 <p>Твоя Прихильність починається з 0 і не може перевищувати 3. Коли ти <strong><em>маєш 3 Прихильності й мав би отримати ще</em></strong>, зменш Прихильність до 0 і обери 1:</p>
 <ul class="bullets">
 <li>Постав запитання своєму господареві й отримай перевагу на наступний кидок, щоб діяти згідно з відповіддю.</li>
 <li>Отримай нове Тавро на свій вибір. Тоді попроси Ведучого обрати Тавро, якого ти не маєш, і викресли його — ти ніколи не зможеш його отримати.</li>
 </ul>
-<h3 id="urges">Спонуки</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="З цим ти починаєш"><input type="checkbox" checked disabled tabindex="-1"></span> Спонуки</h3>
 <p>Коли <strong><em>Ведучий змушує тебе діяти згідно з твоїм потягом</em></strong>, отримай 1 Прихильність, якщо чиниш, як велено. Якщо опираєшся, кинь +WIS: <strong>на 10+</strong> твої дії належать тобі; <strong>на 7-9</strong> обери 1:</p>
 <ul class="bullets">
 <li>Борися за контроль, доки щось чи хтось не приведе тебе до тями</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>На 6-</strong> ти отямлюєшся згодом, накоївши боги знають чого.</p>
 <p>Коли ти <strong><em>дієш згідно зі своїм потягом, хоч тебе до цього не змушують</em></strong>, і твої дії завдають клопоту тобі чи твоїм союзникам, отримай 1 Прихильність.</p>
-<h3 id="dark-succor">Темна Підмога</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="З цим ти починаєш"><input type="checkbox" checked disabled tabindex="-1"></span> Темна Підмога</h3>
 <p>Коли ти <strong><em>помираєш або тебе вбито на місці</em></strong>, твій господар заступається за тебе. Ти одужаєш — тут і зараз або в час і в місці, які обере Ведучий. Тоді кинь +Прихильність: <strong>на 10+</strong> обери 1; <strong>на 7-9</strong> обери 2; <strong>на 6-</strong> діють усі 3.</p>
 <ul class="bullets">
 <li>Отримай нове Тавро на вибір Ведучого</li>
@@ -282,47 +287,56 @@
 <li>Господар дає тобі завдання; доки ти його не виконаєш, твоя Прихильність лишається на 0.</li>
 </ul>
 <p>Хай там як, скинь Прихильність до 0.</p>
-<h3 id="unholy-vessel">Нечестива Посудина</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="З цим ти починаєш"><input type="checkbox" checked disabled tabindex="-1"></span> Нечестива Посудина</h3>
 <p>Коли ти <strong><em>мав би отримати Тавро, але отримувати вже нічого</em></strong>, твою людяність остаточно втрачено. Ти стаєш загрозою під керуванням Ведучого. Створи нового персонажа.</p>
+</div>
 <h2 id="marks">Тавра</h2>
 <p>Коли ти вперше отримуєш цю вкладку, Ведучий обирає для тебе 1 Тавро відповідно до природи твого господаря. Отримуй більше, коли так каже хід.</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>Ятрюча Гниль</strong> — Тобі не шкодять отрута, хвороби, їдкі речовини й укуси паразитів. Речі поруч із тобою гниють, тріскаються, іржавіють і псуються.</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> Ятрюча Гниль</h3>
+<p>Тобі не шкодять отрута, хвороби, їдкі речовини й укуси паразитів. Речі поруч із тобою гниють, тріскаються, іржавіють і псуються.</p>
 <p>Коли ти <strong><em>викидаєш дублі</em></strong>, щось із того, що на тобі, псується. Ведучий скаже, що саме і як.</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>Дитя Глибин</strong> — Зменш свої максимальні HP на 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> Дитя Глибин</h3>
+<p>Зменш свої максимальні HP на 2.</p>
 <p>Ти можеш дихати водою й не зазнаєш шкоди від холоду чи тиску. Твоя шкіра вкривається лускою. Коли ти <strong><em>цілий день не купаєшся</em></strong>, познач слабкість.</p>
 <p>Поблизу водойми ти можеш витратити 1 Прихильність, щоб викликати слизьке щупальце, яке виконуватиме твою волю. Вважай його послідовником:</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">Слизьке Щупальце</h3><p class="stat-tags">потайний, невблаганний</p><p class="stat-stats"><strong>HP</strong> 6; <strong>Броня</strong> 0<br><strong>Шкода</strong> <button type="button" class="dice-roll" data-dice="d10" title="Натисніть, щоб кинути d10 — Shift: перевага · Ctrl: завада">d10</button> (досяжність, відкидна, чіпкий)<br><strong>Інстинкт</strong> вичавлювати життя з усього<br><strong>Ціна</strong> втоплені життя</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>Маска Смерті</strong> — Ти знаходиш чи виготовляєш жахливу маску. Коли ти <strong><em>не носиш маски</em></strong>, маєш заваду на всі кидки.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> Маска Смерті</h3>
+<p>Ти знаходиш чи виготовляєш жахливу маску. Коли ти <strong><em>не носиш маски</em></strong>, маєш заваду на всі кидки.</p>
 <p>Коли ти <strong><em>носиш маску</em></strong>, нежить вважає тебе своїм.</p>
 <p>Коли ти <strong><em>носиш маску</em></strong>, можеш витратити 1 Прихильність, щоб сповнити жахом будь-яку живу істоту, яка тебе бачить. Вона мусить обрати: тікати, зіщулитися чи вистояти. Якщо вона вистоїть, ти маєш перевагу на перший кидок проти неї.</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>Ртутні Сни</strong> — Зменш свої максимальні HP на 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> Ртутні Сни</h3>
+<p>Зменш свої максимальні HP на 2.</p>
 <p>Коли <strong><em>ти Розбиваєш Табір</em></strong>, усіх, хто з тобою, мучать жахіття, і вони мають заваду на свій наступний кидок.</p>
 <p>Ти можеш витратити 1 Прихильність, щоб наслати на когось хибні відчуття, доки бачиш цю людину.</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>Ненаситний</strong> — Тебе сповнює невгамовний голод. Отримай додатковий потяг: «Нестримно пожирати плоть».</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> Ненаситний</h3>
+<p>Тебе сповнює невгамовний голод. Отримай додатковий потяг: «Нестримно пожирати плоть».</p>
 <p>Коли ти <strong><em>Розбиваєш Табір</em></strong>, спожий додатково <button type="button" class="dice-roll" data-dice="1d4" title="Натисніть, щоб кинути 1d4 — Shift: перевага · Ctrl: завада">1d4</button> харчів чи використань припасів.</p>
 <p>Ти можеш витратити 1 Прихильність, щоб:</p>
 <ul class="bullets">
 <li>Торкнутися чогось. Доки ти це тримаєш, усі, хто це бачить, прагнуть цим заволодіти.</li>
 <li>Отримати жахливу пащу, що роздирає залізо (<em>впритул</em>, 3 пробивна, <em>кривава</em>), на скільки забажаєш, а з нею — здатність їсти й перетравлювати будь-що.</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>Червоний Гнів</strong> — Зменш свої максимальні HP на 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> Червоний Гнів</h3>
+<p>Зменш свої максимальні HP на 2.</p>
 <p>Коли <strong><em>Ведучий підштовхує тебе до насильства</em></strong>, ти маєш заваду, щоб опиратися.</p>
 <p>Коли <strong><em>ти даєш волю люті й накидаєшся на когось</em></strong> (<em>впритул</em>, <em>поруч</em>), витрать 1-3 Прихильності й кинь +витрачену Прихильність: <strong>на 10+</strong> завдай <button type="button" class="dice-roll" data-dice="2d8" title="Натисніть, щоб кинути 2d8 — Shift: перевага · Ctrl: завада">2d8</button> шкоди (<em>кривава</em>, <em>відкидна</em>) і приголомш, налякай чи вразь усіх свідків; <strong>на 7-9</strong> — як на 10+, але ти в безтямній люті далі атакуєш жертву (чи її труп), не зважаючи на іншу небезпеку.</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>Холодні Обійми Тіні</strong> — Зменш свої максимальні HP на 2. Ти не відкидаєш ні тіні, ні відображення.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> Холодні Обійми Тіні</h3>
+<p>Зменш свої максимальні HP на 2. Ти не відкидаєш ні тіні, ні відображення.</p>
 <p>Коли ти <strong><em>під сонячним чи святим світлом</em></strong>, ти не можеш витрачати Прихильність (з жодної причини).</p>
 <p>В іншому разі ти можеш витратити 1 Прихильність, щоб:</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>Не лишити й сліду ні свого приходу, ні відходу</li>
 <li>Видати брехню за очевидну, незаперечну правду</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>Мов Правду, Шепочи Таємниці</strong> — Зменш свої максимальні HP на 2. Твій язик стає незвично довгим, а зуби — поплямованими й зазубреними.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> Мов Правду, Шепочи Таємниці</h3>
+<p>Зменш свої максимальні HP на 2. Твій язик стає незвично довгим, а зуби — поплямованими й зазубреними.</p>
 <p>Ти можеш витратити 1 Прихильність, щоб подивитися комусь в очі й дізнатися (обери 1):</p>
 <ul class="bullets">
 <li>Чого він прагне понад усе?</li>
@@ -341,10 +356,12 @@
 <li>Який його найгірший спогад?</li>
 </ul>
 <p>Коли ти <strong><em>використовуєш відповідь проти нього</em></strong>, маєш перевагу.</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>Благословення Муки</strong> — Твої рани гояться повільно. Коли ти відновлюєш HP, відновлюй лише половину належного. Проте тобі ніколи не доводиться Кидати Виклик Небезпеці через біль, утрату крові й слабкість від ран.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> Благословення Муки</h3>
+<p>Твої рани гояться повільно. Коли ти відновлюєш HP, відновлюй лише половину належного. Проте тобі ніколи не доводиться Кидати Виклик Небезпеці через біль, утрату крові й слабкість від ран.</p>
 <p>Коли ти <strong><em>промовляєш слово муки</em></strong>, назви когось поблизу, витрать 1-3 Прихильності й кинь +витрачену Прихильність: <strong>на 10+</strong> він отримує <button type="button" class="dice-roll" data-dice="2d4" title="Натисніть, щоб кинути 2d4 — Shift: перевага · Ctrl: завада">2d4</button> шкоди й корчиться від болю — слабші жертви знешкоджені, а могутні вороги на мить приголомшені; <strong>на 7-9</strong> він отримує <button type="button" class="dice-roll" data-dice="1d6" title="Натисніть, щоб кинути 1d6 — Shift: перевага · Ctrl: завада">1d6</button> шкоди (ігнорує броню), а слабші жертви на мить приголомшені.</p>
+</div>
         </main>
       </div>
     </div>

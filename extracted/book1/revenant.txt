@@ -67,7 +67,9 @@ HR
 C	<b>QUARRY</b> The Pale Hunter has caught your scent. Expect a visit, soon.
 HR
 C	<b>STRANGE APPETITES</b> Pick 1:
-C	still-warm blood dying breaths brains
+C	still-warm blood
+C	dying breaths
+C	brains
 C	bone & marrow rotting meat eyes
 P	When you <b><i>consume your special fare</i></b>, heal damage equal to half your max HP or clear a debility.
 HR

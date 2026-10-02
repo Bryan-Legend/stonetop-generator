@@ -15,7 +15,11 @@ P	You have created a tulpa, which you treat as a follower. Pick 2 additional tag
 ICON	icons/arcana.svg
 H3	Tulpa
 P	<i>Spirit, construct, tiny, naive, eager</i>
-C	<i>fierce kind sly timid willful</i>
+C	<i>fierce</i>
+C	<i>kind</i>
+C	<i>sly</i>
+C	<i>timid</i>
+C	<i>willful</i>
 P	<b>HP</b> 8; <b>Armor</b> 0
 P	<b>Damage</b> 1d4 (if that)
 P	<b>Instinct</b> to play to learn to flaunt

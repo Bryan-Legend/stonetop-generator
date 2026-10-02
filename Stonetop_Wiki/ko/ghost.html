@@ -238,63 +238,43 @@
 <h3 id="moves">무브</h3>
 <p>다음을 모두 얻는다.</p>
 <hr>
-<ul>
-<li>살아 있지 않음 너는 숨을 쉬지 않는다. 먹지도 마시지도 자지도 않아도 된다. 보통의 방법으로는 치유되지 않는다. 마법적 치유, 야영하기, 회복하기, 요양하기에서 아무런 이득도 얻지 못한다.</li>
-</ul>
-<hr>
-<ul>
-<li>육신 없음 네 몸은 죽어 사라졌지만, 너는 정령으로 남아 있다. 너는 은, 소금, 또는 정령이나 유령을 해치는 것으로만 해를 입는다.</li>
-</ul>
-<p>너는 보통 보이지 않으며, 물질 세계에 겨우 영향을 줄 뿐이고, 현실을 흐릿하고 뒤틀리게 느낀다. <strong><em>그림자나 어둠 속에서 유령의 존재를 드러낼 때</em></strong>, 세상이 또렷해지고 1개를 고른다. 추가로 고르는 선택지마다 HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃는다.</p>
+<div class="move-block" id="unliving" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="처음부터 가지고 시작한다"><input type="checkbox" checked disabled tabindex="-1"></span> 살아 있지 않음</h3><p>너는 숨을 쉬지 않는다. 먹지도 마시지도 자지도 않아도 된다. 보통의 방법으로는 치유되지 않는다. 마법적 치유, 야영하기, 회복하기, 요양하기에서 아무런 이득도 얻지 못한다.</p></div>
+<div class="move-block" id="disembodied" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="처음부터 가지고 시작한다"><input type="checkbox" checked disabled tabindex="-1"></span> 육신 없음</h3><p>네 몸은 죽어 사라졌지만, 너는 정령으로 남아 있다. 너는 은, 소금, 또는 정령이나 유령을 해치는 것으로만 해를 입는다.</p><p>너는 보통 보이지 않으며, 물질 세계에 겨우 영향을 줄 뿐이고, 현실을 흐릿하고 뒤틀리게 느낀다. <strong><em>그림자나 어둠 속에서 유령의 존재를 드러낼 때</em></strong>, 세상이 또렷해지고 1개를 고른다. 추가로 고르는 선택지마다 HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃는다.</p>
 <ul class="bullets"><li>살아 있을 때와 거의 같은 모습으로, 단단하고 온전해 보인다</li><li>또렷하고 알아듣게 말할 수 있다</li><li>네 손길(또는 유령의 무기)이 산 자를 해칠 수 있다(방어구 무시)</li></ul>
-<p>정신을 집중하는 동안에는 계속 모습을 드러내고 있다. 고통이나 충격이나 직사광선은 분명 집중을 흔든다.</p>
-<hr>
-<ul>
-<li>매여 있음 네가 묶여 있는 것을 고른다. 네 유해, 네가 죽은 곳, 개인적으로 의미 있는 물건 등.</li>
-</ul>
-<p><strong><em>HP가 0이 될 때</em></strong>, 대가를 표시하고(뒷면 참고) 네 본질은 다음 해 질 녘까지 흩어진다. 너는 최대 HP의 절반을 지닌 채 매개물 근처에서 다시 형체를 이룬다. 매개물이 파괴되었다면 마지막 대가를 표시한다.</p>
+<p>정신을 집중하는 동안에는 계속 모습을 드러내고 있다. 고통이나 충격이나 직사광선은 분명 집중을 흔든다.</p></div>
+<div class="move-block" id="tethered" data-move="sheet fixed"><h3 class="move-name"><span class="check-fixed" role="img" aria-label="처음부터 가지고 시작한다"><input type="checkbox" checked disabled tabindex="-1"></span> 매여 있음</h3><p>네가 묶여 있는 것을 고른다. 네 유해, 네가 죽은 곳, 개인적으로 의미 있는 물건 등.</p><p><strong><em>HP가 0이 될 때</em></strong>, 대가를 표시하고(뒷면 참고) 네 본질은 다음 해 질 녘까지 흩어진다. 너는 최대 HP의 절반을 지닌 채 매개물 근처에서 다시 형체를 이룬다. 매개물이 파괴되었다면 마지막 대가를 표시한다.</p></div>
 <h3 id="terrible-purpose">끔찍한 목적</h3>
 <p>1개를 고른다.</p>
 <hr>
-<ul class="check-list" data-check-list="4"><li class="check-item"><label for="4-0"><input type="checkbox" class="wiki-check" id="4-0" data-check-id="4-0"> <span><strong>그리움</strong> 놓아주기를 거부하는 사람 또는 사람들의 이름을 댄다.</span></label></li></ul>
-<p><strong><em>밤새 그들을 지켜볼 때</em></strong>, HP를 모두 되찾거나 쇠약을 모두 지운다.</p>
+<div class="move-block" id="longing" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-longing" data-check-id="mv-longing" aria-label="LONGING"> 그리움</h3><p>놓아주기를 거부하는 사람 또는 사람들의 이름을 댄다.</p><p><strong><em>밤새 그들을 지켜볼 때</em></strong>, HP를 모두 되찾거나 쇠약을 모두 지운다.</p>
 <p>그들이 두려움이나 공포 없이 <strong><em>진심으로 네 애정에 화답할 때</em></strong>, HP를 모두 되찾고 쇠약을 지우거나, 대가 하나를 지운다(뒷면 참고).</p>
 <p><strong><em>그들이 너를 뿌리치거나 너에게서 움츠러들 때</em></strong>, 대가를 표시한다(뒷면 참고).</p>
 <p>그들이 <strong><em>평화롭게 죽어 마지막 문을 넘을 때</em></strong>, 너도 넘는다.</p>
-<p>그들이 <strong><em>너에게서 폭력적으로 빼앗긴다면</em></strong>, 마지막 대가를 표시한다(뒷면 참고).</p>
-<hr>
-<ul class="check-list" data-check-list="5"><li class="check-item"><label for="5-0"><input type="checkbox" class="wiki-check" id="5-0" data-check-id="5-0"> <span><strong>복수</strong> 대가를 치러야 할 사람 또는 사람들의 이름을 댄다.</span></label></li></ul>
-<p><strong><em>외딴곳에서 밤새 울부짖고, 울고, 분노할 때</em></strong>, HP를 모두 되찾거나 쇠약을 모두 지운다.</p>
+<p>그들이 <strong><em>너에게서 폭력적으로 빼앗긴다면</em></strong>, 마지막 대가를 표시한다(뒷면 참고).</p></div>
+<div class="move-block" id="vengeance" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-vengeance" data-check-id="mv-vengeance" aria-label="VENGEANCE"> 복수</h3><p>대가를 치러야 할 사람 또는 사람들의 이름을 댄다.</p><p><strong><em>외딴곳에서 밤새 울부짖고, 울고, 분노할 때</em></strong>, HP를 모두 되찾거나 쇠약을 모두 지운다.</p>
 <p><strong><em>그들 중 하나에게 대가를 치르게 하고 왜인지 반드시 알게 할 때</em></strong>, HP를 모두 되찾고 쇠약을 지우거나, 대가 하나를 지운다(뒷면 참고).</p>
 <p>그들이 <strong><em>너를 물리치거나 너에게서 달아날 때</em></strong>, 대가를 표시한다(뒷면 참고).</p>
 <p><strong><em>그들 중 마지막 하나를 죽일 때</em></strong>, 마지막 문을 넘는다.</p>
-<p>그들이 <strong><em>네가 끝장내기 전에 죽는다면</em></strong>, 마지막 대가를 표시한다(뒷면 참고).</p>
-<hr>
-<ul class="check-list" data-check-list="6"><li class="check-item"><label for="6-0"><input type="checkbox" class="wiki-check" id="6-0" data-check-id="6-0"> <span><strong>의무</strong> 끝내지 않고는 떠날 수 없는 일을 댄다.</span></label></li></ul>
-<p><strong><em>밤새 그 일을 할 때</em></strong>, HP를 모두 되찾거나 쇠약을 모두 지운다.</p>
+<p>그들이 <strong><em>네가 끝장내기 전에 죽는다면</em></strong>, 마지막 대가를 표시한다(뒷면 참고).</p></div>
+<div class="move-block" id="duty" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-duty" data-check-id="mv-duty" aria-label="DUTY"> 의무</h3><p>끝내지 않고는 떠날 수 없는 일을 댄다.</p><p><strong><em>밤새 그 일을 할 때</em></strong>, HP를 모두 되찾거나 쇠약을 모두 지운다.</p>
 <p><strong><em>그 일에서 중요한 고비를 넘길 때</em></strong>, HP를 모두 되찾고 쇠약을 지우거나, 대가 하나를 지운다(뒷면 참고).</p>
 <p><strong><em>그 일을 해내지 못하거나 실질적인 차질을 겪을 때</em></strong>, 대가를 표시한다(뒷면 참고).</p>
 <p><strong><em>그 일이 마침내 끝날 때</em></strong>, 마지막 문을 넘는다.</p>
-<p><strong><em>그 일이 해낼 수 없게 된다면</em></strong>, 마지막 대가를 표시한다(뒷면 참고).</p>
+<p><strong><em>그 일이 해낼 수 없게 된다면</em></strong>, 마지막 대가를 표시한다(뒷면 참고).</p></div>
 <h2 id="ghost-consequences">유령. 대가</h2>
 <p>이 별지를 처음 얻을 때, 1개를 고른다.</p>
 <p>무브가 그렇게 하라고 할 때마다 하나를 더 고른다.</p>
-<ul class="check-list" data-check-list="7"><li class="check-item"><label for="7-0"><input type="checkbox" class="wiki-check" id="7-0" data-check-id="7-0"> <span><strong>몸 빼앗는 자 <em>의식이 없거나 동의한 사람에게 빙의할 때</em></strong>, HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃고 그 사람의 행동을 조종한다. 네 조종을 받는 동안 그 사람이 하는 모든 행동에는 네 능력치와 무브를 쓴다.</span></label></li></ul>
-<p><strong><em>숙주에게 그의 본능에 반하는 일이나 그가 혐오하는 일을 억지로 시킬 때</em></strong>, +CHA로 굴린다. <strong>10+이면</strong> 그래도 그 일을 한다. <strong>7-9면</strong> 숙주가 1개를 고른다.</p>
+<div class="move-block" id="bodysnatcher" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-bodysnatcher" data-check-id="mv-bodysnatcher" aria-label="BODYSNATCHER"> 몸 빼앗는 자 <em>의식이 없거나 동의한 사람에게 빙의할 때</em></h3><p>, HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃고 그 사람의 행동을 조종한다. 네 조종을 받는 동안 그 사람이 하는 모든 행동에는 네 능력치와 무브를 쓴다.</p><p><strong><em>숙주에게 그의 본능에 반하는 일이나 그가 혐오하는 일을 억지로 시킬 때</em></strong>, +CHA로 굴린다. <strong>10+이면</strong> 그래도 그 일을 한다. <strong>7-9면</strong> 숙주가 1개를 고른다.</p>
 <ul class="bullets"><li>그 행동을 거부한다. 너는 다시는 그 일이나 비슷한 일을 억지로 시킬 수 없지만, 그 밖에는 여전히 조종권을 쥐고 있다</li><li>그 일을 하지만, 너에게 대가가 따른다. HP <button type="button" class="dice-roll" data-dice="2d4" title="클릭하여 2d4 굴림 — Shift: 유리 · Ctrl: 불리">2d4</button>를 잃는다</li></ul>
 <p><strong>6-이면</strong> 숙주가 너를 몸에서 몰아내고 너는 대가를 표시한다. 다시는 그 사람에게 빙의할 수 없다.</p>
-<p><strong><em>숙주가 피해를 받을 때</em></strong>, 너도 같은 만큼 HP를 잃는다. 네게 아직 HP가 남아 있는데 숙주가 죽으면, 빙의가 끝날 때까지 숙주를 살려 둘 수 있다.</p>
-<hr>
-<ul class="check-list" data-check-list="8"><li class="check-item"><label for="8-0"><input type="checkbox" class="wiki-check" id="8-0" data-check-id="8-0"> <span><strong>폭주</strong> 너는 생각도 감정도 없는 분노에 휩싸여 날뛰며, 그 분노는 다음 해 뜰 녘까지 이어진다. 무엇을 조각조각 기억하는지 GM에게 묻는다.</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="9"><li class="check-item"><label for="9-0"><input type="checkbox" class="wiki-check" id="9-0" data-check-id="9-0"> <span><strong>불안정</strong> (폭주 필요) 너는 생각도 감정도 없는 분노(폭주와 같은)에 빠지기 쉽다. <strong><em>6-를 굴릴 때</em></strong>, GM은 너를 그런 분노에 빠지게 할 수 있다.</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="10"><li class="check-item"><label for="10-0"><input type="checkbox" class="wiki-check" id="10-0" data-check-id="10-0"> <span><strong>섬뜩함</strong> 네 존재는 (보이지 않더라도) 짐승과 아이들을 불안하게 한다. 네 주위의 공기는 눈에 띄게 서늘하며, 모습을 드러낼 때 특히 그렇다. <strong><em>위협과 섬뜩한 존재감을 써서 설득하기를 할 때</em></strong>, 유리를 얻는다.</span></label></li><li class="check-item"><label for="10-1"><input type="checkbox" class="wiki-check" id="10-1" data-check-id="10-1"> <span><strong>이 세상 것이 아님 <em>유령의 형체를 드러낼 때</em></strong>, 기이한 일이 일어난다. 석상이 눈물을 흘리고, 바위가 피를 흘리고, 식물이 시들고, 천장에 물이 고이는 등.</span></label></li></ul>
-<hr>
-<ul class="check-list" data-check-list="11"><li class="check-item"><label for="11-0"><input type="checkbox" class="wiki-check" id="11-0" data-check-id="11-0"> <span><strong>폴터가이스트</strong> ◇◇◇◇ <strong><em>화가 날 때</em></strong>, HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃고 그만큼 분노를 홀드한다. 분노를 1대1로 써서 다음을 한다.</span></label></li></ul>
-<ul class="bullets"><li>작은 평범한 물건 여러 개, 또는 큰 물건 하나를 박살 내거나, 부수거나, 파괴한다.</li><li>누군가에게 물건을 던지고 +DEX로 굴린다. <strong>10+이면 </strong>네 피해를 준다(<em>강타</em>). <strong>7-9면</strong> 네 피해를 주지만(<em>강타</em>) HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃는다.</li><li>염동력으로 누군가를 공격하고 +INT로 굴린다. <strong>10+이면</strong> 그를 네가 볼 수 있는 곳으로 내던져 거기에 붙잡아 둔다. 그가 빠져나오려고 온 힘을 쓸 때마다 HP 1을 쓴다. <strong>7-9면</strong> 10+와 같지만, HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>도 잃는다.</li></ul>
-<hr>
-<ul class="check-list" data-check-list="12"><li class="check-item"><label for="12-0"><input type="checkbox" class="wiki-check" id="12-0" data-check-id="12-0"> <span><strong>사냥감</strong> 창백한 사냥꾼(Pale Hunter)이 네 냄새를 맡았다. 곧 찾아올 것이다.</span></label></li><li class="check-item"><label for="12-1"><input type="checkbox" class="wiki-check" id="12-1" data-check-id="12-1"> <span><strong>원령 <em>네 끔찍한 목적과 관련 없는 산 사람을 겁에 질리게 할 때</em></strong>, HP <button type="button" class="dice-roll" data-dice="1d8" title="클릭하여 1d8 굴림 — Shift: 유리 · Ctrl: 불리">1d8</button>을 되찾거나 원하는 쇠약 하나를 지운다.</span></label></li></ul>
+<p><strong><em>숙주가 피해를 받을 때</em></strong>, 너도 같은 만큼 HP를 잃는다. 네게 아직 HP가 남아 있는데 숙주가 죽으면, 빙의가 끝날 때까지 숙주를 살려 둘 수 있다.</p></div>
+<div class="move-block" id="breakdown" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-breakdown" data-check-id="mv-breakdown" aria-label="BREAKDOWN"> 폭주</h3><p>너는 생각도 감정도 없는 분노에 휩싸여 날뛰며, 그 분노는 다음 해 뜰 녘까지 이어진다. 무엇을 조각조각 기억하는지 GM에게 묻는다.</p></div>
+<div class="move-block" id="unstable" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-unstable" data-check-id="mv-unstable" aria-label="UNSTABLE"> 불안정</h3><p>(폭주 필요) 너는 생각도 감정도 없는 분노(폭주와 같은)에 빠지기 쉽다. <strong><em>6-를 굴릴 때</em></strong>, GM은 너를 그런 분노에 빠지게 할 수 있다.</p></div>
+<div class="move-block" id="disturbing" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-disturbing" data-check-id="mv-disturbing" aria-label="DISTURBING"> 섬뜩함</h3><p>네 존재는 (보이지 않더라도) 짐승과 아이들을 불안하게 한다. 네 주위의 공기는 눈에 띄게 서늘하며, 모습을 드러낼 때 특히 그렇다. <strong><em>위협과 섬뜩한 존재감을 써서 설득하기를 할 때</em></strong>, 유리를 얻는다.</p></div>
+<div class="move-block" id="otherworldly" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-otherworldly" data-check-id="mv-otherworldly" aria-label="OTHERWORLDLY"> 이 세상 것이 아님 <em>유령의 형체를 드러낼 때</em></h3><p>, 기이한 일이 일어난다. 석상이 눈물을 흘리고, 바위가 피를 흘리고, 식물이 시들고, 천장에 물이 고이는 등.</p></div>
+<div class="move-block" id="poltergeist" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-poltergeist" data-check-id="mv-poltergeist" aria-label="POLTERGEIST"> 폴터가이스트</h3><p>◇◇◇◇ <strong><em>화가 날 때</em></strong>, HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃고 그만큼 분노를 홀드한다. 분노를 1대1로 써서 다음을 한다.</p><ul class="bullets"><li>작은 평범한 물건 여러 개, 또는 큰 물건 하나를 박살 내거나, 부수거나, 파괴한다.</li><li>누군가에게 물건을 던지고 +DEX로 굴린다. <strong>10+이면 </strong>네 피해를 준다(<em>강타</em>). <strong>7-9면</strong> 네 피해를 주지만(<em>강타</em>) HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>를 잃는다.</li><li>염동력으로 누군가를 공격하고 +INT로 굴린다. <strong>10+이면</strong> 그를 네가 볼 수 있는 곳으로 내던져 거기에 붙잡아 둔다. 그가 빠져나오려고 온 힘을 쓸 때마다 HP 1을 쓴다. <strong>7-9면</strong> 10+와 같지만, HP <button type="button" class="dice-roll" data-dice="1d4" title="클릭하여 1d4 굴림 — Shift: 유리 · Ctrl: 불리">1d4</button>도 잃는다.</li></ul></div>
+<div class="move-block" id="quarry" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-quarry" data-check-id="mv-quarry" aria-label="QUARRY"> 사냥감</h3><p>창백한 사냥꾼(Pale Hunter)이 네 냄새를 맡았다. 곧 찾아올 것이다.</p></div>
+<div class="move-block" id="specter" data-move="sheet"><h3 class="move-name"><input type="checkbox" class="wiki-check" id="mv-specter" data-check-id="mv-specter" aria-label="SPECTER"> 원령 <em>네 끔찍한 목적과 관련 없는 산 사람을 겁에 질리게 할 때</em></h3><p>, HP <button type="button" class="dice-roll" data-dice="1d8" title="클릭하여 1d8 굴림 — Shift: 유리 · Ctrl: 불리">1d8</button>을 되찾거나 원하는 쇠약 하나를 지운다.</p></div>
 <h3 id="the-final-consequence">마지막 대가</h3>
 <p>인간성과의 가냘픈 연결이 끊어지고, 너는 GM이 조종하는 괴물이 된다.</p>
         </main>

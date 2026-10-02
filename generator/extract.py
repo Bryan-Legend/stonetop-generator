@@ -38,6 +38,7 @@ from .text import (
     M_C2,
     M_CX,
     M_CX2,
+    M_TAKES,
     M_E,
     M_ENDBOX,
     M_H2,
@@ -866,6 +867,21 @@ def extract_page_rich(
                 if ding >= 2:
                     recs.append({"y": y_top, "marks": ding})
                 continue
+            # A stray full stop set under a spiral bullet (the Blessed's
+            # Danu's Grasp: ". They're restrained…") hides the bullet from
+            # the test that it sits left of the line's first glyph.
+            if (
+                len(text_spans) > 1
+                and text_spans[0]["text"].strip() == "."
+                and any(
+                    abs((r.y0 + r.y1) / 2 - y_c) <= 6.0
+                    and abs(r.x0 - text_spans[0]["x"]) <= 4.0
+                    for r in r_spirals
+                )
+            ):
+                text_spans = text_spans[1:]
+                while len(text_spans) > 1 and not text_spans[0]["text"].strip():
+                    text_spans = text_spans[1:]
             first_x = text_spans[0]["x"]
             # Category icon left of / near this line. Icons often sit slightly
             # above the tag line and share an x with tab-indented body text,
@@ -919,6 +935,8 @@ def extract_page_rich(
             # that can be taken more than once prints two or three, and only
             # the first says where the item hangs.
             check_x = None
+            check_n = 1
+            grid_n = 1
             if bullet == "check":
                 row_checks = [
                     r
@@ -929,6 +947,18 @@ def extract_page_rich(
                 ]
                 if row_checks:
                     check_x = min(r.x0 for r in row_checks)
+                    check_n = len({round(r.x0) for r in row_checks})
+                # Boxes set along the line, each before a word of its own
+                # (the Would-Be Hero's destiny grid: "☐ anointed ☐ marked at
+                # birth ☐ your coming foretold"): one item per box.
+                grid_n = len(
+                    {
+                        round(r.x0)
+                        for r in r_checks
+                        if abs((r.y0 + r.y1) / 2 - y_c) <= 5.5
+                        and r.x0 > lead_x + 2
+                    }
+                ) + (1 if row_checks else 0)
             if bullet is None:
                 for r in r_spirals:
                     if (
@@ -1011,6 +1041,9 @@ def extract_page_rich(
             text = re.sub(r"([A-Za-z0-9])◇", r"\1 ◇", text)
             text = re.sub(r"◇([A-Za-z0-9])", r"◇ \1", text)
             text = re.sub(r"\s+([,;:.?!])", r"\1", text)
+            if grid_n > 1:
+                # the cells of a box-per-word row, set three spaces apart
+                text = re.sub(r"[ \t]{2,}", GRID_CELL, text)
             text = normalize_text(re.sub(r"\s+", " ", text)).strip()
             if not _defmt(text).strip():
                 continue
@@ -1093,6 +1126,8 @@ def extract_page_rich(
                     "size": dom_size,
                     "bullet": bullet,
                     "check_x": check_x,
+                    "check_n": check_n,
+                    "grid_n": grid_n,
                     "checked": checked,
                     "has_value": has_value,
                     "val": val_text,
@@ -1257,6 +1292,9 @@ def extract_page_rich(
                 if is_running_header(text, article_title, near_page_top=True):
                     continue
 
+            # The cells of a box-per-word row; any other line keeps its words.
+            grid_cells = _grid_cells(text)
+            text = text.replace(GRID_CELL, " ").strip()
             # De-tokenized copy for all content-based structural decisions;
             # `text` keeps its inline bold/italic sentinels for output.
             dtext = _defmt(text)
@@ -1530,7 +1568,15 @@ def extract_page_rich(
                 sub = False
                 if playbook and rec.get("check_x") is not None:
                     sub = (rec["check_x"] - col_x0) >= 5.0
-                if playbook and rec.get("checked"):
+                # A move that can be taken more than once prints a box for
+                # each time (Improved Stat: two; Big Magic: three).
+                if playbook and rec.get("check_n", 1) > 1:
+                    out.append(M_TAKES + str(rec["check_n"]))
+                if rec.get("grid_n", 1) > 1 and len(grid_cells) == rec["grid_n"]:
+                    for cell in grid_cells:
+                        out.append(M_C + cell)
+                    state["after_grid"] = True  # what follows is not the row's
+                elif playbook and rec.get("checked"):
                     out.append((M_CX2 if sub else M_CX) + _marked(text))
                 else:
                     out.append((M_C2 if sub else M_C) + _marked(text))
@@ -1741,6 +1787,8 @@ def extract_page_rich(
                 # (the space above a table's own dice header is not it ending)
                 if not is_row and not DICE_HEAD_RE.match(dtext):
                     state["table_open"] = False
+            if state.pop("after_grid", False) and not rec["bullet"] and not text.startswith(PARA_BREAK):
+                text = PARA_BREAK + text
             if is_row:
                 row_at = len(out)
                 prev_row = state.get("row") or {}
@@ -2059,6 +2107,36 @@ PARA_DEDENT = 8.0
 PARA_BREAK = "\x0b"
 # ...and one that ends a table: written to the corpus as M_PB.
 PARA_ROW_BREAK = "\x0c"
+# ...and the seam between two cells of a box-per-word row.
+GRID_CELL = "\x0e"
+
+
+def _grid_cells(text: str) -> list[str]:
+    """The cells of a box-per-word row, each with the bold/italic runs it
+    sits in opened and closed on its own ("<i>fearless   gluttonous</i>" is
+    two italic cells)."""
+    cells = []
+    bold = ital = False
+    for raw in text.split(GRID_CELL):
+        cell = raw.strip()
+        if not cell:
+            continue
+        lead = (B_ON if bold else "") + (I_ON if ital else "")
+        for ch in cell:
+            if ch == B_ON:
+                bold = True
+            elif ch == B_OFF:
+                bold = False
+            elif ch == I_ON:
+                ital = True
+            elif ch == I_OFF:
+                ital = False
+        tail = (I_OFF if ital else "") + (B_OFF if bold else "")
+        cell = lead + cell + tail
+        # an empty run opened at one end and closed at the other
+        cell = cell.replace(B_ON + B_OFF, "").replace(I_ON + I_OFF, "")
+        cells.append(cell)
+    return cells
 
 
 # Marker lines nothing is ever joined onto.
@@ -2323,6 +2401,44 @@ def merge_playbook_steps(
     return out, out_pages
 
 
+_SHEET_FRAGMENT_RE = re.compile(r"^(?:[a-z]|\+[A-Z]{3}\b|• ◇)")
+
+
+def join_playbook_fragments(
+    lines: list[str], pages: list[int]
+) -> tuple[list[str], list[int]]:
+    """Put back together the sentences a sheet's narrow columns broke.
+
+    A plain line that opens in lower case, or on a stat ("+INT: on a 10+…"),
+    carries on the item or paragraph above it; the join rules left these
+    apart where the line above looked finished ('…active here?"' / "and get
+    an honest answer."). A row of diamonds mid-sentence reads as a bullet
+    ("(instead of" / "• ◇◇ ). Also, …") and is taken back the same way. An
+    outcome ("on a 7-9, …") is set on a line of its own and stays one.
+    """
+    out: list[str] = []
+    out_pages: list[int] = []
+    for ln, pg in zip(lines, pages):
+        prev = out[-1] if out else ""
+        plain = _defmt(ln) if not ln.startswith("\x02") else ""
+        if (
+            prev
+            and plain
+            and _SHEET_FRAGMENT_RE.match(plain)
+            and not plain.startswith("on a ")
+            and (
+                not prev.startswith("\x02")
+                or prev.startswith((M_C, M_C2, M_CX, M_CX2, M_B))
+            )
+        ):
+            piece = ln[2:] if ln.startswith("• ") else ln
+            out[-1] = (prev + " " + piece).replace("◇ )", "◇)")
+            continue
+        out.append(ln)
+        out_pages.append(pg)
+    return out, out_pages
+
+
 def reorder_playbook_lines(
     lines: list[str], pages: list[int]
 ) -> tuple[list[str], list[int]]:
@@ -2410,6 +2526,7 @@ def extract_article_lines(
         first = False
     lines, pages = merge_wrapped_lines(raw, raw_pages)
     if playbook:
+        lines, pages = join_playbook_fragments(lines, pages)
         lines, pages = reorder_playbook_lines(lines, pages)
         lines, pages = merge_playbook_steps(lines, pages)
         keep = [i for i, ln in enumerate(lines) if ln != M_BAND]

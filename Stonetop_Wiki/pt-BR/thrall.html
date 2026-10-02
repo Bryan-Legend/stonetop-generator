@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">Moves</h2>
 <p>Você ganha tudo o que segue:</p>
-<h3 id="favor">Favor</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Você começa com isto"><input type="checkbox" checked disabled tabindex="-1"></span> Favor</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">Favor</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="Favor 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="Favor 1"></label><label class="track-step" for="thrall-favor-1" title="Favor 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="Favor 2"></label><label class="track-step" for="thrall-favor-2" title="Favor 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="Favor 3"></label></span></div>
 <p>Seu Favor começa em 0 e não pode passar de 3. Quando você <strong><em>tem 3 de Favor e ganharia mais</em></strong>, reduza seu Favor a 0 e escolha 1:</p>
 <ul class="bullets">
 <li>Faça uma pergunta ao seu mestre e ganhe vantagem na sua próxima rolagem para agir conforme a resposta.</li>
 <li>Ganhe uma Marca nova à sua escolha. Depois peça ao Mestre que escolha uma Marca que você não tem e risque-a—você nunca poderá ganhá-la.</li>
 </ul>
-<h3 id="urges">Ímpetos</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Você começa com isto"><input type="checkbox" checked disabled tabindex="-1"></span> Ímpetos</h3>
 <p>Quando <strong><em>o Mestre obriga você a agir conforme seu impulso</em></strong>, ganhe 1 de Favor se agir como mandado. Se resistir, role +SAB: <strong>com 10+</strong>, seus atos são seus; <strong>com 7-9</strong>, escolha 1:</p>
 <ul class="bullets">
 <li>Lutar pelo controle até alguém/alguma coisa tirar você desse estado</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>Com 6-</strong>, você volta a si depois, tendo feito sabe-se lá o quê.</p>
 <p>Quando você <strong><em>age conforme seu impulso sem ser obrigado a isso</em></strong> e seus atos causam problemas a você ou a seus aliados, ganhe 1 de Favor.</p>
-<h3 id="dark-succor">Socorro Sombrio</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Você começa com isto"><input type="checkbox" checked disabled tabindex="-1"></span> Socorro Sombrio</h3>
 <p>Quando você <strong><em>está morrendo ou é morto na hora</em></strong>, seu mestre intercede por você. Você vai se recuperar, aqui e agora ou num momento e num lugar à escolha do Mestre. Depois, role +Favor: <strong>com 10+</strong>, escolha 1; <strong>com 7-9</strong>, escolha 2; <strong>com 6-</strong>, as 3 se aplicam.</p>
 <ul class="bullets">
 <li>Ganhe uma Marca nova à escolha do Mestre</li>
@@ -282,47 +287,56 @@
 <li>Seu mestre lhe dá uma tarefa; até você concluí-la, seu Favor fica em 0.</li>
 </ul>
 <p>De todo modo, zere seu Favor.</p>
-<h3 id="unholy-vessel">Vaso Profano</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Você começa com isto"><input type="checkbox" checked disabled tabindex="-1"></span> Vaso Profano</h3>
 <p>Quando você <strong><em>ganharia uma Marca mas não resta nenhuma para ganhar</em></strong>, sua humanidade se perde por completo. Você vira uma ameaça sob o controle do Mestre. Faça um personagem novo.</p>
+</div>
 <h2 id="marks">Marcas</h2>
 <p>Quando você ganha este encarte pela primeira vez, o Mestre escolhe 1 Marca para você, conforme a natureza do seu mestre. Ganhe mais quando um movimento mandar.</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>Uma Podridão Supurante</strong> — Você não é ferido por veneno, doença, substâncias cáusticas nem mordidas de vermes. As coisas apodrecem, racham, corroem e estragam na sua presença.</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> Uma Podridão Supurante</h3>
+<p>Você não é ferido por veneno, doença, substâncias cáusticas nem mordidas de vermes. As coisas apodrecem, racham, corroem e estragam na sua presença.</p>
 <p>Quando você <strong><em>tira dados iguais</em></strong>, algo que você carrega é arruinado. O Mestre diz o quê e como.</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>Filho das Profundezas</strong> — Reduza seu HP máximo em 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> Filho das Profundezas</h3>
+<p>Reduza seu HP máximo em 2.</p>
 <p>Você consegue respirar na água e não sofre dano de frio nem de pressão. Sua pele fica escamosa. Quando você <strong><em>passa um dia sem se banhar</em></strong>, marque uma debilidade.</p>
 <p>Perto de um corpo d&#x27;água, você pode gastar 1 de Favor para chamar um tentáculo viscoso que faz o que você manda. Trate-o como um seguidor:</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">Tentáculo Viscoso</h3><p class="stat-tags">furtivo, implacável</p><p class="stat-stats"><strong>HP</strong> 6; <strong>Armadura</strong> 0<br><strong>Dano</strong> <button type="button" class="dice-roll" data-dice="d10" title="Clique para rolar d10 — Shift: vantagem · Ctrl: desvantagem">d10</button> (alcance, forte, agarrador)<br><strong>Instinto</strong> espremer a vida das coisas<br><strong>Custo</strong> vidas afogadas</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>Máscara Mortuária</strong> — Você acha ou fabrica uma máscara horrenda. Quando você <strong><em>não usa sua máscara</em></strong>, tem desvantagem em todas as rolagens.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> Máscara Mortuária</h3>
+<p>Você acha ou fabrica uma máscara horrenda. Quando você <strong><em>não usa sua máscara</em></strong>, tem desvantagem em todas as rolagens.</p>
 <p>Quando você <strong><em>usa sua máscara</em></strong>, os mortos-vivos tratam você como um dos seus.</p>
 <p>Quando você <strong><em>usa sua máscara</em></strong>, pode gastar 1 de Favor para encher de pavor qualquer ser vivo que veja você. Ele precisa escolher: fugir, se encolher ou se manter firme. Se ele se mantiver firme, você tem vantagem na sua primeira rolagem contra ele.</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>Sonhos de Mercúrio</strong> — Reduza seu HP máximo em 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> Sonhos de Mercúrio</h3>
+<p>Reduza seu HP máximo em 2.</p>
 <p>Quando <strong><em>você Acampa</em></strong>, todos que estão com você têm pesadelos e ficam com desvantagem na próxima rolagem.</p>
 <p>Você pode gastar 1 de Favor para impor sensações falsas a alguém, desde que consiga vê-lo.</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>Voraz</strong> — Você é tomado por uma fome sem fim. Ganhe um impulso extra: &quot;Devorar carne sem limite.&quot;</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> Voraz</h3>
+<p>Você é tomado por uma fome sem fim. Ganhe um impulso extra: &quot;Devorar carne sem limite.&quot;</p>
 <p>Quando você <strong><em>Acampa</em></strong>, consome <button type="button" class="dice-roll" data-dice="1d4" title="Clique para rolar 1d4 — Shift: vantagem · Ctrl: desvantagem">1d4</button> provisões ou usos de suprimentos a mais.</p>
 <p>Você pode gastar 1 de Favor para:</p>
 <ul class="bullets">
 <li>Tocar alguma coisa. Enquanto você a segurar, todos que a virem vão desejá-la.</li>
 <li>Ganhar umas fauces horrendas, capazes de rasgar ferro (<em>mão</em>, 3 perfurante, <em>sujo</em>), por quanto tempo quiser, e com elas a capacidade de comer e digerir qualquer coisa.</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>Ira Vermelha</strong> — Reduza seu HP máximo em 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> Ira Vermelha</h3>
+<p>Reduza seu HP máximo em 2.</p>
 <p>Quando <strong><em>o Mestre obriga você à violência</em></strong>, você tem desvantagem para resistir.</p>
 <p>Quando <strong><em>você solta sua fúria e ataca alguém</em></strong> (<em>mão</em>, <em>perto</em>), gaste de 1 a 3 de Favor e role +Favor gasto: <strong>com 10+</strong>, cause <button type="button" class="dice-roll" data-dice="2d8" title="Clique para rolar 2d8 — Shift: vantagem · Ctrl: desvantagem">2d8</button> de dano (<em>sujo</em>, <em>forte</em>) e choque, aterrorize ou impressione quem estiver olhando; <strong>com 7-9</strong>, como no 10+, mas você continua atacando sua vítima (ou o cadáver dela) numa fúria irracional, sem se importar com outros perigos.</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>Abraço Frio da Sombra</strong> — Reduza seu HP máximo em 2. Você não projeta sombra nem reflexo.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> Abraço Frio da Sombra</h3>
+<p>Reduza seu HP máximo em 2. Você não projeta sombra nem reflexo.</p>
 <p>Quando você está <strong><em>exposto à luz do sol ou a luz sagrada</em></strong>, não pode gastar Favor (por motivo nenhum).</p>
 <p>Fora isso, você pode gastar 1 de Favor para:</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>Não deixar rastro algum da sua ida nem da sua vinda</li>
 <li>Fazer uma mentira passar por verdade óbvia e evidente</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>Diga a Verdade, Sussurre Segredos</strong> — Reduza seu HP máximo em 2. Sua língua fica muito comprida e seus dentes ficam manchados e irregulares.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> Diga a Verdade, Sussurre Segredos</h3>
+<p>Reduza seu HP máximo em 2. Sua língua fica muito comprida e seus dentes ficam manchados e irregulares.</p>
 <p>Você pode gastar 1 de Favor para olhar alguém nos olhos e descobrir (escolha 1):</p>
 <ul class="bullets">
 <li>O que essa pessoa deseja acima de tudo?</li>
@@ -341,10 +356,12 @@
 <li>Qual é a pior lembrança dela?</li>
 </ul>
 <p>Quando você <strong><em>usa a resposta contra ela</em></strong>, você tem vantagem.</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>Bênção do Tormento</strong> — Seus ferimentos demoram a cicatrizar. Quando você recupera HP, recupera só metade do que deveria. Mas você nunca precisa Desafiar o Perigo por dor, perda de sangue ou fraqueza causada por ferimentos.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> Bênção do Tormento</h3>
+<p>Seus ferimentos demoram a cicatrizar. Quando você recupera HP, recupera só metade do que deveria. Mas você nunca precisa Desafiar o Perigo por dor, perda de sangue ou fraqueza causada por ferimentos.</p>
 <p>Quando você <strong><em>profere uma palavra de tormento</em></strong>, nomeie alguém ali perto, gaste de 1 a 3 de Favor e role +Favor gasto: <strong>com 10+</strong>, essa pessoa sofre <button type="button" class="dice-roll" data-dice="2d4" title="Clique para rolar 2d4 — Shift: vantagem · Ctrl: desvantagem">2d4</button> de dano e é tomada de dor—vítimas menores ficam incapacitadas e inimigos poderosos ficam atordoados por um instante; <strong>com 7-9</strong>, ela sofre <button type="button" class="dice-roll" data-dice="1d6" title="Clique para rolar 1d6 — Shift: vantagem · Ctrl: desvantagem">1d6</button> de dano (ignora armadura) e vítimas menores ficam atordoadas por um instante.</p>
+</div>
         </main>
       </div>
     </div>

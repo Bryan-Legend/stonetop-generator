@@ -32,10 +32,20 @@ C	<b>REVERENCE</b> To demand sacrifice to the spirits and Danu.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	fresh-faced hale & hearty gray & wizened
-C	imperious voice raspy voice soothing voice
-C	curvy strapping rail-thin solid willowy
-C	ceremonial robes furs, leather work clothes
+C	fresh-faced
+C	hale & hearty
+C	gray & wizened
+C	imperious voice
+C	raspy voice
+C	soothing voice
+C	curvy
+C	strapping
+C	rail-thin
+C	solid
+C	willowy
+C	ceremonial robes
+C	furs, leather
+C	work clothes
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Arwel, Blodwen, Brynmor, Celyn, Fflur, Gwynn, Tegwen, or Winned
@@ -64,22 +74,23 @@ P	You start with Spirit Tongue, Call the Spirits, 1 from your Background, and 1 
 HR
 C	<b>AMULETS & TALISMANS</b> When you <b><i>craft a protective charm for someone</i></b>, spend 1 Stock and name a source of harm (fire, stabbing, etc.). When they <b><i>would suffer such harm</i></b> <b><i>while bearing your charm</i></b>, roll +INT: <b>on a 10+</b>, they ignore the harm entirely; <b>on a 7-9</b>, they suffer only half the damage or effect; <b>on a 6-</b>, they suffer the harm normally. One can benefit from only 1 charm at a time, and it loses its potency after 1 use.
 C	<b>BARKSKIN</b> When you <b><i>are touching the earth</i></b>, you have 2 armor. When you <b><i>mark another with 1 Stock</i></b>, they gain this benefit so long as the mark remains.
+TAKES	2
 C	<b>BIG MAGIC</b> Each time you take this move, choose an additional remarkable trait for your sacred pouch and increase your max Stock by 2.
 C	<b>DANU'S GRASP</b> When you <b><i>call on the world itself to bind a spirit or a</i></b> <b><i>perversion of nature</i></b>, spend 1 Stock and roll +WIS:
 P	<b>on a 7-9</b>, roots, vines, and earth pull at them, and they pick 1; <b>on a 10+</b>, as a 7-9, but both apply.
-P	. They're restrained, unable to act freely until your focus slips or they tear their way free
+B	They're restrained, unable to act freely until your focus slips or they tear their way free
 B	They take 2d4 damage (ignores armor)
 P	If this brings them to 0 HP, they are pulled into the earth and bound in rune-etched stone.
 C	<b>HEALER'S ARTS</b> When <b><i>someone Recovers under your care</i></b>, they recover (extra) HP equal to your WIS. If you <b><i>also</i></b> <b><i>spend 1 Stock</i></b>, they heal an extra 5 HP and their wounds/injuries are stabilized.
 C	<b>HEED MY WORDS</b> When you <b><i>Persuade by talking sense or warning</i></b> <b><i>against foolishness,</i></b> you have advantage.
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 C	<b>INTO THE LION'S DEN</b> When you <b><i>approach a beast calmly and show no</i></b> <b><i>fear</i></b>, it will not harm you (though it may threaten you and test your nerve). When you <b><i>lay your hand</i></b> <b><i>gently upon a beast</i></b>, it calms to your touch.
 C	<b>LIGHTNING ROD</b> When you <b><i>Defend while touching the earth</i></b>, you can spend 1 Readiness to intercept a nearby magical attack and redirect it harmlessly into the ground.
 C	<b>RITES OF THE LAND</b> ◇◇◇◇ Once per season, when you <b><i>oversee the sacred rites</i></b>, hold 1 Boon. If you also sacrifice 1 Surplus, hold 4 Boon instead. Spend Boon in lieu of Stock, 1-for-1.
 P	When you <b><i>publicly sacrifice something or someone</i></b> <b><i>much-loved</i></b>, either clear a steading debility or gain advantage when the steading next rolls +Fortunes.
 CX	<b>SPIRIT TONGUE</b>
-P	You can speak with beasts and spirits. You can always ask the GM, "What spirits are active here?"
-P	and get an honest answer.
+P	You can speak with beasts and spirits. You can always ask the GM, "What spirits are active here?" and get an honest answer.
 C2	<b>BORROW POWER</b>
 P	(Requires Spirit Tongue)
 P	When <b><i>a spirit or beast loans you power</i></b>, ask the GM for one of its tags or moves. Store it in your pouch in place of 1 Stock. When you <b><i>use the borrowed tag or</i></b> <b><i>move</i></b>, roll +WIS: <b>on a 10+</b>, you do it and can use the power again; <b>on a 7-9</b>, you do it, but lose the power.
@@ -92,8 +103,8 @@ C	<b>VEIL</b> When you <b><i>wrap yourself or another in a subtle veil,</i></b> 
 B	A type of being you name (including "people") will tend to ignore your presence
 B	People will perceive you as someone else, though you must wear something of an individual's in order to impersonate them When <b><i>your deception comes under scrutiny</i></b>, roll +INT: <b>on a 10+</b>, the veil holds, and no one is the wiser; <b>on a 7-9</b>, the veil holds, but there is further scrutiny or a complication (GM's choice).
 C	<b>WARDS & BINDINGS</b> When you <b><i>mark a boundary with sacred signs</i></b>, spend 1 Stock and describe who or what they affect (using no more words than your level). Also, choose whether the affected beings are repelled or trapped by the signs.
-P	When y<b><i>our wards or bindings are first tested</i></b>, roll
-P	+INT: <b>on 10+</b>, they will hold as long as the signs remain unmarred (and the affected creature can do nothing to affect them directly); <b>on a 7-9</b>, they hold for now but may be overcome through might or will.
+P	When y<b><i>our wards or bindings are first tested</i></b>, roll +INT: <b>on 10+</b>, they will hold as long as the signs remain unmarred (and the affected creature can do nothing to affect them directly); <b>on a 7-9</b>, they hold for now but may be overcome through might or will.
+TAKES	2
 C	<b>WILD SOUL</b> (Requires level 2+ and the Blessed) Each time you take this move, gain a Ranger move of your choice for which you qualify. You can't pick Improved Stat or Superior Stat.
 C	<b>NATURE'S WRATH</b> (Requires level 6+ and Danu's Grasp) Danu's Grasp gains the <i>area</i> tag and can affect any creature. A mortal reduced to 0 HP is subdued or killed (your choice) rather than bound in stone.
 C	<b>POTENT WORKINGS</b> (Requires level 6+ and Amulets & Talismans) When you <b><i>craft a protective charm</i></b>, you may spend 1 additional Stock to choose 1:
@@ -112,9 +123,20 @@ P	Your sacred pouch (<i>magical</i>) doesn't take up space in your inventory. It
 P	When you <b><i>have a few days of downtime in familiar</i></b> <b><i>terrain</i></b>, you may replenish your Stock.
 P	When you <b><i>Forage</i></b>, you can produce Stock instead of provisions.
 P	Your sacred pouch is... (choose 1 on each line)
-C	an heirloom made just for you your own work
-C	fur drakescale leather woven demonflesh
-C	unadorned beadwork rich dyes runes What remarkable trait does it possess? (choose 1)
+C	an heirloom
+C	made just for you
+C	your own work
+C	fur
+C	drakescale
+C	leather
+C	woven
+C	demonflesh
+C	unadorned
+C	beadwork
+C	rich dyes
+C	runes
+PB
+P	What remarkable trait does it possess? (choose 1)
 C	It cannot be cut, torn, or burned by any natural means.
 C	Unless someone is specifically searching for your pouch, they will ignore its presence.
 C	So long as the pouch is sealed, nothing within can be detected or found by magic, nor can anything within escape or affect the outside world.
@@ -128,10 +150,14 @@ C	... given wide berth by most, and approached only with care and propitiation.
 C	... neglected and all but forgotten, except by a few.
 P	What do the folk of Stonetop leave as offerings?
 P	(choose 2-3)
-C	fruits of harvest figurines/effigies
-C	whisky/spirits salt/crystals
-C	pure rain water metal nails/tools
-C	blood/burnt flesh incense/sage bark
+C	fruits of harvest
+C	figurines/effigies
+C	whisky/spirits
+C	salt/crystals
+C	pure rain water
+C	metal nails/tools
+C	blood/burnt flesh
+C	incense/sage bark
 H2	Introductions
 P	Wait here for everyone else. When everyone's ready, take turns introducing your characters. When <b><i>someone reveals something and you want to know</i></b> <b><i>more</i></b>, ask them about it. When <b><i>someone asks you a</i></b> <b><i>question</i></b>, answer it truthfully.
 STEP	1	On your first turn, <b>introduce yourself</b> by name, pronouns, background, origin, and appearance.

@@ -30,10 +30,19 @@ HR
 C	<b>TRICKERY</b> To deceive, misdirect, outthink.
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	young pup "responsible" adult cagey old-timer
-C	a pleasant voice sharp & nasally well-spoken
-C	lithe heavyset gangly like a whippin' stick
-C	a light step a brisk stride more like a strut
+C	young pup
+C	"responsible" adult
+C	cagey old-timer
+C	a pleasant voice
+C	sharp & nasally
+C	well-spoken
+C	lithe
+C	heavyset
+C	gangly
+C	like a whippin' stick
+C	a light step
+C	a brisk stride
+C	more like a strut
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Bran, Carwyn, Delyth, Elin, Fion, Geral, Mair, Rannon, Vaughn, or Wynn
@@ -75,17 +84,18 @@ B	You set something up to exploit on your return
 B	Ask a Seek Insight question about what you saw
 P	<b>On a 6-</b>, you either make it back but with trouble in tow, or you're missing in action (your call).
 C	<b>CATLIKE</b> When you <b><i>carry a light load and act with care</i></b>, you move silently. When you <b><i>hide in shadows or darkness</i></b>, you remain unseen until you draw attention to yourself, move positions, or attack.
+TAKES	3
 C	<b>DABBLER</b> (Requires level 2+ and the Fox) Each time you take this move, choose a move from the Heavy, Marshal, Ranger, or Seeker playbooks for which you otherwise qualify. (You can't take Improved Stat or Superior Stat.)
 C	<b>DANGER SENSE</b> You can always ask the GM, "Is there an ambush or trap here?" If they say "yes," roll +INT: <b>on a 10+</b>, ask the GM both of the questions below; <b>on a 7-9</b>, ask 1; <b>either way</b>, gain advantage on your next roll to act on the answer(s).
 Q	What will trigger the ambush or trap?
 Q	What will happen once it's triggered?
 P	<b>On a 6-</b>, don't mark XP; you know there's a trap or ambush, but nothing bad happens just yet.
 C	<b>FREE RUNNING</b> When you <b><i>carry a light load and move with speed</i></b> <b><i>and grace</i></b>, gain advantage on any move to surmount or bypass a physical obstacle.
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 C	<b>IRRESISTIBLE</b> When you <b><i>interact with someone</i></b>, you can ask their player if they find you attractive and get an honest answer (usually "yes").
 P	When you <b><i>Persuade by using your considerable</i></b> <b><i>charms as leverage</i></b>, you have advantage.
-C	<b>LAUGH AT DANGER</b> When you <b><i>are about to roll +CON and you make a</i></b> <b><i>joke about the adversity you face</i></b>, you can roll
-P	+CHA instead.
+C	<b>LAUGH AT DANGER</b> When you <b><i>are about to roll +CON and you make a</i></b> <b><i>joke about the adversity you face</i></b>, you can roll +CHA instead.
 C	<b>LIGHT FINGERS</b> When you <b><i>perform sleight of hand on an unwary</i></b> <b><i>mark</i></b>, you succeed and no one's the wiser. If you're being watched, roll +DEX: <b>on a 10+</b>, you succeed and no one's the wiser; <b>on a 7-9</b>, you succeed OR no one's the wiser (your choice).
 PAGE	111
 C	<b>PERCEPTIVE</b> When you <b><i>Seek Insight</i></b>, you may ask 1 additional question. Even on a 6-, you can ask 1 question (though you might not like how you learn the answer).
@@ -118,15 +128,21 @@ PAGE	112
 H2	Tall tales
 P	Someone like you gets into all sorts of trouble, whether you mean to or not. Mix and match the following to come up with a couple of your more memorable adventures, and write them down in the space at the bottom of this column.
 P	There was that time that you… (choose 1 per tale)
-C	… got lost in (choose 1) the Great Wood
-C2	the Flats the Steplands Ferrier's Fen
-C2	the Foothills the Huffel Peaks
+C	… got lost in (choose 1)
+C	the Great Wood
+C	the Flats
+C	the Steplands
+C	Ferrier's Fen
+C	the Foothills
+C	the Huffel Peaks
 C	… were on watch when the crinwin raided
 C	… dared each other to explore the Ruined Tower
 C	… managed to rile up a small band of Hillfolk
 C	… braved the Labyrinth, just a little
 C	… stole that crazy old man's book
-C	… went poking about the old Barrow Mounds And you ended up… (choose 1 or 2 per tale)
+C	… went poking about the old Barrow Mounds
+PB
+P	And you ended up… (choose 1 or 2 per tale)
 C	… running for your life from
 HR
 C	… landing a well-placed blow

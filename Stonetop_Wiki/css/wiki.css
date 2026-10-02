@@ -2531,6 +2531,26 @@ li.check-item input.wiki-check:checked + span {
   color: var(--answer);
 }
 
+/* A sheet's moves: each a card with its tick box(es) on its name — one box
+   per time the move can be taken (Improved Stat prints three). A ticked card
+   takes the answer color, the way a ticked improvement does. */
+.move-block[data-move] { margin: .45rem 0 .55rem; padding: .4rem .6rem .5rem; break-inside: avoid; }
+.move-block[data-move] .move-name { font-size: .95rem; margin: 0 0 .2rem; line-height: 1.3; }
+.move-block[data-move] .move-name input {
+  width: 1rem; height: 1rem; margin: 0 .2rem 0 0; vertical-align: -.12em;
+  accent-color: var(--answer);
+}
+.move-block[data-move] .move-name input.wiki-check { cursor: pointer; }
+.move-block[data-move] .move-name .check-fixed input { opacity: 1; cursor: default; }
+.move-block[data-move] > p { margin: .2rem 0; }
+.move-block[data-move~="sub"] { margin-left: 1.15rem; width: calc(100% - 1.15rem); }
+.move-block[data-move]:has(> .move-name input:checked) {
+  border-left-color: rgba(var(--answer-rgb), .85);
+}
+.move-block[data-move]:has(> .move-name input:checked) > .move-name {
+  color: var(--answer);
+}
+
 /* ----- write-in boxes -----
    These sit on the page permanently, the way the sheet prints them, so they
    are set in the display face rather than in the italics an answer note uses

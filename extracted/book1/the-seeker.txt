@@ -33,10 +33,19 @@ C	<b>VISION</b> To think big and pursue grandiose goals.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	curiously young world-weary bent with years
-C	haunted voice rich voice whispery
-C	ink-stained fingers sinewy hands soft hands
-C	bony limbed lean & lanky short thick-set
+C	curiously young
+C	world-weary
+C	bent with years
+C	haunted voice
+C	rich voice
+C	whispery
+C	ink-stained fingers
+C	sinewy hands
+C	soft hands
+C	bony limbed
+C	lean & lanky
+C	short
+C	thick-set
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Alis, Dylan, Eilwen, Gerlt, Gwenda, Macsen, Mirgan, Owena, Taliesyn, or Twymor
@@ -51,8 +60,7 @@ STATS	{"gloss": "Assign these scores: +2, +1, +1, +0, +0, -1. When a debility is
 PAGE	135
 H2	Special possessions (Pick 2, in addition to your scribe's tools)
 HR
-CX	<b>Scribe's tools</b>: parchment, ink, pigments, vials,
-P	quills, ◇ a notebook, etc.
+CX	<b>Scribe's tools</b>: parchment, ink, pigments, vials, quills, ◇ a notebook, etc.
 C	<b>Books & scrolls</b> (◇◇◇◇◇ uses): expend a use to consult your collection and turn a Know Things roll you just made into a 10+.
 C	<b>Distillery</b>: skins of fine whisky (◇◇ uses, grants advantage to Persuade), copper tubes, malt, ◇◇ firkins, stills, barrels, etc.
 C	<b>Engineer's tools</b>: rulers, tapes, rods, plumb-bobs, ◇ tripods, ◇ block & tackles, wheelbarrow, etc.
@@ -70,7 +78,9 @@ C	<b>CONDUIT OF POWER</b> When you <b><i>would mark a Consequence from a major</
 C	<b>COUNTERMEASURES</b> When you <b><i>witness a magical effect</i></b>, you may ask the GM, "how can this be countered or interrupted?" and get an honest answer. You or an ally gain advantage on your next roll to act on the answer.
 C	<b>EVERYTHING BLEEDS</b> When you <b><i>exploit an unnatural foe's specific weakness or vulnerability</i></b>, deal +1d6 damage.
 C	<b>EVERYTHING BURNS</b> When you <b><i>inspect a work of artifice or magic for a</i></b> <b><i>fatal flaw</i></b>, roll +INT: <b>on a 7+</b>, the GM will reveal the best way to destroy/sabotage it; <b>on a 10+</b>, you or an ally also gain advantage to act on the info.
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
+TAKES	3
 C	<b>INITIATE OF THE SECRET ARTS</b> (Requires level 2+ and the Seeker) You have a "Sacred Pouch" (3 Stock, <i>magical</i>), as per the Blessed, but with no remarkable traits. Each time you take this move, choose a Blessed move for which you otherwise qualify. (You can't take Improved Stat or Superior Stat.)
 C	<b>LET'S MAKE A DEAL</b> When you <b><i>Seek Insight</i></b>, add "What do they really want or need?" to the list of questions. When you <b><i>Persuade by offering them something that you know</i></b> <b><i>they want or need</i></b>, treat a 7-9 as a 10+.
 C	<b>LOGBOOK</b> ◇◇ You have a logbook (2 uses, <i>slow</i>) that doesn't take up space in your inventory. When you (and only you) <b><i>consult your logbook and expend a use</i></b>, you can ignore a Know Things roll you just made and treat the result as a 10+. When <b><i>the Seasons Change</i></b>, reset your logbook to 2 uses.
@@ -90,6 +100,7 @@ C	<b>QUICK STUDY</b> When you <b><i>study something magical that should take</i>
 P	If it should take weeks, it takes days. If it should take days, it takes only a few hours.
 C	<b>SAFETY FIRST</b> ◇◇ When you <b><i>spend an hour or so preparing your</i></b> <b><i>mystical defenses</i></b>, hold 2 Protection. When you <b><i>are</i></b> <b><i>affected by harmful magic</i></b>, spend 1 Protection either to gain advantage on any roll to resist it or to halve its damage/effects.
 C	<b>SAGE ADVICE</b> When <b><i>another PC asks you for guidance</i></b>, they get advantage on their next roll to follow your advice.
+TAKES	3
 CX	<b>WELL VERSED</b>
 P	Mark 1 topic, in addition to the one noted in your Background. Each additional time you take this move, mark 2 more topics.
 C	The Last Door, death, and the undead

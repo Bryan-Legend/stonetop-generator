@@ -36,10 +36,18 @@ C	<b>WONDER</b> To marvel at beauty, magnificence, splendor.
 HR
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	fledgling prime specimen long in the tooth
-C	barking voice growling voice sing-song voice
-C	compact & sturdy long & lean wolfish
-C	shaggy threadbare well-groomed
+C	fledgling
+C	prime specimen
+C	long in the tooth
+C	barking voice
+C	growling voice
+C	sing-song voice
+C	compact & sturdy
+C	long & lean
+C	wolfish
+C	shaggy
+C	threadbare
+C	well-groomed
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Aran, Bledyn, Branwen, Deryn, Ifur, Meinir, Rhys or Teagan
@@ -72,6 +80,7 @@ HR
 C	<b>A SAFE PLACE</b> ◇◇ When you <b><i>select and prepare the party's camp site</i></b>, hold 1 Precaution, or 2 Precaution if you are wellversed with this area and its dangers.
 P	If trouble finds your camp site, you can spend 1 Precaution to reveal a simple defense, warning, or trick that you prepared in advance. If you do, tell us how you knew to make that specific preparation.
 C	<b>ANIMAL COMPANION</b> You are accompanied by a beast of uncommon loyalty and cleverness. See the Animal Companion insert for details.
+TAKES	2
 C2	<b>MAGNIFICENT SPECIMEN</b>
 P	(Requires Animal Companion)
 P	Each time you take this move, your companion gains 2 additional options of your choice.
@@ -89,6 +98,7 @@ C	<b>EXPERT TRACKER</b> When you <b><i>Seek Insight by searching for or studying
 P	When you <b><i>follow a creature's trail</i></b>, roll +WIS: <b>on a</b> <b>7+</b> you follow it to a significant change in terrain or activity; <b>on a 10</b>+, you can ask the GM a reasonable question about your quarry and get a useful answer.
 CX	<b>HOME ON THE RANGE</b>
 P	When <b><i>a journey requires you to Defy Danger or</i></b> <b><i>Struggle as One</i></b>, treat a 6- as a 7-9.
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 C	<b>MENTAL MAP</b> You can always retrace your steps and can accurately gauge distances and directions. You might not know the way forward but can always find your way back.
 P	When you <b><i>think back on a place you've been</i></b>, you can Seek Insight retroactively, as if you were still there.
@@ -109,11 +119,13 @@ B	Will its taint spread? If so, how can I contain it?
 B	What useful (but grisly) bits can I harvest?
 B	What else can I learn about it or its ilk?
 C	<b>WILD SPEECH</b> The grunts, barks, chirps, and calls of natural beasts are as a language to you. You can understand their intentions and communicate basic ideas. When you <b><i>Persuade a beast</i></b>, you can choose to roll +WIS.
+TAKES	2
 C	<b>WORLDLY</b> (Requires level 2+ and the Ranger) Take a move from the Blessed, Fox, Heavy, Marshal, or Seeker playbooks, for which you otherwise qualify. You can pick from a different playbook each time. You can't pick Improved Stat or Superior Stat.
 C	<b>ALPHA</b> (Requires level 6+, and Wild Speech or Spirit Tongue) When you <b><i>assert dominance over another (beast,</i></b> <b><i>spirit, Fae, or person)</i></b>, roll +WIS: <b>on a 7+</b>, they must pick 1 from the list below; <b>on a 10+</b>, you also have advantage on your next roll against them.
 B	Accept your authority, at least for now
 B	Slink away or flee, then avoid you
 B	Fight you for dominance
+TAKES	2
 C	<b>BEAST OF LEGEND</b> (Requires level 6+ and Magnificent Specimen) Each time you take this move, pick 1:
 B	They are <i>exceptional</i> (and roll +2 instead of +1)
 B	They get +4 HP and +1 armor

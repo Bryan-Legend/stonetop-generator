@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">Movimientos</h2>
 <p>Ganas todos los siguientes:</p>
-<h3 id="favor">Favor</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Empiezas con esto"><input type="checkbox" checked disabled tabindex="-1"></span> Favor</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">Favor</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="Favor 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="Favor 1"></label><label class="track-step" for="thrall-favor-1" title="Favor 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="Favor 2"></label><label class="track-step" for="thrall-favor-2" title="Favor 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="Favor 3"></label></span></div>
 <p>Tu Favor empieza en 0 y no puede superar 3. Cuando <strong><em>tienes 3 de Favor y fueras a ganar otro</em></strong>, reduce tu Favor a 0 y elige 1:</p>
 <ul class="bullets">
 <li>Haz una pregunta a tu amo y gana ventaja en tu próxima tirada para actuar según la respuesta.</li>
 <li>Gana una Marca nueva de tu elección. Luego pide al DJ que elija una Marca que no tengas y táchala: nunca podrás ganarla.</li>
 </ul>
-<h3 id="urges">Compulsiones</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Empiezas con esto"><input type="checkbox" checked disabled tabindex="-1"></span> Compulsiones</h3>
 <p>Cuando <strong><em>el DJ te compele a actuar según tu impulso</em></strong>, gana 1 de Favor si actúas como se te ordena. Si te resistes, tira +WIS: <strong>con 10+</strong>, tus actos son tuyos; <strong>con 7-9</strong>, elige 1:</p>
 <ul class="bullets">
 <li>Forcejea por el control hasta que algo o alguien te saque de ello</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>Con 6-</strong>, vuelves en ti más tarde, tras haber hecho sabrán los dioses qué.</p>
 <p>Cuando <strong><em>actúas según tu impulso sin que te compelan a ello</em></strong>, y tus actos os causan problemas a ti o a tus aliados, gana 1 de Favor.</p>
-<h3 id="dark-succor">Socorro Oscuro</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Empiezas con esto"><input type="checkbox" checked disabled tabindex="-1"></span> Socorro Oscuro</h3>
 <p>Cuando <strong><em>estás muriendo o te matan en el acto</em></strong>, tu amo intercede por ti. Te recuperarás, aquí y ahora o en el momento y el lugar que elija el DJ. Luego, tira +Favor: <strong>con 10+</strong>, elige 1; <strong>con 7-9</strong>, elige 2; <strong>con 6-</strong>, se aplican las 3.</p>
 <ul class="bullets">
 <li>Gana una Marca nueva a elección del DJ</li>
@@ -282,47 +287,56 @@
 <li>Tu amo te encarga una tarea; hasta que la completes, tu Favor se queda en 0.</li>
 </ul>
 <p>En cualquier caso, devuelve tu Favor a 0.</p>
-<h3 id="unholy-vessel">Vasija Impía</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Empiezas con esto"><input type="checkbox" checked disabled tabindex="-1"></span> Vasija Impía</h3>
 <p>Cuando <strong><em>fueras a ganar una Marca pero no queda ninguna por ganar</em></strong>, tu humanidad se pierde por completo. Te conviertes en una amenaza bajo el control del DJ. Crea un personaje nuevo.</p>
+</div>
 <h2 id="marks">Marcas</h2>
 <p>Cuando ganas este inserto por primera vez, el DJ elegirá 1 Marca para ti, según la naturaleza de tu amo. Gana más cuando un movimiento te lo diga.</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>Podredumbre Purulenta</strong> — No te dañan el veneno, la enfermedad, las sustancias cáusticas ni las mordeduras de alimañas. Las cosas en tu presencia se pudren, se agrietan, se corroen y se echan a perder.</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> Podredumbre Purulenta</h3>
+<p>No te dañan el veneno, la enfermedad, las sustancias cáusticas ni las mordeduras de alimañas. Las cosas en tu presencia se pudren, se agrietan, se corroen y se echan a perder.</p>
 <p>Cuando <strong><em>sacas dobles</em></strong>, algo que llevas encima se echa a perder. El DJ te dirá qué, y cómo.</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>Hijo de las Profundidades</strong> — Reduce tu HP máximo en 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> Hijo de las Profundidades</h3>
+<p>Reduce tu HP máximo en 2.</p>
 <p>Puedes respirar bajo el agua y no sufres daño por el frío ni la presión. Tu piel se vuelve escamosa. Cuando <strong><em>pasas un día sin bañarte</em></strong>, marca una debilidad.</p>
 <p>Cerca de una masa de agua, puedes gastar 1 de Favor para invocar un tentáculo viscoso que cumpla tus órdenes. Trátalo como un seguidor:</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">Tentáculo Viscoso</h3><p class="stat-tags">sigiloso, implacable</p><p class="stat-stats"><strong>HP</strong> 6; <strong>Armadura</strong> 0<br><strong>Daño</strong> <button type="button" class="dice-roll" data-dice="d10" title="Haz clic para tirar d10 — Mayús: ventaja · Ctrl: desventaja">d10</button> (alcance, contundente, agarrador)<br><strong>Instinto</strong> estrujar la vida de las cosas<br><strong>Coste</strong> vidas ahogadas</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>Máscara Mortuoria</strong> — Encuentras o fabricas una máscara horrenda. Cuando <strong><em>no llevas puesta tu máscara</em></strong>, tienes desventaja en todas las tiradas.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> Máscara Mortuoria</h3>
+<p>Encuentras o fabricas una máscara horrenda. Cuando <strong><em>no llevas puesta tu máscara</em></strong>, tienes desventaja en todas las tiradas.</p>
 <p>Cuando <strong><em>llevas puesta tu máscara</em></strong>, los no muertos te tratan como a uno de los suyos.</p>
 <p>Cuando <strong><em>llevas puesta tu máscara</em></strong>, puedes gastar 1 de Favor para llenar de pavor a cualquier ser vivo que te vea. Debe elegir: huir, encogerse o plantar cara. Si planta cara, tienes ventaja en tu primera tirada contra él.</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>Sueños de Azogue</strong> — Reduce tu HP máximo en 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> Sueños de Azogue</h3>
+<p>Reduce tu HP máximo en 2.</p>
 <p>Cuando <strong><em>Acampas</em></strong>, todos los que te acompañan sufren pesadillas y tienen desventaja en su próxima tirada.</p>
 <p>Puedes gastar 1 de Favor para infligir sensaciones falsas a alguien, siempre que puedas verlo.</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>Voraz</strong> — Te llena un hambre sin fin. Gana un impulso extra: «Devorar carne sin freno».</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> Voraz</h3>
+<p>Te llena un hambre sin fin. Gana un impulso extra: «Devorar carne sin freno».</p>
 <p>Cuando <strong><em>Acampas</em></strong>, consume <button type="button" class="dice-roll" data-dice="1d4" title="Haz clic para tirar 1d4 — Mayús: ventaja · Ctrl: desventaja">1d4</button> provisiones o usos de suministros adicionales.</p>
 <p>Puedes gastar 1 de Favor para:</p>
 <ul class="bullets">
 <li>Tocar algo. Mientras lo sostengas, todo el que lo vea lo deseará.</li>
 <li>Ganar unas fauces horrendas que desgarran el hierro (<em>mano</em>, 3 perforante, <em>sucio</em>) durante el tiempo que quieras, y con ellas la capacidad de comer y digerir cualquier cosa.</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>Ira Roja</strong> — Reduce tu HP máximo en 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> Ira Roja</h3>
+<p>Reduce tu HP máximo en 2.</p>
 <p>Cuando <strong><em>el DJ te compele a la violencia</em></strong>, tienes desventaja para resistirte.</p>
 <p>Cuando <strong><em>dejas volar tu furia y arremetes contra alguien</em></strong> (<em>mano</em>, <em>cerca</em>), gasta 1-3 de Favor y tira +Favor gastado: <strong>con 10+</strong>, inflige <button type="button" class="dice-roll" data-dice="2d8" title="Haz clic para tirar 2d8 — Mayús: ventaja · Ctrl: desventaja">2d8</button> de daño (<em>sucio</em>, <em>contundente</em>) y escandaliza, aterra o impresiona a los presentes; <strong>con 7-9</strong>, como con 10+, pero sigues atacando a tu víctima (o a su cadáver) en una rabia irreflexiva, ajeno a cualquier otro peligro.</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>El Frío Abrazo de la Sombra</strong> — Reduce tu HP máximo en 2. No proyectas sombra ni reflejo.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> El Frío Abrazo de la Sombra</h3>
+<p>Reduce tu HP máximo en 2. No proyectas sombra ni reflejo.</p>
 <p>Cuando estás <strong><em>expuesto a la luz del sol o a luz sagrada</em></strong>, no puedes gastar Favor (por ningún motivo).</p>
 <p>En caso contrario, puedes gastar 1 de Favor para:</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>No dejar rastro de tus idas y venidas</li>
 <li>Colar una mentira como una verdad obvia y evidente</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>Decir Verdades, Susurrar Secretos</strong> — Reduce tu HP máximo en 2. Tu lengua crece de forma anómala y tus dientes se manchan y se vuelven mellados.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> Decir Verdades, Susurrar Secretos</h3>
+<p>Reduce tu HP máximo en 2. Tu lengua crece de forma anómala y tus dientes se manchan y se vuelven mellados.</p>
 <p>Puedes gastar 1 de Favor para mirar a alguien a los ojos y averiguar (elige 1):</p>
 <ul class="bullets">
 <li>¿Qué desea por encima de todo?</li>
@@ -341,10 +356,12 @@
 <li>¿Cuál es su peor recuerdo?</li>
 </ul>
 <p>Cuando <strong><em>usas la respuesta en su contra</em></strong>, tienes ventaja.</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>La Bendición del Tormento</strong> — Tus heridas sanan despacio. Cuando recuperas HP, recupera solo la mitad de lo que deberías. Pero nunca necesitas Desafiar el Peligro por dolor, pérdida de sangre o debilidad causada por las heridas.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> La Bendición del Tormento</h3>
+<p>Tus heridas sanan despacio. Cuando recuperas HP, recupera solo la mitad de lo que deberías. Pero nunca necesitas Desafiar el Peligro por dolor, pérdida de sangre o debilidad causada por las heridas.</p>
 <p>Cuando <strong><em>pronuncias una palabra de tormento</em></strong>, nombra a alguien cercano, gasta 1-3 de Favor y tira +Favor gastado: <strong>con 10+</strong>, sufre <button type="button" class="dice-roll" data-dice="2d4" title="Haz clic para tirar 2d4 — Mayús: ventaja · Ctrl: desventaja">2d4</button> de daño y se retuerce de dolor (las víctimas menores quedan incapacitadas y los enemigos poderosos, aturdidos un momento); <strong>con 7-9</strong>, sufre <button type="button" class="dice-roll" data-dice="1d6" title="Haz clic para tirar 1d6 — Mayús: ventaja · Ctrl: desventaja">1d6</button> de daño (ignora la armadura) y las víctimas menores quedan aturdidas un momento.</p>
+</div>
         </main>
       </div>
     </div>

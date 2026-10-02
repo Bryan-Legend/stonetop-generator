@@ -227,6 +227,7 @@ M_ICON = "\x02ICON "  # category icon (payload: rel path under images/)
 M_C2 = "\x02C2 "      # checkbox item indented under the move above it
 M_CX = "\x02CX "      # checkbox printed already ticked (a starting move)
 M_CX2 = "\x02CX2 "    # ...indented as well
+M_TAKES = "\x02TAKES "  # boxes printed on the check item below it, when more than one
 M_STATS = "\x02STATS "  # the stat block (payload: JSON)
 M_WRITE = "\x02WRITE "  # full-measure write-in box (payload: printed label)
 M_STEP = "\x02STEP "  # numbered step of a walkthrough (payload: n \x03 text)
@@ -288,7 +289,7 @@ MARKERS: dict[str, str] = {
     for m in (
         M_B, M_B2, M_Q, M_BC, M_E, M_C, M_H2, M_H3, M_H4, M_TH, M_VT, M_VR,
         M_VA, M_VF, M_BOX, M_ENDBOX, M_MARK, M_HR, M_ICON, M_C2, M_CX, M_CX2,
-        M_STATS, M_WRITE, M_STEP, M_BAND, M_FACE, M_PB,
+        M_STATS, M_WRITE, M_STEP, M_BAND, M_FACE, M_PB, M_TAKES,
         M_SHEET, M_ENDSHEET, M_DIV, M_ENDDIV, M_FIELD, M_FIELDS, M_NOTES,
         M_STAT, M_DMG, M_HPMOUNT, M_TRACK, M_LIST, M_ENDLIST, M_CK, M_CKX,
         M_CKW, M_INV, M_INVW, M_ITEM, M_PLACE, M_LI, M_TYPE, M_STATLINE,
@@ -725,6 +726,9 @@ def should_join(a: str, b: str) -> bool:
     # Analyze on de-tokenized text (keeps \x02 markers, drops inline
     # bold/italic sentinels); merge_wrapped_lines concatenates the originals.
     raw_a, raw_b = a, b
+    # A box count stands alone, whatever its digit looks like to the tag test.
+    if a.startswith(M_TAKES) or b.startswith(M_TAKES):
+        return False
     # Item tag lines are italic in the PDF — check BEFORE stripping sentinels.
     if _is_item_tag_line(a) or _is_item_tag_line(b):
         # Allow joining two consecutive tag wrap lines (", close, thrown," +

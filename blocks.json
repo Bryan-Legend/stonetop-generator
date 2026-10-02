@@ -22,6 +22,36 @@
     },
     {
      "kind": "move-block",
+     "name": "MINDWALKING",
+     "id": "mindwalking"
+    },
+    {
+     "kind": "move-block",
+     "name": "A MIGHTY WILL",
+     "id": "a-mighty-will"
+    },
+    {
+     "kind": "move-block",
+     "name": "FARWALKER",
+     "id": "farwalker"
+    },
+    {
+     "kind": "move-block",
+     "name": "TELEPATHY",
+     "id": "telepathy"
+    },
+    {
+     "kind": "move-block",
+     "name": "TULPA",
+     "id": "tulpa"
+    },
+    {
+     "kind": "move-block",
+     "name": "",
+     "id": "move"
+    },
+    {
+     "kind": "move-block",
      "name": "Aid",
      "id": "aid"
     },
@@ -272,15 +302,1144 @@
     }
    ],
    "playbooks-inserts": [],
-   "the-blessed": [],
-   "the-fox": [],
-   "the-heavy": [],
-   "the-judge": [],
-   "the-lightbearer": [],
-   "the-marshal": [],
-   "the-ranger": [],
-   "the-seeker": [],
-   "the-would-be-hero": [],
+   "the-blessed": [
+    {
+     "kind": "move-block",
+     "name": "AMULETS & TALISMANS",
+     "id": "amulets-talismans"
+    },
+    {
+     "kind": "move-block",
+     "name": "BARKSKIN",
+     "id": "barkskin"
+    },
+    {
+     "kind": "move-block",
+     "name": "BIG MAGIC",
+     "id": "big-magic"
+    },
+    {
+     "kind": "move-block",
+     "name": "DANU'S GRASP",
+     "id": "danus-grasp"
+    },
+    {
+     "kind": "move-block",
+     "name": "HEALER'S ARTS",
+     "id": "healers-arts"
+    },
+    {
+     "kind": "move-block",
+     "name": "HEED MY WORDS",
+     "id": "heed-my-words"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "INTO THE LION'S DEN",
+     "id": "into-the-lions-den"
+    },
+    {
+     "kind": "move-block",
+     "name": "LIGHTNING ROD",
+     "id": "lightning-rod"
+    },
+    {
+     "kind": "move-block",
+     "name": "RITES OF THE LAND",
+     "id": "rites-of-the-land"
+    },
+    {
+     "kind": "move-block",
+     "name": "SPIRIT TONGUE",
+     "id": "spirit-tongue"
+    },
+    {
+     "kind": "move-block",
+     "name": "BORROW POWER",
+     "id": "borrow-power"
+    },
+    {
+     "kind": "move-block",
+     "name": "CALL THE SPIRITS",
+     "id": "call-the-spirits"
+    },
+    {
+     "kind": "move-block",
+     "name": "TRACKLESS STEP",
+     "id": "trackless-step"
+    },
+    {
+     "kind": "move-block",
+     "name": "VEIL",
+     "id": "veil"
+    },
+    {
+     "kind": "move-block",
+     "name": "WARDS & BINDINGS",
+     "id": "wards-bindings"
+    },
+    {
+     "kind": "move-block",
+     "name": "WILD SOUL",
+     "id": "wild-soul"
+    },
+    {
+     "kind": "move-block",
+     "name": "NATURE'S WRATH",
+     "id": "natures-wrath"
+    },
+    {
+     "kind": "move-block",
+     "name": "POTENT WORKINGS",
+     "id": "potent-workings"
+    },
+    {
+     "kind": "move-block",
+     "name": "SHARED SOULS",
+     "id": "shared-souls"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUCK THE POISON OUT",
+     "id": "suck-the-poison-out"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "VOICE OF THE EARTH MOTHER",
+     "id": "voice-of-the-earth-mother"
+    }
+   ],
+   "the-fox": [
+    {
+     "kind": "move-block",
+     "name": "ALL IN THE WRIST",
+     "id": "all-in-the-wrist"
+    },
+    {
+     "kind": "move-block",
+     "name": "AMBUSH",
+     "id": "ambush"
+    },
+    {
+     "kind": "move-block",
+     "name": "BURGLE",
+     "id": "burgle"
+    },
+    {
+     "kind": "move-block",
+     "name": "CATLIKE",
+     "id": "catlike"
+    },
+    {
+     "kind": "move-block",
+     "name": "DABBLER",
+     "id": "dabbler"
+    },
+    {
+     "kind": "move-block",
+     "name": "DANGER SENSE",
+     "id": "danger-sense"
+    },
+    {
+     "kind": "move-block",
+     "name": "FREE RUNNING",
+     "id": "free-running"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "IRRESISTIBLE",
+     "id": "irresistible"
+    },
+    {
+     "kind": "move-block",
+     "name": "LAUGH AT DANGER",
+     "id": "laugh-at-danger"
+    },
+    {
+     "kind": "move-block",
+     "name": "LIGHT FINGERS",
+     "id": "light-fingers"
+    },
+    {
+     "kind": "move-block",
+     "name": "PERCEPTIVE",
+     "id": "perceptive"
+    },
+    {
+     "kind": "move-block",
+     "name": "RAPIER WIT",
+     "id": "rapier-wit"
+    },
+    {
+     "kind": "move-block",
+     "name": "SKILL AT ARMS",
+     "id": "skill-at-arms"
+    },
+    {
+     "kind": "move-block",
+     "name": "PARRY & RIPOSTE",
+     "id": "parry-riposte"
+    },
+    {
+     "kind": "move-block",
+     "name": "SILVER TONGUED",
+     "id": "silver-tongued"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNDER YOUR SKIN",
+     "id": "under-your-skin"
+    },
+    {
+     "kind": "move-block",
+     "name": "BATTLE DANCER",
+     "id": "battle-dancer"
+    },
+    {
+     "kind": "move-block",
+     "name": "CHEAP SHOT",
+     "id": "cheap-shot"
+    },
+    {
+     "kind": "move-block",
+     "name": "EYE ON THE DOOR",
+     "id": "eye-on-the-door"
+    },
+    {
+     "kind": "move-block",
+     "name": "PANTS ON FIRE",
+     "id": "pants-on-fire"
+    },
+    {
+     "kind": "move-block",
+     "name": "SECOND INTENT",
+     "id": "second-intent"
+    },
+    {
+     "kind": "move-block",
+     "name": "SLIPPERY",
+     "id": "slippery"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    }
+   ],
+   "the-heavy": [
+    {
+     "kind": "move-block",
+     "name": "ARMORED",
+     "id": "armored"
+    },
+    {
+     "kind": "move-block",
+     "name": "BATTLE JOY",
+     "id": "battle-joy"
+    },
+    {
+     "kind": "move-block",
+     "name": "BERSERKER",
+     "id": "berserker"
+    },
+    {
+     "kind": "move-block",
+     "name": "CARVED OUT OF WOOD",
+     "id": "carved-out-of-wood"
+    },
+    {
+     "kind": "move-block",
+     "name": "DANGEROUS",
+     "id": "dangerous"
+    },
+    {
+     "kind": "move-block",
+     "name": "FORMIDABLE",
+     "id": "formidable"
+    },
+    {
+     "kind": "move-block",
+     "name": "FROSTY",
+     "id": "frosty"
+    },
+    {
+     "kind": "move-block",
+     "name": "GUARDIAN",
+     "id": "guardian"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "INTIMIDATING",
+     "id": "intimidating"
+    },
+    {
+     "kind": "move-block",
+     "name": "HARD TO KILL",
+     "id": "hard-to-kill"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNSTOPPABLE",
+     "id": "unstoppable"
+    },
+    {
+     "kind": "move-block",
+     "name": "MUSCLEBOUND",
+     "id": "musclebound"
+    },
+    {
+     "kind": "move-block",
+     "name": "PAYBACK",
+     "id": "payback"
+    },
+    {
+     "kind": "move-block",
+     "name": "RELENTLESS",
+     "id": "relentless"
+    },
+    {
+     "kind": "move-block",
+     "name": "SEASONED WARRIOR",
+     "id": "seasoned-warrior"
+    },
+    {
+     "kind": "move-block",
+     "name": "SITUATIONAL AWARENESS",
+     "id": "situational-awareness"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNCANNY REFLEXES",
+     "id": "uncanny-reflexes"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNFETTERED",
+     "id": "unfettered"
+    },
+    {
+     "kind": "move-block",
+     "name": "TERROR ON THE FIELD",
+     "id": "terror-on-the-field"
+    },
+    {
+     "kind": "move-block",
+     "name": "BRINGER OF RUIN",
+     "id": "bringer-of-ruin"
+    },
+    {
+     "kind": "move-block",
+     "name": "CUT FROM GRANITE",
+     "id": "cut-from-granite"
+    },
+    {
+     "kind": "move-block",
+     "name": "MIGHTY THEWS",
+     "id": "mighty-thews"
+    },
+    {
+     "kind": "move-block",
+     "name": "NEMESIS",
+     "id": "nemesis"
+    },
+    {
+     "kind": "move-block",
+     "name": "STEADFAST GUARDIAN",
+     "id": "steadfast-guardian"
+    },
+    {
+     "kind": "move-block",
+     "name": "STONE COLD",
+     "id": "stone-cold"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    }
+   ],
+   "the-judge": [
+    {
+     "kind": "move-block",
+     "name": "AEGIS OF FAITH",
+     "id": "aegis-of-faith"
+    },
+    {
+     "kind": "move-block",
+     "name": "ARMORED",
+     "id": "armored"
+    },
+    {
+     "kind": "move-block",
+     "name": "BEAR WITNESS",
+     "id": "bear-witness"
+    },
+    {
+     "kind": "move-block",
+     "name": "BREAK BREAD",
+     "id": "break-bread"
+    },
+    {
+     "kind": "move-block",
+     "name": "BULWARK",
+     "id": "bulwark"
+    },
+    {
+     "kind": "move-block",
+     "name": "CENSURE",
+     "id": "censure"
+    },
+    {
+     "kind": "move-block",
+     "name": "CASTIGATE",
+     "id": "castigate"
+    },
+    {
+     "kind": "move-block",
+     "name": "CHRONICLER OF STONETOP",
+     "id": "chronicler-of-stonetop"
+    },
+    {
+     "kind": "move-block",
+     "name": "FOR THE GREATER GOOD",
+     "id": "for-the-greater-good"
+    },
+    {
+     "kind": "move-block",
+     "name": "HOUND OF ARATIS",
+     "id": "hound-of-aratis"
+    },
+    {
+     "kind": "move-block",
+     "name": "LIKE A DOG WITH A BONE",
+     "id": "like-a-dog-with-a-bone"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "KNOWLEDGE IS POWER",
+     "id": "knowledge-is-power"
+    },
+    {
+     "kind": "move-block",
+     "name": "MANY HANDS MAKE LIGHT WORK",
+     "id": "many-hands-make-light-work"
+    },
+    {
+     "kind": "move-block",
+     "name": "A BUNDLE OF STICKS UNBROKEN",
+     "id": "a-bundle-of-sticks-unbroken"
+    },
+    {
+     "kind": "move-block",
+     "name": "THE HAMMER AND THE BOOK",
+     "id": "the-hammer-and-the-book"
+    },
+    {
+     "kind": "move-block",
+     "name": "TRUTH OR CONSEQUENCES",
+     "id": "truth-or-consequences"
+    },
+    {
+     "kind": "move-block",
+     "name": "BINDING ARBITRATION",
+     "id": "binding-arbitration"
+    },
+    {
+     "kind": "move-block",
+     "name": "VISION UNCLOUDED",
+     "id": "vision-unclouded"
+    },
+    {
+     "kind": "move-block",
+     "name": "WELL-READ",
+     "id": "well-read"
+    },
+    {
+     "kind": "move-block",
+     "name": "A MIGHTY RAMPART",
+     "id": "a-mighty-rampart"
+    },
+    {
+     "kind": "move-block",
+     "name": "ARMISTICE",
+     "id": "armistice"
+    },
+    {
+     "kind": "move-block",
+     "name": "CONDEMN",
+     "id": "condemn"
+    },
+    {
+     "kind": "move-block",
+     "name": "PROCLAMATION",
+     "id": "proclamation"
+    },
+    {
+     "kind": "move-block",
+     "name": "MIRRORSHIELD",
+     "id": "mirrorshield"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "THE TOWER ETERNAL",
+     "id": "the-tower-eternal"
+    }
+   ],
+   "the-lightbearer": [
+    {
+     "kind": "move-block",
+     "name": "A CANDLE AGAINST THE DARK",
+     "id": "a-candle-against-the-dark"
+    },
+    {
+     "kind": "move-block",
+     "name": "LUMINOUS SHIELD",
+     "id": "luminous-shield"
+    },
+    {
+     "kind": "move-block",
+     "name": "ALL IS ILLUMINATED",
+     "id": "all-is-illuminated"
+    },
+    {
+     "kind": "move-block",
+     "name": "AND BEHOLD A PALE HORSE",
+     "id": "and-behold-a-pale-horse"
+    },
+    {
+     "kind": "move-block",
+     "name": "CONSECRATED FLAME",
+     "id": "consecrated-flame"
+    },
+    {
+     "kind": "move-block",
+     "name": "FIRE WITHIN",
+     "id": "fire-within"
+    },
+    {
+     "kind": "move-block",
+     "name": "GUIDING LIGHT",
+     "id": "guiding-light"
+    },
+    {
+     "kind": "move-block",
+     "name": "HELIOR'S UNBLINKING EYE",
+     "id": "heliors-unblinking-eye"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "INVOKE THE SUN GOD",
+     "id": "invoke-the-sun-god"
+    },
+    {
+     "kind": "move-block",
+     "name": "KEEP THE HOME-FIRES BURNING",
+     "id": "keep-the-home-fires-burning"
+    },
+    {
+     "kind": "move-block",
+     "name": "LAMPLIGHTER",
+     "id": "lamplighter"
+    },
+    {
+     "kind": "move-block",
+     "name": "PIETY",
+     "id": "piety"
+    },
+    {
+     "kind": "move-block",
+     "name": "PURIFYING FLAMES",
+     "id": "purifying-flames"
+    },
+    {
+     "kind": "move-block",
+     "name": "RADIANT COUNTENANCE",
+     "id": "radiant-countenance"
+    },
+    {
+     "kind": "move-block",
+     "name": "RISE LIKE THE SUN",
+     "id": "rise-like-the-sun"
+    },
+    {
+     "kind": "move-block",
+     "name": "SPRING'S FIRST THAW",
+     "id": "springs-first-thaw"
+    },
+    {
+     "kind": "move-block",
+     "name": "BURN TWICE AS BRIGHT",
+     "id": "burn-twice-as-bright"
+    },
+    {
+     "kind": "move-block",
+     "name": "EMPOWERED INVOCATIONS",
+     "id": "empowered-invocations"
+    },
+    {
+     "kind": "move-block",
+     "name": "GLORIOUS SERVANT",
+     "id": "glorious-servant"
+    },
+    {
+     "kind": "move-block",
+     "name": "HUNGRY FLAMES",
+     "id": "hungry-flames"
+    },
+    {
+     "kind": "move-block",
+     "name": "LIGHT, MORE LIGHT",
+     "id": "light-more-light"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "WIELDER OF THE WHITE FLAME",
+     "id": "wielder-of-the-white-flame"
+    }
+   ],
+   "the-marshal": [
+    {
+     "kind": "move-block",
+     "name": "ARMORED",
+     "id": "armored"
+    },
+    {
+     "kind": "move-block",
+     "name": "ARTS OF WAR",
+     "id": "arts-of-war"
+    },
+    {
+     "kind": "move-block",
+     "name": "CREW",
+     "id": "crew"
+    },
+    {
+     "kind": "move-block",
+     "name": "VETERAN CREW",
+     "id": "veteran-crew"
+    },
+    {
+     "kind": "move-block",
+     "name": "FRONT LINE LEADER",
+     "id": "front-line-leader"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "LOGISTICS",
+     "id": "logistics"
+    },
+    {
+     "kind": "move-block",
+     "name": "READ THE LAND",
+     "id": "read-the-land"
+    },
+    {
+     "kind": "move-block",
+     "name": "PREPARE A WELCOME",
+     "id": "prepare-a-welcome"
+    },
+    {
+     "kind": "move-block",
+     "name": "SET-UP STRIKE",
+     "id": "set-up-strike"
+    },
+    {
+     "kind": "move-block",
+     "name": "SHAKE IT OFF",
+     "id": "shake-it-off"
+    },
+    {
+     "kind": "move-block",
+     "name": "SHIELD WALL",
+     "id": "shield-wall"
+    },
+    {
+     "kind": "move-block",
+     "name": "SIR, PERMISSION TO DIE, SIR",
+     "id": "sir-permission-to-die-sir"
+    },
+    {
+     "kind": "move-block",
+     "name": "SPEAK SOFTLY",
+     "id": "speak-softly"
+    },
+    {
+     "kind": "move-block",
+     "name": "STENTORIAN",
+     "id": "stentorian"
+    },
+    {
+     "kind": "move-block",
+     "name": "TAKE THE MEASURE",
+     "id": "take-the-measure"
+    },
+    {
+     "kind": "move-block",
+     "name": "WE HAPPY FEW",
+     "id": "we-happy-few"
+    },
+    {
+     "kind": "move-block",
+     "name": "BATTLEFIELD GRACE",
+     "id": "battlefield-grace"
+    },
+    {
+     "kind": "move-block",
+     "name": "HEROES TO THE LAST",
+     "id": "heroes-to-the-last"
+    },
+    {
+     "kind": "move-block",
+     "name": "FOCUS FIRE",
+     "id": "focus-fire"
+    },
+    {
+     "kind": "move-block",
+     "name": "LIKE AN OPEN BOOK",
+     "id": "like-an-open-book"
+    },
+    {
+     "kind": "move-block",
+     "name": "NOBLE MIEN",
+     "id": "noble-mien"
+    },
+    {
+     "kind": "move-block",
+     "name": "PEACE THROUGH STRENGTH",
+     "id": "peace-through-strength"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    }
+   ],
+   "the-ranger": [
+    {
+     "kind": "move-block",
+     "name": "A SAFE PLACE",
+     "id": "a-safe-place"
+    },
+    {
+     "kind": "move-block",
+     "name": "ANIMAL COMPANION",
+     "id": "animal-companion"
+    },
+    {
+     "kind": "move-block",
+     "name": "MAGNIFICENT SPECIMEN",
+     "id": "magnificent-specimen"
+    },
+    {
+     "kind": "move-block",
+     "name": "BIG GAME HUNTER",
+     "id": "big-game-hunter"
+    },
+    {
+     "kind": "move-block",
+     "name": "BLOT OUT THE SUN",
+     "id": "blot-out-the-sun"
+    },
+    {
+     "kind": "move-block",
+     "name": "CALL THE SHOT",
+     "id": "call-the-shot"
+    },
+    {
+     "kind": "move-block",
+     "name": "EXPERT TRACKER",
+     "id": "expert-tracker"
+    },
+    {
+     "kind": "move-block",
+     "name": "HOME ON THE RANGE",
+     "id": "home-on-the-range"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "MENTAL MAP",
+     "id": "mental-map"
+    },
+    {
+     "kind": "move-block",
+     "name": "NATURALIST",
+     "id": "naturalist"
+    },
+    {
+     "kind": "move-block",
+     "name": "ON THE HOOF",
+     "id": "on-the-hoof"
+    },
+    {
+     "kind": "move-block",
+     "name": "PACK HORSE",
+     "id": "pack-horse"
+    },
+    {
+     "kind": "move-block",
+     "name": "PATHFINDER",
+     "id": "pathfinder"
+    },
+    {
+     "kind": "move-block",
+     "name": "PREDATOR",
+     "id": "predator"
+    },
+    {
+     "kind": "move-block",
+     "name": "SNIFF OUT CORRUPTION",
+     "id": "sniff-out-corruption"
+    },
+    {
+     "kind": "move-block",
+     "name": "STALKER",
+     "id": "stalker"
+    },
+    {
+     "kind": "move-block",
+     "name": "SURVIVALIST",
+     "id": "survivalist"
+    },
+    {
+     "kind": "move-block",
+     "name": "WARDEN OF THE WILD",
+     "id": "warden-of-the-wild"
+    },
+    {
+     "kind": "move-block",
+     "name": "WILD SPEECH",
+     "id": "wild-speech"
+    },
+    {
+     "kind": "move-block",
+     "name": "WORLDLY",
+     "id": "worldly"
+    },
+    {
+     "kind": "move-block",
+     "name": "ALPHA",
+     "id": "alpha"
+    },
+    {
+     "kind": "move-block",
+     "name": "BEAST OF LEGEND",
+     "id": "beast-of-legend"
+    },
+    {
+     "kind": "move-block",
+     "name": "CONSTANT VIGILANCE",
+     "id": "constant-vigilance"
+    },
+    {
+     "kind": "move-block",
+     "name": "GIANT SLAYER",
+     "id": "giant-slayer"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "TRAILBLAZER",
+     "id": "trailblazer"
+    },
+    {
+     "kind": "move-block",
+     "name": "WALK IT OFF",
+     "id": "walk-it-off"
+    }
+   ],
+   "the-seeker": [
+    {
+     "kind": "move-block",
+     "name": "ATTUNED",
+     "id": "attuned"
+    },
+    {
+     "kind": "move-block",
+     "name": "CONDUIT OF POWER",
+     "id": "conduit-of-power"
+    },
+    {
+     "kind": "move-block",
+     "name": "COUNTERMEASURES",
+     "id": "countermeasures"
+    },
+    {
+     "kind": "move-block",
+     "name": "EVERYTHING BLEEDS",
+     "id": "everything-bleeds"
+    },
+    {
+     "kind": "move-block",
+     "name": "EVERYTHING BURNS",
+     "id": "everything-burns"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "INITIATE OF THE SECRET ARTS",
+     "id": "initiate-of-the-secret-arts"
+    },
+    {
+     "kind": "move-block",
+     "name": "LET'S MAKE A DEAL",
+     "id": "lets-make-a-deal"
+    },
+    {
+     "kind": "move-block",
+     "name": "LOGBOOK",
+     "id": "logbook"
+    },
+    {
+     "kind": "move-block",
+     "name": "MAGPIE",
+     "id": "magpie"
+    },
+    {
+     "kind": "move-block",
+     "name": "NEVER AT A LOSS",
+     "id": "never-at-a-loss"
+    },
+    {
+     "kind": "move-block",
+     "name": "POLYGLOT",
+     "id": "polyglot"
+    },
+    {
+     "kind": "move-block",
+     "name": "CRYPTOLOGIST",
+     "id": "cryptologist"
+    },
+    {
+     "kind": "move-block",
+     "name": "QUICK STUDY",
+     "id": "quick-study"
+    },
+    {
+     "kind": "move-block",
+     "name": "SAFETY FIRST",
+     "id": "safety-first"
+    },
+    {
+     "kind": "move-block",
+     "name": "SAGE ADVICE",
+     "id": "sage-advice"
+    },
+    {
+     "kind": "move-block",
+     "name": "WELL VERSED",
+     "id": "well-versed"
+    },
+    {
+     "kind": "move-block",
+     "name": "WORK WITH WHAT YOU'VE GOT",
+     "id": "work-with-what-youve-got"
+    },
+    {
+     "kind": "move-block",
+     "name": "ARCANE ADEPT",
+     "id": "arcane-adept"
+    },
+    {
+     "kind": "move-block",
+     "name": "DEEP INSIGHT",
+     "id": "deep-insight"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVISE",
+     "id": "improvise"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "MIND OVER MAGIC",
+     "id": "mind-over-magic"
+    },
+    {
+     "kind": "move-block",
+     "name": "OVERCHANNEL",
+     "id": "overchannel"
+    },
+    {
+     "kind": "move-block",
+     "name": "PROOF AGAINST DETECTION",
+     "id": "proof-against-detection"
+    }
+   ],
+   "the-would-be-hero": [
+    {
+     "kind": "move-block",
+     "name": "ANGER IS A GIFT",
+     "id": "anger-is-a-gift"
+    },
+    {
+     "kind": "move-block",
+     "name": "SPEAK TRUTH TO POWER",
+     "id": "speak-truth-to-power"
+    },
+    {
+     "kind": "move-block",
+     "name": "BETTER PART OF VALOR",
+     "id": "better-part-of-valor"
+    },
+    {
+     "kind": "move-block",
+     "name": "I GET KNOCKED DOWN",
+     "id": "i-get-knocked-down"
+    },
+    {
+     "kind": "move-block",
+     "name": "BUT I GET UP AGAIN",
+     "id": "but-i-get-up-again"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPROVED STAT",
+     "id": "improved-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "IN OVER YOUR HEAD",
+     "id": "in-over-your-head"
+    },
+    {
+     "kind": "move-block",
+     "name": "IRON WILL",
+     "id": "iron-will"
+    },
+    {
+     "kind": "move-block",
+     "name": "INQUIRING MINDS",
+     "id": "inquiring-minds"
+    },
+    {
+     "kind": "move-block",
+     "name": "NEVER GONNA KEEP ME DOWN",
+     "id": "never-gonna-keep-me-down"
+    },
+    {
+     "kind": "move-block",
+     "name": "POTENTIAL FOR GREATNESS",
+     "id": "potential-for-greatness"
+    },
+    {
+     "kind": "move-block",
+     "name": "RESOURCEFUL",
+     "id": "resourceful"
+    },
+    {
+     "kind": "move-block",
+     "name": "SOMETHING TO REMEMBER ME BY",
+     "id": "something-to-remember-me-by"
+    },
+    {
+     "kind": "move-block",
+     "name": "TOUGH LOVE",
+     "id": "tough-love"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNDERESTIMATED",
+     "id": "underestimated"
+    },
+    {
+     "kind": "move-block",
+     "name": "UP WITH PEOPLE",
+     "id": "up-with-people"
+    },
+    {
+     "kind": "move-block",
+     "name": "VERSATILE",
+     "id": "versatile"
+    },
+    {
+     "kind": "move-block",
+     "name": "A FORCE TO BE RECKONED WITH*",
+     "id": "a-force-to-be-reckoned-with"
+    },
+    {
+     "kind": "move-block",
+     "name": "BIG DAMN HERO*",
+     "id": "big-damn-hero"
+    },
+    {
+     "kind": "move-block",
+     "name": "SUPERIOR STAT",
+     "id": "superior-stat"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNDAUNTED*",
+     "id": "undaunted"
+    },
+    {
+     "kind": "move-block",
+     "name": "VOICE OF EXPERIENCE*",
+     "id": "voice-of-experience"
+    }
+   ],
    "inserts": [],
    "inventory": [],
    "animal-companion": [
@@ -346,9 +1505,222 @@
    ],
    "invocations": [],
    "followers": [],
-   "ghost": [],
-   "revenant": [],
-   "thrall": [],
+   "ghost": [
+    {
+     "kind": "move-block",
+     "name": "UNLIVING",
+     "id": "unliving"
+    },
+    {
+     "kind": "move-block",
+     "name": "DISEMBODIED",
+     "id": "disembodied"
+    },
+    {
+     "kind": "move-block",
+     "name": "TETHERED",
+     "id": "tethered"
+    },
+    {
+     "kind": "move-block",
+     "name": "LONGING",
+     "id": "longing"
+    },
+    {
+     "kind": "move-block",
+     "name": "VENGEANCE",
+     "id": "vengeance"
+    },
+    {
+     "kind": "move-block",
+     "name": "DUTY",
+     "id": "duty"
+    },
+    {
+     "kind": "move-block",
+     "name": "BODYSNATCHER",
+     "id": "bodysnatcher"
+    },
+    {
+     "kind": "move-block",
+     "name": "BREAKDOWN",
+     "id": "breakdown"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNSTABLE",
+     "id": "unstable"
+    },
+    {
+     "kind": "move-block",
+     "name": "DISTURBING",
+     "id": "disturbing"
+    },
+    {
+     "kind": "move-block",
+     "name": "OTHERWORLDLY",
+     "id": "otherworldly"
+    },
+    {
+     "kind": "move-block",
+     "name": "POLTERGEIST",
+     "id": "poltergeist"
+    },
+    {
+     "kind": "move-block",
+     "name": "QUARRY",
+     "id": "quarry"
+    },
+    {
+     "kind": "move-block",
+     "name": "SPECTER",
+     "id": "specter"
+    }
+   ],
+   "revenant": [
+    {
+     "kind": "move-block",
+     "name": "UNLIVING",
+     "id": "unliving"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNDYING",
+     "id": "undying"
+    },
+    {
+     "kind": "move-block",
+     "name": "IMPLACABLE",
+     "id": "implacable"
+    },
+    {
+     "kind": "move-block",
+     "name": "LONGING",
+     "id": "longing"
+    },
+    {
+     "kind": "move-block",
+     "name": "VENGEANCE",
+     "id": "vengeance"
+    },
+    {
+     "kind": "move-block",
+     "name": "DUTY",
+     "id": "duty"
+    },
+    {
+     "kind": "move-block",
+     "name": "BREAKDOWN",
+     "id": "breakdown"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNSTABLE",
+     "id": "unstable"
+    },
+    {
+     "kind": "move-block",
+     "name": "CARRION STENCH",
+     "id": "carrion-stench"
+    },
+    {
+     "kind": "move-block",
+     "name": "DEATHLY VISAGE",
+     "id": "deathly-visage"
+    },
+    {
+     "kind": "move-block",
+     "name": "HOME TO VERMIN",
+     "id": "home-to-vermin"
+    },
+    {
+     "kind": "move-block",
+     "name": "NIGHTKIN",
+     "id": "nightkin"
+    },
+    {
+     "kind": "move-block",
+     "name": "QUARRY",
+     "id": "quarry"
+    },
+    {
+     "kind": "move-block",
+     "name": "STRANGE APPETITES",
+     "id": "strange-appetites"
+    },
+    {
+     "kind": "move-block",
+     "name": "INSATIABLE",
+     "id": "insatiable"
+    }
+   ],
+   "thrall": [
+    {
+     "kind": "move-block",
+     "name": "FAVOR",
+     "id": "favor"
+    },
+    {
+     "kind": "move-block",
+     "name": "URGES",
+     "id": "urges"
+    },
+    {
+     "kind": "move-block",
+     "name": "DARK SUCCOR",
+     "id": "dark-succor"
+    },
+    {
+     "kind": "move-block",
+     "name": "UNHOLY VESSEL",
+     "id": "unholy-vessel"
+    },
+    {
+     "kind": "move-block",
+     "name": "A FESTERING ROT",
+     "id": "a-festering-rot"
+    },
+    {
+     "kind": "move-block",
+     "name": "CHILD OF THE DEEPS",
+     "id": "child-of-the-deeps"
+    },
+    {
+     "kind": "move-block",
+     "name": "DEATH MASK",
+     "id": "death-mask"
+    },
+    {
+     "kind": "move-block",
+     "name": "QUICKSILVER DREAMS",
+     "id": "quicksilver-dreams"
+    },
+    {
+     "kind": "move-block",
+     "name": "RAVENOUS",
+     "id": "ravenous"
+    },
+    {
+     "kind": "move-block",
+     "name": "RED WRATH",
+     "id": "red-wrath"
+    },
+    {
+     "kind": "move-block",
+     "name": "SHADOW'S COLD EMBRACE",
+     "id": "shadows-cold-embrace"
+    },
+    {
+     "kind": "move-block",
+     "name": "SPEAK TRUTH, WHISPER SECRETS",
+     "id": "speak-truth-whisper-secrets"
+    },
+    {
+     "kind": "move-block",
+     "name": "TORMENT'S BLESSING",
+     "id": "torments-blessing"
+    }
+   ],
    "steading-playbook": [
     {
      "kind": "infobox",
@@ -571,7 +1943,7 @@
    "dangers": [
     {
      "kind": "value-table",
-     "name": "Worst Outcome",
+     "name": "Worst outcome",
      "id": ""
     },
     {
@@ -597,57 +1969,57 @@
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Does It Hunt or Fight?\u0005 (Pick 1)",
+     "name": "How does it hunt or fight? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Big Is It?\u0005 (Pick 1)",
+     "name": "How big is it? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Does It Hunt or Fight?\u0005 (Pick 1)",
+     "name": "How does it hunt or fight? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Big Is It?\u0005 (Pick 1)",
+     "name": "How big is it? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Else Applies?\u0005 (Pick All That Do)",
+     "name": "What else applies? (pick all that do)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Is It Protected by?\u0005 (Pick 1)",
+     "name": "What is it protected by? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Else Applies?\u0005 (Pick All That Do)",
+     "name": "What else applies? (pick all that do)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Does It Hunt or Fight?\u0005 (Pick 1)",
+     "name": "How does it hunt or fight? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Is the Nature of\u0005 \u0004Its Attack?\u0005 (Pick All That Apply)",
+     "name": "What is the nature of its attack? (pick all that apply)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Big Is It?\u0005 (Pick 1)",
+     "name": "How big is it? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Else Applies?\u0005 (Pick All That Do)",
+     "name": "What else applies? (pick all that do)",
      "id": ""
     },
     {
@@ -701,27 +2073,27 @@
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Resilient Are They?\u0005 (Pick 1)",
+     "name": "How resilient are they? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Else Applies?\u0005 (Pick All That Do)",
+     "name": "What else applies? (pick all that do)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Protects Them?\u0005 (Pick 1)",
+     "name": "What protects them? (pick 1)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004What Else Applies?\u0005 (Pick All That Do)",
+     "name": "What else applies? (pick all that do)",
      "id": ""
     },
     {
      "kind": "value-table",
-     "name": "\u0004How Dagerous Are They?\u0005 (Pick 1)",
+     "name": "How dagerous are they? (pick 1)",
      "id": ""
     },
     {
@@ -1173,17 +2545,17 @@
     {
      "kind": "roll-table",
      "name": "Size",
-     "id": "size"
+     "id": ""
     },
     {
      "kind": "roll-table",
      "name": "Trait",
-     "id": "trait"
+     "id": ""
     },
     {
      "kind": "roll-table",
      "name": "Additional Move",
-     "id": "additional-move"
+     "id": ""
     }
    ],
    "crinwin": [
@@ -3750,7 +5122,7 @@
     {
      "kind": "roll-table",
      "name": "Move",
-     "id": "move"
+     "id": ""
     },
     {
      "kind": "stat-block",
@@ -5372,7 +6744,7 @@
     {
      "kind": "roll-table",
      "name": "Special Trait",
-     "id": "special-trait"
+     "id": ""
     },
     {
      "kind": "stat-block",

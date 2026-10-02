@@ -87,6 +87,12 @@ class SheetError(ValueError):
     pass
 
 
+def _ui(key: str, default: str) -> str:
+    from .structure import UI  # the chrome words of the page's language
+
+    return UI(key, default)
+
+
 def render_sheet(
     lines: list[str],
     slug: str,
@@ -214,6 +220,7 @@ def render_sheet(
 
     # LIST … ENDLIST state
     list_open = False
+    in_move = False  # inside a DIV move-block
     table: dict | None = None
 
     while i < n:
@@ -267,11 +274,36 @@ def render_sheet(
             out.append(f'<div class="follower-sheet" data-sheet="{_attr(kind)}"{extra}>')
         elif line == M_ENDSHEET or line == M_ENDDIV:
             out.append("</div>")
+            in_move = False
         elif line.startswith(M_DIV):
             p = _split(line, M_DIV)
             cls, did = _f(p, 0), _f(p, 1)
             idattr = f' id="{html.escape(did)}"' if did else ""
-            out.append(f'<div class="{_attr(cls)}"{idattr}>')
+            if cls == "move-block":
+                # A move card, the one a playbook's moves are set in: its H3
+                # is the name of a move the insert gives outright, its CK the
+                # name and tick of one it offers (the Thrall's Marks).
+                in_move = True
+                out.append(f'<div class="move-block"{idattr} data-move="sheet">')
+            else:
+                out.append(f'<div class="{_attr(cls)}"{idattr}>')
+        elif in_move and line.startswith(M_H3):
+            p = _split(line, M_H3)
+            out.append(
+                '<h3 class="move-name"><span class="check-fixed" role="img" '
+                f'aria-label="{_attr(_ui("start_with", "You start with this"))}">'
+                '<input type="checkbox" checked disabled tabindex="-1"></span> '
+                f"{rich(_f(p, 0))}</h3>"
+            )
+        elif in_move and line.startswith(M_CK):
+            p = _split(line, M_CK)
+            cid, text = _f(p, 0), _f(p, 1)
+            body = rich(text)
+            m = re.match(r"^\s*<strong>(.*?)</strong>\s*(?:[—–-]\s*)?(.*)$", body, re.S)
+            name, rest = (m.group(1), m.group(2)) if m else (body, "")
+            out.append(f'<h3 class="move-name">{checkbox(cid)} {name}</h3>')
+            if rest.strip():
+                out.append(f"<p>{rest}</p>")
         elif line.startswith(M_H2) or line.startswith(M_H3):
             mk = M_H2 if line.startswith(M_H2) else M_H3
             tag = "h2" if mk == M_H2 else "h3"

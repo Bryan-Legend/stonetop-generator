@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">Ruchy</h2>
 <p>Zyskujesz wszystkie poniższe:</p>
-<h3 id="favor">Łaska</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Zaczynasz z tym"><input type="checkbox" checked disabled tabindex="-1"></span> Łaska</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">Łaska</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="Łaska 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="Łaska 1"></label><label class="track-step" for="thrall-favor-1" title="Łaska 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="Łaska 2"></label><label class="track-step" for="thrall-favor-2" title="Łaska 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="Łaska 3"></label></span></div>
 <p>Twoja Łaska zaczyna się od 0 i nie może przekroczyć 3. Gdy <strong><em>masz 3 Łaski i miałbyś zyskać kolejną</em></strong>, zmniejsz Łaskę do 0 i wybierz 1:</p>
 <ul class="bullets">
 <li>Zadaj pytanie swojemu panu i zyskaj przewagę w następnym rzucie, by działać zgodnie z odpowiedzią.</li>
 <li>Zyskaj nowe Znamię według wyboru. Potem poproś MG, by wybrał Znamię, którego nie masz, i je skreśl – nigdy go nie zyskasz.</li>
 </ul>
-<h3 id="urges">Żądze</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Zaczynasz z tym"><input type="checkbox" checked disabled tabindex="-1"></span> Żądze</h3>
 <p>Gdy <strong><em>MG zmusza cię, byś działał zgodnie z popędem</em></strong>, zyskaj 1 Łaskę, jeśli postąpisz, jak ci każą. Jeśli się opierasz, rzuć +WIS: <strong>przy 10+</strong> twoje czyny należą do ciebie; <strong>przy 7-9</strong> wybierz 1:</p>
 <ul class="bullets">
 <li>Walcz o kontrolę, aż coś/ktoś cię z tego wyrwie</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>Przy 6-</strong> odzyskujesz zmysły później, zrobiwszy bogowie wiedzą co.</p>
 <p>Gdy <strong><em>działasz zgodnie z popędem, choć nikt cię do tego nie zmusza</em></strong>, a twoje czyny przysparzają kłopotów tobie lub twoim sojusznikom, zyskaj 1 Łaskę.</p>
-<h3 id="dark-succor">Mroczne Wsparcie</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Zaczynasz z tym"><input type="checkbox" checked disabled tabindex="-1"></span> Mroczne Wsparcie</h3>
 <p>Gdy <strong><em>umierasz lub giniesz na miejscu</em></strong>, twój pan wstawia się za tobą. Dojdziesz do siebie, tu i teraz albo w czasie i miejscu wybranym przez MG. Potem rzuć +Łaska: <strong>przy 10+</strong> wybierz 1; <strong>przy 7-9</strong> wybierz 2; <strong>przy 6-</strong> obowiązują wszystkie 3.</p>
 <ul class="bullets">
 <li>Zyskaj nowe Znamię wybrane przez MG</li>
@@ -282,47 +287,56 @@
 <li>Twój pan daje ci zadanie; dopóki go nie wykonasz, twoja Łaska pozostaje na 0.</li>
 </ul>
 <p>Tak czy inaczej, wyzeruj swoją Łaskę.</p>
-<h3 id="unholy-vessel">Bezbożne Naczynie</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="Zaczynasz z tym"><input type="checkbox" checked disabled tabindex="-1"></span> Bezbożne Naczynie</h3>
 <p>Gdy <strong><em>miałbyś zyskać Znamię, ale nie ma już żadnych do zyskania</em></strong>, twoje człowieczeństwo przepada bezpowrotnie. Stajesz się zagrożeniem kontrolowanym przez MG. Stwórz nową postać.</p>
+</div>
 <h2 id="marks">Znamiona</h2>
 <p>Gdy po raz pierwszy zyskujesz tę wkładkę, MG wybierze dla ciebie 1 Znamię na podstawie natury twojego pana. Kolejne zyskujesz, gdy każe ci to ruch.</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>Ropiejąca Zgnilizna</strong> — Nie szkodzą ci trucizny, choroby, substancje żrące ani ukąszenia robactwa. Rzeczy w twojej obecności gniją, pękają, korodują i psują się.</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> Ropiejąca Zgnilizna</h3>
+<p>Nie szkodzą ci trucizny, choroby, substancje żrące ani ukąszenia robactwa. Rzeczy w twojej obecności gniją, pękają, korodują i psują się.</p>
 <p>Gdy <strong><em>wyrzucisz dublet</em></strong>, coś, co masz przy sobie, ulega zniszczeniu. MG powie ci co i jak.</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>Dziecię Głębin</strong> — Zmniejsz swoje maksymalne HP o 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> Dziecię Głębin</h3>
+<p>Zmniejsz swoje maksymalne HP o 2.</p>
 <p>Możesz oddychać wodą i nie szkodzi ci zimno ani ciśnienie. Twoja skóra pokrywa się łuską. Gdy <strong><em>spędzisz dzień bez kąpieli</em></strong>, zaznacz osłabienie.</p>
 <p>W pobliżu zbiornika wodnego możesz wydać 1 Łaskę, by przywołać oślizgłą mackę, która wykona twoje polecenia. Traktuj ją jak stronnika:</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">Oślizgła Macka</h3><p class="stat-tags">skradająca się, nieubłagana</p><p class="stat-stats"><strong>HP</strong> 6; <strong>Pancerz</strong> 0<br><strong>Obrażenia</strong> <button type="button" class="dice-roll" data-dice="d10" title="Kliknij, by rzucić d10 — Shift: przewaga · Ctrl: utrudnienie">d10</button> (zasięg, odrzucający, chwytny)<br><strong>Instynkt</strong>: wyciskać życie z istot<br><strong>Cena</strong> utopione życia</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>Maska Śmierci</strong> — Znajdujesz lub wykonujesz odrażającą maskę. Gdy <strong><em>nie nosisz maski</em></strong>, masz utrudnienie we wszystkich rzutach.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> Maska Śmierci</h3>
+<p>Znajdujesz lub wykonujesz odrażającą maskę. Gdy <strong><em>nie nosisz maski</em></strong>, masz utrudnienie we wszystkich rzutach.</p>
 <p>Gdy <strong><em>nosisz maskę</em></strong>, nieumarli traktują cię jak jednego ze swoich.</p>
 <p>Gdy <strong><em>nosisz maskę</em></strong>, możesz wydać 1 Łaskę, by napełnić grozą każdą żywą istotę, która cię widzi. Musi wybrać: uciec, skulić się albo nie ustąpić. Jeśli nie ustąpi, masz przewagę w pierwszym rzucie przeciw niej.</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>Rtęciowe Sny</strong> — Zmniejsz swoje maksymalne HP o 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> Rtęciowe Sny</h3>
+<p>Zmniejsz swoje maksymalne HP o 2.</p>
 <p>Gdy <strong><em>Rozbijasz Obóz</em></strong>, wszystkich przy tobie dręczą koszmary i mają utrudnienie w następnym rzucie.</p>
 <p>Możesz wydać 1 Łaskę, by zesłać na kogoś fałszywe doznania, o ile go widzisz.</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>Nienasycony</strong> — Wypełnia cię nieustający głód. Zyskaj dodatkowy popęd: „Bezmyślnie pożerać mięso”.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> Nienasycony</h3>
+<p>Wypełnia cię nieustający głód. Zyskaj dodatkowy popęd: „Bezmyślnie pożerać mięso”.</p>
 <p>Gdy <strong><em>Rozbijasz Obóz</em></strong>, zużyj dodatkowo <button type="button" class="dice-roll" data-dice="1d4" title="Kliknij, by rzucić 1d4 — Shift: przewaga · Ctrl: utrudnienie">1d4</button> prowiantu lub użyć zapasów.</p>
 <p>Możesz wydać 1 Łaskę, by:</p>
 <ul class="bullets">
 <li>Dotknąć czegoś. Dopóki to trzymasz, każdy, kto to widzi, pożąda tego.</li>
 <li>Zyskać odrażającą, rozdzierającą żelazo paszczę (<em>ręka</em>, 3 przebijający, <em>krwawy</em>) na tak długo, jak chcesz, a wraz z nią zdolność zjedzenia i strawienia czegokolwiek.</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>Czerwony Gniew</strong> — Zmniejsz swoje maksymalne HP o 2.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> Czerwony Gniew</h3>
+<p>Zmniejsz swoje maksymalne HP o 2.</p>
 <p>Gdy <strong><em>MG zmusza cię do przemocy</em></strong>, masz utrudnienie, by się oprzeć.</p>
 <p>Gdy <strong><em>dajesz upust wściekłości i rzucasz się na kogoś</em></strong> (<em>ręka</em>, <em>blisko</em>), wydaj 1-3 Łaski i rzuć +wydana Łaska: <strong>przy 10+</strong> zadajesz <button type="button" class="dice-roll" data-dice="2d8" title="Kliknij, by rzucić 2d8 — Shift: przewaga · Ctrl: utrudnienie">2d8</button> obrażeń (<em>krwawy</em>, <em>odrzucający</em>) i szokujesz, przerażasz lub zdumiewasz wszystkich świadków; <strong>przy 7-9</strong> jak przy 10+, ale nie przestajesz atakować ofiary (lub jej zwłok) w bezmyślnym szale, nie zważając na inne niebezpieczeństwa.</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>Zimny Uścisk Cienia</strong> — Zmniejsz swoje maksymalne HP o 2. Nie rzucasz cienia ani nie masz odbicia.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> Zimny Uścisk Cienia</h3>
+<p>Zmniejsz swoje maksymalne HP o 2. Nie rzucasz cienia ani nie masz odbicia.</p>
 <p>Gdy <strong><em>wystawiasz się na światło słoneczne lub święte</em></strong>, nie możesz wydawać Łaski (z żadnego powodu).</p>
 <p>Poza tym możesz wydać 1 Łaskę, by:</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>Nie zostawić śladu swojego przyjścia ani odejścia</li>
 <li>Sprzedać kłamstwo jako oczywistą, niewątpliwą prawdę</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>Mów Prawdę, Szeptaj Sekrety</strong> — Zmniejsz swoje maksymalne HP o 2. Twój język staje się niezwykle długi, a zęby poplamione i poszczerbione.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> Mów Prawdę, Szeptaj Sekrety</h3>
+<p>Zmniejsz swoje maksymalne HP o 2. Twój język staje się niezwykle długi, a zęby poplamione i poszczerbione.</p>
 <p>Możesz wydać 1 Łaskę, by spojrzeć komuś w oczy i dowiedzieć się (wybierz 1):</p>
 <ul class="bullets">
 <li>Czego pragnie ponad wszystko?</li>
@@ -341,10 +356,12 @@
 <li>Jakie jest jego najgorsze wspomnienie?</li>
 </ul>
 <p>Gdy <strong><em>wykorzystujesz odpowiedź przeciw tej osobie</em></strong>, masz przewagę.</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>Błogosławieństwo Udręki</strong> — Twoje rany goją się powoli. Gdy odzyskujesz HP, odzyskujesz tylko połowę tego, co powinieneś. Ale nigdy nie musisz Stawiać Czoła Niebezpieczeństwu z powodu bólu, utraty krwi ani osłabienia wywołanego ranami.</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> Błogosławieństwo Udręki</h3>
+<p>Twoje rany goją się powoli. Gdy odzyskujesz HP, odzyskujesz tylko połowę tego, co powinieneś. Ale nigdy nie musisz Stawiać Czoła Niebezpieczeństwu z powodu bólu, utraty krwi ani osłabienia wywołanego ranami.</p>
 <p>Gdy <strong><em>wypowiadasz słowo udręki</em></strong>, wskaż kogoś w pobliżu, wydaj 1-3 Łaski i rzuć +wydana Łaska: <strong>przy 10+</strong> otrzymuje <button type="button" class="dice-roll" data-dice="2d4" title="Kliknij, by rzucić 2d4 — Shift: przewaga · Ctrl: utrudnienie">2d4</button> obrażeń i skręca się z bólu – pomniejsze ofiary zostają obezwładnione, a potężni wrogowie na chwilę ogłuszeni; <strong>przy 7-9</strong> otrzymuje <button type="button" class="dice-roll" data-dice="1d6" title="Kliknij, by rzucić 1d6 — Shift: przewaga · Ctrl: utrudnienie">1d6</button> obrażeń (ignoruje pancerz), a pomniejsze ofiary zostają na chwilę ogłuszone.</p>
+</div>
         </main>
       </div>
     </div>

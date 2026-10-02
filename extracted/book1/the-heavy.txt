@@ -27,10 +27,19 @@ C	<b>TROUBLE</b> To stick your nose in where it's unwelcome.
 C	<b>VIOLENCE</b> To solve problems by force.
 H2	Appearance
 P	Choose 1 on each line, or make something up:
-C	young & brash in my prime old & leathery
-C	gravelly voice hearty voice soft-spoken
-C	giant frame just ripped stocky wiry
-C	distinctive scars oft-broken nose missing bits
+C	young & brash
+C	in my prime
+C	old & leathery
+C	gravelly voice
+C	hearty voice
+C	soft-spoken
+C	giant frame
+C	just ripped
+C	stocky
+C	wiry
+C	distinctive scars
+C	oft-broken nose
+C	missing bits
 H2	Place of origin and name
 P	Stonetop is your home, or close enough, but where are you (or your family) from originally? Pick 1 and a name to match (or make up something similar).
 C	<b>Stonetop</b>: Aerona, Arthfael, Cadmor, Esyllt, Pedr, Rhonwen, Terrwen, or Trystan
@@ -60,10 +69,8 @@ PAGE	114
 H2	Moves
 P	You start with Dangerous, Hard to Kill, and either Armored OR Uncanny Reflexes.
 HR
-C	<b>ARMORED</b> When you <b><i>carry a shield</i></b>, mark only ◇ (instead of
-P	• ◇◇ ). Also, you can ignore the <i>cumbersome</i> tag on any armor you wear.
-P	If you take this move at the start of play, add an ◇◇ iron hauberk, ◇◇ bronze cuirass, or ◇◇ scale coat to your inventory (all are 2 armor,
-P	<i>warm</i>, <i>cumbersome</i>).
+C	<b>ARMORED</b> When you <b><i>carry a shield</i></b>, mark only ◇ (instead of ◇◇). Also, you can ignore the <i>cumbersome</i> tag on any armor you wear.
+P	If you take this move at the start of play, add an ◇◇ iron hauberk, ◇◇ bronze cuirass, or ◇◇ scale coat to your inventory (all are 2 armor, <i>warm</i>, <i>cumbersome</i>).
 C	<b>BATTLE JOY</b> When you <b><i>spill blood—yours or another's—and</i></b> <b><i>lose yourself in battle</i></b>, you ignore fear, pain, mindcontrol, and the effects of debilities as long as you keep fighting.
 P	When <b><i>the action stops</i></b>, roll +CON: <b>on a 10+</b>, that was a rush, regain 1d4 HP; <b>on a 7-9</b>, you're winded and out of it, but you'll be fine with a few minutes' rest; <b>on a 6-</b>, mark a debility but don't mark XP.
 C2	<b>BERSERKER</b>
@@ -80,6 +87,7 @@ P	<b>On a 6-</b>, pick 1 but ask the GM what you've missed.
 C	<b>FROSTY</b> When you <b><i>Defy Danger by keeping calm and carrying on</i></b>, <b>on a 10+</b> you can also ask the GM a question that you could ask when Seeking Insight. You have advantage on your next move to act on the answer.
 HR
 C	<b>GUARDIAN</b> When you <b><i>Defend</i></b>, hold 1 extra Readiness. Even on a 6-, hold 1 Readiness (plus whatever the GM says).
+TAKES	3
 C	<b>IMPROVED STAT</b> Each time you take this move, increase one of your stats by 1 (to a max of +2).
 HR
 C	<b>INTIMIDATING</b> When you <b><i>Persuade using violence or threats</i></b>, you have advantage.
@@ -96,6 +104,7 @@ C	<b>MUSCLEBOUND</b> (Requires Strength +2 or higher) When you <b><i>make a hand
 PAGE	115
 C	<b>PAYBACK</b> When you <b><i>deal damage to a foe that has harmed you</i></b> <b><i>or one of your allies</i></b>, deal +1d4 damage.
 C	<b>RELENTLESS</b> When you <b><i>Clash and your foe survives</i></b>, you gain advantage the next time you Clash with them.
+TAKES	3
 C	<b>SEASONED WARRIOR</b> (Requires level 2+ and the Heavy) Take a move from the Fox, Marshal, Ranger, or Seeker playbooks, for which you otherwise qualify. You can pick from a different playbook each time. (You can't pick Improved Stat or Superior Stat.)
 C	<b>SITUATIONAL AWARENESS</b> When you <b><i>Seek Insight</i></b>, add the following to the list of questions you can ask:
 Q	Who or what here is the biggest threat?

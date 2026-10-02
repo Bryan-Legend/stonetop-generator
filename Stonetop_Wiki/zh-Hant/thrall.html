@@ -258,14 +258,17 @@
 </div>
 <h2 id="moves">行動</h2>
 <p>你獲得以下全部：</p>
-<h3 id="favor">恩寵</h3>
+<div class="move-block" id="favor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便擁有此項"><input type="checkbox" checked disabled tabindex="-1"></span> 恩寵</h3>
 <div class="arcana-track" data-check-list="thrall-favor"><span class="track-label">恩寵</span><span class="track-steps"><label class="track-step" for="thrall-favor-0" title="恩寵 1"><input type="checkbox" class="wiki-check" id="thrall-favor-0" data-check-id="thrall-favor-0" aria-label="恩寵 1"></label><label class="track-step" for="thrall-favor-1" title="恩寵 2"><input type="checkbox" class="wiki-check" id="thrall-favor-1" data-check-id="thrall-favor-1" aria-label="恩寵 2"></label><label class="track-step" for="thrall-favor-2" title="恩寵 3"><input type="checkbox" class="wiki-check" id="thrall-favor-2" data-check-id="thrall-favor-2" aria-label="恩寵 3"></label></span></div>
 <p>你的恩寵起始為 0，最高不超過 3。當你<strong><em>已有 3 點恩寵卻還要再獲得一點時</em></strong>，把恩寵降為 0 並選1項：</p>
 <ul class="bullets">
 <li>向你的主人問一個問題，並在依答案行動的下一次擲骰上獲得優勢。</li>
 <li>獲得一枚由你選擇的新印記。然後請GM選一枚你還沒有的印記，劃掉它——你永遠無法獲得它。</li>
 </ul>
-<h3 id="urges">驅使</h3>
+</div>
+<div class="move-block" id="urges" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便擁有此項"><input type="checkbox" checked disabled tabindex="-1"></span> 驅使</h3>
 <p>當<strong><em>GM驅使你按衝動行動時</em></strong>，若你照做，獲得 1 點恩寵。若你抗拒，擲 +WIS：<strong>10+</strong>，行動由你做主；<strong>7-9</strong>，選1項：</p>
 <ul class="bullets">
 <li>爭奪控制，直到某事/某人把你拉回來</li>
@@ -274,7 +277,9 @@
 </ul>
 <p><strong>6- 時</strong>，你稍後才回過神來，已經做了天知道什麼。</p>
 <p>當你<strong><em>未經驅使就按衝動行動時</em></strong>，且你的行動給你或盟友帶來麻煩，獲得 1 點恩寵。</p>
-<h3 id="dark-succor">黑暗救助</h3>
+</div>
+<div class="move-block" id="dark-succor" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便擁有此項"><input type="checkbox" checked disabled tabindex="-1"></span> 黑暗救助</h3>
 <p>當你<strong><em>正在死去或被徹底殺死時</em></strong>，你的主人替你出手斡旋。你會復原，就在此時此地，或在GM選擇的時間與地點。然後，擲 +恩寵：<strong>10+</strong>，選1項；<strong>7-9</strong>，選2項；<strong>6-</strong>，三項都生效。</p>
 <ul class="bullets">
 <li>獲得一枚由GM選擇的新印記</li>
@@ -282,47 +287,56 @@
 <li>你的主人給你一項任務；直到你完成它，你的恩寵保持為 0。</li>
 </ul>
 <p>無論如何，把恩寵重置為 0。</p>
-<h3 id="unholy-vessel">不潔容器</h3>
+</div>
+<div class="move-block" id="unholy-vessel" data-move="sheet">
+<h3 class="move-name"><span class="check-fixed" role="img" aria-label="你起始便擁有此項"><input type="checkbox" checked disabled tabindex="-1"></span> 不潔容器</h3>
 <p>當你<strong><em>本該獲得一枚印記卻已無印記可獲時</em></strong>，你的人性徹底喪失。你變成GM控制下的一樁威脅。做一個新角色。</p>
+</div>
 <h2 id="marks">印記</h2>
 <p>當你首次獲得這張附頁時，GM會根據你主人的本性為你選1枚印記。當一項行動讓你獲得時，再獲得更多。</p>
-<ul class="check-list" data-check-list="thrall-5">
-<li class="check-item"><label for="thrall-5-0"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> <span><strong>潰爛之腐</strong> ——毒素、疾病、腐蝕物和害蟲叮咬傷害不了你。你在場時，東西會腐爛、開裂、鏽蝕、變質。</span></label></li>
-</ul>
+<div class="move-block" id="a-festering-rot" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-5-0" data-check-id="thrall-5-0"> 潰爛之腐</h3>
+<p>—毒素、疾病、腐蝕物和害蟲叮咬傷害不了你。你在場時，東西會腐爛、開裂、鏽蝕、變質。</p>
 <p>當你<strong><em>擲出對子時</em></strong>，你身上某樣東西毀掉了。GM會告訴你是什麼、如何毀掉。</p>
-<ul class="check-list" data-check-list="thrall-6">
-<li class="check-item"><label for="thrall-6-0"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> <span><strong>深淵之子</strong> ——把你的 HP 上限降低 2。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="child-of-the-deeps" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-6-0" data-check-id="thrall-6-0"> 深淵之子</h3>
+<p>—把你的 HP 上限降低 2。</p>
 <p>你可以在水中呼吸，不受寒冷或壓力傷害。你的皮膚變得有鱗。當你<strong><em>一天不沐浴時</em></strong>，標記一項衰弱。</p>
 <p>靠近一汪水時，你可以花費 1 點恩寵喚出一條黏滑觸手供你驅使。把它視作追隨者：</p>
 <div class="stat-block follower" id="slimy-tentacle"><h3 class="stat-name">黏滑觸手</h3><p class="stat-tags">隱祕, 不休</p><p class="stat-stats"><strong>HP</strong> 6；<strong>護甲</strong> 0<br><strong>傷害</strong> <button type="button" class="dice-roll" data-dice="d10" title="點選擲 d10 — Shift: 優勢 · Ctrl: 劣勢">d10</button>（觸及, 強力, 抓取）<br><strong>本能</strong>去把生命從東西里擠出來<br><strong>代價</strong> 溺斃的性命</p></div>
-<ul class="check-list" data-check-list="thrall-7">
-<li class="check-item"><label for="thrall-7-0"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> <span><strong>死亡面具</strong> ——你找到或做成一副可怖面具。當你<strong><em>不戴面具時</em></strong>，你所有擲骰處於劣勢。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="death-mask" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-7-0" data-check-id="thrall-7-0"> 死亡面具</h3>
+<p>—你找到或做成一副可怖面具。當你<strong><em>不戴面具時</em></strong>，你所有擲骰處於劣勢。</p>
 <p>當你<strong><em>戴上面具時</em></strong>，不死者把你當作他們自己人。</p>
 <p>當你<strong><em>戴上面具時</em></strong>，你可以花費 1 點恩寵，讓任何看見你的活物充滿恐懼。他們必須選擇：逃走、畏縮，或站穩。若他們站穩，你對他們的第一次擲骰獲得優勢。</p>
-<ul class="check-list" data-check-list="thrall-8">
-<li class="check-item"><label for="thrall-8-0"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> <span><strong>水銀之夢</strong> ——把你的 HP 上限降低 2。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="quicksilver-dreams" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-8-0" data-check-id="thrall-8-0"> 水銀之夢</h3>
+<p>—把你的 HP 上限降低 2。</p>
 <p>當<strong><em>你紮營時</em></strong>，與你同行的每個人都做噩夢，並在下一次擲骰上處於劣勢。</p>
 <p>只要你能看見某人，你可以花費 1 點恩寵對其施加虛假感覺。</p>
-<ul class="check-list" data-check-list="thrall-9">
-<li class="check-item"><label for="thrall-9-0"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> <span><strong>貪饕</strong> ——你充滿無盡的飢餓。獲得一項額外衝動：「放縱地吞噬血肉。」</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="ravenous" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-9-0" data-check-id="thrall-9-0"> 貪饕</h3>
+<p>—你充滿無盡的飢餓。獲得一項額外衝動：「放縱地吞噬血肉。」</p>
 <p>當你<strong><em>紮營時</em></strong>，額外消耗 <button type="button" class="dice-roll" data-dice="1d4" title="點選擲 1d4 — Shift: 優勢 · Ctrl: 劣勢">1d4</button> 次口糧或補給品。</p>
 <p>你可以花費 1 點恩寵來：</p>
 <ul class="bullets">
 <li>觸碰某物。只要你拿著它，每個看見它的人都渴望得到它。</li>
 <li>獲得一張可怖的、能撕鐵的大口（<em>近身</em>，3 穿刺，<em>狼藉</em>），想維持多久就多久，並因此能吃下並消化任何東西。</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-10">
-<li class="check-item"><label for="thrall-10-0"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> <span><strong>赤怒</strong> ——把你的 HP 上限降低 2。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="red-wrath" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-10-0" data-check-id="thrall-10-0"> 赤怒</h3>
+<p>—把你的 HP 上限降低 2。</p>
 <p>當<strong><em>GM驅使你使用暴力時</em></strong>，你抗拒時處於劣勢。</p>
 <p>當你<strong><em>放任怒火飛出、撲向某人時</em></strong>（<em>近身</em>，<em>近戰</em>），花費 1-3 點恩寵並擲 +花費的恩寵：<strong>10+</strong>，造成 <button type="button" class="dice-roll" data-dice="2d8" title="點選擲 2d8 — Shift: 優勢 · Ctrl: 劣勢">2d8</button> 傷害（<em>狼藉</em>，<em>強力</em>）並震驚、恐嚇或折服任何旁觀者；<strong>7-9</strong>，如同10+，但你在不加思索的狂怒中繼續攻擊你的受害者（或其屍體），不顧其他危險。</p>
-<ul class="check-list" data-check-list="thrall-11">
-<li class="check-item"><label for="thrall-11-0"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> <span><strong>陰影的冰冷擁抱</strong> ——把你的 HP 上限降低 2。你沒有影子，也沒有倒影。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="shadows-cold-embrace" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-11-0" data-check-id="thrall-11-0"> 陰影的冰冷擁抱</h3>
+<p>—把你的 HP 上限降低 2。你沒有影子，也沒有倒影。</p>
 <p>當你<strong><em>暴露在陽光或聖光下時</em></strong>，你不能花費恩寵（無論何種原因）。</p>
 <p>否則你可以花費 1 點恩寵來：</p>
 <ul class="bullets">
@@ -330,9 +344,10 @@
 <li>來去不留痕跡</li>
 <li>把一個謊言當作顯而易見、確鑿的真相矇混過去</li>
 </ul>
-<ul class="check-list" data-check-list="thrall-12">
-<li class="check-item"><label for="thrall-12-0"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> <span><strong>說真話，低語祕密</strong> ——把你的 HP 上限降低 2。你的舌頭變得異常長，牙齒變得汙漬斑斑、參差不齊。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="speak-truth-whisper-secrets" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-12-0" data-check-id="thrall-12-0"> 說真話，低語祕密</h3>
+<p>—把你的 HP 上限降低 2。你的舌頭變得異常長，牙齒變得汙漬斑斑、參差不齊。</p>
 <p>你可以花費 1 點恩寵直視某人的眼睛並得知（選1）：</p>
 <ul class="bullets">
 <li>他們最渴望什麼？</li>
@@ -341,10 +356,12 @@
 <li>他們最糟的記憶是什麼？</li>
 </ul>
 <p>當你<strong><em>用這個答案對付他們時</em></strong>，你獲得優勢。</p>
-<ul class="check-list" data-check-list="thrall-13">
-<li class="check-item"><label for="thrall-13-0"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> <span><strong>折磨之賜</strong> ——你的傷口癒合緩慢。當你恢復 HP 時，只恢復本該恢復的一半。但是，你永遠不必因傷痛、失血和傷口帶來的虛弱而直面險境。</span></label></li>
-</ul>
+</div>
+<div class="move-block" id="torments-blessing" data-move="sheet">
+<h3 class="move-name"><input type="checkbox" class="wiki-check" id="thrall-13-0" data-check-id="thrall-13-0"> 折磨之賜</h3>
+<p>—你的傷口癒合緩慢。當你恢復 HP 時，只恢復本該恢復的一半。但是，你永遠不必因傷痛、失血和傷口帶來的虛弱而直面險境。</p>
 <p>當你<strong><em>說出一個折磨之詞時</em></strong>，指名附近某人，花費 1-3 點恩寵，並擲 +花費的恩寵：<strong>10+</strong>，他們承受 <button type="button" class="dice-roll" data-dice="2d4" title="點選擲 2d4 — Shift: 優勢 · Ctrl: 劣勢">2d4</button> 傷害並被劇痛折磨——較弱的受害者失能，強大的敵人暫時被震懾；<strong>7-9</strong>，他們承受 <button type="button" class="dice-roll" data-dice="1d6" title="點選擲 1d6 — Shift: 優勢 · Ctrl: 劣勢">1d6</button> 傷害（無視護甲），較弱的受害者暫時被震懾。</p>
+</div>
         </main>
       </div>
     </div>

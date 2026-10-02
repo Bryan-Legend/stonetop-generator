@@ -60,13 +60,20 @@ C	<b>Needle & thread</b>
 C	<b>Handful of coppers</b>
 C	<b>Whisky</b>, skin (◇◇ uses)
 C	<b>Awl Bowstring</b>
-C	<b>Chalk Charcoal</b>
-C	<b>Clay jar Cloth/rag</b>
-C	<b>Comb Cup</b>
-C	<b>Extra socks Gloves</b>
-C	<b>Little box Sack</b> (empty) low ammo, all out) <b>Sawdust Tallow</b>
-C	<b>Twine/cord Waterskin</b>
-C	<b>Whetstone Whistle</b>
+C	<b>Chalk</b>
+C	<b>Charcoal</b>
+C	<b>Clay jar</b>
+C	<b>Cloth/rag</b>
+C	<b>Comb</b>
+C	<b>Cup</b>
+C	<b>Extra socks</b>
+C	<b>Gloves</b>
+C	<b>Little box</b>
+C	<b>Sack</b> (empty) low ammo, all out) <b>Sawdust Tallow</b>
+C	<b>Twine/cord</b>
+C	<b>Waterskin</b>
+C	<b>Whetstone</b>
+C	<b>Whistle</b>
 HR
 H3	Prosperity
 C	-1 Gear is <i>crude</i>
