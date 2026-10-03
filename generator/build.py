@@ -8,8 +8,13 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
+import pickle
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -59,7 +64,8 @@ from .chrome import (
     write_sitemap,
 )
 from . import blocks as blockdata
-from .lastmod import snapshot as lastmod_snapshot
+from . import lastmod
+from .lastmod import snapshot as lastmod_snapshot, write_output
 from .coverage import report as report_unshown
 from .corpus import (
     TEXT_KINDS,
@@ -281,7 +287,99 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "published. Use this only for a local, unpublished build."
         ),
     )
+    p.add_argument(
+        "--jobs",
+        type=int,
+        default=None,
+        help=(
+            "How many processes render the translated pages (the bulk of a "
+            "full build). Default: up to 8, one less than the CPU count. "
+            "1 renders everything in this process."
+        ),
+    )
+    # A render worker: the same build, rendering every Nth language and
+    # handing the pages back instead of writing anything (see
+    # ``spawn_render_workers``).
+    p.add_argument("--render-shard", default=None, help=argparse.SUPPRESS)
+    p.add_argument("--render-out", default=None, help=argparse.SUPPRESS)
     return p.parse_args(argv)
+
+
+# ------------------------------------------------------- parallel rendering
+#
+# Rendering one page in one language is a pure function of the corpus, the
+# translation and the site's link maps, and twenty languages make it ~90% of
+# a full build. So the build starts N copies of itself, each of which does
+# the cheap shared work (read the corpus, index the sections, render the
+# English pages — a few seconds) and then renders every Nth language,
+# pickling ``{(code, slug): (page, notes, seconds)}`` instead of writing a
+# file. The parent takes its translated pages from those and does everything
+# else exactly as before — the notes are printed in the same order, so the
+# log does not change. A worker that fails is simply not used: the parent
+# renders what it is missing itself.
+
+# Flags a worker must not inherit: it re-reads the corpus the parent has
+# already brought up to date, and it reports to the parent, not the console.
+_WORKER_DROPS = {"--extract", "--extract-only", "--seed-blocks", "--profile"}
+
+
+def default_jobs() -> int:
+    return max(1, min(8, (os.cpu_count() or 2) - 1))
+
+
+def spawn_render_workers(argv: list[str], n: int) -> dict:
+    kept: list[str] = []
+    skip = False
+    for a in argv:
+        if skip:
+            skip = False
+        elif a == "--jobs":
+            skip = True
+        elif a in _WORKER_DROPS or a.startswith("--jobs="):
+            pass
+        else:
+            kept.append(a)
+    tmp = Path(tempfile.mkdtemp(prefix="stonetop-render-"))
+    procs = []
+    for i in range(n):
+        res = tmp / f"{i}.pickle"
+        err = open(tmp / f"{i}.err", "wb")
+        procs.append((
+            i,
+            res,
+            subprocess.Popen(
+                [sys.executable, "-m", "generator", *kept,
+                 "--render-shard", f"{i}/{n}", "--render-out", str(res)],
+                cwd=REPO_ROOT,
+                stdout=subprocess.DEVNULL,
+                stderr=err,
+            ),
+            err,
+        ))
+    return {"tmp": tmp, "procs": procs}
+
+
+def collect_render_workers(workers: dict) -> dict:
+    """Wait for the workers; ``{(code, slug): (page, notes, seconds)}``."""
+    done: dict = {}
+    for i, res, proc, err in workers["procs"]:
+        code = proc.wait()
+        err.close()
+        try:
+            if code != 0:
+                raise OSError(f"exit code {code}")
+            with open(res, "rb") as f:
+                done.update(pickle.load(f))
+        except (OSError, pickle.PickleError, EOFError) as e:
+            print(f"  note: render worker {i} failed ({e}); rendering its languages here")
+            try:
+                tail = Path(err.name).read_text(encoding="utf-8", errors="replace")
+                for line in tail.strip().splitlines()[-3:]:
+                    print(f"    {line}")
+            except OSError:
+                pass
+    shutil.rmtree(workers["tmp"], ignore_errors=True)
+    return done
 
 
 # ------------------------------------------------------------ extraction
@@ -414,6 +512,12 @@ def main(argv: list[str] | None = None) -> None:
             pass
     args = parse_args(argv)
     t_start = time.perf_counter()
+    # (i, n) in a render worker: render every nth language, write nothing.
+    shard: tuple[int, int] | None = None
+    if args.render_shard:
+        i, _, n = args.render_shard.partition("/")
+        shard = (int(i), int(n))
+    workers: dict | None = None
     clock = BuildClock(args.profile)
     clock.phase("read corpus / extract")
     input_dir = args.input.expanduser().resolve()
@@ -502,6 +606,11 @@ def main(argv: list[str] | None = None) -> None:
     only_langs = args.langs
     if only_langs and len(only_langs) == 1 and only_langs[0].lower() == "none":
         only_langs = []
+    jobs = args.jobs if args.jobs is not None else default_jobs()
+    if shard is None and jobs > 1 and only_langs != [] and not args.pages:
+        workers = spawn_render_workers(
+            list(sys.argv[1:] if argv is None else argv), jobs
+        )
     clock.phase("load translations")
     lang_source, lang_targets = load_locales(only_langs)
     clock.phase("prepare")
@@ -527,13 +636,15 @@ def main(argv: list[str] | None = None) -> None:
     # manifest, so the next run would do it again).
     # The sitemap's <lastmod> follows each page's output, not the build date:
     # note what the pages looked like before they are cleared and rewritten.
-    previous_pages = None if args.pages else lastmod_snapshot(out, args.base_url)
-    if not args.pages:
-        for name in read_build_manifest(out):
-            try:
-                (out / name).unlink()
-            except OSError:
-                pass
+    # What the last build wrote is not cleared up front any more: a page is
+    # rewritten only if it changed (lastmod.write_output), and whatever the
+    # last build owned that this one did not produce is deleted at the end.
+    if shard is None:
+        lastmod.load_cache(out)
+    previous_pages = (
+        None if args.pages or shard else lastmod_snapshot(out, args.base_url)
+    )
+    owned_before = [] if args.pages else read_build_manifest(out)
 
     # The books' text is CC BY-SA 4.0, but "all artwork herein is
     # © 2026 by Lucie Arnoux" — maps are artwork. The map *images* are only
@@ -728,6 +839,13 @@ def main(argv: list[str] | None = None) -> None:
     print(f"  Indexed {n_sec} sections/monsters across {len(sections_by_slug)} pages")
 
     print("Building pages…")
+    # The translated pages, rendered by the workers while this process was
+    # getting here; anything they did not hand back is rendered in the loop.
+    rendered: dict = {}
+    shard_out: dict = {}
+    if workers is not None:
+        clock.phase(f"wait for translated renders ({len(workers['procs'])} processes)")
+        rendered = collect_render_workers(workers)
     clock.phase("build english pages (second render)")
     search_docs: list[dict] = []
     n_unshown = 0
@@ -765,6 +883,38 @@ def main(argv: list[str] | None = None) -> None:
 
         lookup = lookups[book_id]
         section_index = section_indexes[book_id]
+        if shard is not None:
+            # A render worker: this page in its share of the languages, and
+            # nothing else — the parent renders the English page, checks it
+            # and writes it. Same arguments as the call further down.
+            if art.get("kind") not in ("article", "arcana"):
+                continue
+            lines, _pages = texts[slug]
+            common = dict(
+                current_slug=slug,
+                section_index=section_index,
+                lookups=lookups,
+                section_indexes=section_indexes,
+                current_book=book_id,
+            )
+            ov = page_override(slug)
+            for li, locale in enumerate(lang_targets):
+                if li % shard[1] != shard[0]:
+                    continue
+                tr = locale["pages"].get(slug)
+                if not tr or "corpus" not in tr:
+                    continue
+                t_tr = time.perf_counter()
+                page_tr, notes = render_translated(
+                    tr["corpus"], locale["code"], art, lines, _pages, ov,
+                    lookup, articles, common, ui=locale.get("ui"),
+                    titles=locale.get("titles"),
+                    page_blocks=blockdata.for_slug(listed_blocks, book_id, slug),
+                )
+                shard_out[(locale["code"], slug)] = (
+                    page_tr, notes, time.perf_counter() - t_tr
+                )
+            continue
         t_page = time.perf_counter()
         body = ""
         excerpt = ""
@@ -908,12 +1058,17 @@ def main(argv: list[str] | None = None) -> None:
                     print(f"  i18n: {locale['code']}/{slug}: only articles, arcana and sheets render from a corpus translation yet")
                     del locale["pages"][slug]
                     continue
-                page_tr, notes = render_translated(
-                    tr["corpus"], locale["code"], art, lines, _pages, ov,
-                    lookup, articles, common, ui=locale.get("ui"),
-                    titles=locale.get("titles"),
-                    page_blocks=blockdata.for_slug(listed_blocks, book_id, slug),
-                )
+                got = rendered.get((locale["code"], slug))
+                if got is not None:
+                    page_tr, notes, secs = got
+                    t_tr = time.perf_counter() - secs
+                else:
+                    page_tr, notes = render_translated(
+                        tr["corpus"], locale["code"], art, lines, _pages, ov,
+                        lookup, articles, common, ui=locale.get("ui"),
+                        titles=locale.get("titles"),
+                        page_blocks=blockdata.for_slug(listed_blocks, book_id, slug),
+                    )
                 for note in notes:
                     print(f"  i18n: {note}")
                 if page_tr is None:
@@ -1023,7 +1178,7 @@ def main(argv: list[str] | None = None) -> None:
                 previews[slug]["number"] = art["number"]
                 previews[slug]["arcana_type"] = art.get("arcana_type") or ""
         if only_pages is None or slug in only_pages:
-            (out / f"{slug}.html").write_text(page_html, encoding="utf-8")
+            write_output((out / f"{slug}.html"), page_html, encoding="utf-8")
         english_bodies[slug] = body
 
         search_text = html_to_search_text(body)
@@ -1058,6 +1213,11 @@ def main(argv: list[str] | None = None) -> None:
     elif n_drift:
         print(f"  {n_drift} block(s) differ from blocks.json, in total")
 
+    if shard is not None:
+        with open(args.render_out, "wb") as f:
+            pickle.dump(shard_out, f, protocol=pickle.HIGHEST_PROTOCOL)
+        return
+
     bestiary = next((a for a in articles if a.get("kind") == "bestiary"), None)
     bestiary_list: list[dict] = []
     if bestiary:
@@ -1074,7 +1234,7 @@ def main(argv: list[str] | None = None) -> None:
         body = bestiary_html(entries)
         excerpt = bestiary_excerpt(len(entries))
         if only_pages is None or BESTIARY_SLUG in only_pages:
-            (out / f"{BESTIARY_SLUG}.html").write_text(
+            write_output((out / f"{BESTIARY_SLUG}.html"), 
                 page_shell(
                     bestiary["title"],
                     BESTIARY_SLUG,
@@ -1132,7 +1292,7 @@ def main(argv: list[str] | None = None) -> None:
     page_map_json = json.dumps(page_maps, ensure_ascii=False, indent=2)
     # JS globals (not separate JSON) so hover previews work over file://
     if only_pages is None:
-        (out / "js" / "previews-data.js").write_text(
+        write_output((out / "js" / "previews-data.js"), 
             "window.WIKI_PREVIEWS = "
             + previews_json
             + ";\nwindow.WIKI_PAGE_MAP = "
@@ -1142,7 +1302,7 @@ def main(argv: list[str] | None = None) -> None:
         )
     search_json = json.dumps(search_docs, ensure_ascii=False, separators=(",", ":"))
     if only_pages is None:
-        (out / "js" / "search-index.js").write_text(
+        write_output((out / "js" / "search-index.js"), 
             "window.WIKI_SEARCH_INDEX = " + search_json + ";\n",
             encoding="utf-8",
         )
@@ -1205,9 +1365,17 @@ def main(argv: list[str] | None = None) -> None:
             base_url=args.base_url,
             languages=[t["code"] for t in lang_targets],
         )
-        write_build_manifest(
-            out, page_files + ["sitemap.xml", "robots.txt", "llms.txt"]
-        )
+        owned = page_files + ["sitemap.xml", "robots.txt", "llms.txt"]
+        for name in owned_before:
+            if name not in owned and not lastmod.was_written(out / name):
+                try:
+                    (out / name).unlink()
+                except OSError:
+                    pass
+        for t in lang_targets:
+            lastmod.sweep(out / t["code"])
+        write_build_manifest(out, owned)
+    lastmod.save_cache(out)
     if args.profile:
         clock.report(time.perf_counter() - t_start)
     print(

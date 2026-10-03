@@ -4426,6 +4426,9 @@ def resolve_unique_section(
     return None
 
 
+_DIV_TAG_RE = re.compile(r"<div\b|(</div\s*>)", re.I)
+
+
 def extract_section_html_blocks(body: str, section_meta: list[dict]) -> dict[str, dict]:
     """
     Pull full HTML for each deep-link target from a page body.
@@ -4444,22 +4447,15 @@ def extract_section_html_blocks(body: str, section_meta: list[dict]) -> dict[str
     )
 
     def _capture_div_block(start: int) -> str | None:
+        # One pass over the tags: a <div> opening, or (group 1) one closing.
         depth = 0
-        i = start
-        while i < len(body):
-            open_m = re.match(r"<div\b", body[i:], re.I)
-            close_m = re.match(r"</div\s*>", body[i:], re.I)
-            if open_m:
-                depth += 1
-                i += open_m.end()
-                continue
-            if close_m:
+        for t in _DIV_TAG_RE.finditer(body, start):
+            if t.group(1):
                 depth -= 1
-                i += close_m.end()
                 if depth == 0:
-                    return body[start:i]
-                continue
-            i += 1
+                    return body[start:t.end()]
+            else:
+                depth += 1
         return None
 
     for m in re.finditer(

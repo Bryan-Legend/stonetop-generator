@@ -12,6 +12,7 @@ import shutil
 from pathlib import Path
 
 from . import REPO_ROOT
+from .lastmod import write_output
 from .i18n import (
     UI_FALLBACK,
     alternates_for,
@@ -484,9 +485,7 @@ def write_sitemap(
         previous or {},
         fallback=lambda: lastmod.git_dates(out),
     )
-    (out / "sitemap.xml").write_text(
-        lastmod.render_sitemap(lastmods), encoding="utf-8"
-    )
+    write_output(out / "sitemap.xml", lastmod.render_sitemap(lastmods))
     today = lastmod.today()
     fresh = sum(1 for d in lastmods.values() if d == today)
     print(f"  Sitemap: {len(locs)} URLs ({fresh} dated today)")
@@ -604,7 +603,7 @@ def write_llms_txt(
         "builds this site from the books' PDFs.",
         "",
     ]
-    (out / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
+    write_output((out / "llms.txt"), "\n".join(lines), encoding="utf-8")
     print(f"  llms.txt: {sum(len(a) for _l, a in groups) + len(arcana)} pages")
 
 
@@ -615,7 +614,7 @@ def write_robots(out: Path, *, base_url: str) -> None:
         "Sitemap: " + base_url.rstrip("/") + "/sitemap.xml",
         "",
     ]
-    (out / "robots.txt").write_text("\n".join(lines), encoding="utf-8")
+    write_output((out / "robots.txt"), "\n".join(lines), encoding="utf-8")
 
 
 PAGES_DIRNAME = "pages"
@@ -1344,7 +1343,7 @@ def write_localized_data(
     js_dir = lang_dir / "js"
     js_dir.mkdir(parents=True, exist_ok=True)
     nl = "\n"
-    (js_dir / "previews-data.js").write_text(
+    write_output((js_dir / "previews-data.js"), 
         "window.WIKI_PREVIEWS = "
         + json.dumps(pv, ensure_ascii=False, indent=2)
         + ";" + nl + "window.WIKI_PAGE_MAP = "
@@ -1352,7 +1351,7 @@ def write_localized_data(
         + ";" + nl,
         encoding="utf-8",
     )
-    (js_dir / "search-index.js").write_text(
+    write_output((js_dir / "search-index.js"), 
         "window.WIKI_SEARCH_INDEX = "
         + json.dumps(docs, ensure_ascii=False, separators=(",", ":"))
         + ";" + nl,
@@ -1377,7 +1376,8 @@ def write_localized_pages(
     """Write ``<out>/<lang>/<slug>.html`` for every translated page.
 
     Returns the hrefs written, for the sitemap. Each language directory is
-    rewritten from scratch, so a translation file that is deleted takes its
+    swept afterwards of what the build did not produce (``lastmod.sweep``,
+    by the caller), so a translation file that is deleted takes its
     page with it — unless ``only_pages`` names the slugs to write, in which
     case the rest of the directory is left as it is.
     """
@@ -1385,8 +1385,6 @@ def write_localized_pages(
     for locale in targets:
         code = locale["code"]
         lang_dir = out / code
-        if only_pages is None and lang_dir.exists():
-            shutil.rmtree(lang_dir)
         lang_dir.mkdir(parents=True, exist_ok=True)
         # The arcana indexes are generated into every language directory
         # (write_localized_arcana_hubs), so the sidebar links to them beside
@@ -1446,7 +1444,7 @@ def write_localized_pages(
                 alternates=alternates_for(slug, source, targets),
                 translated_slugs=translated,
             )
-            (lang_dir / f"{slug}.html").write_text(html_out, encoding="utf-8")
+            write_output((lang_dir / f"{slug}.html"), html_out, encoding="utf-8")
             written.append(f"{code}/{slug}.html")
             if covered:
                 local_titles[slug] = title
@@ -1464,7 +1462,9 @@ def write_localized_pages(
                 if english.get("kind") == "arcana":
                     entry["html"] = body
                 local_data[slug] = entry
-        if covered and search_docs is not None and local_data:
+        # Not under --pages: these are site-wide files, and a run that renders
+        # three pages has only three pages to put in them.
+        if covered and search_docs is not None and local_data and only_pages is None:
             # The arcana indexes are written after this pass, but they are
             # pages of this language too — without them a reader searching in
             # it would be sent up to the English index instead.
@@ -1689,7 +1689,7 @@ def write_localized_arcana_hubs(
                 alternates=alternates_for(slug, source, targets, have=live),
                 translated_slugs=translated,
             )
-            (lang_dir / f"{slug}.html").write_text(html_out, encoding="utf-8")
+            write_output((lang_dir / f"{slug}.html"), html_out, encoding="utf-8")
             written.append(f"{code}/{slug}.html")
     if written:
         print(f"  i18n: {len(written)} arcana indexes")
@@ -1859,7 +1859,7 @@ def write_localized_index(
             translated_slugs=translated,
             doc_title=home.get("doc_title") or HOME_FALLBACK["doc_title"],
         )
-        (lang_dir / "index.html").write_text(html_out, encoding="utf-8")
+        write_output((lang_dir / "index.html"), html_out, encoding="utf-8")
         written.append(f"{code}/index.html")
     if written:
         print(f"  i18n: {len(written)} home pages")
@@ -2222,7 +2222,7 @@ def write_localized_bestiary(
             translated_slugs=set(pages) | generated_slugs(articles),
         )
         lang_dir.mkdir(parents=True, exist_ok=True)
-        (lang_dir / f"{BESTIARY_SLUG}.html").write_text(html_out, encoding="utf-8")
+        write_output((lang_dir / f"{BESTIARY_SLUG}.html"), html_out, encoding="utf-8")
         written.append(f"{code}/{BESTIARY_SLUG}.html")
     if written:
         print(f"  i18n: {len(written)} bestiaries")
@@ -2537,4 +2537,4 @@ def write_index_custom(
 </body>
 </html>
 """
-    out_path.write_text(html_out, encoding="utf-8")
+    write_output(out_path, html_out)

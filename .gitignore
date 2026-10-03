@@ -8,6 +8,7 @@ site/images/maps/
 
 # Local build bookkeeping (tells the next build which root files it owns)
 site/.build-manifest
+site/.build-digests
 
 # Legacy build folder name
 Book_II_Wiki/

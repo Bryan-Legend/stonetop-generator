@@ -37,6 +37,7 @@ import datetime
 import hashlib
 import html
 import json
+import os
 import re
 import subprocess
 import sys
@@ -68,12 +69,120 @@ def normalize(data: bytes) -> bytes:
     return data.rstrip()
 
 
+# ------------------------------------------------------------ output cache
+#
+# A build wrote ~2,700 pages and then read each one back twice (before, to
+# know what it looked like; after, to see whether it changed), and reading a
+# file that was just written is the slow kind of read on Windows. The build
+# keeps what it knows instead: ``<out>/.build-digests`` holds, per file, the
+# digest of what was last written and the file's size and mtime at that
+# moment. An entry is believed only while the file still stats the same, so
+# a hand edit, a checkout or a missing cache just falls back to reading.
+# The same record lets :func:`write_output` leave an unchanged file alone.
+
+DIGESTS = ".build-digests"
+
+# abspath -> [mtime_ns, size, digest of normalize(bytes), sha256 of the bytes]
+_CACHE: dict[str, list] = {}
+_WRITTEN: set[str] = set()
+
+
+def _key(path: Path) -> str:
+    return os.path.normcase(os.path.abspath(path))
+
+
+def _stat(path: Path) -> tuple[int, int] | None:
+    try:
+        st = os.stat(path)
+    except OSError:
+        return None
+    return st.st_mtime_ns, st.st_size
+
+
+def _entry(path: Path) -> list | None:
+    """The cache's record of ``path``, if the file is still as recorded."""
+    e = _CACHE.get(_key(path))
+    if e is None:
+        return None
+    return e if _stat(path) == (e[0], e[1]) else None
+
+
+def load_cache(out: Path) -> None:
+    _CACHE.clear()
+    _WRITTEN.clear()
+    try:
+        data = json.loads((out / DIGESTS).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return
+    if isinstance(data, dict):
+        for rel, e in data.items():
+            if isinstance(e, list) and len(e) == 4:
+                _CACHE[_key(out / rel)] = e
+
+
+def save_cache(out: Path) -> None:
+    root = _key(out) + os.sep
+    data = {
+        k[len(root):].replace(os.sep, "/"): e
+        for k, e in sorted(_CACHE.items())
+        if k.startswith(root)
+    }
+    (out / DIGESTS).write_text(
+        json.dumps(data, separators=(",", ":")), encoding="utf-8"
+    )
+
+
+def write_output(path: Path, text: str, encoding: str = "utf-8") -> bool:
+    """``path.write_text(text)``, skipped when the file already holds exactly
+    that. Returns whether it wrote. The bytes are what text mode would have
+    written (the platform's line ending)."""
+    data = text.replace("\n", os.linesep).encode(encoding)
+    raw = hashlib.sha256(data).hexdigest()
+    key = _key(path)
+    _WRITTEN.add(key)
+    e = _entry(path)
+    if e is not None and e[3] == raw:
+        return False
+    path.write_bytes(data)
+    st = _stat(path)
+    if st is not None:
+        _CACHE[key] = [st[0], st[1], hashlib.sha256(normalize(data)).hexdigest(), raw]
+    return True
+
+
+def was_written(path: Path) -> bool:
+    """Whether this build produced ``path`` (written, or found unchanged)."""
+    return _key(path) in _WRITTEN
+
+
+def sweep(folder: Path) -> list[Path]:
+    """Delete every file under ``folder`` this build did not produce — what
+    clearing the folder before writing used to do. Returns what went."""
+    gone: list[Path] = []
+    for p in sorted(folder.rglob("*")):
+        if p.is_file() and not was_written(p):
+            try:
+                p.unlink()
+            except OSError:
+                continue
+            _CACHE.pop(_key(p), None)
+            gone.append(p)
+    return gone
+
+
 def digest(path: Path) -> str | None:
+    e = _entry(path)
+    if e is not None:
+        return e[2]
     try:
         data = path.read_bytes()
     except OSError:
         return None
-    return hashlib.sha256(normalize(data)).hexdigest()
+    out = hashlib.sha256(normalize(data)).hexdigest()
+    st = _stat(path)
+    if st is not None and st[1] == len(data):
+        _CACHE[_key(path)] = [st[0], st[1], out, hashlib.sha256(data).hexdigest()]
+    return out
 
 
 def loc_to_relpath(loc: str, base_url: str) -> str | None:
