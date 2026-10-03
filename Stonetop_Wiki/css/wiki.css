@@ -61,9 +61,18 @@
   font-display: swap;
   src: url("fonts/source-sans-3-latin-700-normal.woff2") format("woff2");
 }
-/* The reader's hand — everything written into the wiki (Oooh Baby, OFL, from
-   Google Fonts). Latin, Latin Extended and Vietnamese; other scripts fall
-   through the stack to the body face. */
+/* The reader's hand — everything written into the wiki. Architext by Grant
+   Marshall (1001Fonts Free For Commercial Use licence; converted to WOFF2,
+   otherwise untouched). Basic Latin only: accented letters fall through to
+   Oooh Baby (OFL, from Google Fonts; Latin, Latin Extended and Vietnamese),
+   other scripts to the body face. */
+@font-face {
+  font-family: "Architext";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/architext.woff2") format("woff2");
+}
 @font-face {
   font-family: "Oooh Baby";
   font-style: normal;
@@ -135,8 +144,10 @@
   /* What the reader writes: answers, blanks, every write-in box. The face is
      small on its body, so --hand-adjust sets its x-height (font-size-adjust)
      rather than its size — the boxes and the line keep their measure. */
-  --font-hand: "Oooh Baby", "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-  --hand-adjust: .45;
+  --font-hand: "Architext", "Oooh Baby", "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --hand-adjust: .5;
+  /* Architext is set tight; this opens it up. */
+  --hand-track: .07em;
   --radius: 4px;
   --shadow: 0 12px 36px rgba(0, 0, 0, .62);
   --shadow-soft: 0 2px 10px rgba(0, 0, 0, .4);
@@ -2405,7 +2416,7 @@ li.check-item input.wiki-check:checked + span {
   font-size-adjust: var(--hand-adjust);
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: var(--hand-track);
   white-space: pre-wrap;
   margin-left: .18em;
   /* The hand leans: keep its last stroke off the type that follows. */
@@ -2430,7 +2441,7 @@ li.check-item input.wiki-check:checked + span {
   font-size-adjust: var(--hand-adjust);
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: var(--hand-track);
   background: none;
   border-bottom: 1px dotted rgba(var(--answer-rgb), .45);
 }
@@ -2450,7 +2461,7 @@ li.check-item input.wiki-check:checked + span {
   font-size-adjust: var(--hand-adjust);
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: var(--hand-track);
   color: var(--answer);
   background: rgba(var(--answer-rgb), .10);
   border: none;
@@ -2484,7 +2495,7 @@ li.check-item input.wiki-check:checked + span {
   font-size-adjust: var(--hand-adjust);
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: var(--hand-track);
   font-size: 1em;
   line-height: 1.35;
   color: var(--answer);
@@ -2498,6 +2509,7 @@ li.check-item input.wiki-check:checked + span {
   opacity: .8;
   font-family: var(--font-sans);
   font-size-adjust: none;
+  letter-spacing: 0;
   font-size: .9em;
 }
 .wiki-note-del {
@@ -2617,7 +2629,7 @@ li.check-item input.wiki-check:checked + span {
   font-size-adjust: var(--hand-adjust);
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: var(--hand-track);
   color: var(--answer);
   background: rgba(var(--answer-rgb), .07);
   border: 1px solid rgba(var(--head-rgb), .3);
@@ -2630,6 +2642,7 @@ li.check-item input.wiki-check:checked + span {
   color: var(--muted);
   font-family: var(--font-sans);
   font-size-adjust: none;
+  letter-spacing: 0;
   font-style: normal;
   opacity: .75;
 }
