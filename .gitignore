@@ -1,13 +1,13 @@
 # Book ARTWORK is NOT redistributable: the books' text is CC BY-SA 4.0, but
 # "all artwork herein is (c) 2026 by Lucie Arnoux". Map images are artwork.
 # Build without --maps and these are never produced in the first place.
-Stonetop_Wiki/images/maps/
+site/images/maps/
 
 # (The extracted TEXT — pages/, index.html, previews-data.js, search-index.js —
 # is CC BY-SA 4.0 and IS published; see README "License".)
 
 # Local build bookkeeping (tells the next build which root files it owns)
-Stonetop_Wiki/.build-manifest
+site/.build-manifest
 
 # Legacy build folder name
 Book_II_Wiki/

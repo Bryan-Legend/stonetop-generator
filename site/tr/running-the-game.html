@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oyunu Yönetmek — Stonetop web sürümü</title>
+  <meta name="description" content="Stonetop&#x27;ta OY olmak (Running the Game): gündemin, temel döngü, OY hamleleri, ilkeler, spot ışığı, hazırlık ve oyunu yönetmenin incelikleri.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://stonetop.cc/tr/running-the-game.html">
+  <meta property="og:site_name" content="Stonetop web sürümü">
+  <meta property="og:title" content="Oyunu Yönetmek — Stonetop web sürümü">
+  <meta property="og:description" content="Stonetop&#x27;ta OY olmak (Running the Game): gündemin, temel döngü, OY hamleleri, ilkeler, spot ışığı, hazırlık ve oyunu yönetmenin incelikleri.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://stonetop.cc/tr/running-the-game.html">
+  <meta property="og:image" content="https://stonetop.cc/images/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://stonetop.cc/running-the-game.html">
+  <link rel="alternate" hreflang="es" href="https://stonetop.cc/es/running-the-game.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://stonetop.cc/pt-BR/running-the-game.html">
+  <link rel="alternate" hreflang="de" href="https://stonetop.cc/de/running-the-game.html">
+  <link rel="alternate" hreflang="fr" href="https://stonetop.cc/fr/running-the-game.html">
+  <link rel="alternate" hreflang="pl" href="https://stonetop.cc/pl/running-the-game.html">
+  <link rel="alternate" hreflang="it" href="https://stonetop.cc/it/running-the-game.html">
+  <link rel="alternate" hreflang="ru" href="https://stonetop.cc/ru/running-the-game.html">
+  <link rel="alternate" hreflang="ja" href="https://stonetop.cc/ja/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://stonetop.cc/zh-Hans/running-the-game.html">
+  <link rel="alternate" hreflang="ko" href="https://stonetop.cc/ko/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://stonetop.cc/zh-Hant/running-the-game.html">
+  <link rel="alternate" hreflang="tr" href="https://stonetop.cc/tr/running-the-game.html">
+  <link rel="alternate" hreflang="uk" href="https://stonetop.cc/uk/running-the-game.html">
+  <link rel="alternate" hreflang="x-default" href="https://stonetop.cc/running-the-game.html">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="../images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="stylesheet" href="../css/wiki.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://stonetop.cc/tr/running-the-game.html#article","url":"https://stonetop.cc/tr/running-the-game.html","mainEntityOfPage":"https://stonetop.cc/tr/running-the-game.html","headline":"Oyunu Yönetmek","name":"Oyunu Yönetmek","inLanguage":"tr","author":{"@type":"Person","name":"Jeremy Strandberg"},"publisher":{"@type":"Organization","name":"Lampblack & Brimstone","url":"https://lampblackandbrimstone.com/"},"license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"about":{"@id":"https://stonetop.cc/#game"},"isPartOf":[{"@id":"https://stonetop.cc/#book1"},{"@id":"https://stonetop.cc/#website"}],"description":"Stonetop'ta OY olmak (Running the Game): gündemin, temel döngü, OY hamleleri, ilkeler, spot ışığı, hazırlık ve oyunu yönetmenin incelikleri.","pagination":"167-206"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Stonetop","item":"https://stonetop.cc/tr/"},{"@type":"ListItem","position":2,"name":"Oyunu Yönetmek","item":"https://stonetop.cc/tr/running-the-game.html"}]}]}</script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4536408101e64ba59733ed69779dd45c"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body data-wiki-root="../">
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Gezinmeyi aç/kapat">☰</button>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="wiki-title" href="index.html">Stonetop web sürümü</a>
+        <input type="search" id="nav-filter" class="nav-filter" placeholder="Ara…" autocomplete="off" aria-label="Ara">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <nav class="toc" aria-label="Konular">
+        <ul id="nav-list">
+          <li class="nav-book-label">Kitap I</li>
+<li class="has-sections"><a href="welcome-to-stonetop.html">Stonetop&#x27;a Hoş Geldiniz</a><ul class="nav-sections"><li class="nav-section"><a href="welcome-to-stonetop.html#expectations">Beklentiler</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#the-setting">Ortam</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#why-play">Neden oynamalı?</a></li></ul></li>
+<li class="has-sections"><a href="getting-started.html">Başlarken</a><ul class="nav-sections"><li class="nav-section"><a href="getting-started.html#review-the-setting">Dünyayı gözden geçirin</a></li><li class="nav-section"><a href="getting-started.html#set-expectations">Beklentileri belirleyin</a></li><li class="nav-section"><a href="getting-started.html#discuss-tone-and-content">Ton ve içeriği konuşun</a></li><li class="nav-section"><a href="getting-started.html#create-characters">Karakterleri yaratın</a></li><li class="nav-section"><a href="getting-started.html#intro-the-pcs">OK&#x27;leri tanıştırın</a></li><li class="nav-section"><a href="getting-started.html#let-spring-burst-forth">baharın patlamasına</a></li><li class="nav-section"><a href="getting-started.html#after-the-session">Oturumdan sonra</a></li></ul></li>
+<li class="has-sections"><a href="playing-the-game.html">Oyunu Oynamak</a><ul class="nav-sections"><li class="nav-section"><a href="playing-the-game.html#the-conversation">Konuşma</a></li><li class="nav-section"><a href="playing-the-game.html#your-agenda">Gündemin</a></li><li class="nav-section"><a href="playing-the-game.html#flow-of-play">Oyunun akışı</a></li><li class="nav-section"><a href="playing-the-game.html#dice-and-moves">Zarlar ve hamleler</a></li><li class="nav-section"><a href="playing-the-game.html#your-principles">İlkelerin</a></li><li class="nav-section"><a href="playing-the-game.html#other-things-to-do">Yapılacak diğer şeyler</a></li><li class="nav-section"><a href="playing-the-game.html#your-character">Karakterin</a></li><li class="nav-section"><a href="playing-the-game.html#arcana">Arkanalar</a></li><li class="nav-section"><a href="playing-the-game.html#followers">takipçileri</a></li><li class="nav-section"><a href="playing-the-game.html#your-home">Yuvan</a></li><li class="nav-section"><a href="playing-the-game.html#moves">hamleler</a></li><li class="nav-section"><a href="playing-the-game.html#gear-and-possessions">Teçhizat ve eşyalar</a></li><li class="nav-section"><a href="playing-the-game.html#if-you-want-to">Eğer şunu yapmak istiyorsan…</a></li></ul></li>
+<li class="nav-hub has-sections"><a href="playbooks-inserts.html">Kitapçıklar ve Ekler</a><ul class="nav-sections"><li class="nav-section"><a href="the-blessed.html">Kutsanmış</a></li><li class="nav-section"><a href="the-fox.html">Tilki</a></li><li class="nav-section"><a href="the-heavy.html">Kabadayı</a></li><li class="nav-section"><a href="the-judge.html">Yargıç</a></li><li class="nav-section"><a href="the-lightbearer.html">Işık Taşıyıcı</a></li><li class="nav-section"><a href="the-marshal.html">Mareşal</a></li><li class="nav-section"><a href="the-ranger.html">Korucu</a></li><li class="nav-section"><a href="the-seeker.html">Arayıcı</a></li><li class="nav-section"><a href="the-would-be-hero.html">Kahraman Adayı</a></li><li class="nav-section"><a href="inserts.html">Ekler</a></li><li class="nav-section"><a href="inventory.html">Envanter</a></li><li class="nav-section"><a href="animal-companion.html">Hayvan Yoldaş</a></li><li class="nav-section"><a href="crew.html">Ekip</a></li><li class="nav-section"><a href="initiates-of-danu.html">Danu Müritleri</a></li><li class="nav-section"><a href="invocations.html">Yakarışlar</a></li><li class="nav-section"><a href="followers.html">Takipçiler</a></li><li class="nav-section"><a href="ghost.html">Hayalet</a></li><li class="nav-section"><a href="revenant.html">Hortlak</a></li><li class="nav-section"><a href="thrall.html">Bende</a></li><li class="nav-section"><a href="steading-playbook.html">Yerleşke Kitapçığı</a></li></ul></li>
+<li class="has-sections current"><a href="running-the-game.html">Oyunu Yönetmek</a><ul class="nav-sections"><li class="nav-section"><a href="running-the-game.html#your-agenda">Gündemin</a></li><li class="nav-section"><a href="running-the-game.html#the-core-loop">Temel döngü</a></li><li class="nav-section"><a href="running-the-game.html#the-spotlight">Spot ışığı</a></li><li class="nav-section"><a href="running-the-game.html#scenes-and-loose-play">Sahneler ve serbest oyun</a></li><li class="nav-section"><a href="running-the-game.html#your-gm-moves">OY hamlelerin</a></li><li class="nav-section"><a href="running-the-game.html#example-of-play">Oyun örneği</a></li><li class="nav-section"><a href="running-the-game.html#your-principles">İlkelerin</a></li><li class="nav-section"><a href="running-the-game.html#other-things-to-do">Yapılacak diğer şeyler</a></li><li class="nav-section"><a href="running-the-game.html#gming-is-a-practice">OY&#x27;lik bir pratiktir</a></li><li class="nav-section"><a href="running-the-game.html#prep">hazırlık</a></li></ul></li>
+<li class="has-sections"><a href="player-moves.html">Oyuncu Hamleleri</a><ul class="nav-sections"><li class="nav-section"><a href="player-moves.html#defy-danger">Tehli̇keye Meydan Oku</a></li><li class="nav-section"><a href="player-moves.html#aid">Yardim Et</a></li><li class="nav-section"><a href="player-moves.html#clash">Çarpiş</a></li><li class="nav-section"><a href="player-moves.html#defend">Savun</a></li><li class="nav-section"><a href="player-moves.html#interfere">Engelle</a></li><li class="nav-section"><a href="player-moves.html#know-things">Bi̇r Şeyler Bi̇L</a></li><li class="nav-section"><a href="player-moves.html#let-fly">Firlat</a></li><li class="nav-section"><a href="player-moves.html#seek-insight">İçgörü Ara</a></li><li class="nav-section"><a href="player-moves.html#special-moves">Özel hamleler</a></li><li class="nav-section"><a href="player-moves.html#advantage-disadvantage">Avantaj/Dezavantaj</a></li><li class="nav-section"><a href="player-moves.html#burn-brightly">Parlakça Yanmak</a></li><li class="nav-section"><a href="player-moves.html#end-of-session">Oturum Sonu</a></li><li class="nav-section"><a href="player-moves.html#deaths-door">Ölümün Eşi̇ği̇Nde</a></li></ul></li>
+<li class="has-sections"><a href="harm-healing.html">Hasar ve İyileşme</a><ul class="nav-sections"><li class="nav-section"><a href="harm-healing.html#hit-points-and-damage">Can puanları ve hasar</a></li><li class="nav-section"><a href="harm-healing.html#debilities">Zafiyetler</a></li><li class="nav-section"><a href="harm-healing.html#problematic-wounds">Sorunlu yaralar</a></li><li class="nav-section"><a href="harm-healing.html#death-and-dying">Ölüm ve ölmek</a></li></ul></li>
+<li class="has-sections"><a href="first-adventure.html">İlk Macera</a><ul class="nav-sections"><li class="nav-section"><a href="first-adventure.html#structure">Yapı</a></li><li class="nav-section"><a href="first-adventure.html#background">Arka plan</a></li><li class="nav-section"><a href="first-adventure.html#setup-questions">Kurulum soruları</a></li><li class="nav-section"><a href="first-adventure.html#setting-the-scene">Sahneyi kurmak</a></li><li class="nav-section"><a href="first-adventure.html#dropping-the-hook">Kancayı atmak</a></li><li class="nav-section"><a href="first-adventure.html#heading-out">Yola koyulmak</a></li></ul></li>
+<li class="has-sections"><a href="threats.html">Tehditler</a><ul class="nav-sections"><li class="nav-section"><a href="threats.html#when-to-write-up-threats">Tehditler ne zaman yazılır</a></li><li class="nav-section"><a href="threats.html#writing-a-threat">Bir tehdit yazmak</a></li><li class="nav-section"><a href="threats.html#example-threats">Örnek tehditler</a></li><li class="nav-section"><a href="threats.html#updating-threats">Tehditleri güncellemek</a></li></ul></li>
+<li class="has-sections"><a href="expeditions.html">Seferler</a><ul class="nav-sections"><li class="nav-section"><a href="expeditions.html#preparations">Hazırlıklar</a></li><li class="nav-section"><a href="expeditions.html#running-the-journey">Yolculuğu Yönetmek</a></li><li class="nav-section"><a href="expeditions.html#player-moves">oyuncu hamleleri</a></li><li class="nav-section"><a href="expeditions.html#going-home">Eve dönmek</a></li><li class="nav-section"><a href="expeditions.html#what-to-prep">Neler hazırlanır</a></li></ul></li>
+<li class="has-sections"><a href="sites.html">Mekânlar</a><ul class="nav-sections"><li class="nav-section"><a href="sites.html#environmental-storytelling">Çevresel hikâye anlatımı</a></li><li class="nav-section"><a href="sites.html#running-sites">Mekânları yönetmek</a></li><li class="nav-section"><a href="sites.html#exploring-sites">Mekânları keşfetmek</a></li><li class="nav-section"><a href="sites.html#creating-sites">Mekân yaratmak</a></li><li class="nav-section"><a href="sites.html#the-green-lords-tomb">YEŞİL BEYİN MEZARI</a></li></ul></li>
+<li class="has-sections"><a href="dangers.html">Tehlikeler</a><ul class="nav-sections"><li class="nav-section"><a href="dangers.html#hazards">Doğal tehlikeler</a></li><li class="nav-section"><a href="dangers.html#monsters">Canavarlar</a></li><li class="nav-section"><a href="dangers.html#running-combat">Dövüşü yönetmek</a></li></ul></li>
+<li class="has-sections"><a href="discoveries.html">Keşifler</a><ul class="nav-sections"><li class="nav-section"><a href="discoveries.html#clues">İpuçları</a></li><li class="nav-section"><a href="discoveries.html#sites">Mekânlar</a></li><li class="nav-section"><a href="discoveries.html#encounters">Karşılaşmalar</a></li><li class="nav-section"><a href="discoveries.html#opportunities">Fırsatlar</a></li><li class="nav-section"><a href="discoveries.html#artifacts">Eserler</a></li><li class="nav-section"><a href="discoveries.html#arcana">Arkanalar</a></li></ul></li>
+<li class="has-sections"><a href="npcs-followers.html">OOK&#x27;ler ve Takipçiler</a><ul class="nav-sections"><li class="nav-section"><a href="npcs-followers.html#npcs-in-play">Oyunda OOK&#x27;ler</a></li><li class="nav-section"><a href="npcs-followers.html#creating-npcs">OOK yaratmak</a></li><li class="nav-section"><a href="npcs-followers.html#follower-moves">Takipçi hamleleri</a></li><li class="nav-section"><a href="npcs-followers.html#order-followers">Taki̇pçi̇lere Emi̇r Ver</a></li><li class="nav-section"><a href="npcs-followers.html#strengthen-your-bond">Bağı Güçlendir</a></li><li class="nav-section"><a href="npcs-followers.html#followers-in-play">Oyunda takipçiler</a></li><li class="nav-section"><a href="npcs-followers.html#creating-followers">Takipçi yaratmak</a></li><li class="nav-section"><a href="npcs-followers.html#updating-followers">Takipçileri güncellemek</a></li><li class="nav-section"><a href="npcs-followers.html#losing-followers">Takipçileri kaybetmek</a></li></ul></li>
+<li class="has-sections"><a href="homefront.html">Cephe Gerisi</a><ul class="nav-sections"><li class="nav-section"><a href="homefront.html#bringing-the-village-to-life">Köyü canlandırmak</a></li><li class="nav-section"><a href="homefront.html#running-the-homefront">Cephe gerisini yönetmek</a></li><li class="nav-section"><a href="homefront.html#aftermath">Sonrası</a></li><li class="nav-section"><a href="homefront.html#the-steading-playbook">Yerleşke kitapçığı</a></li><li class="nav-section"><a href="homefront.html#seasons-change">Mevsimler Döner</a></li><li class="nav-section"><a href="homefront.html#player-moves">Oyuncu hamleleri</a></li><li class="nav-section"><a href="homefront.html#bolster">Önlem Al</a></li><li class="nav-section"><a href="homefront.html#convalesce">İyi̇Leş</a></li><li class="nav-section"><a href="homefront.html#deploy">Konuşlandır</a></li><li class="nav-section"><a href="homefront.html#level-up">Sevi̇ye Atla</a></li><li class="nav-section"><a href="homefront.html#make-a-plan">Plan Yap</a></li><li class="nav-section"><a href="homefront.html#meet-with-disaster">Felakete Uğra</a></li><li class="nav-section"><a href="homefront.html#muster">Birlik Topladığında</a></li><li class="nav-section"><a href="homefront.html#pull-together">İmece</a></li><li class="nav-section"><a href="homefront.html#trade-barter">Ticaret ve Takas</a></li><li class="nav-section"><a href="homefront.html#what-to-prep">Neleri hazırlamalı</a></li></ul></li>
+<li><a href="writing-moves-love-letters.html">Hamle ve Aşk Mektubu Yazmak</a></li>
+<li class="has-sections"><a href="the-game-ongoing.html">Süregiden Oyun</a><ul class="nav-sections"><li class="nav-section"><a href="the-game-ongoing.html#ending-a-session">Bir oturumu bitirmek</a></li><li class="nav-section"><a href="the-game-ongoing.html#between-sessions">Oturumlar arasında</a></li><li class="nav-section"><a href="the-game-ongoing.html#starting-a-session">Bir oturumu başlatmak</a></li><li class="nav-section"><a href="the-game-ongoing.html#pacing">Tempo</a></li><li class="nav-section"><a href="the-game-ongoing.html#advancement">İlerleme</a></li><li class="nav-section"><a href="the-game-ongoing.html#retiring-pcs">OK&#x27;leri emekliye ayırmak</a></li><li class="nav-section"><a href="the-game-ongoing.html#new-pcs">Yeni OK&#x27;ler</a></li><li class="nav-section"><a href="the-game-ongoing.html#conflict-between-pcs">OK&#x27;ler arasında çatışma</a></li><li class="nav-section"><a href="the-game-ongoing.html#time-skips">Zaman atlamaları</a></li><li class="nav-section"><a href="the-game-ongoing.html#shake-ups">Sarsıntılar</a></li><li class="nav-section"><a href="the-game-ongoing.html#ending-your-game">Oyununu bitirmek</a></li></ul></li>
+<li><a href="acknowledgements.html">Teşekkürler</a></li>
+<li><a href="mediography.html">Medyagrafya</a></li>
+<li class="nav-book-label">Kitap II</li>
+<li><a href="welcome-to-the-worlds-end.html">Dünyanın Sonuna Hoş Geldiniz</a></li>
+<li><a href="../maps.html" class="nav-en" title="Yalnızca İngilizce mevcut" hreflang="en">Maps</a></li>
+<li><a href="the-village-of-stonetop.html">Stonetop Köyü</a></li>
+<li><a href="aratis-the-lawkeeper.html">Yasa Bekçisi Aratis</a></li>
+<li><a href="barrier-pass.html">Set Geçidi</a></li>
+<li><a href="barrow-builders.html">Höyük Kurucular</a></li>
+<li><a href="blackwater-lake.html">Karasu Gölü</a></li>
+<li><a href="crinwin.html">Crinwin</a></li>
+<li><a href="the-crombil.html">Crombil</a></li>
+<li><a href="danu-the-earth-mother.html">Toprak Ana Danu</a></li>
+<li><a href="death-and-the-undying.html">Ölüm ve Ölmeyenler</a></li>
+<li><a href="the-dread-river.html">Dehşet Irmağı</a></li>
+<li><a href="fae.html">Fae</a></li>
+<li><a href="ferriers-fen.html">Ferrier Bataklığı</a></li>
+<li><a href="the-flats.html">Düzlükler</a></li>
+<li><a href="fomoraij.html">Fomoraij</a></li>
+<li><a href="the-foothills.html">Etekler</a></li>
+<li><a href="forest-folk.html">Orman Halkı</a></li>
+<li><a href="forge-lords.html">Ocak Beyleri</a></li>
+<li><a href="the-frozen-wastes.html">Donmuş Çorak</a></li>
+<li><a href="gods-and-religion.html">Tanrılar ve Din</a></li>
+<li><a href="the-golden-oak.html">Altın Meşe</a></li>
+<li><a href="gordins-delve.html">Gordin Ocağı</a></li>
+<li><a href="the-great-wood.html">Ulu Orman</a></li>
+<li><a href="green-lords.html">Yeşil Beyler</a></li>
+<li><a href="helior-the-daybringer.html">Günü Getiren Helior</a></li>
+<li><a href="hillfolk.html">Tepe Halkı</a></li>
+<li><a href="huffel-peaks.html">Huffel Doruklar</a></li>
+<li><a href="the-labyrinth.html">Labirent</a></li>
+<li><a href="lygos-and-the-south.html">Lygos ve Güney</a></li>
+<li><a href="the-makers.html">Yapıcılar</a></li>
+<li><a href="the-makers-roads.html">Yapıcıların Yolları</a></li>
+<li><a href="marshedge.html">Batakkıyı</a></li>
+<li><a href="the-maw.html">Ağız</a></li>
+<li><a href="north-manmarch.html">Kuzey Manmarch</a></li>
+<li><a href="the-pale-hunter.html">Solgun Avcı</a></li>
+<li><a href="primordial-powers.html">İlkel Güçler</a></li>
+<li><a href="red-groves.html">Kızıl Korular</a></li>
+<li><a href="rime-lords.html">Kırağı Beyleri</a></li>
+<li><a href="the-ruined-tower.html">Yıkık Kule</a></li>
+<li><a href="south-manmarch.html">Güney Manmarch</a></li>
+<li><a href="spirits-of-the-wild.html">Yaban Ruhları</a></li>
+<li><a href="the-steplands.html">Basamak Toprakları</a></li>
+<li><a href="stone-lords.html">Taş Beyleri</a></li>
+<li><a href="the-stream.html">Dere</a></li>
+<li><a href="tempest-lords.html">Fırtına Beyleri</a></li>
+<li><a href="the-things-below.html">Aşağıdakiler</a></li>
+<li><a href="three-coven-lake.html">Üç Ocak Gölü</a></li>
+<li><a href="titan-bones.html">Titan Kemikleri</a></li>
+<li><a href="tor-the-rain-maker.html">Yağmur Getiren Tor</a></li>
+<li><a href="useful-or-valuable-flora.html">Yararlı ya da Değerli Bitkiler</a></li>
+<li><a href="ustrina.html">Ustrina</a></li>
+<li><a href="vor-svetelik.html">Vor Svetelik</a></li>
+<li><a href="waystones.html">Yol Taşları</a></li>
+<li><a href="the-whitefang-mountains.html">Akdiş Dağları</a></li>
+<li><a href="appendix-a-ages-of-the-world.html">Ek A: Dünyanın Çağları</a></li>
+<li><a href="appendix-b-artifact-creation.html">Ek B: Eser Yaratma</a></li>
+<li class="nav-hub"><a href="appendix-c-minor-arcana.html">Ek C: Küçük arkanalar</a></li>
+<li class="nav-arcana"><a href="minor-laoj-daveths-galvanic-infusion.html">1. Laoj Daveth&#x27;in Galvanik Özütü</a></li>
+<li class="nav-arcana"><a href="minor-truth-seeds.html">2. Hakikat Tohumları</a></li>
+<li class="nav-arcana"><a href="minor-old-mothers-wine.html">3. Yaşlı Ana&#x27;nın Şarabı</a></li>
+<li class="nav-arcana"><a href="minor-aalz-galts-sudden-sinkhole.html">4. Aalz Galt&#x27;ın Ani Obruğu</a></li>
+<li class="nav-arcana"><a href="minor-shell-game-of-souls.html">5. Ruhların Üç Kâğıdı</a></li>
+<li class="nav-arcana"><a href="minor-thunderous-bellow.html">6. Gök Gürültülü Böğürtü</a></li>
+<li class="nav-arcana"><a href="minor-the-fiery-veil.html">7. Ateşten Peçe</a></li>
+<li class="nav-arcana"><a href="minor-the-tomb-bogs-mark.html">8. Mezar Bataklığının İşareti</a></li>
+<li class="nav-arcana"><a href="minor-fear-of-the-flame.html">9. Alev Korkusu</a></li>
+<li class="nav-arcana"><a href="minor-mantle-wraiths.html">10. Pelerin Hortlakları</a></li>
+<li class="nav-arcana"><a href="minor-shattering-words-of-aalz-childric.html">11. Aalz Childric&#x27;in Parçalayan Sözleri</a></li>
+<li class="nav-arcana"><a href="minor-ffyrnig-tonic.html">12. Ffyrnig Tonik</a></li>
+<li class="nav-arcana"><a href="minor-song-of-the-dool-trees.html">13. Dool Ağaçlarının Şarkısı</a></li>
+<li class="nav-arcana"><a href="minor-ward-of-still-waters.html">14. Durgun Suların Muskası</a></li>
+<li class="nav-arcana"><a href="minor-ice-weaving.html">15. Buz Dokuma</a></li>
+<li class="nav-arcana"><a href="minor-the-six-locks-of-sajua.html">16. Sajua&#x27;nın Altı Kilidi</a></li>
+<li class="nav-arcana"><a href="minor-heliors-shining-ring.html">17. Helior&#x27;un Parlayan Yüzüğü</a></li>
+<li class="nav-arcana"><a href="minor-nerth-serpents-vigor.html">18. Nerth Yılanının Dinçliği</a></li>
+<li class="nav-arcana"><a href="minor-goldleaf-cloak.html">19. Altın Yaprak Pelerin</a></li>
+<li class="nav-arcana"><a href="minor-opening-the-way.html">20. Yolu Açmak</a></li>
+<li class="nav-arcana"><a href="minor-the-drowning-scale.html">21. Boğulanın Pulu</a></li>
+<li class="nav-arcana"><a href="minor-preserving-runes.html">22. Koruyucu Rünler</a></li>
+<li class="nav-arcana"><a href="minor-peacebond.html">23. Barış Bağı</a></li>
+<li class="nav-arcana"><a href="minor-the-eye-opened.html">24. Açılmış Göz</a></li>
+<li class="nav-arcana"><a href="minor-sanctifying-mark.html">25. Kutsama İşareti</a></li>
+<li class="nav-arcana"><a href="minor-the-green-lords-shade.html">26. Yeşil Beyin Gölgesi</a></li>
+<li class="nav-arcana"><a href="minor-chimeric-transmogrification.html">27. Kimerik Dönüşüm</a></li>
+<li class="nav-arcana"><a href="minor-the-sylvan-web.html">28. Orman Ağı</a></li>
+<li class="nav-arcana"><a href="minor-flying-cloak.html">29. Uçan Pelerin</a></li>
+<li class="nav-arcana"><a href="minor-satchel-of-plenty.html">30. Bolluk Heybesi</a></li>
+<li class="nav-arcana"><a href="minor-dancing-wind-spirit.html">31. Dans Eden Rüzgâr Ruhu</a></li>
+<li class="nav-arcana"><a href="minor-call-of-the-hunt.html">32. Avın Çağrısı</a></li>
+<li class="nav-arcana"><a href="minor-convocation-of-the-soil.html">33. Toprağın Toplanması</a></li>
+<li class="nav-arcana"><a href="minor-unliving-chimera.html">34. Cansız Kimera</a></li>
+<li class="nav-arcana"><a href="minor-impudent-polymorph.html">35. Küstah Biçim Değiştirme</a></li>
+<li class="nav-arcana"><a href="minor-make-pliant-the-stone.html">36. Taşı Yumuşat</a></li>
+<li class="nav-arcana"><a href="minor-plaster-of-joining.html">37. Birleştiren Sıva</a></li>
+<li class="nav-arcana"><a href="minor-cold-mind-iron-body.html">38. Soğuk Zihin, Demir Beden</a></li>
+<li class="nav-arcana"><a href="minor-little-friend.html">39. Küçük Dost</a></li>
+<li class="nav-arcana"><a href="minor-revealing-light.html">40. Açığa Çıkaran Işık</a></li>
+<li class="nav-arcana"><a href="minor-darkwalker-cloak.html">41. Karanlıkta Yürüyenin Pelerini</a></li>
+<li class="nav-arcana"><a href="minor-the-flesh-is-like-clay.html">42. Et Kil Gibidir</a></li>
+<li class="nav-arcana"><a href="minor-fetchs-mask.html">43. İkizin Maskesi</a></li>
+<li class="nav-arcana"><a href="minor-witch-bottle.html">44. Cadı Şişesi</a></li>
+<li class="nav-arcana"><a href="minor-wishing-candles.html">45. Dilek Mumları</a></li>
+<li class="nav-arcana"><a href="minor-baleful-utterance.html">46. Uğursuz Söz</a></li>
+<li class="nav-arcana"><a href="minor-aetherium-spear.html">47. Eteryum Mızrak</a></li>
+<li class="nav-arcana"><a href="minor-staff-of-magnetism.html">48. Mıknatıs Asası</a></li>
+<li class="nav-arcana"><a href="minor-groundskimmer.html">49. Yersıyıran</a></li>
+<li class="nav-arcana"><a href="minor-thunderbolt-bow.html">50. Yıldırım Yayı</a></li>
+<li class="nav-arcana"><a href="minor-bronze-protector.html">51. Tunç Koruyucu</a></li>
+<li class="nav-arcana"><a href="minor-sublime-words.html">52. Yüce Sözler</a></li>
+<li class="nav-arcana"><a href="minor-flaming-sword.html">53. Alevli Kılıç</a></li>
+<li class="nav-arcana"><a href="minor-searing-touch.html">54. Dağlayan Dokunuş</a></li>
+<li class="nav-arcana"><a href="minor-sigil-of-authority.html">55. Otorite Mührü</a></li>
+<li class="nav-arcana"><a href="minor-horn-of-storms.html">56. Fırtınaların Boynuzu</a></li>
+<li class="nav-arcana"><a href="minor-moonstone.html">57. Ay Taşı</a></li>
+<li class="nav-arcana"><a href="minor-hand-of-aals-sannan.html">58. Aals Sannan&#x27;ın Eli</a></li>
+<li class="nav-arcana"><a href="minor-bittersweet-elixir.html">59. Acı Tatlı İksir</a></li>
+<li class="nav-arcana"><a href="minor-the-brooms-lullaby.html">60. Süpürgenin Ninnisi</a></li>
+<li class="nav-arcana"><a href="minor-the-angry-little-god.html">61. Öfkeli Küçük Tanrı</a></li>
+<li class="nav-arcana"><a href="minor-the-silver-branch.html">62. Gümüş Dal</a></li>
+<li class="nav-arcana"><a href="minor-void-elemental.html">63. Boşluk Elementali</a></li>
+<li class="nav-arcana"><a href="minor-runes-of-creation.html">64. Yaratılış Rünleri</a></li>
+<li class="nav-hub"><a href="appendix-d-major-arcana.html">Ek D: Büyük arkanalar</a></li>
+<li class="nav-arcana"><a href="major-staff-of-the-lidless-orb.html">1. Kirpiksiz Küre&#x27;nin Değneği</a></li>
+<li class="nav-arcana"><a href="major-twisted-spear.html">2. Burgulu Mızrak</a></li>
+<li class="nav-arcana"><a href="major-demonhide-cloak.html">3. İblis Derisi Pelerin</a></li>
+<li class="nav-arcana"><a href="major-norubas-ice-sphere.html">4. Noruba&#x27;nın Buz Küresi</a></li>
+<li class="nav-arcana"><a href="major-mindgem.html">5. Zihin Taşı</a></li>
+<li class="nav-arcana"><a href="major-whispering-rocks.html">6. Fısıldayan Kayalar</a></li>
+<li class="nav-arcana"><a href="major-blood-quenched-sword.html">7. Kanla Su Verilmiş Kılıç</a></li>
+<li class="nav-arcana"><a href="major-shield-of-the-wisent-witch.html">8. Bizon Cadısının Kalkanı</a></li>
+<li class="nav-arcana"><a href="major-hectumel-codex.html">9. Hec&#x27;tumel Kodeksi</a></li>
+<li class="nav-arcana"><a href="major-red-scepter.html">10. Kızıl Asa</a></li>
+<li class="nav-arcana"><a href="major-ring-of-daagon.html">11. Daagon&#x27;un Yüzüğü</a></li>
+<li class="nav-arcana"><a href="major-rune-laden-scales.html">12. Rünlü Pul Zırh</a></li>
+<li class="nav-arcana"><a href="major-blackwood-fetishes.html">13. Karaağaç Fetişleri</a></li>
+<li class="nav-arcana"><a href="major-storm-markings.html">14. Fırtına İşaretleri</a></li>
+<li class="nav-arcana"><a href="major-ineffable-words.html">15. Tarifsiz Sözler</a></li>
+<li class="nav-arcana"><a href="major-redwood-effigy.html">16. Kızılağaç Put</a></li>
+<li class="nav-arcana"><a href="major-hungering-maw-of-hlad.html">17. Hlad&#x27;ın Aç Ağzı</a></li>
+<li class="nav-arcana"><a href="major-azure-hand.html">18. Gök Mavisi El</a></li>
+<li><a href="bestiary.html">Canavar Kitabı</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-foot"><details class="lang-switch"><summary title="Dil"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code" aria-hidden="true">TR</span><span class="lang-label">Dil</span><span class="lang-now">Türkçe</span></summary><ul class="lang-list"><li><a href="../de/running-the-game.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="../running-the-game.html" hreflang="en" lang="en">English</a></li><li><a href="../es/running-the-game.html" hreflang="es" lang="es">Español</a></li><li><a href="../fr/running-the-game.html" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/running-the-game.html" hreflang="it" lang="it">Italiano</a></li><li><a href="../pl/running-the-game.html" hreflang="pl" lang="pl">Polski</a></li><li><a href="../pt-BR/running-the-game.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><span class="lang-current" aria-current="page" lang="tr">Türkçe</span></li><li><a href="../ru/running-the-game.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/running-the-game.html" hreflang="uk" lang="uk">Українська</a></li><li><a href="../ja/running-the-game.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../zh-Hans/running-the-game.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/running-the-game.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../ko/running-the-game.html" hreflang="ko" lang="ko">한국어</a></li></ul></details><span class="sidebar-credit">Metin, Jeremy Strandberg’in <em>Stonetop</em> adlı eserinden. <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></span><a class="sidebar-github" href="https://github.com/Bryan-Legend/stonetop-generator">GitHub</a><button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true" title="Zar sesi"><span class="sound-on" aria-hidden="true">🔊</span><span class="sound-off" aria-hidden="true">🔇</span><span class="sound-label">Zar sesi</span></button></div>
+    </aside>
+    <div class="main-wrap">
+      <div class="content-scroll" id="main">
+        <main class="content">
+          <h1 class="page-title">Oyunu Yönetmek</h1>
+<p>Bir rol yapma oyununu OY olarak yönetmenin onlarca yolu vardır. <em>Stonetop</em>&#x27;u yönetmenin ise kendine özgü bir yolu var. İşte bu. Oyunun geri kalanı bu yaklaşımın üzerine kurulmuştur.</p>
+<p>Unutma: <strong>oyun bir sohbettir</strong>.</p>
+<p>Sen bir şeyler söyleyeceksin, diğer oyuncular bir şeyler söyleyecek. Birbirinize sorular soracak, birbirinizin sözünü kesecek, aynı anda konuşacaksınız. Oyunun kuralları belirli anlarda devreye girer ve sohbetin nereye gittiğini bize gösterir.</p>
+<p>OY olarak sohbette özel bir rolün var. <strong>Senin işin dünyayı betimlemek, neler olduğunu söylemek ve canavarları ve OOK&#x27;leri canlandırmaktır</strong>. Sohbeti kolaylaştıracak ve hükümler vereceksin. Katkı isteyeceksin. Sahneleri kuracak ve spot ışığını yönelteceksin. Oyun sana, OY&#x27;ye, büyük bir güç verir – ve büyük bir sorumluluk.</p>
+<h2 id="your-agenda">Gündemin</h2>
+<p><em>Stonetop</em>&#x27;u yönetirken hedeflerin şunlardır:</p>
+<ul class="bullets"><li>Zengin ve gizemli bir dünyayı canlandır</li><li>Karakterlerin hayatlarını maceralarla böl</li><li>Ne olacağını görmek için oyna</li></ul>
+<p>OY olarak söylediğin ve yaptığın her şey bu üç hedefi desteklemek içindir, başka hiçbir şey için değil. (Örneğin) oyuncuların becerisini sınamak, “adil” dövüşler sunmak ya da karakterleri cezalandırmak senin gündemin <em>değildir</em>.</p>
+<p>Oyuncuları kontrol etmek ya da “senin” hikâyeni olması gerektiğini düşündüğün yöne zorlamak kesinlikle senin gündemin değildir. Emin olamadığında kendine sor: <strong>yapmayı düşündüğün bu şey, bu üç hedeften hangisini destekliyor?</strong> Cevap “hiçbirini” ise, yapma. Başka bir şey yap.</p>
+<p>İlk hedefin <strong>zengin ve gizemli bir dünyayı canlandırmaktır</strong>: canlı ve nefes alan, ayrıntıyla, insanlıkla ve derinlikle dolu bir dünya.</p>
+<p>Gündelik kaygılar – ekinler, ticaret, hava, komşuların ne düşündüğü – önemlidir. Fantastik unsurlar da önemlidir, ama tuhaf, korkutucu ve pek anlaşılmamış şeylerdir. Geçmiş huzursuz uyur. Sorular her yerdedir.</p>
+<p>İkinci hedefin <strong>karakterlerin hayatlarını maceralarla bölmektir</strong>. OK&#x27;lerin sürdürecekleri hayatları, bakacakları evleri, doyuracakları aileleri var. Zamanları üzerinde talepler var.</p>
+<p>Senin işin bu şeylerin önemli olmasını sağlamak, ama aynı zamanda onları yalnızca OK&#x27;lerin karşılayabileceği (ya da karşılayacağı) tehditler ve fırsatlarla bölmektir. Maceralar <em>oyuncuların</em> zamanının büyük kısmını kaplayacaktır, ama <em>karakterlerin</em> zamanının büyük kısmını kaplamamalıdır.</p>
+<p>Son olarak ve en önemlisi, <strong>ne olacağını görmek için oyna</strong>. Senin işin zengin ve gizemli bir dünyayı canlandırmak, OK&#x27;lerin önem verdiği şeyleri tehdit etmek ya da önlerine fırsatlar sallamak, sonra da işlerin oradan nereye gideceğini görmektir. Planlar yapacaksın, evet. Hazırlık yapacaksın. Ama oyun başladığında senin işin oyuncuların, zarların ve kurgunun götürdüğü yere gitmektir.</p>
+<p>Ödülü de şudur: doğal biçimde, kendiliğinden, sihirli bir şekilde gelişen hikâyeye gerçekten şaşırmak. Tek başına asla dokuyamayacağın bir hikâye.</p>
+<h2 id="the-core-loop">Temel döngü</h2>
+<p>Bu oyunu yönettiğinde <em>yaptığın</em> şey budur. Elbette dahası var, ama seninle oyuncular arasındaki sohbetin temel yapısı budur.</p>
+<p>1) Durumu kur</p>
+<ul class="bullets"><li>Eylemi çerçevele</li><li>Çevreyi betimle</li><li>Ayrıntılar ve özellikler ver</li><li>Sorular sor, katkı iste</li><li>OOK&#x27;leri ve canavarları canlandır</li><li>Soruları cevapla, netleştir</li></ul>
+<p>2) Yumuşak bir OY hamlesi yap</p>
+<p>Eyleme kışkırt ve/veya gerilimi artır.</p>
+<p><strong>3) “Ne yaparsın?” diye sor</strong></p>
+<p>4) Eylemlerini çözümle</p>
+<ul class="bullets"><li>Bir oyuncu hamlesini tetiklerlerse, hamlenin söylediğini yap.</li><li>6- atarlarsa ya da beladan habersiz davranırlarsa, sert bir OY hamlesi yap (kötülüğü kur).</li><li>Aksi hâlde, ne olduğunu söyle.</li></ul>
+<p>5) Tekrarla</p>
+<ul class="bullets"><li>Durum net ve çekici mi? OK&#x27;ler harekete geçebilir mi? 3. adıma dön.</li><li>Durum net ama OK&#x27;ler harekete geçmeden tırmanıyor mu? 2. adıma dön.</li><li>Durum net ama bir dürtmeye mi ihtiyaç var? 2. adıma dön.</li><li>Durum belirsiz mi? Özetlenmesi ya da güncellenmesi mi gerekiyor? 1. adıma dön.</li><li>Mevcut sahne ya da durum bitti mi? Toparla, bir sonrakini ara. 1. adıma dön.</li></ul>
+<p>Uygulamada sohbet akışkan, dağınık ve kaotiktir. Kurallar ve kurgusal ayrıntılar hakkındaki sorularla bölünür. Oyuncular laf atar, şakalaşır, seçenekleri tartışır ya da karakterlerinin ağzından birbirleriyle sahneler oynar. Çoğu zaman iki ya da daha fazla sohbet “döngüsünü” aynı anda yürütecek, her biri kendi işiyle uğraşan karakterlerin oyuncuları arasında gidip geleceksin.</p>
+<p>Ama tüm bunların altında bu yapı, bu döngü vardır.</p>
+<p>Kendini kaybolmuş hissedersen ve sonra ne yapacağından ya da ne söyleyeceğinden emin olamazsan, bu döngünün neresinde olduğunu bul ve oradan devam et.</p>
+<p>Şimdi her adıma ayrıntılı olarak bakalım.</p>
+<h2 id="1-establish-the-situation"><span class="step-badge">1</span> Durumu kur</h2>
+<p>OK&#x27;lerin içinde bulunduğu durumları kurmak senin işindir. Gerektiğinde aşağıdakilerden birini ya da hepsini, anlamlı olan sırayla yap.</p>
+<h3 id="frame-the-action">Eylemi çerçevele</h3>
+<p><strong>Kim, nerede ve ne zaman</strong> olduğunu belirle.</p>
+<p>OK&#x27;lerden birine ya da birkaçına dön ve nerede olduklarını söyle (ya da sor). Orada başka kimin olduğunu söyle (ya da sor). Bunun ne zaman olduğunu söyle (ya da sor) (mevsim, günün saati, son sahne ya da durumdan ne kadar sonra).</p>
+<h3 id="describe-the-environment">Çevreyi betimle</h3>
+<p>Daha önce “kamerada” görmediğiniz bir yer için nasıl bir yer olduğunu söyle (ya da sor). Daha önce gördüğünüz bir yer için nasıl değiştiğini (değiştiyse) söyle (ya da sor).</p>
+<p>Farklı duyulardan <strong>en fazla 3 güçlü izlenim ekle</strong> – karın üstündeki kanın çarpıcı kırmızılığı, ocakta çıtırdayan ateş, yağmurun ve ıslak toprağın kokusu.</p>
+<p>Bazen duygusal izlenimler (odadaki gerginlik, yüzlerindeki keder) ya da ahlaki izlenimler (şık giyimli, tok eşrafın karşısındaki kirli, çaresiz dilenciler) ekle.</p>
+<p><strong>Önemli olana odaklan</strong>. Meyhanedeyseler oradaki insanlara, gürültüye ve <em>havaya</em> odaklan. Bir harabeyi keşfediyorlarsa mekâna, basılacak zemine, görüntüye ve sese odaklan. Kısa tut, başlangıçta 3 izlenimden fazla olmasın. Oyunculara çok fazlasını verirsen dikkatleri dağılır; ihtiyaç duydukları ya da istedikleri yerde daha fazla ayrıntı isterler. Süslü değil, vurucu ve çağrışımlı olsun. Tolkien değil, Hemingway.</p>
+<h3 id="give-details-and-specifics">Ayrıntılar ve özellikler ver</h3>
+<p>Ne olduğunu söyle (ya da sor). Kim ne yapıyor? Herkes birbirine göre nerede? Karakterler ne görebiliyor, ne duyabiliyor, ne sezebiliyor?</p>
+<p>Yine, önemli olana odaklan. Sosyal bir durumda insanlara odaklan: kimler orada, neye benziyorlar, nasıl davranıyorlar. Bir harabeyi keşfediyorlarsa çevreye odaklan.</p>
+<p>Bir aksiyon sahnesinde araziye ve dövüşenlere, konumlarına ve ivmelerine odaklan.</p>
+<p>Arada bir gerekli olmayan bir ayrıntı ekle.</p>
+<p>Sosyal bir sahnede yemeğin tadından ya da odanın havasından bahset. Bir dövüş sahnesinde bir koku ya da bir düşmanın üzerindeki bir şeyi araya sıkıştır. Bu tür fazladan ayrıntılar duruma gerçek bir doku katabilir.</p>
+<p>Mekânı ve ilişkileri aktarmak için haritalar, aksesuarlar ve karşılaştırmalar kullan. Odanın krokisini çiz. Pullar ya da piyonlar kullan. Gerçek dünyadaki mekânlara başvur (“Sana göre aşağı yukarı Bob&#x27;un olduğu yerde.”). Benzetmeler ve mecazlar dostundur!</p>
+<h2 id="improvisation-prep">Doğaçlama ve hazırlık</h2>
+<p>Evet, tüm bunları sen uyduruyorsun (ya da oyunculardan uydurmalarını istiyorsun). Önceden biraz <strong>hazırlık</strong> yapacak (bkz. <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">hazırlık</a>) ya da ortam rehberinden malzeme çekeceksin, ama oyun sırasında ayrıntıların çoğunu doğaçlayacaksın.</p>
+<p>Bir ayrıntı kurulduktan sonra ona baştan beri doğruymuş gibi davran. Üzerine inşa et, onunla oyna. Bağlantılar ara.</p>
+<p>Kendine bariz soruları sor ve (muhtemelen bariz) cevaplara karar ver. Hepsini zengin, gizemli bir dünyada birbirine ör.</p>
+<h3 id="ask-questions">Sorular sor</h3>
+<p>Bütün ayrıntıları kendin sağlamak zorunda değilsin. <a class="wiki-link" href="#your-principles" data-slug="running-the-game" data-fragment="your-principles">İlkelerinden biri</a> <strong>sorular sorup cevapların üzerine inşa etmektir</strong>. Karakterlerine bildikleri, hissettikleri ya da yaşadıkları şeyler hakkında sorular sorarak oyuncuları sahneye katkıda bulunmaya davet et. “Caradoc, tabakhanede insanı en çok boğan koku ne?” Ya da “Vahid, bu gölete daha önce gelmiştin.</p>
+<p>Neye benziyor? Bize anlat.”</p>
+<p>Karakterlerin o an yaşadıkları hakkında da sorular sor. Temel ayrıntıları uydurmalarını isteme, ama belki bir temaya uyan bir ayrıntı için onları dürt.</p>
+<p>“Rhianna, bu haydutta gözüne çarpan özellik ne? Yani onu diğerlerinden ayıran ne?” Ya da “Blodwen, burada bu yeri sıcak ve güvenli hissettiren ne?”</p>
+<p>Ne yaptıkları ve ne işler çevirdikleri, zamanlarını nasıl geçirdikleri ve kimlerle takıldıkları vb. hakkında sorular sor.</p>
+<p>Bir seferdeyken yürüyüş sıralarını sor. Kamp Kurduklarında ne yediklerini, kamp yerinin nasıl olduğunu, hangi nöbeti kimin tuttuğunu vb. sor.</p>
+<p>Ne düşündükleri ve ne hissettikleri hakkında sorular sor. “Vahid, aklında ne var?” “Rhianna, şu an seni en çok endişelendiren ne?”</p>
+<h3 id="portray-npcs-and-monsters">OOK&#x27;leri ve canavarları canlandır</h3>
+<p>İşin içinde oyuncu olmayan karakterler (OOK&#x27;ler) varsa onları betimle. Ne yaptıklarını söyle. OK&#x27;ler onlarla etkileşime girerse OOK&#x27;lerin nasıl karşılık verdiğini söyle. Onların sesiyle konuş ve söylediklerini söyle. Bu sana ürkütücü geliyorsa ya da sadede gelmek istiyorsan, söylediklerini gerçekten söylemek yerine <em>betimle</em>.</p>
+<p>Durumda canavarlar – hayvanlar, ruhlar, crinwinler ve benzerleri – varsa onları da canlandır. Betimle: ne kadar büyükler, nasıl hareket ediyorlar, nasıl ses çıkarıyor ve nasıl kokuyorlar. Ne yaptıklarını, neye odaklandıklarını söyle. OK&#x27;lere nasıl karşılık verdiklerini söyle.</p>
+<h3 id="answer-questions-clarify">Soruları cevapla, netleştir</h3>
+<p>Oyuncular sözünü kesip sorular soracak. Hakikat ve ayrıntı konusunda dürüst ve cömert ol. Cevap OK&#x27;ler için açık olmayacaksa bunu söyle ve anlamak için ne gerektiğini anlat. Senin işin <strong>zengin ve gizemli bir dünyayı canlandırmaktır</strong>, onları çemberlerden atlatıp aklından geçeni tahmin etmeye zorlamak değil.</p>
+<p>Bazen oyuncular durumu yanlış anladıklarını gösteren bir şey söyler. Sen şiddetin meyhanenin öbür ucunda, OK&#x27;ler izlerken yaşandığını düşünürken Tilki “Adamın bacağının arkasını keserim,” der. Böyle bir şey olduğunda <strong>durumu oyuncularla netleştir</strong>. İşleri nasıl gördüğünü açıkla, ama durumu kavrayışını onlarınkine uydurmaya da istekli ol.</p>
+<p>“Ha? Yok, bu meyhanenin öbür ucunda oluyor. Hemen orada olsaydın işin buraya varmasına izin vermezdin herhâlde, değil mi?”</p>
+<h2 id="2-make-a-soft-gm-move"><span class="step-badge">2</span> Yumuşak bir OY hamlesi yap</h2>
+<p>Durum net mi? Güzel. Şimdi yumuşak bir OY hamlesi yap – eyleme kışkırtmak ve/veya gerilimi artırmak için bir şey söyle.</p>
+<p><strong>OY hamlelerinden</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">OY hamlelerin</a> birini seç ve onu yap.</p>
+<p>Eyleme kışkırtmak için: kötü bir şeyin olmak üzere olduğunu ya da olmakta olduğunu söyle, ama <strong>OK&#x27;lere bu konuda bir şey yapma şansı ver</strong>. “Elin bıçağının kabzasını bulurken crinwin ‘hışşşşş’ diye tıslıyor ve sıçrıyor, parmakları gırtlağına uzanıyor, ne yaparsın?”</p>
+<p>Ayrıca <strong>onlara bir fırsat sunarak </strong> ya da seçenekler sunup <strong>seçmeye yönlendirerek</strong> de eyleme kışkırtabilirsin.</p>
+<p>“Tamam, yuvarlanıp yanından geçti. Şaşırdı ve bir anlık fırsatın var. Sırtına atlayıp bıçaklamayı deneyebilirsin. Ya da oradan tüyebilirsin. Ne yaparsın?”</p>
+<p>Sosyal bir sahnede OOK&#x27;lerin bir şey isteyebilir ya da talep edebilir. Savunmasız ya da duygusal bir şey söyleyip OK&#x27;nin tepki vermesini bekleyerek ona bakabilirler.</p>
+<p>Yumuşak hamleler her zaman eyleme kışkırtmaz.</p>
+<p>Bazen <strong>sadece gerilimi artırırlar</strong>.</p>
+<p>Eşyalarını tüketebilir, belanın habercisi olabilir ya da sahneye hemen karşılık verilemeyecek bir bela ekleyebilirsin. “Bir süredir aşağıdasınız, meşaleleriniz azalmaya başladı.” Ya da “Bir sarsıntı daha. Tavandan biraz toprak dökülüyor.</p>
+<p>Ne yaparsın?”</p>
+<h2 id="3-what-do-you-do"><span class="step-badge">3</span> “Ne yaparsın?”</h2>
+<p>Yumuşak bir OY hamlesi yaptıktan sonra <strong>“Ne yaparsın?”</strong> diye sor. Bu sohbeti oyuncu(lar)a geri verir ve onları bir şey söylemeye yöneltir.</p>
+<p>Harfiyen “Ne yaparsın?” demek zorunda değilsin. Bazen hamlen bir soru içerir. Bir OOK&#x27;yi canlandırırken hamleni yapıp oyunculara beklentiyle bakabilirsin. Ama emin değilsen sor: “Ne yaparsın?”</p>
+<p>Anlamsız bir şey söylerlerse – imkânsız, geçersiz ya da makul olmadığını düşündüğün bir şey – bunu onlara söyle. Kurguyu netleştir. Israr ederlerse <strong>sonuçlarını ve/veya gerekenleri söyle</strong>. Hâlâ yapmak isteyip istemediklerini sor.</p>
+<p>Sorular sorarlarsa cevapla. Cevaplar bariz değilse <strong>gerekenleri söyle</strong>. “Biraz etrafı kurcalayıp İçgörü Araman gerekecek.” Sonra topu yeniden onlara at: “Ne yaparsın?”</p>
+<h2 id="players-jumping-in">Araya giren oyuncular</h2>
+<p>Oyuncular sen “Ne yaparsın?” diye sormadan, hatta yumuşak bir OY hamlesi yapmadan önce inisiyatifi ele alıp bir eylem ilan edebilir. Harika!</p>
+<p>Bu, oyuna dâhil oldukları ve durumun harekete geçmek isteyecekleri kadar çekici olduğu anlamına gelir. Doğrudan eylemlerini çözümlemeye geçebilirsin.</p>
+<p>Bununla birlikte: oyuncuların sohbete hâkim olmasına izin verme. Bir hamle yapmanın ortasındaysan, onlar harekete geçemeden bir şey olacağını düşünüyorsan ya da başka birine harekete geçme şansı vermek istiyorsan, onlara biraz sabretmelerini söyle!</p>
+<h2 id="4-resolve-their-action"><span class="step-badge">4</span> Eylemlerini çözümle</h2>
+<p>Oyuncu karakterinin ne yaptığını söyler. Durumun nasıl değiştiğini ve/veya eylemlerinin durum hakkında neyi açığa çıkardığını belirle.</p>
+<p><strong>Bir oyuncu hamlesini tetiklediler mi?</strong> Tetiklediyse hangisini? O hamleyi çözümle. Bir hamleyi tetikleyip tetiklemediklerinden emin değilsen ya da çözümlemeden önce daha fazla bilgiye ihtiyacın varsa sorular sor. Niyetlerini ve/veya bu işe nasıl giriştiklerini netleştir. Masayla tartış.</p>
+<p>Bir oyuncu bir hamleyi tetiklediğinde <strong>hamlenin işleyişini izle</strong>. Hamlenin onlara hak kazandırdığı bilgiyi açıkla. Durumun nasıl değiştiğini oyuncuyla birlikte kur. (Daha fazla ayrıntı için bkz. <strong>Oyuncu Hamleleri</strong>, <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Oyuncu Hamleleri</a>.)</p>
+<p>Bir oyuncunun hamlesi kurguya bir şey eklemeni istediğinde ve ne söyleyeceğinden emin olamadığında, <strong>ilham için OY hamlelerine bak</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">OY hamlelerin</a>.</p>
+<p><strong>Bir hamleyi tetikleyip 6- atarlarsa</strong> XP işaretlerler ve sen de sert bir OY hamlesi yaparsın (hamle özellikle aksini söylemedikçe).</p>
+<p>Bir oyuncu hamlesini tetiklemeyen bir şey yaparlarsa ne olduğunu görmek için sana bakarlar. <strong>Daha önce uyardığın bir tehdidi ya da belayı görmezden mi geldiler?</strong> Sert bir OY hamlesi yap.</p>
+<p><strong>Aksi hâlde</strong> ne olduğunu ve bunun durumu nasıl değiştirdiğini söyle. Belki sadece “Tamam” de, sonra ya <strong>spot ışığını</strong> <a class="wiki-link" href="#the-spotlight" data-slug="running-the-game" data-fragment="the-spotlight" data-ref="page">Spot ışığı</a> kaydır ya da “Sonra ne yaparsın?” de.</p>
+<h3 id="hard-gm-moves">Sert OY hamleleri</h3>
+<p>Bir OK şunları yaptığında sert bir OY hamlesi yap...</p>
+<ul class="ellipsis"><li>bir tehdidi ya da belayı tümüyle görmezden gelirse; ya da</li><li>bir hamleyi tetikleyip 6- atarsa (ve hamle aksini söylemiyorsa).</li></ul>
+<p>Sert bir OY hamlesi yapmak <strong>kötülüğü kurmak</strong> demektir. OK&#x27;nin eylemlerinin sonuçlarını betimle. İşlerin nasıl ters gittiğini söyle. Durumu önemli ölçüde kötüleştir. Listelerinden bir <strong>OY hamlesi</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">OY hamlelerin</a> seç ya da sadece bariz kötü şeyi söyle. “Uuu, 5 ha? Çok hızlı!</p>
+<p>Bıçağın kınından çıkamadan üstünde, GÜM, <button type="button" class="dice-roll" data-dice="d6" title="d6 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d6</button> hasar al ve sırtüstü yerdesin, pençelerinden biri gırtlağında, diğeri bıçaklı elini bileğinden yere çiviliyor, ne yaparsın?”</p>
+<p>6- attıklarında sert hamlen çoğu zaman OK&#x27;nin eyleminin başarısız olmasını içerir. Nasıl ters gittiğini ve/veya sonuçlarının ne olduğunu söyle (ya da sor). <strong>Ama 6- her zaman OK&#x27;nin eyleminin başarısız olduğu anlamına gelmez</strong>. Kötülüğü kurduğun anlamına gelir. Belki onlar işlerini yapamadan kötü bir şey olur; belki yapmaya niyetlendikleri şeyi yaparlar, ama bu gerçekten çok kötü bir şeye yol açar (ya da onu açığa çıkarır). Kötülük yaptıkları eylemle doğrudan bağlantılı bile olmayabilir – sadece hemen ardından gelebilir.</p>
+<p>Sert bir hamle her zaman kötülüğü kurmalıdır, ama <strong>ne kadar kötü olduğuna sen karar verirsin</strong>. Sert hamlelerine yön vermek için durumu, kurguyu, oyuncunun eylemlerinin betimlemesini vb. kullan. Bazen sert bir hamle yumuşak bir hamleden pek de kötü değildir.</p>
+<h2 id="5-repeat"><span class="step-badge">5</span> Tekrarla</h2>
+<p>OK&#x27;nin eylemini çözümledin. Durum değişti ya da biraz daha açığa çıktı ve oyun oradan çığ gibi büyür.</p>
+<p><strong>Durum net ve çekiciyse</strong></p>
+<p><strong>ve bir ya da daha fazla OK harekete geçebilecek konumdaysa</strong>, doğrudan 3. adıma dön ve onlara “Ne yaparsın?” diye sor.</p>
+<p><strong>Durum net ama OK&#x27;ler harekete geçemeden işler tırmanacaksa</strong>, 2. adıma dön. İşlerin nasıl değiştiğini göstermek için yumuşak bir OY hamlesi yap.</p>
+<p>Sonra “Ne yaparsın?” diye sor.</p>
+<p>Aynı şekilde, <strong>durum net ama biraz durağansa</strong> ve oyuncuların bir dürtmeye ihtiyacı varsa, 2. adıma dön. Yumuşak bir OY hamlesi yap ve “Ne yaparsın?” diye sor.</p>
+<p><strong>Durum belirsizse ya da özetlenmesi veya güncellenmesi gerekiyorsa</strong>, 1. adıma dön. Durumu yeniden kur. Sonra yumuşak bir OY hamlesi yap ve “Ne yaparsın?” diye sor.</p>
+<p><strong>Mevcut sahne ya da durum bittiyse</strong> işleri toparla. Lojistik, hesap kitap ve diğer oyun dışı işleri hallet.</p>
+<p>Bir sonraki durumun ya da sahnenin ne olması gerektiğini oyuncularla birlikte bul. Açık değilse, açık olana dek sorular sor.</p>
+<p>1. adıma dön. (Yeni) durumu kur, yumuşak bir OY hamlesi yap ve “Ne yaparsın?” diye sor. Eylemlerini çözümle.</p>
+<p>Durumun nasıl değiştiğini gör. Tekrarla.</p>
+<p>Oyunun temel döngüsü budur.</p>
+<h2 id="the-spotlight">Spot ışığı</h2>
+<p>Oyunu oynarken kime hitap ettiğini an be an değiştireceksin.</p>
+<p>O an kiminle konuşuyorsan <strong>spot ışığı</strong> onun üzerindedir.</p>
+<p>Bazen spot ışığını dağınık tutup bütün gruba hitap edeceksin.</p>
+<p>Çoğu zaman onu tek bir karaktere odaklayacaksın. Aynı anda pek çok şey olurken onu bireyler ve gruplar arasında ileri geri savuracaksın.</p>
+<p>Spot ışığını yönetmenin resmî bir usulü yoktur. <strong>Spot ışığını kaydırmanın en bariz zamanı bir OK&#x27;nin eylemini çözümledikten sonrasıdır</strong>. Başka bir karaktere dön ve durumu <em>ona</em> betimle. Yumuşak hamleni <em>ona</em> yap. <em>Ona</em> “Ne yaparsın?” diye sor.</p>
+<p>Ancak spot ışığını ne zaman anlamlıysa o zaman kaydırabilirsin. Örneğin “Ne yaparsın?” diye sorduğunda...</p>
+<ul class="ellipsis"><li><strong>oyuncu donup kalır ya da oyalanırsa</strong>, başka birine geç ve ilk oyuncuya düşünmesi için zaman tanı. Sonra ona geri dön; ya da...</li><li><strong>OK zaman alacak bir şey yaparsa</strong>, başka birine geç. İlk OK işini bitirirken (ya da bir şey onu bölerken) ona geri dön; ya da...</li><li><strong>bir hamle yaparlar ve onu nasıl çözümleyeceğinden emin olamazsan</strong>, başka birine geçerek kendine düşünme zamanı kazan. İlk oyuncunun hamlesini çözümlemek için sonra geri dön.</li></ul>
+<p>İyi bir kolaylaştırıcı olmak için spot ışığını kullan.</p>
+<p>Herkesi işin içinde tut. Herkesin iyi bir ekran süresi almasını ve katkıda bulunma şansı olmasını sağla.</p>
+<p>Oyuncuların birbirinin sözünü kesmesi, laf atması ya da karakterlerinin “sırası gelmeden” harekete geçmesi sorun değil. Bazı hamleler (Savun gibi) buna açıkça izin verir!</p>
+<p>Bununla birlikte: aşırı hevesli ya da saldırgan bir oyuncuyu kibar ama kararlı bir uyarıyla durdurmaktan çekinme. “Andrew, kaba davranıyorsun. Şu an Jamie ile konuşuyorum.”</p>
+<h2 id="split-the-party">Grubu bölmek</h2>
+<p>Olacak. OK&#x27;ler bölünecek – bilerek ya da sen <strong>onları ayırdığın</strong> ya da <strong>birini yakaladığın</strong> için – ve artık elinde iki küçük grup olacak. Sorun değil. Grubu bölmek çok eğlenceli olabilir.</p>
+<p>Grubu bölmek, aynı anda birden fazla sohbeti ve sahneyi idare etmek demektir. Tıpkı bir film kurgucusunun sahneler arasında sert geçişler yapması gibi, spot ışığını farklı sahneler arasında ileri geri kaydır.</p>
+<p>Bir grubun üzerinde çok uzun oyalanma.</p>
+<p>Herkesi diğer sahnelerde olup bitenle ilgili ve meraklı tutmaya çalış. Her “eylemde” ya da oyuncu hamlesinde sahneler arasında geçiş yapabilir ya da her geçiş arasında sohbetin birkaç “döngüsünü” çözümleyebilirsin. Bunun bir ritmi ve bir sanatı vardır; farklı sahne türleri farklı yaklaşımlardan fayda görür. Keşif ve diyalog daha uzun kesitlerden fayda görür.</p>
+<p>Gerilimi ve aksiyonu yüksek sahneler kısa, hızlı geçişlerle ve bol bol merak uyandıran kopuşlarla iyi işler.</p>
+<h2 id="scenes-and-loose-play">Sahneler ve serbest oyun</h2>
+<p>Oyun sırasında sohbet doğal olarak sahneler ve serbest oyun arasında gidip gelir. Bu resmî bir ayrım değildir, hatta her zaman bilinçli bir ayrım da değildir. Çoğu zaman aralarında doğal ve içgüdüsel olarak geçiş yapacaksın.</p>
+<p><strong>Sahneler yakın plandır</strong>. Belirli bir yerde, belirli bir zamanda belirli karakterleri gösterirler. Aksiyonu an be an izlersin. Ayrıntılar bol ve belirgindir. Oyuncular karakterlerinin ağzından konuşur, sen de OOK&#x27;leri kendi ağızlarından canlandırırsın.</p>
+<p>Sen ve oyuncular karakterlerinizin sesiyle gerçekten konuşmasanız bile sohbet yine yakın planda, ayrıntılı bir düzeyde yürür.</p>
+<p>Bir sahne sırasında OK&#x27;lerin kendilerini bulduğu ormandaki açıklığı, çağlayan derenin sesini, ayının nasıl kokladığını, kulaklarını seğirttiğini ve ağaç sırasında tehlike aradığını betimleyebilirsin. “Rhianna, henüz seni fark ettiğini sanmıyorsun, ne yaparsın?”</p>
+<p>Sahneler sinematik ve sürükleyicidir; bazen gergin, çoğu zaman heyecanlıdır. Oyuncular kendilerini karakterlerine kaptırıp olup bitenle ilgili gerçek duygular hissedebilir.</p>
+<p><strong>İyi sahnelerin bir amacı vardır</strong>. Bu sahneyi bu karakterlerle bu yerde kurmanın bir sebebi var, değil mi? OK&#x27;ler neyi başarmaya çalışıyor? Sen neyi aktarmaya çalışıyorsun? Hangi soruyu cevaplamayı umuyorsun? Hangi çatışma çözümleniyor? Bir sahnenin amacını bilmek ayrıntılarını, betimlemelerini ve OY hamlelerini odaklamana yardım eder. Bir sahnenin amacını belirleyemiyorsan, belki o sahneye ihtiyacın yoktur!</p>
+<p>Sahnenin amacı karşılandığında ya da sahne sönüp gittiğinde onu toparla.</p>
+<p>Bir sonraki bariz sahneye geç (“Bir sonraki odaya giriyorsun ve görüyorsun ki...”) ya da serbest oyuna kay.</p>
+<p><strong>Serbest oyun sahneler arasında olan şeydir</strong>. Yine temel döngüyü izlersin, ama uzak plandan. Şu an burada ne olduğunu betimlemek yerine dakikalar, saatler, günler ya da haftalar boyunca ne olduğunu anlatırsın. Özetler ve sıkıştırırsın, ufak tefek ayrıntıları atlar, zaman dilimlerinin üzerinden geçersin.</p>
+<p>Karakterleri <em>canlandırmaktan</em> çok karakterler <em>hakkında konuşursun</em>.</p>
+<p>Serbest oyun sırasında OK&#x27;lerin Ulu Orman&#x27;da (Great Wood) ilerleyişini, fark edilmemeye çalışırkenki sessiz gerginliği, gün ilerledikçe kötüleşen sıcağı ve ısıran böcekleri betimleyebilirsin. “Caradoc, aklın hep neye kayıyor?” ya da “Rhianna, kamp kurmadan önce ne kadar gitmeyi düşünüyorsun?” gibi sorular sorabilirsin.</p>
+<p>Oyuncu hamleleri serbest oyun sırasında da işler, ama uzak plan ölçeğinde. Hava kararmadan eve varmak için Tek Vücut Mücadele Edebilir ya da yeni gelenleri birkaç gün boyunca gözleyerek İçgörü Arayabilirler.</p>
+<p>Serbest oyun sırasında zaman akışkan olmaya meyillidir.</p>
+<p>“Tamam, hepiniz yola çıkıyorsunuz ve öğlene doğru kavşağa varıyorsunuz.” “Ha, dur. Yola çıkmadan önce biraz bendis kökü için Ticaret ve Takas yaptığımı söyleyebilir miyiz?” Elbette söyleyebiliriz.</p>
+<p>Serbest oyun daha rahat, daha az yoğundur.</p>
+<p>Sahneler arasında <strong>hesap kitabı ve lojistiği hallet</strong>. Notlarına bak, güncellemeler yap ve belki rastgele bir <strong>keşif</strong> <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Keşifler</a> zarla. <strong>Oyun üstüne konuş</strong>. Karakterlerin planlarını ve hedeflerini konuşun (“Neyi başarmaya çalışıyorduk?”). Oyuncuların bir isteği olup olmadığına bak (“Andras&#x27;la bir sahne istiyorum”). <strong>Mola ver</strong>, gerçek hayattan konuşun ve birbirinizin arkadaşlığının tadını çıkarın.</p>
+<p>Serbest oyun sırasında, özellikle OK&#x27;ler yolculuk ederken ya da maceralar arasında evde vakit geçirirken, kurgu içinde çok zaman geçer. Ama gerçek dünyadaki zamanın büyük kısmının sahnelerde geçmesini istersin. Sahne temelli oyun çok daha içgüdüsel, zengin ve heyecanlıdır. <strong>Serbest oyunu sahnelere doğru it</strong>. Bir sonraki sahne kendini gösterir göstermez onu çerçevele ve ayrıntılı, an be an oyuna yeniden yakınlaş.</p>
+<h2 id="your-gm-moves">OY hamlelerin</h2>
+<p>Bir OY hamlesi yapma zamanı geldiğinde ve ne söyleyeceğinden emin olamadığında bunlardan birini seç ve yap. <strong>Temel OY hamlelerin bunlardır</strong>:</p>
+<ul>
+<li>Belayı haber ver (gelecekteki ya da ekran dışındaki)</li>
+<li>İstenmeyen bir gerçeği açığa çıkar</li>
+<li>Kışkırtıcı bir soru sor</li>
+<li>Birini zor durumda bırak</li>
+<li>Kaynaklarını tüket</li>
+<li>Hamlelerini kendilerine karşı çevir</li>
+<li>Bir dezavantajı göster</li>
+<li>Birine zarar ver</li>
+<li>Onları ayır</li>
+<li>Birini yakala</li>
+<li>Bir fırsat sun (bedelli ya da bedelsiz)</li>
+<li>Sonuçlarını/gerekenleri söyle (sonra sor)</li>
+<li>Yaklaşan felakete doğru ilerle Bunlar teknik terimler değildir. İstenmeyen bir gerçeği açığa çıkardığında sadece bunu yaparsın. Kurguda karakterlerin doğru olmamasını dileyecekleri bir şeyi kurarsın. Birine zarar verdiğinde birinin nasıl zarar gördüğünü söylersin.</li>
+</ul>
+<p>OY hamlelerin sana ilham ve güç vermeli, seni kısıtlamamalıdır. Ne yapacağından emin olamadığında ya da bir tekdüzeliğe saplanıp işleri değiştirmek istediğinde onları kullan. Yaptığın her hamlenin bu listedeki bir şeye uyduğundan emin olmak için kendini strese sokma.</p>
+<h2 id="making-your-move">Hamleni Yapmak</h2>
+<p>Durum net olduğunda ve <strong>aksiyonu ileri itmek istediğinde</strong> yumuşak bir hamle yap. OK&#x27;leri harekete geçmeye yönelten ve/veya gerilimi artıran bir şey söyle.</p>
+<p>Oyunun temel döngüsünün bir parçası olarak sürekli yumuşak hamleler yap.</p>
+<p>OK&#x27;ler daha önce kurduğun <strong>belayı görmezden gelirse</strong> ya da <strong>bir oyuncu hamlesinde 6- atarlarsa</strong> sert bir OY hamlesi yap. Kötülüğü kur. OK&#x27;lerin istemediği bir şeyin olmasını sağla ya da istedikleri bir şeyi artık imkânsız kıl.</p>
+<p>Ayrıca <strong>bir oyuncunun hamlesi kurguya bir şey eklemeni istediğinde</strong> de bir OY hamlesi yapabilirsin. Örneğin Tehlikeye Meydan Okuyup 7-9 attıklarında daha küçük bir başarı, bir bedel ya da bir sonuç sunman söylenir. Bedel olarak <strong>kaynaklarını tüketebilir</strong> (“Yapabilirsin, ama malzemelerini bırakman gerekecek.”), sonuç olarak <strong>onları zor duruma sokabilir</strong> (“Başarıyorsun, ama indiğin anda zemin kayıyor ve çökmeye başlıyor.”) ya da daha küçük bir başarı olarak <strong>bir dezavantajı gösterebilirsin</strong> (“Kurtuluyorsun, ama Andras hâlâ topallıyor ve geride kalıyor, yaratık yaklaşıyor!”).</p>
+<p>Her zaman <strong>kurulmuş durumdan ve/veya hazırlığından doğan bir hamle yap</strong>. Ormanda crinwin izi sürüyorlarsa ve 6- atarlarsa, kaybolduklarını açığa çıkarmak gayet iyi bir hamle olur.</p>
+<p>Ama “Gökten kayalar düşüp sizi eziyor, herkes <button type="button" class="dice-roll" data-dice="1d10" title="1d10 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">1d10</button> hasar alsın!” demek tuhaf ve yakışıksız olur.</p>
+<p>Aynı doğrultuda, <strong>hamlelerin durumun özelliklerini yansıtmalıdır</strong>.</p>
+<p>Diyelim ki bir OK saldıran bir yaban sığırıyla karşı karşıya, Çarpış&#x27;ı tetikliyor ve 6- atıyor. OK mızrağını hücuma karşı dikmiş, kaslı bir Kabadayı ise, sert hamlen, OK hücumdan sıyrılıp bir matador gibi hayvanı bıçaklamaya çalışan narin bir Tilki olduğunda yapacağından çok farklı görünür.</p>
+<p><strong>Hamlenin adını söyleme</strong>, sadece kurguda ne olduğunu söyle. “4 attın, o yüzden seni ayırıyorum” deme.</p>
+<p>“Rhianna, uyanıyorsun ve Caradoc&#x27;un nöbette olmadığını fark ediyorsun. Bir süre geri de gelmiyor. Battaniyesi ateşin ışığının kenarına atılmış hâlde.” de.</p>
+<h2 id="other-gm-moves">Diğer OY hamleleri</h2>
+<p>Kullanabileceğin başka OY hamlesi listeleri de var.</p>
+<p>OK&#x27;ler bir <strong>seferdeyken</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Seferler</a> ya da <strong>bir mekânı keşfederken</strong> (bkz. <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Mekânlar</a>) <strong>keşif hamlelerini</strong> kullan.</p>
+<p>Bir tehdidi ya da etkisini bir sahneye sokmak için ya da tehdit zaten işin içindeyken <strong>tehdit hamlelerini</strong> <a class="wiki-link" href="threats.html" data-slug="threats" >kullan</a>.</p>
+<p>OK&#x27;ler evdeyken ya da başka bir yerleşkede vakit geçirirken orada ilginç şeylerin olmasını sağlamak için <strong>cephe gerisi hamlelerini</strong> kullan (bkz. <a class="wiki-link" href="homefront.html" data-slug="homefront" data-ref="page" >Cephe Gerisi</a>).</p>
+<p>Bir <strong>tehlikeye</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Tehlikeler</a> · <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Tehlikeler</a> ya da bir <strong>OOK&#x27;ye</strong> <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >OOK&#x27;ler ve Takipçiler</a> özgü hamleleri, bu unsurlar oyundayken kullan.</p>
+<h2 id="examples-of-gm-moves">OY hamlesi örnekleri</h2>
+<h3 id="announce-trouble">Belayı haber ver</h3>
+<h3 id="future-or-offscreen">(gelecekteki ya da ekran dışındaki)</h3>
+<p>Bu en çok yönlü hamlelerinden biridir.</p>
+<p>Bela neredeyse her zaman bir tepkiye yol açar ya da en azından insanları endişelendirip gerilimi artırır.</p>
+<p>Sert bir hamle olarak daha önce huzurlu bir sahneyi bir dövüşe ya da çatışmaya çevirebilir ya da OK&#x27;lerin eylemlerinin sonradan sonuçları olacağını açıkça gösterebilirsin.</p>
+<hr>
+<blockquote><p><em>“GÜM GÜM GÜM! Rhianna, kapın yumruklanıyor, o çok ihtiyaç duyduğun uykundan uyanıyorsun. Lowri adını haykırıyor ve nöbet çanlarının çınladığını duyuyorsun. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Caradoc ve Blodwen çıkarken şu tekinsiz herif arkalarından bakıyor. Yüzü yara izleriyle dolu, acımasız bir sırıtışı ve belinde bir bıçağı var. Yanındaki adamı dürtüp kapıyı başıyla gösteriyor, ve kalkıp çıkıyorlar. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Glenys birkaç an sana sert sert bakıyor, sonra ‘PEKÂLA’ diyor. Burnundan soluyup ayaklarını vura vura gidiyor. Şimdilik başından savdın, ama biliyorsun ki bununla daha sonra uğraşmak zorunda kalacaksın.”</em></p></blockquote>
+<hr>
+<h3 id="reveal-an-unwelcome-truth">İstenmeyen bir gerçeği açığa çıkar</h3>
+<p>Bir şeyi doğru olarak kur, doğru olmamasını gerçekten dileyecekleri bir şeyi. Belki baştan beri doğruydu da sen şimdi açığa çıkarıyorsun. Ya da belki (özellikle sert bir hamle olarak) bu kötü şeyin doğru olduğuna şu an karar veriyor ve onlara bildiriyorsun. İki yol da işler.</p>
+<p>Bir Şeyler Bildiklerinde ya da İçgörü Aradıklarında kullanmak için harika bir hamledir. 7+ gelirse onlara dürüst cevaplar ya da ilginç (belki faydalı) bilgiler borçlusun, ama öğrendiklerinden memnun olmaları için hiçbir sebep yok. 6- gelirse de vidaları iyice sıkabilirsin.</p>
+<hr>
+<blockquote><p><em>“‘Vvvasil mi? Tannnrım, hayır. Vvvassil bu ssson baharda kasssabadan ayrıldı. Güneye, Lygos&#x27;a dönmüş, öyle duydum.’ Gülümsüyor, ve sanki fazla dişi varmış gibi. ‘Ama eminim bir çeşit… anlaşmaya varabiliriz, değil mi?’”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Burada son zamanlarda ne oldu? Şey, çamurda bir düzine kadar ayak izi var, hepsi sanki bir kavga olmuş gibi karmakarışık. Yapraklarda da birkaç kan sıçraması var. Lowri&#x27;nin crinwinlerin baskınına uğradığı oldukça açık.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Of, 6- mı? Peki, günün geri kalanında tepeleri arıyorsun ve... sanırım onu bulamıyorsun? Yok, dur. Biliyor musun? Cadi&#x27;yi buluyorsun. Kereste kampından yaklaşık bir kilometre ötede cesedini buluyorsun. Bir şey onu bıçaklamış, karnından boydan boya şişlemiş.”</em></p></blockquote>
+<hr>
+<h3 id="ask-a-provocative-question">Kışkırtıcı bir soru sor</h3>
+<p>Bir kararı ya da tepkiyi tetikleyen bir soru sor; bu yalnızca duygusal bir tepki ya da harekete geçmeme kararı olsa bile. Soruyu kendin sorabilir ya da OOK&#x27;lerinden birinin ağzına koyabilirsin. Ya da:</p>
+<p>kötülüğü öne süren ama oyuncuya onu yazma şansı veren bir soru sor.</p>
+<hr>
+<blockquote><p><em>“Rhianna, Eira&#x27;nın yüzü asık ve şöyle diyor: ‘Garet çok kan kaybediyor. Bunu atlatacağını sanmıyorum, üstelik bizi fena hâlde yavaşlatacak. Gerekeni yapmamı ister misin?’”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Caradoc, sanırım sen bütün bunların tam sonunda geliyorsun. Vahid&#x27;in ağzından kabaran o duman bulutunu gördün. Ve işte Vahid, her şey karşısında tamamen normal davranıyor. Şu an aklından neler geçiyor?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Of, 4 mü? Sanırım onu gücendirmeyi başarıyorsun, gerçekten kalbini kırıyorsun. Bunu yapan ne söylüyor ya da ne yapıyorsun?”</em></p></blockquote>
+<hr>
+<h3 id="put-someone-in-a-spot">Birini zor durumda bırak</h3>
+<p>Bu <strong>belayı duyurmanın</strong> daha saldırgan bir biçimidir – hemen şimdi bir şey yapmaları gerekir, yoksa işler çirkinleşecek.</p>
+<p>“Biri” bir OK ya da bir OOK olabilir ve spot ışığıyla oynayabilirsin. Belki zor duruma soktuğun kişi bu konuda bir şey yapan kişi değildir.</p>
+<hr>
+<blockquote><p><em>“Az kalsın! Atlıyorsun, ama dala çarpıyorsun. Kayıyorsun, zar zor tutunuyorsun. O daldan böyle sallanıyorsun, soluk soluğa, 25 metre kadar yukarıda, ve tutuşun gevşemeye başlıyor. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“İri adam ayağa kalkıp sana tepeden ters ters bakıyor. ‘Bana ne dedin sen, sıska sıçan?’ Rhianna, bunun olduğunu görüyorsun ve üç adamın daha, iri yarı madenci tiplerin, ayağa kalktığını fark ediyorsun; hiçbirinin yüzünde gülümseme yok. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Yani, dediğin gibi, elini burnuna koyduğunda ejder sakinleşiyor ve miyavlayan bir kedi yavrusu gibi oluyor. Ama Caradoc, sen çalılıkların arasından izliyorsun ve Blodwen onu sakinleştirirken bir ejder daha görüyorsun, onun arkasında, sağında, sinsice yaklaşıyor. Üstüne atılmak üzere, bundan eminsin, ne yaparsın?”</em></p></blockquote>
+<hr>
+<h3 id="use-up-their-resources">Kaynaklarını tüket</h3>
+<p>Eşyalarını yavaş yavaş eriten ya da onları tümüyle ellerinden alan bir şey olur. Buradaki “kaynaklar” şunlar olabilir...</p>
+<ul class="ellipsis"><li><strong>somut ve belirli</strong> (kalkanları, meşaleleri, kandil yağları);</li><li><strong>somut ama soyut</strong> (malzeme, cephane);</li><li><strong>elle tutulmaz</strong> (ünleri, birinin güveni); ve/veya</li><li><strong>tamamen mekanik soyutlamalar</strong> (HP, Talih, Sadakat vb.).</li></ul>
+<p>Soyut, elle tutulmaz ya da tamamen mekanik bir şey kaybettiklerinde bunu her zaman kurguya geri getirmeli ve nasıl kendini gösterdiğini göstermelisin. “Biraz ters ters bakıyor, sonra hayal kırıklığıyla başını sallıyor. Elinde Sadakat varsa artık 1 eksik.”</p>
+<p>Yumuşak bir hamle olarak gerilimi artırmak için bu hamleyi kullan. O 4 HP şimdi pek bir şey ifade etmeyebilir, ama birkaç darbe daha aldıktan sonra oyuncu <em>tedirgin</em> olmaya başlayacak.</p>
+<p>Belirli bir kaynağı tükettiğinde kayıp geçici (“bıçağı elinden çarpıyor, bıçak odanın öbür ucuna uçuyor”) ya da kalıcı (“darbe kalkanını paramparça ediyor”) olabilir.</p>
+<p>Bu hamleyi çoğu zaman başka hamlelerle birlikte yaptığını göreceksin, bu da sorun değil.</p>
+<p>Özellikle HP, başka hamlelerin doğal bir parçası olarak tükenir (bkz. <strong>Hasar Vermek ve Zafiyet Vermek</strong> kutusu, <a class="wiki-link" href="#dealing-damage-and-inflicting-debilities" data-slug="running-the-game" data-fragment="dealing-damage-and-inflicting-debilities" data-ref="page">Hasar Vermek ve Zafiyet Vermek</a>.)</p>
+<hr>
+<blockquote><p><em>“Buraya ineli bir saat kadar oldu. Sanırım meşalen azalıyor. Yani, belki on dakikalık ışığın kaldı? Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Evet, tutuşun kayıyor ve aşağı yuvarlanıyorsun, yol boyunca dallara çarpa çarpa, ŞAK ŞRAK GÜM. Sırtüstü yere çakılıyorsun ve çantanda bir şeyin kırıldığını hissettiğinden neredeyse eminsin. 2 kullanım malzeme kaybet ve zırhı yok sayarak <button type="button" class="dice-roll" data-dice="1d6" title="1d6 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">1d6</button> hasar al. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Evet, o son kısmı söylerken tam arkanda duruyormuş. Dönüp bakıyorsun, pancar gibi kıpkırmızı, ağlamanın ya da bağırmanın eşiğinde, emin değilsin. Ama sadece dönüp ayaklarını vura vura tarlalara gidiyor. Sanırım elindeki bütün Sadakati kaybetti. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<h3 id="demonstrate-a-downside">Bir dezavantajı göster</h3>
+<p>Hamlelerinin sınırlarını ya da (örneğin) Kabadayı olmanın getirdiği yükleri göster. <em>Kaba</em> bir silahın bir demir kılıca ya da kalkana karşı nasıl dayandığını göster.</p>
+<p>Kavurucu güneşte <em>sıcak tutan</em> zırh giymenin neden kötü bir fikir olduğunu göster. Kısa, uzun, genç, yaşlı ya da her neyse olmanın neden zor olduğunu göster.</p>
+<hr>
+<blockquote><p><em>“Caradoc, Rhianna, çalılıkların arasından crinwinleri izlerken şunu duyuyorsunuz: tangır tungur tangır tungur. Kesinlikle Vahid&#x27;in çantası ve crinwinler de duyuyor. Ne yaparsınız?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Caradoc, ikinci kez araya girmeye çalıştığında Brennan ‘Büyükler konuşuyor, evlat,’ diyor. Ve yeniden Rhianna&#x27;ya dönüyor. ‘Evet, ne diyordun…?’”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Mızrağın saplanıyor ve yaban sığırı böğürüyor, ama sonra şahlanıp dönüyor ve mızrağın sapı çat diye kırılıyor. Elinde yarım bir sopa kalıyor.”</em></p></blockquote>
+<hr>
+<h3 id="turn-their-move-back-on-them">Hamlelerini kendilerine karşı çevir</h3>
+<p>Bu 6- geldiğinde kullanmak için iyi bir hamledir. Yaptıkları hamleyi al ve bir şekilde tersine çevir. Belki avantajı düşmanlarına verirsin, belki senin kullanacağın kötü bir şey uydurmalarını istersin, belki hamleleri seçeneklerini genişletmek yerine daraltır. Yaratıcı ol.</p>
+<hr>
+<blockquote><p><em>“Ah, bence sen bu kötücül cıva hakkında her şeyi biliyorsun, Vahid. Neden bize güneyde onunla yaşadığın korkunç karşılaşmayı ve bunun seni bugün bile nasıl sarstığını anlatmıyorsun?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Başarısızlık ha? Bak ne diyeceğim, yine de İçgörü Ara sorularından birini sor, ama cevaba göre davranmak DIŞINDA her şeye dezavantajla atacaksın.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Evet, pek yutmuyor. Onu Mutra&#x27;yı ele vermeye ikna etmenin hiçbir yolu yok. Hatta sohbeti tersine çevirmeye başlıyor, sana sorular soruyor, ağzından laf alıyor, seni telaşlandırıyor. Sence Vahid&#x27;in Yürek&#x27;i nereye sakladığını ağzından kaçırman için onun ne yapması gerekir?”</em></p></blockquote>
+<hr>
+<h3 id="hurt-someone">Birine zarar ver</h3>
+<p>Bir OK&#x27;ye ya da önem verdikleri bir OOK&#x27;ye belirli, sorun yaratan bir yara ya da sakatlık ver. Sadece HP kaybetmekten öte bir şey. Acı veren, kanlı, sonuçları olan ya da üçü birden.</p>
+<p>Bu hamleyi kullanmak kesinlikle kurbanın hasar alması demektir; bir OK&#x27;ye karşı kullanıldığında bir zafiyet işaretlemesi anlamına da gelebilir.</p>
+<p>Bu <em>kesinlikle</em> artık <strong>sorunlu bir yaraları</strong> olduğu anlamına gelir (bkz. <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Hasar ve İyileşme</a>). Bu kurgunun bir parçasıdır; uğraşmaları gereken ve senin de OY hamlelerine temel olarak kullanabileceğin bir şeydir.</p>
+<p>Onlara ne kadar kötü zarar verdiğin kurguya, zararın 7+ mı yoksa 6- mı sonucu geldiğine, atılan hasara ve hasarın etiketlerine (<em>kanlı</em>, <em>savurucu</em> vb.) bağlıdır. Sopalı bir adamla Çarpışmak için 7-9 attıkları ve yalnızca 2 hasar aldıkları için onlara zarar verdiğinde, bu 12 <em>kanlı</em> hasar veren kudurmuş bir ejdere karşı 6- atmalarından çok farklı görünecektir.</p>
+<p>Yaranın genel niteliğini betimlemekten çekinme (“Seni uyluğundan bıçaklıyor ve bacağının büküldüğünü hissediyorsun.”), sonra oyuncuya hasar attır (“<button type="button" class="dice-roll" data-dice="d6+2" title="d6+2 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d6+2</button> hasar al.”) ve yaralanmayı verilen hasara göre ayarla (“3 hasar mı? Tamam, sanırım tek dizinin üstüne çöküyorsun, bacağın alev alev yanıyor ama ağırlığını hâlâ taşıyor,” ya da “Eyvah, 8 hasar mı? Hâlâ ayakta mısın? Eh, bacağın altından kayıyor ve fışkır fışkır kan akıyor.”)</p>
+<p>Kural olarak, kalıcı, sakatlayıcı bir yarayı ancak bunun mümkün olduğu konusunda onları uyardıysan (açıkça ya da tehlikeyi sezdirerek/göstererek) ve ya 6- attılarsa ya da tehlikeyi bile bile görmezden geldilerse ver. Bu tür şeyleri ansızın başlarına patlatma.</p>
+<p>Örneğin: “O şeyin</p>
+<p>15 santimlik dişleri ve ağaçları ezebilecek çeneleri var… seni yakalarsa bazı parçaların eksik kalacak, gerçekten orada dikilip ona kılıç sallamak istediğinden emin misin?” dersen ve onlar da “Evet, cesaret olmadan şan olmaz!” diye cevap verip Çarpışmak için 7-9 atarlarsa…</p>
+<p>eh, onları uyarmıştın. O kola elveda, kan fıskiyesine merhaba de.</p>
+<p>Öte yandan, bu şeyi bir tehdit olarak ama, yani, <em>kol koparan</em> bir tehdit olarak sunmadıysan, 7-9 geldiğinde şöyle diyebilirsin: “Isırıyor, her yer kan içinde, seni sağa sola sallamaya başlıyor.</p>
+<p>Beyninin tuhaf, sakin bir köşesi ‘Aa, kolum kopmak üzere’ diyor, ama geri kalanın sadece AAAAH. <button type="button" class="dice-roll" data-dice="d10+3" title="d10+3 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d10+3</button> hasar al ve <em>zayıf düşmüş</em> işaretle. Ne yaparsın?” Bence hâlâ epey sert bir hamle, ama atlatabilecekleri bir hamle. Uyarmadan kollarını almak mı? Hiç hoş değil.</p>
+<p>Bununla birlikte: OOK&#x27;lere OK&#x27;lere olduğundan daha saldırgan ve acımasız biçimde zarar vermekten çekinme. (Örneğin) bir <em>takipçinin</em> kolunu almak, bu şeyin saldırılarının <em>kanlı</em> ve korkunç olduğunu göstermenin, OK&#x27;leri başrolden düşürmeden ortaya konanı artırmanın harika bir yoludur. (Yine de bir tavsiye: bir hayvan yoldaşı uyarmadan hırpalama; oyuncular evcil hayvanları konusunda aşırı hassaslaşır.)</p>
+<p>Bir yara ya da sakatlık verildikten sonra kurgunun bir parçasıdır. OK&#x27;nin normalde tehlikeli olmayacak bir şeyi denemek için Tehlikeye Meydan Okumasına yol açabilir. Yapacağın başka bir hamlenin kurgusal gerekçesi olabilir. Yarayı ağırlaştıran hamleler yapmana vesile olabilir.</p>
+<p>HP, hasar, zafiyetler ve sorunlu yaralar hakkında daha fazlası için bkz. <strong>Hasar ve İyileşme</strong> <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" >bölümü</a>.</p>
+<hr>
+<blockquote><p><em>“Sanki Eira&#x27;ya uzanıyor, eli sis gibi genişleyip göğsünü kavrıyor, kadın inlemeye ve kıvranmaya başlıyor, derisinin yer yer karardığını görüyorsun. <button type="button" class="dice-roll" data-dice="1d12" title="1d12 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">1d12</button> hasar alıyor, zırhı yok sayarak. Hâlâ ayakta mı? Değil mi? Tamam, o hâlde onu bırakıyor ve kadın yere yığılıyor. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Sadece SIKIYOR ve nefes alamıyorsun, kıpırdayamıyorsun, sonra ÇAT diye bir kaburganın gittiğini hissediyorsun ve VAY ANASINI bu çok acıtıyor. Zırhı yok sayarak <button type="button" class="dice-roll" data-dice="d8+3" title="d8+3 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d8+3</button> hasar al ve</em> zayıf düşmüş<em> işaretle. Vahid, bu olurken naftayı tutuşturmayı bitiriyorsun, Caradoc&#x27;un onun halkaları arasında morardığını görüyorsun. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Aman tanrım. 9 hasar mı? Ve hâlâ ayakta mısın? Evet, ııı... sanırım kolunu kurtarmak için asılırken, o, ııı… lanet olsun, sanırım var gücüyle ısırıyor ve sadece dağlayıcı bir acı var, sendeleyerek geri çekiliyorsun. Kurtuldun, ama aşağı bakıyorsun ve sağ kolun yok. Kan fışkırıyor, üşüyorsun ve bayılabileceğini düşünüyorsun. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<h2 id="dealing-damage-and-inflicting-debilities">Hasar vermek ve zafiyet vermek</h2>
+<p>“Hasar vermek” tek başına bir OY hamlesi değildir; başka bir OY hamlesinin parçası olarak olan bir şeydir. Bir karakterin hırpalanmasını, yaralanmasını, savrulmasını ya da sakatlanmasını içeren bir hamle yaptığında, o hamlenin parçası olarak ona hasar ver.</p>
+<p>Oyuncuya ne kadar hasar aldığını söyle (genelde bir zar atışı; hasarı veren canavara ya da onu çevreleyen koşullara göre). O kadar HP kaybeder. 0&#x27;a düşerse aksiyonun dışında kalır ve büyük ihtimalle Ölümün Eşiğindedir.</p>
+<p>Aynı şekilde, “zafiyet ver” diye bir hamlen de yoktur. <strong>Birine zarar verdiğinde</strong> ya da <strong>kaynaklarını tükettiğinde</strong>, <em>zayıf düşmüş</em>, <em>sersemlemiş</em> ya da <em>bitkin</em> olmalarına yol açacak başka herhangi bir hamle yaptığında bir zafiyet verebilirsin (“Ellerinin titrediğini, bacaklarının sallandığını fark ediyorsun… <em>zayıf düşmüş</em> işaretle”).</p>
+<p>Hasar ve zafiyetler hakkında daha fazlası için bkz. <strong>Hasar ve İyileşme</strong> <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" >bölümü</a>.</p>
+<h3 id="separate-them">Onları ayır</h3>
+<p>Grubu böl. Aralarına düşmanlar ya da engeller koy. Birinin geride kalmasını sağla.</p>
+<p>Bir takipçinin ya da başka bir OOK&#x27;nin kaybolmasını sağla.</p>
+<p>Birini yamaçtan aşağı yuvarlayıp dövüşün dışına çıkar. Bu tür şeyler.</p>
+<p>Bu hamle çoğu zaman <strong>onları zor duruma sok</strong> ile iyi eşleşir. Çünkü zor durumda olmaktan daha kötü ne olabilir? Zor durumda <em>yalnız</em> olmak.</p>
+<hr>
+<blockquote><p><em>“Blodwen, uzun otların arasından belki yirmi dakika ilerledikten sonra hepiniz biraz dağılıyorsunuz ve başka kimseyi göremediğini fark ediyorsun. Önce onları duyabiliyorsun yani sorun yok, ama sonra otların arasında ilerleyişlerinin sesi dinmeyen rüzgârda kayboluyor. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Of. Evet, ona nutkunu atarken yüzü taş gibi, hiç tepki yok. Sonra bir duraklama oluyor, sanki soluğu kesiliyor, hıçkırıyor ve gözyaşları boşanıyor. ‘Lanet olsun, Caradoc.’ Ve dönüp kapıyı çarpıyor ve ağladığını duyabiliyorsun. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Tamam, güzel, yani Vahid, sen koridorda biraz daha ileridesin, değil mi? Lowri de sana feneri tutuyor? Eh, rünleri çözmeye başladığında – bir şey ‘kapı’ ya da ‘geçit’ ya da belki ‘yol’ ile ilgili – bir KÜT-KLANK oluyor, göğsünde hissediyorsun, herkes hissediyor, ve sonra metalin metale sürtünen tiz bir sesi geliyor ve tavandan çelik bir perde iniyor, koridoru kesiyor. BUM. Vahid, sen ve Lowri onun öbür tarafındasınız, yalnız başınıza, her yanda toz bulutları. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<h3 id="capture-someone">Birini yakala</h3>
+<p>Bu hamlenin yumuşak bir biçiminde onları yakala ama sahnede kal, onlara kaçma (ya da diğerlerine onları kurtarma) şansı ver. Sert bir biçiminde belki doğrudan bir sonraki sahneye geç – yakalanmış, bağlanmış, kim bilir nereye sürüklenmiş – ve oraya nasıl geldiklerinin ayrıntılarının üzerinden geç.</p>
+<hr>
+<blockquote><p><em>“Brennan ıslık çalıyor ve Ragan, sakin ve çevik, Blodwen&#x27;i yakalıyor ve döndürüp bıçağı gırtlağına dayıyor. Brennan iç çekiyor, onların arkasına çekiliyor. ‘İşin buraya varmamasını ummuştum, ama bana pek seçenek bırakmıyorsunuz. Biz gidiyoruz ve eminim buradaki genç hanım ellerinizi görebileceğim yerde tutmanızdan memnun olur.’ Geri geri çekilmeye başlıyorlar, ne yaparsın?”</em></p><p><em>“Caradoc, küreye dokunuyorsun ve sanki FUUŞŞ. Boşlukta süzülüyorsun, bedenine yukarıdan bakıyorsun. Dünya gri, puslu ve solgun, ve ayaklarını pek hissedemiyorsun. Vahid, sen birkaç saat sonra eve geliyorsun ve Caradoc&#x27;u buz küresinin üzerine yığılmış buluyorsun, parmakları küreye değiyor ve mosmor. Hiçbir tepki vermiyor. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Evet, Vahid, Lowri meşaleyi karanlıkta sağa sola sallıyor ve ikiniz de dışarıyı kolaçan ediyorsunuz, o sesi her ne çıkardıysa onu arıyorsunuz, ve biz seyirciler arkanızda upuzun, cılız parmaklarıyla gölgemsi bir biçimin belirdiğini görüyoruz. O parmaklar ağzını kapatıyor, Vahid, ve başka bir biçim de Lowri&#x27;yi yakalıyor. Kısa bir boğuşma oluyor ve sonra kamera sanki aşağıya, yerdeki fenere kayıyor; yan yatmış, çatlamış ve titreşiyor. İkinizin sürüklenip götürüldüğünüzün seslerini duyuyoruz. Rhianna, bu olurken…”</em></p></blockquote>
+<hr>
+<h3 id="offer-an-opportunity">Bir fırsat sun</h3>
+<h3 id="with-or-without-a-cost">(bedelli ya da bedelsiz)</h3>
+<p>Onlara bir açıklık, harekete geçme şansı ver.</p>
+<p>Fırsat belirli (“Şimdi harekete geçersen onları gafil avlarsın.”) ya da genel (“Seni fark etmiş gibi görünmüyorlar, ne yaparsın?”) olabilir. Kesin bir bedelle (“...ama bu epey gürültü yapar ve alarm verir.”), olası bir bedelle (“...ama yetişmek için acele etmen gerekecek”) ya da hiç bedelsiz gelebilir.</p>
+<p>Bu hamleyi çoğu zaman farkına varmadan yaparsın. Bir oyuncuya inisiyatifi basitçe verdiğinde – gergin, hareketli bir durum varken önce <strong>belayı duyurmadan</strong> ya da <strong>onları zor duruma sokmadan</strong> ya da başka türlü tepki vermelerini sağlamadan “Ne yaparsın?” diye sorduğunda – onlara bir fırsat sunuyorsundur.</p>
+<hr>
+<blockquote><p><em>“3 hasar mı? Zırhıyla bu onu düşürmeye yetmez. Sanırım geri sıçrıyor ve sen de yanağına bir kesik atıyorsun sadece. Ama geri geri gidiyor, ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Yemi yutmuyorlar, Rhianna. Ama gösterişli bir şekilde kamptan ayrılıp Andras&#x27;la Blodwen&#x27;i orada yalnız bıraksan? O iş görür. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Burada senin için faydalı ya da değerli olan ne? Duvara gömülü o parlayan mavi kristal. Onu parçalarsan her türlü kargaşayı salıverir, tam ihtiyaç duyduğun dikkat dağıtıcı.”</em></p></blockquote>
+<hr>
+<h3 id="tell-them-the-consequences-requirements-then-ask">Sonuçlarını/gerekenleri söyle (sonra sor)</h3>
+<p>Bu hamleyi bir araya girme olarak, bir şey yapmak istediklerini söylediklerinde kurguyu netleştirmenin ve ortaya konanı belirlemenin bir yolu olarak kullan. “Bunu yaparsan __ olacağını fark ediyorsun, değil mi?”</p>
+<p>Bu hamleyi yol başka türlü tıkalıyken onlara ilerleyecek bir yol vermek için de kullan. Anlamlı bir karar vermeye zorlamak için kullan. Bir yolu izlemek istiyorlarsa (zamanla, kaynakla, fırsatla vb.) bedel ödemelerini sağlamak için kullan.</p>
+<hr>
+<blockquote><p><em>“Peki ya Garet&#x27;in cesedi, Rhianna? Onu bırakırsan ekibin geri kalanı homurdanacak – ne kadar batıl inançlı olduklarını bilirsin. Yakabilirsin, ama bu zaman alır ve yerinizi ele verir. Ne yaparsın?”</em></p><p><em>“Bunu yaparsan, güzel, ama kurtulma şansın olmaz. Patlamanın içinde kalacağın kesin. Yapıyor musun?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Yok, olmaz. Ellerin titriyor, ağzın kurumuş, o uğursuz, nefret dolu gözden başka bir şey düşünemiyorsun. Atış yapmak istiyorsan önce kendini toparlaman gerekecek. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Vahid, bu rünlerden hiçbir şey çıkaramıyorsun, en azından şu an değil. Belki bir kopyasını çıkarıp evde, bütün kitapların, notların ve her şeyinle incelemeye vaktin olsa. Ama burada değil. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“O şey som taştan yapılmış. Okların hiçbir halt etmeyecek, Rhianna. Bu şeye zarar vermek ya da onu yavaşlatmak bile istiyorsan, ona büyük ve ağır bir şeyle vurman gerekecek.”</em></p></blockquote>
+<hr>
+<h3 id="advance-towards-impending-doom">Yaklaşan felakete doğru ilerle</h3>
+<p><strong>Tehditlerin</strong> <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Tehditler</a> ve <strong>doğal tehlikelerin</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Tehlikeler</a> yaklaşan felaketleri olabilir; her birinin öncesinde bir dizi kara işaret gelir. Bu hamleyi yaptığında o kara işaretlerden birinin gerçekleştiğine karar verir ve bunu karakterlere gösterirsin.</p>
+<p>Uygulamada bu hamle neredeyse her zaman başka bir hamle olarak kendini gösterir. Kara işaretin gerçekleştiğini gösterecek şekilde <strong>belayı duyurur</strong>, <strong>istenmeyen bir gerçeği açığa çıkarır</strong> ya da <strong>birini zor duruma sokarsın</strong> (vb.).</p>
+<p>Nadiren, şeytanca kıkırdayıp bir kutucuğu işaretleyebilir ve işareti henüz gerçekten açığa çıkarmadan içlerine kötü bir his düştüğünü ya da soğuk bir rüzgâr estiğini söyleyebilirsin. Bunu yaptığında işaretin ekran dışında gerçekleştiğine mutlaka bağlı kal. Kalmazsan aslında hiç hamle yapmamışsın demektir.</p>
+<hr>
+<blockquote><p><em>“Nia&#x27;yı kasabanın kenarındaki o çökmüş evde buluyorsun. İçeri sıkışarak girmen gerekiyor ve gözlerinin karanlığa alışması lazım, ama alıştıklarında midene kramp giriyor. Duvarların her yanında tebeşirle çizilmiş örümcekler var, ve… bir sunak mı? Üzerinde çubuk, kürk ve ağdan bir yığın var ki büyük bir örümcek putu olduğunu fark ediyorsun. Nia gülümseyip ‘Selam Blodwen, çizimlerimi beğendin mi?’ diyor. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Yani, omzunun üstünden ona bıçak saplıyorsun, ama bunu yaparken sendeleyip duruyorsun. Ve sanırım, evet, onu öldürüyorsun, ama sonunda sendeleyerek eski sütunlardan birine çarpıyorsun. Yüksek bir ÇATIRTI ve biraz gıcırtı geliyor, tavandan toz dökülmeye başlıyor. Vahid, bunun olduğunu görüyorsun, ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Caradoc, uykuya dalarken kendini rüya görürken buluyorsun. Gerçekten tuhaf, canlı bir rüya. Sanki o eski Yapıcı mezarındayken yukarı baktığın zamanki gibi, ama… farklı. Daha boğucu. Sanki toprağa gömülüsün, hep gömülüymüşsün, ve yukarıda, çok uzakta bir ışık var. Ama o… yeterli, anlıyor musun? Doğru ilerleyecek bir şey? Ve sen de geriniyor, toprağı tırmalayarak ışığa doğru ilerliyorsun ve birden uyanıyorsun ve vay anasını, her şey sallanıyor, insanlar çığlık atıyor, çocuklar ağlıyor, deprem oluyor! Ne yaparsın?”</em></p></blockquote>
+<hr>
+<h2 id="example-of-play">Oyun örneği</h2>
+<blockquote><p><em>Herkes geldi. Sohbet ettik, rahatladık ve başlamaya hazırız. Oturum</em> <strong><em>serbest oyunla</em></strong><em> başlıyor. Özetlemek isteyen var mı diye soruyorum. Rhianna&#x27;nın oyuncusu istiyor.</em></p><p><em>“Tepelere bir kereste ekibi gönderdik. Ama bir tür keçi iblisi onları ürkütmüş ve o – ya da başka bir şey – Andras&#x27;ı yaralamış. Onu geri gönderdiler. Biz de araştırmak için yukarı çıktık. Yola çıkmadan önce Andras&#x27;tan faydalı bir şey öğrenebildik mi?”</em></p><p><em>Blodwen “Epey kendinde değildi. Durumunu dengeledik, ama durmadan ‘o göz!’ diye inliyordu. Bir de sanırım bana asıldı.” diyor.</em></p><p><em>“Doğru, doğru! Zaten kuşanmış ve Eteklere doğru yola çıkmıştınız,” diyorum.</em></p><p><em>Isınmamıza yardım etsin diye</em> <strong><em>birkaç soru soruyorum</em></strong><em>. “Ama başlamadan önce – Caradoc, sence bir maceraya daha çıktığın için sana kim laf soktu? Ve Vahid, neden bir süreliğine kasabadan çıkmaya bu kadar seviniyorsun?”</em></p><p><em>Sepici Sawyl&#x27;ın yeni bir çırak aradığını ve Caradoc&#x27;un bu konuda nasıl da suçluluk duyduğunu öğreniyoruz. Ayrıca Vahid&#x27;in, onun “adanmış bekâr” tarzını kısıtlayan dul Maire&#x27;den bir molaya ihtiyacı olduğunu da öğreniyoruz. Birkaç not alıyorum!</em></p><p><em>Tamam, başlayalım.</em> <strong><em>Eylemi çerçeveliyorum</em></strong> <em>ve sonra</em> <strong><em>çevreyi betimliyorum</em></strong><em>. “Dördünüz yola çıkışınızın ikinci gününün öğleden sonrasında Eteklere (Foothills) giriyorsunuz. Tepeler Düzlüklerden (Flats) yükseliyor ve yol aralarından kıvrılıyor. Yamaçlarda genç, ince ağaçlar serpilmiş, tepelerin içine ilerledikçe daha büyük ve daha yaşlı oluyorlar. Güneş alçalırken nihayet biraz mübarek gölgeye kavuşuyorsunuz.” (Bu ayrıntıların bazıları almanaktan; geri kalanını ben uydurdum).</em></p></blockquote>
+<hr>
+<blockquote><p><em>Etekleri oyunda ilk kez görüyoruz, o yüzden</em> <strong><em>sorular soruyorum</em></strong><em>, mesela “Bu tepelerle Ulu Orman (Great Wood) arasında fark ettiğin çarpıcı fark ne?”</em></p><p><em>Sorularımı cevapladıktan sonra yakın plana geçip gerçek bir sahne kuruyorum,</em> <strong><em>ayrıntılar ve özellikler veriyorum</em></strong><em>. “Kampa gün batımından hemen sonra varıyorsunuz. Yol kenarında, ama yine de kesilmiş kütüklerden bir barikat kurmuşlar. Hepsi cılız bir yemek ateşinin etrafına toplanmış. Herkes sessiz, gergin, baltalarını sıkı sıkı tutuyor. Siz belirince biraz ürküyorlar, ama gelenin siz dördünüz olduğunu anlayınca bir rahatlama mırıltısı yükseliyor. ‘Rhianna gelmiş,’ ve ‘Kutsanmış,’ ve ‘Tor&#x27;a şükür.’” (Dikkat edin, taktik yerleşimden çok duygulara ve davranışlara odaklanıyorum, çünkü önemli olan ayrıntılar bunlar. Aynı zamanda</em> <strong><em>OOK&#x27;lerimi canlandırıyorum</em></strong><em>.) “Rhianna, başa kimi bırakmıştın?” (Daha fazla soru!)</em></p><p><em>“Hmm. Elios&#x27;u sanırım.”</em></p><p><em>Yumuşak hamlemi yapıp</em> <strong><em>kışkırtıcı bir soru soruyorum</em></strong><em>. “Güzel. Şöyle diyor: ‘Sadece siz dördünüz mü? Yani ne, bitti mi? Eve gidebilir miyiz?’ Diğerleri umutla başlarını sallıyor.</em> <strong><em>Ne yaparsın?</em></strong><em>”</em></p><p><em>Rhianna bana, oyuncudan OY&#x27;ye, soruyor: “Dur, bir saniye. Ekibim burada mı?”</em> <strong><em>Sorusunu cevaplıyorum</em></strong><em>, burada olmadıklarını söylüyorum, sonra ona yeniden ne yaptığını soruyorum.</em></p><p><em>Rhianna (o sert sesiyle) cevap veriyor: “Ekibim nerede, Elios?” Onun</em> <strong><em>eylemini çözümleme</em></strong><em> vakti. Elios&#x27;u sıkıştırıyor (İkna Et, belki?) ama adamın direnmesi için bir sebep yok, o yüzden hamle tetiklenmiyor. Sadece ne olduğunu söylüyor ve Elios&#x27;un sesiyle cevap veriyorum. “‘Hâlâ dışarıdalar. Avlanıyorlar.’”</em></p></blockquote>
+<p>(sonraki sayfada devam ediyor)</p>
+<hr>
+<p>(önceki sayfadan devam)</p>
+<blockquote><p><em>Durum net ama bir dürtmeye ihtiyacı var, o yüzden Elios olarak konuşmaya devam edip bir yumuşak hamle daha yapıyorum (</em><strong><em>belayı duyuruyorum</em></strong><em>). “‘Aslında çoktan dönmüş olmaları gerekirdi.’ Ne yaparsın?”</em></p><p><em>OK&#x27;ler ekibi aramayı tartışıyor, ama yerlerinde kalıp daha fazla bilgi almayı seçiyorlar. Hâlâ hiçbir hamleyi tetiklemiyorlar (ağaç kesicilerin seve seve cevaplayacağı sorular soruyorlar) o yüzden sadece</em> <strong><em>OOK&#x27;mi canlandırıyorum</em></strong><em>. Elios ve Terrwyn, Andras saldırıya uğramadan önce, bir hafta önce ikisinin de iblisi gördüğünü anlatıyor. “Büyük bir keçi gibi, insan kafatası, üç göz ve kocaman bir boynuzu vardı.”</em></p><p><em>Tam</em> <strong><em>bir fırsat sunacaktım</em></strong> <em>ki Vahid araya giriyor. “Daha önce böyle bir şey duymuş muydum?” Bu Bir Şeyler Bil&#x27;i tetikliyor, o yüzden +INT ile atıyor ve 8 alıyor.</em></p><p><em>Hazırlığımdan biliyorum ki bu iblis keçi aslında bir koruyucu ruh ve asıl tehdit bir hagr, o yüzden keşif hamlelerimden birini kullanıp</em> <strong><em>göründüğünden fazlası olduğunu ima ediyorum</em></strong><em>. “Bir shaksa&#x27;ya benziyor, kuzeydeki insanların inandığı bir ruh ya da iblis. Mezarlıkların bir tür koruyucusu mu? Ya da belki bu bir mecazdır ve ölülerin efendisi gibi bir şeydir? Bunu nereden biliyorsun?”</em></p><p><em>“Ah, onların dini metinlerinden birinden, güneyde bir kütüphanede okumuştum. Şimdilik bunu kendime saklayacağım.”</em></p><p><em>Durumu güncelliyorum. “Artık gece iyice çöktü ve ekip hâlâ dönmedi.” Spot ışığını odaklıyor ve</em> <strong><em>bir fırsat sunuyorum</em></strong><em>. “Hey, Caradoc, onlar Elios ve Terrwyn&#x27;le konuşurken diğerlerinin birbirine attığı bakışları fark ettin. Yani, korkuyorlar. Ama belki bir şey de saklıyorlar? Ne yaparsın?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>“Ooo, dikkatle izleyip ne olduğunu anlamaya çalışıyorum. İçgörü Ara?” Ne yazık ki 4 atıyor. Sert bir hamle vakti!</em></p><p><strong><em>Belayı duyuruyorum</em></strong><em>. “Iwan&#x27;ın ve Cadi&#x27;nin söylediklerinden fazlasını bildiğinden eminsin, ama buna göre davranamadan tepelerin yukarısından korkunç bir kükreme ve çatırtı geliyor, sonra daha cılız bağırışlar – sanki insanlar dövüşüyor. Hepiniz duyuyorsunuz. Ne yaparsınız?”</em></p><p><em>Sorular soruyorlar ve ben durumu biraz netleştiriyorum (hava karanlık, dövüş sesleri epey yakın, hiçbiri bu tepeleri iyi bilmiyor). Sonra Rhianna “Gidelim. Tepelere.” diyor.</em></p><p><em>Sahne böylece bitiyor! Lojistiği konuşurken biraz serbest oyun oluyor. Vahid ve Blodwen yemek ateşinden birer meşale yakıyor. “Yola çıkıyor musunuz?” diye soruyorum. Çıkıyorlar.</em></p><p><em>Uzak plana geçip durumu genel olarak betimliyorum: “Hava karanlık, tepeler dik ve ağaçlık, ve sese göre yol buluyorsunuz, savaşın seslerini izliyorsunuz.” Yumuşak hamlemi yapıp</em> <strong><em>onlara gerekenleri söylüyorum</em></strong><em>. “Oraya çabucak varmaya çalışıyorsanız bu Tek Vücut Mücadele Et&#x27;i tetikler – tehlike, yolda kaybolmanız, birbirinizden ayrılmanız ya da zarar görmeniz. Acele etmeden, dikkatle ilerlerseniz bir hamle tetiklemezsiniz – ama muhtemelen dövüşe yardım etmek için zamanında yetişemezsiniz. Ne yaparsınız?”</em></p><p><em>Tek Vücut Mücadele Etmeye karar veriyorlar. Hamleyi çözümlüyoruz, hepsi iyi atıyor ve böylece bir sonraki sahneye geçiyoruz. “Ormanın içinden umutsuz, yarı kör bir koşu, ama sonra bir açıklığa çıkıveriyorsunuz. Titreyen meşale ışığınızda Eira ile Lowri&#x27;yi bu devasa, iri yarı canavara karşı dikilirken görüyorsunuz, 3,5 metre boyunda ve onun yarısı eninde.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>Yumuşak hamlemi yapmadan önce zar zor nefes alıyorum (</em><strong><em>birini zor duruma sokuyorum</em></strong><em>): “Küçük bir ağacı sopa gibi kaldırıp kükrüyor, ikisini birden ezmek üzere, ve ikisi de ağızları açık bu şeye bakakalmış.” Şimdiye dek gruba hitap ediyordum, spot ışığı dağınıktı, şimdi onu daraltıyorum. “Rhianna, Blodwen, buraya ilk siz vardınız – ne yaparsınız?”</em></p><p><em>Rhianna&#x27;nın oyuncusu hiç duraksamıyor. “Onu vururum. Kafasından. Fırlat?” Evet, ama Blodwen&#x27;in ne yaptığını görene dek beklemesini söylüyorum.</em></p><p><em>Blodwen sorular soruyor. “Yani bu bir insan gibi mi? Sadece çok mu büyük?” Evet. “Ve bizi fark etmedi mi?” Evet, şimdilik, oraya daha yeni vardılar. “Onu tanıyor muyum? Yani belki ağaç kesicilerimizden biri, mutasyona uğramış falan?”</em></p><p><em>“Eh,” diyorum. “Meşale ışığında bir bakışta anlayabileceğinden şüpheliyim. Bir an durup İçgörü Arayabilirsin. Arıyor musun?”</em></p><p><em>“Hayır. Bağırıp meşaleyi sallayarak dikkatini dağıtabilir miyim?” diye soruyor. Caradoc&#x27;un oyuncusu bunun Savun&#x27;un tetikleyicisine benzediğini (“başkalarını korumak için araya atlamak”) belirtiyor ve hepimiz hemfikiriz. Ama Rhianna&#x27;nın bu olmadan önce atışını yapacağında da hemfikiriz.</em></p><p><em>Rhianna Fırlat için 8 alıyor ve temiz bir atış için yer değiştirmeyi seçiyor. Sadece 3 hasar veriyor, eksi 1 zırh. Canavar pek yaralanmıyor ve Rhianna kendini tehlikeye açmış oluyor.</em></p><p><em>“Sanırım atışı yapmak için açıklığa adım atman gerekiyor, değil mi? Omzunu sıyırıyorsun, ve – iyi haber – salladığı ağacı durduruyor, hırlayıp sana dönüyor, Eira ile Lowri&#x27;yi bırakıyor. Kötü haber ise, sana o kocaman, pörtlek, korkunç gözünü dikiyor ve zihnin bomboş oluyor, dizlerin titremeye başlıyor, düşünemiyorsun bile.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>Bu Rhianna&#x27;nın hamlesini çözümlüyor, o yüzden spot ışığını kaydırıp</em> <strong><em>bir fırsat sunuyorum</em></strong><em>. “Blodwen, hâlâ Savunmak istiyor musun?”</em></p><p><em>İstiyor ve 9 atıyor. Hemen Hazırlığını harcayarak bütün dikkati koruduğu kişiden (artık Rhianna) kendine çekiyor. “Güzel, bu neye benziyor?” diye soruyorum.</em></p><p><em>“Rhianna&#x27;nın önüne geçip meşalemi sallıyor ve bağırıyorum, ‘YAAAAAA!’ gibi.”</em></p><p><em>Elbette işe yarıyor. Hagr&#x27;ın gözünü ona çevirdiğini, onu Rhianna&#x27;nın hissettiği aynı dehşet duygusuyla doldurduğunu anlatıyorum.</em></p><p><em>Spot ışığını Caradoc ve Vahid&#x27;e kaydırıyorum. Onlara yeni vardıklarını söylüyor, durumu hızlıca özetliyor, sonra</em> <strong><em>bir fırsat sunuyorum</em></strong><em>. “Şu an Blodwen&#x27;e odaklanmış, ne yaparsınız?”</em></p><p><em>Vahid İçgörü Arayarak durumu kavrıyor. Bunu sonra çözümlemeye karar veriyoruz, çünkü Caradoc kalkanı yukarıda, mızrağıyla aşağıdan saplayarak hücum ediyor. Dikkati Blodwen&#x27;deydi, o yüzden Caradoc&#x27;un saldıracak kadar yaklaşabileceğine karar veriyoruz, ama canavar hâlâ karşılık vermeye gayet muktedir ve istekli. Bu Çarpış&#x27;ı tetikliyor, ama Caradoc 4 atıyor.</em></p><p><em>Sert bir hamle yapmam gerekiyor ve bariz olan ona zarar vermek. “Sanırım geldiğini görüyor, Caradoc, ve sen yaklaşamadan o ağaç dalını savuruyor. Kafana yiyorsun ve her şey bembeyaz, kulakların çınlıyor ve neler oluyor böyle?</em></p></blockquote>
+<p><em><button type="button" class="dice-roll" data-dice="d10+3" title="d10+3 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d10+3</button> hasar al ve</em> sersemlemiş<em> işaretle.</em></p>
+<blockquote><p><em>Rhianna, kendine geliyorsun ve onun Caradoc&#x27;un kafasına sopayı indirdiğini görüyorsun, uçup gitti ve yere yığıldı. Ne yaparsın?”</em></p><p><em>Ve oradan devam ediyoruz.</em></p></blockquote>
+<h2 id="your-principles">İlkelerin</h2>
+<p>Bu ilkeler <em>Stonetop</em>&#x27;u yönetirken yol göstericilerin, en iyi uygulamaların, davranış kurallarındır. Onlara uymaya çalış.</p>
+<p>Gündemine ulaşmanın en emin yolu onlardır.</p>
+<ul class="bullets"><li>Kurallara uy</li><li>Kurguyla başla ve kurguyla bitir</li><li>Oyunculara değil, karakterlere hitap et</li><li>Sorular sor ve cevapların üzerine inşa et</li><li>Oyuncu karakterlerinin hayranı ol</li><li>Fantastik olanı da gündelik olanı da kucakla</li><li>Ortam rehberinden sonuna kadar yararlan</li><li>Hazırlığına saygı göster</li><li>Karakterlerine hayat ver</li><li>Ekran dışını da düşün</li><li>Eve getir</li><li>Şeylere nefes aldır</li><li>Şeylerin yanmasına izin ver</li></ul>
+<p>İlkelerine uymak her zaman kolay değildir.</p>
+<p>Bazen belirli bir ilkenin o an neye benzediği belirsizdir. Bazen ilkeler çatışır. İşinin büyük bir kısmı bu ilkeleri yorumlamak ve en iyi bulduğun şekilde uygulamaktır. Bunu çoğu zaman içgüdüsel olarak yapacaksın; ilkelerine tam olarak nasıl uyduğun kendi kişisel OY&#x27;lik tarzının büyük bir parçasıdır.</p>
+<h3 id="follow-the-rules">Kurallara uy</h3>
+<p>Pek çok kural vardır, özellikle oyuncu hamleleri biçiminde: temel hamleler ve takipçi hamleleri, özel hamleler, keşif hamleleri ve yerleşke hamleleri. Her kitapçığın hamleleri vardır. Eklerin hamleleri vardır. Arkanaların hamleleri vardır. Tehlikeler, keşifler, tehditler ve yerlerin hepsinin oyunculara dönük hamleleri olabilir.</p>
+<p>Umarım bu bariz, ama: <strong>bir hamle tetiklendiğinde hamledeki işleyişi izle ve hamlenin senden</strong></p>
+<p><strong>istediğini söyle</strong>. Kurallar sohbeti ve kurguyu belirli yönlere itmek ve belirsizlik anlarında ne olduğunu netleştirmek için vardır.</p>
+<p>Oyunculara hamlelerinin ve zarlarının tüm faydalarını ver. Elbette o hamleleri tetikleme yetilerini sına ve sonuçları kurulmuş kurguya ve hazırlığına göre yumuşat. Ama işlerin belirli bir yöne gitmesi gerektiğini düşündüğün için ya da işlerin “fazla kolay” veya “fazla zor” olacağından endişelendiğin için bir hamlenin sonuçlarıyla oynama. Bu senin işin değil. <strong>Ne olacağını görmek için oynuyorsun</strong>, değil mi?</p>
+<p>Tetikleyicisi gerçekten karşılanmadıkça bir oyuncu hamlesine başvuramazsın. “Crinwin sana saldırıyor, Tehlikeye Meydan Okumak için +DEX at!” <em>diyemezsin</em>. Tanrılar aşkına, hayır. Crinwinin onlara sıçradığını söyler ve “Ne yaparsın?” diye sorarsın. Bir hamleyi tetikleyen bir şey yaparlarsa, <em>o zaman onu</em> yaparsın.</p>
+<p>Diğer ilkelerinin hizmetinde, kuralların harfiyen uygulanması yerine ruhuna uygun bir şey önermen sorun değil, ama bunu açıkça yap ve onay al. “Çarpışmak için 7-9 mu aldın? Hasarını at. 9 mu!? Vay. Şimdi, biliyorum yazıyor ki düşmanının saldırısına kendini açarsın, ama bence bu durumda ‘saldırı’ baltanın adamın kafatasına saplanması ve onu çıkarmanın biraz vakit alacak olması. Senin için uygun mu?”</p>
+<h3 id="begin-and-end-with-the-fiction">Kurguyla başla ve kurguyla bitir</h3>
+<p>Unutma: “kurgu”, seninle oyuncuların sohbet yoluyla kurduğu ortak, hayali alan ve çeşitli karakterlerin o hayali alan içindeki eylemleri ve birbirlerine göre konumlarıdır.</p>
+<p>Kurallara başvurulduğunda – bir oyuncu bir hamleyi tetiklediğinde, hasar attığında, bir kaynak harcadığında ya da her neyse – kuralları kurguya dayandır. Karakterin gerçekte ne yaptığını ya da bunu nasıl yaptığını gözünde canlandıramıyorsan, zarlara geçmeden önce sorular sor ve kurguyu netleştir. Zarlar atılıp kurallar ne olduğunu söyledikten sonra bunun kurguda neye benzediğini betimle (ya da oyuncudan betimlemesini iste). <strong>Önce kurgu, sonra kurallar, sonra yeniden kurgu.</strong> Her zaman.</p>
+<p>Aynı şekilde, bir OY hamlesi yaptığında kurulmuş kurgudan akan bir hamle yap. Hamlenin adını söyleme – onu kendine sakla – ama kurguda nasıl kendini gösterdiğini betimle. Anlatma, göster.</p>
+<p>Kurguyla başlayıp kurguyla bitirmek, <strong>zengin ve gizemli bir dünyayı canlandırmanın</strong> can alıcı bir parçasıdır. Kurgudan kısıp sadece mekaniklere odaklanırsan, dünyanın yavan, sıkıcı ve cansız olduğunu görürsün.</p>
+<hr>
+<blockquote><p><strong>Kötü:</strong> <em>“Hagr&#x27;a mı saldırıyorsun? Güzel, Çarpışmak için at. 10 mu? Saldırısından kaçıyor musun yoksa fazladan hasar mı veriyorsun? Tamam, hasarını +<button type="button" class="dice-roll" data-dice="1d6" title="1d6 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">1d6</button> ile at. 7 hasar mı? Hâlâ ayakta ve sana <button type="button" class="dice-roll" data-dice="1d10+3" title="1d10+3 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">1d10+3</button></em> savurucu<em> hasarla karşılık veriyor, seni yere seriyor. Yine üstüne geliyor, ne yaparsın?”</em></p><p><strong>İyi:</strong> <em>“Hagr&#x27;a mı saldırıyorsun? Güzel, bu neye benziyor? Aşağıdan karnına mı saplıyorsun? Evet, olur, Çarpış&#x27;ı at. 10 mu? Saldırısından kaçıyor musun yoksa fazladan hasar mı veriyorsun? Tamam, hasarını +<button type="button" class="dice-roll" data-dice="1d6" title="1d6 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">1d6</button> ile at. 7 hasar mı? Yani dediğin gibi, onu karnından bıçaklıyorsun ve hagr acıyla ulayarak iki büklüm oluyor, ama sen uzaklaşamadan birden doğrulup elinin tersiyle yüzüne bir tane patlatıyor. Uçup yere yığılırken <button type="button" class="dice-roll" data-dice="d10+3" title="d10+3 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d10+3</button> hasar al, başın dönüyor. Acı ve öfkeyle homurdanarak ağır ağır sana doğru geldiğini duyuyorsun. Ne yaparsın?”</em></p></blockquote>
+<hr>
+<h3 id="address-the-characters-not-the-players">Oyunculara değil, karakterlere hitap et</h3>
+<p><em>Karakterlere</em> ne yaptıklarını sor. <em>Karakterlere</em> ne gördüklerini ve duyduklarını söyle. <em>Karakterlere</em> onlar için bariz olanı söyle. “Brian, Vahid uyanık kalmak için ne yapıyor?” deme. Bunun yerine “Vahid, uyanık kalmak için ne yapıyorsun?” de. Jamie&#x27;ye “Rhianna onun yalan söylediğini anlayabiliyor” deme. (Iwan&#x27;ın mızmız sesiyle) “Olur mu hiç, Rhianna, bunu asla yapmayacağımı bilirsin” de, sonra da (kendi sesinle) “Ama gözlerini kaçırıyor ve saçmaladığını anlayabiliyorsun.”</p>
+<p>Böyle konuşarak oyunu kurguya odaklı tutarsın. Oyuncuları karakterleri gibi düşünmeye, konuşmaya ve karşılık vermeye itersin. Kurguyu karakterlerin algıladığı şekliyle kurarsın, çünkü hitap ettiğin kişiler onlardır.</p>
+<h3 id="ask-questions-and-build-on-the-answers">Sorular sor ve cevapların üzerine inşa et</h3>
+<p>Her zaman, her yerde sorular sor.</p>
+<p><strong>Niyeti belirlemek için</strong> sorular sor. “Sabah yola çıkmadan önce yapmak istediği başka bir şey olan var mı?”</p>
+<p><strong>Niyeti netleştirmek</strong> ve oyuncularla aynı sayfada olmak için sorular sor.</p>
+<p>“Evet, sanırım onun yanından geçebilirsin. Ama burada neyi başarmayı umuyorsun?”</p>
+<p><strong>Kurguyu netleştirmek için</strong> sorular sor. “Elbette, İçgörü Arayabilirsin. Bu neye benziyor?”</p>
+<p>Karakterlere <strong>ne düşündüklerini ya da hissettiklerini</strong> sor. “Caradoc, orada duruyorsun, Wynfor&#x27;un seni bıçakladığı yerden kan akıyor ve gözündeki o bakış – onu zar zor tanıyorsun. Şu an aklından neler geçiyor?”</p>
+<p>Karakterlere <strong>geçmişlerini ya da gündelik hayatlarını</strong> sor. “Rhianna, sana avlanmayı ve iz sürmeyi kim öğretti?” “Blodwen, annenle yaşıyorsun, değil mi? Başka kardeşin var mı?</p>
+<p>Ev içeriden neye benziyor?”</p>
+<p>Karakterlere <strong>bilecekleri şeyleri sor</strong>. “Rhianna, Brennan&#x27;la daha önce tanıştın.</p>
+<p>En ayırt edici özelliği ne?”</p>
+<p>Karakterlere <strong>duydukları şeyleri ya da neye inandıklarını</strong> sor; cevapları tamamen doğru olmayabilir. “Blodwen, Sessiz İkizler (Quiet Twins) ve Dere&#x27;ye (Stream) nasıl musallat oldukları hakkında hangi hikâyeleri duydun? Sence gerçek ne?”</p>
+<p><strong>Katkı isterken ayrıntıları öne süren</strong> sorular sor. “Vahid, kaybolan bütün çocukların ortak noktası olarak ne fark ettin?” “Rhianna, insanlar Dere&#x27;yi geçerken hep hangi küçük ritüeli yapar?”</p>
+<p>Onlardan bir tema üzerine ayrıntılar isteyerek karakterlerden <strong>sahneyi senin için boyamalarını</strong> iste.</p>
+<p>“Burada her birinize bunun Fae&#x27;nin dokunduğu bir yer olduğunu söyleyen ne?” “Burada daha önce bin kez gördüğün ne görüyorsun?” “Erken baharda Düzlüklerle (Flats) ilgili en çarpıcı şey ne?”</p>
+<p><strong>Yukarıdakilerden birden fazlasını yapan sorular sor.</strong> “Caradoc, hepiniz kasabaya döndüğünüzde en çok kimin tepkisi seni şaşırttı? Nasıl tepki verdi ve sen bu konuda ne hissettin?”</p>
+<p>Cevaplarını hemen ya da daha sonra kurguya yeniden kat. Bir çelişkiye işaret etmek dışında cevaplarını geri çevirme. Takip soruları sor.</p>
+<p>Cevaplarının neyi ima ettiğini düşün ve oradan çıkarımlar yap. Cevapları seni şaşırtabilir – eğlencenin bir parçası da bu – ama o cevap baştan beri kurulmuş dünyanın doğru ve bariz bir parçasıymış gibi devam et.</p>
+<p>Oyunculardan kurguya katkıda bulunmalarını istediğinde bu, <strong>ne olacağını görmek için oynamana</strong> yardım eder. Oyuncuların her zaman senin aklına gelmeyecek ayrıntılar bulur ve bu hep birlikte yarattığınız dünyayı biraz daha şaşırtıcı yapar. Oyuncuların kurduğu ayrıntıların üzerine inşa ettiğinde bu, <strong>zengin ve gizemli bir dünyayı canlandırmana</strong> yardım eder. İnsanlar çoğu zaman yaratılmasına yardım ettikleri şeylere daha çok bağlanır; dört oturum önce ortaya attıkları bir karakteri ya da ayrıntıyı gündeme getirdiğinde ve bu önem taşıdığında, dünya gerçekten hayat bulur.</p>
+<h3 id="be-a-fan-of-the-player-characters">Oyuncu karakterlerinin hayranı ol</h3>
+<p>OK&#x27;ler hikâyenin kahramanlarıdır.</p>
+<p>Oyunun odağını onların üzerinde tut. Onları destekle. Zaferlerini kutla. Kayıplarına yas tut. Onlar hakkında merak etmene izin ver, sonra cevapları oyun yoluyla bulmanın yollarını ara. Onlara önem ver. Hayranları ol.</p>
+<p>Oyuncu karakterlerinin hayranı olmak, istedikleri her şeyi yapmalarına izin vermek demek değildir.</p>
+<p>Onların başına gelen zorlukların yazarı sensin. <strong>Hayatlarını maceralarla bölmen</strong> gerekir. Onları tehdit et. Onlara zarar ver. Önem verdikleri şeylerin peşine düş. Onlara her türlü zor seçimi ver.</p>
+<p>Ama aynı zamanda: onlara hem o an parlamaları hem de uzun vadede işleri daha iyi hâle getirmeleri için fırsatlar ver. Uğrunda çalıştıkları şeylerin tadını çıkarmalarına izin ver.</p>
+<p><em>Stonetop</em> oyuncu karakterlerine bolca etki alanı verir. Buna saygı göster. Onları hamlelerinden ya da zarlarından mahrum bırakma. Güçleriyle, konumlarıyla ve yetkinlikleriyle ne yaptıklarını gör. <strong>Ne olacağını görmek için oyna.</strong></p>
+<h2 id="the-line">Çizgi</h2>
+<p><em>Stonetop</em>&#x27;ta ve benzeri oyunlarda, oyuncuların sorumlu olduğu şeylerle OY olarak senin sorumlu olduğun şeyler arasında bir çizgi vardır. Oyuncular karakterlerinden sorumludur: ne yaptıkları ve söyledikleri; ne hissettikleri ve düşündükleri; nasıl yaşadıkları; geçmiş deneyimleri. OY olarak sen dünyadan sorumlusun: çevre, OOK&#x27;ler, tehlikeler ve keşifler.</p>
+<p>Burada anlatılan soruların bazıları Çizgi&#x27;yi bulanıklaştırır. Vahid&#x27;e kaybolan çocukların ortak noktasını sorduğunda aslında Vahid&#x27;in oyuncusundan genelde OY&#x27;nin sorumluluğunda olan bir şeyi yapmasını istiyorsundur:</p>
+<p>dünya hakkında ayrıntılar uydurmak.</p>
+<p>İşin püf noktası <strong>oyunculara değil, karakterlere hitap etmektir</strong>. Oyuncudan bir sonraki odada ne bulduğunu, bir OOK&#x27;nin nasıl tepki verdiğini ya da tuzağın ona nasıl zarar verdiğini uydurmasını isteme. <em>Karaktere</em> bildiği, duyduğu, yaşadığı bir şeyi sor. Bu, isteği yeniden Çizgi&#x27;nin onların tarafına koyar. Bir zihin hokkabazlığıdır, ama etkili bir hokkabazlık.</p>
+<p>Yine de Çizgi&#x27;yi bulanıklaştırmak bazı oyuncular için rahatsız edici ya da itici olabilir. Bazı oyuncular dünya hakkında ayrıntı uydurmaktan hiç rahatsız olmaz, ama diğerleri bunun kendini oyuna kaptırma hissini zedelediğini ya da dünyayı içi boş ve uydurma hissettirdiğini görür. Sorduğun soruları ve onları nasıl sorduğunu, kendinin ve oyuncularının tercihlerine göre ayarla.</p>
+<h3 id="embrace-the-fantastic-and-the-mundane">Fantastik olanı da gündelik olanı da kucakla</h3>
+<p>Dünya fantastik unsurlarla doludur:</p>
+<p>ruhlar, canavarlar, dönek Fae, Yapıcıların kadim eserleri, Aşağıdakilerin karanlığı. Bu unsurları öne çıkar. Dünyayı gizemli kılmak için onları kullan.</p>
+<p>Ama aynı zamanda oyunu insani kaygılara dayandır: mevsimlerin dönüşü, yaklaşan hasat, dostlar ve komşular.</p>
+<p>OK&#x27;leri gerçek dünyadaki tehlikelerle tehdit et:</p>
+<p>sert hava, vahşi hayvanlar, açlık, soğuk ve sıcağa maruz kalmak. Getirdikleri erzakı ya da o pelerini nasıl edindiklerini sor. Dünyayı gündelik ayrıntılarla zenginleştir.</p>
+<p><strong>Fantastik olanla gündelik olanı birbirinin karşısına koy</strong>. Bir macera doğaüstü bir tehdit ya da fırsat etrafında dönüyorsa, tamamen gündelik zorluklar, tehlikeler ve keşifler de kattığından emin ol. Bir oturum çoğunlukla gündelik kaygılar içeriyorsa (Batakkıyı&#x27;ya (Marshedge) bir ticaret seferi ya da bir yaban sığırı avı gibi), araya biraz fantastik unsur serpiştir. İkisi arasındaki etkileşim dünyayı çok daha zengin ve gizemli kılar.</p>
+<h3 id="exploit-the-setting-guide">Ortam rehberinden sonuna kadar yararlan</h3>
+<p><em>Stonetop</em> pek çok kurulmuş ortam bilgisiyle gelir, ama sana ve oyuncularına oyun sırasında doldurmanız için pek çok boşluk bırakır. Ortam, yaratıcılığın için bir sıçrama tahtası olarak tasarlanmıştır. Bir ton belirlemeye yardım eder ve hepinize ortak bir başlangıç noktası verir.</p>
+<p>Üzerinde doğaçlama yapacağın ayrıntılar sağlar. Cevapları ima eder ama her zaman vermez. <strong>Zengin ve gizemli bir dünyayı canlandırmak</strong> için kurulmuş ortamı kullan.</p>
+<p>Ortam rehberini ilham için kullan, ama ona bağlı hissetme. Oyuncuların sana kurulmuş ortamla çelişen bir şey verirse, sırf kitap öyle diyor diye katkılarını geçersiz kılma. Kitap otorite değildir, senin yararlanman için bir kaynaktır.</p>
+<p>Bununla birlikte: <strong>neyi değiştirdiğin ya da attığın konusunda düşünceli ol</strong>. Belirli ayrıntıları değiştirmek geniş temaları değiştirmekten daha güvenlidir. Tilki, Brennan&#x27;ın eskiden Batakkıyı&#x27;da bir çete yönettiğini ve öldürerek iktidara geldiğini söylerse (ortam rehberindeki, konseyin mareşal olarak tuttuğu bir haydut olduğuna dair hikâyenin aksine), sorun değil. Ama sen ve Arayıcı, Yapıcıların anlaşılmaz titanlar yerine cüce boyunda tamirciler olduğuna karar verirseniz, her türlü ortam ayrıntısını yeniden düşünmen gerekecek (yolların genişliği, Yıkık Kule&#x27;nin (Ruined Tower) ölçeği, her Yapıcı türüyle ilişkilendirilen temalar vb.).</p>
+<h3 id="respect-your-prep">Hazırlığına saygı göster</h3>
+<p>Oturumlar arasında hazırlık (yani “hazırlık”) yapacaksın. Tehditleri ve OOK&#x27;leri yazacaksın. Tehlikeler ve keşifler yaratacak ya da seçeceksin. Karşılaşmalar düşünecek ve keşfedilecek yerler tasarlayacaksın.</p>
+<p>Hazırlığın bir kısmı olasılıklardan oluşur: OK&#x27;lerin keşfedebileceği <em>belki</em> şeyler, karşılaşabilecekleri <em>olası</em> tehlikeler, çıkabilecek <em>muhtemel</em> sorunlar.</p>
+<p>Bu tür hazırlık kuantum bir hâlde yaşar; bu fikirleri gerçekten kullanıp kurguya sokana dek doğru değildirler. Sadece fikirdirler – <strong>karakterlerin hayatlarını maceralarla bölmene</strong> yardım eden fikirler.</p>
+<p><strong>Ama hazırlığının büyük kısmı karar vermekten oluşur</strong> – dünyanın nasıl <em>olduğuna</em> dair gerçek, bağlayıcı kararlar. Bu, bir canavarın içgüdüsü, hamleleri ve HP&#x27;si, bir yerin nasıl bu hâle geldiği ya da dul Maire&#x27;yi kimin öldürdüğü gibi şeyleri kapsar. OK&#x27;ler müdahale etmezse ne <em>olacağına</em> ya da bir OOK&#x27;nin X&#x27;e veya Y&#x27;ye nasıl tepki vereceğine dair kararları kapsayabilir. Bu tür hazırlık, oyunculara henüz açıklamamış olsan bile zaten kurgunun bir parçasıdır.</p>
+<p>Bu kararları dikkatle ve düşünerek ver. Acele etme. Sonraki bölümlerdeki yönergeleri izle.</p>
+<p>Sonra oyun sırasında <strong>hazırlığına saygı göster</strong>. Onu kurgusal gerçek olarak kabul et. Dünyayı betimle, karakterlerini canlandır ve OY hamlelerini bu kararları göz önünde tutarak yap. Hazırlığını iyi yaptıysan ona bağlı kalmanın sadece <strong>zengin ve gizemli bir dünyayı canlandırmana</strong> değil, aynı zamanda (paradoksal olarak) <strong>ne olacağını görmek için oynamana</strong> da yardım ettiğini göreceksin.</p>
+<p><strong>Hazırlık</strong> hakkında daha fazlası için bkz. <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">hazırlık</a>.</p>
+<h3 id="give-your-characters-life">Karakterlerine hayat ver</h3>
+<p>OOK&#x27;lerine isim ver. Onlara belirgin kişilikler ver. İstekler, ihtiyaçlar ve tuhaflıklar.</p>
+<p>Görüşler ve inançlar. Becerebilirsen onları belirgin seslerle ya da tavırlarla canlandır. Onlara hayat ver ve gerçek insanlarmış gibi oyna.</p>
+<p>OOK&#x27;lerini akılda kalıcı özelliklerle betimle. Oyuncular demircinin adının Taliesen olduğunu hatırlamakta çoğu zaman zorlanır, ama demircinin gür beyaz saçlı, iri, gürültücü bir adam olduğunu hatırlarlar.</p>
+<p>OK&#x27;lerin OOK&#x27;lerini ezip geçmesine izin verme.</p>
+<p>Elbette <strong>oyuncu karakterlerinin hayranı ol</strong>, ama bu OOK&#x27;lerinin OK&#x27;ler ne isterse onu yapması gerektiği anlamına gelmez. OK&#x27;ler OOK&#x27;lerini yapmak istemeyecekleri bir şeye zorluyor ya da ayartıyor gibi görünüyorsa, eh, İkna Et hamlesi bunun için var.</p>
+<p>İnsan olmayan karakterlerine de hayat ver.</p>
+<p>Elbette neye benzediklerini betimle, ama aynı zamanda nasıl hareket ettiklerini, nasıl ses çıkarıp nasıl koktuklarını, nasıl davrandıklarını da.</p>
+<p>Hayvanlar, ruhlar, hatta tamamen yabancı Aşağıdakiler – hepsinin kişilikleri vardır. Güdülerini ve baskı altında nasıl davrandıklarını kavra. Hayvanlar için ekolojilerini düşün. Ölümsüzler için onları Son Kapı&#x27;dan (Last Door) geçmekten alıkoyan ne?</p>
+<p>Büyülü varlıklar için uydukları tuhaf kuralları düşün. Bunların hepsi için: bu ayrıntıları ekrana getir ya da en azından ima et. Bu, <strong>zengin ve gizemli bir dünyayı canlandırmak</strong> için çok işe yarar.</p>
+<h3 id="think-offscreen-too">Ekran dışını da düşün</h3>
+<p>Durumu kurarken, soruları cevaplarken ya da hamle yaparken ekran dışındaki olayları düşün. OOK&#x27;lerin ve canavarların ne yapıyor? Ne yaptılar? Ne izler bıraktılar? Ne işler çeviriyorlar ki ortaya çıkıyor? Şu an sonradan önem kazanabilecek ne yapıyorlar? Cevapları söylediklerine ör.</p>
+<p>OK&#x27;lerin ne yaptığını ve bunun ekran dışındaki olayları nasıl şekillendireceğini de düşün. Ulu Orman&#x27;da (Great Wood) ilerlerken çok gürültü yaparlarsa, geldiklerini kim duyar ve nasıl tepki verir? Gordin Ocağı&#x27;yla (Gordin&#x27;s Delve) ittifak kurarlarsa, Ocaklılarla arası bozuk olan Tepe Halkı (Hillfolk) nasıl karşılık verir?</p>
+<p>Kasabaya beş gün uzakta olacaklarını söyleyip iki hafta uzakta kalırlarsa, öldüklerini kim varsayar? Kim öne çıkıp başa geçmeye çalışır? Kim fırsattan yararlanıp istediğini yapar?</p>
+<p>Ekran dışını düşünmek <strong>zengin ve gizemli bir dünyayı canlandırmana</strong> yardım eder, çünkü dünya OK&#x27;lerden daha büyük hissettirir. <strong>Karakterlerin hayatlarını maceralarla bölmene</strong> yardım eder, çünkü ekran dışındaki tehditler ve fırsatlar çabucak OK&#x27;lerin uğraşması gereken şeylere dönüşür. Ve <strong>ne olacağını görmek için oynamana</strong> yardım eder, çünkü seni sonuçlar ve sebep/sonuç üzerine daha geniş ölçekte düşündürür.</p>
+<h3 id="bring-it-home">Eve getir</h3>
+<p>Stonetop köyünün kendisini oyununun temeli, OK&#x27;lerin maceralarının başı ve sonu yap. Kasabayı, geçim kaynağını ya da sakinlerini tehdit et. Onlara iyileştirmelere doğru ilerleme ya da süregelen tehditleri nihayet bertaraf etme şansları ver.</p>
+<p>OK&#x27;ler bir maceraya çıktığında komşularının nasıl tepki verdiğini göster. Onları uğurlamaya kim gelir? Geri dönmeyecekler diye kim endişeden hasta olur? Kim bunun delilik olduğunu söyleyip homurdanır? Kim onlara yanlarına alacakları bir şey verir, çünkü yalnız gitmek tehlikelidir?</p>
+<p>Maceralar sırasında OK&#x27;lerin Stonetop&#x27;taki hayatlarına bağlanan sorular sor. Sana avlanmayı kim öğretti? Onca yıl önce seninle buraya kim geldi ve ona ne oldu? Hangi yaşlı bir zamanlar bu yaratıklarla karşılaşmıştı?</p>
+<p>Bu hazine en çok kimin hayatını değiştirir? Burada, yıldızların altında, kimin gülümsemesini düşünüp duruyorsun?</p>
+<p>OK&#x27;ler eve döndüğünde onlar yokken ne olduğunu düşün ve kasabalıların onları nasıl karşıladığını betimle. En çok kim seviniyor? Kim dönüşlerine içerliyor? İşleri yoluna koymuş olmalarına rağmen, kim bütün bu belayı başlarına açtıkları için onları suçluyor?</p>
+<p>Maceralar arasında karakterlere gündelik hayatlarını ve ilişkilerini sor. Kasabanın sorunlarına ve OK&#x27;lerin yakaladığı fırsatlara karşılık nasıl değiştiğini göster. OOK&#x27;lerin yaşlandığını, çocuk sahibi olduğunu, daha fazlasını arzuladığını, daha azına razı olduğunu betimle. OK&#x27;lerin maceralarından nasıl etkilendiklerini göster.</p>
+<p>Eve getir.</p>
+<h3 id="let-things-breathe">Şeylere nefes aldır</h3>
+<p>Maceralar arasında, hatta tek tek hamleler arasında zamanın akmasına izin ver. Dışarıda koca bir dünya var ve OK&#x27;lerin ilgilenmesi gereken gündelik işleri var. OK&#x27;lerin hayatlarını günbegün, saatbesaat izleme dürtüsünden kaçın. Haftaların ya da ayların tek bir cümleyle geçmesine izin ver: “Önümüzdeki üç hafta hepinizi hasatla meşgul ediyor, sonra da...”</p>
+<p>Bir tehdit belirdiğinde hemen ve korkunç olması gerekmez. Kıpırdandığına dair işaretler gösterip onu uzak ve belirsiz tutabilirsin. OK&#x27;lere bu konuda ne yaptıklarını sor, ama tepkilerini günler ya da haftalar içinde çözümleyebilirsin.</p>
+<p>Yalnızca kurgu hemen, belirli bir eylem gerektirdiğinde yakın plana geçip bir sahne kur; o biter bitmez yeniden uzak plana geç. Tehdidin, taşıp OK&#x27;lerin uğraşması gereken bir şeye dönüşene dek kısık ateşte kaynamasına izin ver.</p>
+<h3 id="let-things-burn">Şeylerin yanmasına izin ver</h3>
+<p>Planlarını ne kadar seversen sev, bazı OOK&#x27;lerini ne kadar sevmeye başlarsan başla, oyuncular ne kadar bağlanırsa bağlansın:</p>
+<p>hiç kimseyi ve hiçbir şeyi koruma.</p>
+<p>Pek çok OY&#x27;nin OK&#x27;leri pamuklara sarmaya ve önem verdikleri OOK&#x27;leri korumaya yönelik çok doğal bir eğilimi vardır. Mevcut durumu korumaya. Kötü adamlarını, OK&#x27;lerin hamleleri, zarları ve cesur eylemleri onları haklı olarak toprağa gömmesi gerekse bile, gelecekteki bir yüzleşme için saklamaya.</p>
+<p>O eğilim mi? Yak onu. Sonra her şeyin yanmasına da izin ver. Sevdiklerini korumak için oynamıyorsun. <strong>Ne olacağını görmek için oynuyorsun</strong>.</p>
+<p>Bu, karakterlerin sevdiği şeyleri yok etmek için özel bir çaba göstermen gerektiği anlamına gelmez. O şeyleri tehdit etmen ve karakterler onları kurtarmayı başaramazsa bunun sonunu getirmen gerektiği anlamına gelir. Sert, geri dönüşü olmayan sonuçlarla barışık ol. Ateşle oyna. Şeylerin yanmasına izin ver.</p>
+<h2 id="other-things-to-do">Yapılacak diğer şeyler</h2>
+<p><strong>Not al.</strong> Pek çok ayrıntı üreteceksin ve hepsini takip etmek zor olabilir. Senin için işleyen en iyi aracı ve ayrıntı düzeyini bulman gerekecek, ama not almak isteyebileceğin şeyler şunlardır:</p>
+<ul class="bullets"><li>OOK isimleri (ve özellikleri, ilgili ilişkileri)</li><li>Seninle oyuncuların kurduğu tarihî olaylar (ve ne zaman/nerede/kim)</li><li>Unutmak istemediğin ilginç ayrıntılar</li><li>Her oturumun olaylarının bir özeti. Oyuncularınla paylaşmak için resmî oturum özetleri yazabilirsin, ama bu notlar çoğunlukla senin içindir. Yalnızca faydalı bulacağın kadarını yaz.</li></ul>
+<p><strong>Harita çiz.</strong> Bol bol harita. Sadece hazırlığının bir parçası olarak değil, oyun sırasında bir aksesuar ya da bir başvuru noktası olarak da. Bir dövüş patlak verdiğinde ve çok şey olduğunda, bir beyaz tahtaya ya da bir kâğıda arazinin hızlı bir krokisini çiz (ya da varsa birkaç minyatür koy). Bir harabeyi keşfettiklerinde fiziksel mekânı kurmaya yardım etmesi için kaba bir harita çiz (ya da onları çizmeye teşvik et). Yeni bir yerleşkeye gittiklerinde onlara kasabanın farklı mahallelerinin ve bölümlerinin bir haritasını ver.</p>
+<p>Mevcut haritalara da ekle. OK&#x27;lerin evlerini yerleşke haritasına koy. Oyun sırasında ortaya çıkan ilgi çekici noktaları ekle. Yolculuklarının güzergâhını Civar ya da Dünyanın Sonu (World&#x27;s End) haritalarına çiz.</p>
+<p>Haritalarında ve hazırlığında oyun sırasında ya da daha sonra doldurulmak üzere <strong>boşluklar bırak</strong>. Kendine merak edecek şeyler bırak. Aklına bir soru gelirse onu hemen cevaplamak (ya da oyunculardan cevaplamalarını istemek) zorunda değilsin. Boşluk olarak bırak, belki notlarına karala ve gelecek bir oturumda ona geri dön.</p>
+<p><strong>İşleri akışta tut.</strong> Oyunun ivmesinin sönmesine izin verme. Sahneleri iddialı biçimde kur, ilgi düzeyine (seninkine ve oyuncularınkine) göre yakınlaşıp uzaklaş.</p>
+<p>Hiçbir şey olmadığında ya bir OY hamlesi yap ya da ilginç bir şeyin <em>olduğu</em> zamana atla.</p>
+<p><strong>Herkesi işin içine kat.</strong> Spot ışığını masada dolaştırmaya devam et. Herkesin iyi bir ekran süresi almasını sağla. Kime hitap ettiğini açıkça belirt ve araya giren oyuncuları bekletmekten çekinme.</p>
+<p>“Blodwen, görüyorsun ki… Brian, bekle, Hobbes&#x27;la konuşuyorum.”</p>
+<p><strong>Mola ver.</strong> Molalar herkesin olup biteni düşünmesine ve sonra ne yapmak istediğini tartmasına izin verir. Size – birlikte takılan gerçek insanlara – birbirinizi daha iyi tanıma, gerçek hayattan haberleşme ya da sadece şakalaşma fırsatı verir. Bunlar da önemlidir.</p>
+<p><strong>Oyuncularını dünya inşasına kat</strong> ve ortamın senin olduğu kadar onların da olduğunu fark etmelerini sağla. Sana dünya hakkında bir şey sorduklarında ve hazır bir cevabın yoksa, soruyu onlara geri çevir. “Güzel soru. Blodwen, Stonetop halkı ölülerine GERÇEKTEN ne yapar?”</p>
+<p><strong>Bazen karar vermekten feragat et.</strong> Bir sonucu karakterin eline bırak (“Kan revan içinde, ama ölmedi. Onu hâlâ kurtarabilirsin. Kurtarıyor musun?”). Bir sonucu oyuncularla tartış (“Ne dersiniz? Andras yaşıyor mu, öldü mü?”). Zarların karar vermesine izin ver (“Biliyor musun, onun için Ölümün Eşiğinde&#x27;yi at.”).</p>
+<p>OOK&#x27;lerinin içgüdülerine, isteklerine ve ihtiyaçlarına, notlarına ve onların iç mantığına dair kendi sezgine dayanarak karar vermelerine izin ver.</p>
+<p>(“Yok, hayalet olarak geri dönecek tipte biri değil, yani… evet, öldü.”)</p>
+<h2 id="the-die-of-fate">Kader Zarı</h2>
+<p>Karar vermekten feragat etmenin bir yolu zarların karar vermesine izin vermektir. Çoğu zaman bu, ne olacağını bir oyuncunun hamlesinin sonuçlarının belirlemesine izin vermek demektir. Ama Kader Zarı&#x27;nı da kullanabilirsin.</p>
+<p>Kader Zarı sadece bir zar atışıdır, genelde bir <button type="button" class="dice-roll" data-dice="d6" title="d6 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d6</button>; düşük sonuç kötü, yüksek sonuç iyi demektir. Ne olması ya da bir şeyin nasıl gitmesi gerektiği konusunda belirli bir fikrin olmadığında ve/veya iş sadece şansa kaldığında bir oyuncuya Kader Zarı&#x27;nı attır. Bugün hava nasıl? Yolda neyle karşılaşıyorlar? Kaç kullanım malzeme yağmalayabiliyorlar? Genel olarak 1-2 kötü, 3-4 nötr ya da karışık, 5-6 ise epey iyidir.</p>
+<p>Bazen Kader Zarı için bir dizi sonuç hazırlarsın. Örneğin kamp kurduklarında ne olur?</p>
+<div class="roll-table bare-numbered"><table><tbody>
+<tr><th scope="row">1</th><td>Crinwinler kampa saldırıyor!</td></tr>
+<tr><th scope="row">2-3</th><td>Crinwinler birini kamptan dışarı çekmeye çalışıyor.</td></tr>
+<tr><th scope="row">4-5</th><td>Dışarıdalar, sadece sizi izliyorlar.</td></tr>
+<tr><th scope="row">6</th><td>Dikkatlerinden kaçıyorsunuz.</td></tr>
+</tbody></table></div>
+<p>Kendini bir <button type="button" class="dice-roll" data-dice="d6" title="d6 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d6</button> ile sınırlı hissetme, özellikle önceden hazırlanmış bir sonuç tablon varsa. 12 ilginç sonucun varsa <button type="button" class="dice-roll" data-dice="d12" title="d12 atmak için tıkla — Shift: avantaj · Ctrl: dezavantaj">d12</button> attır.</p>
+<h2 id="what-not-to-do">Yapılmaması gerekenler</h2>
+<p><strong>Bir hikâye akışı ya da olay örgüsü planlama.</strong> OK&#x27;lerin karakter gelişimlerini planlama. OK&#x27;lerin (oraya varmaları ne kadar sürmüş olursa olsun ya da öncesinde ne yapmış olurlarsa olsunlar) <em>tam da</em> şu belirli şey olurken vardığı dramatik anlar planlama. OK&#x27;lerin belirli bir yolu seçeceğini ya da belirli bir işte başarılı veya başarısız olacağını varsayma. Bunların hepsi <strong>ne olacağını görmek için oynamaya</strong> ters düşer. Bu, ne olacağına önceden, tek başına senin karar vermen demektir. Kesinlikle burada yapman gereken şey değil.</p>
+<p>Bunun yerine: durumlar, olası karşılaşmalar ve keşfedilecek yerler hazırla. Harekete dönüştürülebilir iyi içgüdüleri olan tehditler ve OOK&#x27;ler hazırla, belki birkaç kara işaret ve yaklaşan felaket de. Bunun nasıl yapılacağı için bkz. <strong>Hazırlık</strong> <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep">bölümü</a>.</p>
+<p><strong>Ne yaptıklarını sana söylemeden önce onlara ne atacaklarını söyleme.</strong> “Haydut saldırıyor, DEX ile Tehlikeye Meydan” gibi saçmalıklar söylemeye <em>hakkın yok</em>.</p>
+<p>Oku.” Çünkü 1) Bu böyle işlemez ve 2) Ya hızlı ya da incelikle davranmazlarsa (DEX ile Tehlikeye Meydan Okumanın tetikleyicisi)? Ya saldırısını savuşturup kalkanlarıyla ona vururlarsa? Ya darbeyi alıp onu şişlerlerse? Ya gözlerine toprak atıp kasığına tekme atarlarsa? Oyunculara, önce hamleyi tetikleyecek bir şey yaptıklarını sana söylemeden bir hamle yapmalarını söylediğinde, karakterlerinin kontrolünü ele geçirip ne yapacaklarını dikte ediyorsundur.</p>
+<p>Oyunun kurallarını çiğniyorsundur.</p>
+<p>Bunun yerine: yumuşak OY hamleni yap ve “Ne yaparsın?” diye sor. Sonra cevaba göre, bir hamleyi tetikleyip tetiklemediklerine ve hangi hamleyi tetiklediklerine birlikte karar verin. Sonra o hamleyi atarlar ve sen de oradan çözümlersin.</p>
+<p><strong>Onlara “sırf öylesine”</strong> ya da “belki fark etmezler” diye ya da bu tür saçmalıklar yüzünden zar attırma. Yani, başka oyunlarda bir canavarın kampa gizlice yaklaştığına karar verip OK&#x27;den bir algı zarı istediğin olur ya? <em>Stonetop</em>&#x27;ta böyle bir şey yok.</p>
+<p>Bunun yerine sadece canavarın varlığını ima eden, <strong>belayı haber ver</strong> gibi yumuşak bir OY hamlesi yaparsın. “Cırcır böceklerinin hepsinin sustuğunu fark ediyorsun. Sonra, belki sadece hayal gücün. Ama bir şeyin… güldüğünü duyduğunu sandın? Ormanın içinde. Ne yaparsın?”</p>
+<p>Belki diğerlerini uyandırırlar, belki seslenirler ya da belki dikkatle ormana bakıp başlarını yana eğerek İçgörü Ara&#x27;yı tetiklerler. Nasıl karşılık verirlerse versinler, oyunu oradan yönetirsin.</p>
+<p><strong>OY hamleleri yapmayı bırakma</strong>, özellikle oyuncular 10+ attığında. Ne olduğunu betimleyeceksin, evet, ve onlara hak ettikleri başarıyı vereceksin. Bazen bir oyuncu inisiyatifi kapıp devam eder (bu güzel, onunla ilerle). Ama genelde oyuncular ne olduğunu görmek için yine sana bakar. Kurgu çalkalanmaya devam eder ve kötü adamlar kötü şeyler yapmayı sürdürür.</p>
+<p>Yani Kabadayı Çarpışmak için 10+ attığında ve hasarını verdiğinde, düşman hâlâ ayaktaysa ve yakınlarda iki kötü adam daha varsa, sadece “Güzel, hâlâ ayakta, ne yaparsın?” deme.</p>
+<p>Bunun yerine: ilk düşmanın darbe almaya nasıl tepki verdiğini ve diğer iki düşmanın ne yaptığını düşün. Bunların hepsini hesaba katan bir hamle yap, <em>sonra</em> “Ne yaparsın?” diye sor.</p>
+<h2 id="gming-is-a-practice">OY&#x27;lik bir pratiktir</h2>
+<p>Herhangi bir RYO&#x27;yu yönetmek yoga, müzik ya da dövüş sanatları gibi bir pratiktir. Ustalaşıp bitirdiğin bir şey değildir. Her zaman gelişmeye yer, her zaman öğrenilecek bir şey vardır.</p>
+<p>Özellikle <em>Stonetop</em>&#x27;u yönetmek kendi başına bir beceri, kendi başına bir pratiktir. Benzer oyunları (<em>Dungeon World</em> ya da <em>Apocalypse World</em> gibi) yönetme deneyimin olsa bile bir öğrenme eğrisi vardır. Stonetop&#x27;u başka oyunlar yönettiysen kavramak daha kolaydır, ama o deneyim aleyhine de işleyebilir! Alışkanlıkları unutman ve yeni yaklaşımlara uyum sağlaman gerekecek, bu da zor olabilir.</p>
+<p>Mesele şu: <em>Stonetop</em>&#x27;u yönetmek pek kolay değil, ama <strong>onu yaparak, işlerin nasıl gittiği üzerine düşünerek ve bir sonraki sefere daha iyisini yapmaya çalışarak ustalaşırsın</strong>.</p>
+<p>İlk macera sırasında <strong>gündemine</strong> <a class="wiki-link" href="#your-agenda" data-slug="running-the-game" data-fragment="your-agenda" data-ref="page">Gündemin</a>, <strong>temel döngüyü</strong> <a class="wiki-link" href="#the-core-loop" data-slug="running-the-game" data-fragment="the-core-loop" data-ref="page">Temel döngü</a> izlemeye ve <strong>temel oyuncu hamlelerinin</strong> <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Oyuncu Hamleleri</a> tetikleyicilerini tanımaya odaklan. Hazırlığına yaslan – o bunun için var – ve acele etme. Sen ve oyuncuların kuralları öğrenirken işlerin biraz aksak gitmesini bekle. Vurucu betimlemeleri, OOK&#x27;leri seslendirmeyi ya da her bir ilkeye bağlı kalmayı dert etme.</p>
+<p>İlk “karakter içi” oturumdan sonra oyuncularından geri bildirim iste. Neden hoşlandılar? Ne aksak geldi? Gelecek oturumlarda neyi daha çok görmek istiyorlar? Gerekirse açıklama iste, ama savunmaya geçme ve kendini açıklamaya çalışma.</p>
+<p>Alçakgönüllü ve açık olmaya çalış.</p>
+<p>Biraz vaktin olduğunda oturumu gündemin ışığında gözden geçir. <strong>Zengin ve gizemli bir dünyayı canlandırdın mı</strong>, yoksa dünya düz, içi boş, keyfî mi hissettirdi?</p>
+<p><strong>Hayatlarını maceralarla böldün mü</strong>, yoksa işlerin sürüncemede kalmasına mı izin verdin? <strong>Ne olacağını görmek için mi oynadın</strong>, yoksa işleri gitmeleri gerektiğini düşündüğün yola mı zorladın? Gündemini izlemediysen kendine sor: “Gündemimi izlemek neye benzerdi?” Bir dahaki sefere <em>onu</em> yap.</p>
+<p>İlkelerine göz at. Onlara uymadığın oldu mu? Bu oyunu nasıl etkiledi? İlkeye uymak bunun yerine neye benzerdi?</p>
+<p>Takıldığın, ne yapacağından emin olamadığın anları düşün. Sonra temel döngüye bak. Takıldığında döngünün neresindeydin? Neyi farklı yapabilirdin? Ne tür bir hazırlık yardımcı olabilirdi? Belki bir sonraki oturumdan önce buna benzer bir şey hazırla.</p>
+<p>Oyuncu hamlelerini (temel, özel, sefer vb.) gözden geçir. Tetiklenen hamleleri kaçırdın mı? Tetikleyicisi gerçekten karşılanmadığı hâlde bir oyuncu hamlesi istedin mi? Kullanılan hamlelerde işleyişlerini doğru izledin mi?</p>
+<p>Bir sonraki oturumda daha iyisini yapmaya çalış. Yapmak ya da odaklanmak istediğin 2-3 şeyi yaz. Onları görebileceğin bir yere koy. Oturum sırasında onları yapmaya çalış.</p>
+<p>Süreci tekrarla. Geri bildirim iste.</p>
+<p>Oturumu gündeminin, ilkelerinin, kuralların ve temel döngünün ışığında gözden geçir. Zayıflıklarını gidermek için hazırlık yap. Hedefler koy. Yeniden dene. Tekrarla.</p>
+<p>İyi ol. Sonra daha iyi ol. Sonra harika ol.</p>
+<h2 id="prep">Hazırlık</h2>
+<p>Hazırlık oturumlar arasında yaptığın şeydir; bir sonraki oyuna hazırlanmanın yalnız eğlencesi (ya da kimileri için stresli işi). Hazırlık önceki oturumlardaki notlarını gözden geçirmeyi, bir sonraki oturumda ne olabileceğini düşünmeyi ve oyun sırasında yapmak istemediğin şeyleri yapmayı kapsar.</p>
+<p>Neden hazırlık? Birkaç sebep:</p>
+<p>Söyleyecek <strong>ilginç şeylerin</strong> olması için.</p>
+<p><strong>Oyunu hızlandırmak</strong> ve sen ne olacağına karar verirken, bir canavarın değerlerini çıkarırken ya da harita çizerken herkesi bekletmemek için.</p>
+<p><strong>Zayıflıklarını gidermek</strong> için. Diyelim ki OK&#x27;lerin takipçilerini hep unutup arka plana silinmelerine izin veriyorsun; belki o takipçilerin söyleyeceği ya da yapacağı ilginç şeyler hazırla.</p>
+<p><strong>Zanaatını bilemek</strong> için. Bazı şeyler üzerine düşünmeye vaktin olduğunda daha iyidir – daha tutarlı ya da temaya uygun olur, daha iyi akar, daha önce ortaya çıkan şeylerin üzerine inşa eder vb.</p>
+<p>Sert oynamak ve OK&#x27;lere kötülük yaşatmak için <strong>kendine izin vermek</strong> için. Yumruklarını çekme eğilimin varsa (hangimizin yok ki?), kurulmuş bir yaklaşan felaketin olması ya da kötü adamlarına “bir kolu kopar” gibi bir hamle vermek gerçekten yardımcı olabilir.</p>
+<p>Yalnızca faydalı ve değerli bulduğun kadar hazırlık yap. Başka OY&#x27;lerin kullanması için bir şey yapmıyorsan, senin için apaçık olan ayrıntıları yazmanın bir anlamı yok. Unutacağını düşünmüyorsan ya da oyunda özellikle dikkat çekmek istediğin bir şey değilse Nia&#x27;nın neye benzediğini yazma.</p>
+<p>Aşağıdakilerin bir kısmını ya da hepsini hazırlamayı düşün:</p>
+<h2 id="threats">Tehditler</h2>
+<p>OK&#x27;lere bela çıkaran süregiden, tekrarlayan sorunlar. Engellenmezse kötüleşecek şeyler ya da oyunda daha fazla keşfetmek istediğin karmaşık ilişkiler. <strong>Tehditleri</strong> <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Tehditler</a> hazırlamak ve kullanmak üzerine koca bir bölüm var.</p>
+<h2 id="hooks">Kancalar</h2>
+<p>OK&#x27;leri bir tehdit ya da bir fırsatla sahaya itmek istediğinde bir kanca hazırlamak işe yarar. Bir kanca şunları içerir:</p>
+<p>hazırlık soruları, ilk sahneleri kurmak için bir plan, yapmayı planladığın bazı belirli OY hamleleri ve bazı olası tepkiler. Kanca hazırlamaya dair yönergeler için bkz. <strong>İlk Macera</strong> <a class="wiki-link" href="first-adventure.html" data-slug="first-adventure" >bölümü</a>.</p>
+<h2 id="expeditions">Seferler</h2>
+<p>OK&#x27;lerin kasabadan ayrılacağını biliyorsan (ya da tahmin ediyorsan), <strong>Rota Çiz</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" >hamlesi</a> için seçimlerini hazırlayabilirsin.</p>
+<p>Bir harita çizmeyi, ilgi çekici noktalar hazırlamayı ve yolda yaşayabilecekleri birkaç karşılaşmayı kabaca hayal etmeyi düşün.</p>
+<p>Ayrıntılar için Seferler bölümünün “<strong>Neler hazırlanmalı”</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" >kısmına</a> bak.</p>
+<h2 id="sites">Mekânlar</h2>
+<p>OK&#x27;lerin bir oturum sırasında keşfetmesini ya da karşılaşmasını beklediğin her önemli yeri düşün. Nasıl bir yer? Onu nasıl betimleyeceksin? Onun hakkında hangi soruları soracaksın? Hikâyesi ne? Bir haritaya ya da görsel bir yardımcıya ihtiyacın var mı? İçinde tehlikeler ya da keşifler var mı? Fikirler için bkz. <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Mekânlar</a>.</p>
+<h2 id="dangers">Tehlikeler</h2>
+<p>OK&#x27;lerin karşılaşabileceği doğal tehlikeler, canavarlar ve düşmanca OOK&#x27;ler.</p>
+<p>Ortam rehberinde kullanılacak kayıtlar bul ya da kendininkini yap. Bunu elbette anında yapabilirsin, ama masa zamanını alır ve en iyisi önceden yapılmış olmasıdır. Yönergeler için bkz. <strong>Tehlikeler</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" >bölümü</a>.</p>
+<h2 id="discoveries">Keşifler</h2>
+<p>Bulmacalar, ipuçları, gizemler, hazineler, arkanalar… bunların hepsi keşiftir. Bazılarını anında uyduracaksın. Bazıları için birkaç not almak isteyeceksin. Bazılarını (özellikle arkanaları) ayrıntılı olarak yazmak isteyeceksin. Daha fazlası için bkz. <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Keşifler</a>.</p>
+<h2 id="npcs">OOK&#x27;ler</h2>
+<p>Oyunda karşılaşacaklarını tahmin ettiğin OOK&#x27;ler varsa, isimlerini, onlar hakkında soracağın soruları, belirleyici özelliklerini, onları nasıl betimleyip canlandıracağını düşün. Belki onlara bir içgüdü, bağlantılar ve güdüler ver. Bir OOK takipçi olabilecekse, oyundan önce niteliklerini, etiketlerini, hamlelerini, bedelini ve içgüdüsünü yazmayı düşün. Yönergeler için bkz. <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >OOK&#x27;ler ve Takipçiler</a>.</p>
+<p>Bütün bu hazırlık <strong>ne olacağını görmek için oynamaya</strong> ters düşüyor gibi görünebilir, ama aslında düşmez. Bir hikâye, bir olay örgüsü ya da birbirini izleyen kaçınılmaz bir sahneler dizisi hazırlamıyorsun.</p>
+<p>Sana söyleyecek ilginç şeyler veren, oyunu hızlandıran, zayıflıklarını gideren ve zanaatını bileyen, sana sert oynama izni veren şeyler hazırlıyorsun. İyi hazırlık her şeyin senaryosunu yazmak değildir; doğaçlamana yardım edecek bir zemin hazırlamaktır.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div id="wiki-preview" class="wiki-preview" hidden></div>
+  <div id="dice-toast" class="dice-toast" hidden></div>
+  <script>window.WIKI_UI={"books": {"book1": "Kitap I", "book2": "Kitap II", "sites": "Mekânlar"}, "page_words": ["s.", "sayfa", "sayfada", "sayfalar", "sayfalarda"], "english_only": "Yalnızca İngilizce mevcut", "js": {"feedback_link": "Bu sayfa hakkında geri bildirim gönder", "feedback_head": "Geri bildirim gönder", "feedback_about": "Sayfa", "feedback_what": "Ne değişmeli?", "feedback_placeholder": "Yanlış bir sayı, eksik bir hamle, bozuk çıkmış bir tablo…", "feedback_email": "E-posta (isteğe bağlı, yanıt için)", "feedback_send": "Gönder", "feedback_cancel": "Vazgeç", "feedback_close": "Kapat", "feedback_sending": "Gönderiliyor…", "feedback_sent": "Geri bildirim gönderildi, teşekkürler.", "feedback_failed": "Gönderilemedi ({error}). Yeniden deneyin.", "feedback_network": "ağ hatası", "search_empty": "“{query}” ile eşleşen sayfa yok.", "search_pages_one": "1 sayfa", "search_pages_many": "{n} sayfa", "search_showing": " ({n} gösteriliyor)", "search_in_title_text": "başlık + metin", "search_in_title": "başlık", "search_in_text": "metinde", "preview_no_summary": "Özet yok.", "preview_missing": "Bu bağlantı için önizleme yok.", "location_label": "Konum", "location_who": "Kimde", "location_unknown": "— bilinmiyor —", "location_other": "Başka bir yerde / başka biri…", "location_placeholder": "Nerede olduğu ya da kimde olduğu", "arcana_head": "Arkanalar", "arcana_none": "Elinde yok. Bir arkananın konumunu “{title}” yapın, burada listelensin.", "sync_label": "Kampanya", "sync_copied": "{what} kopyalandı", "sync_copy_this": "Bu bağlantıyı kopyalayın", "sync_nothing_export": "Henüz dışa aktarılacak bir şey yok", "sync_saved": "{n} öğe {file} dosyasına kaydedildi", "sync_not_json": "o dosya JSON değil", "sync_not_export": "o bir kampanya dışa aktarımı değil", "sync_data": "Kampanya verileri", "sync_export": "Dışa aktar", "sync_export_title": "Bu kampanyanın durumunu bir dosyaya kaydet", "sync_import": "İçe aktar", "sync_import_title": "Kaydedilmiş bir dosyayı bu kampanyayla birleştir", "sync_nothing_import": "O dosyada içe aktarılacak bir şey yok", "sync_imported": "{stores} depoya {n} öğe aktarıldı", "sync_skipped": " · atlandı: {names}", "sync_read_failed": "O dosya okunamadı", "sync_sharing_gm": "Oyun yöneticisi olarak paylaşılıyor", "sync_sharing_table": "Masayla paylaşılıyor", "sync_copy_player": "Oyuncu bağlantısını kopyala", "sync_copy_gm": "OY bağlantısını kopyala", "sync_copy_mine": "Bağlantımı kopyala", "sync_player_link": "Oyuncu bağlantısı", "sync_gm_link": "OY bağlantısı", "sync_link": "Bağlantı", "sync_no_player_token": "Bu tarayıcı OY bağlantısıyla katıldığı için oyuncu anahtarına sahip değil. Oyuncu bağlantısını kampanyayı oluşturan tarayıcıdan kopyalayın.", "sync_stop": "Paylaşımı durdur", "sync_stopped": "Paylaşım durduruldu; bu tarayıcı kendi kopyasını tutar", "sync_what_shared": "İşaretlenen iyileştirmeler, tehlike saatleri, yanıtlar, kâğıtlar ve bir karakterin HP’si herkesle paylaşılır. Düşman HP’si yalnızca OY’nindir.", "sync_share_head": "Bu kampanyayı paylaş", "sync_worker": "Eşitleme sunucusu", "sync_create": "Kampanya oluştur", "sync_creating": "Oluşturuluyor…", "sync_enter_endpoint": "Önce eşitleme sunucusunun adresini girin", "sync_unreachable": "Eşitleme sunucusuna ulaşılamadı", "sync_paste": "Ya da OY’nin gönderdiği bağlantıyı yapıştırın:", "sync_join_link": "Katılım bağlantısı", "sync_join": "Katıl", "sync_bad_link": "Bu bir katılım bağlantısına benzemiyor", "sync_joined": "{campaign} kampanyasına katıldınız", "sync_the_campaign": "kampanya", "sync_status_on": "Bu kampanya masayla paylaşılıyor", "sync_status_offline": "Eşitleme sunucusuna ulaşılamıyor; değişiklikler burada saklanır ve sonra eşitlenir", "sync_status_local": "Bu tarayıcı kendi kopyasını tutar"}, "playbooks": {"the-blessed": "Kutsanmış", "the-fox": "Tilki", "the-heavy": "Kabadayı", "the-judge": "Yargıç", "the-lightbearer": "Işık Taşıyıcı", "the-marshal": "Mareşal", "the-ranger": "Korucu", "the-seeker": "Arayıcı", "the-would-be-hero": "Kahraman Adayı"}};</script>
+  <script src="../js/wiki.js"></script>
+</body>
+</html>

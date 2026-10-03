@@ -281,7 +281,7 @@ def main(argv: list[str] | None = None) -> int:
     d.add_argument("--changed-out", help="write the changed/new URLs here")
     d.set_defaults(func=_cmd_deploy)
     r = sub.add_parser("reseed", help="re-date a sitemap from git history")
-    r.add_argument("--out", default="Stonetop_Wiki")
+    r.add_argument("--out", default="site")
     r.set_defaults(func=_cmd_reseed)
     args = p.parse_args(argv)
     return args.func(args)

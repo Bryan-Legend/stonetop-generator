@@ -1,4 +1,4 @@
-"""``python -m generator`` — same as ``stonetop-wiki-generator.py``."""
+"""``python -m generator`` — same as ``stonetop-generator.py``."""
 
 from .build import main
 

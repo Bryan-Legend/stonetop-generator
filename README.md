@@ -30,8 +30,8 @@ The Web Edition includes:
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/Bryan-Legend/stonetop-wiki-generator.git
-cd stonetop-wiki-generator
+git clone https://github.com/Bryan-Legend/stonetop-generator.git
+cd stonetop-generator
 
 python -m venv .venv
 
@@ -47,10 +47,10 @@ pip install -r requirements.txt   # PyMuPDF — only needed to extract from the 
 ### 2. Build
 
 ```bash
-python stonetop-wiki-generator.py
+python stonetop-generator.py
 ```
 
-That reads `extracted/` and writes the wiki into `Stonetop_Wiki/` in about ten
+That reads `extracted/` and writes the wiki into `site/` in about ten
 seconds. No PDF is opened.
 
 To **re-extract the text** — after a change to the extractor, or a new printing —
@@ -58,7 +58,7 @@ put the 1-up PDFs in an input folder (optional `Maps/` subfolder for campaign ma
 sheets), then:
 
 ```bash
-python stonetop-wiki-generator.py --extract --input /path/to/folder-with-pdfs
+python stonetop-generator.py --extract --input /path/to/folder-with-pdfs
 ```
 
 Extraction takes about a minute and rewrites `extracted/`; `git diff extracted/`
@@ -66,7 +66,7 @@ then shows exactly which lines of text changed, before any HTML is looked at.
 
 | Flag | Meaning | Default |
 |------|---------|---------|
-| `-o` / `--output` | Wiki folder. Chrome stays in place; only book-derived files are written. | `Stonetop_Wiki/` |
+| `-o` / `--output` | Wiki folder. Chrome stays in place; only book-derived files are written. | `site/` |
 | `--corpus DIR` | The extracted text to build from (and to write when extracting). | `extracted/` |
 | `--extract` | Re-extract from the PDFs into the corpus, then build. Without it a PDF is only opened for a book the corpus lacks. | off |
 | `--extract-only` | Extract and stop; write no wiki. | off |
@@ -80,20 +80,20 @@ then shows exactly which lines of text changed, before any HTML is looked at.
 ### 3. Open it
 
 ```text
-Stonetop_Wiki/index.html
+site/index.html
 ```
 
 Or serve locally (avoids some `file://` restrictions):
 
 ```bash
-cd Stonetop_Wiki
+cd site
 python -m http.server 8000
 # then visit http://localhost:8000
 ```
 ## How it is put together
 
 ```text
-stonetop-wiki-generator.py   entry point (python -m generator is the same)
+stonetop-generator.py   entry point (python -m generator is the same)
 generator/                   the package
   text.py        markers, inline-format sentinels, line classifiers — shared by both phases
   extract.py     PDF → marker lines (the only module that needs PyMuPDF)
@@ -143,7 +143,7 @@ translated and what never is: **[`i18n/GLOSSARY.md`](i18n/GLOSSARY.md)**.
 
 ## Adventure sites
 
-The table-ready adventure sheets that used to live under `Stonetop_Wiki/sites/`
+The table-ready adventure sheets that used to live under `site/sites/`
 have their own repository and site: [stonetop-adventures](https://github.com/Bryan-Legend/stonetop-adventures),
 published at <https://bryan-legend.github.io/stonetop-adventures/>.
 

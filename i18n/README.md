@@ -176,7 +176,7 @@ cat i18n/_work/batch.txt >> i18n/_work/corpus/pt-BR/<slug>.work.txt
 python i18n/tools/runs.py <slug>                     # <1 s: missing refs, run counts
 #   …repeat until the chapter is done, then:
 python i18n/corpus_xlate.py apply pt-BR <slug>
-python stonetop-wiki-generator.py                    # ~16 s, every language
+python stonetop-generator.py                    # ~16 s, every language
 python i18n/tools/leaks.py pt-BR <slug>              # expect: <slug> 0
 ```
 
@@ -328,9 +328,9 @@ code change.
 ## Building
 
 ```bash
-python stonetop-wiki-generator.py            # every language
-python stonetop-wiki-generator.py --langs de fr ja
-python stonetop-wiki-generator.py --langs none   # English only
+python stonetop-generator.py            # every language
+python stonetop-generator.py --langs de fr ja
+python stonetop-generator.py --langs none   # English only
 ```
 
 Each language directory is rewritten from scratch every build, and a language

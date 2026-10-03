@@ -31,7 +31,7 @@ from .text import (
 )
 
 # Project credit in the wiki sidebar footer.
-GITHUB_PROJECT_URL = "https://github.com/Bryan-Legend/stonetop-wiki-generator"
+GITHUB_PROJECT_URL = "https://github.com/Bryan-Legend/stonetop-generator"
 LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 ISSUES_URL = GITHUB_PROJECT_URL.rstrip("/") + "/issues"
 
@@ -2488,7 +2488,7 @@ def write_index_custom(
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-head">
         <a class="wiki-title" href="index.html">{html.escape(EDITION_NAME)}</a>
-        <input type="search" id="nav-filter" class="nav-filter" placeholder="Search wiki…" autocomplete="off" aria-label="Search wiki">
+        <input type="search" id="nav-filter" class="nav-filter" placeholder="Search…" autocomplete="off" aria-label="Search">
         <div id="search-results" class="search-results" hidden></div>
       </div>
       <nav class="toc" aria-label="Topics">

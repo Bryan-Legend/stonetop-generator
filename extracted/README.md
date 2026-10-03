@@ -57,7 +57,7 @@ pins the round trip.
 ## These files are generated
 
 ```
-python stonetop-wiki-generator.py --extract --input <folder with the PDFs>
+python stonetop-generator.py --extract --input <folder with the PDFs>
 ```
 
 rewrites every file here from the PDFs (and removes any an article no

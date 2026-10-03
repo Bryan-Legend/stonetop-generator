@@ -1,7 +1,7 @@
 /* Two browsers at one table, against the local `wrangler dev` worker.
  *
  * Each "browser" is a jsdom window with its own localStorage, running the
- * real Stonetop_Wiki/js/wiki.js (and, for a sheet, the adventure sites'
+ * real site/js/wiki.js (and, for a sheet, the adventure sites'
  * site.js, read from the stonetop-adventures checkout beside this repo, or
  * from SITE_JS=<path>; without it the sheet runs on wiki.js alone). The wiki
  * page carries a couple of wiki checkboxes and a map strip; the sheet page
@@ -10,8 +10,8 @@
 import { JSDOM, VirtualConsole } from "jsdom";
 import fs from "node:fs";
 
-// ../../Stonetop_Wiki — the chrome this suite is testing, read off disk.
-const ROOT = new URL("../../Stonetop_Wiki/", import.meta.url);
+// ../../site — the chrome this suite is testing, read off disk.
+const ROOT = new URL("../../site/", import.meta.url);
 const WIKI_JS = fs.readFileSync(new URL("js/wiki.js", ROOT), "utf8");
 // The sheets live in their own repo and site now; their script is read off
 // the sibling checkout when it is there.

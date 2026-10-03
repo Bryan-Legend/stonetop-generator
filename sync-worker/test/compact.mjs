@@ -24,7 +24,7 @@ if (process.env.SYNC_ENDPOINT) {
   process.exit(0);
 }
 
-const ROOT = new URL("../../Stonetop_Wiki/", import.meta.url);
+const ROOT = new URL("../../site/", import.meta.url);
 const WIKI_JS = fs.readFileSync(new URL("js/wiki.js", ROOT), "utf8");
 const CWD = fileURLToPath(new URL("..", import.meta.url));
 const WRANGLER = fileURLToPath(

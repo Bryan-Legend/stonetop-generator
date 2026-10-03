@@ -2,7 +2,7 @@
 
     python i18n/tools/leaks.py <code> <slug> [<slug> …]
 
-Reads the built page out of ``Stonetop_Wiki/<code>/<slug>.html``, strips the
+Reads the built page out of ``site/<code>/<slug>.html``, strips the
 markup, and prints any text fragment that still reads as English (two or
 more common English function words). The build's ``not shown whole`` report
 says a *translation* went unused; this says the opposite and more useful
@@ -26,7 +26,7 @@ EN = re.compile(
 
 
 def leaks(code: str, slug: str) -> list[str]:
-    path = f"Stonetop_Wiki/{code}/{slug}.html"
+    path = f"site/{code}/{slug}.html"
     page = open(path, encoding="utf-8").read()
     body = page[page.find("<main"):page.find("</main>")]
     body = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", body, flags=re.S)

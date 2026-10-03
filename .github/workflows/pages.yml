@@ -1,11 +1,11 @@
 # Publishes the wiki to the org's user-page repo,
 # stonetop-wiki/stonetop-wiki.github.io, which serves it at stonetop.cc (the
-# custom domain is Stonetop_Wiki/CNAME; GitHub 301s the old github.io URLs):
+# custom domain is site/CNAME; GitHub 301s the old github.io URLs):
 #   https://stonetop.cc/marshedge.html
 #
 # Only tracked files are deployed: the built wiki (book text is CC BY-SA 4.0)
 # and its chrome. Book artwork (images/maps/) is gitignored and never published.
-# Stonetop_Wiki/sites/ holds only redirects to the adventure sites' own site.
+# site/sites/ holds only redirects to the adventure sites' own site.
 name: Deploy site
 
 on:
@@ -26,10 +26,10 @@ jobs:
       - name: Assemble site
         # The wiki's own generated index.html is the site root. Book artwork is
         # never in the tree (built without --maps), so everything tracked under
-        # Stonetop_Wiki/ is publishable.
+        # site/ is publishable.
         run: |
           mkdir -p _site
-          cp -r Stonetop_Wiki/. _site/
+          cp -r site/. _site/
           touch _site/.nojekyll
 
       - name: Publish to stonetop-wiki.github.io
@@ -42,7 +42,7 @@ jobs:
           ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
           cd _site
           git init -q -b main
-          git config user.name "stonetop-wiki-generator"
+          git config user.name "stonetop-generator"
           git config user.email "actions@github.com"
           git add -A
           git commit -qm "Deploy ${GITHUB_SHA::7} from ${GITHUB_REPOSITORY}"

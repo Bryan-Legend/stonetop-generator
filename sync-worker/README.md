@@ -5,7 +5,7 @@ improvements, danger countdowns, map pins, answers, playbook sheets, HP —
 instead of each browser keeping its own private copy in `localStorage`.
 
 A Cloudflare Worker over **Durable Objects**, fronted by `window.StonetopStore`
-in `Stonetop_Wiki/js/wiki.js`. **`localStorage` stays the truth the page renders
+in `site/js/wiki.js`. **`localStorage` stays the truth the page renders
 from; the network is a mirror.** With no campaign configured, with the Worker
 down, or with the wiki opened off a disk with no connection, the wiki behaves
 exactly as it did before any of this existed.
@@ -60,7 +60,7 @@ in `wrangler.toml` declares them as SQLite-backed classes — the only kind the
 Workers Free plan allows, and the kind we want anyway.
 
 That address is already set as `DEFAULT_ENDPOINT` in the campaign panel in
-`Stonetop_Wiki/js/wiki.js`. If the Worker is ever renamed or moved, that is the
+`site/js/wiki.js`. If the Worker is ever renamed or moved, that is the
 one string to change — it is chrome, not generated, so the wiki build never
 overwrites it.
 

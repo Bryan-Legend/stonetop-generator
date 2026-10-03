@@ -1,7 +1,7 @@
 /* Pieces the router and both Durable Objects need.
  *
  * The scope registry is the important one: it decides what travels and to
- * whom, and it must stay in step with the copy in Stonetop_Wiki/js/wiki.js.
+ * whom, and it must stay in step with the copy in site/js/wiki.js.
  * This is the one that is enforced; the client's copy only saves a doomed
  * round trip.
  */

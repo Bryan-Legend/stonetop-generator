@@ -3,7 +3,7 @@
 > **Status: built.** Rollout steps 1–4 are done and tested; step 5 (play-test one session
 > before handing links to Mark, Doug, and Bryce) is the GM's, and step 6 (Durable Objects)
 > is untouched. The Worker lives in `sync-worker/` — see its `README.md` for deploying it
-> and starting a campaign. The client is `window.StonetopStore` in `Stonetop_Wiki/js/wiki.js`.
+> and starting a campaign. The client is `window.StonetopStore` in `site/js/wiki.js`.
 > No generator or rebuild work was needed, as §2 predicted. Where the build departed from
 > what is written below, §8 says why.
 
@@ -47,7 +47,7 @@ against a small GM-only page list rather than splitting the store.
 
 Every page already loads `js/wiki.js`:
 
-- generated pages — emitted by the page template at `stonetop-wiki-generator.py:8104`
+- generated pages — emitted by the page template at `stonetop-generator.py:8104`
   (`{rel_prefix}js/wiki.js`) and the index template at `:8629`;
 - site sheets — hand-authored, loading `../js/wiki.js` *before* `site.js`
   (`Vasilyas-Grove.html:517-518`), both plain synchronous scripts, so load order holds.

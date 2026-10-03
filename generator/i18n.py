@@ -35,8 +35,8 @@ I18N_DIRNAME = "i18n"
 UI_FALLBACK = {
     "skip_to_content": "Skip to content",
     "toggle_nav": "Toggle navigation",
-    "search_placeholder": "Search wiki…",
-    "search_label": "Search wiki",
+    "search_placeholder": "Search…",
+    "search_label": "Search",
     "nav_label": "Topics",
     "credit": "Text from {work} by Jeremy Strandberg, {license}",
     "dice_sound": "Dice sound",

@@ -14,7 +14,7 @@ sentinels, and the line classifiers.
 
 from pathlib import Path
 
-# The repository root: pages/, i18n/, extracted/ and Stonetop_Wiki/ live beside
+# The repository root: pages/, i18n/, extracted/ and site/ live beside
 # this package, not inside it.
 PACKAGE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = PACKAGE_DIR.parent

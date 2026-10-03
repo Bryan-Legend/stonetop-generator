@@ -181,7 +181,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "Wiki folder. Static chrome (css/, js/wiki.js, images/icons/) "
             "lives here and is left in place; the build writes the page "
             "HTML, indexes, and map images. "
-            "Default: <repo>/Stonetop_Wiki."
+            "Default: <repo>/site."
         ),
     )
     p.add_argument(
@@ -420,7 +420,7 @@ def main(argv: list[str] | None = None) -> None:
     out = (
         args.output.expanduser().resolve()
         if args.output is not None
-        else (REPO_ROOT / "Stonetop_Wiki").resolve()
+        else (REPO_ROOT / "site").resolve()
     )
     corpus = (
         args.corpus.expanduser().resolve() if args.corpus else corpus_dir()
