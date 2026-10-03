@@ -16,14 +16,6 @@ The Web Edition includes:
 - English plus twenty more languages
 - Optional campaign sync, so the whole table shares ticked boxes, countdowns and HP
 
-> **The book text in this repository is published under CC BY-SA 4.0** — both books state
-> *"All text herein is released under a CC BY-SA 4.0 license."*
->
-> **Artwork is not.** The same page states *"All artwork herein is © 2026 by [Lucie Arnoux](https://www.luciedraws.com/)."*
-> Maps are artwork, so builds omit them by default and no illustration is committed here.
-> The PDFs themselves are not redistributed — get them from
-> [the official Stonetop store](https://plusoneexp.com/collections/stonetop).
-
 ## Requirements
 
 - **Python 3.10+** (3.11+ recommended)
@@ -81,7 +73,7 @@ then shows exactly which lines of text changed, before any HTML is looked at.
 | `-i` / `--input` | Folder containing the 1-up book PDFs. Optional: `Maps/`. Only read when extracting. | current working directory |
 | `--books book1 book2` | Limit the run to the listed books (faster while iterating). | every book in the corpus |
 | `--langs de fr ja` | Build only these translations (`none` for English only). See [Languages](#languages). | every language with a translated page |
-| `--maps` | Include the Maps page and its images (needs the Book II PDF). **Local builds only** — map art is © [Lucie Arnoux](https://www.luciedraws.com/), not CC BY-SA. | off |
+| `--maps` | Include the Maps page and its images (needs the Book II PDF). | off |
 
 `python -m generator` is the same entry point.
 
@@ -153,11 +145,7 @@ translated and what never is: **[`i18n/GLOSSARY.md`](i18n/GLOSSARY.md)**.
 
 The table-ready adventure sheets that used to live under `Stonetop_Wiki/sites/`
 have their own repository and site: [stonetop-adventures](https://github.com/Bryan-Legend/stonetop-adventures),
-published at <https://bryan-legend.github.io/stonetop-adventures/>. They load this
-wiki's chrome (`css/wiki.css`, `js/wiki.js`, the icons and hover previews) from
-<https://stonetop.cc/> by absolute URL, so a change to the chrome here
-reaches them on the next deploy. The wiki does not link to them; `Stonetop_Wiki/sites/`
-and `campaign-sites.html` are kept only as redirects to the new addresses.
+published at <https://bryan-legend.github.io/stonetop-adventures/>.
 
 ## License
 
@@ -171,16 +159,9 @@ Jeremy Strandberg and published by Lampblack & Brimstone. Both books' copyright 
 > All text herein is released under a CC BY-SA 4.0 license.
 > Some concepts and procedures are derived from Dungeon World, by Sage LaTorra & Adam Koebel,
 > released under a CC BY license.
-> All artwork herein is © 2026 by [Lucie Arnoux](https://www.luciedraws.com/).
 
 That text is reproduced here under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), reflowed from the PDFs into
-HTML, and **the Web Edition is shared under the same license**. Every generated page carries the
-attribution and license link in its footer.
-
-**Artwork is excluded.** Illustrations and maps remain © 2026 [Lucie Arnoux](https://www.luciedraws.com/) and are not
-redistributable, so `--maps` is off by default and `Stonetop_Wiki/images/maps/` is
-gitignored. The only images shipped are category icons from
-[game-icons.net](https://game-icons.net) (CC BY 3.0). The source PDFs are not redistributed.
+HTML, and **the Web Edition is shared under the same license**.
 
 Not affiliated with or endorsed by Lampblack & Brimstone.
