@@ -21,7 +21,7 @@ from .i18n import (
 )
 from .corpus import parse_text
 from .sheet import render_sheet, sheet_excerpt
-from .structure import T_english, extract_section_html_blocks
+from .structure import DICE_TITLE, T_english, extract_section_html_blocks
 from .text import (
     _is_all_caps_label,
     html_to_search_text,
@@ -1230,8 +1230,9 @@ def page_shell(
     ui_script = ui_script_html(locale)
     # Every language directory that has pages gets its own home page
     # (``write_localized_index``), so the wiki title leads there, not up to
-    # the English one.
-    home_href = "index.html" if locale else f"{rel_prefix}index.html"
+    # the English one: the directory itself ("/", "/de/"), which wiki.js
+    # turns back into index.html when the wiki is opened off a disk.
+    home_href = "./" if locale else (rel_prefix or "./")
     if doc_title is None:
         if slug == "index":
             doc_title = ((ui.get("home") or {}).get("doc_title")
@@ -1532,18 +1533,33 @@ HOME_INTRO_HTML = (
 )
 
 
-def home_intro_html(template: str, href) -> str:
+# ASCII classes: \w would count the kana or hanzi set tight against "2d6".
+_INTRO_DICE_RE = re.compile(r"(?<![A-Za-z0-9>])\d+d\d+(?![A-Za-z0-9<])")
+
+
+def home_intro_html(template: str, href, dice_title: str = DICE_TITLE) -> str:
     """The home page's "what is Stonetop" intro, with its three links resolved.
 
     ``href`` takes a slug and returns the path to it from the home page being
     written — a localized home links to the translated page where there is
-    one and up to the English page where there is not.
+    one and up to the English page where there is not. The dice it names
+    ("roll 2d6") become the roll button every other page has; ``dice_title``
+    is that button's tooltip in the page's language.
     """
-    return template.format(
+    out = template.format(
         homefront=html.escape(href("homefront")),
         welcome=html.escape(href("welcome-to-stonetop")),
         playing=html.escape(href("playing-the-game")),
     )
+
+    def roll(m: re.Match) -> str:
+        expr = m.group(0)
+        return (
+            f'<button type="button" class="dice-roll" data-dice="{expr.lower()}" '
+            f'title="{html.escape(dice_title.replace("{expr}", expr))}">{expr}</button>'
+        )
+
+    return _INTRO_DICE_RE.sub(roll, out)
 
 
 HOME_FALLBACK = {
@@ -1820,6 +1836,7 @@ def write_localized_index(
             lambda slug: (
                 f"{slug}.html" if slug in translated else f"../{slug}.html"
             ),
+            (ui.get("sheet") or {}).get("dice_title") or DICE_TITLE,
         )
         title = ui.get("edition") or home["title"]
         body = (
@@ -2487,7 +2504,7 @@ def write_index_custom(
   <div class="layout">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-head">
-        <a class="wiki-title" href="index.html">{html.escape(EDITION_NAME)}</a>
+        <a class="wiki-title" href="./">{html.escape(EDITION_NAME)}</a>
         <input type="search" id="nav-filter" class="nav-filter" placeholder="Search…" autocomplete="off" aria-label="Search">
         <div id="search-results" class="search-results" hidden></div>
       </div>

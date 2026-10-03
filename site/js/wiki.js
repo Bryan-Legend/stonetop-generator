@@ -4876,6 +4876,16 @@
     }
   })();
 
+  /* The sidebar title links to its directory ("./", so "/" or "/de/" once
+     served). Off a disk a directory is a file listing, not a page: name the
+     index there. Language links to a directory get the same. */
+  if (location.protocol === "file:") {
+    document.querySelectorAll('a.wiki-title[href], .lang-switch a[href]').forEach(function (a) {
+      var h = a.getAttribute("href");
+      if (/(^|\/)$/.test(h.split("#")[0].split("?")[0])) a.setAttribute("href", h.replace(/([#?].*)?$/, "index.html$1"));
+    });
+  }
+
   // Prefetch previews
   loadPreviews();
 })();
