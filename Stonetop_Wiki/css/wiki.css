@@ -61,6 +61,33 @@
   font-display: swap;
   src: url("fonts/source-sans-3-latin-700-normal.woff2") format("woff2");
 }
+/* The reader's hand — everything written into the wiki (Oooh Baby, OFL, from
+   Google Fonts). Latin, Latin Extended and Vietnamese; other scripts fall
+   through the stack to the body face. */
+@font-face {
+  font-family: "Oooh Baby";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/oooh-baby-vietnamese-400-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Oooh Baby";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/oooh-baby-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Oooh Baby";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/oooh-baby-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 :root {
   /* Warm near-black ground under parchment type. Only two hues carry meaning:
@@ -105,6 +132,11 @@
   --font-quote: "Vollkorn", "Source Serif 4", Georgia, serif;
   --font-serif-text: "Source Serif 4", "Palatino Linotype", Palatino, "Iowan Old Style", Georgia, serif;
   --font-sans: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* What the reader writes: answers, blanks, every write-in box. The face is
+     small on its body, so --hand-adjust sets its x-height (font-size-adjust)
+     rather than its size — the boxes and the line keep their measure. */
+  --font-hand: "Oooh Baby", "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --hand-adjust: .45;
   --radius: 4px;
   --shadow: 0 12px 36px rgba(0, 0, 0, .62);
   --shadow-soft: 0 2px 10px rgba(0, 0, 0, .4);
@@ -2316,8 +2348,8 @@ li.check-item input.wiki-check:checked + span {
 /* ---------- Clickable questions & blanks (GM answer notes) ----------
    Every "?" and every fill-in-the-blank in the article body is a click
    target (see wiki.js). The question mark carries a dotted underline so it
-   reads as something to click; the answer it holds is set inline in wine
-   italics — the one hue in the wiki that is neither parchment nor ink, so
+   reads as something to click; the answer it holds is set inline in a wine
+   hand — the one hue in the wiki that is neither parchment nor ink, so
    the GM's writing never reads as part of the book. */
 
 .wiki-q,
@@ -2366,12 +2398,18 @@ li.check-item input.wiki-check:checked + span {
   text-decoration-color: var(--answer);
 }
 
-/* The answer, once the editor loses focus: inline, wine, italic. */
+/* The answer, once the editor loses focus: inline, wine, handwritten. */
 .wiki-answer {
   color: var(--answer);
-  font-style: italic;
+  font-family: var(--font-hand);
+  font-size-adjust: var(--hand-adjust);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
   white-space: pre-wrap;
   margin-left: .18em;
+  /* The hand leans: keep its last stroke off the type that follows. */
+  padding-right: .3em;
   border-bottom: 1px dotted rgba(var(--answer-rgb), .45);
 }
 .wiki-answer:hover {
@@ -2388,10 +2426,13 @@ li.check-item input.wiki-check:checked + span {
 /* A filled blank is the GM's writing, so it reads like any other answer. */
 .wiki-blank.is-filled {
   color: var(--answer);
-  font-style: italic;
+  font-family: var(--font-hand);
+  font-size-adjust: var(--hand-adjust);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
   background: none;
   border-bottom: 1px dotted rgba(var(--answer-rgb), .45);
-  letter-spacing: 0;
 }
 .wiki-blank.is-filled:hover {
   background: rgba(var(--answer-rgb), .14);
@@ -2402,10 +2443,14 @@ li.check-item input.wiki-check:checked + span {
   padding: 0;
   background: none;
 }
-/* Typing looks like what it becomes: wine italics either way. */
+/* Typing looks like what it becomes: the same wine hand either way. */
 .wiki-blank-input {
   font: inherit;
-  font-style: italic;
+  font-family: var(--font-hand);
+  font-size-adjust: var(--hand-adjust);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
   color: var(--answer);
   background: rgba(var(--answer-rgb), .10);
   border: none;
@@ -2435,8 +2480,11 @@ li.check-item input.wiki-check:checked + span {
   min-width: 0;
   resize: none;
   overflow: hidden;
-  font-family: inherit;
-  font-style: italic;
+  font-family: var(--font-hand);
+  font-size-adjust: var(--hand-adjust);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
   font-size: 1em;
   line-height: 1.35;
   color: var(--answer);
@@ -2449,6 +2497,7 @@ li.check-item input.wiki-check:checked + span {
   color: var(--muted);
   opacity: .8;
   font-family: var(--font-sans);
+  font-size-adjust: none;
   font-size: .9em;
 }
 .wiki-note-del {
@@ -2475,7 +2524,7 @@ li.check-item input.wiki-check:checked + span {
 /* ---------- Playbook character sheets ----------
    The nine sheets are forms, not articles: boxes to write in, a stat block
    that dims in pairs when a debility is marked, moves you tick to say you
-   have them. Everything the reader fills in is set in the same wine italics
+   have them. Everything the reader fills in is set in the same wine hand
    as an answer note, so their hand is never mistaken for the book's. */
 
 /* A ticked box on a sheet means a move you *have*. Striking it through (the
@@ -2544,6 +2593,14 @@ li.check-item input.wiki-check:checked + span {
 .move-block[data-move] .move-name .check-fixed input { opacity: 1; cursor: default; }
 .move-block[data-move] > p { margin: .2rem 0; }
 .move-block[data-move~="sub"] { margin-left: 1.15rem; width: calc(100% - 1.15rem); }
+/* A move not taken recedes: no wash, no bar, only the hairline that keeps it
+   a card. The padding makes up the bar's width so ticking moves no type. */
+.move-block[data-move]:not(:has(> .move-name input:checked)) {
+  background: none;
+  box-shadow: none;
+  border-left: 1px solid var(--rule);
+  padding-left: calc(.6rem + 2px);
+}
 .move-block[data-move]:has(> .move-name input:checked) {
   border-left-color: rgba(var(--answer-rgb), .85);
 }
@@ -2552,13 +2609,15 @@ li.check-item input.wiki-check:checked + span {
 }
 
 /* ----- write-in boxes -----
-   These sit on the page permanently, the way the sheet prints them, so they
-   are set in the display face rather than in the italics an answer note uses
-   to mark a passing aside. */
+   These sit on the page permanently, the way the sheet prints them, and are
+   filled in by hand — the same hand an answer note is written in. */
 .wiki-field {
   font: inherit;
+  font-family: var(--font-hand);
+  font-size-adjust: var(--hand-adjust);
   font-style: normal;
-  letter-spacing: var(--track-display);
+  font-weight: 400;
+  letter-spacing: 0;
   color: var(--answer);
   background: rgba(var(--answer-rgb), .07);
   border: 1px solid rgba(var(--head-rgb), .3);
@@ -2569,6 +2628,8 @@ li.check-item input.wiki-check:checked + span {
 }
 .wiki-field::placeholder {
   color: var(--muted);
+  font-family: var(--font-sans);
+  font-size-adjust: none;
   font-style: normal;
   opacity: .75;
 }
@@ -3596,25 +3657,22 @@ table.fs-table th:nth-child(2):not(:last-child) { width: 15%; }
 .si-title, .stat-block .stat-name, .hazard-block .stat-name, .discovery-name,
 .move-block .move-name, .fs-type-head, .pb-stats > h2, .infobox > :first-child { break-after: avoid; }
 
-/* Names, stats and spinboxes are set in the display face; every other box
-   (tags, traits, gear, notes, the tables) is ordinary type. */
-.pb-write-box,
+/* Stats and spinboxes stay in the display face — numbers printed on the
+   sheet, not the reader's hand. */
 .pb-stat-box,
 .pb-track-box,
-.pb-spin .wiki-field,
-.wiki-field[data-field-key$=":name"],
-.wiki-field[data-field-key$="-name"] {
+.pb-spin .wiki-field {
   font-family: var(--font-serif);
+  font-size-adjust: none;
+  letter-spacing: var(--track-display);
 }
 
 /* Where an arcanum is (under its card) and what a playbook holds. */
 .arcana-location { margin: .5rem 0 0; max-width: 32rem; break-inside: avoid; }
 .arcana-location .fs-field { margin: 0; flex-wrap: wrap; }
 .arcana-location .wiki-field { flex: 1; min-width: 9rem; }
-.arcana-location select.wiki-field,
 .arcana-location select.wiki-field option,
-.arcana-location input.wiki-field,
-.pb-arcana a { font-family: var(--font-serif); }
+.pb-arcana a { font-family: var(--font-serif); font-size-adjust: none; }
 .arcana-location select.wiki-field {
   cursor: pointer;
   /* The popup is painted by the browser off color-scheme, not off our
