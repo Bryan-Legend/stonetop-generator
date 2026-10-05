@@ -52,7 +52,7 @@ H3	Verzwakkingen
 LIST		sp-debility
 CK	sp-debility-0	<i>uitgedund</i>, door verwonding/ziekte/twijfel (nadeel op Uitzenden, Oproepen of De Handen Ineenslaan)
 CK	sp-debility-1	<i>tekort</i>, door schaarste/hamsteren/wantrouwen (behandel Welvaart alsof die 1 lager is dan hij is)
-CK	sp-debility-2	<i>ontevreden</i>, door angst/woede/wanhoop (Fortuin reset elk seizoen naar +0, niet +1; mensen moeten vaker dan anders Overreden worden)
+CK	sp-debility-2	<i>ontevreden</i>, door angst/woede/wanhoop (Fortuin reset elk seizoen naar +0, niet +1; mensen moeten vaker dan anders Overtuigd worden)
 ENDLIST
 H3	Bezienswaardigheden
 LIST	fs-places
@@ -154,7 +154,7 @@ STAT	gold-purses	Beurzen	0	0	999		Gouden beurzen
 STAT	gold-handfuls	Handenvol	0	0	999		Handenvol goud
 STAT	gold-coins	Munten	0	0	999		Gouden munten
 H2	Inwoners van Stonetop
-P	Voeg elke NSC toe die tijdens de kennismaking of in het spel wordt genoemd. Geef ieder een beroep (al is het maar boer of huisvader/huismoeder) en minstens 1 eigenschap.
+P	Voeg elke NSP toe die tijdens de kennismaking of in het spel wordt genoemd. Geef ieder een beroep (al is het maar boer of huisvader/huismoeder) en minstens 1 eigenschap.
 TABLE	res	30
 COL	name	Naam (voornaamwoorden)
 COL	occ	Beroep
@@ -167,11 +167,11 @@ ROW		vroedvrouw
 ENDTABLE
 H3	Namen
 P	Aderyn, Aeronwen, Afanen, Afon, Alun, Andras, Aneirin, Awstin, Bedwyr, Berwyn, Betrys, Braith, Briallen, Bronwen, Bryn, Cadi, Cadoc, Cadwygan, Caron, Cefin, Ceinwen, Ceridwyn, Cerys, Colwyn, Deiniol, Dilwen, Dylis, Eifion, Eirlys, Eluned, Emrys, Enfys, Eurwen, Gaenor, Garet, Gethin, Glyndir, Heledd, Hywel, Ifan, Iorwerth, Iwan, Lewela, Leuca, Linos, Mado, Maldwyn, Malon, Mared, Marged, Martyn, Meirion, Menwen, Mererid, Neirin, Nia, Ofydd, Olwyn, Owain, Padrig, Parry, Pryce, Pryder, Rheinal, Rhisiart, Rhosyn, Rydderch, Sawyl, Siana, Sioned, Talfryn, Tegid, Tiwlip, Tomos, Tudyr, Winifred, Yorath
-H2	NSC-eigenschappen
+H2	NSP-eigenschappen
 P	Wijs toe naar behoefte; kies uit deze lijst of verzin er zelf.
 P	twee linkerhanden, ambitieus, door iedereen geliefd, mooie zangstem, beste kok, beste wever, blind, waagde zich in de Vervallen Toren (Ruined Tower), voorzichtig, opgewekt, chronische hoest, klaagt te veel, laf, hunkert naar erkenning, nieuwsgierig, had jaren geleden een avontuurtje met de Fae, doof, wil wanhopig een kind, stookt de beste whisky, trekt zijn steentje niet bij, dronkaard, adelaarsogen, onverschrokken, vondeling, verzamelt kruiden in het Grote Woud (Great Wood), sluit de beste deals, begaafd verhalenverteller, godvrezend, goed met kinderen, zorgeloos, heeft ruzie met Moerasrand, heeft een goed hart, heeft veel ruggengraat, heeft een zwervend oog, heeft een handje met dieren, heeft Fae-bloed in de aderen, heeft gewoon vreselijk geluk, heeft de moed verloren, heeft geen respect voor ouderen, heeft vreselijke nachtmerries, heeft de meeste kinderen, heeft het hoofd in de wolken, haat het Heuvelvolk (Hillfolk), hoort stemmen, humorloos, smetteloos uiterlijk, jaloers, net getrouwd, houdt zich op de vlakte, kent alle roddels, mank, doet graag pijn, leefde onder het Woudvolk (Forest Folk), verloor al zijn kinderen, liefdesverdriet, houdt van zijn honden, trouwe vriend, knapste, hierheen verhuisd, moet alle huwelijken goedkeuren, stom, niet bang voor diep water, niet bijster slim, oudste, wees, overbezorgd, mooiste, trots, roekeloos, weigert te trouwen, wrokt over zijn lot, rent overal heen, gevoelig, sul, velde veel crinwin, stoïcijns, koppig, lijdt aan toevallen, zweert de Bleke Jager (Pale Hunter) te hebben ontmoet, vertelt de beste grappen, tedere ziel, verzorgt het Paviljoen van de Goden, verzorgt zieken & gewonden, aangeraakt, zeer sterk, wil kinderen, belesen, bereisd, weduwe/weduwnaar, eet alles
 H2	Opmerkelijke buren van Stonetop
-P	Voeg NSC's uit naburige gebieden toe wanneer een playbook dat vraagt, of naar behoefte.
+P	Voeg NSP's uit naburige gebieden toe wanneer een playbook dat vraagt, of naar behoefte.
 TABLE	nb	20
 COL	name	Naam (voornaamwoorden)
 COL	home	Thuis

@@ -119,11 +119,11 @@ C	Een sluw plan
 P	En dan:
 C	Een geslaagde eerste jacht (in detail uitgespeeld)
 P	Wanneer je de <b><i>vereisten vervult</i></b>, voeg „Oerosjacht (vlees, huid, hoorn)" toe aan de Hulpbronnenlijst.
-P	Voortaan, wanneer je <b><i>in de lente de oerosjacht</i></b> <b><i>leidt</i></b>, gooi +Verdediging: <b>op 10+</b> krijg je 1d4 Overschot;
+P	Voortaan, wanneer je <b><i>in de lente de oerosjacht</i></b> <b><i>leidt</i></b>, werp +Verdediging: <b>op 10+</b> krijg je 1d4 Overschot;
 P	<b>op 7-9</b> krijg je 1d4 Overschot maar kies 1 uit de lijst hieronder; <b>op 6-</b> kies 1 uit de lijst hieronder, of kies 2 en krijg 1d4 Overschot.
 B	1d4 van de paarden van het dorp worden kreupel of gedood
 B	Een aantal dorpelingen raakt gewond; de nederzetting markeert <i>uitgedund</i> (nadeel op Uitzenden, Oproepen of De Handen Ineenslaan)
-B	De SL kiest een NSC die bij de jacht was; die wordt gedood
+B	De SL kiest een NSP die bij de jacht was; die wordt gedood
 B	Het Heuvelvolk is op de een of andere manier beledigd
 B	De kudde is zwak; als je volgend jaar jaagt, wordt ze uitgeroeid
 PAGE	157
@@ -153,7 +153,7 @@ P	<b>Vereist</b> 1 van het volgende:
 C	Een bekken waarin de Beek kan samenvloeien, en een manier om het water bergop te laten stromen
 C	Een reeks aquaducten, van de bron van de Beek terug naar Stonetop
 P	Wanneer je de <b><i>vereisten vervult</i></b>, voeg het toe aan de Hulpbronnenlijst en verhoog Fortuin met 1.
-P	Voortaan, <b><i>wanneer de lente uitbreekt en je een</i></b> <b><i>7+ met Fortuin gooit</i></b>, levert de nederzetting 1 Overschot.
+P	Voortaan, <b><i>wanneer de lente uitbreekt en je een</i></b> <b><i>7+ met Fortuin werpt</i></b>, levert de nederzetting 1 Overschot.
 C	<b>KUDDE PAARDEN</b> Stel je voor wat we met een dozijn mooie rossen zouden kunnen.
 P	<b>Vereist</b> al het volgende:
 C	Een plek voor een echte stal en een kraal
@@ -178,7 +178,7 @@ C	Het leven van veel inwoners van Gordins Groeve redden
 C	Iemand van voorbij Moerasrand redden
 C	Een minstreel inhuren om jullie verhalen te vertellen (Waarde 2)
 P	Wanneer je de <b><i>vereisten vervult</i></b>, krijg je de volgende zet:
-P	Wanneer je <b><i>iemand van voorbij Stonetop voor het eerst ontmoet</i></b>, gooi +Fortuin: <b>op 10+</b> zeg je wat ze over jou of Stonetop hebben gehoord, en krijg je voordeel op je volgende zet tegen hen; <b>op 7-9</b> zeg je wat ze hebben gehoord; <b>op 6-</b> bepaalt de SL wat ze hebben gehoord.
+P	Wanneer je <b><i>iemand van voorbij Stonetop voor het eerst ontmoet</i></b>, werp +Fortuin: <b>op 10+</b> zeg je wat ze over jou of Stonetop hebben gehoord, en krijg je voordeel op je volgende zet tegen hen; <b>op 7-9</b> zeg je wat ze hebben gehoord; <b>op 6-</b> bepaalt de SL wat ze hebben gehoord.
 PAGE	158
 H2	Meer verbeteringen van de nederzetting
 P	Bekende, beschikbare verbeteringen die je aan Stonetop kunt aanbrengen. De SL kan in de loop van het spel andere presenteren.
@@ -191,7 +191,7 @@ C	Meubilair, uitrusting en materiaal (Waarde 3)
 C	2 keer De Handen Ineenslaan, telkens 1 seizoen, 1 Overschot en hout/voorraden (Waarde 2)
 C	Een kleine, toegewijde staf (waard, kok, stalknecht enz.)
 P	Wanneer je de <b><i>vereisten vervult</i></b>, verhoog Fortuin met 1. Geef de herberg een naam, voeg haar toe aan de Hulpbronnenlijst én de kaart.
-P	Voortaan, wanneer <b><i>de seizoenen wisselen</i></b>, gooit wie het vriendelijkst is +Fortuin: <b>op 10+</b> stel je de SL 3 vragen over de wijde wereld; <b>op 7-9</b> stel je 1 vraag; <b>op 6-</b> stel je 1 vraag, maar de SL beschrijft een probleem dat van de herberg of haar gasten komt.
+P	Voortaan, wanneer <b><i>de seizoenen wisselen</i></b>, werpt wie het vriendelijkst is +Fortuin: <b>op 10+</b> stel je de SL 3 vragen over de wijde wereld; <b>op 7-9</b> stel je 1 vraag; <b>op 6-</b> stel je 1 vraag, maar de SL beschrijft een probleem dat van de herberg of haar gasten komt.
 P	Eens per seizoen, wanneer je <b><i>1 Overschot uitgeeft en</i></b> <b><i>mensen in de herberg bijeenbrengt</i></b> (om te praten, te vieren, te herstellen), wis je een van de verzwakkingen van de nederzetting.
 HR
 C	<b>MARKT</b> Voor handelaren in de streek is Stonetop hooguit een nagedachte. Dat moeten we veranderen.
@@ -229,7 +229,7 @@ C	Een <i>uitzonderlijke</i> ingenieur/voorman, om een slim stelsel van daken, go
 C	Genoeg leisteen/terracotta om alle gebouwen te dekken en de goten en leidingen te bouwen (Waarde 3)
 C	3 keer De Handen Ineenslaan, telkens 1 seizoen en 1 Overschot
 P	Wanneer je de <b><i>vereisten vervult</i></b>, verhoog Fortuin met 1, voeg „Regenopvang" toe aan de Hulpbronnenlijst.
-P	Voortaan, wanneer <b><i>de zomer komt en je een 7+</i></b> <b><i>met Fortuin gooit</i></b>, levert de nederzetting 1 Overschot.
+P	Voortaan, wanneer <b><i>de zomer komt en je een 7+</i></b> <b><i>met Fortuin werpt</i></b>, levert de nederzetting 1 Overschot.
 PAGE	159
 C	<b>STAANDE WACHT</b> Een paar krijgers in volle dienst zouden ons allemaal veiliger maken, toch?
 P	<b>Vereist</b> al het volgende:
@@ -258,7 +258,7 @@ C	Minstens 4 andere verbeteringen
 C	Een formeel bestuur van een of andere aard
 P	Wanneer je <b><i>alle vereisten afvinkt</i></b>, verander Grootte in <i>stad</i> en Bevolking in +0. Voortaan:
 P	Wanneer je <b><i>Oproept, De Handen Ineenslaat</i></b> of <b><i>Handelt en Ruilt</i></b>, heb je voordeel.
-P	Wanneer <b><i>de seizoenen naar lente of zomer wisselen</i></b>, levert de stad Overschot gelijk aan Bevolking+1. Maar wanneer <b><i>de winter het land grijpt</i></b>, gooi 2d6+Bevolking om Overschot te verbruiken in plaats van 1d4+Bevolking.
+P	Wanneer <b><i>de seizoenen naar lente of zomer wisselen</i></b>, levert de stad Overschot gelijk aan Bevolking+1. Maar wanneer <b><i>de winter het land grijpt</i></b>, werp 2d6+Bevolking om Overschot te verbruiken in plaats van 1d4+Bevolking.
 C	<b>OORLOGSWAPENS</b> Speren zijn prima, maar wat dacht je van bijlen, pikhouwelen, zwaarden?
 P	<b>Vereist</b> óf dit:
 C	Een paar dozijn goede zwaarden, strijdbijlen, knotsen, vlegels, strijdhamers enz. verwerven (Waarde 3)

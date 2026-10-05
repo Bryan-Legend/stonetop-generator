@@ -23,7 +23,7 @@ P	Als je <b><i>de Rechter van een andere nederzetting</i></b> <b><i>om hulp of i
 P	Evenzo ben jij door een eed gebonden hen te steunen.
 P	Je hebt een volière naast je gebruikelijke keuze aan bijzondere bezittingen (vink die nu aan). Als je <b><i>een bericht verstuurt met een afgerichte vogel</i></b>, zoals de Rechters van je orde gewoon zijn, vertelt de SL je of en wanneer je antwoord krijgt, en wat erin staat.
 C	<b>PROFEET</b> ◇◇ De lijn van Rechters is lang geleden verbroken, de Kroniek verloren of in verval geraakt. Aratis heeft je persoonlijk in haar dienst geroepen via dromen, voortekenen en visioenen. Sommigen in het dorp nemen je het gezag dat je je hebt toegeëigend kwalijk.
-P	Als je <b><i>een paar dagen in gesprek gaat met Aratis</i></b> <b><i>over een dreiging voor Stonetop of voor de beschaving als</i></b> <b><i>geheel</i></b>, gooi +WIS: <b>bij 7+</b> openbaart Aratis welke koers je volgens haar moet varen; <b>bij 10+</b> houd je ook 2 Sanctie. Terwijl je <b><i>naar haar bevelen handelt</i></b>, besteed 1 Sanctie om +1 op te tellen bij een worp die je net deed.
+P	Als je <b><i>een paar dagen in gesprek gaat met Aratis</i></b> <b><i>over een dreiging voor Stonetop of voor de beschaving als</i></b> <b><i>geheel</i></b>, werp +WIS: <b>bij 7+</b> openbaart Aratis welke koers je volgens haar moet varen; <b>bij 10+</b> houd je ook 2 Sanctie. Terwijl je <b><i>naar haar bevelen handelt</i></b>, besteed 1 Sanctie om +1 op te tellen bij een worp die je net deed.
 H2	Instinct (Kies er 1)
 C	<b>AMBITIE</b> Je aanzien of invloed vergroten.
 HR
@@ -59,7 +59,7 @@ C	<b>Moerasrand</b>: Briget, Comhall, Elnor, Liadain, Mirdach, Onghus, Somha of 
 C	<b>Lygos of een andere zuidelijke stad</b>: Abrim, Cassander, Despina, Hypatta, Morecai, Nomika, Sofia of Yose
 WRITE	Ik heet...
 PAGE	118
-STATS	{"gloss": "Verdeel deze waarden: +2, +1, +1, +0, +0, -1. Als een zwakte is aangevinkt, gooi je met nadeel.", "die": "d6", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Verdeel deze waarden: +2, +1, +1, +0, +0, -1. Als een zwakte is aangevinkt, werp je met nadeel.", "die": "d6", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	119
 H2	Bijzondere bezittingen
 HR
@@ -110,7 +110,7 @@ P	Als je <b><i>iets aanvalt waarvan je weet dat het</i></b> <b><i>door chaos bes
 HR
 TAKES	3
 C	<b>VERBETERDE WAARDE</b> Elke keer dat je deze zet neemt, verhoog je een van je waarden met 1 (tot maximaal +2).
-C	<b>KENNIS IS MACHT</b> Als je <b><i>10+ gooit om Dingen te Weten</i></b>, krijgen jij of een bondgenoot voordeel op de volgende worp om te handelen naar wat je te weten komt.
+C	<b>KENNIS IS MACHT</b> Als je <b><i>10+ werpt om Dingen te Weten</i></b>, krijgen jij of een bondgenoot voordeel op de volgende worp om te handelen naar wat je te weten komt.
 HR
 C	<b>VELE HANDEN MAKEN LICHT WERK</b> Als je <b><i>bijspringt om een ander personage te helpen dat</i></b> <b><i>net gegooid heeft</i></b>, vertel hoe en vraag de SL wat er verder nodig is of wat de gevolgen zijn. Als je dat aanvaardt, verhoog de worp van je bondgenoot met +1.
 HR
@@ -118,7 +118,7 @@ C2	<b>EEN BUNDEL STOKKEN BREEKT NIET</b>
 P	(Vereist Vele handen maken licht werk)
 P	Als jullie Samen Standhouden, hebben jij en een bondgenoot naar keuze voordeel.
 PAGE	119
-C	<b>DE HAMER EN HET BOEK</b> Als je <b><i>een wezen van bovennatuurlijke chaos slaat</i></b>, gooi +WIS: <b>bij 10+</b> doe je je schade en kies je 1 uit de lijst hieronder; <b>bij 7-9</b> doe je schade en kies je 1, maar stel je je ook bloot aan gevaar of ongewenste aandacht.
+C	<b>DE HAMER EN HET BOEK</b> Als je <b><i>een wezen van bovennatuurlijke chaos slaat</i></b>, werp +WIS: <b>bij 10+</b> doe je je schade en kies je 1 uit de lijst hieronder; <b>bij 7-9</b> doe je schade en kies je 1, maar stel je je ook bloot aan gevaar of ongewenste aandacht.
 B	Doe +1d6 schade
 B	Negeer het pantser of andere verdediging van het wezen
 B	Onderdruk een van zijn onnatuurlijke krachten
@@ -130,7 +130,7 @@ P	(Vereist Waarheid of gevolgen)
 P	Als je <b><i>getuige bent van iemands belofte of</i></b> <b><i>eed</i></b>, mag je voortaan de speler vragen of het personage woord heeft gehouden. Die moet eerlijk antwoorden.
 P	Het personage hoeft niet aanwezig te zijn. Als <b><i>het zijn</i></b> <b><i>woord heeft gebroken</i></b>, krijg je voordeel op alle worpen ertegen tot het zijn fout toegeeft en een passende consequentie ondergaat (jij beslist).
 C	<b>ONBENEVELDE BLIK</b> Als je <b><i>Inzicht Zoekt</i></b>, kun je altijd gratis vragen "Wat hier is verborgen door illusie of magie?", zelfs bij 6-.
-C	<b>BELEZEN</b> Als je <b><i>de bron noemt waarin je over</i></b> <b><i>de zaak in kwestie las</i></b>, gooi dan +WIS in plaats van +INT om Dingen te Weten.
+C	<b>BELEZEN</b> Als je <b><i>de bron noemt waarin je over</i></b> <b><i>de zaak in kwestie las</i></b>, werp dan +WIS in plaats van +INT om Dingen te Weten.
 C	<b>EEN MACHTIGE WAL</b> (Vereist niveau 6+; vervangt Bolwerk) Zolang je <b><i>Paraatheid houdt</i></b> (van Verdedigen), kun je niet van je positie verdreven worden. Ook kun je 1 Paraatheid besteden om de effecten/schade van een aanval die je ondergaat volledig te negeren.
 C	<b>WAPENSTILSTAND</b> (Vereist niveau 6+ en Getuigenis afleggen) Als je <b><i>een vijand benadert om te goeder</i></b> <b><i>trouw te onderhandelen</i></b>, zal die je op zijn minst aanhoren. Zelfs de meest verdorven en woeste vijand stelt geweld uit tot je hebt gezegd wat je wilde zeggen.
 C	<b>VERDOEMEN</b> (Vereist niveau 6+ en Berisping) Als je <b><i>iemand Berispt</i></b>, wordt die getekend met een mystiek brandmerk dat niet verwijderd of verborgen kan worden tot jij het opheft. Elk verstandig wezen dat het merk ziet, herkent de drager als handlanger van de chaos en vloek van de beschaving.

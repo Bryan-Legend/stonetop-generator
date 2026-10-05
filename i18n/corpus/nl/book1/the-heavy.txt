@@ -12,14 +12,14 @@ P	<i>eerlijk. Ze zorgen voor elkaar. Maar soms</i>
 HR
 H2	Achtergrond (Kies er 1)
 C	<b>SHERIFF</b> Je handhaaft de orde in Stonetop en beschermt het tegen dreiging van buitenaf. Misschien is het niets officieels, maar iedereen weet dat je het hoofd koel houdt en het gewicht hebt om je woorden kracht bij te zetten.
-P	Wanneer je <b><i>een bevel of waarschuwing blaft</i></b>, gooi +CHA:
+P	Wanneer je <b><i>een bevel of waarschuwing blaft</i></b>, werp +CHA:
 P	<b>bij 7+</b> moeten zij er 1 kiezen:
 B	Doen wat je zegt
 B	Zich ingraven/dekking zoeken/vluchten
 B	Jou aanvallen
 P	<b>Bij 10+</b> voel je aan welke ze gaan doen en kun je, als je wilt, eerst handelen; doe je dat, dan krijg je voordeel.
 C	<b>BLOEDDOORDRENKT VERLEDEN</b> Je hebt een leven vol geweld achtergelaten, en een naam waarmee moeders hun kinderen bang maakten. Om welke reden ook hebben de mensen van Stonetop je (weer?) opgenomen en behandelen ze je als een van hen.
-P	Wanneer je <b><i>met geweld of dreigementen iemand Overtuigt die</i></b> <b><i>je zwarte reputatie kent</i></b>, kun je +STR gooien in plaats van +CHA. Neem je bovendien de zet Ontzagwekkend, dan kun je +CON gooien in plaats van +CHA.
+P	Wanneer je <b><i>met geweld of dreigementen iemand Overtuigt die</i></b> <b><i>je zwarte reputatie kent</i></b>, kun je +STR werpen in plaats van +CHA. Neem je bovendien de zet Ontzagwekkend, dan kun je +CON werpen in plaats van +CHA.
 P	Wanneer je <b><i>zonder genade of aarzeling vecht om te doden</i></b>, breng je +1d4 schade toe.
 C	<b>DOOR STORM GETEKEND</b> Tor (Regenbrenger, Donderkop, Beestendoder!) heeft je aangeraakt, en je draagt runentekens die lijken op die in de Steen gekerfd. Wanneer verschenen de tekens? Zijn ze een symbool van je kracht, snelheid en moed? Of de bron ervan?
 P	Je begint met het grote arcanum Stormtekens.
@@ -55,7 +55,7 @@ C	<b>De Manmarch</b>: Bathhilde, Clothar, Ganter, Hiltrude, Ludig, Luise, Modd o
 C	<b>Lygos of een andere plek in het zuiden</b>: Arihl, Akios, Bhadur, Seble, Shahnaz, Shay, Tisi of Zubin
 WRITE	Mijn naam is...
 PAGE	114
-STATS	{"gloss": "Verdeel deze scores: +2, +1, +1, +0, +0, -1. Als een aftakeling is aangekruist, gooi je met nadeel.", "die": "d10", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Verdeel deze scores: +2, +1, +1, +0, +0, -1. Als een gebrek is aangekruist, werp je met nadeel.", "die": "d10", "hp": "HP (max 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	115
 H2	Bijzondere bezittingen (Kies er 2)
 HR
@@ -76,16 +76,16 @@ P	Je begint met Gevaarlijk, Taai, en ofwel Gepantserd OF Onnatuurlijke Reflexen.
 HR
 C	 <b>GEPANTSERD</b> Wanneer je <b><i>een schild draagt</i></b>, kruis je alleen ◇ aan (in plaats van ◇◇). Ook kun je de tag <i>log</i> negeren op elk harnas dat je draagt.
 P	Neem je deze zet bij aanvang van het spel, voeg dan een ◇◇ ijzeren maliënkolder, ◇◇ bronzen kuras of ◇◇ schubbenpantser aan je inventaris toe (allemaal 2 pantser, <i>warm</i>, <i>log</i>).
-C	<b>STRIJDROES</b> Wanneer je <b><i>bloed vergiet — van jezelf of een ander — en</i></b> <b><i>jezelf verliest in de strijd</i></b>, negeer je angst, pijn, gedachtenbeheersing en de effecten van aftakelingen, zolang je blijft vechten.
-P	Wanneer <b><i>de actie stopt</i></b>, gooi +CON: <b>bij 10+</b> was dat een kick, herwin 1d4 HP; <b>bij 7-9</b> ben je buiten adem en van de kaart, maar na een paar minuten rust gaat het weer; <b>bij 6-</b> kruis je een aftakeling aan, maar kruis geen XP aan.
+C	<b>STRIJDROES</b> Wanneer je <b><i>bloed vergiet — van jezelf of een ander — en</i></b> <b><i>jezelf verliest in de strijd</i></b>, negeer je angst, pijn, gedachtenbeheersing en de effecten van gebreken, zolang je blijft vechten.
+P	Wanneer <b><i>de actie stopt</i></b>, werp +CON: <b>bij 10+</b> was dat een kick, herwin 1d4 HP; <b>bij 7-9</b> ben je buiten adem en van de kaart, maar na een paar minuten rust gaat het weer; <b>bij 6-</b> kruis je een gebrek aan, maar kruis geen XP aan.
 C2	<b>BERSERKER</b>
 P	(Vereist Strijdroes)
-P	Zolang <b><i>je in je Strijdroes bent</i></b>, krijgen je aanvallen van dichtbij de tag <i>gebied</i> en haal je uit naar iedereen in de buurt (vriend en vijand). Gooi schade apart voor elk doelwit.
+P	Zolang <b><i>je in je Strijdroes bent</i></b>, krijgen je aanvallen van dichtbij de tag <i>gebied</i> en haal je uit naar iedereen in de buurt (vriend en vijand). Werp schade apart voor elk doelwit.
 C	<b>UIT HOUT GESNEDEN</b> Verhoog je maximale HP met 4.
 CX	<b>GEVAARLIJK</b>
 P	(Vereist De Krachtpatser)
 P	Wanneer je <b><i>je schade toebrengt</i></b>, heb je voordeel.
-C	<b>ONTZAGWEKKEND</b> Wanneer je <b><i>de strijd in waadt</i></b>, kun je +CHA gooien: <b>bij 10+</b> beide; <b>bij 7-9</b> kies er 1:
+C	<b>ONTZAGWEKKEND</b> Wanneer je <b><i>de strijd in waadt</i></b>, kun je +CHA werpen: <b>bij 10+</b> beide; <b>bij 7-9</b> kies er 1:
 B	Mindere vijanden sidderen, aarzelen of vluchten voor je.
 B	Dappere vijanden richten zich op jou en zien jou als de grootste dreiging.
 P	<b>Bij 6-</b> kies er 1, maar vraag de SL wat je over het hoofd hebt gezien.
@@ -98,12 +98,12 @@ HR
 C	<b>INTIMIDEREND</b> Wanneer je <b><i>Overtuigt met geweld of dreigementen</i></b>, heb je voordeel.
 HR
 CX	<b>TAAI</b>
-P	Wanneer je <b><i>Op de Drempel van de Dood staat,</i></b> kun je +CON of +niets gooien (jouw keuze). <b>Bij 7-9</b> kun je een aftakeling naar keuze aankruisen om 1 HP te herwinnen.
+P	Wanneer je <b><i>Op de Drempel van de Dood staat,</i></b> kun je +CON of +niets werpen (jouw keuze). <b>Bij 7-9</b> kun je een gebrek naar keuze aankruisen om 1 HP te herwinnen.
 HR
 C2	<b>ONSTUITBAAR</b> ◇◇◇◇◇
 P	(Vereist Taai)
 P	Wanneer je <b><i>in de strijd tot 0 HP wordt teruggebracht</i></b>, kun je doorvechten. Telkens als je bij 0 HP schade oploopt, kruis je er 1 aan. Zou je tijdens het vechten HP herwinnen, wis dan in plaats daarvan één markering.
-P	Wanneer je <b><i>stopt met vechten</i></b>, gooi dan voor Op de Drempel van de Dood met -1 voor elk aangekruist rondje. Overleef je het, wis dan al je rondjes.
+P	Wanneer je <b><i>stopt met vechten</i></b>, werp dan voor Op de Drempel van de Dood met -1 voor elk aangekruist rondje. Overleef je het, wis dan al je rondjes.
 HR
 C	<b>SPIERBUNDEL</b> (Vereist Kracht +2 of hoger) Wanneer je <b><i>een aanval van dichtbij of een werpaanval doet</i></b>, is die <i>krachtig</i> en <i>smerig</i>. Zou die al <i>krachtig</i> en/of <i>smerig</i> zijn, dan is hij dat nog meer.
 PAGE	115
@@ -117,14 +117,14 @@ Q	Wat is de ware positie van mijn vijand?
 Q	Wat kan ik hier als wapen gebruiken?
 P	Wanneer <b><i>er een gevecht uitbreekt</i></b>, stel je de SL 1 vraag die je bij Inzicht Zoeken zou kunnen stellen.
 C	<b>ONNATUURLIJKE REFLEXEN</b> Wanneer je <b><i>geen harnas draagt en een normale of</i></b> <b><i>lichte last draagt</i></b>, leg je nadeel op aan alle schade die je zou kunnen ontwijken of opvangen.
-C	<b>ONGEBONDEN</b> Wanneer je <b><i>lichamelijk of geestelijk in bedwang wordt gehouden</i></b>, kun je een aftakeling aankruisen om je daar meteen uit los te breken.
+C	<b>ONGEBONDEN</b> Wanneer je <b><i>lichamelijk of geestelijk in bedwang wordt gehouden</i></b>, kun je een gebrek aankruisen om je daar meteen uit los te breken.
 C	<b>SCHRIK VAN HET SLAGVELD</b> Wanneer je <b><i>een vijand tot 0 HP terugbrengt</i></b>, beschrijf je hoe je hem uitschakelt. Vel je hem op een bijzonder brute of indrukwekkende manier, dan zijn zijn bondgenoten onder de indruk, ontzet of bang, en reageren ze daarnaar.
-C	<b>BRENGER VAN VERDERF</b> (Vereist niveau 6+) Wanneer je <b><i>12+ gooit om De Degens te Kruisen en je vijand overleeft</i></b>, noem je iets wat hij bezit (zoals zijn zwaard, zijn positie, een ledemaat, zijn waardigheid, enz.), maar niets wat hem meteen zou doden. Wat je ook noemt, het is gebroken, verbrijzeld, verloren. Vertel ons hoe.
+C	<b>BRENGER VAN VERDERF</b> (Vereist niveau 6+) Wanneer je <b><i>12+ werpt om De Degens te Kruisen en je vijand overleeft</i></b>, noem je iets wat hij bezit (zoals zijn zwaard, zijn positie, een ledemaat, zijn waardigheid, enz.), maar niets wat hem meteen zou doden. Wat je ook noemt, het is gebroken, verbrijzeld, verloren. Vertel ons hoe.
 C	<b>UIT GRANIET GEHOUWEN</b> (Vereist niveau 6+ en Uit Hout Gesneden) Krijg +1 pantser (telt op bij andere bronnen) en verhoog je maximale HP met nog eens 2 (+6 HP in totaal).
 C	<b>MACHTIGE SPIEREN</b> (Vereist niveau 6+ en Spierbundel) Wanneer je <b><i>een staaltje buitengewone kracht levert</i></b> (kettingen breken, door een muur beuken, een rotsblok opheffen, enz.), lukt het (O JA!), maar kies er 1:
 B	Het duurt even
 B	Je veroorzaakt ongewenste schade of letsel
-B	Het eist zijn tol (kruis een aftakeling aan)
+B	Het eist zijn tol (kruis een gebrek aan)
 C	<b>NEMESIS</b> (Vereist niveau 6+ en Meedogenloos) Wanneer je <b><i>De Degens Kruist en je vijand overleeft</i></b>, doen al je toekomstige aanvallen tegen hem +1d6 schade.
 C	<b>STANDVASTIGE BESCHERMER</b> (Vereist niveau 6+ en Beschermer) Zolang je <b><i>Paraatheid (van Verdedigen) houdt</i></b>, kun je altijd de schade/effecten van een aanval ondergaan in plaats van degene die je beschermt; je hoeft geen Paraatheid te besteden, je doet het gewoon.
 C	<b>STEENKOUD</b> (Vereist niveau 6+ en IJskoud) Wanneer je <b><i>Gevaar Trotseert (of Samen Standhoudt) door</i></b> <b><i>kalm te blijven en gewoon door te gaan</i></b>, behandel je een 6- als een 7-9.

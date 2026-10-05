@@ -9,16 +9,16 @@ PAGE	109
 P	<i>De ouderen vertellen een verhaal over Vos, die heel veel trucs kent, en Egel, die er maar één kent: hoe</i> <i>hij zich tot een bal oprolt als er gevaar dreigt. Vos kan Egel niet opeten als hij opgerold is, dus in het verhaal</i> <i>blijft Vos hongerig. Maar jij bent die Vos niet, en dit is geen verhaal. Wil je die Egel? Pak een mes.</i>
 HR
 H2	Achtergrond (Kies er 1)
-C	<b>HET NATUURTALENT</b> Je groeide hier in de buurt op en pikte altijd alles snel op. Lezen en rekenen, zeker, maar meer dan dat. Verstoppertje. Stenen gooien. Klimmen. Vechten. Wat je ook probeerde, je was er goed in. Net zo goed als ieder ander, zo niet beter.
+C	<b>HET NATUURTALENT</b> Je groeide hier in de buurt op en pikte altijd alles snel op. Lezen en rekenen, zeker, maar meer dan dat. Verstoppertje. Stenen werpen. Klimmen. Vechten. Wat je ook probeerde, je was er goed in. Net zo goed als ieder ander, zo niet beter.
 P	Ja, je staat erom bekend dat je de regels wat oprekt.
 P	Vals spelen. Maar waarom zou je spelen als je niet speelt om te winnen? En bij wie komen ze als er een probleem opgelost moet worden? Bij jou, precies.
-P	Wanneer je <b><i>Inzicht Zoekt</i></b>, mag je +INT gooien in plaats van +WIS en voeg je "Welke kans ziet niemand anders?" toe aan de lijst met mogelijke vragen.
+P	Wanneer je <b><i>Inzicht Zoekt</i></b>, mag je +INT werpen in plaats van +WIS en voeg je "Welke kans ziet niemand anders?" toe aan de lijst met mogelijke vragen.
 C	<b>EEN LEVEN VAN MISDAAD</b> Je bent nieuw in Stonetop en hebt een... <i>kleurrijk</i> verleden achter je gelaten. Hoe ben je in dat leven beland? Waarom en hoe ben je eruit gekomen? Wie en wat heb je achtergelaten?
 P	Hoe dan ook, deze mensen hebben je opgenomen. Tijd voor een eerlijk leven, toch?
 P	Je begint met Inbreken of Lange Vingers (naar keuze) als extra zet, en met inbrekersgereedschap of een verborgen voorraad (naar keuze) als extra bijzondere bezitting. Kruis ze nu aan.
 C	<b>DE VERLOREN ZOON KEERT TERUG</b> Je vertrok lang geleden, reisde ver en leefde van je verstand. Waarom ben je vertrokken? Op welke daden laat je je voorstaan, en van welke heb je spijt?
 P	Je verlangde altijd terug naar Stonetop, en nu ben je terug. Je bent inmiddels een soort beroemdheid, en je hebt vrienden (of zoiets) verspreid over de hele bekende wereld.
-P	Wanneer je <b><i>verklaart dat je iemand kent buiten</i></b> <b><i>Stonetop</i></b>, iemand die kan helpen, noem hem en gooi +CHA: <b>bij 10+</b> ja, hij kan helpen (vertel waarom hij daartoe bereid is); <b>bij 7-9</b> kan hij helpen, maar kies 1 uit de lijst hieronder; <b>bij 6-</b> kiest de SL er 1 en nog wat meer.
+P	Wanneer je <b><i>verklaart dat je iemand kent buiten</i></b> <b><i>Stonetop</i></b>, iemand die kan helpen, noem hem en werp +CHA: <b>bij 10+</b> ja, hij kan helpen (vertel waarom hij daartoe bereid is); <b>bij 7-9</b> kan hij helpen, maar kies 1 uit de lijst hieronder; <b>bij 6-</b> kiest de SL er 1 en nog wat meer.
 B	Hij koestert nog steeds wrok
 B	Hij heeft eerst iets van jou nodig
 B	Hij heeft dit soort dingen lang geleden afgezworen
@@ -57,7 +57,7 @@ C	<b>Moerasrand</b>: Comyna, Crevan, Fitz, Greagir, Maired, Nainsi, Naiclas of S
 C	<b>Lygos of een andere plek in het zuiden</b>: Amit, Baz, Dafna, Mahsa, Parviz, Sanaz, Tzofiya, Yaniv
 WRITE	Mijn naam is...
 PAGE	110
-STATS	{"gloss": "Verdeel deze scores: +2, +1, +1, +0, +0, -1. Als een aftakeling is aangekruist, gooi je met nadeel.", "die": "d8", "hp": "HP (max 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Verdeel deze scores: +2, +1, +1, +0, +0, -1. Als een gebrek is aangekruist, werp je met nadeel.", "die": "d8", "hp": "HP (max 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	111
 H2	Bijzondere bezittingen (Kies er 2)
 HR
@@ -76,12 +76,12 @@ HR
 P	Je begint met Hinderlaag OF Wapenkunde; Gevaarzin OF Scherpzinnig; en 1 naar keuze.
 HR
 C	<b>ALLES ZIT IN DE POLS</b> ◇ <i>nog een paar</i> ◇ <i>op</i> Elk mes of elke dolk krijgt in jouw handen de tag <i>werp</i>. Ook draag je een paar ijzeren werpmessen (<i>nabij</i>) bij je; ze nemen geen ruimte in je inventaris in. Vul je munitie aan telkens als je Je Uitrust.
-C	<b>HINDERLAAG</b> Wanneer je <b><i>een nabije vijand overrompelt</i></b>, kun je je schade toebrengen of ervoor kiezen +DEX te gooien: <b>bij 10+</b> breng je je schade toe en kies je er 2; <b>bij 7-9</b> breng je schade toe en kies je er 1:
+C	<b>HINDERLAAG</b> Wanneer je <b><i>een nabije vijand overrompelt</i></b>, kun je je schade toebrengen of ervoor kiezen +DEX te werpen: <b>bij 10+</b> breng je je schade toe en kies je er 2; <b>bij 7-9</b> breng je schade toe en kies je er 1:
 B	Breng +1d4 schade toe
 B	Voorkom dat hij geluid maakt/alarm slaat
 B	Glip weg voordat hij kan reageren
 B	Creëer een kans; jij of een bondgenoot krijgt voordeel op de volgende zet die daarop inspeelt
-C	<b>INBREKEN</b> Wanneer je <b><i>in je eentje een gevaarlijke plek</i></b> <b><i>binnensluipt</i></b>, gooi +INT: <b>bij 7+</b> kom je terug, en de SL vertelt waar je bent geweest en wat je te weten kwam.
+C	<b>INBREKEN</b> Wanneer je <b><i>in je eentje een gevaarlijke plek</i></b> <b><i>binnensluipt</i></b>, werp +INT: <b>bij 7+</b> kom je terug, en de SL vertelt waar je bent geweest en wat je te weten kwam.
 P	Kies daarna <b>bij 10+</b> ook 2; <b>bij 7-9</b> ook 1:
 B	Je kwam er schoon vanaf, zonder argwaan te wekken
 B	Je hebt iets waardevols gejat (keuze van de SL)
@@ -91,7 +91,7 @@ P	<b>Bij 6-</b> kom je ofwel terug maar met problemen op je hielen, ofwel ben je
 C	<b>ALS EEN KAT</b> Wanneer je <b><i>een lichte last draagt en behoedzaam handelt</i></b>, beweeg je geruisloos. Wanneer je <b><i>je in schaduw of duisternis verbergt</i></b>, blijf je ongezien tot je de aandacht op jezelf vestigt, van positie verandert of aanvalt.
 TAKES	3
 C	<b>DUIZENDPOOT</b> (Vereist niveau 2+ en De Vos) Telkens als je deze zet neemt, kies je een zet uit het playbook van De Krachtpatser, De Maarschalk, De Woudloper of De Zoeker waarvoor je verder in aanmerking komt. (Je kunt Verbeterde Waarde of Superieure Waarde niet kiezen.)
-C	<b>GEVAARZIN</b> Je kunt de SL altijd vragen: "Is hier een hinderlaag of val?" Als het antwoord "ja" is, gooi +INT: <b>bij 10+</b> stel je de SL beide vragen hieronder; <b>bij 7-9</b> stel je er 1; <b>hoe dan ook</b> krijg je voordeel op je volgende worp om op het antwoord (de antwoorden) in te spelen.
+C	<b>GEVAARZIN</b> Je kunt de SL altijd vragen: "Is hier een hinderlaag of val?" Als het antwoord "ja" is, werp +INT: <b>bij 10+</b> stel je de SL beide vragen hieronder; <b>bij 7-9</b> stel je er 1; <b>hoe dan ook</b> krijg je voordeel op je volgende worp om op het antwoord (de antwoorden) in te spelen.
 Q	Wat zal de hinderlaag of val in werking stellen?
 Q	Wat gebeurt er zodra die in werking treedt?
 P	<b>Bij 6-</b> kruis je geen XP aan; je weet dat er een val of hinderlaag is, maar er gebeurt voorlopig nog niets ergs.
@@ -100,19 +100,19 @@ TAKES	3
 C	<b>VERBETERDE WAARDE</b> Telkens als je deze zet neemt, verhoog je een van je waarden met 1 (tot maximaal +2).
 C	<b>ONWEERSTAANBAAR</b> Wanneer je <b><i>met iemand omgaat</i></b>, kun je diens speler vragen of hij je aantrekkelijk vindt en krijg je een eerlijk antwoord (meestal "ja").
 P	Wanneer je <b><i>Overtuigt door je aanzienlijke</i></b> <b><i>charmes als drukmiddel te gebruiken</i></b>, heb je voordeel.
-C	<b>LACHEN OM GEVAAR</b> Wanneer je <b><i>op het punt staat +CON te gooien en een</i></b> <b><i>grap maakt over de tegenspoed waar je voor staat</i></b>, kun je in plaats daarvan +CHA gooien.
-C	<b>LANGE VINGERS</b> Wanneer je <b><i>goochelt met je handen bij een nietsvermoedend</i></b> <b><i>slachtoffer</i></b>, lukt het en merkt niemand iets. Als je wordt bekeken, gooi +DEX: <b>bij 10+</b> lukt het en merkt niemand iets; <b>bij 7-9</b> lukt het OF merkt niemand iets (jij kiest).
+C	<b>LACHEN OM GEVAAR</b> Wanneer je <b><i>op het punt staat +CON te werpen en een</i></b> <b><i>grap maakt over de tegenspoed waar je voor staat</i></b>, kun je in plaats daarvan +CHA werpen.
+C	<b>LANGE VINGERS</b> Wanneer je <b><i>goochelt met je handen bij een nietsvermoedend</i></b> <b><i>slachtoffer</i></b>, lukt het en merkt niemand iets. Als je wordt bekeken, werp +DEX: <b>bij 10+</b> lukt het en merkt niemand iets; <b>bij 7-9</b> lukt het OF merkt niemand iets (jij kiest).
 PAGE	111
 C	<b>SCHERPZINNIG</b> Wanneer je <b><i>Inzicht Zoekt</i></b>, mag je 1 extra vraag stellen. Zelfs bij 6- mag je 1 vraag stellen (al vind je het misschien niet leuk hoe je het antwoord te weten komt).
 C	<b>VLIJMSCHERPE HUMOR</b> Wanneer je <b><i>de trots van een NSP doorprikt met een raak</i></b> <b><i>grapje</i></b>, moet hij 1 doen (zijn keuze):
 B	Aanvallen, met +1d4 schade als hij raakt, maar jij krijgt voordeel op je volgende worp tegen hem
 B	Zich tot jouw niveau verlagen en met gelijke munt terugbetalen
 B	Een paar momenten koken, sputteren of zijn humeur proberen te beheersen
-C	<b>WAPENKUNDE</b> Wanneer je <b><i>een wapen snel en sierlijk hanteert</i></b>, gooi je +DEX om De Degens te Kruisen (in plaats van +STR).
+C	<b>WAPENKUNDE</b> Wanneer je <b><i>een wapen snel en sierlijk hanteert</i></b>, werp je +DEX om De Degens te Kruisen (in plaats van +STR).
 C2	<b>PAREREN & RIPOSTE</b>
 P	(Vereist Wapenkunde)
 P	Wanneer je <b><i>Verdedigt met een wapen dat je</i></b> <b><i>snel kunt hanteren</i></b>, kun je 1 Paraatheid besteden om zowel de effecten/schade van een aanval te halveren als de aanvaller terug te slaan (breng je schade toe met nadeel), in plaats van voor elk 1 Paraatheid te besteden.
-C	<b>GLADDE PRAATJES</b> ◇◇◇ Wanneer je <b><i>met woorden argwaan of problemen ontloopt</i></b>, gooi +CHA: <b>bij 10+</b> houd 3 Lef; <b>bij 7-9</b> houd 1 Lef. Je kunt Lef besteden, 1-op-1, om:
+C	<b>GLADDE PRAATJES</b> ◇◇◇ Wanneer je <b><i>met woorden argwaan of problemen ontloopt</i></b>, werp +CHA: <b>bij 10+</b> houd 3 Lef; <b>bij 7-9</b> houd 1 Lef. Je kunt Lef besteden, 1-op-1, om:
 B	Je onbelemmerd te verplaatsen of te manoeuvreren
 B	Directe controle of ondervraging te doorstaan
 B	Argwaan of aandacht elders heen te leiden
@@ -120,14 +120,14 @@ C	<b>ONDER JE HUID</b> Wanneer je <b><i>een NSP in gesprek neemt</i></b>, kun je
 Q	Wat verwacht hij dat ik ga doen?
 Q	Wat probeert hij, in grote lijnen, te verbergen?
 Q	Wat wil hij dat er gebeurt?
-C	<b>STRIJDDANSER</b> (Vereist niveau 6+ en Wapenkunde) Wanneer je <b><i>+DEX gooit om De Degens te Kruisen</i></b>, breng je <b>bij 12+</b> je schade toe, ontwijk je de aanval van je vijand en maak je indruk op/schaam je/overdonder je je tegenstanders.
+C	<b>STRIJDDANSER</b> (Vereist niveau 6+ en Wapenkunde) Wanneer je <b><i>+DEX werpt om De Degens te Kruisen</i></b>, breng je <b>bij 12+</b> je schade toe, ontwijk je de aanval van je vijand en maak je indruk op/schaam je/overdonder je je tegenstanders.
 C	<b>GEMENE STOOT</b> (Vereist niveau 6+ en Hinderlaag) Wanneer je <b><i>een Hinderlaag legt met een</i></b> <b>hand</b><b><i>wapen</i></b>, heb je voordeel op je schadeworp.
-C	<b>OOG OP DE DEUR</b> (Vereist niveau 6+) Wanneer <b><i>jij en je bondgenoten hier weg moeten</i></b>, noem je vluchtroute en gooi +INT: <b>bij 10+</b> ben je weg; <b>bij 7-9</b> kun je blijven of gaan, maar als je gaat, kost het je iets — de SL vertelt wat (of wie) je achterlaat of meeneemt.
+C	<b>OOG OP DE DEUR</b> (Vereist niveau 6+) Wanneer <b><i>jij en je bondgenoten hier weg moeten</i></b>, noem je vluchtroute en werp +INT: <b>bij 10+</b> ben je weg; <b>bij 7-9</b> kun je blijven of gaan, maar als je gaat, kost het je iets — de SL vertelt wat (of wie) je achterlaat of meeneemt.
 C	<b>LEUGENAAR, LEUGENAAR</b> (Vereist niveau 6+) Wanneer je <b><i>Gevaar Trotseert, Overtuigt of Hindert door</i></b> <b><i>bedrieglijk te zijn</i></b>, heb je voordeel.
 P	Wanneer een andere zet (zoals Inzicht Zoeken) een speler toestaat jou een vraag te stellen, kun je ervoor kiezen niet te antwoorden.
 C	<b>TWEEDE OOGMERK</b> (Vereist niveau 6+, Pareren & Riposte en Hinderlaag) Wanneer je <b><i>Verdedigt en 1 Paraatheid besteedt aan Pareren</i></b>
 P	<b><i>& Riposte</i></b>, kies je ook 1 optie uit de lijst van Hinderlaag.
-C	<b>GLAD ALS EEN AAL</b> (Vereist niveau 6+) Wanneer je <b><i>gooit om te ontsnappen aan gevangenname of beheersing</i></b>, behandel je een 6- als een 7-9. Bij 12+ vertel je hoe je de rollen omdraait of de omstandigheden in je voordeel gebruikt.
+C	<b>GLAD ALS EEN AAL</b> (Vereist niveau 6+) Wanneer je <b><i>werpt om te ontsnappen aan gevangenname of beheersing</i></b>, behandel je een 6- als een 7-9. Bij 12+ vertel je hoe je de rollen omdraait of de omstandigheden in je voordeel gebruikt.
 C	<b>SUPERIEURE WAARDE</b> (Vereist niveau 6+) Verhoog een van je waarden met +1 (tot maximaal +3).
 PAGE	112
 H2	Sterke verhalen

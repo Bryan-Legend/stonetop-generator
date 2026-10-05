@@ -152,6 +152,12 @@
     "book1": "Boek I — Stonetop",
     "book2": "Boek II — De wijdere wereld"
   },
+  "page_words": [
+    "pagina",
+    "pagina's",
+    "p.",
+    "blz."
+  ],
   "bestiary": {
     "title": "Bestiarium",
     "lede": "Elk statblok uit beide boeken, van A tot Z – {n} in totaal. Beweeg over een naam om het hele blok te zien; klik om erheen te gaan.",

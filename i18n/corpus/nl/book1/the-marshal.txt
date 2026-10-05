@@ -13,7 +13,7 @@ C	<b>TELG</b> Je bent hier opgegroeid, als afstammeling van een lang geslacht. E
 P	Je begint met de zet Veteranenploeg, naast je gebruikelijke zetten. Kruis hem nu aan.
 P	Wanneer je <b><i>je Ploeg creëert</i></b>, krijgt die automatisch het kenmerk <i>gerespecteerd</i> (naast je gebruikelijke keuzes en eventuele kenmerken uit Veteranenploeg).
 C	<b>BOETELING</b> Voordat je hier kwam, leidde je een bende nietsnutten: bandieten, plunderaars of huurlingen met bloed aan hun handen. Maar er veranderde iets. Een moment van waarheid bracht jou en je volgelingen – in elk geval sommigen – ertoe dat leven achter je te laten. En om wat voor reden ook namen de mensen van Stonetop jullie op.
-P	Wanneer je <b><i>put uit je bloedige verleden om Dingen te Weten</i></b>, mag je +STR gooien in plaats van +INT. Doe je dat, dan vraagt de SL je wie je destijds onrecht hebt aangedaan of wie nog wrok zou kunnen koesteren. Beantwoord dat nu.
+P	Wanneer je <b><i>put uit je bloedige verleden om Dingen te Weten</i></b>, mag je +STR werpen in plaats van +INT. Doe je dat, dan vraagt de SL je wie je destijds onrecht hebt aangedaan of wie nog wrok zou kunnen koesteren. Beantwoord dat nu.
 P	Wanneer je <b><i>je Ploeg creëert</i></b>, krijgt die automatisch het kenmerk <i>krijgers</i> (naast je gebruikelijke keuzes).
 C	<b>LICHTEND VOORBEELD</b> Je bent een geboren leider – je woorden inspireren, je plannen beslissen de dag, je daden worden wijd en zijd verteld. Ben je aangeraakt door de goden? Stroomt er oud bloed door je aderen? Of ben je gewoon de kampioen die Stonetop in deze zware tijden nodig heeft?
 P	Je begint met de zet Wij Gelukkige Weinigen, naast je gebruikelijke zetten. Kruis hem nu aan.
@@ -53,7 +53,7 @@ C	<b>De Manmarch</b>: Berkhard, Gerhild, Hartig, Hilde, Sabrinne, Ulrike, Urrsla
 C	<b>Lygos of een ander punt in het zuiden</b>: Ameer, Calixta, Hadar, Kelila, Sulaim, Ursa of Xandros
 WRITE	Ik heet...
 PAGE	126
-STATS	{"gloss": "Verdeel deze waarden: +2, +1, +1, +0, +0, -1. Als een zwakte is aangekruist, gooi je met nadeel.", "die": "d8", "hp": "HP (max. 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Verdeel deze waarden: +2, +1, +1, +0, +0, -1. Als een zwakte is aangekruist, werp je met nadeel.", "die": "d8", "hp": "HP (max. 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	127
 H2	Bijzondere bezittingen (Kies er 2)
 HR
@@ -98,9 +98,9 @@ Q	Wat is hier niet op zijn plaats?
 C2	<b>EEN WARM ONTHAAL</b> ◇◇
 P	(Vereist Het Land Lezen)
 P	Wanneer je <b><i>je bondgenoten een positie laat versterken en</i></b> <b><i>op de strijd laat wachten</i></b>, houd je 1 Verrassing als je haast hebt of 2 Verrassingen als je de tijd kunt nemen.
-P	Zodra de strijd is losgebarsten, besteed je 1 Verrassing om een list, verdediging of vuile truc te onthullen die je vooraf hebt voorbereid en gooi je +INT: <b>bij 10+</b> werkt het zo goed als je mocht verwachten, en je hebt nog wat trucs achter de hand – krijg 1 Verrassing terug; <b>bij 7-9</b> werkt het zo goed als je mocht verwachten.
-C	<b>VOORZET</b> Wanneer je <b><i>De Degens Kruist en 7+ gooit</i></b>, mag je ervoor kiezen schade met nadeel toe te brengen. Doe je dat, dan creëer je een opening voor een bondgenoot, alsof je Hulp gaf. Beschrijf het!
-C	<b>VERMAN JE</b> Wanneer je <b><i>een bondgenoot beveelt angst, pijn,</i></b> <b><i>twijfel of waan te overwinnen</i></b>, gooi +CHA: <b>bij 10+</b> doet die het;
+P	Zodra de strijd is losgebarsten, besteed je 1 Verrassing om een list, verdediging of vuile truc te onthullen die je vooraf hebt voorbereid en werp je +INT: <b>bij 10+</b> werkt het zo goed als je mocht verwachten, en je hebt nog wat trucs achter de hand – krijg 1 Verrassing terug; <b>bij 7-9</b> werkt het zo goed als je mocht verwachten.
+C	<b>VOORZET</b> Wanneer je <b><i>De Degens Kruist en 7+ werpt</i></b>, mag je ervoor kiezen schade met nadeel toe te brengen. Doe je dat, dan creëer je een opening voor een bondgenoot, alsof je Hulp gaf. Beschrijf het!
+C	<b>VERMAN JE</b> Wanneer je <b><i>een bondgenoot beveelt angst, pijn,</i></b> <b><i>twijfel of waan te overwinnen</i></b>, werp +CHA: <b>bij 10+</b> doet die het;
 P	<b>bij 7-9</b> krijgt een SP voordeel om het te doen; een NSP doet het, maar heeft tijd nodig, neemt het je kwalijk of voelt zich vernederd (de SL beslist).
 C	<b>SCHILDMUUR</b> Wanneer je <b><i>je ploeg een schildmuur laat vormen</i></b>, Verdedigt die met voordeel en houdt <b>bij 7+</b> +2 Paraatheid (in plaats van de gebruikelijke +1 voor schilden). <b><i>Zolang</i></b> <b><i>ze de formatie aanhouden</i></b>, kunnen ze in de aanval gaan zonder Paraatheid te verliezen.
 PAGE	127
@@ -108,13 +108,13 @@ C	<b>SIR, PERMISSIE OM TE STERVEN, SIR</b> Wanneer <b><i>een van je volgelingen 
 C	<b>ZACHTE WOORDEN</b> Wanneer je <b><i>vrede aanbiedt maar je vijand weigert</i></b>, krijg je voordeel op je volgende worp tegen die vijand.
 C	<b>STENTORSTEM</b> ◇◇ Wanneer je <b><i>je stem verheft</i></b>, draagt die ver en klinkt zelfs boven het strijdgewoel uit. Wanneer je <b><i>ten</i></b> <b><i>strijde trekt</i></b>, houd je 2 Bevel. Besteed 1 Bevel om een order of waarschuwing te roepen en kies 1:
 B	SP's krijgen voordeel op hun volgende worp om te doen wat je zegt
-B	Je hebt voordeel om Volgelingen Aan te Sturen of Uit te Zenden
+B	Je hebt voordeel om Volgelingen te Bevelen of Uit te Zenden
 C	<b>DE MAAT NEMEN</b> Wanneer je <b><i>iemand opneemt</i></b>, stel diens speler een van de vragen hieronder en krijg een eerlijk antwoord. Als diegene <b><i>je vreest of respecteert</i></b> (hun keuze), mag je nog een vraag stellen. Je kunt deze zet niet opnieuw op hen gebruiken tot jullie relatie wezenlijk verandert.
 Q	Kan ik op hen vertrouwen (om ______ )?
 Q	Wat zijn ze van plan?
 Q	Waarin zijn ze het nuttigst/gevaarlijkst?
 Q	Welke zwakte van hen kan ik uitbuiten?
-C	<b>WIJ GELUKKIGE WEINIGEN</b> Wanneer je <b><i>je bondgenoten een bezielende toespraak geeft</i></b> <b><i>voordat jullie een ernstige dreiging tegemoet treden</i></b>, gooi +CHA: <b>bij 10+</b> houdt elke bondgenoot 2 Inspiratie; <b>bij 7-9</b> houdt elke bondgenoot 1 Inspiratie; <b>bij 6-</b> houdt elke bondgenoot 1, maar heb jij nadeel op alle worpen tot je je knagende twijfels met iemand anders deelt.
+C	<b>WIJ GELUKKIGE WEINIGEN</b> Wanneer je <b><i>je bondgenoten een bezielende toespraak geeft</i></b> <b><i>voordat jullie een ernstige dreiging tegemoet treden</i></b>, werp +CHA: <b>bij 10+</b> houdt elke bondgenoot 2 Inspiratie; <b>bij 7-9</b> houdt elke bondgenoot 1 Inspiratie; <b>bij 6-</b> houdt elke bondgenoot 1, maar heb jij nadeel op alle worpen tot je je knagende twijfels met iemand anders deelt.
 P	Zodra de strijd is losgebarsten, kunnen je bondgenoten hun
 P	Inspiratie op elk moment 1 voor 1 besteden om het volgende te doen:
 B	Onbevreesd handelen tegenover verschrikking of een overweldigende overmacht
@@ -123,7 +123,7 @@ B	1d6 optellen bij een schadeworp die ze net gooiden
 C	<b>GRATIE OP HET SLAGVELD</b> (Vereist niveau 6+ en Leider in de Frontlinie) Wanneer je <b><i>schade oploopt terwijl je je bondgenoten</i></b> <b><i>ten strijde voert</i></b>, heeft de schadeworp nadeel.
 TAKES	2
 C	<b>HELDEN TOT HET LAATST</b> (Vereist niveau 6+ en Veteranenploeg) Kies er elke keer dat je deze zet neemt 1:
-C	Ze zijn <i>uitzonderlijk</i> (en gooien +2 in plaats van +1)
+C	Ze zijn <i>uitzonderlijk</i> (en werpen +2 in plaats van +1)
 C	Ze zijn gehard tegen angst & afschuw
 C	Verhoog hun max. HP met 4 per lid
 C	Verhoog hun schadedobbelsteen één stap (max. d10)
