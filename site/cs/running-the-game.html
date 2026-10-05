@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vedení hry — Stonetop, webové vydání</title>
+  <meta name="description" content="Jak vést Stonetop (Running the Game): agenda Vypravěče, základní smyčka, tahy Vypravěče, principy, příprava a světlo reflektorů.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://stonetop.cc/cs/running-the-game.html">
+  <meta property="og:site_name" content="Stonetop, webové vydání">
+  <meta property="og:title" content="Vedení hry — Stonetop, webové vydání">
+  <meta property="og:description" content="Jak vést Stonetop (Running the Game): agenda Vypravěče, základní smyčka, tahy Vypravěče, principy, příprava a světlo reflektorů.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:url" content="https://stonetop.cc/cs/running-the-game.html">
+  <meta property="og:image" content="https://stonetop.cc/images/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://stonetop.cc/running-the-game.html">
+  <link rel="alternate" hreflang="es" href="https://stonetop.cc/es/running-the-game.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://stonetop.cc/pt-BR/running-the-game.html">
+  <link rel="alternate" hreflang="de" href="https://stonetop.cc/de/running-the-game.html">
+  <link rel="alternate" hreflang="fr" href="https://stonetop.cc/fr/running-the-game.html">
+  <link rel="alternate" hreflang="pl" href="https://stonetop.cc/pl/running-the-game.html">
+  <link rel="alternate" hreflang="it" href="https://stonetop.cc/it/running-the-game.html">
+  <link rel="alternate" hreflang="ru" href="https://stonetop.cc/ru/running-the-game.html">
+  <link rel="alternate" hreflang="ja" href="https://stonetop.cc/ja/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://stonetop.cc/zh-Hans/running-the-game.html">
+  <link rel="alternate" hreflang="ko" href="https://stonetop.cc/ko/running-the-game.html">
+  <link rel="alternate" hreflang="nl" href="https://stonetop.cc/nl/running-the-game.html">
+  <link rel="alternate" hreflang="sv" href="https://stonetop.cc/sv/running-the-game.html">
+  <link rel="alternate" hreflang="cs" href="https://stonetop.cc/cs/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://stonetop.cc/zh-Hant/running-the-game.html">
+  <link rel="alternate" hreflang="tr" href="https://stonetop.cc/tr/running-the-game.html">
+  <link rel="alternate" hreflang="uk" href="https://stonetop.cc/uk/running-the-game.html">
+  <link rel="alternate" hreflang="x-default" href="https://stonetop.cc/running-the-game.html">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="../images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="stylesheet" href="../css/wiki.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://stonetop.cc/cs/running-the-game.html#article","url":"https://stonetop.cc/cs/running-the-game.html","mainEntityOfPage":"https://stonetop.cc/cs/running-the-game.html","headline":"Vedení hry","name":"Vedení hry","inLanguage":"cs","author":{"@type":"Person","name":"Jeremy Strandberg"},"publisher":{"@type":"Organization","name":"Lampblack & Brimstone","url":"https://lampblackandbrimstone.com/"},"license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"about":{"@id":"https://stonetop.cc/#game"},"isPartOf":[{"@id":"https://stonetop.cc/#book1"},{"@id":"https://stonetop.cc/#website"}],"description":"Jak vést Stonetop (Running the Game): agenda Vypravěče, základní smyčka, tahy Vypravěče, principy, příprava a světlo reflektorů.","pagination":"167-206"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Stonetop","item":"https://stonetop.cc/cs/"},{"@type":"ListItem","position":2,"name":"Vedení hry","item":"https://stonetop.cc/cs/running-the-game.html"}]}]}</script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4536408101e64ba59733ed69779dd45c"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body data-wiki-root="../">
+  <a class="skip-link" href="#main">Přejít k obsahu</a>
+  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Přepnout navigaci">☰</button>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="wiki-title" href="./">Stonetop, webové vydání</a>
+        <input type="search" id="nav-filter" class="nav-filter" placeholder="Hledat…" autocomplete="off" aria-label="Hledat">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <nav class="toc" aria-label="Témata">
+        <ul id="nav-list">
+          <li class="nav-book-label">Kniha I</li>
+<li class="has-sections"><a href="welcome-to-stonetop.html">Vítejte ve Stonetopu</a><ul class="nav-sections"><li class="nav-section"><a href="welcome-to-stonetop.html#expectations">Očekávání</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#the-setting">Svět</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#why-play">Proč hrát?</a></li></ul></li>
+<li class="has-sections"><a href="getting-started.html">Začínáme</a><ul class="nav-sections"><li class="nav-section"><a href="getting-started.html#review-the-setting">Projděte si svět</a></li><li class="nav-section"><a href="getting-started.html#set-expectations">Nastavte očekávání</a></li><li class="nav-section"><a href="getting-started.html#discuss-tone-and-content">Proberte tón a obsah</a></li><li class="nav-section"><a href="getting-started.html#create-characters">Vytvořte postavy</a></li><li class="nav-section"><a href="getting-started.html#intro-the-pcs">Představte postavy</a></li><li class="nav-section"><a href="getting-started.html#let-spring-burst-forth">nechat vypuknout jaro</a></li><li class="nav-section"><a href="getting-started.html#after-the-session">Po sezení</a></li></ul></li>
+<li class="has-sections"><a href="playing-the-game.html">Jak hrát</a><ul class="nav-sections"><li class="nav-section"><a href="playing-the-game.html#the-conversation">Rozhovor</a></li><li class="nav-section"><a href="playing-the-game.html#your-agenda">Tvoje agenda</a></li><li class="nav-section"><a href="playing-the-game.html#flow-of-play">Průběh hry</a></li><li class="nav-section"><a href="playing-the-game.html#dice-and-moves">Kostky a tahy</a></li><li class="nav-section"><a href="playing-the-game.html#your-principles">Tvoje zásady</a></li><li class="nav-section"><a href="playing-the-game.html#other-things-to-do">Další věci, které můžeš dělat</a></li><li class="nav-section"><a href="playing-the-game.html#your-character">Tvoje postava</a></li><li class="nav-section"><a href="playing-the-game.html#arcana">Arkána</a></li><li class="nav-section"><a href="playing-the-game.html#followers">následovníků</a></li><li class="nav-section"><a href="playing-the-game.html#your-home">Tvůj domov</a></li><li class="nav-section"><a href="playing-the-game.html#moves">tahy</a></li><li class="nav-section"><a href="playing-the-game.html#gear-and-possessions">Výstroj a majetek</a></li><li class="nav-section"><a href="playing-the-game.html#if-you-want-to">Pokud chceš…</a></li></ul></li>
+<li class="nav-hub has-sections"><a href="playbooks-inserts.html">Deníky a přílohy</a><ul class="nav-sections"><li class="nav-section"><a href="the-blessed.html">Požehnaný</a></li><li class="nav-section"><a href="the-fox.html">Lišák</a></li><li class="nav-section"><a href="the-heavy.html">Ranař</a></li><li class="nav-section"><a href="the-judge.html">Soudce</a></li><li class="nav-section"><a href="the-lightbearer.html">Světlonoš</a></li><li class="nav-section"><a href="the-marshal.html">Maršál</a></li><li class="nav-section"><a href="the-ranger.html">Hraničář</a></li><li class="nav-section"><a href="the-seeker.html">Hledač</a></li><li class="nav-section"><a href="the-would-be-hero.html">Rádobyhrdina</a></li><li class="nav-section"><a href="inserts.html">Přílohy</a></li><li class="nav-section"><a href="inventory.html">Inventář</a></li><li class="nav-section"><a href="animal-companion.html">Zvířecí Společník</a></li><li class="nav-section"><a href="crew.html">Družina</a></li><li class="nav-section"><a href="initiates-of-danu.html">Zasvěcenci Danu</a></li><li class="nav-section"><a href="invocations.html">Vzývání</a></li><li class="nav-section"><a href="followers.html">Následovníci</a></li><li class="nav-section"><a href="ghost.html">Duch</a></li><li class="nav-section"><a href="revenant.html">Umrlec</a></li><li class="nav-section"><a href="thrall.html">Zotročený</a></li><li class="nav-section"><a href="steading-playbook.html">Deník Osady</a></li></ul></li>
+<li class="has-sections current"><a href="running-the-game.html">Vedení hry</a><ul class="nav-sections"><li class="nav-section"><a href="running-the-game.html#your-agenda">Tvá agenda</a></li><li class="nav-section"><a href="running-the-game.html#the-core-loop">Základní smyčka</a></li><li class="nav-section"><a href="running-the-game.html#the-spotlight">Světlo reflektorů</a></li><li class="nav-section"><a href="running-the-game.html#scenes-and-loose-play">Scény a volná hra</a></li><li class="nav-section"><a href="running-the-game.html#your-gm-moves">Tvé tahy Vypravěče</a></li><li class="nav-section"><a href="running-the-game.html#example-of-play">Příklad hry</a></li><li class="nav-section"><a href="running-the-game.html#your-principles">Tvé principy</a></li><li class="nav-section"><a href="running-the-game.html#other-things-to-do">Další věci, které dělat</a></li><li class="nav-section"><a href="running-the-game.html#gming-is-a-practice">Vyprávění je praxe</a></li><li class="nav-section"><a href="running-the-game.html#prep">připravíš</a></li></ul></li>
+<li class="has-sections"><a href="player-moves.html">Tahy hráčů</a><ul class="nav-sections"><li class="nav-section"><a href="player-moves.html#defy-danger">Vzdorovat Nebezpečí</a></li><li class="nav-section"><a href="player-moves.html#aid">Pomoct</a></li><li class="nav-section"><a href="player-moves.html#clash">Zkřížit Zbraně</a></li><li class="nav-section"><a href="player-moves.html#defend">Bránit</a></li><li class="nav-section"><a href="player-moves.html#interfere">Překážet</a></li><li class="nav-section"><a href="player-moves.html#know-things">Vědět Své</a></li><li class="nav-section"><a href="player-moves.html#let-fly">Vystřelit</a></li><li class="nav-section"><a href="player-moves.html#seek-insight">Hledat Vhled</a></li><li class="nav-section"><a href="player-moves.html#special-moves">Zvláštní tahy</a></li><li class="nav-section"><a href="player-moves.html#advantage-disadvantage">Výhoda/Nevýhoda</a></li><li class="nav-section"><a href="player-moves.html#burn-brightly">Hořet Jasně</a></li><li class="nav-section"><a href="player-moves.html#end-of-session">Konec Sezení</a></li><li class="nav-section"><a href="player-moves.html#deaths-door">Na Prahu Smrti</a></li></ul></li>
+<li class="has-sections"><a href="harm-healing.html">Zranění a léčení</a><ul class="nav-sections"><li class="nav-section"><a href="harm-healing.html#hit-points-and-damage">Životy a zranění</a></li><li class="nav-section"><a href="harm-healing.html#debilities">Postižení</a></li><li class="nav-section"><a href="harm-healing.html#problematic-wounds">Problematická zranění</a></li><li class="nav-section"><a href="harm-healing.html#death-and-dying">Smrt a umírání</a></li></ul></li>
+<li class="has-sections"><a href="first-adventure.html">První dobrodružství</a><ul class="nav-sections"><li class="nav-section"><a href="first-adventure.html#structure">Struktura</a></li><li class="nav-section"><a href="first-adventure.html#background">Pozadí</a></li><li class="nav-section"><a href="first-adventure.html#setup-questions">Úvodní otázky</a></li><li class="nav-section"><a href="first-adventure.html#setting-the-scene">Nastavení scény</a></li><li class="nav-section"><a href="first-adventure.html#dropping-the-hook">Nahození háčku</a></li><li class="nav-section"><a href="first-adventure.html#heading-out">Vyrážíme</a></li></ul></li>
+<li class="has-sections"><a href="threats.html">Hrozby</a><ul class="nav-sections"><li class="nav-section"><a href="threats.html#when-to-write-up-threats">Kdy zapisovat hrozby</a></li><li class="nav-section"><a href="threats.html#writing-a-threat">Zápis hrozby</a></li><li class="nav-section"><a href="threats.html#example-threats">Příklady hrozeb</a></li><li class="nav-section"><a href="threats.html#updating-threats">Aktualizace hrozeb</a></li></ul></li>
+<li class="has-sections"><a href="expeditions.html">Výpravy</a><ul class="nav-sections"><li class="nav-section"><a href="expeditions.html#preparations">Přípravy</a></li><li class="nav-section"><a href="expeditions.html#running-the-journey">Vedení cesty</a></li><li class="nav-section"><a href="expeditions.html#player-moves">tahy hráčů</a></li><li class="nav-section"><a href="expeditions.html#going-home">Návrat domů</a></li><li class="nav-section"><a href="expeditions.html#what-to-prep">Co připravit</a></li></ul></li>
+<li class="has-sections"><a href="sites.html">Lokace</a><ul class="nav-sections"><li class="nav-section"><a href="sites.html#environmental-storytelling">Vyprávění prostředím</a></li><li class="nav-section"><a href="sites.html#running-sites">Vedení lokací</a></li><li class="nav-section"><a href="sites.html#exploring-sites">Průzkum lokací</a></li><li class="nav-section"><a href="sites.html#creating-sites">Tvorba lokací</a></li><li class="nav-section"><a href="sites.html#the-green-lords-tomb">HROBKA ZELENÉHO PÁNA</a></li></ul></li>
+<li class="has-sections"><a href="dangers.html">Nebezpečí</a><ul class="nav-sections"><li class="nav-section"><a href="dangers.html#hazards">Rizika</a></li><li class="nav-section"><a href="dangers.html#monsters">Nestvůry</a></li><li class="nav-section"><a href="dangers.html#running-combat">Vedení souboje</a></li></ul></li>
+<li class="has-sections"><a href="discoveries.html">Objevy</a><ul class="nav-sections"><li class="nav-section"><a href="discoveries.html#clues">Stopy</a></li><li class="nav-section"><a href="discoveries.html#sites">Lokace</a></li><li class="nav-section"><a href="discoveries.html#encounters">Setkání</a></li><li class="nav-section"><a href="discoveries.html#opportunities">Příležitosti</a></li><li class="nav-section"><a href="discoveries.html#artifacts">Artefakty</a></li><li class="nav-section"><a href="discoveries.html#arcana">Arkána</a></li></ul></li>
+<li class="has-sections"><a href="npcs-followers.html">Cizí postavy a následovníci</a><ul class="nav-sections"><li class="nav-section"><a href="npcs-followers.html#npcs-in-play">Cizí postavy ve hře</a></li><li class="nav-section"><a href="npcs-followers.html#creating-npcs">Tvorba cizích postav</a></li><li class="nav-section"><a href="npcs-followers.html#follower-moves">Tahy následovníků</a></li><li class="nav-section"><a href="npcs-followers.html#order-followers">Velet Následovníkům</a></li><li class="nav-section"><a href="npcs-followers.html#strengthen-your-bond">Posílit Pouto</a></li><li class="nav-section"><a href="npcs-followers.html#followers-in-play">Následovníci ve hře</a></li><li class="nav-section"><a href="npcs-followers.html#creating-followers">Tvorba následovníků</a></li><li class="nav-section"><a href="npcs-followers.html#updating-followers">Aktualizace následovníků</a></li><li class="nav-section"><a href="npcs-followers.html#losing-followers">Ztráta následovníků</a></li></ul></li>
+<li class="has-sections"><a href="homefront.html">Domácí fronta</a><ul class="nav-sections"><li class="nav-section"><a href="homefront.html#bringing-the-village-to-life">Oživení vesnice</a></li><li class="nav-section"><a href="homefront.html#running-the-homefront">Vedení domácí fronty</a></li><li class="nav-section"><a href="homefront.html#aftermath">Dohra</a></li><li class="nav-section"><a href="homefront.html#the-steading-playbook">Deník osady</a></li><li class="nav-section"><a href="homefront.html#seasons-change">Střídání Ročních Dob</a></li><li class="nav-section"><a href="homefront.html#player-moves">Tahy hráčů</a></li><li class="nav-section"><a href="homefront.html#bolster">Posílit</a></li><li class="nav-section"><a href="homefront.html#convalesce">Doléčovat Se</a></li><li class="nav-section"><a href="homefront.html#deploy">Vyslat</a></li><li class="nav-section"><a href="homefront.html#level-up">Postup na Úroveň</a></li><li class="nav-section"><a href="homefront.html#make-a-plan">Vymyslete Plán</a></li><li class="nav-section"><a href="homefront.html#meet-with-disaster">Potkat Pohromu</a></li><li class="nav-section"><a href="homefront.html#muster">Svolají Síly</a></li><li class="nav-section"><a href="homefront.html#pull-together">Přiložit Ruku k Dílu</a></li><li class="nav-section"><a href="homefront.html#trade-barter">Obchod a Směna</a></li><li class="nav-section"><a href="homefront.html#what-to-prep">Co připravit</a></li></ul></li>
+<li><a href="writing-moves-love-letters.html">Psaní tahů a milostných dopisů</a></li>
+<li class="has-sections"><a href="the-game-ongoing.html">Hra pokračuje</a><ul class="nav-sections"><li class="nav-section"><a href="the-game-ongoing.html#ending-a-session">Konec sezení</a></li><li class="nav-section"><a href="the-game-ongoing.html#between-sessions">Mezi sezeními</a></li><li class="nav-section"><a href="the-game-ongoing.html#starting-a-session">Začátek sezení</a></li><li class="nav-section"><a href="the-game-ongoing.html#pacing">Tempo</a></li><li class="nav-section"><a href="the-game-ongoing.html#advancement">Postup</a></li><li class="nav-section"><a href="the-game-ongoing.html#retiring-pcs">Odchod postav hráčů</a></li><li class="nav-section"><a href="the-game-ongoing.html#new-pcs">Nové postavy hráčů</a></li><li class="nav-section"><a href="the-game-ongoing.html#conflict-between-pcs">Konflikt mezi postavami hráčů</a></li><li class="nav-section"><a href="the-game-ongoing.html#time-skips">Časové skoky</a></li><li class="nav-section"><a href="the-game-ongoing.html#shake-ups">Otřesy</a></li><li class="nav-section"><a href="the-game-ongoing.html#ending-your-game">Konec tvé hry</a></li></ul></li>
+<li><a href="acknowledgements.html">Poděkování</a></li>
+<li><a href="mediography.html">Mediografie</a></li>
+<li class="nav-book-label">Kniha II</li>
+<li><a href="welcome-to-the-worlds-end.html">Vítejte na Konci světa</a></li>
+<li><a href="../maps.html" class="nav-en" title="Dostupné pouze anglicky" hreflang="en">Maps</a></li>
+<li><a href="the-village-of-stonetop.html">Vesnice Stonetop</a></li>
+<li><a href="aratis-the-lawkeeper.html">Aratis, Strážkyně Zákona</a></li>
+<li><a href="barrier-pass.html">Průsmyk Závory</a></li>
+<li><a href="barrow-builders.html">Stavitelé mohyl</a></li>
+<li><a href="blackwater-lake.html">Jezero Černé vody</a></li>
+<li><a href="crinwin.html">Crinwin</a></li>
+<li><a href="the-crombil.html">Crombil</a></li>
+<li><a href="danu-the-earth-mother.html">Danu, Matka Země</a></li>
+<li><a href="death-and-the-undying.html">Smrt a neumírající</a></li>
+<li><a href="the-dread-river.html">Řeka Děsu</a></li>
+<li><a href="fae.html">Fae</a></li>
+<li><a href="ferriers-fen.html">Ferrierova Slať</a></li>
+<li><a href="the-flats.html">Planiny</a></li>
+<li><a href="fomoraij.html">Fomoraij</a></li>
+<li><a href="the-foothills.html">Podhůří</a></li>
+<li><a href="forest-folk.html">Lesní Lid</a></li>
+<li><a href="forge-lords.html">Páni Výhně</a></li>
+<li><a href="the-frozen-wastes.html">Zamrzlé pustiny</a></li>
+<li><a href="gods-and-religion.html">Bohové a náboženství</a></li>
+<li><a href="the-golden-oak.html">Zlatý dub</a></li>
+<li><a href="gordins-delve.html">Gordinova Šachta</a></li>
+<li><a href="the-great-wood.html">Velký Hvozd</a></li>
+<li><a href="green-lords.html">Zelení Páni</a></li>
+<li><a href="helior-the-daybringer.html">Helior, Přinašeč Dne</a></li>
+<li><a href="hillfolk.html">Lid z Kopců</a></li>
+<li><a href="huffel-peaks.html">Huffelské Štíty</a></li>
+<li><a href="the-labyrinth.html">Labyrint</a></li>
+<li><a href="lygos-and-the-south.html">Lygos a Jih</a></li>
+<li><a href="the-makers.html">Tvůrci</a></li>
+<li><a href="the-makers-roads.html">Cesty Tvůrců</a></li>
+<li><a href="marshedge.html">Kraj Mokřin</a></li>
+<li><a href="the-maw.html">Chřtán</a></li>
+<li><a href="north-manmarch.html">Severní Manmarch</a></li>
+<li><a href="the-pale-hunter.html">Bledý Lovec</a></li>
+<li><a href="primordial-powers.html">Prvotní síly</a></li>
+<li><a href="red-groves.html">Rudé háje</a></li>
+<li><a href="rime-lords.html">Páni Jinovatky</a></li>
+<li><a href="the-ruined-tower.html">Pobořená Věž</a></li>
+<li><a href="south-manmarch.html">Jižní Manmarch</a></li>
+<li><a href="spirits-of-the-wild.html">Duchové divočiny</a></li>
+<li><a href="the-steplands.html">Stupňovité Země</a></li>
+<li><a href="stone-lords.html">Páni Kamene</a></li>
+<li><a href="the-stream.html">Potok</a></li>
+<li><a href="tempest-lords.html">Páni Bouře</a></li>
+<li><a href="the-things-below.html">Věci Tam Dole</a></li>
+<li><a href="three-coven-lake.html">Jezero Tří Covenů</a></li>
+<li><a href="titan-bones.html">Kosti Titánů</a></li>
+<li><a href="tor-the-rain-maker.html">Tor, Dešťotvůrce</a></li>
+<li><a href="useful-or-valuable-flora.html">Užitečná či cenná flóra</a></li>
+<li><a href="ustrina.html">Ustrina</a></li>
+<li><a href="vor-svetelik.html">Vor Svetelik</a></li>
+<li><a href="waystones.html">Milníky</a></li>
+<li><a href="the-whitefang-mountains.html">Hory Bílého tesáku</a></li>
+<li><a href="appendix-a-ages-of-the-world.html">Dodatek A: Věky světa</a></li>
+<li><a href="appendix-b-artifact-creation.html">Dodatek B: Tvorba artefaktů</a></li>
+<li class="nav-hub"><a href="appendix-c-minor-arcana.html">Příloha C: Malá arkána</a></li>
+<li class="nav-arcana"><a href="minor-laoj-daveths-galvanic-infusion.html">1. Galvanická infuze Laoje Davetha</a></li>
+<li class="nav-arcana"><a href="minor-truth-seeds.html">2. Semínka pravdy</a></li>
+<li class="nav-arcana"><a href="minor-old-mothers-wine.html">3. Víno Staré matky</a></li>
+<li class="nav-arcana"><a href="minor-aalz-galts-sudden-sinkhole.html">4. Náhlý propad Aalze Galta</a></li>
+<li class="nav-arcana"><a href="minor-shell-game-of-souls.html">5. Skořápky s dušemi</a></li>
+<li class="nav-arcana"><a href="minor-thunderous-bellow.html">6. Hromový řev</a></li>
+<li class="nav-arcana"><a href="minor-the-fiery-veil.html">7. Ohnivý závoj</a></li>
+<li class="nav-arcana"><a href="minor-the-tomb-bogs-mark.html">8. Znamení Hrobové slati</a></li>
+<li class="nav-arcana"><a href="minor-fear-of-the-flame.html">9. Strach z plamene</a></li>
+<li class="nav-arcana"><a href="minor-mantle-wraiths.html">10. Plášťové přízraky</a></li>
+<li class="nav-arcana"><a href="minor-shattering-words-of-aalz-childric.html">11. Tříštivá slova Aalze Childrica</a></li>
+<li class="nav-arcana"><a href="minor-ffyrnig-tonic.html">12. Ffyrnigské tonikum</a></li>
+<li class="nav-arcana"><a href="minor-song-of-the-dool-trees.html">13. Píseň doolových stromů</a></li>
+<li class="nav-arcana"><a href="minor-ward-of-still-waters.html">14. Ochrana tichých vod</a></li>
+<li class="nav-arcana"><a href="minor-ice-weaving.html">15. Tkaní ledu</a></li>
+<li class="nav-arcana"><a href="minor-the-six-locks-of-sajua.html">16. Šest zámků Sajuy</a></li>
+<li class="nav-arcana"><a href="minor-heliors-shining-ring.html">17. Heliorův zářící prsten</a></li>
+<li class="nav-arcana"><a href="minor-nerth-serpents-vigor.html">18. Síla nerthského hada</a></li>
+<li class="nav-arcana"><a href="minor-goldleaf-cloak.html">19. Plášť ze zlatého listí</a></li>
+<li class="nav-arcana"><a href="minor-opening-the-way.html">20. Otevření cesty</a></li>
+<li class="nav-arcana"><a href="minor-the-drowning-scale.html">21. Šupina utonutí</a></li>
+<li class="nav-arcana"><a href="minor-preserving-runes.html">22. Uchovávající runy</a></li>
+<li class="nav-arcana"><a href="minor-peacebond.html">23. Pouto míru</a></li>
+<li class="nav-arcana"><a href="minor-the-eye-opened.html">24. Oko otevřené</a></li>
+<li class="nav-arcana"><a href="minor-sanctifying-mark.html">25. Posvěcující znamení</a></li>
+<li class="nav-arcana"><a href="minor-the-green-lords-shade.html">26. Stín Zeleného Pána</a></li>
+<li class="nav-arcana"><a href="minor-chimeric-transmogrification.html">27. Chimérická proměna</a></li>
+<li class="nav-arcana"><a href="minor-the-sylvan-web.html">28. Lesní síť</a></li>
+<li class="nav-arcana"><a href="minor-flying-cloak.html">29. Létající plášť</a></li>
+<li class="nav-arcana"><a href="minor-satchel-of-plenty.html">30. Brašna hojnosti</a></li>
+<li class="nav-arcana"><a href="minor-dancing-wind-spirit.html">31. Tančící duch větru</a></li>
+<li class="nav-arcana"><a href="minor-call-of-the-hunt.html">32. Volání lovu</a></li>
+<li class="nav-arcana"><a href="minor-convocation-of-the-soil.html">33. Svolání půdy</a></li>
+<li class="nav-arcana"><a href="minor-unliving-chimera.html">34. Neživá chiméra</a></li>
+<li class="nav-arcana"><a href="minor-impudent-polymorph.html">35. Drzá proměna podoby</a></li>
+<li class="nav-arcana"><a href="minor-make-pliant-the-stone.html">36. Učiň kámen poddajným</a></li>
+<li class="nav-arcana"><a href="minor-plaster-of-joining.html">37. Spojující náplast</a></li>
+<li class="nav-arcana"><a href="minor-cold-mind-iron-body.html">38. Chladná mysl, železné tělo</a></li>
+<li class="nav-arcana"><a href="minor-little-friend.html">39. Malý přítel</a></li>
+<li class="nav-arcana"><a href="minor-revealing-light.html">40. Odhalující světlo</a></li>
+<li class="nav-arcana"><a href="minor-darkwalker-cloak.html">41. Plášť temnochodce</a></li>
+<li class="nav-arcana"><a href="minor-the-flesh-is-like-clay.html">42. Tělo je jako hlína</a></li>
+<li class="nav-arcana"><a href="minor-fetchs-mask.html">43. Maska dvojníka</a></li>
+<li class="nav-arcana"><a href="minor-witch-bottle.html">44. Čarodějná láhev</a></li>
+<li class="nav-arcana"><a href="minor-wishing-candles.html">45. Svíčky přání</a></li>
+<li class="nav-arcana"><a href="minor-baleful-utterance.html">46. Zlověstný výrok</a></li>
+<li class="nav-arcana"><a href="minor-aetherium-spear.html">47. Aetheriové kopí</a></li>
+<li class="nav-arcana"><a href="minor-staff-of-magnetism.html">48. Hůl magnetismu</a></li>
+<li class="nav-arcana"><a href="minor-groundskimmer.html">49. Klouzák</a></li>
+<li class="nav-arcana"><a href="minor-thunderbolt-bow.html">50. Hromový luk</a></li>
+<li class="nav-arcana"><a href="minor-bronze-protector.html">51. Bronzový ochránce</a></li>
+<li class="nav-arcana"><a href="minor-sublime-words.html">52. Vznešená slova</a></li>
+<li class="nav-arcana"><a href="minor-flaming-sword.html">53. Plamenný meč</a></li>
+<li class="nav-arcana"><a href="minor-searing-touch.html">54. Spalující dotek</a></li>
+<li class="nav-arcana"><a href="minor-sigil-of-authority.html">55. Pečeť autority</a></li>
+<li class="nav-arcana"><a href="minor-horn-of-storms.html">56. Roh bouří</a></li>
+<li class="nav-arcana"><a href="minor-moonstone.html">57. Měsíční kámen</a></li>
+<li class="nav-arcana"><a href="minor-hand-of-aals-sannan.html">58. Ruka Aalse Sannana</a></li>
+<li class="nav-arcana"><a href="minor-bittersweet-elixir.html">59. Hořkosladký elixír</a></li>
+<li class="nav-arcana"><a href="minor-the-brooms-lullaby.html">60. Ukolébavka koštěte</a></li>
+<li class="nav-arcana"><a href="minor-the-angry-little-god.html">61. Rozzlobený bůžek</a></li>
+<li class="nav-arcana"><a href="minor-the-silver-branch.html">62. Stříbrná větev</a></li>
+<li class="nav-arcana"><a href="minor-void-elemental.html">63. Elementál prázdnoty</a></li>
+<li class="nav-arcana"><a href="minor-runes-of-creation.html">64. Runy stvoření</a></li>
+<li class="nav-hub"><a href="appendix-d-major-arcana.html">Příloha D: Velká arkána</a></li>
+<li class="nav-arcana"><a href="major-staff-of-the-lidless-orb.html">1. Hůl Nemrkajícího oka</a></li>
+<li class="nav-arcana"><a href="major-twisted-spear.html">2. Zkroucené kopí</a></li>
+<li class="nav-arcana"><a href="major-demonhide-cloak.html">3. Plášť z démoní kůže</a></li>
+<li class="nav-arcana"><a href="major-norubas-ice-sphere.html">4. Norubina ledová koule</a></li>
+<li class="nav-arcana"><a href="major-mindgem.html">5. Drahokam mysli</a></li>
+<li class="nav-arcana"><a href="major-whispering-rocks.html">6. Šeptající skály</a></li>
+<li class="nav-arcana"><a href="major-blood-quenched-sword.html">7. Meč kalený krví</a></li>
+<li class="nav-arcana"><a href="major-shield-of-the-wisent-witch.html">8. Štít Zubří čarodějnice</a></li>
+<li class="nav-arcana"><a href="major-hectumel-codex.html">9. Hec&#x27;tumelský kodex</a></li>
+<li class="nav-arcana"><a href="major-red-scepter.html">10. Rudé žezlo</a></li>
+<li class="nav-arcana"><a href="major-ring-of-daagon.html">11. Daagonův prsten</a></li>
+<li class="nav-arcana"><a href="major-rune-laden-scales.html">12. Šupinová zbroj plná run</a></li>
+<li class="nav-arcana"><a href="major-blackwood-fetishes.html">13. Černodřevné fetiše</a></li>
+<li class="nav-arcana"><a href="major-storm-markings.html">14. Bouřná znamení</a></li>
+<li class="nav-arcana"><a href="major-ineffable-words.html">15. Nevyslovitelná slova</a></li>
+<li class="nav-arcana"><a href="major-redwood-effigy.html">16. Rudodřevná podobizna</a></li>
+<li class="nav-arcana"><a href="major-hungering-maw-of-hlad.html">17. Hladový chřtán Hladův</a></li>
+<li class="nav-arcana"><a href="major-azure-hand.html">18. Azurová ruka</a></li>
+<li><a href="bestiary.html">Bestiář</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-foot"><details class="lang-switch"><summary title="Jazyk"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code" aria-hidden="true">CS</span><span class="lang-label">Jazyk</span><span class="lang-now">Čeština</span></summary><ul class="lang-list"><li><a href="../de/running-the-game.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="../running-the-game.html" hreflang="en" lang="en">English</a></li><li><a href="../es/running-the-game.html" hreflang="es" lang="es">Español</a></li><li><a href="../fr/running-the-game.html" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/running-the-game.html" hreflang="it" lang="it">Italiano</a></li><li><a href="../nl/running-the-game.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../pl/running-the-game.html" hreflang="pl" lang="pl">Polski</a></li><li><a href="../pt-BR/running-the-game.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="../sv/running-the-game.html" hreflang="sv" lang="sv">Svenska</a></li><li><a href="../tr/running-the-game.html" hreflang="tr" lang="tr">Türkçe</a></li><li><span class="lang-current" aria-current="page" lang="cs">Čeština</span></li><li><a href="../ru/running-the-game.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/running-the-game.html" hreflang="uk" lang="uk">Українська</a></li><li><a href="../ja/running-the-game.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../zh-Hans/running-the-game.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/running-the-game.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../ko/running-the-game.html" hreflang="ko" lang="ko">한국어</a></li></ul></details><span class="sidebar-credit">Text z <em>Stonetop</em> od Jeremyho Strandberga, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></span><a class="sidebar-github" href="https://github.com/Bryan-Legend/stonetop-generator">GitHub</a><button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true" title="Zvuk kostek"><span class="sound-on" aria-hidden="true">🔊</span><span class="sound-off" aria-hidden="true">🔇</span><span class="sound-label">Zvuk kostek</span></button></div>
+    </aside>
+    <div class="main-wrap">
+      <div class="content-scroll" id="main">
+        <main class="content">
+          <h1 class="page-title">Vedení hry</h1>
+<p>Hraní na hrdiny se dá vést na desítky způsobů. <em>Stonetop</em> se vede jedním konkrétním. Tady je. Celý zbytek hry na tomhle přístupu stojí.</p>
+<p>Pamatuj: <strong>hra je rozhovor</strong>.</p>
+<p>Ty budeš něco říkat, ostatní hráči budou něco říkat. Budete se navzájem ptát, skákat si do řeči, mluvit jeden přes druhého. Pravidla hry nastupují v určitých chvílích a ukazují nám, kam se rozhovor stočí.</p>
+<p>Jako Vypravěč máš v rozhovoru zvláštní roli. <strong>Tvým úkolem je popisovat svět, říkat, co se děje, a hrát nestvůry a cizí postavy</strong>. Budeš rozhovor usměrňovat a rozhodovat sporné věci. Budeš žádat o podněty. Budeš rámovat scény a směrovat světlo reflektorů. Hra ti jako Vypravěči svěřuje velkou moc – a velkou odpovědnost.</p>
+<h2 id="your-agenda">Tvá agenda</h2>
+<p>Tohle jsou tvé cíle při vedení <em>Stonetopu</em>:</p>
+<ul class="bullets"><li>Vykresli bohatý a tajemný svět</li><li>Prokládej životy postav dobrodružstvím</li><li>Hraj, abys zjistil, co se stane</li></ul>
+<p>Všechno, co jako Vypravěč říkáš a děláš, má podporovat tyhle tři cíle a žádné jiné. Tvou agendou <em>není</em> (například) zkoušet dovednost hráčů, připravovat „férové“ souboje nebo trestat postavy.</p>
+<p>Rozhodně není tvou agendou ovládat hráče nebo nutit „svůj“ příběh, aby šel tam, kam si myslíš, že by měl. V případě pochybností se zeptej sám sebe: <strong>tahle věc, kterou zvažuješ udělat – který z těch tří cílů podporuje?</strong> Pokud je odpověď „žádný“, nedělej to. Udělej něco jiného.</p>
+<p>Tvým prvním cílem je <strong>vykreslit bohatý a tajemný svět</strong>: živý a dýchající, plný detailů, lidskosti a hloubky.</p>
+<p>Všední starosti – úroda, obchod, počasí, názory sousedů – jsou důležité. Fantastické prvky jsou důležité také, ale jsou podivné, děsivé a málo pochopené. Minulost spí neklidným spánkem. Otázek je spousta.</p>
+<p>Tvým druhým cílem je <strong>prokládat životy postav dobrodružstvím</strong>. Postavy hráčů mají své životy, domovy, o které se musí starat, rodiny, které musí uživit. Jejich čas je žádaný.</p>
+<p>Tvým úkolem je dát těmhle věcem váhu, ale také je přerušovat hrozbami a příležitostmi, které můžou (nebo chtějí) řešit jen postavy hráčů. Dobrodružství zaberou většinu času <em>hráčů</em>, ale neměla by zabírat většinu času <em>postav</em>.</p>
+<p>A konečně, a to je nejdůležitější: <strong>hraj, abys zjistil, co se stane</strong>. Tvým úkolem je vykreslit bohatý a tajemný svět, ohrozit to, na čem postavám hráčů záleží, nebo jim nabídnout lákavé příležitosti, a pak sledovat, kam se věci pohnou. Budeš plánovat, ano. Budeš se připravovat. Ale jakmile hra začne, je tvým úkolem jít tam, kam vedou hráči, kam vedou kostky a kam vede fikce.</p>
+<p>A odměnou je tohle: být opravdu překvapen příběhem, který se – přirozeně, organicky, kouzelně – rozvine. Příběhem, jaký bys sám nikdy neutkal.</p>
+<h2 id="the-core-loop">Základní smyčka</h2>
+<p>Když tuhle hru vedeš, tohle je to, co <em>děláš</em>. Je v tom samozřejmě víc, ale tohle je základní struktura rozhovoru mezi tebou a hráči.</p>
+<p>1) Ustav situaci</p>
+<ul class="bullets"><li>Zarámuj dění</li><li>Popiš prostředí</li><li>Dej detaily a konkrétnosti</li><li>Ptej se, žádej o podněty</li><li>Hraj cizí postavy a nestvůry</li><li>Odpovídej na otázky, vyjasňuj</li></ul>
+<p>2) Udělej měkký tah Vypravěče</p>
+<p>Vyprovokuj akci a/nebo zvyš napětí.</p>
+<p><strong>3) Zeptej se „Co uděláš?“</strong></p>
+<p>4) Vyhodnoť jejich činy</p>
+<ul class="bullets"><li>Pokud spustí tah hráče, udělej, co tah říká.</li><li>Pokud hodí 6- nebo ignorují potíže, udělej tvrdý tah Vypravěče (ustav něco zlého).</li><li>Jinak řekni, co se stane.</li></ul>
+<p>5) Opakuj</p>
+<ul class="bullets"><li>Je situace jasná a strhující? Můžou postavy hráčů jednat? Zpátky ke kroku 3.</li><li>Je situace jasná, ale vyhrocuje se dřív, než postavy hráčů stihnou jednat? Zpátky ke kroku 2.</li><li>Je situace jasná, ale potřebuje postrčit? Zpátky ke kroku 2.</li><li>Je situace nejasná? Potřebuje shrnout nebo aktualizovat? Zpátky ke kroku 1.</li><li>Skončila současná scéna nebo situace? Uzavři ji a hledej další. Zpátky ke kroku 1.</li></ul>
+<p>V praxi je rozhovor plynulý, neuspořádaný a chaotický. Budou ho přerušovat otázky na pravidla a detaily fikce. Hráči budou kibicovat a vtipkovat, probírat možnosti nebo spolu hrát scény v roli. Často budeš žonglovat se dvěma i více „smyčkami“ rozhovoru najednou a přeskakovat mezi hráči, jejichž postavy si každá jdou za svým.</p>
+<p>Ale pod tím vším je tahle struktura, tahle smyčka.</p>
+<p>Kdykoli se ztratíš a nevíš, co dál udělat nebo říct, zjisti, kde v téhle smyčce jsi, a pokračuj odtamtud.</p>
+<p>A teď se podívejme na jednotlivé kroky podrobně.</p>
+<h2 id="1-establish-the-situation"><span class="step-badge">1</span> Ustav situaci</h2>
+<p>Tvým úkolem je ustavovat situace, ve kterých se postavy hráčů ocitají. Udělej cokoli z následujícího (nebo všechno), podle potřeby, v pořadí, které dává smysl.</p>
+<h3 id="frame-the-action">Zarámuj dění</h3>
+<p>Urči <strong>kdo, kde a kdy</strong>.</p>
+<p>Obrať se na jednu nebo více postav hráčů a řekni (nebo se zeptej), kde jsou. Řekni (nebo se zeptej), kdo další je s nimi. Řekni (nebo se zeptej), kdy se to děje (roční období, denní doba, jak dlouho po poslední scéně či situaci).</p>
+<h3 id="describe-the-environment">Popiš prostředí</h3>
+<p>U místa, které jsme ještě „na kameře“ neviděli, řekni (nebo se zeptej), jaké je. U místa, které už jsme viděli, řekni (nebo se zeptej), jak se změnilo (pokud vůbec).</p>
+<p><strong>Přidej až 3 silné dojmy</strong> z různých smyslů – šokující červeň krve na sněhu, praskání ohně v krbu, vůni deště a mokré hlíny.</p>
+<p>Někdy přidej citové dojmy (napětí v místnosti, žal v jejich tvářích) nebo mravní dojmy (špinaví, zoufalí žebráci v kontrastu s jemně oděnou, dobře živenou šlechtou).</p>
+<p><strong>Soustřeď se na to, na čem záleží</strong>. Pokud jsou v hospodě, soustřeď se na lidi, hluk a <em>atmosféru</em>. Pokud prozkoumávají ruinu, soustřeď se na prostor, terén pod nohama, zrak a zvuk. Buď stručný, na začátek ne víc než 3 dojmy. Když jich dáš moc, hráči vypnou, a kde chtějí nebo potřebují víc detailů, sami se zeptají. Chceš úderné a sugestivní, ne květnaté. Hemingway, ne Tolkien.</p>
+<h3 id="give-details-and-specifics">Dej detaily a konkrétnosti</h3>
+<p>Řekni (nebo se zeptej), co se děje. Kdo co dělá? Kde je kdo vůči ostatním? Co postavy vidí, slyší a vnímají?</p>
+<p>Znovu: soustřeď se na to, na čem záleží. Ve společenské situaci se soustřeď na lidi: kdo tam je, jak vypadají, jak se chovají. Pokud prozkoumávají ruinu, soustřeď se na prostředí.</p>
+<p>V akční scéně se soustřeď na terén a bojovníky, jejich pozice a jejich hybnost.</p>
+<p>Občas přidej i nepodstatný detail.</p>
+<p>Ve společenské scéně zmiň, jak chutná jídlo nebo jaký je pocit z místnosti. V souboji přihoď nějaký pach nebo něco, co má nepřítel na sobě. Takové detaily navíc dodají situaci opravdovou texturu.</p>
+<p>K vyjádření prostoru a vztahů použij mapy, rekvizity a přirovnání. Načrtni místnost. Použij žetony nebo figurky. Odkazuj na skutečná místa („Je zhruba tam, kde Bob, vzhledem k tobě.“). Přirovnání a metafory jsou tvoji přátelé!</p>
+<h2 id="improvisation-prep">Improvizace a příprava</h2>
+<p>Ano, všechno tohle si vymýšlíš (nebo necháváš vymýšlet hráče). Něco si dopředu <strong>připravíš</strong> (viz <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">připravíš</a>) nebo vytáhneš z průvodce světem, ale během hry většinu konkrétností improvizuješ.</p>
+<p>Jakmile je nějaký detail ustaven, ber ho, jako by platil odjakživa. Stav na něm a rozvíjej ho. Hledej souvislosti.</p>
+<p>Polož si samozřejmé otázky a rozhodni se pro (nejspíš samozřejmé) odpovědi. Spleť to všechno dohromady v bohatý, tajemný svět.</p>
+<h3 id="ask-questions">Ptej se</h3>
+<p>Nemusíš dodávat všechny detaily sám. <a class="wiki-link" href="#your-principles" data-slug="running-the-game" data-fragment="your-principles">Jedním z tvých principů</a> je <strong>ptát se a stavět na odpovědích</strong>. Zvi hráče, aby do scény přispěli, tím, že se jejich postav ptáš na věci, které znají, cítí nebo zažily. „Caradocu, jaký pach v koželužně je nejvtíravější?“ Nebo „Vahide, u téhle tůně už jsi byl.</p>
+<p>Jak vypadá? Popiš nám ji.“</p>
+<p>Ptej se také na to, co postavy právě prožívají. Nechtěj po nich, aby si vymýšleli klíčové detaily, ale klidně je vyzvi k detailu, který zapadá do nějakého tématu.</p>
+<p>„Rhianno, čeho si na tom lapkovi všimneš jako prvního? Co ho odlišuje od ostatních?“ Nebo „Blodwen, co tady dává tomu místu pocit útulnosti a bezpečí?“</p>
+<p>Ptej se na to, co dělají a co mají za lubem, jak tráví čas a s kým se stýkají a tak dále.</p>
+<p>Když jsou na výpravě, zeptej se na pořadí pochodu. Když se Utáboří, zeptej se, co jedí, jaké je tábořiště, kdo drží kterou hlídku a tak dále.</p>
+<p>Ptej se, na co myslí a co cítí. „Vahide, co ti leží v hlavě?“ „Rhianno, co tě teď nejvíc znepokojuje?“</p>
+<h3 id="portray-npcs-and-monsters">Hraj cizí postavy a nestvůry</h3>
+<p>Pokud jsou ve hře cizí postavy (CP), popiš je. Řekni, co dělají. Pokud s nimi postavy hráčů jednají, řekni, jak cizí postavy reagují. Mluv jejich hlasem a říkej, co říkají oni. Pokud tě to děsí nebo chceš jít rovnou k věci, <em>popiš</em>, co říkají, místo abys to říkal sám.</p>
+<p>Pokud situace zahrnuje nestvůry – zvířata, duchy, crinwiny a podobně – hraj i je. Popiš je: jak jsou velké, jak se pohybují, jak znějí a páchnou. Řekni, co dělají, na co se soustředí. Řekni, jak reagují na postavy hráčů.</p>
+<h3 id="answer-questions-clarify">Odpovídej na otázky, vyjasňuj</h3>
+<p>Hráči ti budou skákat do řeči a ptát se. Buď poctivý a štědrý s pravdou a detaily. Pokud by odpověď postavám nebyla jasná, řekni to a řekni jim, co by bylo potřeba, aby na to přišli. Tvým úkolem je <strong>vykreslit bohatý a tajemný svět</strong>, ne nutit je skákat přes překážky a hádat, co si myslíš.</p>
+<p>Hráči někdy řeknou něco, co prozrazuje, že situaci pochopili špatně. „Seknu ho do zadní strany nohy,“ řekne Lišák, zatímco ty sis představoval, že se to násilí odehrává na druhém konci výčepu a postavy hráčů jen přihlížejí. Když se něco takového stane, <strong>vyjasni si situaci s hráči</strong>. Vysvětli, jak věci vidíš ty, ale buď ochotný upravit svou představu tak, aby odpovídala té jejich.</p>
+<p>„Cože? Ne, tohle se děje na druhém konci hospody. Myslím, že kdybys stál hned vedle, nenechal bys to dojít až sem, ne?“</p>
+<h2 id="2-make-a-soft-gm-move"><span class="step-badge">2</span> Udělej měkký tah Vypravěče</h2>
+<p>Situace je jasná? Dobře. Teď udělej měkký tah Vypravěče – řekni něco, co vyprovokuje akci a/nebo zvýší napětí.</p>
+<p>Vyber jeden ze svých <strong>tahů Vypravěče</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">Tvé tahy Vypravěče</a> a udělej ho.</p>
+<p>Jak vyprovokovat akci: řekni, že se chystá stát něco zlého, nebo že se to právě děje, ale <strong>dej postavám hráčů šanci s tím něco udělat</strong>. „Jak tvá ruka nahmatá jílec nože, crinwin udělá ‚sssssss‘ a skočí, prsty míří po tvém hrdle, co uděláš?“</p>
+<p>Akci můžeš vyprovokovat také tím, že <strong>jim nabídneš příležitost</strong>, nebo že předložíš možnosti a <strong>vyzveš je, aby si vybrali</strong>.</p>
+<p>„Dobře, skulilo se to kolem tebe. Je to zaskočené a ty máš chvilku. Mohl bys mu skočit na záda a zkusit ho bodnout. Nebo odtamtud vypadnout. Co uděláš?“</p>
+<p>Ve společenské scéně můžou tvé cizí postavy o něco žádat nebo něco požadovat. Můžou říct něco zranitelného či citového a pak se podívat na postavu hráče a čekat, jak zareaguje.</p>
+<p>Měkké tahy ne vždy vyprovokují akci.</p>
+<p>Někdy <strong>jen vyšroubují napětí</strong>.</p>
+<p>Můžeš vyčerpat jejich věci, předznamenat potíže nebo přidat do scény potíže tak, že se na ně nedá hned reagovat. „Jste tu dole už nějakou dobu, pochodně začínají dohasínat.“ Nebo „Přijde další otřes. Ze stropu se sype trocha hlíny.</p>
+<p>Co uděláte?“</p>
+<h2 id="3-what-do-you-do"><span class="step-badge">3</span> „Co uděláš?“</h2>
+<p>Když uděláš měkký tah Vypravěče, zeptej se <strong>„Co uděláš?“</strong> Tím předáš rozhovor zpátky hráči (či hráčům) a vyzveš je, aby něco řekli.</p>
+<p>Nemusíš doslova říct „Co uděláš?“ Někdy tvůj tah sám obsahuje otázku. Když hraješ cizí postavu, můžeš udělat tah a jen se na hráče očekávavě podívat. Ale když si nejsi jistý, zeptej se: „Co uděláš?“</p>
+<p>Pokud řeknou něco, co nedává smysl – něco, co považuješ za nemožné, neplatné nebo nerozumné – řekni jim to. Vyjasni fikci. Pokud trvají na svém, <strong>řekni jim následky a/nebo požadavky</strong>. Zeptej se, jestli to pořád chtějí udělat.</p>
+<p>Pokud se ptají, odpověz jim. Pokud odpovědi nejsou zřejmé, <strong>řekni jim požadavky</strong>. „Budeš se tu muset trochu porozhlédnout a Hledat Vhled.“ Pak jim vrať míček: „Co uděláš?“</p>
+<h2 id="players-jumping-in">Když hráči skočí do řeči</h2>
+<p>Hráči se můžou chopit iniciativy a ohlásit akci dřív, než se zeptáš „Co uděláš?“, nebo dokonce dřív, než uděláš měkký tah Vypravěče. Skvělé!</p>
+<p>Znamená to, že jsou zapálení a situace je dost strhující, aby na ni chtěli reagovat. Můžeš skočit rovnou k vyhodnocení jejich akce.</p>
+<p>To ale neznamená, že by hráči měli rozhovor ovládnout. Pokud jsi uprostřed tahu, nebo si myslíš, že by se něco stalo dřív, než stihnou jednat, nebo chceš dát šanci někomu jinému, řekni jim, ať chvíli počkají!</p>
+<h2 id="4-resolve-their-action"><span class="step-badge">4</span> Vyhodnoť jejich akci</h2>
+<p>Hráč řekne, co jeho postava udělá. Ustav, jak se situace změní a/nebo co jeho akce o situaci odhalí.</p>
+<p><strong>Spustil tah hráče?</strong> Pokud ano, který? Vyhodnoť ten tah. Pokud si nejsi jistý, jestli tah spustil, nebo potřebuješ před vyhodnocením víc informací, ptej se. Vyjasni si jeho záměr a/nebo jak na to jde. Proberte to u stolu.</p>
+<p>Když hráč spustí tah, <strong>drž se postupu tahu</strong>. Prozraď všechny informace, na které mu tah dává nárok. Společně s hráčem ustavte, jak se situace změnila. (Víc viz <strong>Tahy hráčů</strong>, <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Tahy hráčů</a>.)</p>
+<p>Když tě tah hráče vyzve, abys něco přidal do fikce, a nevíš, co říct, <strong>hledej inspiraci ve svých tazích Vypravěče</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">Tvé tahy Vypravěče</a>.</p>
+<p><strong>Pokud spustí tah a hodí 6-</strong>, označí si XP a ty uděláš tvrdý tah Vypravěče (pokud tah výslovně neříká něco jiného).</p>
+<p>Pokud udělají něco, co žádný tah hráče nespustí, čekají od tebe, co se stane. <strong>Ignorovali hrozbu nebo potíže</strong>, před kterými jsi je předtím varoval? Udělej tvrdý tah Vypravěče.</p>
+<p><strong>Jinak</strong> řekni, co se stane a jak to změní situaci. Možná stačí říct „Dobře“ a pak buď přesunout <strong>světlo reflektorů</strong> <a class="wiki-link" href="#the-spotlight" data-slug="running-the-game" data-fragment="the-spotlight" data-ref="page">Světlo reflektorů</a>, nebo říct „A co uděláš pak?“</p>
+<h3 id="hard-gm-moves">Tvrdé tahy Vypravěče</h3>
+<p>Tvrdý tah Vypravěče udělej, když postava hráče...</p>
+<ul class="ellipsis"><li>úplně ignoruje hrozbu nebo potíže; nebo</li><li>spustí tah, ale hodí 6- (a tah neříká něco jiného).</li></ul>
+<p>Udělat tvrdý tah Vypravěče znamená <strong>ustavit něco zlého</strong>. Popiš následky činů postavy. Řekni, jak se věci pokazí. Výrazně zhorši situaci. Vyber <strong>tah Vypravěče</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves">ze svých seznamů</a> nebo prostě řekni tu samozřejmou zlou věc. „Ouha, pětka, jo? Je to moc rychlé!</p>
+<p>Než ti nůž vyjede z pochvy, je na tobě, BUM, utrž zranění <button type="button" class="dice-roll" data-dice="d6" title="Klikni a hoď d6 — Shift: výhoda · Ctrl: nevýhoda">d6</button> a ležíš na zádech, jeden jeho dráp máš na krku a druhým ti tiskne ruku s nožem za zápěstí, co uděláš?“</p>
+<p>Když hodí 6-, tvůj tvrdý tah bude často znamenat, že akce postavy selže. Řekni (nebo se zeptej), jak se to pokazí a/nebo jaké jsou následky. <strong>Ale 6- ne vždy znamená, že akce postavy selže</strong>. Znamená to, že ustavíš něco zlého. Třeba se stane něco zlého dřív, než stihnou svou věc udělat; třeba udělají, co zamýšleli, ale to způsobí (nebo odhalí) něco opravdu hodně zlého. To zlé nemusí ani přímo souviset s činem, který udělali – může mu prostě šlapat na paty.</p>
+<p>Tvrdý tah by měl vždycky ustavit něco zlého, ale <strong>jak moc zlého, rozhoduješ ty</strong>. Při tvrdých tazích vycházej ze situace, z fikce, z popisu hráčových činů a podobně. Někdy tvrdý tah není o moc horší než měkký.</p>
+<h2 id="5-repeat"><span class="step-badge">5</span> Opakuj</h2>
+<p>Vyhodnotil jsi akci postavy hráče. Situace se změnila nebo se víc odhalila a hra se od toho nabaluje dál.</p>
+<p><strong>Pokud je situace jasná a strhující</strong></p>
+<p><strong>a jedna nebo více postav hráčů může jednat</strong>, skoč rovnou zpátky ke kroku 3 a zeptej se jich: „Co uděláš?“</p>
+<p><strong>Pokud je situace jasná, ale věci se vyhrotí dřív, než postavy hráčů stihnou jednat</strong>, vrať se ke kroku 2. Udělej měkký tah Vypravěče, který ukáže, jak se věci mění.</p>
+<p>Pak se zeptej: „Co uděláš?“</p>
+<p>Stejně tak <strong>pokud je situace jasná, ale tak trochu stojí na místě</strong> a hráči potřebují postrčit, vrať se ke kroku 2. Udělej měkký tah Vypravěče a zeptej se: „Co uděláš?“</p>
+<p><strong>Pokud je situace nejasná nebo ji potřebuješ shrnout či aktualizovat</strong>, vrať se ke kroku 1. Znovu ustav situaci. Pak udělej měkký tah Vypravěče a zeptej se: „Co uděláš?“</p>
+<p><strong>Pokud současná scéna nebo situace skončila</strong>, uzavři to. Postarej se o logistiku, účetnictví a další metaherní záležitosti.</p>
+<p>S hráči spolu přijďte na to, jaká by měla být další situace nebo scéna. Pokud to není jasné, ptej se, dokud nebude.</p>
+<p>Vrať se ke kroku 1. Ustav (novou) situaci, udělej měkký tah Vypravěče a zeptej se: „Co uděláš?“ Vyhodnoť jejich činy.</p>
+<p>Sleduj, jak se situace mění. Opakuj.</p>
+<p>Tohle je základní smyčka hry.</p>
+<h2 id="the-spotlight">Světlo reflektorů</h2>
+<p>Během hry budeš chvíli od chvíle měnit, koho oslovuješ.</p>
+<p>Ten, s kým právě mluvíš, stojí ve <strong>světle reflektorů</strong>.</p>
+<p>Někdy necháš světlo reflektorů rozptýlené a oslovíš skupinu jako celek.</p>
+<p>Často ho zaměříš jen na jednu postavu. Když se toho děje hodně najednou, přehazuješ ho sem a tam mezi jednotlivci a skupinami.</p>
+<p>Na řízení světla reflektorů neexistuje žádný formální postup. <strong>Nejsamozřejmější chvíle k přesunutí světla reflektorů nastává poté, co vyhodnotíš akci postavy hráče</strong>. Oslov jinou postavu a popiš situaci <em>jí</em>. Udělej měkký tah <em>na ni</em>. Zeptej se <em>jí</em>: „Co uděláš?“</p>
+<p>Světlo reflektorů ale můžeš přesunout, kdykoli to dává smysl. Například když se zeptáš „Co uděláš?“ a...</p>
+<ul class="ellipsis"><li><strong>hráč ztuhne nebo zaváhá</strong>, přesuň se k někomu jinému a dej prvnímu hráči čas na rozmyšlenou. Vrať se k němu později; nebo...</li><li><strong>postava hráče dělá něco, co zabere čas</strong>, přesuň se k někomu jinému. K první postavě se vrať, až bude končit (nebo až ji něco vyruší); nebo...</li><li><strong>udělá tah a ty si nejsi jistý, jak ho vyhodnotit</strong>, kup si čas na přemýšlení tím, že se přesuneš k někomu jinému. K vyhodnocení tahu prvního hráče se vrať později.</li></ul>
+<p>Využívej světlo reflektorů k tomu, abys byl dobrým průvodcem hry.</p>
+<p>Udržuj ve hře všechny. Dbej na to, aby každý dostal dost času na scéně a měl šanci přispět.</p>
+<p>Nevadí, když si hráči skáčou do řeči, kibicují nebo jejich postavy jednají „mimo pořadí“. Některé tahy (třeba Bránit) jim to dokonce výslovně dovolují!</p>
+<p>Na druhou stranu: neboj se usadit přehnaně horlivého nebo agresivního hráče zdvořilou, ale pevnou výtkou. „Andreji, chováš se nezdvořile. Teď mluvím s Jamiem.“</p>
+<h2 id="split-the-party">Rozdělená družina</h2>
+<p>Stane se to. Postavy hráčů se rozdělí – úmyslně, nebo protože je <strong>rozdělíš</strong> nebo <strong>někoho zajmeš</strong> – a najednou máš dvě menší skupiny. To nevadí. Rozdělená družina umí být velká zábava.</p>
+<p>Rozdělená družina znamená, že žongluješ s několika rozhovory a scénami najednou. Přesouvej světlo reflektorů sem a tam mezi různými scénami, jako když filmový střihač ostře stříhá mezi scénami ve filmu.</p>
+<p>U jedné skupiny se nezdržuj příliš dlouho.</p>
+<p>Snaž se, aby všichni zůstali zapojení a zajímalo je, co se děje v ostatních scénách. Můžeš střihat mezi scénami po každé „akci“ nebo tahu hráče, nebo mezi střihy vyhodnotit několik „smyček“ rozhovoru. Má to svůj rytmus a své umění a různým typům scén sedí různé přístupy. Průzkumu a dialogu prospívají delší střihy.</p>
+<p>Vypjatým, akčním scénám sedí krátké, rychlé střihy a spousta napínavých konců.</p>
+<h2 id="scenes-and-loose-play">Scény a volná hra</h2>
+<p>Během hry bude rozhovor přirozeně přecházet mezi scénami a volnou hrou. Není to formální rozlišení, ani vždycky vědomé. Často mezi nimi budeš přecházet přirozeně a instinktivně.</p>
+<p><strong>Scény jsou přiblížené</strong>. Vystupují v nich konkrétní postavy na konkrétním místě v konkrétní čas. Sleduješ dění chvíli po chvíli. Detailů je spousta a jsou konkrétní. Hráči mluví za své postavy a ty v roli hraješ i cizí postavy.</p>
+<p>I když ty a hráči doopravdy nemluvíte hlasy svých postav, pořád vedete rozhovor na přiblížené, podrobné úrovni.</p>
+<p>Během scény můžeš popsat mýtinu v lese, kde se postavy hráčů ocitly, zvuk zurčícího potoka a jak medvěd větří, stříhá ušima a pátrá po okraji lesa, jestli nehrozí nebezpečí. „Rhianno, myslíš, že tě ještě nezahlédl, co uděláš?“</p>
+<p>Scény jsou filmové a pohlcující, někdy napjaté, často vzrušující. Hráči se můžou ve svých postavách ztratit a cítit kvůli tomu, co se děje, skutečné emoce.</p>
+<p><strong>Dobré scény mají účel</strong>. Tuhle scénu s těmihle postavami na tomhle místě jsi přece zarámoval z nějakého důvodu, ne? O co se postavy hráčů snaží? Co se snažíš sdělit ty? Na jakou otázku doufáš najít odpověď? Jaký konflikt se tu řeší? Když znáš účel scény, pomůže ti to zaměřit detaily, popisy a tahy Vypravěče. A pokud účel scény určit nedokážeš, možná tu scénu nepotřebuješ!</p>
+<p>Když je účel scény naplněn nebo scéna vyšumí, uzavři ji.</p>
+<p>Přejdi do další samozřejmé scény („Vstoupíte do další místnosti a vidíte...“) nebo přepni do volné hry.</p>
+<p><strong>Volná hra je to, co se děje mezi scénami</strong>. Pořád se držíš základní smyčky, ale v oddáleném pohledu. Místo popisu toho, co se děje tady a teď, mluvíš o tom, co se děje během minut, hodin, dnů nebo týdnů. Shrnuješ a zhušťuješ, vynecháváš drobnosti a přelétáš úseky času.</p>
+<p>Víc o postavách <em>vyprávíš</em>, než že bys je <em>hrál</em>.</p>
+<p>Během volné hry můžeš popsat, jak postavy hráčů procházejí Velkým Hvozdem (Great Wood), tiché napětí, jak se snaží nebýt spatřeny, horko a štípající hmyz, které s postupujícím dnem sílí. Můžeš se ptát třeba: „Caradocu, k čemu se ti pořád stáčejí myšlenky?“ nebo „Rhianno, jak dlouho chceš jít, než se utáboříte?“</p>
+<p>Tahy hráčů platí i během volné hry, jen v oddáleném měřítku. Můžou Bojovat jako Jeden, aby se dostali domů před setměním, nebo Hledat Vhled tím, že několik dní pozorují nově příchozí.</p>
+<p>Čas bývá během volné hry pružný.</p>
+<p>„Dobře, všichni vyrazíte a do poledne dorazíte na rozcestí.“ „Jo, hele. Můžeme říct, že jsem ještě před odchodem prošel Obchodem a Směnou a sehnal nějaký bendisový kořen?“ Jasně, že můžeme.</p>
+<p>Volná hra je uvolněnější, méně intenzivní.</p>
+<p><strong>Mezi scénami se postarej o účetnictví a logistiku</strong>. Projdi si poznámky, aktualizuj je a třeba hoď na náhodný <strong>objev</strong> <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Objevy</a>. <strong>Veďte metadiskuse</strong>. Bavte se o plánech a cílech postav („Co se to vlastně snažíme udělat?“). Zjisti, jestli mají hráči nějaká přání („Chtěl bych scénu s Andrasem“). <strong>Dělejte přestávky</strong>, bavte se o skutečném životě a užívejte si společnost jeden druhého.</p>
+<p>Během volné hry uplyne hodně času ve fikci, hlavně když postavy hráčů cestují nebo tráví čas doma mezi dobrodružstvími. Ale většinu skutečného času chceš trávit ve scénách. Hra ve scénách je mnohem bezprostřednější, bohatší a vzrušující. <strong>Tlač volnou hru ke scénám</strong>. Jakmile se nabídne další scéna, zarámuj ji a znovu přibliž pohled na podrobnou hru chvíli po chvíli.</p>
+<h2 id="your-gm-moves">Tvé tahy Vypravěče</h2>
+<p>Když je čas udělat tah Vypravěče a ty nevíš, co říct, vyber si jeden z těchto a udělej ho. <strong>Tohle jsou tvé základní tahy Vypravěče</strong>:</p>
+<ul>
+<li>Ohlas potíže (budoucí nebo mimo scénu)</li>
+<li>Odhal nevítanou pravdu</li>
+<li>Polož provokativní otázku</li>
+<li>Dostaň někoho do úzkých</li>
+<li>Vyčerpej jejich zdroje</li>
+<li>Obrať jejich tah proti nim</li>
+<li>Ukaž stinnou stránku</li>
+<li>Ubliž někomu</li>
+<li>Rozděl je</li>
+<li>Zajmi někoho</li>
+<li>Nabídni příležitost (s cenou, nebo bez)</li>
+<li>Řekni jim následky/ požadavky (a zeptej se)</li>
+<li>Postup k hrozící zkáze Nejsou to odborné termíny. Když odhalíš nevítanou pravdu, prostě to uděláš. Ustavíš ve fikci něco, o čem by si postavy přály, aby to pravda nebyla. Když někomu ublížíš, řekneš, jak se někdo zraní.</li>
+</ul>
+<p>Tvé tahy Vypravěče by tě měly inspirovat a posilovat, ne svazovat. Používej je, když nevíš, co dělat, nebo když ses zasekl v zajetých kolejích a chceš to rozčeřit. Nestresuj se tím, aby každý tvůj tah odpovídal něčemu z tohohle seznamu.</p>
+<h2 id="making-your-move">Jak udělat tah</h2>
+<p>Kdykoli je situace jasná a <strong>chceš popohnat dění</strong>, udělej měkký tah. Řekni něco, co postavy hráčů vyburcuje k akci a/nebo zvýší napětí.</p>
+<p>Měkké tahy dělej neustále, jako součást základní smyčky hry.</p>
+<p>Když postavy hráčů <strong>ignorují potíže</strong>, které jsi předtím ustavil, nebo když <strong>hodí 6- při tahu hráče</strong>, udělej tvrdý tah Vypravěče. Ustav něco zlého. Nech stát něco, co postavy hráčů nechtějí, nebo znemožni něco, co chtějí.</p>
+<p>Tah Vypravěče můžeš udělat také <strong>když tě tah hráče vyzve, abys něco přidal do fikce</strong>. Například když Vzdorují Nebezpečí a hodí 7-9, máš předložit menší úspěch, cenu nebo následek. Jako cenu můžeš <strong>vyčerpat jejich zdroje</strong> („Zvládneš to, ale budeš muset odhodit zásoby.“), jako následek <strong>je dostat do úzkých</strong> („Zvládneš to, ale země se pod tebou při dopadu pohne a začne se propadat.“) nebo jako menší úspěch <strong>ukázat stinnou stránku</strong> („Dostaneš se z dosahu, ale Andras pořád kulhá a zaostává, tvor se blíží!“).</p>
+<p>Vždycky <strong>udělej tah, který vyplývá z ustavené situace a/nebo z tvé přípravy</strong>. Pokud stopují crinwiny lesem a hodí 6-, bylo by naprosto v pořádku odhalit, že zabloudili.</p>
+<p>Ale bylo by divné a nefér říct „Z nebe padají kameny a drtí vás, všichni utržte zranění <button type="button" class="dice-roll" data-dice="1d10" title="Klikni a hoď 1d10 — Shift: výhoda · Ctrl: nevýhoda">1d10</button>!“</p>
+<p>Ve stejném duchu by <strong>tvé tahy měly odrážet konkrétní podobu situace</strong>.</p>
+<p>Řekněme, že postava hráče stojí proti útočícímu praturovi, spustí Zkřížit Zbraně a hodí 6-. Pokud je to svalnatý Ranař, který proti útoku zapřel oštěp, bude tvůj tvrdý tah vypadat úplně jinak, než kdyby to byl štíhlý Lišák, který se pokusil útoku uhnout a bodnout zvíře jako matador.</p>
+<p><strong>Neříkej název svého tahu</strong>, prostě řekni, co se stane ve fikci. Neříkej „Hodil jsi 4, takže vás rozděluju.“</p>
+<p>Řekni „Rhianno, probudíš se a uvědomíš si, že Caradoc nedrží hlídku. A jen tak se nevrací. Jeho přikrývka leží pohozená na kraji světla ohně.“</p>
+<h2 id="other-gm-moves">Další tahy Vypravěče</h2>
+<p>K dispozici máš i další seznamy tahů Vypravěče.</p>
+<p><strong>Průzkumné tahy</strong> používej, když jsou postavy hráčů na <strong>výpravě</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Výpravy</a> nebo <strong>prozkoumávají lokaci</strong> (viz <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Lokace</a>).</p>
+<p><strong>Tahy hrozeb</strong> používej, když chceš do scény přivést hrozbu nebo její vliv, <a class="wiki-link" href="threats.html" data-slug="threats" >nebo když už v ní hrozba je</a>.</p>
+<p><strong>Tahy Domácí fronty</strong> používej, když jsou postavy hráčů doma nebo tráví čas v jiné osadě, aby se tam děly zajímavé věci (viz <a class="wiki-link" href="homefront.html" data-slug="homefront" data-ref="page" >Domácí fronta</a>).</p>
+<p>Tahy konkrétního <strong>nebezpečí</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Nebezpečí</a> · <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Nebezpečí</a> nebo <strong>cizí postavy</strong> <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >Cizí postavy a následovníci</a> používej, když jsou tyto prvky ve hře.</p>
+<h2 id="examples-of-gm-moves">Příklady tahů Vypravěče</h2>
+<h3 id="announce-trouble">Ohlas potíže</h3>
+<h3 id="future-or-offscreen">(budoucí nebo mimo scénu)</h3>
+<p>Tohle je jeden z tvých nejvšestrannějších tahů.</p>
+<p>Potíže skoro vždycky vyvolají nějakou reakci, nebo aspoň lidi znepokojí a vyšroubují napětí.</p>
+<p>Jako tvrdý tah můžeš proměnit dosud poklidnou scénu v boj nebo konflikt, nebo dát jasně najevo, že činy postav hráčů budou mít později následky.</p>
+<hr>
+<blockquote><p><em>„BUM BUM BUM! Rhianno, někdo ti buší na dveře a budí tě z tolik potřebného spánku. Lowri volá tvé jméno a ty slyšíš řinčení zvonů hlídky. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Když Caradoc a Blodwen odcházejí, sleduje je tenhle odporný chlápek. Tvář má samou jizvu, krutý úšklebek a u boku nůž. Šťouchne do chlapa vedle sebe, kývne ke dveřím a oba vstanou a jdou. Co uděláte?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Glenys se na tebe chvíli tvrdě dívá a pak udělá: ‚FAJN.‘ Odfrkne si a odupe pryč. Prozatím ti dá pokoj, ale prostě víš, že tohle budeš muset řešit později.“</em></p></blockquote>
+<hr>
+<h3 id="reveal-an-unwelcome-truth">Odhal nevítanou pravdu</h3>
+<p>Ustav jako pravdu něco, o čem by si opravdu přáli, aby pravda nebylo. Třeba to platilo odjakživa a ty to jen teď odhaluješ. Nebo (hlavně jako tvrdý tah) se právě teď rozhodneš, že tahle zlá věc platí, a dáš jim to vědět. Obojí funguje.</p>
+<p>Tohle je skvělý tah, když Ví Své nebo Hledají Vhled. Na 7+ jim dlužíš poctivé odpovědi nebo zajímavé (možná užitečné) informace, ale nikde se nepíše, že z toho, co se dozví, musí mít radost. A na 6- můžeš pořádně přitáhnout šrouby.</p>
+<hr>
+<blockquote><p><em>„‚Vvvasil? Nebesa, ne. Vvvasil odjel z městečka letošššího podzimu. Zpátky do Lygu, ssslyšel jsem.‘ Usměje se a jako by měl příliš mnoho zubů. ‚Ale jissstě se můžeme nějak… dohodnout, ne?‘“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Co se tu nedávno stalo? No, v blátě je tak tucet různých stop, celé rozryté, jako by tu byla rvačka. Na listí je taky pár cákanců krve. Je docela jasné, že Lowri přepadli crinwini.“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Au, 6-? No, prohledáváš kopce celý zbytek dne a... asi ji nenajdeš? Ne, počkej. Víš co? Ty Cadi najdeš. Asi tak kilometr od dřevařského tábora najdeš její tělo. Něco ji probodlo, napíchlo ji to skrz naskrz břichem.“</em></p></blockquote>
+<hr>
+<h3 id="ask-a-provocative-question">Polož provokativní otázku</h3>
+<p>Polož otázku, která podnítí rozhodnutí nebo reakci, i kdyby to byla jen citová reakce nebo rozhodnutí nejednat. Otázku můžeš položit sám, nebo ji vložit do úst některé ze svých cizích postav. Případně:</p>
+<p>polož otázku, která potvrdí něco zlého, ale dá hráči šanci to zlé dotvořit.</p>
+<hr>
+<blockquote><p><em>„Rhianno, Eira se tváří zachmuřeně a říká: ‚Garet ztrácí hodně krve. Nemyslím, že to zvládne, a strašlivě nás zdrží. Chceš, abych udělala, co je třeba?‘“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Caradocu, ty se k tomu dostaneš až úplně na konci, myslím. Viděl jsi ten oblak kouře, co se valil Vahidovi z úst. A Vahid se chová úplně normálně, jako by nic. Co se ti teď honí hlavou?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Au, 4? No, myslím, že se ti ji podaří urazit, opravdu se jí dotkneš. Co řekneš nebo uděláš, že se to stane?“</em></p></blockquote>
+<hr>
+<h3 id="put-someone-in-a-spot">Dostaň někoho do úzkých</h3>
+<p>Tohle je agresivnější verze <strong>ohlašování potíží</strong> – musí něco udělat, hned, jinak to bude ošklivé.</p>
+<p>„Někdo“ může být postava hráče i cizí postava a se světlem reflektorů si můžeš pohrát. Ten, koho dostaneš do úzkých, nemusí být tím, kdo s tím něco udělá.</p>
+<hr>
+<blockquote><p><em>„Tak těsně! Skočíš, ale narazíš do větve. Uklouzneš a jen tak tak se zachytíš. Visíš z té větve takhle, lapáš po dechu, tak 25 metrů nad zemí, a začíná ti povolovat stisk. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Ten velký chlap se zvedne a zlostně se na tebe podívá. ‚Jak jsi mi to řekl, ty hubená krysičko?‘ Rhianno, vidíš to a všimneš si, že se zvedají ještě tak tři chlapi, statní horníci, a žádný z nich se neusmívá. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Takže je to, jak jsi řekla, drak se uklidní, když mu položíš ruku na čenich, a je jak mňoukající kotě. Ale Caradocu, ty to sleduješ z křoví, a zatímco Blodwen uklidňuje tohohle, zahlédneš dalšího draka, za ní vpravo od ní, jak se plíží blíž. Chystá se na ni skočit, tím si jsi jistý, co uděláš?“</em></p></blockquote>
+<hr>
+<h3 id="use-up-their-resources">Vyčerpej jejich zdroje</h3>
+<p>Stane se něco, co ukrojí z jejich věcí, nebo jim je úplně sebere. „Zdroje“ tu můžou být...</p>
+<ul class="ellipsis"><li><strong>hmatatelné a konkrétní</strong> (jejich štít, pochodeň, olej do lampy);</li><li><strong>hmatatelné, ale abstraktní</strong> (zásoby, střelivo);</li><li><strong>nehmotné</strong> (jejich pověst, něčí důvěra); a/nebo</li><li><strong>čistě mechanické abstrakce</strong> (HP, Štěstěna, Věrnost atd.).</li></ul>
+<p>Když ztratí něco abstraktního, nehmotného nebo čistě mechanického, vždycky to vrať zpátky do fikce a ukaž, jak se to projeví. „Chvíli se mračí a pak rozčarovaně zavrtí hlavou. Jestli měl nějakou Věrnost, teď má o 1 méně.“</p>
+<p>Jako měkký tah ho použij k vyšroubování napětí. Ty 4 HP teď možná moc neznamenají, ale po pár dalších ranách začne být hráč <em>nervózní</em>.</p>
+<p>Když vyčerpáš konkrétní zdroj, ztráta může být dočasná („vyrazí ti nůž z ruky a ten odletí přes celou místnost“) nebo trvalá („úder ti roztříští štít“).</p>
+<p>Často zjistíš, že tenhle tah děláš spolu s jinými tahy, a to je v pořádku.</p>
+<p>Zvlášť HP se spotřebovávají jako přirozená součást jiných tahů (viz rámeček <strong>Udělování zranění a způsobování postižení</strong>, <a class="wiki-link" href="#dealing-damage-and-inflicting-debilities" data-slug="running-the-game" data-fragment="dealing-damage-and-inflicting-debilities" data-ref="page">Udělování zranění a způsobování postižení</a>.)</p>
+<hr>
+<blockquote><p><em>„Jsi tu dole už tak hodinu. Myslím, že ti dohořívá pochodeň. Zbývá ti tak deset minut světla? Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jo, takže ti sklouzne ruka a ty se řítíš dolů, cestou narážíš do větví, BUCH PRÁSK BUM. Dopadneš naplocho na záda a jsi si docela jistý, že ti v batohu něco prasklo. Ztrať 2 použití zásob a utrž zranění <button type="button" class="dice-roll" data-dice="1d6" title="Klikni a hoď 1d6 — Shift: výhoda · Ctrl: nevýhoda">1d6</button>, které ignoruje zbroj. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jo, stál přímo za tebou, když jsi říkal tu poslední část. Ohlédneš se a on je rudý jako rak, na pokraji pláče nebo křiku, nevíš, co z toho. Ale jen se otočí a odupe pryč do polí. Myslím, že právě přišel o veškerou Věrnost, kterou měl. Co uděláš?“</em></p></blockquote>
+<hr>
+<h3 id="demonstrate-a-downside">Ukaž stinnou stránku</h3>
+<p>Ukaž meze jejich tahů nebo břemeno, které s sebou nese být (třeba) Ranař. Ukaž jim, jak si vede <em>hrubá</em> zbraň proti železnému meči nebo štítu.</p>
+<p>Ukaž jim, proč je nošení <em>teplé</em> zbroje v pražícím slunci špatný nápad. Ukaž jim, proč je těžké být malý, nebo vysoký, nebo mladý, nebo starý, nebo cokoli jiného.</p>
+<hr>
+<blockquote><p><em>„Caradocu, Rhianno, zatímco z křoví sledujete crinwiny, uslyšíte tohle: klap-klap-klap. Určitě Vahidův batoh, a crinwini to slyší taky. Co uděláte?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Caradocu, když se podruhé pokusíš vložit se do hovoru, Brennan řekne: ‚Dospělí mluví, chlapče.‘ A otočí se zpátky k Rhianně. ‚Tak co jsi to říkala…?‘“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Tvůj oštěp se zabodne a pratur zařve, ale pak se vzepne a zkroutí a ratiště se ulomí. Zbude ti v ruce půlka klacku.“</em></p></blockquote>
+<hr>
+<h3 id="turn-their-move-back-on-them">Obrať jejich tah proti nim</h3>
+<p>Tenhle se hodí na 6-. Vezmi tah, který dělali, a nějak ho obrať. Třeba dáš výhodu jejich nepřátelům, třeba je necháš vymyslet něco zlého, s čím budeš pracovat, třeba jejich tah jejich možnosti zúží místo aby je rozšířil. Buď vynalézavý.</p>
+<hr>
+<blockquote><p><em>„Ale, myslím, že o tomhle zlém rtuťovém stříbře víš všechno, Vahide. Co kdybys nám pověděl o tom hrozném setkání, které jsi s ním měl tam na jihu, a o tom, jak tě to dodnes otřásá.“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Neúspěch, jo? Víš co, stejně se zeptej na jednu z otázek Hledat Vhled, ale budeš mít nevýhodu na cokoli KROMĚ jednání podle odpovědi.“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jo, ona ti to prostě nežere. Neexistuje způsob, jak ji přesvědčit, aby práskla Mutru. Naopak, začne stáčet rozhovor, klade ti otázky, chytá tě za slovo, vyvádí tě z míry. Co myslíš, co by bylo potřeba, aby z tebe vytáhla, kde má Vahid Srdce schované?“</em></p></blockquote>
+<hr>
+<h3 id="hurt-someone">Ubliž někomu</h3>
+<p>Způsob postavě hráče nebo cizí postavě, na které jí záleží, konkrétní, nepříjemné zranění. Něco víc než jen ztrátu HP. Něco bolestivého, krvavého, závažného, nebo všechno tohle.</p>
+<p>Tenhle tah rozhodně znamená, že oběť utrží zranění, a u postavy hráče to může znamenat i to, že si označí postižení.</p>
+<p><em>Rozhodně</em> to znamená, že teď mají <strong>nepříjemnou ránu</strong> (viz <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Zranění a léčení</a>). Je součástí fikce, něčím, s čím se musí vypořádat, a něčím, z čeho můžeš vycházet při svých tazích Vypravěče.</p>
+<p>Jak moc jim ublížíš, záleží na fikci, na tom, jestli zranění přišlo z 7+, nebo z 6-, na hozeném zranění a na štítcích zranění (<em>krvavá</em>, <em>drtivá</em> atd.). Když jim ublížíš, protože hodili 7-9 na Zkřížit Zbraně s chlapem s kyjem a utrží jen 2 zranění, bude to vypadat úplně jinak, než 6- proti zuřivému drakovi, který udělí 12 <em>krvavého</em> zranění.</p>
+<p>Klidně popiš obecnou povahu rány („Bodne tě do stehna a ty cítíš, jak se ti noha podlamuje.“), pak nech hráče hodit na zranění („Utrž zranění <button type="button" class="dice-roll" data-dice="d6+2" title="Klikni a hoď d6+2 — Shift: výhoda · Ctrl: nevýhoda">d6+2</button>.“) a podobu rány uprav podle uděleného zranění („3 zranění? Dobře, myslím, že klesneš na jedno koleno a noha tě pálí jako čert, ale pořád tě unese,“ oproti „Ty jo, 8 zranění? Pořád stojíš? No, noha se pod tebou podlomí a krev z ní jen crčí.“)</p>
+<p>Obecně platí, že trvalé, zmrzačující zranění způsob jen tehdy, když jsi je varoval, že je to možné (výslovně nebo naznačením/ ukázáním nebezpečí), a buď hodili 6-, nebo nebezpečí vědomě ignorovali. Nepřepadej je s tím znenadání.</p>
+<p>Například: když řekneš: „Ta věc má</p>
+<p>patnácticentimetrové zuby a čelisti, které rozdrtí strom… jestli tě dostane, budou ti chybět kusy těla, opravdu tam chceš jen tak stát a mávat na ni?“ a oni odpovědí „Jo, kdo nic neriskuje, nic nemá!“ a pak hodí 7-9 na Zkřížit Zbraně…</p>
+<p>no, varoval jsi je. Rozluč se s tou paží a přivítej fontánu krve.</p>
+<p>Na druhou stranu, pokud jsi tu věc představil jako hrozbu, ale ne tak úplně jako hrozbu, která <em>ukousne paži</em>, můžeš na 7-9 říct: „Zakousne se, všude je krev a začne tebou mlátit sem a tam.</p>
+<p>Nějaká podivně klidná část tvého mozku si říká ‚Aha, za chvíli mi utrhne ruku,‘ ale zbytek tebe prostě AAAÁ. Utrž zranění <button type="button" class="dice-roll" data-dice="d10+3" title="Klikni a hoď d10+3 — Shift: výhoda · Ctrl: nevýhoda">d10+3</button> a označ si <em>oslabený</em>. Co uděláš?“ Pořád docela tvrdý tah, řekl bych, ale takový, ze kterého se můžou zotavit. Vzít jim paži bez varování? To není fér.</p>
+<p>Na druhou stranu: cizím postavám klidně ubližuj agresivněji a brutálněji než postavám hráčů. Vzít paži třeba <em>následovníkovi</em> je skvělý způsob, jak ukázat, že útoky té věci jsou <em>krvavé</em> a strašlivé, a zvýšit sázky, aniž bys postavám hráčů bral hlavní roli. (Jedna rada ale: nemrzač zvířecího společníka bez varování; hráči na svých mazlíčcích strašně lpí.)</p>
+<p>Jakmile je rána nebo zranění způsobeno, je součástí fikce. Může postavu hráče přimět Vzdorovat Nebezpečí při něčem, co by jinak nebezpečné nebylo. Může být fikčním ospravedlněním pro další tvůj tah. Může tě vyzvat k tahům, které zranění zhorší.</p>
+<p>Víc o HP, zranění, postiženích a nepříjemných ranách viz kapitola <strong>Zranění a léčení</strong> <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Zranění a léčení</a>.</p>
+<hr>
+<blockquote><p><em>„Natáhne se k Eiře, ruka se mu rozplývá jako mlha a svírá jí hruď, a ona začne sténat a křečovitě sebou škubat a ty vidíš, jak jí místy černá kůže. Utrží zranění <button type="button" class="dice-roll" data-dice="1d12" title="Klikni a hoď 1d12 — Shift: výhoda · Ctrl: nevýhoda">1d12</button>, které ignoruje zbroj. Pořád stojí? Ne? Dobře, tak ji pustí a ona se prostě skácí k zemi. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Prostě STISKNE a ty nemůžeš dýchat, nemůžeš se hnout, pak KŘUP a cítíš, jak ti praská žebro, a SAKRA, to bolí. Utrž zranění <button type="button" class="dice-roll" data-dice="d8+3" title="Klikni a hoď d8+3 — Shift: výhoda · Ctrl: nevýhoda">d8+3</button>, které ignoruje zbroj, a označ si</em> oslabený<em>. Vahide, ty právě dokončuješ zapalování nafty, když se to děje, a vidíš Caradoca, jak modrá v jeho smyčkách. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Ajaj. 9 zranění? A pořád stojíš? Jo, ehm... myslím, že když se snažíš vytrhnout paži, ono, ehm… sakra, myslím, že to prostě pořádně stiskne čelisti a je tu jen ta palčivá bolest a ty vrávoráš dozadu. Jsi volný, ale podíváš se dolů a pravá paže prostě není. Krev stříká, je ti zima a myslíš, že možná omdlíš. Co uděláš?“</em></p></blockquote>
+<hr>
+<h2 id="dealing-damage-and-inflicting-debilities">Udělování zranění a způsobování postižení</h2>
+<p>„Udělit zranění“ není samo o sobě tahem Vypravěče; je to něco, co se děje jako součást jiného tahu Vypravěče. Když uděláš tah, při kterém se postava potluče, zraní, dostane ránu nebo utrpí úraz, uděl jí v rámci toho tahu zranění.</p>
+<p>Řekni hráči, kolik zranění utrží (obvykle hod kostkou podle nestvůry, která ho způsobila, nebo podle okolností). Ztratí tolik HP. Pokud klesnou na 0, jsou mimo hru a velmi pravděpodobně Na Prahu Smrti.</p>
+<p>Stejně tak nemáš tah „způsob postižení“. Postižení můžeš způsobit, když <strong>někomu ublížíš</strong> nebo <strong>vyčerpáš jejich zdroje</strong>, nebo když uděláš jakýkoli jiný tah, jehož výsledkem by bylo, že jsou <em>oslabení</em>, <em>omámení</em> nebo <em>sklíčení</em> („Uvědomíš si, že se ti třesou ruce, podlamují se ti nohy… označ si <em>oslabený</em>“).</p>
+<p>Víc o zranění a postiženích viz kapitola <strong>Zranění a léčení</strong> <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Zranění a léčení</a>.</p>
+<h3 id="separate-them">Rozděl je</h3>
+<p>Rozděl družinu. Postav mezi ně nepřátele nebo překážky. Nech někoho zaostat.</p>
+<p>Nech zmizet následovníka nebo jinou cizí postavu.</p>
+<p>Pošli někoho kutálet se ze svahu, takže vypadne z boje. Něco v tom smyslu.</p>
+<p>Tenhle tah se často hodí dohromady s <strong>dostaň je do úzkých</strong>. Protože co je horší než být v úzkých? Být v úzkých <em>sám</em>.</p>
+<hr>
+<blockquote><p><em>„Blodwen, po nějakých dvaceti minutách prodírání se vysokou trávou se trochu rozptýlíte a ty si uvědomíš, že nikoho dalšího nevidíš. Zprvu je slyšíš, takže nic hrozného, ale pak se zvuk toho, jak se prodírají trávou, ztratí v neustávajícím větru. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Au. Jo, zatímco jí vykládáš svou řeč, má kamennou tvář, žádná reakce. Pak nastane pauza, ona tak nějak zalapá po dechu, vzlykne a pak se spustí slzy. ‚Zatraceně, Caradocu.‘ A otočí se, práskne dveřmi a ty slyšíš, jak pláče. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Dobře, super, takže Vahide, ty jsi kus dál v chodbě, že? S Lowri, která ti drží lucernu? No, jak začínáš rozluštit runy – něco o ‚bráně‘ nebo ‚průchodu‘ nebo možná ‚cestě‘ – ozve se tohle KŘ-ŘACH, které cítíš v hrudi, všichni ho cítí, a pak skřípavý zvuk kovu o kov a ze stropu spadne ocelová clona a přetne chodbu. BUM. Vahide, ty a Lowri jste na druhé straně, sami, všude se valí prach. Co uděláte?“</em></p></blockquote>
+<hr>
+<h3 id="capture-someone">Zajmi někoho</h3>
+<p>V měkké verzi tohoto tahu je zajmi, ale zůstaň ve scéně a dej jim šanci uprchnout (nebo ostatním šanci je zachránit). V tvrdé verzi třeba střihni rovnou do další scény – zajatí, spoutaní, odvlečení kdovíkam – a podrobnosti o tom, jak se tam dostali, prostě přeskoč.</p>
+<hr>
+<blockquote><p><em>„Brennan hvízdne a Ragan, klidně a rychle jako nic, prostě popadne Blodwen, otočí ji a přiloží jí nůž ke krku. Brennan si povzdechne a ustoupí za ně. ‚Doufal jsem, že k tomu nedojde, ale moc na výběr mi nedáváte. Půjdeme a jsem si jistý, že tahle mladá dívenka by ocenila, kdybyste všichni nechali ruce tam, kde na ně vidím.‘ Začnou couvat pryč, co uděláte?“</em></p><p><em>„Caradocu, dotkneš se koule a je to jako VŠŠŠUCH. Vznášíš se v prostoru a díváš se dolů na své tělo. Svět je šedý, mlhavý a vybledlý a skoro necítíš nohy. Vahide, ty se o pár hodin později vrátíš domů a najdeš Caradoca zhrouceného na ledovou kouli, prsty se jí dotýká a je celý modrý. Nereaguje. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jo, Vahide, Lowri tak mává pochodní ve tmě a vy oba vyhlížíte ven, hledáte, co udělalo ten zvuk, a my diváci vidíme, jak se za vámi vynoří stinná postava s dlouhými, hubenými prsty. Ty prsty ti sevřou ústa, Vahide, a jiný tvar popadne Lowri. Krátce se zmítáte a pak kamera tak nějak sjede dolů k lucerně na zemi, na boku, prasklé a blikající. Slyšíme zvuky, jak vás dva odvlékají pryč. Rhianno, zatímco se tohle děje…“</em></p></blockquote>
+<hr>
+<h3 id="offer-an-opportunity">Nabídni příležitost</h3>
+<h3 id="with-or-without-a-cost">(s cenou, nebo bez)</h3>
+<p>Dej jim skulinu, šanci jednat.</p>
+<p>Příležitost může být konkrétní („Když teď zaútočíš, budeš je mít v hrsti.“) nebo obecná („Zdá se, že si tě nevšimli, co uděláš?“). Může mít jasnou cenu („...ale nadělá to spoustu hluku a vyhlásí to poplach.“), možnou cenu („...ale budeš si muset pospíšit, abys to stihl“) nebo žádnou.</p>
+<p>Tenhle tah budeš často dělat, aniž by sis to uvědomil. Když hráči prostě předáš iniciativu – když je situace napjatá a živá a ty se zeptáš „Co uděláš?“, aniž bys předtím <strong>ohlásil potíže</strong> nebo je <strong>dostal do úzkých</strong> či je jinak donutil reagovat – nabízíš jim příležitost.</p>
+<hr>
+<blockquote><p><em>„3 zranění? S jeho zbrojí to nestačí, abys ho složil. Myslím, že ucukne a ty mu jen tak vyřízneš šrám přes tvář. Ale je v defenzivě, co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Nechytají se na návnadu, Rhianno. Ale kdybys okázale odešla z tábora a nechala tam Andrase a Blodwen samotné? To by zabralo. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Co je tu pro tebe užitečné nebo cenné? Ten modře zářící krystal zasazený ve zdi. Když ho rozbiješ, rozpoutá to pořádný chaos, přesně to rozptýlení, které potřebuješ.“</em></p></blockquote>
+<hr>
+<h3 id="tell-them-the-consequences-requirements-then-ask">Řekni jim následky/ požadavky (a zeptej se)</h3>
+<p>Používej tenhle tah jako přerušení, jako způsob, jak vyjasnit fikci a nastavit sázky, když řeknou, že chtějí něco udělat. „Když to uděláš, uvědomuješ si, že __, že jo?“</p>
+<p>Používej ho také k tomu, abys jim ukázal cestu vpřed, když je jinak zatarasená. Použij ho, abys je přinutil ke smysluplnému rozhodnutí. Použij ho, aby zaplatili (časem, zdroji, příležitostí atd.), pokud se chtějí vydat nějakou cestou.</p>
+<hr>
+<blockquote><p><em>„A co Garetovo tělo, Rhianno? Jestli ho tu necháš, zbytek družiny bude reptat – víš, jak jsou pověrčiví. Mohla bys ho spálit, ale to zabere čas a prozradí to vaši pozici. Co uděláš?“</em></p><p><em>„Jestli to uděláš, fajn, ale nebudeš mít šanci dostat se z dosahu. Výbuch tě určitě zasáhne. Uděláš to?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jo, to ne. Ruce se ti třesou, v ústech máš sucho, nemůžeš myslet na nic jiného než na to zlověstné, nenávistné oko. Jestli chceš vystřelit, musíš se nejdřív dát dohromady. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Vahide, z těch run nedokážeš vyčíst ani ň, aspoň ne teď. Možná kdybys udělal frotáž a měl čas je studovat doma, se všemi svými knihami, poznámkami a vším. Ale ne tady venku. Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Ta věc je z masivního kamene. Tvé šípy s ní ani nehnou, Rhianno. Jestli chceš té věci ublížit, nebo ji aspoň zpomalit, budeš ji muset udeřit něčím velkým a těžkým.“</em></p></blockquote>
+<hr>
+<h3 id="advance-towards-impending-doom">Postup k hrozící zkáze</h3>
+<p><strong>Hrozby</strong> <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Hrozby</a> a <strong>rizika</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Nebezpečí</a> můžou mít hrozící zkázu, každá s řadou chmurných znamení, která k ní vedou. Když uděláš tenhle tah, rozhodneš, že se jedno z těch chmurných znamení naplnilo, a ukážeš ho postavám.</p>
+<p>V praxi se tenhle tah skoro vždycky projeví jako jiný tah. <strong>Ohlásíš potíže</strong> nebo <strong>odhalíš nevítanou pravdu</strong> nebo <strong>dostaneš někoho do úzkých</strong> (atd.) tak, aby to ukázalo, že se chmurné znamení naplnilo.</p>
+<p>Výjimečně se můžeš zle zasmát, zaškrtnout políčko a říct, že mají zlou předtuchu nebo že zavál studený vítr, aniž bys znamení hned odhalil. Když to uděláš, zavaž se, že se znamení mimo scénu opravdu naplnilo. Pokud ne, žádný tah jsi vlastně neudělal.</p>
+<hr>
+<blockquote><p><em>„Najdeš Niu v tom zříceném domě na kraji vesnice. Musíš se tam protáhnout a oči si musí přivyknout na tmu, ale když si přivyknou, sevře se ti žaludek. Po všech zdech jsou křídou nakreslení pavouci a… oltář? S touhle hromadou klacků, srsti a pavučin, o které ti dojde, že je to modla velkého pavouka. Nia se celá usmívá a říká ‚Ahoj, Blodwen, líbí se ti moje obrázky?‘ Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Takže do toho bodáš přes rameno, ale přitom vrávoráš. A myslím, že jo, zabiješ to, ale nakonec zavrávoráš dozadu do jednoho ze starých sloupů. Ozve se hlasité PRÁSK a nějaké vrzání a ze stropu se začne sypat prach. Vahide, ty to vidíš, co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Caradocu, jak usínáš, začne se ti zdát sen. Opravdu podivný, živý sen. Je to jako když jsi byl v té staré hrobce Tvůrců a díval se nahoru, ale… jinak. Klaustrofobičtěji. Jako bys byl pohřbený v hlíně, odjakživa, navždy, a nad tebou je světlo, daleko, daleko. Ale je to… dost, víš? Něco, k čemu se pohnout? A tak se natahuješ a hrabeš se hlínou ke světlu, a pak se s trhnutím probudíš a sakra, všechno se třese a lidi křičí a děti pláčou, je to zemětřesení! Co uděláš?“</em></p></blockquote>
+<hr>
+<h2 id="example-of-play">Příklad hry</h2>
+<blockquote><p><em>Všichni dorazili. Pokecali jsme, uvelebili se a jsme připraveni začít. Sezení začíná ve</em> <strong><em>volné hře</em></strong><em>. Zeptám se, jestli chce někdo shrnout minulý děj. Hráčka Rhianny chce.</em></p><p><em>„Poslali jsme dřevařskou partu do Podhůří. Ale vyděsil je nějaký kozí démon a ten – nebo něco – zranil Andrase. Poslali ho zpátky. Vyrazili jsme to prošetřit. Dostali jsme z Andrase před odchodem něco užitečného?“</em></p><p><em>Blodwen říká: „Byl dost mimo. Stabilizovali jsme ho, ale pořád sténal ‚to oko!‘ A myslím, že po mně vyjel.“</em></p><p><em>„Jasně, jasně! Už jste se vystrojili a vyrazili do Podhůří,“ říkám.</em></p><p><em>Pro rozehřátí</em> <strong><em>položím pár otázek</em></strong><em>. „Ale než začneme – Caradocu, kdo si myslíš, že ti dělal kázání kvůli tomu, že jdeš na další dobrodružství? A Vahide, proč jsi tak rád, že na chvíli vypadneš z vesnice?“</em></p><p><em>Dozvíme se, že koželuh Sawyl shání nového učně a že se kvůli tomu Caradoc cítí všelijak provinile. Taky se dozvíme, že si Vahid potřebuje odpočinout od vdovy Maire, která mu kazí jeho styl „zarytého starého mládence“. Dělám si poznámky!</em></p><p><em>Dobře, jdeme na to.</em> <strong><em>Zarámuju dění</em></strong> <em>a pak</em> <strong><em>popíšu prostředí</em></strong><em>. „Vy čtyři vstoupíte do Podhůří (Foothills) odpoledne druhého dne cesty. Kopce se zvedají z Planin a cesta se mezi nimi vine. Svahy jsou poseté mladými, tenkými stromky, které jsou větší a starší, čím dál pronikáte do kopců. Když slunce klesne nízko, konečně máte trochu požehnaného stínu.“ (Některé z těch detailů jsou z almanachu; zbytek jsem si vymyslel.)</em></p></blockquote>
+<hr>
+<blockquote><p><em>Je to poprvé, co ve hře vidíme Podhůří, takže</em> <strong><em>se ptám</em></strong> <em>třeba: „Jakého nápadného rozdílu si všimnete mezi těmihle kopci a Velkým Hvozdem (Great Wood)?“</em></p><p><em>Když mi odpovědí, přiblížím pohled a zarámuju skutečnou scénu,</em> <strong><em>dávám detaily a konkrétnosti</em></strong><em>. „Do tábora dorazíte těsně po západu slunce. Je u odpočívadla, ale i tak postavili z poražených kmenů něco jako barikádu. Všichni se choulí kolem chabého ohně na vaření. Všichni mlčí, jsou napjatí, svírají sekery. Když se objevíte, trochu sebou trhnou, ale když jim dojde, že jste to vy čtyři, ozve se úlevné mumlání. ‚To je Rhianna,‘ a ‚Požehnaná‘ a ‚Díky Torovi.‘“ (Všimni si, že se soustředím víc na pocity a chování než na taktické rozložení, protože tohle jsou detaily, na kterých záleží. Taky</em> <strong><em>hraju své cizí postavy</em></strong><em>.) „Hele, Rhianno, koho jsi tu nechala velet?“ (Další otázky!)</em></p><p><em>„Hm. Asi Eliose.“</em></p><p><em>Udělám měkký tah a</em> <strong><em>položím provokativní otázku</em></strong><em>. „Fajn. On na to: ‚Jen vy čtyři? Takže co, máme hotovo? Můžeme domů?‘ Ostatní s nadějí přikyvují.</em> <strong><em>Co uděláš?</em></strong><em>“</em></p><p><em>Rhianna se mě ptá, jako hráčka Vypravěče: „Počkej, moment. Je tu moje družina?“</em> <strong><em>Odpovím na její otázku</em></strong><em>, řeknu jí, že není, a pak se jí znovu zeptám, co udělá.</em></p><p><em>Rhianna odpoví (tím svým přísným hlasem): „Kde je moje družina, Eliosi?“ Čas na</em> <strong><em>vyhodnocení její akce</em></strong><em>. Tlačí na Eliose (Přesvědčit, možná?), ale on nemá důvod se bránit, takže tah se nespustí. Prostě řeknu, co se stane, a odpovím Eliosovým hlasem. „Pořád jsou venku. Na lovu.“</em></p></blockquote>
+<p>(pokračování na další straně)</p>
+<hr>
+<p>(pokračování z předchozí strany)</p>
+<blockquote><p><em>Situace je jasná, ale chtělo by to postrčit, takže dál mluvím za Eliose a udělám další měkký tah (</em><strong><em>ohlásím potíže</em></strong><em>). „‚Víte, už tu měli dávno být.‘ Co uděláte?“</em></p><p><em>Postavy hráčů probírají, jestli družinu hledat, ale rozhodnou se zůstat a zjistit víc. Pořád nespouštějí žádné tahy (ptají se na věci, na které by dřevaři ochotně odpověděli), takže jen</em> <strong><em>hraju svou cizí postavu</em></strong><em>. Elios a Terrwyn vyprávějí, jak oba viděli toho démona před týdnem, než byl Andras napaden. „Jako velký kozel s lidskou lebkou, třema očima a obrovským rohem.“</em></p><p><em>Chystal jsem se</em> <strong><em>nabídnout příležitost</em></strong><em>, ale Vahid mi skočí do řeči. „Slyšel jsem někdy o něčem takovém?“ To spouští Vědět Své, takže hodí +INT a padne mu 8.</em></p><p><em>Z přípravy vím, že tenhle démonický kozel je ve skutečnosti strážný duch a že skutečnou hrozbou je hagr, takže použiju jeden ze svých průzkumných tahů a</em> <strong><em>naznačím, že je za tím víc</em></strong><em>. „Zní to jako šaksa, duch nebo démon, ve kterého věří lidé na severu. Něco jako strážce hřbitovů? Nebo je to možná metafora a jde o pána mrtvých? Odkud to víš?“</em></p><p><em>„Ale, z jednoho jejich náboženského textu, četl jsem ho v knihovně na jihu. Zatím si to nechám pro sebe.“</em></p><p><em>Aktualizuju situaci. „Už je hluboká noc a družina se pořád nevrátila.“ Zaměřím světlo reflektorů a</em> <strong><em>nabídnu příležitost</em></strong><em>. „Hele, Caradocu, zatímco ostatní mluvili s Eliosem a Terrwynem, všiml sis, jak si ti druzí vyměňují pohledy. Jako že mají strach. Ale možná taky něco tají? Co uděláš?“</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jé, pozorně sleduju a snažím se přijít na to, co se děje. Hledat Vhled?“ Bohužel hodí 4. Čas na tvrdý tah!</em></p><p><em>Já</em> <strong><em>ohlásím potíže</em></strong><em>. „Jsi si jistý, že Iwan a Cadi vědí víc, než říkají, ale než s tím stihneš něco udělat, ozve se strašlivý řev a praskot z výše v kopcích a pak slabší výkřiky – jako když lidi bojují. Slyšíte to všichni. Co uděláte?“</em></p><p><em>Ptají se a já trochu vyjasním situaci (je tma, boj zní docela blízko, nikdo z nich ty kopce dobře nezná). Pak Rhianna řekne: „Jdeme. Do kopců.“</em></p><p><em>Tím scéna končí! Chvíli volné hry probíráme logistiku. Vahid a Blodwen si každý vezmou pochodeň zapálenou od ohně na vaření. „Vyrážíte?“ ptám se. Vyrážejí.</em></p><p><em>Oddálím pohled a popíšu situaci obecně: „Je tma, kopce jsou strmé a zalesněné a orientujete se podle sluchu, jdete za zvuky boje.“ Udělám měkký tah a</em> <strong><em>řeknu jim požadavky</em></strong><em>. „Jestli se tam snažíte dostat rychle, spustí to Bojovat jako Jeden – nebezpečí je v tom, že zabloudíte, rozdělíte se nebo se cestou zraníte. Když si dáte na čas a půjdete opatrně, žádný tah nespustíte – ale nejspíš tam nedorazíte včas, abyste pomohli s bojem. Co uděláte?“</em></p><p><em>Rozhodnou se Bojovat jako Jeden. Vyhodnotíme tah, všem padne dobrý hod, a tak přejdeme do další scény. „Je to zoufalý, napůl slepý běh lesem, ale pak vyrazíte na mýtinu. V mihotavém světle pochodní vidíte Eiru a Lowri, jak stojí proti obrovskému, mohutnému hromotlukovi, tak čtyři metry vysokému a napůl tak širokému.“</em></p></blockquote>
+<hr>
+<blockquote><p><em>Sotva se nadechnu a už dělám měkký tah (</em><strong><em>dostanu někoho do úzkých</em></strong><em>): „Zvedne malý strom jako kyj a zařve, chystá se rozmlátit obě dvě, a ony obě jen zírají na tu věc s otevřenou pusou.“ Doteď jsem oslovoval skupinu, světlo reflektorů rozptýlené, tak ho teď zaostřím. „Rhianno, Blodwen, vy jste tu byly první – co uděláte?“</em></p><p><em>Hráčka Rhianny neváhá. „Střelím ho. Do hlavy. Vystřelit?“ Ano, ale řeknu jí, ať počká, až uvidíme, co udělá Blodwen.</em></p><p><em>Blodwen se ptá. „Takže je to jako člověk? Jen fakt velký?“ Jo. „A ještě si nás nevšiml?“ Jo, zatím ne, právě dorazily. „Poznávám ho? Není to třeba jeden z našich dřevařů, zmutovaný nebo tak?“</em></p><p><em>„Hm,“ řeknu jí. „Pochybuju, že bys to poznala při rychlém pohledu ve světle pochodně. Mohla by sis vzít chvilku a Hledat Vhled. Uděláš to?“</em></p><p><em>„Ne. Můžu třeba křičet a mávat pochodní a odvést jeho pozornost?“ ptá se. Hráč Caradoca podotkne, že to zní jako spouštěč tahu Bránit („skočíš na ochranu ostatních“), a všichni souhlasíme. Ale shodneme se taky, že Rhianna stihne vystřelit dřív, než se to stane.</em></p><p><em>Rhianně padne na Vystřelit 8 a rozhodne se pohnout, aby měla čistou ránu. Udělí jen 3 zranění, minus 1 zbroj. Sotva ho škrábla a Rhianna se právě vystavila nebezpečí.</em></p><p><em>„Myslím, že kvůli té ráně musíš vystoupit na mýtinu, že jo? Škrábneš ho do ramene a – dobrá zpráva – zarazí úder, zavrčí a otočí se k tobě, Eiru a Lowri nechá být. Špatná zpráva je, že tě propíchne svým velkým, vypouleným, strašlivým okem a tvá mysl se prostě vyprázdní, kolena se ti začnou klepat, nedokážeš ani myslet.“</em></p></blockquote>
+<hr>
+<blockquote><p><em>Tím je Rhiannin tah vyhodnocený, takže přesunu světlo reflektorů a</em> <strong><em>nabídnu příležitost</em></strong><em>. „Blodwen, pořád chceš Bránit?“</em></p><p><em>Chce a hodí 9. Okamžitě utratí svou Pohotovost, aby strhla veškerou pozornost ze svého chráněnce (teď Rhianny) na sebe. „Fajn, jak to vypadá?“ ptám se.</em></p><p><em>„Skočím před Rhiannu, mávám pochodní a řvu, jako ‚JAAAAAA!‘“</em></p><p><em>Funguje to, samozřejmě. Popíšu, jak hagr obrátí své oko na ni a naplní ji stejným pocitem hrůzy, jaký měla Rhianna.</em></p><p><em>Přesunu světlo reflektorů na Caradoca a Vahida. Řeknu jim, že právě dorazili, rychle shrnu situaci a pak</em> <strong><em>nabídnu příležitost</em></strong><em>. „Teď se soustředí na Blodwen, co uděláte?“</em></p><p><em>Vahid si situaci prohlédne a Hledá Vhled. Rozhodneme se to vyhodnotit později, protože Caradoc vyrazí vpřed se štítem nahoře a oštěpem bodá nízko. Pozornost té věci měla Blodwen, takže se shodneme, že se Caradoc dostane dost blízko, aby zaútočil, ale ono je pořád plně schopné a ochotné se bránit. To spouští Zkřížit Zbraně, ale Caradocovi padne 4.</em></p><p><em>Musím udělat tvrdý tah a ta samozřejmá věc je ublížit mu. „Asi tě vidí přicházet, Caradocu, a máchne tou větví dřív, než se stihneš přiblížit. Dostaneš ránu do hlavy a všechno je jen bílé a v uších ti zvoní a co se to vůbec děje?</em></p></blockquote>
+<p><em>Utrž zranění <button type="button" class="dice-roll" data-dice="d10+3" title="Klikni a hoď d10+3 — Shift: výhoda · Ctrl: nevýhoda">d10+3</button> a označ si</em> omámený<em>.</em></p>
+<blockquote><p><em>Rhianno, ty se z toho vytrhneš a vidíš, jak to praští Caradoca do hlavy, on prostě odletí a skončí na hromadě. Co uděláš?“</em></p><p><em>A pokračujeme dál.</em></p></blockquote>
+<h2 id="your-principles">Tvé principy</h2>
+<p>Tyhle principy jsou tvá vodítka, tvé osvědčené postupy, tvá pravidla chování při vedení <em>Stonetopu</em>. Snaž se je dodržovat.</p>
+<p>Jsou nejjistější cestou k naplnění tvé agendy.</p>
+<ul class="bullets"><li>Dodržuj pravidla</li><li>Začínej a konči fikcí</li><li>Oslovuj postavy, ne hráče</li><li>Ptej se a stav na odpovědích</li><li>Fandi postavám hráčů</li><li>Přijmi fantastické i všední</li><li>Vytěž průvodce světem</li><li>Respektuj svou přípravu</li><li>Vdechni svým postavám život</li><li>Mysli i na dění mimo scénu</li><li>Přines to domů</li><li>Nech věci dýchat</li><li>Nech věci hořet</li></ul>
+<p>Dodržovat principy není vždycky snadné.</p>
+<p>Někdy není jasné, jak daný princip v dané chvíli vypadá. Někdy si principy budou odporovat. Velká část tvé práce spočívá v tom, že je vykládáš a uplatňuješ, jak uznáš za nejlepší. Často to budeš dělat instinktivně a to, jak přesně své principy dodržuješ, tvoří velkou část tvého osobního vypravěčského stylu.</p>
+<h3 id="follow-the-rules">Dodržuj pravidla</h3>
+<p>Pravidel je hodně, hlavně v podobě tahů hráčů: základní tahy a tahy následovníků, zvláštní tahy, průzkumné tahy a tahy osady. Každý deník má tahy. Přílohy mají tahy. Arkána mají tahy. Nebezpečí, objevy, hrozby i místa můžou mít tahy pro hráče.</p>
+<p>Snad je to samozřejmé, ale: <strong>když se spustí tah, drž se postupu v tahu a řekni, co tah</strong></p>
+<p><strong>vyžaduje od tebe</strong>. Pravidla jsou tu proto, aby postrkovala rozhovor a fikci určitými směry a aby vyjasňovala, co se děje ve chvílích nejistoty.</p>
+<p>Dej hráčům plný užitek z jejich tahů a hodů. Klidně zpochybňuj, jestli ty tahy dokážou spustit, a zmírňuj výsledky podle ustavené fikce a své přípravy. Ale nefalšuj výsledky tahu proto, že si myslíš, že by věci měly jít určitým směrem, nebo protože se bojíš, že to bude „moc snadné“ nebo „moc těžké“. To není tvoje práce. <strong>Hraješ, abys zjistil, co se stane</strong>, ne?</p>
+<p>Tah hráče nesmíš vyvolat, pokud jeho spouštěč není opravdu splněn. <em>Nesmíš</em> říct: „Crinwin na tebe útočí, hoď +DEX na Vzdorovat Nebezpečí!“ Proboha, to ne. Řekneš, že se na ně crinwin vrhne, a zeptáš se: „Co uděláš?“ Pokud udělají něco, co spustí tah, <em>teprve pak</em> uděláš <em>to</em>.</p>
+<p>Ve službě ostatním principům je v pořádku navrhnout něco v duchu pravidel místo doslovného dodržení jejich litery, ale řekni to otevřeně a získej souhlas. „Hodil jsi 7-9 na Zkřížit Zbraně? Hoď si zranění. 9!? Ty jo. Takže vím, že tam stojí, že se vystavíš útoku nepřítele, ale napadá mě, že ‚útokem‘ je v tomhle případě to, že se ti sekera zasekne do jeho lebky a chvíli potrvá, než ji vyprostíš. Je to pro tebe v pohodě?“</p>
+<h3 id="begin-and-end-with-the-fiction">Začínej a konči fikcí</h3>
+<p>Pamatuj: „fikce“ je sdílený, představovaný prostor, který s hráči ustavujete rozhovorem, a činy a vzájemné pozice různých postav v tomto představovaném prostoru.</p>
+<p>Když přijdou ke slovu pravidla – když hráč spustí tah, hází na zranění, utrácí zdroj nebo cokoli jiného – ukotvi pravidla ve fikci. Pokud si nedokážeš představit, co postava doopravdy dělá nebo jak to dělá, ptej se a vyjasni fikci dřív, než sáhneš po kostkách. Až se hodí a pravidla řeknou, co se stane, popiš, jak to vypadá ve fikci (nebo o to požádej hráče). <strong>Fikce, pak pravidla, pak zpátky k fikci.</strong> Vždycky.</p>
+<p>Stejně tak když děláš tah Vypravěče, udělej tah, který plyne z ustavené fikce. Neříkej název tahu – nech si ho pro sebe – ale popiš, jak se projevuje ve fikci. Ukazuj, nevypravuj.</p>
+<p>Začínat a končit fikcí je zásadní součástí toho, jak <strong>vykreslit bohatý a tajemný svět</strong>. Pokud budeš šetřit na fikci a soustředit se jen na mechaniku, zjistíš, že tvůj svět je mdlý, nudný a chudokrevný.</p>
+<hr>
+<blockquote><p><strong>Špatně:</strong> <em>„Útočíš na hagra? Fajn, hoď na Zkřížit Zbraně. 10? Vyhneš se jeho útoku, nebo udělíš zranění navíc? Dobře, hoď si zranění +<button type="button" class="dice-roll" data-dice="1d6" title="Klikni a hoď 1d6 — Shift: výhoda · Ctrl: nevýhoda">1d6</button>. 7 zranění? Pořád stojí a vrací ti to za <button type="button" class="dice-roll" data-dice="1d10+3" title="Klikni a hoď 1d10+3 — Shift: výhoda · Ctrl: nevýhoda">1d10+3</button>,</em> drtivá<em>, srazí tě k zemi. Jde po tobě znovu, co uděláš?“</em></p><p><strong>Dobře:</strong> <em>„Útočíš na hagra? Fajn, jak to vypadá? Bodáš zespodu do jeho břicha? Jo, jasně, hoď na Zkřížit Zbraně. 10? Vyhneš se jeho útoku, nebo udělíš zranění navíc? Dobře, hoď si zranění +<button type="button" class="dice-roll" data-dice="1d6" title="Klikni a hoď 1d6 — Shift: výhoda · Ctrl: nevýhoda">1d6</button>. 7 zranění? Takže jak jsi řekl, bodneš ho do břicha a hagr se zlomí v pase a vyje bolestí, ale než se stihneš vzdálit, prostě se narovná a vrazí ti hřbetem ruky přes obličej. Utrž zranění <button type="button" class="dice-roll" data-dice="d10+3" title="Klikni a hoď d10+3 — Shift: výhoda · Ctrl: nevýhoda">d10+3</button>, jak letíš vzduchem a dopadneš na hromadu, hlava se ti točí. Slyšíš, jak se k tobě valí, funí bolestí a vztekem. Co uděláš?“</em></p></blockquote>
+<hr>
+<h3 id="address-the-characters-not-the-players">Oslovuj postavy, ne hráče</h3>
+<p>Ptej se <em>postav</em>, co udělají. Říkej <em>postavám</em>, co vidí a slyší. Říkej <em>postavám</em>, co je jim zřejmé. Neříkej: „Briane, co dělá Vahid, aby neusnul?“ Řekni místo toho: „Vahide, co děláš, abys neusnul?“ Neříkej Jamiemu: „Rhianna pozná, že lže.“ Řekni (Iwanovým ufňukaným hlasem) „Ale ne, Rhianno, víš, že bych tohle nikdy neudělal,“ a pak (svým vlastním hlasem): „Ale uhne pohledem a ty prostě poznáš, že kecá.“</p>
+<p>Když budeš mluvit takhle, udržíš hru zaměřenou na fikci. Postrčíš hráče, aby mysleli, mluvili a reagovali jako jejich postavy. Ustavuješ fikci tak, jak ji vnímají postavy, protože to jsou ty, koho oslovuješ.</p>
+<h3 id="ask-questions-and-build-on-the-answers">Ptej se a stav na odpovědích</h3>
+<p>Ptej se pořád a všude.</p>
+<p>Ptej se, <strong>abys ustavil záměr</strong>. „Než ráno vyrazíte, chce ještě někdo něco udělat?“</p>
+<p>Ptej se, <strong>abys vyjasnil záměr</strong> a sladil se s hráči.</p>
+<p>„Jo, asi ho dokážeš obejít. Ale čeho tím chceš dosáhnout?“</p>
+<p>Ptej se, <strong>abys vyjasnil fikci</strong>. „Jasně, můžeš Hledat Vhled. Jak to vypadá?“</p>
+<p>Ptej se postav, <strong>na co myslí nebo co cítí</strong>. „Caradocu, stojíš tam, krvácíš z rány, kterou ti zasadil Wynfor, a ten pohled v jeho očích – skoro ho nepoznáváš. Co se ti teď honí hlavou?“</p>
+<p>Ptej se postav <strong>na jejich minulost nebo jejich všední život</strong>. „Rhianno, kdo tě naučil lovit a stopovat?“ „Blodwen, bydlíš s matkou, že jo? Nějací další sourozenci?</p>
+<p>Jak to tam uvnitř vypadá?“</p>
+<p>Ptej se postav <strong>na věci, které by znaly</strong>. „Rhianno, s Brennanem ses už setkala.</p>
+<p>Co je na něm nejnápadnější?“</p>
+<p>Ptej se postav <strong>na věci, které slyšely nebo kterým věří</strong>, kde jejich odpovědi nemusí být tak docela pravdivé. „Blodwen, jaké příběhy jsi slyšela o Tichých Dvojčatech a o tom, jak začala strašit u Potoka? Co myslíš, jaká je pravda?“</p>
+<p>Pokládej otázky, <strong>které potvrzují detaily a zároveň žádají o podněty</strong>. „Vahide, čeho sis všiml, co mají všechny zmizelé děti společného?“ „Rhianno, jaký drobný rituál lidé vždycky dělají, když překračují Potok?“</p>
+<p>Požádej postavy, <strong>aby ti scénu vykreslily</strong>, tím, že se jich zeptáš na detaily k nějakému tématu.</p>
+<p>„Co tady každému z vás říká, že tohle je místo, kterého se dotkli Fae?“ „Co tu vidíte, co jste už viděli tisíckrát?“ „Co je na Planinách brzy zjara nejpozoruhodnější?“</p>
+<p>Pokládej otázky, <strong>které dělají víc než jedno z výše uvedeného.</strong> „Caradocu, když jste se všichni vrátili do vesnice, čí reakce tě překvapila nejvíc? Jak reagoval a co jsi z toho cítil?“</p>
+<p>Zapracuj jejich odpovědi do fikce, hned nebo později. Neodmítej jejich odpovědi, leda abys upozornil na rozpor. Pokládej doplňující otázky.</p>
+<p>Přemýšlej, co jejich odpovědi naznačují, a odvozuj z toho. Jejich odpovědi tě můžou překvapit – to je součást zábavy – ale pokračuj, jako by ta odpověď vždycky byla pravdivou a samozřejmou součástí ustaveného světa.</p>
+<p>Když požádáš hráče, aby přispěli do fikce, pomůže ti to <strong>hrát, abys zjistil, co se stane</strong>. Hráči vždycky přijdou s detaily, které by tě nenapadly, a díky tomu je svět, který spolu tvoříte, o kousek překvapivější. Když stavíš na detailech, které ustavili hráči, pomůže ti to <strong>vykreslit bohatý a tajemný svět</strong>. Lidem obvykle víc záleží na věcech, které pomohli vytvořit, a když vytáhneš postavu nebo detail, který zavedli před čtyřmi sezeními, a ono to bude mít váhu, svět tím opravdu ožije.</p>
+<h3 id="be-a-fan-of-the-player-characters">Fandi postavám hráčů</h3>
+<p>Postavy hráčů jsou protagonisté příběhu.</p>
+<p>Drž pozornost hry na nich. Drž jim palce. Oslavuj jejich vítězství. Truchli nad jejich ztrátami. Dovol si o nich přemýšlet a pak hledej způsoby, jak odpovědi získat hrou. Ať ti na nich záleží. Buď jejich fanoušek.</p>
+<p>Fandit postavám hráčů neznamená nechat je dělat, co chtějí.</p>
+<p>Ty jsi autorem jejich protivenství. Musíš <strong>prokládat jejich životy dobrodružstvím</strong>. Ohrožuj je. Ubližuj jim. Jdi po věcech, na kterých jim záleží. Dávej jim nejrůznější obtížná rozhodnutí.</p>
+<p>Ale také: dávej jim příležitosti, jak zazářit v danou chvíli, tak věci dlouhodobě zlepšit. Nech je užívat si věcí, za kterými jdou.</p>
+<p><em>Stonetop</em> dává postavám hráčů hodně svobody jednání. Respektuj to. Neošiď je o jejich tahy nebo hody. Sleduj, co udělají se svou mocí, postavením a schopnostmi. <strong>Hraj, abys zjistil, co se stane.</strong></p>
+<h2 id="the-line">Hranice</h2>
+<p>V <em>Stonetopu</em> a podobných hrách vede hranice mezi tím, za co odpovídají hráči, a tím, za co odpovídáš ty jako Vypravěč. Hráči mají na starosti své postavy: co dělají a říkají; co cítí a myslí si; jak žijí; co dřív zažily. Ty jako Vypravěč máš na starosti svět: prostředí, cizí postavy, nebezpečí a objevy.</p>
+<p>Některé otázky popsané výše Hranici rozmazávají. Když se Vahida ptáš, co mají všechny zmizelé děti společného, ve skutečnosti žádáš Vahidova hráče, aby udělal něco, co je obvykle odpovědností Vypravěče:</p>
+<p>vymýšlel detaily o světě.</p>
+<p>Fígl spočívá v tom, že <strong>oslovuješ postavy, ne hráče</strong>. Nežádej hráče, aby vymyslel, co najde v další místnosti, jak zareaguje cizí postava nebo jak mu ublíží past. Zeptej se <em>postavy</em> na něco, co ví, co slyšela, co zažila. Tím se požadavek vrací na jejich stranu Hranice. Je to myšlenkový trik, ale účinný.</p>
+<p>I tak může být rozmazávání Hranice pro některé hráče nepříjemné nebo odpudivé. Některým hráčům vymýšlení detailů o světě vůbec nevadí, ale jiní zjistí, že jim to bere pocit ponoření nebo že pak svět působí prázdně a vymyšleně. Přizpůsob otázky, které pokládáš, a to, jak je pokládáš, tomu, co vyhovuje tobě a tvým hráčům.</p>
+<h3 id="embrace-the-fantastic-and-the-mundane">Přijmi fantastické i všední</h3>
+<p>Svět je plný fantastických prvků:</p>
+<p>duchové, nestvůry, vrtkaví Fae, prastará díla Tvůrců, temnota Věcí Tam Dole. Zdůrazňuj tyhle prvky. Používej je, aby byl svět tajemný.</p>
+<p>Ale zároveň ukotvi hru v lidských starostech: střídání ročních období, blížící se sklizeň, přátelé a sousedé.</p>
+<p>Ohrožuj postavy hráčů skutečnými nebezpečími:</p>
+<p>krutým počasím, divokou zvěří, hladem, prochladnutím. Ptej se na proviant, který si vzali, nebo jak přišli k tomu plášti. Naplň svět všedními detaily.</p>
+<p><strong>Stav fantastické a všední do vzájemného kontrastu</strong>. Pokud se dobrodružství točí kolem nadpřirozené hrozby nebo příležitosti, nezapomeň do něj zařadit naprosto všední výzvy, nebezpečí a objevy. Pokud se sezení týká hlavně všedních starostí (třeba obchodní výpravy do Kraje Mokřin (Marshedge) nebo lovu na pratura), přisyp trochu fantastických prvků. Souhra obou dělá svět o to bohatším a tajemnějším.</p>
+<h3 id="exploit-the-setting-guide">Vytěž průvodce světem</h3>
+<p><em>Stonetop</em> přichází s množstvím ustaveného světa, ale nechává spoustu prázdných míst, která s hráči během hry vyplníte. Svět má sloužit jako odrazový můstek pro tvou tvořivost. Pomáhá nastavit tón a dává vám všem společný výchozí bod.</p>
+<p>Poskytuje detaily, které můžeš rozvíjet. Naznačuje odpovědi, ale ne vždy je dává. Využívej ustavený svět k tomu, abys <strong>vykreslil bohatý a tajemný svět</strong>.</p>
+<p>Průvodce světem používej pro inspiraci, ale neměj pocit, že jsi mu zavázán. Pokud ti hráči nabídnou něco, co ustavenému světu odporuje, nezamítej jejich přínos jen proto, že kniha říká něco jiného. Kniha není autorita, je to zdroj, který máš vytěžit.</p>
+<p>To ale neznamená: <strong>dobře si rozmysli, co měníš nebo zahazuješ</strong>. Je bezpečnější měnit konkrétní detaily než široká témata. Pokud Lišák řekne, že Brennan kdysi vedl bandu v Kraji Mokřin a k moci se vyvraždil (oproti příběhu z průvodce světem, podle něhož to byl lapka, kterého rada najala jako maršála), nic se neděje. Ale pokud se s Hledačem rozhodnete, že Tvůrci byli kutilové velcí jako skřítci, a ne nevyzpytatelní titáni, budeš muset přehodnotit nejrůznější detaily světa (velikost cest, měřítko Pobořené Věže, témata spojená s jednotlivými typy Tvůrců a tak dále).</p>
+<h3 id="respect-your-prep">Respektuj svou přípravu</h3>
+<p>Mezi sezeními se budeš připravovat (tzv. „příprava“). Sepíšeš hrozby a cizí postavy. Vytvoříš nebo vybereš nebezpečí a objevy. Vymyslíš střetnutí a navrhneš místa k prozkoumání.</p>
+<p>Část přípravy se týká možností: věcí, které postavy hráčů <em>můžou</em> objevit, nebezpečí, kterým <em>by mohly</em> čelit, problémů, které <em>můžou</em> nastat.</p>
+<p>Tenhle druh přípravy žije v kvantovém stavu; dokud tyhle nápady skutečně nepoužiješ a nezavedeš do fikce, nejsou pravdivé. Jsou to jen nápady – nápady, které ti pomáhají <strong>prokládat životy postav dobrodružstvím</strong>.</p>
+<p><strong>Velká část tvé přípravy ale spočívá v rozhodování</strong> – ve skutečných, závazných rozhodnutích o tom, jaký svět <em>je</em>. Patří sem třeba instinkt, tahy a HP nestvůry, jak se nějaké místo stalo tím, čím je, nebo kdo zabil vdovu Maire. Můžou sem patřit rozhodnutí o tom, co se <em>stane</em>, když postavy hráčů nezasáhnou, nebo jak by cizí postava reagovala na X či Y. Tenhle typ přípravy už je součástí fikce, i když jsi ho hráčům ještě neodhalil.</p>
+<p>Tato rozhodnutí dělej pečlivě a uváženě. Nespěchej. Drž se pokynů v následujících kapitolách.</p>
+<p>Pak během hry <strong>respektuj svou přípravu</strong>. Ber ji jako fikční pravdu. Popisuj svět, hraj své postavy a dělej tahy Vypravěče s ohledem na tato rozhodnutí. Pokud jsi se připravil dobře, zjistíš, že když se přípravy držíš, nejen ti to pomáhá <strong>vykreslit bohatý a tajemný svět</strong>, ale také (paradoxně) <strong>hrát, abys zjistil, co se stane</strong>.</p>
+<p>Víc o <strong>přípravě</strong> viz <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">připravíš</a>.</p>
+<h3 id="give-your-characters-life">Vdechni svým postavám život</h3>
+<p>Dej svým cizím postavám jména. Dej jim výrazné povahy. Touhy, potřeby a zvláštnosti.</p>
+<p>Názory a přesvědčení. Pokud to zvládneš, hraj je s výrazným hlasem nebo manýrami. Vdechni jim život a hraj je, jako by to byli skuteční lidé.</p>
+<p>Popisuj své cizí postavy zapamatovatelnými rysy. Hráči si často těžko pamatují, že se kovář jmenuje Taliesen, ale zapamatují si, že kovář je velký hlučný chlap s chomáčem bílých vlasů.</p>
+<p>Nedovol postavám hráčů, aby po tvých cizích postavách šlapaly.</p>
+<p><strong>Fandi postavám hráčů</strong>, jistě, ale to neznamená, že by tvé cizí postavy měly prostě dělat, co postavy hráčů chtějí. Pokud máš pocit, že postavy hráčů na tvé cizí postavy tlačí nebo je lákají, aby udělaly něco, co by udělat nechtěly, no, od toho je tah Přesvědčit.</p>
+<p>Vdechni život i svým nelidským postavám.</p>
+<p>Popiš, jak vypadají, samozřejmě, ale také jak se pohybují, jak znějí a páchnou, jak se chovají.</p>
+<p>Zvířata, duchové, dokonce i naprosto cizí Věci Tam Dole – ti všichni mají povahu. Vytvoř si představu o jejich pohnutkách a o tom, jak jednají pod tlakem. U zvířat přemýšlej o jejich ekologii. U nemrtvých: co jim brání projít Posledními Dveřmi?</p>
+<p>U magických bytostí přemýšlej o podivných pravidlech, kterými se řídí. U všech výše uvedených: dostaň ty detaily na scénu, nebo je aspoň naznač. Hodně to pomáhá <strong>vykreslit bohatý a tajemný svět</strong>.</p>
+<h3 id="think-offscreen-too">Mysli i na dění mimo scénu</h3>
+<p>Když ustavuješ situaci, odpovídáš na otázky nebo děláš tahy, přemýšlej o událostech mimo scénu. Co dělají tvé cizí postavy a nestvůry? Co udělaly? Jaké stopy zanechaly? Co měly za lubem, co teď vychází najevo? Co dělají teď, co by mohlo být později důležité? Vpleť odpovědi do toho, co říkáš.</p>
+<p>Přemýšlej také o tom, co dělají postavy hráčů a jak by to ovlivnilo události mimo scénu. Pokud při cestě Velkým Hvozdem (Great Wood) nadělají spoustu hluku, kdo je uslyší přicházet a jak zareaguje? Pokud uzavřou spojenectví s Gordinovou Šachtou (Gordin&#x27;s Delve), jak zareaguje Lid z Kopců (Hillfolk), který má s Kopáči nevyřízené účty?</p>
+<p>Pokud vesnici řekli, že budou pryč pět dní, a jsou pryč dva týdny, kdo předpokládá, že jsou mrtví? Kdo se chopí slova a pokusí se převzít vedení? Kdo využije příležitosti a udělá si, co chce?</p>
+<p>Přemýšlení o dění mimo scénu ti pomáhá <strong>vykreslit bohatý a tajemný svět</strong>, protože svět bude působit větší než postavy hráčů. Pomáhá ti <strong>prokládat životy postav dobrodružstvím</strong>, protože hrozby a příležitosti mimo scénu se rychle stanou věcmi, které musí postavy hráčů řešit. A pomáhá ti <strong>hrát, abys zjistil, co se stane</strong>, protože tě nutí přemýšlet o následcích a příčinách a účincích v širším měřítku.</p>
+<h3 id="bring-it-home">Přines to domů</h3>
+<p>Učiň samotnou vesnici Stonetop základem své hry, začátkem i koncem dobrodružství postav hráčů. Ohrožuj vesnici, její živobytí nebo její obyvatele. Dávej jim šance pokročit k vylepšením nebo konečně zatočit s přetrvávajícími hrozbami.</p>
+<p>Když se postavy hráčů vydávají na dobrodružství, ukaž, jak reagují jejich sousedé. Kdo je přijde vyprovodit? Komu je zle strachy, že se nevrátí? Kdo bručí, že je to bláznovství? Kdo jim dá něco s sebou, protože jít samotný je nebezpečné?</p>
+<p>Během dobrodružství pokládej otázky, které se vracejí k životům postav hráčů ve Stonetopu. Kdo tě naučil lovit? Kdo sem s tebou přišel před všemi těmi lety a co se s ním stalo? Který pamětník se kdysi s těmihle tvory střetl?</p>
+<p>Čí život by tenhle poklad změnil nejvíc? Na čí úsměv tady venku, pod hvězdami, myslíš?</p>
+<p>Když se postavy hráčů vrátí domů, zvaž, co se stalo, zatímco byly pryč, a popiš, jak je vesničané vítají. Kdo je nejšťastnější? Kdo jim jejich návrat zazlívá? Kdo je stejně viní z toho, že všechny ty potíže rozdmýchali, i když je zase urovnali?</p>
+<p>Mezi dobrodružstvími se ptej postav na jejich všední život a vztahy. Ukaž, jak se vesnice mění v reakci na své potíže a na příležitosti, kterých se postavy hráčů chopily. Popiš, jak cizí postavy stárnou, mají děti, touží po víc, spokojí se s méně. Ukaž, jak je dobrodružství postav hráčů ovlivnila.</p>
+<p>Přines to domů.</p>
+<h3 id="let-things-breathe">Nech věci dýchat</h3>
+<p>Nech mezi dobrodružstvími, nebo dokonce mezi jednotlivými tahy, uplynout delší úseky času. Svět je velký a postavy hráčů mají všední, každodenní povinnosti. Odolej pokušení sledovat životy postav hráčů den po dni, hodinu po hodině. Nech uplynout týdny nebo měsíce jedinou větou: „Příští tři týdny vás všechny zaměstná sklizeň, a pak...“</p>
+<p>Když se blíží hrozba, nemusí být bezprostřední a hrozivá. Můžeš ukázat známky toho, že se probouzí, ale držet ji v dálce. Zeptej se postav hráčů, co s tím udělají, ale jejich reakci můžeš vyhodnotit v průběhu dnů nebo týdnů.</p>
+<p>Přibliž pohled a zarámuj scénu jen tehdy, když fikce volá po okamžitém, konkrétním jednání; jakmile je po něm, zase pohled oddal. Nech hrozbu doutnat, dokud nevzplane a nestane se něčím, s čím se postavy hráčů musí vypořádat.</p>
+<h3 id="let-things-burn">Nech věci hořet</h3>
+<p>Ať máš své plány sebevíc rád, ať si některé své cizí postavy sebevíc zamiluješ, ať k nim hráči sebevíc přilnou:</p>
+<p>nikoho a nic nechraň.</p>
+<p>Mnozí Vypravěči mají sklon, velmi přirozený sklon, hýčkat postavy hráčů a chránit cizí postavy, na kterých jim záleží. Zachovávat status quo. Šetřit si své padouchy na budoucí střet, i když by je tahy, hody a odvážné činy postav hráčů měly po právu poslat pod drn.</p>
+<p>Ten sklon? Spal ho. A pak nech hořet i všechno ostatní. Nehraješ proto, abys chránil své miláčky. <strong>Hraješ, abys zjistil, co se stane</strong>.</p>
+<p>Neznamená to, že bys měl schválně ničit věci, které postavy milují. Znamená to, že bys ty věci měl ohrožovat, a pokud je postavy nezachrání, měl bys to dotáhnout do konce. Smiř se s tvrdými, neodvolatelnými následky. Hraj si s ohněm. Nech věci hořet.</p>
+<h2 id="other-things-to-do">Další věci, které dělat</h2>
+<p><strong>Dělej si poznámky.</strong> Nakonec vytvoříš spoustu detailů a může být těžké mít o všech přehled. Musíš přijít na to, jaký nástroj a jaká míra podrobnosti ti vyhovuje, ale věci, které by sis mohl chtít zapsat, zahrnují:</p>
+<ul class="bullets"><li>jména cizích postav (a rysy a důležité vztahy)</li><li>historické události, které s hráči ustavíte (a kdy/kde/kdo)</li><li>zajímavé detaily, které nechceš zapomenout</li><li>shrnutí událostí každého sezení Můžeš psát formální shrnutí sezení a sdílet je s hráči, ale hlavně jsou tyhle poznámky pro tebe. Piš jen tolik, kolik ti bude užitečné.</li></ul>
+<p><strong>Kresli mapy.</strong> Spoustu map. Nejen jako součást přípravy, ale jako rekvizitu nebo vodítko během hry. Když vypukne boj a děje se toho hodně, rychle načrtni terén na tabuli nebo papír (nebo vytáhni figurky, pokud nějaké máš). Když prozkoumávají ruinu, nakresli hrubou mapu (nebo je k tomu povzbuď), aby pomohla ustavit fyzický prostor. Když přijdou do nové osady, dej jim mapu jejích různých čtvrtí a částí.</p>
+<p>Doplňuj i stávající mapy. Zakresli do mapy osady domovy postav hráčů. Přidej zajímavá místa, která vyplynou během hry. Zakresli trasu jejich cesty do mapy Okolí nebo Konce světa (World&#x27;s End).</p>
+<p><strong>Nechávej prázdná místa</strong> ve svých mapách a přípravě, aby se vyplnila během hry nebo později. Nech si věci, nad kterými můžeš přemítat. Když tě napadne otázka, nemusíš na ni odpovídat (ani žádat hráče o odpověď) hned. Nech ji jako prázdné místo, třeba si ji poznamenej a vrať se k ní v některém z dalších sezení.</p>
+<p><strong>Udržuj věci v pohybu.</strong> Nedovol, aby hybnost hry vyprchala. Rámuj scény rázně a přibližuj a oddaluj pohled podle míry zájmu (tvého i hráčů).</p>
+<p>Když se nic neděje, buď udělej tah Vypravěče, nebo přeskoč v čase tam, kde se něco zajímavého <em>děje</em>.</p>
+<p><strong>Zapoj všechny.</strong> Neustále přesouvej světlo reflektorů kolem stolu. Dbej, aby každý dostal dost času na scéně. Řekni jasně, koho oslovuješ, a neboj se nechat hráče, kteří skáčou do řeči, počkat.</p>
+<p>„Blodwen, vidíš… Briane, vydrž, teď mluvím s Hobbesem.“</p>
+<p><strong>Dělejte přestávky.</strong> Dají všem prostor zamyslet se nad tím, co se stalo, a nad tím, co chtějí dělat dál. Dají vám – skutečným lidem, kteří spolu tráví čas – příležitost lépe se poznat, probrat skutečné věci nebo si jen tak zažertovat. I to je důležité.</p>
+<p><strong>Zapoj hráče do tvorby světa</strong> a dbej na to, aby si uvědomovali, že svět patří jim stejně jako tobě. Když se tě zeptají na něco o světě a ty nemáš odpověď po ruce, obrať to na ně. „Dobrá otázka. Blodwen, co VLASTNĚ lidé ze Stonetopu dělají se svými mrtvými?“</p>
+<p><strong>Někdy se rozhodování vzdej.</strong> Vlož výsledek do rukou postavy („Je celý od krve, ale není mrtvý. Pořád ho můžeš zachránit. Uděláš to?“). Proberte výsledek s hráči („Co myslíte? Je Andras živý, nebo mrtvý?“). Nech rozhodnout kostky („Víš co, hoď za něj Na Prahu Smrti.“).</p>
+<p>Nech rozhodnout své cizí postavy, podle jejich instinktů, tužeb a potřeb, tvých poznámek a tvého vlastního citu pro jejich vnitřní logiku.</p>
+<p>(„Ne, on není ten typ, co by se vrátil jako duch, takže… jo, je mrtvý.“)</p>
+<h2 id="the-die-of-fate">Kostka osudu</h2>
+<p>Jedním ze způsobů, jak se vzdát rozhodování, je nechat rozhodnout kostky. Často to znamená nechat o tom, co se stane, rozhodnout výsledek tahu hráče. Ale můžeš použít i Kostku osudu.</p>
+<p>Kostka osudu je prostě hod kostkou, obvykle <button type="button" class="dice-roll" data-dice="d6" title="Klikni a hoď d6 — Shift: výhoda · Ctrl: nevýhoda">d6</button>, kde nižší výsledek znamená špatné a vyšší dobré. Nech hráče hodit Kostkou osudu, když nemáš vyhraněný názor na to, co by se mělo stát nebo jak by něco mělo dopadnout, a/nebo když jde prostě o štěstí. Jaké je dnes počasí? Na co cestou narazí? Kolik použití zásob dokážou ukořistit? Obecně je 1-2 špatně, 3-4 neutrálně nebo napůl, a 5-6 docela dobře.</p>
+<p>Někdy si pro Kostku osudu připravíš sadu výsledků. Například: co se stane, když se utáboří?</p>
+<div class="roll-table bare-numbered"><table><tbody>
+<tr><th scope="row">1</th><td>Crinwini napadnou tábor!</td></tr>
+<tr><th scope="row">2-3</th><td>Crinwini se pokusí vylákat někoho z tábora.</td></tr>
+<tr><th scope="row">4-5</th><td>Jsou tam venku a jen vás sledují.</td></tr>
+<tr><th scope="row">6</th><td>Uniknete jejich pozornosti.</td></tr>
+</tbody></table></div>
+<p>Neomezuj se na <button type="button" class="dice-roll" data-dice="d6" title="Klikni a hoď d6 — Shift: výhoda · Ctrl: nevýhoda">d6</button>, zvlášť ne, když máš předem připravenou tabulku výsledků. Pokud máš 12 zajímavých výsledků, nech je hodit <button type="button" class="dice-roll" data-dice="d12" title="Klikni a hoď d12 — Shift: výhoda · Ctrl: nevýhoda">d12</button>.</p>
+<h2 id="what-not-to-do">Co nedělat</h2>
+<p><strong>Neplánuj děj ani zápletku.</strong> Neplánuj vývoj postav hráčů. Neplánuj dramatické okamžiky, kdy postavy hráčů dorazí <em>přesně</em> ve chvíli, kdy se stane tahle konkrétní věc (bez ohledu na to, jak dlouho jim cesta trvala nebo co dělaly předtím). Nepředpokládej, že postavy hráčů zvolí určitý postup nebo že v určitém úkolu uspějí či selžou. To všechno jde přímo proti tomu, abys <strong>hrál, abys zjistil, co se stane</strong>. To bys rozhodoval, co se stane, předem a sám. Což rozhodně není to, proč tu jsi.</p>
+<p>Místo toho: připravuj situace, možná střetnutí a místa k prozkoumání. Připravuj hrozby a cizí postavy s dobrými, akceschopnými instinkty, třeba nějaká chmurná znamení a hrozící zkázy. Jak na to, viz oddíl <strong>Příprava</strong> <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">připravíš</a>.</p>
+<p><strong>Neříkej jim, na co mají házet, dřív než ti řeknou, co dělají.</strong> <em>Nesmíš</em> říkat nesmysly jako „lapka útočí, Vzdoruj</p>
+<p>Nebezpečí s DEX.“ Protože 1) tak to nefunguje a 2) co když nejednají rychle nebo obratně (spouštěč pro Vzdorovat Nebezpečí s DEX)? Co když jeho útok odrazí a praští ho štítem? Co když ránu schytají a probodnou ho? Co když mu hodí hlínu do očí a kopnou ho do rozkroku? Když hráčům řekneš, ať udělají tah, aniž by ti nejdřív řekli, že udělali něco, co tah spouští, přebíráš kontrolu nad jejich postavami a diktuješ, co dělají.</p>
+<p>Porušuješ pravidla hry.</p>
+<p>Místo toho: udělej měkký tah Vypravěče a zeptej se: „Co uděláš?“ Pak podle odpovědi společně rozhodněte, jestli spustili tah a který. Pak na ten tah hodí a ty ho od toho vyhodnotíš.</p>
+<p><strong>Nenuť je házet „jen tak“</strong> nebo protože „možná by si toho nevšimli“ ani kvůli podobným nesmyslům. Víš, jak v jiných hrách rozhodneš, že se k táboru plíží nestvůra, a požádáš postavu o hod na vnímání? Tohle v <em>Stonetopu</em> neexistuje.</p>
+<p>Místo toho prostě uděláš měkký tah Vypravěče, třeba <strong>ohlásíš potíže</strong>, který naznačí přítomnost nestvůry. „Uvědomíš si, že všichni cvrčci zmlkli. A pak – možná je to jen tvá představivost. Ale zdálo se ti, že jsi slyšel něco… se smát? Venku v lese. Co uděláš?“</p>
+<p>A třeba vzbudí ostatní, nebo zavolají, nebo opatrně vyhlédnou do lesa a nakloní hlavu, čímž spustí Hledat Vhled. Ať zareagují jakkoli, vedeš hru od toho.</p>
+<p><strong>Nepřestávej dělat tahy Vypravěče</strong>, zvlášť když hráči hodí 10+. Popíšeš, co se stane, jistě, a dáš jim úspěch, který si vysloužili. Někdy se hráč prostě chopí iniciativy a naváže (a to je fajn, jdi s tím). Ale obvykle se na tebe hráči budou dál dívat, co se stane. Fikce se valí dál a padouši dál dělají padoušské věci.</p>
+<p>Takže když Ranařka hodí 10+ na Zkřížit Zbraně, udělí zranění a nepřítel pořád stojí a poblíž jsou ještě tak dva další padouši, neříkej jen „Fajn, pořád stojí, co uděláš?“</p>
+<p>Místo toho: přemýšlej, jak první nepřítel zareaguje na zásah a co dělají ti dva další. Udělej tah, který tohle všechno zohlední, a <em>teprve pak</em> se zeptej: „Co uděláš?“</p>
+<h2 id="gming-is-a-practice">Vyprávění je praxe</h2>
+<p>Vedení jakékoli hry na hrdiny je praxe, jako jóga, hudba nebo bojová umění. Není to nic, co bys dokonale ovládl. Vždycky je co zlepšovat, vždycky je co se učit.</p>
+<p>Vedení právě <em>Stonetopu</em> je samostatná dovednost, samostatná praxe. I když máš zkušenosti s vedením podobných her (jako <em>Dungeon World</em> nebo <em>Apocalypse World</em>), čeká tě křivka učení. Stonetop se naučíš snáz, pokud jsi vedl jiné hry, ale ta zkušenost může také působit proti tobě! Budeš se muset odnaučit návyky a přizpůsobit se novým přístupům, a to může být těžké.</p>
+<p>Pointa je: vést <em>Stonetop</em> není zrovna snadné, ale <strong>zlepšuješ se tím, že to děláš, že přemýšlíš, jak to šlo, a že se snažíš příště udělat líp</strong>.</p>
+<p>Během prvního dobrodružství se soustřeď na svou <strong>agendu</strong> <a class="wiki-link" href="#your-agenda" data-slug="running-the-game" data-fragment="your-agenda" data-ref="page">Tvá agenda</a>, na dodržování <strong>základní smyčky</strong> <a class="wiki-link" href="#the-core-loop" data-slug="running-the-game" data-fragment="the-core-loop" data-ref="page">Základní smyčka</a> a na rozpoznávání spouštěčů <strong>základních tahů hráčů</strong> <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Tahy hráčů</a>. Opírej se o přípravu – od toho je – a nespěchej. Počítej s tím, že to bude trochu drhnout, zatímco se s hráči učíte pravidla. Netrap se údernými popisy, hlasy cizích postav ani dodržováním každého jednotlivého principu.</p>
+<p>Po prvním sezení „v roli“ požádej hráče o zpětnou vazbu. Co je bavilo? Co drhlo? Čeho chtějí v dalších sezeních víc? Pokud potřebuješ, požádej o vysvětlení, ale nebraň se a nesnaž se obhajovat.</p>
+<p>Snaž se být pokorný a vnímavý.</p>
+<p>Až budeš mít chvíli, zhodnoť sezení ve světle své agendy. <strong>Vykreslil jsi bohatý a tajemný svět</strong>, nebo svět působil plochý, prázdný, nahodilý?</p>
+<p><strong>Prokládal jsi jejich životy dobrodružstvím</strong>, nebo jsi nechal věci vléct? <strong>Hrál jsi, abys zjistil, co se stane</strong>, nebo jsi tlačil věci cestou, kudy sis myslel, že by měly jít? Pokud jsi svou agendu nenaplňoval, zeptej se sám sebe: „Jak by vypadalo, kdybych svou agendu naplňoval?“ Příště udělej <em>tohle</em>.</p>
+<p>Projdi si své principy. Nedodržel jsi některý? Jak to ovlivnilo hru? Jak by místo toho vypadalo dodržení principu?</p>
+<p>Vzpomeň si na chvíle, kdy jsi byl v koncích a nevěděl, co dělat. Pak se podívej na základní smyčku. Kde ve smyčce jsi byl, když ses zasekl? Co jsi mohl udělat jinak? Jaký druh přípravy by pomohl? Možná si něco takového připrav před dalším sezením.</p>
+<p>Projdi si tahy hráčů (základní, zvláštní, výpravové atd.). Přehlédl jsi, že se nějaký tah spustil? Vyžádal sis tah hráče, i když jeho spouštěč nebyl doopravdy splněn? U tahů, které se použily, ses držel jejich postupu správně?</p>
+<p>Příští sezení se snaž udělat líp. Zapiš si 2-3 věci, které chceš dělat nebo na které se chceš soustředit. Dej je někam, kde je uvidíš. Během sezení se je snaž dělat.</p>
+<p>Opakuj celý postup. Požádej o zpětnou vazbu.</p>
+<p>Zhodnoť sezení ve světle své agendy, svých principů, pravidel a základní smyčky. Připrav se tak, abys posílil svá slabá místa. Stanov si cíle. Zkus to znovu. Opakuj.</p>
+<p>Buď dobrý. Pak buď lepší. Pak buď skvělý.</p>
+<h2 id="prep">Příprava</h2>
+<p>Příprava je to, co děláš mezi sezeními, osamělá zábava (nebo pro někoho stresující práce) chystání se na další hru. Příprava zahrnuje procházení poznámek z předchozích sezení, přemýšlení o tom, co by se mohlo stát v dalším sezení, a dělání věcí, které nechceš dělat během hry.</p>
+<p>Proč se připravovat? Z několika důvodů:</p>
+<p>Abys měl co <strong>zajímavého říct</strong>.</p>
+<p>Abys <strong>zrychlil hru</strong> a nenechával všechny čekat, zatímco rozhoduješ, co se stane, vytváříš statistiky nestvůry nebo kreslíš mapu.</p>
+<p>Abys <strong>posílil svá slabá místa</strong>. Pokud třeba pořád zapomínáš na následovníky postav hráčů a necháváš je zapadnout v pozadí, připrav si pro ně něco zajímavého, co by mohli říct nebo udělat.</p>
+<p>Abys <strong>vybrousil své řemeslo</strong>. Některé věci jsou lepší, když máš čas o nich přemýšlet – jsou soudržnější nebo tematičtější, lépe plynou, stavějí na věcech, které se objevily dřív, atd.</p>
+<p>Abys <strong>sám sobě dal svolení</strong> hrát tvrdě a postavám hráčů způsobovat zlé věci. Pokud máš sklon brzdit rány (a kdo ne?), hodně pomůže mít ustavenou hrozící zkázu nebo dát svým padouchům tah jako „utrhne paži“.</p>
+<p>Připravuj se jen tolik, kolik ti přijde užitečné a hodnotné. Pokud nepíšeš něco, co mají používat jiní Vypravěči, nemá smysl zapisovat detaily, které jsou ti samozřejmé. Nezapisuj si, jak vypadá Nia, leda bys myslel, že to zapomeneš, nebo je to něco, na co chceš ve hře výslovně upozornit.</p>
+<p>Zvaž, jestli si nepřipravit některé z následujících věcí nebo všechny:</p>
+<h2 id="threats">Hrozby</h2>
+<p>Trvalé, opakující se problémy, které postavám hráčů způsobují potíže. Věci, které se zhorší, pokud se jim nezabrání, nebo složité vztahy, které chceš ve hře víc prozkoumat. Přípravě a používání <strong>hrozeb</strong> <a class="wiki-link" href="threats.html" data-slug="threats" >je věnovaná celá kapitola</a>.</p>
+<h2 id="hooks">Háčky</h2>
+<p>Když chceš postavy hráčů vyhnat do terénu za hrozbou nebo příležitostí, vyplatí se připravit háček. Háček zahrnuje:</p>
+<p>úvodní otázky, plán, jak zarámovat úvodní scény, několik konkrétních tahů Vypravěče, které hodláš udělat, a několik možných reakcí. Pokyny k přípravě háčku viz kapitola <strong>První dobrodružství</strong> <a class="wiki-link" href="first-adventure.html" data-slug="first-adventure" data-ref="page" >První dobrodružství</a>.</p>
+<h2 id="expeditions">Výpravy</h2>
+<p>Pokud víš (nebo tušíš), že postavy hráčů opustí vesnici, můžeš si připravit své volby pro tah <strong>Vytyčit Kurz</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Výpravy</a>.</p>
+<p>Zvaž, jestli nenakreslit mapu, nepřipravit zajímavá místa a zhruba si nepředstavit pár střetnutí, která by je mohla cestou potkat.</p>
+<p>Podrobnosti viz oddíl „<strong>Co připravit“</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" >v kapitole Výpravy</a>.</p>
+<h2 id="sites">Lokace</h2>
+<p>Promysli každé důležité místo, které podle tebe postavy hráčů během sezení prozkoumají nebo na které narazí. Jaké je? Jak ho popíšeš? Jaké otázky o něm položíš? Jaký je jeho příběh? Potřebuješ mapu nebo jinou vizuální pomůcku? Jsou v něm nebezpečí nebo objevy? Nápady viz <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Lokace</a>.</p>
+<h2 id="dangers">Nebezpečí</h2>
+<p>Rizika, nestvůry a nepřátelské cizí postavy, na které můžou postavy hráčů narazit.</p>
+<p>Najdi v průvodci světem položky, které použiješ, nebo si vytvoř vlastní. Můžeš to samozřejmě dělat i za pochodu, ale zabírá to čas u stolu a nejlepší je mít to hotové předem. Pokyny viz kapitola <strong>Nebezpečí</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Nebezpečí</a>.</p>
+<h2 id="discoveries">Objevy</h2>
+<p>Hádanky, stopy, záhady, poklady, arkána… to všechno jsou objevy. Některé budeš prostě improvizovat. K některým si budeš chtít udělat pár poznámek. Některé (hlavně arkána) budeš chtít podrobně sepsat. Víc viz <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Objevy</a>.</p>
+<h2 id="npcs">Cizí postavy</h2>
+<p>Pokud čekáš, že ve hře narazí na nějaké cizí postavy, promysli jejich jména, otázky, které o nich položíš, jejich určující rysy, jak je popíšeš a jak je budeš hrát. Třeba jim dej instinkt, vazby a pohnutky. Pokud by se cizí postava mohla stát následovníkem, zvaž, jestli si před hrou nezapsat její statistiky, štítky, tahy, cenu a instinkt. Pokyny viz <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >Cizí postavy a následovníci</a>.</p>
+<p>Všechna tahle příprava by se mohla zdát v rozporu s tím, že <strong>hraješ, abys zjistil, co se stane</strong>, ale to opravdu není. Nepřipravuješ příběh ani zápletku ani nevyhnutelný sled scén, které jdou jedna po druhé.</p>
+<p>Připravuješ věci, které ti dávají co zajímavého říct, zrychlují hru, posilují tvá slabá místa, brousí tvé řemeslo a dávají ti svolení hrát tvrdě. Dobrá příprava neznamená mít všechno nalinkované; znamená položit základy, které ti pomůžou improvizovat.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div id="wiki-preview" class="wiki-preview" hidden></div>
+  <div id="dice-toast" class="dice-toast" hidden></div>
+  <script>window.WIKI_UI={"books": {"book1": "Kniha I", "book2": "Kniha II", "sites": "Místa"}, "page_words": ["strana", "strany", "straně", "str."], "english_only": "Dostupné pouze anglicky", "js": {"feedback_link": "Poslat připomínku k této stránce", "feedback_head": "Poslat připomínku", "feedback_about": "Ke stránce", "feedback_what": "Co by se mělo změnit?", "feedback_placeholder": "Špatné číslo, chybějící tah, rozsypaná tabulka…", "feedback_email": "E-mail (nepovinný, pro odpověď)", "feedback_send": "Odeslat", "feedback_cancel": "Zrušit", "feedback_close": "Zavřít", "feedback_sending": "Odesílání…", "feedback_sent": "Připomínka odeslána – děkujeme.", "feedback_failed": "Nepodařilo se odeslat ({error}). Zkuste to znovu.", "feedback_network": "chyba sítě", "search_empty": "Dotazu „{query}“ neodpovídá žádná stránka.", "search_pages_one": "1 stránka", "search_pages_many": "{n} stránek", "search_showing": " (zobrazeno {n})", "search_in_title_text": "název + text", "search_in_title": "název", "search_in_text": "v textu", "preview_no_summary": "Shrnutí není k dispozici.", "preview_missing": "Pro tento odkaz není náhled.", "location_label": "Kde je", "location_who": "Kdo ho má", "location_unknown": "— neznámo —", "location_other": "Jinde / někdo jiný…", "location_placeholder": "Kde leží, nebo kdo ho má", "arcana_head": "Arkána", "arcana_none": "Žádné. Nastavte u arkána „{title}“ jako místo, kde je, a objeví se zde.", "sync_label": "Kampaň", "sync_copied": "{what} zkopírován", "sync_copy_this": "Zkopírujte tento odkaz", "sync_nothing_export": "Zatím není co exportovat", "sync_saved": "{n} uloženo do {file}", "sync_not_json": "ten soubor není JSON", "sync_not_export": "to není export kampaně", "sync_data": "Data kampaně", "sync_export": "Exportovat", "sync_export_title": "Uložit stav této kampaně do souboru", "sync_import": "Importovat", "sync_import_title": "Sloučit uložený soubor do této kampaně", "sync_nothing_import": "V tom souboru není co importovat", "sync_imported": "Importováno {n} do {stores} úložišť", "sync_skipped": " · přeskočeno: {names}", "sync_read_failed": "Ten soubor se nepodařilo přečíst", "sync_sharing_gm": "Sdíleno jako PH", "sync_sharing_table": "Sdíleno se stolem", "sync_copy_player": "Kopírovat odkaz pro hráče", "sync_copy_gm": "Kopírovat odkaz PH", "sync_copy_mine": "Kopírovat můj odkaz", "sync_player_link": "Odkaz pro hráče", "sync_gm_link": "Odkaz PH", "sync_link": "Odkaz", "sync_no_player_token": "Tento prohlížeč se připojil odkazem PH, takže nemá hráčský token. Zkopírujte odkaz pro hráče z prohlížeče, který kampaň vytvořil.", "sync_stop": "Přestat sdílet", "sync_stopped": "Sdílení ukončeno – tento prohlížeč si nechává vlastní kopii", "sync_what_shared": "Zaškrtnutá vylepšení, hodiny nebezpečí, odpovědi, deníky a životy postav se sdílejí se všemi. Životy nepřátel vidí jen PH.", "sync_share_head": "Sdílet tuto kampaň", "sync_worker": "Synchronizační server", "sync_create": "Vytvořit kampaň", "sync_creating": "Vytváří se…", "sync_enter_endpoint": "Nejdřív zadejte adresu synchronizačního serveru", "sync_unreachable": "Synchronizační server je nedostupný", "sync_paste": "Nebo vložte odkaz, který vám poslal PH:", "sync_join_link": "Odkaz pro připojení", "sync_join": "Připojit se", "sync_bad_link": "To nevypadá jako odkaz pro připojení", "sync_joined": "Připojeno ke kampani {campaign}", "sync_the_campaign": "kampaň", "sync_status_on": "Tato kampaň se sdílí se stolem", "sync_status_offline": "Synchronizační server je nedostupný – změny se ukládají zde a dorovnají se později", "sync_status_local": "Tento prohlížeč si nechává vlastní kopii"}, "playbooks": {"the-blessed": "Požehnaný", "the-fox": "Lišák", "the-heavy": "Ranař", "the-judge": "Soudce", "the-lightbearer": "Světlonoš", "the-marshal": "Maršál", "the-ranger": "Hraničář", "the-seeker": "Hledač", "the-would-be-hero": "Rádobyhrdina"}};</script>
+  <script src="../js/wiki.js"></script>
+</body>
+</html>

@@ -72,17 +72,17 @@ C	<b>Stavitelské náčiní</b>: pravítka, pásma, měřické tyče, olovnice, 
 C	<b>Laboratoř</b>: chemikálie, činidla, lahvičky, odměrky, ◇ váhy, ◇ karafy atd. Každé roční období vyrob d4-1 použití ◇ nafty (<i>vrhací</i>, <i>plocha</i>, <i>nebezpečná</i>, ignoruje zbroj).
 C	<b>Propriety</b>: krystaly, kadidlo, talismany, krev, kost, roh, oko mloka, ◇ pánve na žhavé uhlí, ◇◇ kotel atd.
 C	<b>Obchodní styky</b>: malá množství soli, skla, hedvábí, koření, léčivých bylin, pigmentů, slonoviny atd.
-P	(domluv se s PJ)
+P	(domluv se s Vypravěčem)
 PAGE	134
 H2	Tahy
 HR
 P	Začínáš s tahy Zběhlý a S tím, co je po ruce, plus 1 tahem ze svého Původu.
 HR
-C	<b>VYLADĚNÝ</b> Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat: „Co je tu prodchnuto magií?", i při 6-.
+C	<b>VYLADĚNÝ</b> Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat: „Co je tu prodchnuto magií?", i na 6-.
 C	<b>VODIČ MOCI</b> Když <b><i>bys měl zaškrtnout Následek velkého</i></b> <b><i>arkána</i></b>, můžeš místo toho zaškrtnout 1 políčko tady, bez negativního účinku. (Tato zaškrtnutí se nikdy nemažou.)
-C	<b>PROTIOPATŘENÍ</b> Když <b><i>jsi svědkem magického účinku</i></b>, můžeš se PJ zeptat: „Jak se tomu dá čelit nebo to přerušit?" a dostaneš upřímnou odpověď. Ty nebo spojenec získáte výhodu na další hod, abyste jednali podle odpovědi.
+C	<b>PROTIOPATŘENÍ</b> Když <b><i>jsi svědkem magického účinku</i></b>, můžeš se Vypravěče zeptat: „Jak se tomu dá čelit nebo to přerušit?" a dostaneš upřímnou odpověď. Ty nebo spojenec získáte výhodu na další hod, abyste jednali podle odpovědi.
 C	<b>VŠECHNO KRVÁCÍ</b> Když <b><i>využiješ konkrétní slabinu nebo zranitelnost nepřirozeného nepřítele</i></b>, způsobíš +1d6 zranění.
-C	<b>VŠECHNO HOŘÍ</b> Když <b><i>zkoumáš dílo řemesla nebo magie a hledáš</i></b> <b><i>osudnou vadu</i></b>, hoď +INT: <b>na 7+</b> ti PJ prozradí nejlepší způsob, jak ho zničit/sabotovat; <b>na 10+</b> navíc ty nebo spojenec získáte výhodu, abyste podle té informace jednali.
+C	<b>VŠECHNO HOŘÍ</b> Když <b><i>zkoumáš dílo řemesla nebo magie a hledáš</i></b> <b><i>osudnou vadu</i></b>, hoď +INT: <b>na 7+</b> ti Vypravěč prozradí nejlepší způsob, jak ho zničit/sabotovat; <b>na 10+</b> navíc ty nebo spojenec získáte výhodu, abyste podle té informace jednali.
 TAKES	3
 C	<b>ZLEPŠENÁ VLASTNOST</b> Pokaždé, když si vezmeš tento tah, zvyš jednu ze svých vlastností o 1 (nejvýše na +2).
 TAKES	3
@@ -94,7 +94,7 @@ B	V čem to není úplně ono, ale možná to postačí?
 B	Jaké potíže jsi doma způsobil, když jsi to získával
 B	Proč jeho použití přitáhne nežádoucí pozornost
 B	Že je to jediná taková věc, kterou máš, a proč to zafunguje jen jednou
-C	<b>NIKDY V KONCÍCH</b> Když <b><i>Víš Své a hodíš 6-</i></b>, můžeš se rozhodnout nezaškrtnout XP. Pokud XP nezaškrtneš, nejhorší, co se stane, je, že ti PJ neřekne nic zajímavého ani užitečného o daném tématu, ale místo toho ti poví, jak by ses mohl dozvědět víc.
+C	<b>NIKDY V KONCÍCH</b> Když <b><i>Víš Své a hodíš 6-</i></b>, můžeš se rozhodnout nezaškrtnout XP. Pokud XP nezaškrtneš, nejhorší, co se stane, je, že ti Vypravěč neřekne nic zajímavého ani užitečného o daném tématu, ale místo toho ti poví, jak by ses mohl dozvědět víc.
 C	<b>POLYGLOT</b> Když <b><i>se ve hře poprvé setkáš s živým jazykem</i></b>, popiš, jak ho ovládáš (pokud vůbec) a jak ses k němu dostal.
 P	Když <b><i>Víš Své o jakémkoli písmu, textu, runách</i></b> <b><i>nebo symbolech, na které narazíš</i></b>, máš výhodu.
 C2	<b>KRYPTOLOG</b>
@@ -115,15 +115,15 @@ C	Tvůrci a jejich umění
 C	Prvotní mocnosti
 C	Věci Tam Dole
 C	Divoký svět a jeho duchové
-P	Když <b><i>Víš Své o jednom ze svých témat</i></b>, můžeš PJ položit doplňující otázku dle vlastní volby (i při 6-).
+P	Když <b><i>Víš Své o jednom ze svých témat</i></b>, můžeš Vypravěči položit doplňující otázku dle vlastní volby (i na 6-).
 CX	<b>S TÍM, CO JE PO RUCE</b>
 P	Když <b><i>chytře využiješ okolí, abys ublížil nepříteli (nepřátelům) nebo</i></b> <b><i>ho zdržel</i></b>, hoď +INT: <b>na 10+</b> zvol 2; <b>na</b> <b>7-9</b> zvol 1:
 B	Přeruš nebo zmař jejich akci (akce)
 B	Vytvoř příležitost, která tobě nebo spojenci dá výhodu na další hod, jenž ji využije
 B	Způsob zranění odpovídající zdroji (d4 za modřiny/odřeniny, d6 za krveprolití, d8 pokud by to lámalo kosti, d10 pokud by to zabilo obyčejného člověka)
-C	<b>ADEPT TAJEMNA</b> (Vyžaduje úroveň 6+) Když <b><i>chceš vynalézt kouzlo nebo magický účinek</i></b>, probereš s PJ, jak funguje, a Sestavíš Plán na jeho vynalezení. Chceš-li, zvol jeden požadavek a požádej PJ o alternativu (například „nejdřív musíš ____" se může změnit na „nejdřív musíš ____, jinak to potrvá měsíce").
-C	<b>HLUBOKÝ VHLED</b> (Vyžaduje úroveň 6+ a Vyladěný) Když <b><i>Hledáš Vhled do něčeho magického</i></b>, můžeš položit jednu otázku navíc, neomezenou na seznam. I při 6- tuto otázku položit smíš.
-C	<b>IMPROVIZACE</b> (Vyžaduje úroveň 6+ a Učenlivý) Když <b><i>chceš použít tah nebo možnost arkána,</i></b> <b><i>aniž bys je odemkl</i></b>, zeptej se PJ, jaké pošetilé riziko to vyžaduje a/nebo jaké následky poneseš. Pokud do toho jdeš, hoď +INT: <b>na 7+</b> se ti to tentokrát podaří — spusť tah nebo použij možnost, jako bys je odemkl; a <b>na 10+</b> navíc zaškrtni jeden krok k odhalení tajemství arkána.
+C	<b>ADEPT TAJEMNA</b> (Vyžaduje úroveň 6+) Když <b><i>chceš vynalézt kouzlo nebo magický účinek</i></b>, probereš s Vypravěčem, jak funguje, a Sestavíš Plán na jeho vynalezení. Chceš-li, zvol jeden požadavek a požádej Vypravěče o alternativu (například „nejdřív musíš ____" se může změnit na „nejdřív musíš ____, jinak to potrvá měsíce").
+C	<b>HLUBOKÝ VHLED</b> (Vyžaduje úroveň 6+ a Vyladěný) Když <b><i>Hledáš Vhled do něčeho magického</i></b>, můžeš položit jednu otázku navíc, neomezenou na seznam. I na 6- tuto otázku položit smíš.
+C	<b>IMPROVIZACE</b> (Vyžaduje úroveň 6+ a Učenlivý) Když <b><i>chceš použít tah nebo možnost arkána,</i></b> <b><i>aniž bys je odemkl</i></b>, zeptej se Vypravěče, jaké pošetilé riziko to vyžaduje a/nebo jaké následky poneseš. Pokud do toho jdeš, hoď +INT: <b>na 7+</b> se ti to tentokrát podaří — spusť tah nebo použij možnost, jako bys je odemkl; a <b>na 10+</b> navíc zaškrtni jeden krok k odhalení tajemství arkána.
 C	<b>VYNIKAJÍCÍ VLASTNOST</b> (Vyžaduje úroveň 6+) Zvyš jednu ze svých vlastností o +1 (nejvýše na +3).
 C	<b>MYSL NAD MAGIÍ</b> (Vyžaduje úroveň 6+) Když <b><i>házíš, abys studoval nebo použil arkánum</i></b>, můžeš házet +INT místo vlastnosti, se kterou bys obvykle házel.
 C	<b>PŘETÍŽENÍ</b> (Vyžaduje úroveň 6+ a Vodič moci) Když <b><i>bys měl zaškrtnout Následek velkého</i></b> <b><i>arkána</i></b>, můžeš místo toho zaškrtnout oslabení.
@@ -143,10 +143,10 @@ P	Začal jsi odhalovat tajemství svého velkého arkána; zaškrtni 1 na předn
 P	Kdy a jak se to stalo?
 HR
 P	<b>MALÁ ARKÁNA</b>
-P	Požádej PJ o karty Malých arkán. Vytáhni náhodně 3 a prohlédni si obě strany.
+P	Požádej Vypravěče o karty Malých arkán. Vytáhni náhodně 3 a prohlédni si obě strany.
 P	Zvol jedno, jehož tajemství jsi odhalil. Je-li přenosné, buď ho máš u sebe, nebo je bezpečně ukryté. Kde je teď? Jak jsi ho ovládl?
 P	Zvol další, které jsi ještě neovládl. Je buď ve tvém vlastnictví, nebo na tajném místě, které znáš jen ty. Kde je? Jak jsi ho našel?
-P	Třetí jsi ještě nenašel, ale máš stopu. Vrať kartu PJ, ale poznamenej si ji níže. Během hry se PJ zeptej, co o něm víš.
+P	Třetí jsi ještě nenašel, ale máš stopu. Vrať kartu Vypravěči, ale poznamenej si ji níže. Během hry se Vypravěče zeptej, co o něm víš.
 H2	Představování
 P	Počkej tu na ostatní. Až budou všichni připraveni, postupně představte své postavy. Když <b><i>někdo něco odhalí a ty se chceš dozvědět</i></b> <b><i>víc</i></b>, zeptej se ho na to. Když <b><i>ti někdo položí</i></b> <b><i>otázku</i></b>, odpověz pravdivě.
 STEP	1	Ve svém prvním tahu <b>se představ</b>: jméno, zájmena, původ, místo původu a vzhled.

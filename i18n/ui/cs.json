@@ -152,6 +152,12 @@
     "book1": "Kniha I — Stonetop",
     "book2": "Kniha II — Širší svět"
   },
+  "page_words": [
+    "strana",
+    "strany",
+    "straně",
+    "str."
+  ],
   "bestiary": {
     "title": "Bestiář",
     "lede": "Všechny bloky statistik z obou knih, od A do Z – celkem {n}. Najeďte na jméno a uvidíte celý blok; kliknutím na něj přejdete.",

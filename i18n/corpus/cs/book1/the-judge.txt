@@ -11,7 +11,7 @@ HR
 H2	Původ (Zvol 1)
 C	<b>ODKAZ</b> Jsi posledním z dlouhé řady Soudců — narozený tady, vyučený u předchozího Soudce a pověřený předat úřad dál. Kronika je bohatou studnicí vědění, ale nemá rejstřík, takže hodně štěstí při hledání čehokoli.
 P	Když <b><i>Víš Své o lidech nebo dějinách</i></b> <b><i>Stonetopu</i></b>, máš výhodu.
-P	Když <b><i>strávíš dny, týdny nebo měsíce skloněný nad</i></b> <b><i>Kronikou</i></b>, polož PJ otázku a PJ ti řekne, co se za tu dobu dozvíš.
+P	Když <b><i>strávíš dny, týdny nebo měsíce skloněný nad</i></b> <b><i>Kronikou</i></b>, polož Vypravěči otázku a Vypravěč ti řekne, co se za tu dobu dozvíš.
 C	<b>MISIONÁŘ</b> Patříš k většímu řádu Soudců, poslaný sem chránit mihotavý plamen civilizace. Kronika je poměrně nová; tvé postavení ve vesnici není zdaleka jisté. Přidej tyto Soudce do oddílu Sousedé v deníku osady (zvol další 2):
 CX	Devin (z Kraje Mokřin)
 CX	Haeris (z Gordinovy Šachty)
@@ -21,9 +21,9 @@ C	Tejisha (z Průsmyku Závory)
 C	Unz (z Lidu z Kopců)
 P	Když <b><i>požádáš Soudce jiné osady</i></b> <b><i>o pomoc nebo informace</i></b>, je vázán přísahou ti je poskytnout.
 P	Stejně tak jsi ty vázán přísahou podporovat jeho.
-P	Kromě obvyklé volby zvláštního majetku máš voliéru (hned si ji zaškrtni). Když <b><i>posíláš zprávu po vycvičeném ptákovi</i></b>, jak je zvykem Soudců tvého řádu, PJ ti řekne, zda a kdy dostaneš odpověď a co v ní stojí.
+P	Kromě obvyklé volby zvláštního majetku máš voliéru (hned si ji zaškrtni). Když <b><i>posíláš zprávu po vycvičeném ptákovi</i></b>, jak je zvykem Soudců tvého řádu, Vypravěč ti řekne, zda a kdy dostaneš odpověď a co v ní stojí.
 C	<b>PROROK</b> ◇◇ Řada Soudců se přetrhla už dávno a Kronika se ztratila nebo zchátrala. Aratis tě povolala do svých služeb osobně skrze sny, znamení a vidění. Někteří ve vesnici ti zazlívají autoritu, kterou sis přisvojil.
-P	Když <b><i>strávíš několik dní rozmluvou s Aratis</i></b> <b><i>o hrozbě pro Stonetop nebo pro civilizaci jako</i></b> <b><i>celek</i></b>, hoď +WIS: <b>při 7+</b> ti Aratis zjeví, jak máš podle její vůle jednat; <b>při 10+</b> si navíc drž 2 Pověření. Když <b><i>jednáš na její příkaz</i></b>, utrať 1 Pověření a přičti +1 k hodu, který jsi právě udělal.
+P	Když <b><i>strávíš několik dní rozmluvou s Aratis</i></b> <b><i>o hrozbě pro Stonetop nebo pro civilizaci jako</i></b> <b><i>celek</i></b>, hoď +WIS: <b>na 7+</b> ti Aratis zjeví, jak máš podle její vůle jednat; <b>na 10+</b> si navíc drž 2 Pověření. Když <b><i>jednáš na její příkaz</i></b>, utrať 1 Pověření a přičti +1 k hodu, který jsi právě udělal.
 H2	Instinkt (Zvol 1)
 C	<b>CTIŽÁDOST</b> Zvýšit své postavení nebo vliv.
 HR
@@ -76,7 +76,7 @@ C	<b>Voliéra</b>: silné rukavice, ptačí čepičky, poutka, zrní, ◇ pošto
 C	<b>Tesařské nářadí</b>: dláta, pilníky, hřebíky, smola, ◇ páčidla, ◇ pily, ◇◇ soudky, sudy atd.
 C	<b>Stavitelské nářadí</b>: pravítka, měřicí pásma, tyče, olovnice, ◇ trojnožky, ◇ kladkostroje, trakař atd.
 C	<b>Kovárna</b> (nebo přístup do ní): železné zboží, ingoty, silné rukavice, ◇ kleště, ◇ měchy, kovadlina atd.
-P	(domluv se s PJ)
+P	(domluv se s Vypravěčem)
 PAGE	118
 H2	Tahy
 P	Začínáš s Pokáráním a Kronikářem Stonetopu a k tomu 2 dalšími podle svého výběru.
@@ -102,7 +102,7 @@ P	Kdykoli můžeš utratit 1 Píli a přičíst +1 k hodu, který jsi právě ud
 HR
 C	<b>PRO VYŠŠÍ DOBRO</b> Když <b><i>Přesvědčuješ někoho, aby jednal na obranu svého</i></b> <b><i>společenství nebo civilizace jako celku</i></b>, máš výhodu.
 HR
-C	<b>ARATISIN OHAR</b> Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat „Co je tu poskvrněno chaosem?“, i při 6-.
+C	<b>ARATISIN OHAR</b> Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat „Co je tu poskvrněno chaosem?“, i na 6-.
 HR
 C2	<b>JAKO PES S KOSTÍ</b>
 P	(Vyžaduje Aratisin ohar)
@@ -112,13 +112,13 @@ TAKES	3
 C	<b>ZLEPŠENÁ VLASTNOST</b> Pokaždé, když si vezmeš tento tah, zvyš jednu ze svých vlastností o 1 (nejvýše na +2).
 C	<b>VĚDĚNÍ JE MOC</b> Když <b><i>hodíš 10+ na Vědět Své</i></b>, ty nebo spojenec máte výhodu při dalším hodu, kterým jednáte podle toho, co ses dozvěděl.
 HR
-C	<b>VÍC RUKOU, MÉNĚ PRÁCE</b> Když <b><i>přispěcháš na pomoc jiné postavě, která</i></b> <b><i>právě házela</i></b>, řekni nám jak a zeptej se PJ, co je ještě potřeba nebo jaké to bude mít následky. Pokud přijmeš, zvyš hod svého spojence o +1.
+C	<b>VÍC RUKOU, MÉNĚ PRÁCE</b> Když <b><i>přispěcháš na pomoc jiné postavě, která</i></b> <b><i>právě házela</i></b>, řekni nám jak a zeptej se Vypravěče, co je ještě potřeba nebo jaké to bude mít následky. Pokud přijmeš, zvyš hod svého spojence o +1.
 HR
 C2	<b>SVAZEK PRUTŮ NEZLOMÍŠ</b>
 P	(Vyžaduje Víc rukou, méně práce)
 P	Když Bojujete jako Jeden, ty a spojenec podle tvé volby máte výhodu.
 PAGE	119
-C	<b>KLADIVO A KNIHA</b> Když <b><i>udeříš na bytost nadpřirozeného chaosu</i></b>, hoď +WIS: <b>při 10+</b> způsob své zranění a zvol 1 ze seznamu níže; <b>při 7–9</b> způsob zranění a zvol 1, ale také se vystavíš nebezpečí nebo nechtěné pozornosti.
+C	<b>KLADIVO A KNIHA</b> Když <b><i>udeříš na bytost nadpřirozeného chaosu</i></b>, hoď +WIS: <b>na 10+</b> způsob své zranění a zvol 1 ze seznamu níže; <b>na 7-9</b> způsob zranění a zvol 1, ale také se vystavíš nebezpečí nebo nechtěné pozornosti.
 B	Způsob +1d6 zranění
 B	Ignoruj zbroj nebo jinou obranu bytosti
 B	Potlač jednu z jejích nepřirozených schopností
@@ -129,7 +129,7 @@ C2	<b>ZÁVAZNÁ ARBITRÁŽ</b>
 P	(Vyžaduje Pravda nebo následky)
 P	Když <b><i>jsi svědkem něčího slibu nebo</i></b> <b><i>přísahy</i></b>, můžeš se odteď jeho hráče zeptat, zda postava dodržela slovo. Musí odpovědět upřímně.
 P	Postava nemusí být přítomna. Pokud <b><i>své slovo</i></b> <b><i>porušila</i></b>, máš výhodu při všech hodech proti ní, dokud nepřizná svou vinu a neponese přiměřené následky (rozhodneš ty).
-C	<b>NEZAKALENÝ ZRAK</b> Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat „Co je tu skryto iluzí nebo magií?“, i při 6-.
+C	<b>NEZAKALENÝ ZRAK</b> Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat „Co je tu skryto iluzí nebo magií?“, i na 6-.
 C	<b>SEČTĚLÝ</b> Když <b><i>jmenuješ zdroj, v němž jsi četl o</i></b> <b><i>dané záležitosti</i></b>, hoď na Vědět Své +WIS místo +INT.
 C	<b>MOCNÝ VAL</b> (Vyžaduje úroveň 6+; nahrazuje Baštu) Když <b><i>držíš Pohotovost</i></b> (z Bránit), nelze tě vytlačit z tvé pozice. Navíc můžeš utratit 1 Pohotovost a zcela ignorovat účinky/zranění útoku, který tě zasáhne.
 C	<b>PŘÍMĚŘÍ</b> (Vyžaduje úroveň 6+ a Vydat svědectví) Když <b><i>přistoupíš k nepříteli, abys vyjednával v dobré</i></b> <b><i>víře</i></b>, přinejmenším tě vyslechne. I ten nejzvrhlejší a nejdivočejší protivník odloží násilí, dokud neřekneš své.
@@ -139,7 +139,7 @@ P	(Vyžaduje úroveň 6+ a Odsoudit)
 P	Když <b><i>Pokáráš</i></b>, můžeš označit skupinu nebo frakci, pokud ji dokážeš jasně určit. Použij účinky Pokárání na každého člena té skupiny bez ohledu na vzdálenost.
 C	<b>ZRCADLOVÝ ŠTÍT</b> (Vyžaduje úroveň 6+ a Štít víry) Když <b><i>Bráníš se štítem</i></b>, můžeš utratit 1 Pohotovost, zachytit magickou sílu a přesměrovat ji na jiný cíl (nebo nikam).
 C	<b>VYNIKAJÍCÍ VLASTNOST</b> (Vyžaduje úroveň 6+) Zvyš jednu ze svých vlastností o +1 (nejvýše na +3).
-C	<b>VĚČNÁ VĚŽ</b> (Vyžaduje úroveň 6+) Když <b><i>Vzdoruješ Nebezpečí magie</i></b>, ber výsledek 6- jako 7–9.
+C	<b>VĚČNÁ VĚŽ</b> (Vyžaduje úroveň 6+) Když <b><i>Vzdoruješ Nebezpečí magie</i></b>, ber výsledek 6- jako 7-9.
 PAGE	120
 H2	Kronika
 P	Soudce Aratis je pověřen vést Kroniku, dějiny společenství, jeho lidí, jejich vědění a tradic. Povaha vědění v Kronice závisí na tvém Původu, ale je víc než pouhá kniha; je to skutečné místo. Rozhodni o jeho podobě.

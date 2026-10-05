@@ -10,7 +10,7 @@ P	<i>Většina lidí doufá v klidný život. Tráví dny starostmi: o děravou 
 HR
 H2	Původ (Zvol 1)
 C	<b>ZBRKLÉ MLÁDÍ</b> Stonetop byl vždycky tvým domovem, ale nároky všedního života tě dráždí a vždycky jsi toužil po něčem víc. Vzrušení! Nebezpečí!
-P	Když <b><i>provedeš tah a nedosáhneš na úspěch</i></b>, můžeš dát do toho všechno a změnit 6- na 7–9, 7–9 na 10+ a (pokud na tom záleží) 10–11 na 12+. Pokud to ale uděláš, zvol 1 (podrobnosti doplní PJ):
+P	Když <b><i>provedeš tah a nedosáhneš na úspěch</i></b>, můžeš dát do toho všechno a změnit 6- na 7-9, 7-9 na 10+ a (pokud na tom záleží) 10–11 na 12+. Pokud to ale uděláš, zvol 1 (podrobnosti doplní Vypravěč):
 B	Zraníš se (2d4 zranění a skutečné poranění)
 B	Způsobíš vedlejší škody, ohrozíš ostatní nebo situaci jinak vyhrotíš
 B	Něco, co máš u sebe, se ztratí nebo rozbije
@@ -47,9 +47,9 @@ C	Tvůrci
 C	Kámen
 C	Věci Tam Dole
 PB
-P	Na <b><i>začátku sezení</i></b> hoď +Znamení: <b>při 7+</b> ztrácíš všechna Znamení a PJ popíše vidění nebo předzvěst, která ukazuje k tvému osudu a/nebo objasňuje tvou současnou situaci; navíc <b>při 10+</b> polož PJ doplňující otázku a dostaneš jasnou, užitečnou odpověď;
-P	<b><i>při 6-</i></b> nezaškrtávej XP, drž si +1 Znamení a pověz nám o svých nedávných nočních můrách nebo znepokojivém vidění a o tom, jakou roli v nich hrají tvé strachy.
-P	<b><i>Dokud se tvůj osud nenaplní</i></b>, ber 6- Na Prahu Smrti jako 7–9 a 7–9 jako 10+.
+P	Na <b><i>začátku sezení</i></b> hoď +Znamení: <b>na 7+</b> ztrácíš všechna Znamení a Vypravěč popíše vidění nebo předzvěst, která ukazuje k tvému osudu a/nebo objasňuje tvou současnou situaci; navíc <b>na 10+</b> polož Vypravěči doplňující otázku a dostaneš jasnou, užitečnou odpověď;
+P	<b><i>na 6-</i></b> nezaškrtávej XP, drž si +1 Znamení a pověz nám o svých nedávných nočních můrách nebo znepokojivém vidění a o tom, jakou roli v nich hrají tvé strachy.
+P	<b><i>Dokud se tvůj osud nenaplní</i></b>, ber 6- Na Prahu Smrti jako 7-9 a 7-9 jako 10+.
 H2	Instinkt (Zvol 1)
 C	<b>VZDOR</b> Odmítat ustoupit, vzdát se, podvolit se.
 HR
@@ -104,7 +104,7 @@ C	Flétna, dar od někoho, koho jsi miloval
 C	Jemný medailonek s pramenem vlasů
 C	Troudnice, s láskou rytá
 C	<b>Koželužna</b> (nebo přístup do ní): vápno, kyselina, soli, silné rukavice, ◇ kyrys z vařené kůže (1 zbroj) atd.
-P	(domluv se s PJ)
+P	(domluv se s Vypravěčem)
 PAGE	138
 H2	Tahy
 HR
@@ -124,7 +124,7 @@ C	<b>OPATRNOST JE MATKOU MOUDROSTI</b> Když <b><i>jste v menšině nebo stojí�
 C	<b>SRAZÍ MĚ K ZEMI</b> Když <b><i>utrpíš zranění navzdory veškeré snaze se mu</i></b> <b><i>vyhnout</i></b>, můžeš zranění snížit na polovinu, ale zvol 1 z následujícího:
 B	Něco ztratíš (rovnováhu, sevření atd.)
 B	Něco, co máš u sebe, se rozbije
-B	Na chvíli jsi mimo Ať zvolíš cokoli, podrobnosti popíše PJ.
+B	Na chvíli jsi mimo Ať zvolíš cokoli, podrobnosti popíše Vypravěč.
 C2	<b>ALE ZASE VSTANU</b>
 P	(Vyžaduje Srazí mě k zemi)
 P	Když <b><i>použiješ Srazí mě k zemi</i></b>, máš výhodu při dalším hodu proti tomu, co ti zranění způsobilo, a tvá další rána proti tomu způsobí +1d4 zranění.
@@ -145,8 +145,8 @@ C	Zvyš vlastnost, na kterou jsi házel, o 1, nejvýše na +2 (na úrovni ___)
 C	Zvyš své maximum HP o 4 (na úrovni ___)
 C	Zvyš svou kostku zranění na d8 (na úrovni ___)
 PAGE	139
-C	<b>VYNALÉZAVÝ</b> Když <b><i>Vzdoruješ Nebezpečí a hodíš 6-</i></b>, polož PJ otázku z Hledat Vhled poté, co popíše, co se stane. Máš výhodu při dalším hodu, kterým jednáš podle odpovědi.
-C	<b>NĚCO NA PAMÁTKU</b> Když <b><i>utratíš Pohotovost (z Bránit), abys vrátil úder</i></b> <b><i>útočníkovi</i></b>, způsobíš +1d4 zranění a nějak ho zjizvíš, poznamenáš nebo oslabíš (PJ řekne jak, nebo se zeptá tebe).
+C	<b>VYNALÉZAVÝ</b> Když <b><i>Vzdoruješ Nebezpečí a hodíš 6-</i></b>, polož Vypravěči otázku z Hledat Vhled poté, co popíše, co se stane. Máš výhodu při dalším hodu, kterým jednáš podle odpovědi.
+C	<b>NĚCO NA PAMÁTKU</b> Když <b><i>utratíš Pohotovost (z Bránit), abys vrátil úder</i></b> <b><i>útočníkovi</i></b>, způsobíš +1d4 zranění a nějak ho zjizvíš, poznamenáš nebo oslabíš (Vypravěč řekne jak, nebo se zeptá tebe).
 C	<b>TVRDÁ LÁSKA</b> Když <b><i>upřímně věříš, že jiná hráčská postava nemá pravdu,</i></b> <b><i>a řekneš jí to</i></b>, má nevýhodu při všech hodech proti tobě, dokud to spolu nevyřešíte.
 C	<b>PODCEŇOVANÝ</b> Dokud <b><i>se vyhýbáš otevřenému nepřátelství</i></b>, žádný nepřítel tě nepovažuje za hrozbu.
 P	Když <b><i>poprvé zakročíš proti nepříteli,</i></b> <b><i>který tě podceňuje</i></b>, máš výhodu.
@@ -162,13 +162,13 @@ P	Zvol si tah z jakéhokoli jiného deníku, pokud splňuješ jeho podmínky. Po
 P	Vlastnost ani Vynikající Vlastnost.
 P	* Když poprvé použiješ tah označený hvězdičkou (*), přeškrtni na přední straně „Rádoby“.
 C	<b>SÍLA, SE KTEROU JE TŘEBA POČÍTAT*</b> (Vyžaduje úroveň 6+; nahrazuje Podceňovaný) Každý rozumný tvor, který se ti podívá do očí nebo uslyší ocel v tvém hlase, instinktivně ví, že s tebou je třeba počítat, a podle toho s tebou jedná.
-P	Když <b><i>Vzdoruješ Nebezpečí něčeho, co se ti snaží</i></b> <b><i>ublížit nebo tě spoutat</i></b>, při 12+ obrátíš karty (PJ řekne jak, nebo se zeptá tebe).
+P	Když <b><i>Vzdoruješ Nebezpečí něčeho, co se ti snaží</i></b> <b><i>ublížit nebo tě spoutat</i></b>, na 12+ obrátíš karty (Vypravěč řekne jak, nebo se zeptá tebe).
 C	<b>ZATRACENĚ VELKÝ HRDINA*</b> (Vyžaduje úroveň 6+; nahrazuje Nad tvé síly) Když <b><i>se poprvé vrhneš do nebezpečí, abys někoho ochránil</i></b>, neházej na Bránit. Místo toho to ber, jako bys hodil 10+.
 P	Když <b><i>Bráníš</i></b>, můžeš utratit 1 Pohotovost a upřít pohled na útočníka; do konce boje má nevýhodu při hodech na zranění proti tobě a tvému chráněnci.
 C	<b>VYNIKAJÍCÍ VLASTNOST</b> (Vyžaduje všech 6 zaškrtnutí v Předpokladech k velikosti) Zvyš jednu ze svých vlastností o +1 (nejvýše na +3).
 C	<b>NEOHROŽENÝ*</b> (Vyžaduje úroveň 6+; nahrazuje Opatrnost je matkou moudrosti) Když <b><i>jste v menšině nebo stojíš proti nepříteli většímu</i></b> <b><i>než ty</i></b>, získáš +1 zbroj a způsobíš +1d6 zranění.
 C	<b>HLAS ZKUŠENOSTI*</b> (Vyžaduje úroveň 6+; nahrazuje Zvídavá mysl) Když <b><i>za tebou jiná hráčská postava přijde pro radu a ty</i></b> <b><i>jí řekneš, co považuješ za nejlepší</i></b>, má výhodu při prvním hodu, kterým se tvou radou řídí.
-P	Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat „Co se právě chystá stát?“, i při 6-.
+P	Když <b><i>Hledáš Vhled</i></b>, můžeš se vždy zdarma zeptat „Co se právě chystá stát?“, i na 6-.
 PAGE	140
 H2	Strach & hněv
 P	Čeho se nejvíc bojíš? (zvol 1, možná 2)

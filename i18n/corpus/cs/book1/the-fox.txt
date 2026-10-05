@@ -18,7 +18,7 @@ P	Tak či onak, tihle lidé tě přijali. Čas žít poctivě, ne?
 P	Začínáš buď s Vloupáním, nebo s Lehkými Prsty (dle volby) jako tahem navíc, a buď s lupičským náčiním, nebo se skrytou skrýší (dle volby) jako zvláštním majetkem navíc. Zaškrtni si je hned.
 C	<b>NÁVRAT MARNOTRATNÉHO</b> Kdysi dávno jsi odešel, cestoval daleko a živil se svou chytrostí. Proč jsi odešel? Jakými činy se chlubíš a kterých lituješ?
 P	Vždycky ses toužil vrátit do Stonetopu, a teď ses vrátil. Jsi teď něco jako celebrita a přátele (nebo skoro přátele) máš rozeseté po celém známém světě.
-P	Když <b><i>prohlásíš, že znáš někoho mimo</i></b> <b><i>Stonetop</i></b>, někoho, kdo může pomoct, jmenuj ho a hoď +CHA: <b>na 10+</b> jo, může pomoct (řekni nám, proč je ochotný); <b>na 7–9</b> může pomoct, ale vyber 1 ze seznamu níže; <b>na 6-</b> Vypravěč vybere 1 a něco navíc.
+P	Když <b><i>prohlásíš, že znáš někoho mimo</i></b> <b><i>Stonetop</i></b>, někoho, kdo může pomoct, jmenuj ho a hoď +CHA: <b>na 10+</b> jo, může pomoct (řekni nám, proč je ochotný); <b>na 7-9</b> může pomoct, ale vyber 1 ze seznamu níže; <b>na 6-</b> Vypravěč vybere 1 a něco navíc.
 B	Pořád chová zášť
 B	Nejdřív od tebe bude něco potřebovat
 B	Už dávno se takových věcí zřekl
@@ -76,13 +76,13 @@ HR
 P	Začínáš s Přepadením NEBO Zbrojním Umem; Šestým Smyslem NEBO Všímavostí; a 1 dle volby.
 HR
 C	<b>VŠECHNO JE V ZÁPĚSTÍ</b> ◇ <i>zbývá pár</i> ◇ <i>došly</i> Každý nůž či dýka získá ve tvých rukou štítek <i>vrhací</i>. Navíc u sebe nosíš několik železných vrhacích nožů (<i>nedaleko</i>); nezabírají místo v inventáři. Munici si doplníš pokaždé, když se Vystrojíš.
-C	<b>PŘEPADENÍ</b> Když <b><i>zaskočíš nepřítele poblíž</i></b>, můžeš způsobit své zranění, nebo místo toho hodit +DEX: <b>na 10+</b> způsob zranění a vyber 2; <b>na 7–9</b> způsob zranění a vyber 1:
+C	<b>PŘEPADENÍ</b> Když <b><i>zaskočíš nepřítele poblíž</i></b>, můžeš způsobit své zranění, nebo místo toho hodit +DEX: <b>na 10+</b> způsob zranění a vyber 2; <b>na 7-9</b> způsob zranění a vyber 1:
 B	Způsob +1d4 zranění
 B	Zabraň mu dělat hluk/spustit poplach
 B	Vytrať se, než stihne zareagovat
 B	Vytvoř příležitost; ty nebo spojenec máte výhodu na další tah, který ji využije
 C	<b>VLOUPÁNÍ</b> Když <b><i>se sám vplížíš na nebezpečné</i></b> <b><i>místo</i></b>, hoď +INT: <b>na 7+</b> se vrátíš a Vypravěč řekne, kam ses dostal a co ses dozvěděl.
-P	Pak <b>na 10+</b> vyber ještě 2; <b>na 7–9</b> vyber ještě 1:
+P	Pak <b>na 10+</b> vyber ještě 2; <b>na 7-9</b> vyber ještě 1:
 B	Vyvázl jsi čistě, bez vzbuzení podezření
 B	Šlohnul jsi něco cenného (volba Vypravěče)
 B	Připravil sis něco, co využiješ při návratu
@@ -91,7 +91,7 @@ P	<b>Na 6-</b> se buď vrátíš, ale s potížemi v patách, nebo jsi nezvěstn
 C	<b>JAKO KOČKA</b> Když <b><i>neseš lehký náklad a jednáš opatrně</i></b>, pohybuješ se neslyšně. Když <b><i>se skrýváš ve stínech nebo ve tmě</i></b>, zůstáváš neviděn, dokud na sebe neupozorníš, nezměníš pozici nebo nezaútočíš.
 TAKES	3
 C	<b>DILETANT</b> (Vyžaduje úroveň 2+ a Lišáka) Pokaždé, když si vezmeš tento tah, vyber si tah z deníku Ranaře, Maršála, Hraničáře nebo Hledače, pro který jinak splňuješ požadavky. (Nemůžeš si vzít Zlepšenou Vlastnost ani Vynikající Vlastnost.)
-C	<b>ŠESTÝ SMYSL</b> Vždy se můžeš Vypravěče zeptat: „Je tu přepadení nebo past?“ Pokud řekne „ano“, hoď +INT: <b>na 10+</b> se Vypravěče zeptej na obě otázky níže; <b>na 7–9</b> na 1; <b>tak či tak</b> máš výhodu na příští hod, kterým jednáš podle odpovědi (odpovědí).
+C	<b>ŠESTÝ SMYSL</b> Vždy se můžeš Vypravěče zeptat: „Je tu přepadení nebo past?“ Pokud řekne „ano“, hoď +INT: <b>na 10+</b> se Vypravěče zeptej na obě otázky níže; <b>na 7-9</b> na 1; <b>tak či tak</b> máš výhodu na příští hod, kterým jednáš podle odpovědi (odpovědí).
 Q	Co spustí přepadení nebo past?
 Q	Co se stane, jakmile se spustí?
 P	<b>Na 6-</b> si nezaškrtávej XP; víš, že tu je past nebo přepadení, ale zatím se nic zlého neděje.
@@ -101,7 +101,7 @@ C	<b>ZLEPŠENÁ VLASTNOST</b> Pokaždé, když si vezmeš tento tah, zvyš jednu
 C	<b>NEODOLATELNÝ</b> Když <b><i>s někým jednáš</i></b>, můžeš se jeho hráče zeptat, jestli tě považuje za přitažlivého, a dostaneš upřímnou odpověď (obvykle „ano“).
 P	Když <b><i>Přesvědčuješ tím, že svůj nemalý</i></b> <b><i>šarm využiješ jako páku</i></b>, máš výhodu.
 C	<b>SMÍCH NEBEZPEČÍ DO OČÍ</b> Když <b><i>se chystáš hodit +CON a vtipkuješ</i></b> <b><i>o nesnázích, kterým čelíš</i></b>, můžeš místo toho hodit +CHA.
-C	<b>LEHKÉ PRSTY</b> Když <b><i>provedeš kousek zručných prstů na nic netušící</i></b> <b><i>oběti</i></b>, uspěješ a nikdo nic nepozná. Pokud tě někdo sleduje, hoď +DEX: <b>na 10+</b> uspěješ a nikdo nic nepozná; <b>na 7–9</b> uspěješ, NEBO nikdo nic nepozná (dle volby).
+C	<b>LEHKÉ PRSTY</b> Když <b><i>provedeš kousek zručných prstů na nic netušící</i></b> <b><i>oběti</i></b>, uspěješ a nikdo nic nepozná. Pokud tě někdo sleduje, hoď +DEX: <b>na 10+</b> uspěješ a nikdo nic nepozná; <b>na 7-9</b> uspěješ, NEBO nikdo nic nepozná (dle volby).
 PAGE	111
 C	<b>VŠÍMAVOST</b> Když <b><i>Hledáš Vhled</i></b>, můžeš položit 1 otázku navíc. I na 6- můžeš položit 1 otázku (i když se ti nemusí líbit, jak se odpověď dozvíš).
 C	<b>OSTRÝ JAZYK</b> Když <b><i>zraníš pýchu cizí postavy dobře mířenou</i></b> <b><i>poznámkou</i></b>, musí udělat 1 (dle její volby):
@@ -112,7 +112,7 @@ C	<b>ZBROJNÍ UM</b> Když <b><i>vládneš zbraní rychle a hbitě</i></b>, ház
 C2	<b>KRYT A ODVETA</b>
 P	(Vyžaduje Zbrojní Um)
 P	Když <b><i>Bráníš zbraní, kterou umíš</i></b> <b><i>rychle ovládat</i></b>, můžeš utratit 1 Pohotovost, abys zároveň snížil účinky/zranění útoku na polovinu a udeřil zpět na útočníka (způsob své zranění s nevýhodou), místo abys utrácel 1 Pohotovost za každé zvlášť.
-C	<b>STŘÍBRNÝ JAZYK</b> ◇◇◇ Když <b><i>se slovy vyhýbáš podezření nebo potížím</i></b>, hoď +CHA: <b>na 10+</b> drž si 3 Kuráže; <b>na 7–9</b> drž si 1 Kuráž. Kuráž můžeš utrácet 1 za 1, abys:
+C	<b>STŘÍBRNÝ JAZYK</b> ◇◇◇ Když <b><i>se slovy vyhýbáš podezření nebo potížím</i></b>, hoď +CHA: <b>na 10+</b> drž si 3 Kuráže; <b>na 7-9</b> drž si 1 Kuráž. Kuráž můžeš utrácet 1 za 1, abys:
 B	Se pohyboval nebo manévroval bez povšimnutí
 B	Odolal přímému zkoumání nebo výslechu
 B	Odvedl podezření nebo pozornost jinam
@@ -122,12 +122,12 @@ Q	Co se obecně snaží skrýt?
 Q	Co chce, aby se stalo?
 C	<b>BITEVNÍ TANEČNÍK</b> (Vyžaduje úroveň 6+ a Zbrojní Um) Když <b><i>házíš +DEX na Zkřížení Zbraní</i></b>, <b>na 12+</b> způsobíš své zranění, vyhneš se útoku nepřítele a ohromíš/zahanbíš/zastrašíš své protivníky.
 C	<b>PODPÁSOVKA</b> (Vyžaduje úroveň 6+ a Přepadení) Když <b><i>Přepadáš se zbraní</i></b> <b>zblízka</b> <b><i>v ruce</i></b>, máš výhodu na hod na zranění.
-C	<b>OKO NA DVEŘÍCH</b> (Vyžaduje úroveň 6+) Když <b><i>ty a tví spojenci potřebujete zmizet</i></b>, pojmenuj únikovou cestu a hoď +INT: <b>na 10+</b> jste pryč; <b>na 7–9</b> můžete zůstat, nebo jít, ale pokud půjdete, bude tě to stát — Vypravěč ti řekne, co (nebo koho) necháš za sebou nebo vezmeš s sebou.
+C	<b>OKO NA DVEŘÍCH</b> (Vyžaduje úroveň 6+) Když <b><i>ty a tví spojenci potřebujete zmizet</i></b>, pojmenuj únikovou cestu a hoď +INT: <b>na 10+</b> jste pryč; <b>na 7-9</b> můžete zůstat, nebo jít, ale pokud půjdete, bude tě to stát — Vypravěč ti řekne, co (nebo koho) necháš za sebou nebo vezmeš s sebou.
 C	<b>LHÁŘ JAKO ŠEVEC</b> (Vyžaduje úroveň 6+) Když <b><i>Vzdoruješ Nebezpečí, Přesvědčuješ nebo Překážíš tím,</i></b> <b><i>že klameš</i></b>, máš výhodu.
 P	Když jiný tah (třeba Hledání Vhledu) dovolí hráči položit ti otázku, můžeš se rozhodnout neodpovědět.
 C	<b>DRUHÝ ÚMYSL</b> (Vyžaduje úroveň 6+, Kryt a Odvetu a Přepadení) Když <b><i>Bráníš a utratíš 1 Pohotovost za Kryt</i></b>
 P	<b><i>a Odvetu</i></b>, vyber také 1 možnost ze seznamu Přepadení.
-C	<b>KLUZKÝ JAKO ÚHOŘ</b> (Vyžaduje úroveň 6+) Když <b><i>házíš, abys unikl zajetí nebo ovládnutí</i></b>, ber 6- jako 7–9. Na 12+ řekni, jak obrátíš situaci nebo využiješ okolnosti ve svůj prospěch.
+C	<b>KLUZKÝ JAKO ÚHOŘ</b> (Vyžaduje úroveň 6+) Když <b><i>házíš, abys unikl zajetí nebo ovládnutí</i></b>, ber 6- jako 7-9. Na 12+ řekni, jak obrátíš situaci nebo využiješ okolnosti ve svůj prospěch.
 C	<b>VYNIKAJÍCÍ VLASTNOST</b> (Vyžaduje úroveň 6+) Zvyš jednu ze svých vlastností o +1 (nejvýše na +3).
 PAGE	112
 H2	Neuvěřitelné historky

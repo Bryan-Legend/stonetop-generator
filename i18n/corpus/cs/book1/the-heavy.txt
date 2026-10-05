@@ -77,7 +77,7 @@ HR
 C	 <b>OBRNĚNÝ</b> Když <b><i>neseš štít</i></b>, zaškrtneš jen ◇ (místo ◇◇). Navíc můžeš ignorovat štítek <i>neohrabaná</i> u jakékoli zbroje, kterou nosíš.
 P	Pokud si tento tah vezmeš na začátku hry, přidej do inventáře ◇◇ železnou drátěnou košili, ◇◇ bronzový kyrys nebo ◇◇ šupinovou zbroj (vše 2 zbroj, <i>teplá</i>, <i>neohrabaná</i>).
 C	<b>BITEVNÍ OPOJENÍ</b> Když <b><i>proliješ krev — svou nebo cizí — a</i></b> <b><i>ztratíš se v boji</i></b>, ignoruješ strach, bolest, ovládání mysli a účinky slabin, dokud bojuješ.
-P	Když <b><i>akce skončí</i></b>, hoď +CON: <b>na 10+</b> to byl nával, obnov si 1d4 HP; <b>na 7–9</b> jsi udýchaný a mimo, ale po pár minutách odpočinku budeš v pořádku; <b>na 6-</b> zaškrtni slabinu, ale nezaškrtávej XP.
+P	Když <b><i>akce skončí</i></b>, hoď +CON: <b>na 10+</b> to byl nával, obnov si 1d4 HP; <b>na 7-9</b> jsi udýchaný a mimo, ale po pár minutách odpočinku budeš v pořádku; <b>na 6-</b> zaškrtni slabinu, ale nezaškrtávej XP.
 C2	<b>BERSERKR</b>
 P	(Vyžaduje Bitevní Opojení)
 P	Dokud <b><i>jsi v Bitevním Opojení</i></b>, tvé útoky zblízka získají štítek <i>plocha</i> a buší do každého poblíž (přítele i nepřítele). Na zranění házej pro každý cíl zvlášť.
@@ -85,7 +85,7 @@ C	<b>VYŘEZANÝ ZE DŘEVA</b> Zvyš si maximální HP o 4.
 CX	<b>NEBEZPEČNÝ</b>
 P	(Vyžaduje Ranaře)
 P	Když <b><i>způsobuješ své zranění</i></b>, máš výhodu.
-C	<b>HROZIVÝ</b> Když <b><i>se vrhneš do bitvy</i></b>, můžeš hodit +CHA: <b>na 10+</b> obojí; <b>na 7–9</b> vyber 1:
+C	<b>HROZIVÝ</b> Když <b><i>se vrhneš do bitvy</i></b>, můžeš hodit +CHA: <b>na 10+</b> obojí; <b>na 7-9</b> vyber 1:
 B	Slabší nepřátelé se před tebou roztřesou, zaváhají nebo prchnou.
 B	Stateční nepřátelé se soustředí na tebe a vidí v tobě největší hrozbu.
 P	<b>Na 6-</b> vyber 1, ale zeptej se Vypravěče, co ti uniklo.
@@ -98,7 +98,7 @@ HR
 C	<b>ZASTRAŠUJÍCÍ</b> Když <b><i>Přesvědčuješ násilím nebo výhrůžkami</i></b>, máš výhodu.
 HR
 CX	<b>NESMRTELNÝ</b>
-P	Když <b><i>jsi Na Prahu Smrti,</i></b> můžeš házet +CON nebo +nic (dle volby). <b>Na 7–9</b> si můžeš zaškrtnout slabinu dle volby a obnovit si 1 HP.
+P	Když <b><i>jsi Na Prahu Smrti,</i></b> můžeš házet +CON nebo +nic (dle volby). <b>Na 7-9</b> si můžeš zaškrtnout slabinu dle volby a obnovit si 1 HP.
 HR
 C2	<b>NEZASTAVITELNÝ</b> ◇◇◇◇◇
 P	(Vyžaduje Nesmrtelný)
@@ -127,7 +127,7 @@ B	Způsobíš nechtěné škody nebo újmu
 B	Vybere si to daň (zaškrtni slabinu)
 C	<b>NEMESIS</b> (Vyžaduje úroveň 6+ a Neúprosný) Když <b><i>Zkřížíš Zbraně a tvůj nepřítel přežije</i></b>, všechny tvé budoucí útoky proti němu způsobí +1d6 zranění.
 C	<b>NEOCHVĚJNÝ STRÁŽCE</b> (Vyžaduje úroveň 6+ a Strážce) Dokud si <b><i>držíš Pohotovost (z Bránění)</i></b>, můžeš vždy utrpět zranění/účinky útoku místo svého chráněnce; nemusíš utrácet Pohotovost, prostě to uděláš.
-C	<b>KLIDNÝ JAKO SKÁLA</b> (Vyžaduje úroveň 6+ a Ledový Klid) Když <b><i>Vzdoruješ Nebezpečí (nebo Bojuješ jako Jeden) tím, že</i></b> <b><i>zachováš klid a jedeš dál</i></b>, ber 6- jako 7–9.
+C	<b>KLIDNÝ JAKO SKÁLA</b> (Vyžaduje úroveň 6+ a Ledový Klid) Když <b><i>Vzdoruješ Nebezpečí (nebo Bojuješ jako Jeden) tím, že</i></b> <b><i>zachováš klid a jedeš dál</i></b>, ber 6- jako 7-9.
 C	<b>VYNIKAJÍCÍ VLASTNOST</b> (Vyžaduje úroveň 6+) Zvyš jednu ze svých vlastností o +1 (nejvýše na +3).
 PAGE	116
 H2	Historie násilí
