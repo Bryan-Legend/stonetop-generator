@@ -214,6 +214,7 @@ Pull Together · Deploy · Seasons Change · Death's Door.
 - **Sheet headings:** Bakgrund (Välj 1) · Instinkt (Välj 1) · Utseende · Ursprung och namn · Grundegenskaper · Särskilda ägodelar · Drag · Presentationer
 - **Names:** Storskogen (Great Wood) · Kärrbryn (Marshedge) · Spärrpasset (Barrier Pass) · Gordins Gruva · Kullfolket (Hillfolk) · Trapplanden (Steplands) · Ringmuren · de Gamla Vägarna · Tornruinen (Ruined Tower) · Ferriers Kärr · Skaparna (Makers) · Tingen Därnere (Things Below) · Sista Dörren · den Bleke Jägaren · Fae
 - **Tags:** hand · nära (close) · kort (near) · fjärran (far) · räckvidd (reach) · genomborrande (piercing) · yta (area) · grupp
+- **Whole-language pass (2026-10-05):** the binding list is `i18n/_work/sv-brief.md` (self-contained: fixed terms, GM moves and principles, setting words, tags, page and arcana titles); sweep in `sv-sweep.py`. Key choices: GM/NPC/PC = spelledaren (SL)/SLP/rollperson (RP) · roll = slå · debility (noun) = skavank · mark XP = markera XP · tag = tagg · site = plats · Homefront = Hemmafronten · Bolster = Stärka (hold Förberedelse) · Order Followers = Beordra Följeslagare · Strengthen Your Bond = Stärka Bandet · Stock = Förråd · the Line = Gränsen · announce trouble = förebåda problem · put someone in a spot = sätt någon i knipa · primordial (tag) = uråldrig · Ranger: Erfaren Spårare · Karta i Huvudet · Vägvisare (Trailblazer) · Rune-laden Scales = Det Runtyngda Fjällpansaret · "(page N)" = "(sidan N)" (`page_words` in `ui/sv.json`)
 
 ## cs — Čeština
 

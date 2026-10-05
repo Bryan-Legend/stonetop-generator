@@ -104,11 +104,11 @@ C	<b>SKAKA AV DIG DET</b> När du <b><i>beordrar en bundsförvant att övervinna
 P	<b>på 7-9</b> får en RP fördel att göra det; en SLP gör det, men behöver tid, blir bitter på dig eller känner sig förödmjukad (SL avgör).
 C	<b>SKÖLDMUR</b> När du <b><i>låter ditt manskap bilda en sköldmur</i></b> Försvarar de med fördel och <b>på 7+</b> håller de +2 Beredskap (i stället för det vanliga +1 för sköldar). <b><i>Så länge</i></b> <b><i>de håller formationen</i></b> kan de gå till anfall utan att förlora Beredskap.
 PAGE	127
-C	<b>HERRN, BER OM TILLSTÅND ATT DÖ, HERRN</b> När <b><i>en av dina följeslagare skulle dö</i></b> kan du spendera 1 av hens Lojalitet för att hen ska överleva (ur spel, men vid liv). Om du låter hen gå, kryssa XP.
+C	<b>HERRN, BER OM TILLSTÅND ATT DÖ, HERRN</b> När <b><i>en av dina följeslagare skulle dö</i></b> kan du spendera 1 av hens Lojalitet för att hen ska överleva (ur spel, men vid liv). Om du låter hen gå, markera XP.
 C	<b>TALA MJUKT</b> När du <b><i>erbjuder fred men din fiende vägrar</i></b> får du fördel på ditt nästa slag mot hen.
 C	<b>STENTORSRÖST</b> ◇◇ När du <b><i>höjer rösten</i></b> bär den långt och skär igenom även stridens larm. När du <b><i>går i</i></b> <b><i>strid</i></b>, håll 2 Befäl. Spendera 1 Befäl för att ropa en order eller varning och välj 1:
 B	RP får fördel på sitt nästa slag för att göra som du säger
-B	Du har fördel att Befalla Följeslagare eller Sända Ut
+B	Du har fördel att Beordra Följeslagare eller Sända Ut
 C	<b>TA MÅTTET PÅ</b> När du <b><i>bedömer någon</i></b>, ställ en av frågorna nedan till hens spelare och få ett ärligt svar. Om hen <b><i>fruktar eller respekterar dig</i></b> (hen avgör) får du ställa en fråga till. Du kan inte använda detta drag på hen igen förrän er relation har förändrats avsevärt.
 Q	Kan jag lita på hen (att ______ )?
 Q	Vad tänker hen göra?

@@ -152,6 +152,12 @@
     "book1": "Bok I — Stonetop",
     "book2": "Bok II — Den vidare världen"
   },
+  "page_words": [
+    "sidan",
+    "sidorna",
+    "sid.",
+    "s."
+  ],
   "bestiary": {
     "title": "Bestiarium",
     "lede": "Varje statistikblock i båda böckerna, A till Ö – {n} stycken. Håll över ett namn för att se hela blocket; klicka för att gå dit.",

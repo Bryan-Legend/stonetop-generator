@@ -94,7 +94,7 @@ B	På vilket sätt det inte är riktigt rätt, men kanske duger
 B	Vilket trubbel du ställde till där hemma för att få tag i det
 B	Varför det drar till sig oönskad uppmärksamhet att använda det
 B	Att det är det enda sådana du har, och varför det bara fungerar en gång
-C	<b>ALDRIG SVARSLÖS</b> När du <b><i>Vet Saker och slår 6-</i></b> får du välja att inte kryssa XP. Kryssar du inte XP är det värsta som händer att SL inte berättar något intressant eller användbart om ämnet, utan i stället hur du skulle kunna lära dig mer.
+C	<b>ALDRIG SVARSLÖS</b> När du <b><i>Vet Saker och slår 6-</i></b> får du välja att inte markera XP. Markerar du inte XP är det värsta som händer att SL inte berättar något intressant eller användbart om ämnet, utan i stället hur du skulle kunna lära dig mer.
 C	<b>POLYGLOTT</b> När du <b><i>första gången stöter på ett levande språk i spelet</i></b>, beskriv hur väl du behärskar det (om alls) och hur du lärde dig det.
 P	När du <b><i>Vet Saker om någon skrift, text, runor</i></b> <b><i>eller symboler du stöter på</i></b> har du fördel.
 C2	<b>KRYPTOLOG</b>

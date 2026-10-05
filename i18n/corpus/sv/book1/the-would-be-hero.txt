@@ -130,7 +130,7 @@ P	(Kräver Jag slås omkull)
 P	När du <b><i>använder Jag slås omkull</i></b> har du fördel på ditt nästa slag mot det som gav skadan, och ditt nästa slag mot det gör +1d4 skada.
 TAKES	3
 C	<b>FÖRBÄTTRAD GRUNDEGENSKAP</b> Varje gång du tar detta drag, öka en av dina grundegenskaper med 1 (till högst +2).
-C	<b>ÖVER ÖRONEN</b> När <b><i>en annan RP räddar dig ur fara</i></b>, kryssa XP.
+C	<b>ÖVER ÖRONEN</b> När <b><i>en annan RP räddar dig ur fara</i></b>, markera XP.
 C	<b>JÄRNVILJA</b> När du <b><i>utsätts för tankekontroll eller magi</i></b> <b><i>som påverkar dina känslor</i></b> kan du ta 1d4 skada (ignorerar rustning) för att strunta i dess inflytande.
 C	<b>VETGIRIG</b> När du <b><i>söker och får ärliga råd</i></b> får du fördel på ditt nästa slag för att följa rådet.
 C	<b>INGEN FÅR NER MIG</b> ◇ När du <b><i>har 5 eller färre aktuella HP</i></b> ger du nackdel på all skada du tar.
