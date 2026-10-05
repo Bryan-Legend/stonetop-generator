@@ -152,6 +152,12 @@
     "book1": "I. könyv — Stonetop",
     "book2": "II. könyv — A tágabb világ"
   },
+  "page_words": [
+    "oldal"
+  ],
+  "page_words_after": [
+    ". oldal"
+  ],
   "bestiary": {
     "title": "Bestiárium",
     "lede": "Mindkét könyv összes értékblokkja A-tól Z-ig – összesen {n}. Vidd az egeret egy név fölé a teljes blokkért; kattints, hogy odaugorj.",

@@ -69,7 +69,7 @@ C	<b>Pálinkafőzde</b>: tömlőnyi finom whisky (◇◇ használat, előnyt ad 
 C	<b>Üveghuta</b>: fiolák, amulettek, lencsék, homok, üveggolyók, fújtatók, olvasztótégely, ◇ lámpások (◇◇◇◇◇ óra, <i>közeli</i>, <i>terület</i>) stb.
 C	<b>Szent ereklyék</b> (◇◇◇ használat): ha van egy a málhádban, amikor Fohászkodsz a Napistenhez, következmény választása helyett bejelölhetsz egy használatot.
 C	<b>Hangszerkészítő szerszámok</b>: vésők, reszelők, bélhúrok, különféle fák, pácok, ◇ egy lant, ◇ egy hegedű stb.
-P	(egyeztesd a KM-mel)
+P	(egyeztesd a mesélővel)
 PAGE	122
 H2	Húzások
 HR
@@ -79,26 +79,26 @@ C	<b>GYERTYA A SÖTÉTSÉG ELLEN</b> Amikor <b><i>szent fényt tartasz, de egyé
 C2	<b>RAGYOGÓ PAJZS</b>
 P	(Feltétel: Gyertya a sötétség ellen)
 P	Amikor <b><i>szent fényt emelsz fel, hogy elhárítsd a testet, elmét</i></b> <b><i>vagy lelket érő támadást</i></b>, dobj +CHA-val: <b>10+</b> <b>esetén</b> a támadás elhárul, és ha a támadó a fényed hatókörében van, rövid időre megvakul;
-P	<b>7–9 esetén</b> a támadás elhárul, de szent fényed megremeg és elhalványul, és kialvással fenyeget;
+P	<b>7-9 esetén</b> a támadás elhárul, de szent fényed megremeg és elhalványul, és kialvással fenyeget;
 P	<b>6- esetén</b> a fényed kialszik, és a támadás akadálytalanul célba ér.
-C	<b>MINDEN MEGVILÁGOSODIK</b> Amikor <b><i>alaposan szemügyre veszel valakit, és a lelkét</i></b> <b><i>csupaszon látod</i></b>, dobj +WIS-szel: <b>10+ esetén</b> tegyél fel a játékosának 1 kérdést az alábbi listából, valamint ezt: „És mitől érezné magát szeretettnek, szépnek vagy méltónak?”; <b>7–9</b> <b>esetén</b> tegyél fel neki 1 kérdést a listából. Mindenképpen igazat kell mondania.
+C	<b>MINDEN MEGVILÁGOSODIK</b> Amikor <b><i>alaposan szemügyre veszel valakit, és a lelkét</i></b> <b><i>csupaszon látod</i></b>, dobj +WIS-szel: <b>10+ esetén</b> tegyél fel a játékosának 1 kérdést az alábbi listából, valamint ezt: „És mitől érezné magát szeretettnek, szépnek vagy méltónak?”; <b>7-9</b> <b>esetén</b> tegyél fel neki 1 kérdést a listából. Mindenképpen igazat kell mondania.
 Q	Mit szégyell a legjobban?
 Q	Mire vágyik vagy mit áhít leginkább?
 Q	Milyen reményt adott fel?
 Q	Ki vagy mi a legdrágább számára?
-C	<b>ÉS ÍME, EGY FAKÓ LÓ</b> Amikor <b><i>az éjszakát egy lángba bámulva töltöd</i></b>, kérd meg a KM-et, hogy fedjen fel egy közelgő végzetet vagy komor előjelt, amely beteljesül, hacsak közbe nem lépsz, és hogy miként léphetnél még közbe.
+C	<b>ÉS ÍME, EGY FAKÓ LÓ</b> Amikor <b><i>az éjszakát egy lángba bámulva töltöd</i></b>, kérd meg a mesélőt, hogy fedjen fel egy közelgő végzetet vagy komor előjelt, amely beteljesül, hacsak közbe nem lépsz, és hogy miként léphetnél még közbe.
 CX	<b>MEGSZENTELT LÁNG</b>
 P	Amikor <b><i>megszentelő szavakat suttogsz egy lángnak</i></b>, a láng szent fényt vet. A szent fényre kellemetlen ránézniük a sötétség teremtményeinek, de valódi kárt nem okoz. A szent fény addig tart, amíg a láng ki nem alszik, vagy amíg meg nem szentelsz egy másik lángot, amelyik előbb bekövetkezik.
 C	<b>BELSŐ TŰZ</b> Amikor <b><i>sötétben vagy</i></b>, látsz a belső tüzed fényénél. Amikor <b><i>hideg vagy tűz</i></b> <b><i>okoz sebzést neked</i></b>, csökkentsd azt 2-vel.
-C	<b>VEZÉRLŐ FÉNY</b> Amikor <b><i>egy vagy több NJK-t vezetsz át a veszélyen</i></b>, dobj +CHA-val: <b>10+ esetén</b> mind átjuttok (áldott legyen Helior); <b>7–9 esetén</b> a KM elmondja, mi kell ahhoz, hogy mindenki biztonságban átjusson.
-C	<b>HELIOR REZZENÉSTELEN SZEME</b> Amikor <b><i>addig bámulsz a napba, míg el nem veszíted</i></b> <b><i>a látásod</i></b>, nevezz meg egy személyt vagy helyet, akit vagy amit ismersz, és dobj +WIS-szel: <b>10+ esetén</b> rövid időre megpillantod a célpontod, mintha nagy magasságból néznéd, és válassz 2-t az alábbi listából; <b>7–9 esetén</b> rövid időre megpillantod a célpontod, mintha nagy magasságból néznéd, és válassz 1-et:
+C	<b>VEZÉRLŐ FÉNY</b> Amikor <b><i>egy vagy több NJK-t vezetsz át a veszélyen</i></b>, dobj +CHA-val: <b>10+ esetén</b> mind átjuttok (áldott legyen Helior); <b>7-9 esetén</b> a mesélő elmondja, mi kell ahhoz, hogy mindenki biztonságban átjusson.
+C	<b>HELIOR REZZENÉSTELEN SZEME</b> Amikor <b><i>addig bámulsz a napba, míg el nem veszíted</i></b> <b><i>a látásod</i></b>, nevezz meg egy személyt vagy helyet, akit vagy amit ismersz, és dobj +WIS-szel: <b>10+ esetén</b> rövid időre megpillantod a célpontod, mintha nagy magasságból néznéd, és válassz 2-t az alábbi listából; <b>7-9 esetén</b> rövid időre megpillantod a célpontod, mintha nagy magasságból néznéd, és válassz 1-et:
 B	A látomás addig tart, ameddig akarod
 B	A nézőpontod egészen közelre kerül
 B	Gyorsan visszanyered a látásod
 TAKES	3
 C	<b>JAVÍTOTT TULAJDONSÁG</b> Minden alkalommal, amikor ezt a húzást választod, növeld egy tulajdonságodat 1-gyel (legfeljebb +2-ig).
 CX	<b>FOHÁSZKODJ A NAPISTENHEZ</b>
-P	Amikor <b><i>szent fényt töltesz el Helior erejével</i></b>, válassz egy általad ismert Fohászt, és dobj +WIS-szel: <b>10+</b> <b>esetén</b> a leírtak szerint hat, de 1 következményt választanod kell az alábbi listából; <b>7–9 esetén</b> a leírtak szerint hat, de te és a KM is választotok 1-et.
+P	Amikor <b><i>szent fényt töltesz el Helior erejével</i></b>, válassz egy általad ismert Fohászt, és dobj +WIS-szel: <b>10+</b> <b>esetén</b> a leírtak szerint hat, de 1 következményt választanod kell az alábbi listából; <b>7-9 esetén</b> a leírtak szerint hat, de te és a mesélő is választotok 1-et.
 B	A Fohász <i>gyengítve</i> hat
 B	Az erőfeszítés megvisel; jelölj be egy gyengeséget
 B	A fény kialszik, amikor a Fohász véget ér, üzemanyaga elfogyott
@@ -109,15 +109,15 @@ C	<b>LÁMPAGYÚJTÓ</b> Amikor <b><i>egy gyúlékony tárgyhoz suttogsz</i></b> 
 C	<b>JÁMBORSÁG</b> ◇ Amikor <b><i>legalább egy órát töltesz méltó áhítatban</i></b> <b><i>Helior előtt,</i></b> kapsz 1 Áldás tartalékot. Más hívő JK-k, akik részt vesznek az áhítatban, szintén kapnak 1 Áldást. Bármikor elkölthetsz 1 Áldást, hogy +1-et adj egy épp megtett, igaz ügyet szolgáló dobásodhoz.
 C	<b>TISZTÍTÓ LÁNGOK</b> Amikor <b><i>szent fényt fordítasz a sötétség egy</i></b> <b><i>teremtménye ellen</i></b>, az fegyvernek számít (d10 sebzés, <i>ököl</i>, <i>közeli</i>, <i>terület</i>, 2 páncéltörő), és választhatod, hogy +WIS-szel dobj a Csapj Össze húzásra.
 C	<b>SUGÁRZÓ ORCA</b> Amikor <b><i>szeretetteljes figyelmedet szenteled valakinek</i></b>, utána előnnyel Győzheted Meg. Ha követő, választhatod helyette az Erősítsd a Köteléket húzást (mintha megfizetted volna az árát).
-C	<b>KELJ FEL, MINT A NAP</b> Amikor <b><i>szóval vagy tettel magadra vonod a figyelmet</i></b>, dobj +CHA-val: <b>10+ esetén</b> mindenki odafordul és néz, és addig tartod a tekintetüket, amíg okot adsz nekik a nézésre; <b>7–9 esetén</b> mindenki odafordul és néz.
-C	<b>A TAVASZ ELSŐ OLVADÁSA</b> Amikor <b><i>időt töltesz (legalább egy órát, talán többet)</i></b> <b><i>azzal, hogy reményt, jóságot vagy irgalmat ébressz egy NJK-ban</i></b>, dobj +CHA-val: <b>10+ esetén</b> tüzet gyújtasz mélyen benne, és tartós változást érsz el; <b>7–9 esetén</b> egyelőre jóságot szítasz a szívében, de végül visszatér régi szokásaihoz; <b>6- esetén</b> a szíve megkeményedik, és bármit mond is még a KM, ezt a húzást nem használhatod rajta újra.
+C	<b>KELJ FEL, MINT A NAP</b> Amikor <b><i>szóval vagy tettel magadra vonod a figyelmet</i></b>, dobj +CHA-val: <b>10+ esetén</b> mindenki odafordul és néz, és addig tartod a tekintetüket, amíg okot adsz nekik a nézésre; <b>7-9 esetén</b> mindenki odafordul és néz.
+C	<b>A TAVASZ ELSŐ OLVADÁSA</b> Amikor <b><i>időt töltesz (legalább egy órát, talán többet)</i></b> <b><i>azzal, hogy reményt, jóságot vagy irgalmat ébressz egy NJK-ban</i></b>, dobj +CHA-val: <b>10+ esetén</b> tüzet gyújtasz mélyen benne, és tartós változást érsz el; <b>7-9 esetén</b> egyelőre jóságot szítasz a szívében, de végül visszatér régi szokásaihoz; <b>6- esetén</b> a szíve megkeményedik, és bármit mond is még a mesélő, ezt a húzást nem használhatod rajta újra.
 C	<b>KÉTSZER OLY FÉNYESEN ÉGNI</b> (Feltétel: 6+ szint és Fohászkodj a Napistenhez) Amikor <b><i>Fohászkodsz a Napistenhez</i></b>, bejelölhetsz egy gyengeséget, hogy egyszerre 2 Fohászt használj. Egyszer dobj, és minden következményt mindkét Fohászra alkalmazz.
 C	<b>ERŐSÍTETT FOHÁSZOK</b> (Feltétel: 6+ szint és Fohászkodj a Napistenhez) Amikor Fohászkodsz a Napistenhez, dobás előtt választhatsz egy további következményt. Ha így teszel, a Fohász <i>erősítve</i> hat.
-C	<b>DICSŐSÉGES SZOLGA</b> (Feltétel: 6+ szint és Fohászkodj a Napistenhez) Amikor <b><i>Fohászkodsz a Napistenhez, és 10+-t dobsz</i></b>, nem kell következményt választanod; <b>7–9 esetén</b> te választasz következményt, de a KM nem.
+C	<b>DICSŐSÉGES SZOLGA</b> (Feltétel: 6+ szint és Fohászkodj a Napistenhez) Amikor <b><i>Fohászkodsz a Napistenhez, és 10+-t dobsz</i></b>, nem kell következményt választanod; <b>7-9 esetén</b> te választasz következményt, de a mesélő nem.
 C	<b>ÉHES LÁNGOK</b> (Feltétel: 6+ szint és Tisztító lángok) Amikor <b><i>szent fénnyel okozol sebzést</i></b>, +1d6 sebzést okozol, és a célpontodat szent fény és lángok borítják el.
 C	<b>FÉNYT, TÖBB FÉNYT</b> (Feltétel: 6+ szint és Megszentelt láng) Amikor <b><i>megszentelsz egy lángot</i></b>, a szokásosnál fényesebben ég. Egy mécses vagy gyertya <i>nyújtott</i> távolságig világít, egy olajlámpa, lámpás vagy fáklya <i>közepes</i> távolságig, egy ernyős lámpás pedig <i>távoli</i> távolságig.
 C	<b>KIVÁLÓ TULAJDONSÁG</b> (Feltétel: 6+ szint) Növeld egy tulajdonságodat +1-gyel (legfeljebb +3-ig).
-C	<b>A FEHÉR LÁNG FORGATÓJA</b> (Feltétel: 6+ szint és Fohászkodj a Napistenhez) Amikor <b><i>Helior lényegét egy nálad lévő tárgyba</i></b> <b><i>vezeted</i></b>, dobj +WIS-szel: <b>10+ esetén</b> fehér lánggal lobban fel, amely szent fényt vet (<i>nyújtott</i>, <i>terület</i>), és sem téged, sem a tárgyat nem égeti, és azonnal Fohászkodhatsz a Napistenhez, mintha 10+-t dobtál volna; <b>7–9 esetén</b> fehér lánggal lobban fel, amely szent fényt vet (<i>nyújtott</i>, <i>terület</i>), és sem téged, sem a tárgyat nem égeti.
+C	<b>A FEHÉR LÁNG FORGATÓJA</b> (Feltétel: 6+ szint és Fohászkodj a Napistenhez) Amikor <b><i>Helior lényegét egy nálad lévő tárgyba</i></b> <b><i>vezeted</i></b>, dobj +WIS-szel: <b>10+ esetén</b> fehér lánggal lobban fel, amely szent fényt vet (<i>nyújtott</i>, <i>terület</i>), és sem téged, sem a tárgyat nem égeti, és azonnal Fohászkodhatsz a Napistenhez, mintha 10+-t dobtál volna; <b>7-9 esetén</b> fehér lánggal lobban fel, amely szent fényt vet (<i>nyújtott</i>, <i>terület</i>), és sem téged, sem a tárgyat nem égeti.
 PAGE	124
 H2	Dicsőség a napnak
 P	Te vagy Helior, a Nappalhozó kijelölt szolgája, aki a nap és a fény istene, a remény és irgalom jelzőtüze.

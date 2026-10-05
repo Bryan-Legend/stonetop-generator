@@ -11,7 +11,7 @@ HR
 H2	Előélet (Válassz 1-et)
 C	<b>ÖRÖKSÉG</b> Te vagy a legújabb a Bírák hosszú sorában — itt születtél, az előző Bíró inasa voltál, és rád szállt a tisztség továbbadása. A Krónika a tudás gazdag tárháza, de nincs mutatója, úgyhogy sok szerencsét, ha bármit keresel benne.
 P	Amikor <b><i>Dolgokat Tudsz Stonetop népéről vagy</i></b> <b><i>történelméről</i></b>, előnyöd van.
-P	Amikor <b><i>napokat, heteket vagy hónapokat töltesz a Krónika</i></b> <b><i>fölé hajolva</i></b>, tegyél fel egy kérdést a KM-nek, és a KM elmondja, mit tudsz meg ezalatt.
+P	Amikor <b><i>napokat, heteket vagy hónapokat töltesz a Krónika</i></b> <b><i>fölé hajolva</i></b>, tegyél fel egy kérdést a mesélőnek, és a mesélő elmondja, mit tudsz meg ezalatt.
 C	<b>HITTÉRÍTŐ</b> A Bírák egy nagyobb rendjéhez tartozol, amely ide küldött, hogy óvd a civilizáció pislákoló lángját. A Krónika viszonylag új; a helyzeted a faluban korántsem biztos. Írd be ezeket a Bírákat a településfüzet Szomszédok részébe (válassz még 2-t):
 CX	Devin (Lápszélről)
 CX	Haeris (Gordin Tárnájából)
@@ -21,7 +21,7 @@ C	Tejisha (Gáthágóról)
 C	Unz (a Dombok Népétől)
 P	Amikor <b><i>egy másik település Bírájához fordulsz</i></b> <b><i>segítségért vagy értesülésért</i></b>, esküje köti, hogy megadja.
 P	Téged ugyanígy esküd köt, hogy támogasd őt.
-P	A szokásos különleges javaid mellett van egy madárházad is (jelöld be most). Amikor <b><i>idomított madárral küldesz üzenetet</i></b>, ahogy rended Bíráinál szokás, a KM elmondja, kapsz-e választ, mikor, és mi áll benne.
+P	A szokásos különleges javaid mellett van egy madárházad is (jelöld be most). Amikor <b><i>idomított madárral küldesz üzenetet</i></b>, ahogy rended Bíráinál szokás, a mesélő elmondja, kapsz-e választ, mikor, és mi áll benne.
 C	<b>PRÓFÉTA</b> ◇◇ A Bírák sora rég megszakadt, a Krónika elveszett vagy romba dőlt. Aratis személyesen hívott a szolgálatába álmokon, ómeneken és látomásokon át. A faluban egyesek neheztelnek a tekintélyért, amelyet magadra vettél.
 P	Amikor <b><i>néhány napig Aratisszal társalogsz</i></b> <b><i>egy Stonetopot vagy az egész civilizációt</i></b> <b><i>fenyegető veszélyről</i></b>, dobj +WIS-szel: <b>7+ esetén</b> Aratis felfedi, milyen utat szán neked; <b>10+ esetén</b> ezenfelül 2 Felhatalmazás tartalékod is lesz. Amíg <b><i>az ő parancsára cselekszel</i></b>, elkölthetsz 1 Felhatalmazást, hogy +1-et adj egy épp megtett dobásodhoz.
 H2	Ösztön (Válassz 1-et)
@@ -76,7 +76,7 @@ C	<b>Madárház</b>: vastag kesztyűk, madárcsuklyák, pórázok, magvak, ◇ p
 C	<b>Ácsszerszámok</b>: vésők, reszelők, szögek, szurok, ◇ feszítővasak, ◇ fűrészek, ◇◇ hordócskák, hordók stb.
 C	<b>Építőmesteri szerszámok</b>: vonalzók, mérőszalagok, mérőrudak, függőónok, ◇ háromlábak, ◇ csigasorok, talicska stb.
 C	<b>Kovácsműhely</b> (vagy hozzáférés egyhez): vasáru, tömbök, vastag kesztyűk, ◇ fogók, ◇ fújtatók, egy üllő stb.
-P	(egyeztesd a KM-mel)
+P	(egyeztesd a mesélővel)
 PAGE	118
 H2	Húzások
 P	A Megrovással és a Stonetop krónikásával kezdesz, valamint 2 további, általad választott húzással.
@@ -112,13 +112,13 @@ TAKES	3
 C	<b>JAVÍTOTT TULAJDONSÁG</b> Minden alkalommal, amikor ezt a húzást választod, növeld egy tulajdonságodat 1-gyel (legfeljebb +2-ig).
 C	<b>A TUDÁS HATALOM</b> Amikor <b><i>10+-t dobsz, hogy Dolgokat Tudj</i></b>, te vagy egy szövetséges előnnyel dobtok a következő dobásnál, amellyel a megtudottak alapján cselekszetek.
 HR
-C	<b>SOK KÉZ HAMAR VÉGEZ</b> Amikor <b><i>beugrasz segíteni egy másik karakternek, aki</i></b> <b><i>épp dobott</i></b>, mondd el, hogyan, és kérdezd meg a KM-et, mi kell még hozzá, vagy mik lesznek a következmények. Ha elfogadod, növeld a szövetséges dobását +1-gyel.
+C	<b>SOK KÉZ HAMAR VÉGEZ</b> Amikor <b><i>beugrasz segíteni egy másik karakternek, aki</i></b> <b><i>épp dobott</i></b>, mondd el, hogyan, és kérdezd meg a mesélőt, mi kell még hozzá, vagy mik lesznek a következmények. Ha elfogadod, növeld a szövetséges dobását +1-gyel.
 HR
 C2	<b>A VESSZŐNYALÁB NEM TÖRIK</b>
 P	(Feltétel: Sok kéz hamar végez)
 P	Amikor Egyként Küzdötök, te és egy általad választott szövetséges előnnyel dobtok.
 PAGE	119
-C	<b>A KALAPÁCS ÉS A KÖNYV</b> Amikor <b><i>lesújtasz egy természetfeletti káoszlényre</i></b>, dobj +WIS-szel: <b>10+ esetén</b> okozd a sebzésed, és válassz 1-et az alábbi listából; <b>7–9 esetén</b> okozd a sebzést, és válassz 1-et, de ki is teszed magad sérülésnek vagy nem kívánt figyelemnek.
+C	<b>A KALAPÁCS ÉS A KÖNYV</b> Amikor <b><i>lesújtasz egy természetfeletti káoszlényre</i></b>, dobj +WIS-szel: <b>10+ esetén</b> okozd a sebzésed, és válassz 1-et az alábbi listából; <b>7-9 esetén</b> okozd a sebzést, és válassz 1-et, de ki is teszed magad sérülésnek vagy nem kívánt figyelemnek.
 B	Okozz +1d6 sebzést
 B	Hagyd figyelmen kívül a lény páncélját vagy más védelmét
 B	Fojtsd el egyik természetellenes erejét
@@ -139,7 +139,7 @@ P	(Feltétel: 6+ szint és Kárhoztatás)
 P	Amikor <b><i>Megrovsz</i></b>, egy csoportot vagy frakciót is megbélyegezhetsz, ha egyértelműen meg tudod nevezni. Alkalmazd a Megrovás hatásait a csoport minden tagjára, távolságtól függetlenül.
 C	<b>TÜKÖRPAJZS</b> (Feltétel: 6+ szint és A hit pajzsa) Amikor <b><i>pajzzsal Védekezel</i></b>, elkölthetsz 1 Készenlétet, hogy elfogj egy mágikus erőt, és más célpont felé (vagy sehová) térítsd.
 C	<b>KIVÁLÓ TULAJDONSÁG</b> (Feltétel: 6+ szint) Növeld egy tulajdonságodat +1-gyel (legfeljebb +3-ig).
-C	<b>AZ ÖRÖK TORONY</b> (Feltétel: 6+ szint) Amikor <b><i>a mágiával szemben Dacolsz a Veszéllyel</i></b>, a 6- eredményt kezeld 7–9-ként.
+C	<b>AZ ÖRÖK TORONY</b> (Feltétel: 6+ szint) Amikor <b><i>a mágiával szemben Dacolsz a Veszéllyel</i></b>, a 6- eredményt kezeld 7-9-ként.
 PAGE	120
 H2	A Krónika
 P	Aratis Bírájának feladata a Krónika vezetése: a közösség, népe, tudása és hagyományai története. Hogy a Krónika milyen tudást őriz, az az előéletedtől függ, de több puszta könyvnél; kézzelfogható hely. Döntsd el, milyen az épülete.

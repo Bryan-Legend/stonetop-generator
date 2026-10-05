@@ -13,7 +13,7 @@ C	<b>SARJ</b> Itt nőttél fel, egy hosszú nemzetség leszármazottjaként. Sto
 P	A szokásos húzásaid mellett a Veterán Csapat húzással kezdesz. Jelöld be most.
 P	Amikor <b><i>létrehozod a Csapatodat</i></b>, automatikusan megkapja a <i>tisztelt</i> címkét (a szokásos választásaidon és a Veterán Csapatból kapottakon felül).
 C	<b>VEZEKLŐ</b> Mielőtt idejöttél, semmirekellők bandáját vezetted: haramiákat, fosztogatókat vagy véres kezű zsoldosokat. De valami megváltozott. Az igazság egy pillanata arra késztetett téged és követőidet (legalábbis néhányukat), hogy magatok mögött hagyjátok azt az életet. És valamiért Stonetop népe befogadott titeket.
-P	Amikor <b><i>véres múltadból merítesz, hogy Dolgokat Tudj</i></b>, +INT helyett +STR-rel is dobhatsz. Ha így teszel, a KM megkérdezi, kinek ártottál akkoriban, vagy ki haragudhat még rád. Válaszolj most.
+P	Amikor <b><i>véres múltadból merítesz, hogy Dolgokat Tudj</i></b>, +INT helyett +STR-rel is dobhatsz. Ha így teszel, a mesélő megkérdezi, kinek ártottál akkoriban, vagy ki haragudhat még rád. Válaszolj most.
 P	Amikor <b><i>létrehozod a Csapatodat</i></b>, automatikusan megkapja a <i>harcosok</i> címkét (a szokásos választásaidon felül).
 C	<b>FÉNYES CSILLAG</b> Született vezető vagy: szavaid lelkesítenek, terveid győzelmet hoznak, tetteidről messze földön mesélnek. Megérintettek az istenek? Ősi vér folyik az ereidben? Vagy egyszerűen te vagy az a bajnok, akire Stonetopnak szüksége van e nehéz időkben?
 P	A szokásos húzásaid mellett a Mi, Boldog Kevesek húzással kezdesz. Jelöld be most.
@@ -66,7 +66,7 @@ C	<b>Hadi fegyverek</b>: válassz legfeljebb 3-at (most vagy később):
 C	◇ Kard, vas (<i>közeli</i>, +1 sebzés)
 C	◇◇ Hosszú lándzsa, finom acél (<i>nyújtott</i>, 2 páncéltörő)
 C	◇ Csatabárd, vas (<i>közeli</i>, <i>mocskos</i>)
-C	◇ Összetett íj (<i>távoli</i>, +1 sebzés, <i>x</i> páncéltörő; kevés lőszer, kifogyott)◇◇ (egyeztesd a KM-mel)
+C	◇ Összetett íj (<i>távoli</i>, +1 sebzés, <i>x</i> páncéltörő; kevés lőszer, kifogyott)◇◇ (egyeztesd a mesélővel)
 PAGE	126
 H2	Húzások
 HR
@@ -90,7 +90,7 @@ TAKES	3
 C	<b>JAVÍTOTT TULAJDONSÁG</b> Minden alkalommal, amikor ezt a húzást választod, növeld egy tulajdonságodat 1-gyel (legfeljebb +2-ig).
 CX	<b>LOGISZTIKA</b>
 P	Amikor <b><i>egy településsel Toboroztatsz vagy Összefogatsz</i></b>, vagy amikor <b><i>Igényelsz</i></b>, előnyöd van.
-C	<b>OLVASS A TEREPBŐL</b> Amikor <b><i>először szánsz egy pillanatot a terep felmérésére</i></b>, tedd fel a KM-nek az alábbiak egyikét; előnyöd lesz a következő dobásodnál, amellyel a válasz alapján cselekszel.
+C	<b>OLVASS A TEREPBŐL</b> Amikor <b><i>először szánsz egy pillanatot a terep felmérésére</i></b>, tedd fel a mesélőnek az alábbiak egyikét; előnyöd lesz a következő dobásodnál, amellyel a válasz alapján cselekszel.
 Q	Mi a legjobb út be, ki, át vagy mellette el?
 Q	Hol a legjobb hely egy csapdának vagy rajtaütésnek?
 Q	Melyik a legjobban védhető állás?
@@ -98,10 +98,10 @@ Q	Mi nem odavaló itt?
 C2	<b>MELEG FOGADTATÁS</b> ◇◇
 P	(Feltétel: Olvass a terepből)
 P	Amikor <b><i>szövetségeseiddel megerősíttetsz egy állást, és</i></b> <b><i>lesben várjátok a csatát</i></b>, 1 Meglepetés tartalékot kapsz, ha sietsz, vagy 2 Meglepetést, ha ráérsz.
-P	Amint a csata megkezdődött, költs 1 Meglepetést, hogy felfedj egy előre előkészített cselt, védelmet vagy piszkos trükköt, és dobj +INT-tel: <b>10+ esetén</b> olyan jól működik, ahogy csak remélhető, és még van néhány ász a tarsolyodban: nyerj vissza 1 Meglepetést; <b>7–9 esetén</b> olyan jól működik, ahogy csak remélhető.
+P	Amint a csata megkezdődött, költs 1 Meglepetést, hogy felfedj egy előre előkészített cselt, védelmet vagy piszkos trükköt, és dobj +INT-tel: <b>10+ esetén</b> olyan jól működik, ahogy csak remélhető, és még van néhány ász a tarsolyodban: nyerj vissza 1 Meglepetést; <b>7-9 esetén</b> olyan jól működik, ahogy csak remélhető.
 C	<b>ELŐKÉSZÍTŐ CSAPÁS</b> Amikor <b><i>Összecsapsz és 7+-t dobsz</i></b>, választhatod, hogy hátránnyal sebzel. Ha így teszel, rést nyitsz, amelyet egy szövetséges kihasználhat, mintha Segítenél neki. Írd le!
 C	<b>RÁZD LE</b> Amikor <b><i>megparancsolod egy szövetségesnek, hogy győzze le a félelmet, fájdalmat,</i></b> <b><i>kétséget vagy tévképzetet</i></b>, dobj +CHA-val: <b>10+ esetén</b> megteszi;
-P	<b>7–9 esetén</b> egy JK előnyt kap ahhoz, hogy megtegye; egy NJK megteszi, de időre lesz szüksége, neheztelni fog rád, vagy megalázva érzi magát (a KM dönt).
+P	<b>7-9 esetén</b> egy JK előnyt kap ahhoz, hogy megtegye; egy NJK megteszi, de időre lesz szüksége, neheztelni fog rád, vagy megalázva érzi magát (a mesélő dönt).
 C	<b>PAJZSFAL</b> Amikor <b><i>pajzsfalat alakíttatsz a csapatoddal</i></b>, előnnyel Védekeznek, és <b>7+ esetén</b> +2 Készenlétet kapnak (a pajzsért járó szokásos +1 helyett). <b><i>Amíg</i></b> <b><i>tartják az alakzatot</i></b>, támadásba lendülhetnek anélkül, hogy Készenlétet veszítenének.
 PAGE	127
 C	<b>URAM, ENGEDÉLYT KÉREK MEGHALNI, URAM</b> Amikor <b><i>valamelyik követőd meghalna</i></b>, elkölthetsz 1-et a Hűségéből, hogy túlélje (kiesik a harcból, de él). Ha elengeded, jelölj XP-t.
@@ -114,7 +114,7 @@ Q	Megbízhatok benne (hogy ______ )?
 Q	Mit szándékozik tenni?
 Q	Miben a leghasznosabb/legveszélyesebb?
 Q	Melyik gyengeségét használhatom ki?
-C	<b>MI, BOLDOG KEVESEK</b> Amikor <b><i>lelkesítő beszédet tartasz a szövetségeseidnek</i></b> <b><i>egy szörnyű fenyegetés előtt</i></b>, dobj +CHA-val: <b>10+ esetén</b> minden szövetséges 2 Lelkesedés tartalékot kap; <b>7–9 esetén</b> minden szövetséges 1 Lelkesedést kap; <b>6- esetén</b> mindegyik kap 1-et, de minden dobásodnál hátrányod van, amíg meg nem osztod valaki mással a téged gyötrő kétségeidet.
+C	<b>MI, BOLDOG KEVESEK</b> Amikor <b><i>lelkesítő beszédet tartasz a szövetségeseidnek</i></b> <b><i>egy szörnyű fenyegetés előtt</i></b>, dobj +CHA-val: <b>10+ esetén</b> minden szövetséges 2 Lelkesedés tartalékot kap; <b>7-9 esetén</b> minden szövetséges 1 Lelkesedést kap; <b>6- esetén</b> mindegyik kap 1-et, de minden dobásodnál hátrányod van, amíg meg nem osztod valaki mással a téged gyötrő kétségeidet.
 P	Amint a csata megkezdődött, szövetségeseid bármikor elkölthetik
 P	Lelkesedésüket, 1:1 arányban, a következőkre:
 B	Félelem nélkül cselekedni a rettegés vagy a túlerő láttán
@@ -128,7 +128,7 @@ C	Edzettek a rettegés & a borzalom ellen
 C	Növeld mindegyikük max. HP-ját 4-gyel
 C	Növeld a sebzéskockájukat egy mérettel (max. d10)
 C	<b>ÖSSZPONTOSÍTOTT TŰZ</b> (Feltétel: 6+ szint, Stentori hang) Elkölthetsz 1 Parancsot, hogy megparancsold szövetségeseidnek egy ellenfél leterítését. Ha így teszel, minden szövetséges előnyt kap a következő, az ellen tett sebzésdobásához.
-C	<b>MINT EGY NYITOTT KÖNYV</b> (Feltétel: 6+ szint és Mérd fel) Amikor <b><i>felmérsz valakit, aki fél tőled</i></b> <b><i>vagy tisztel téged</i></b>, a második kérdésed bármi lehet. A KM megkérdezheti, honnan tudhatnád ezt egyáltalán; mondd el, vagy kérdezz mást.
+C	<b>MINT EGY NYITOTT KÖNYV</b> (Feltétel: 6+ szint és Mérd fel) Amikor <b><i>felmérsz valakit, aki fél tőled</i></b> <b><i>vagy tisztel téged</i></b>, a második kérdésed bármi lehet. A mesélő megkérdezheti, honnan tudhatnád ezt egyáltalán; mondd el, vagy kérdezz mást.
 C	<b>NEMES TARTÁS</b> (Feltétel: 6+ szint) Amikor <b><i>átvezetsz egy NJK-t a veszélyen, és</i></b> <b><i>biztonságba juttatod</i></b>, ha nem tagja a csapatodnak, felajánlja, hogy csatlakozik, vagy megfogadja jövőbeli segítségét és támogatását.
 C	<b>BÉKE AZ ERŐ ÁLTAL</b> (Feltétel: 6+ szint és Beszélj halkan) Amikor <b><i>készen állsz harcolni hasonló gondolkodású</i></b> <b><i>szövetségesek oldalán</i></b>, minden, ami képes félni, komoly fenyegetésként ismer fel, és ennek megfelelően bánik veled.
 C	<b>KIVÁLÓ TULAJDONSÁG</b> (Feltétel: 6+ szint) Növeld egy tulajdonságodat +1-gyel (legfeljebb +3-ig).

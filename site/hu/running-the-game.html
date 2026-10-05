@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A játék vezetése — Stonetop, webes kiadás</title>
+  <meta name="description" content="Hogyan meséld a Stonetopot: a mesélő céljai, az alapciklus, a mesélői húzások, alapelvek, előkészítés és a reflektorfény kezelése (Running the Game).">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://stonetop.cc/hu/running-the-game.html">
+  <meta property="og:site_name" content="Stonetop, webes kiadás">
+  <meta property="og:title" content="A játék vezetése — Stonetop, webes kiadás">
+  <meta property="og:description" content="Hogyan meséld a Stonetopot: a mesélő céljai, az alapciklus, a mesélői húzások, alapelvek, előkészítés és a reflektorfény kezelése (Running the Game).">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:url" content="https://stonetop.cc/hu/running-the-game.html">
+  <meta property="og:image" content="https://stonetop.cc/images/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://stonetop.cc/running-the-game.html">
+  <link rel="alternate" hreflang="es" href="https://stonetop.cc/es/running-the-game.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://stonetop.cc/pt-BR/running-the-game.html">
+  <link rel="alternate" hreflang="de" href="https://stonetop.cc/de/running-the-game.html">
+  <link rel="alternate" hreflang="fr" href="https://stonetop.cc/fr/running-the-game.html">
+  <link rel="alternate" hreflang="pl" href="https://stonetop.cc/pl/running-the-game.html">
+  <link rel="alternate" hreflang="it" href="https://stonetop.cc/it/running-the-game.html">
+  <link rel="alternate" hreflang="ru" href="https://stonetop.cc/ru/running-the-game.html">
+  <link rel="alternate" hreflang="ja" href="https://stonetop.cc/ja/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://stonetop.cc/zh-Hans/running-the-game.html">
+  <link rel="alternate" hreflang="ko" href="https://stonetop.cc/ko/running-the-game.html">
+  <link rel="alternate" hreflang="nl" href="https://stonetop.cc/nl/running-the-game.html">
+  <link rel="alternate" hreflang="sv" href="https://stonetop.cc/sv/running-the-game.html">
+  <link rel="alternate" hreflang="cs" href="https://stonetop.cc/cs/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://stonetop.cc/zh-Hant/running-the-game.html">
+  <link rel="alternate" hreflang="tr" href="https://stonetop.cc/tr/running-the-game.html">
+  <link rel="alternate" hreflang="uk" href="https://stonetop.cc/uk/running-the-game.html">
+  <link rel="alternate" hreflang="hu" href="https://stonetop.cc/hu/running-the-game.html">
+  <link rel="alternate" hreflang="x-default" href="https://stonetop.cc/running-the-game.html">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="../images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="stylesheet" href="../css/wiki.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://stonetop.cc/hu/running-the-game.html#article","url":"https://stonetop.cc/hu/running-the-game.html","mainEntityOfPage":"https://stonetop.cc/hu/running-the-game.html","headline":"A játék vezetése","name":"A játék vezetése","inLanguage":"hu","author":{"@type":"Person","name":"Jeremy Strandberg"},"publisher":{"@type":"Organization","name":"Lampblack & Brimstone","url":"https://lampblackandbrimstone.com/"},"license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"about":{"@id":"https://stonetop.cc/#game"},"isPartOf":[{"@id":"https://stonetop.cc/#book1"},{"@id":"https://stonetop.cc/#website"}],"description":"Hogyan meséld a Stonetopot: a mesélő céljai, az alapciklus, a mesélői húzások, alapelvek, előkészítés és a reflektorfény kezelése (Running the Game).","pagination":"167-206"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Stonetop","item":"https://stonetop.cc/hu/"},{"@type":"ListItem","position":2,"name":"A játék vezetése","item":"https://stonetop.cc/hu/running-the-game.html"}]}]}</script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4536408101e64ba59733ed69779dd45c"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body data-wiki-root="../">
+  <a class="skip-link" href="#main">Ugrás a tartalomra</a>
+  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Navigáció be- és kikapcsolása">☰</button>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="wiki-title" href="./">Stonetop, webes kiadás</a>
+        <input type="search" id="nav-filter" class="nav-filter" placeholder="Keresés…" autocomplete="off" aria-label="Keresés">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <nav class="toc" aria-label="Témák">
+        <ul id="nav-list">
+          <li class="nav-book-label">I. könyv</li>
+<li class="has-sections"><a href="welcome-to-stonetop.html">Üdvözlünk Stonetopban</a><ul class="nav-sections"><li class="nav-section"><a href="welcome-to-stonetop.html#expectations">Elvárások</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#the-setting">A világ</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#why-play">Miért játszd?</a></li></ul></li>
+<li class="has-sections"><a href="getting-started.html">Első lépések</a><ul class="nav-sections"><li class="nav-section"><a href="getting-started.html#review-the-setting">Nézzétek át a világot</a></li><li class="nav-section"><a href="getting-started.html#set-expectations">Tisztázzátok az elvárásokat</a></li><li class="nav-section"><a href="getting-started.html#discuss-tone-and-content">Beszéljétek meg a hangvételt és a tartalmat</a></li><li class="nav-section"><a href="getting-started.html#create-characters">Karakteralkotás</a></li><li class="nav-section"><a href="getting-started.html#intro-the-pcs">A JK-k bemutatása</a></li><li class="nav-section"><a href="getting-started.html#let-spring-burst-forth">kitörjön a tavasz</a></li><li class="nav-section"><a href="getting-started.html#after-the-session">Az alkalom után</a></li></ul></li>
+<li class="has-sections"><a href="playing-the-game.html">A játék menete</a><ul class="nav-sections"><li class="nav-section"><a href="playing-the-game.html#the-conversation">A beszélgetés</a></li><li class="nav-section"><a href="playing-the-game.html#your-agenda">A céljaid</a></li><li class="nav-section"><a href="playing-the-game.html#flow-of-play">A játék menete</a></li><li class="nav-section"><a href="playing-the-game.html#dice-and-moves">Kockák és húzások</a></li><li class="nav-section"><a href="playing-the-game.html#your-principles">Az alapelveid</a></li><li class="nav-section"><a href="playing-the-game.html#other-things-to-do">Egyéb teendők</a></li><li class="nav-section"><a href="playing-the-game.html#your-character">A karaktered</a></li><li class="nav-section"><a href="playing-the-game.html#arcana">Arkánumok</a></li><li class="nav-section"><a href="playing-the-game.html#followers">követőidet</a></li><li class="nav-section"><a href="playing-the-game.html#your-home">Az otthonod</a></li><li class="nav-section"><a href="playing-the-game.html#moves">húzásokat</a></li><li class="nav-section"><a href="playing-the-game.html#gear-and-possessions">Felszerelés és javak</a></li><li class="nav-section"><a href="playing-the-game.html#if-you-want-to">Ha szeretnél…</a></li></ul></li>
+<li class="nav-hub has-sections"><a href="playbooks-inserts.html">Karakterfüzetek és betétlapok</a><ul class="nav-sections"><li class="nav-section"><a href="the-blessed.html">Az Áldott</a></li><li class="nav-section"><a href="the-fox.html">Róka</a></li><li class="nav-section"><a href="the-heavy.html">Melák</a></li><li class="nav-section"><a href="the-judge.html">Bíró</a></li><li class="nav-section"><a href="the-lightbearer.html">Fényhozó</a></li><li class="nav-section"><a href="the-marshal.html">Marsall</a></li><li class="nav-section"><a href="the-ranger.html">A Vadonjáró</a></li><li class="nav-section"><a href="the-seeker.html">Kereső</a></li><li class="nav-section"><a href="the-would-be-hero.html">A Hősjelölt</a></li><li class="nav-section"><a href="inserts.html">Betétlapok</a></li><li class="nav-section"><a href="inventory.html">Málha</a></li><li class="nav-section"><a href="animal-companion.html">Állattárs</a></li><li class="nav-section"><a href="crew.html">Csapat</a></li><li class="nav-section"><a href="initiates-of-danu.html">Danu Beavatottjai</a></li><li class="nav-section"><a href="invocations.html">Fohászok</a></li><li class="nav-section"><a href="followers.html">Követők</a></li><li class="nav-section"><a href="ghost.html">Szellem</a></li><li class="nav-section"><a href="revenant.html">Visszajáró</a></li><li class="nav-section"><a href="thrall.html">Leigázott</a></li><li class="nav-section"><a href="steading-playbook.html">Településfüzet</a></li></ul></li>
+<li class="has-sections current"><a href="running-the-game.html">A játék vezetése</a><ul class="nav-sections"><li class="nav-section"><a href="running-the-game.html#your-agenda">A te célkitűzéseid</a></li><li class="nav-section"><a href="running-the-game.html#the-core-loop">Az alapciklus</a></li><li class="nav-section"><a href="running-the-game.html#the-spotlight">A reflektorfény</a></li><li class="nav-section"><a href="running-the-game.html#scenes-and-loose-play">Jelenetek és szabad játék</a></li><li class="nav-section"><a href="running-the-game.html#your-gm-moves">A mesélői húzásaid</a></li><li class="nav-section"><a href="running-the-game.html#example-of-play">Játékpélda</a></li><li class="nav-section"><a href="running-the-game.html#your-principles">Az alapelveid</a></li><li class="nav-section"><a href="running-the-game.html#other-things-to-do">Egyéb teendők</a></li><li class="nav-section"><a href="running-the-game.html#gming-is-a-practice">A mesélés gyakorlás kérdése</a></li><li class="nav-section"><a href="running-the-game.html#prep">előkészítést</a></li></ul></li>
+<li class="has-sections"><a href="player-moves.html">Játékoshúzások</a><ul class="nav-sections"><li class="nav-section"><a href="player-moves.html#defy-danger">Dacolj a Veszéllyel</a></li><li class="nav-section"><a href="player-moves.html#aid">Segíts</a></li><li class="nav-section"><a href="player-moves.html#clash">Csapj Össze</a></li><li class="nav-section"><a href="player-moves.html#defend">Védekezz</a></li><li class="nav-section"><a href="player-moves.html#interfere">Hátráltass</a></li><li class="nav-section"><a href="player-moves.html#know-things">Tudj Dolgokat</a></li><li class="nav-section"><a href="player-moves.html#let-fly">Lődd Ki</a></li><li class="nav-section"><a href="player-moves.html#seek-insight">Fürkéssz</a></li><li class="nav-section"><a href="player-moves.html#special-moves">Különleges húzások</a></li><li class="nav-section"><a href="player-moves.html#advantage-disadvantage">Előny/Hátrány</a></li><li class="nav-section"><a href="player-moves.html#burn-brightly">Lobogj Fényesen</a></li><li class="nav-section"><a href="player-moves.html#end-of-session">Az Ülés Vége</a></li><li class="nav-section"><a href="player-moves.html#deaths-door">A Halál Kapujában</a></li></ul></li>
+<li class="has-sections"><a href="harm-healing.html">Sebzés és gyógyulás</a><ul class="nav-sections"><li class="nav-section"><a href="harm-healing.html#hit-points-and-damage">Életerőpontok és sebzés</a></li><li class="nav-section"><a href="harm-healing.html#debilities">Gyengeségek</a></li><li class="nav-section"><a href="harm-healing.html#problematic-wounds">Problémás sebek</a></li><li class="nav-section"><a href="harm-healing.html#death-and-dying">Halál és haldoklás</a></li></ul></li>
+<li class="has-sections"><a href="first-adventure.html">Első kaland</a><ul class="nav-sections"><li class="nav-section"><a href="first-adventure.html#structure">Felépítés</a></li><li class="nav-section"><a href="first-adventure.html#background">Háttér</a></li><li class="nav-section"><a href="first-adventure.html#setup-questions">Felvezető kérdések</a></li><li class="nav-section"><a href="first-adventure.html#setting-the-scene">A jelenet felállítása</a></li><li class="nav-section"><a href="first-adventure.html#dropping-the-hook">A horog bevetése</a></li><li class="nav-section"><a href="first-adventure.html#heading-out">Útnak indulás</a></li></ul></li>
+<li class="has-sections"><a href="threats.html">Fenyegetések</a><ul class="nav-sections"><li class="nav-section"><a href="threats.html#when-to-write-up-threats">Mikor írj meg fenyegetéseket</a></li><li class="nav-section"><a href="threats.html#writing-a-threat">Egy fenyegetés megírása</a></li><li class="nav-section"><a href="threats.html#example-threats">Példa fenyegetések</a></li><li class="nav-section"><a href="threats.html#updating-threats">A fenyegetések frissítése</a></li></ul></li>
+<li class="has-sections"><a href="expeditions.html">Expedíciók</a><ul class="nav-sections"><li class="nav-section"><a href="expeditions.html#preparations">Előkészületek</a></li><li class="nav-section"><a href="expeditions.html#running-the-journey">Az utazás levezetése</a></li><li class="nav-section"><a href="expeditions.html#player-moves">játékoshúzásokat</a></li><li class="nav-section"><a href="expeditions.html#going-home">Hazatérés</a></li><li class="nav-section"><a href="expeditions.html#what-to-prep">Mit készíts elő</a></li></ul></li>
+<li class="has-sections"><a href="sites.html">Helyszínek</a><ul class="nav-sections"><li class="nav-section"><a href="sites.html#environmental-storytelling">Környezeti történetmesélés</a></li><li class="nav-section"><a href="sites.html#running-sites">Helyszínek vezetése</a></li><li class="nav-section"><a href="sites.html#exploring-sites">Helyszínek felfedezése</a></li><li class="nav-section"><a href="sites.html#creating-sites">Helyszínek készítése</a></li><li class="nav-section"><a href="sites.html#the-green-lords-tomb">A ZÖLD ÚR SÍRJA</a></li></ul></li>
+<li class="has-sections"><a href="dangers.html">Veszélyek</a><ul class="nav-sections"><li class="nav-section"><a href="dangers.html#hazards">A kockázatok</a></li><li class="nav-section"><a href="dangers.html#monsters">A szörnyek</a></li><li class="nav-section"><a href="dangers.html#running-combat">Harcok levezetése</a></li></ul></li>
+<li class="has-sections"><a href="discoveries.html">Felfedezések</a><ul class="nav-sections"><li class="nav-section"><a href="discoveries.html#clues">Nyomok</a></li><li class="nav-section"><a href="discoveries.html#sites">Helyszínek</a></li><li class="nav-section"><a href="discoveries.html#encounters">Találkozások</a></li><li class="nav-section"><a href="discoveries.html#opportunities">Lehetőségek</a></li><li class="nav-section"><a href="discoveries.html#artifacts">Ereklyék</a></li><li class="nav-section"><a href="discoveries.html#arcana">Arkánumok</a></li></ul></li>
+<li class="has-sections"><a href="npcs-followers.html">NJK-k és követők</a><ul class="nav-sections"><li class="nav-section"><a href="npcs-followers.html#npcs-in-play">NJK-k a játékban</a></li><li class="nav-section"><a href="npcs-followers.html#creating-npcs">NJK-k megalkotása</a></li><li class="nav-section"><a href="npcs-followers.html#follower-moves">Követőhúzások</a></li><li class="nav-section"><a href="npcs-followers.html#order-followers">Követők Irányítása</a></li><li class="nav-section"><a href="npcs-followers.html#strengthen-your-bond">Erősítsd a Köteléket</a></li><li class="nav-section"><a href="npcs-followers.html#followers-in-play">Követők a játékban</a></li><li class="nav-section"><a href="npcs-followers.html#creating-followers">Követők megalkotása</a></li><li class="nav-section"><a href="npcs-followers.html#updating-followers">A követők frissítése</a></li><li class="nav-section"><a href="npcs-followers.html#losing-followers">Követők elvesztése</a></li></ul></li>
+<li class="has-sections"><a href="homefront.html">Hátország</a><ul class="nav-sections"><li class="nav-section"><a href="homefront.html#bringing-the-village-to-life">A falu életre keltése</a></li><li class="nav-section"><a href="homefront.html#running-the-homefront">A hátország vezetése</a></li><li class="nav-section"><a href="homefront.html#aftermath">Utóhatás</a></li><li class="nav-section"><a href="homefront.html#the-steading-playbook">A településfüzet</a></li><li class="nav-section"><a href="homefront.html#seasons-change">Évszakváltás</a></li><li class="nav-section"><a href="homefront.html#player-moves">Játékoshúzások</a></li><li class="nav-section"><a href="homefront.html#bolster">Készülj Fel</a></li><li class="nav-section"><a href="homefront.html#convalesce">Lábadozz</a></li><li class="nav-section"><a href="homefront.html#deploy">Vess Be</a></li><li class="nav-section"><a href="homefront.html#level-up">Lépj Szintet</a></li><li class="nav-section"><a href="homefront.html#make-a-plan">Készíts Tervet</a></li><li class="nav-section"><a href="homefront.html#meet-with-disaster">Érjen Utol a Balsors</a></li><li class="nav-section"><a href="homefront.html#muster">Toboroznak</a></li><li class="nav-section"><a href="homefront.html#pull-together">Összefogásra</a></li><li class="nav-section"><a href="homefront.html#trade-barter">Kereskedj és Alkudozz</a></li><li class="nav-section"><a href="homefront.html#what-to-prep">Mit készíts elő</a></li></ul></li>
+<li><a href="writing-moves-love-letters.html">Húzások és szerelmes levelek írása</a></li>
+<li class="has-sections"><a href="the-game-ongoing.html">A játék folytatódik</a><ul class="nav-sections"><li class="nav-section"><a href="the-game-ongoing.html#ending-a-session">Az ülés lezárása</a></li><li class="nav-section"><a href="the-game-ongoing.html#between-sessions">Az ülések között</a></li><li class="nav-section"><a href="the-game-ongoing.html#starting-a-session">Az ülés kezdete</a></li><li class="nav-section"><a href="the-game-ongoing.html#pacing">Tempó</a></li><li class="nav-section"><a href="the-game-ongoing.html#advancement">Fejlődés</a></li><li class="nav-section"><a href="the-game-ongoing.html#retiring-pcs">JK-k visszavonulása</a></li><li class="nav-section"><a href="the-game-ongoing.html#new-pcs">Új JK-k</a></li><li class="nav-section"><a href="the-game-ongoing.html#conflict-between-pcs">Konfliktus a JK-k között</a></li><li class="nav-section"><a href="the-game-ongoing.html#time-skips">Időugrások</a></li><li class="nav-section"><a href="the-game-ongoing.html#shake-ups">Felfordulások</a></li><li class="nav-section"><a href="the-game-ongoing.html#ending-your-game">A játék befejezése</a></li></ul></li>
+<li><a href="acknowledgements.html">Köszönetnyilvánítás</a></li>
+<li><a href="mediography.html">Mediográfia</a></li>
+<li class="nav-book-label">II. könyv</li>
+<li><a href="welcome-to-the-worlds-end.html">Üdvözlünk a Világ Végén</a></li>
+<li><a href="../maps.html" class="nav-en" title="Csak angolul érhető el" hreflang="en">Maps</a></li>
+<li><a href="the-village-of-stonetop.html">Stonetop faluja</a></li>
+<li><a href="aratis-the-lawkeeper.html">Aratis, a Törvényőrző</a></li>
+<li><a href="barrier-pass.html">Gáthágó</a></li>
+<li><a href="barrow-builders.html">Sírhalomépítők</a></li>
+<li><a href="blackwater-lake.html">Feketevíz-tó</a></li>
+<li><a href="crinwin.html">Crinwin</a></li>
+<li><a href="the-crombil.html">Crombil</a></li>
+<li><a href="danu-the-earth-mother.html">Danu, a Földanya</a></li>
+<li><a href="death-and-the-undying.html">A halál és a halhatatlanok</a></li>
+<li><a href="the-dread-river.html">A Rettegés Folyója</a></li>
+<li><a href="fae.html">Fae</a></li>
+<li><a href="ferriers-fen.html">A Ferrier-láp</a></li>
+<li><a href="the-flats.html">A Síkság</a></li>
+<li><a href="fomoraij.html">Fomoraij</a></li>
+<li><a href="the-foothills.html">A Hegylábak</a></li>
+<li><a href="forest-folk.html">Erdő Népe</a></li>
+<li><a href="forge-lords.html">A Kohó Urai</a></li>
+<li><a href="the-frozen-wastes.html">Fagyott Pusztaság</a></li>
+<li><a href="gods-and-religion.html">Istenek és vallás</a></li>
+<li><a href="the-golden-oak.html">Az Aranytölgy</a></li>
+<li><a href="gordins-delve.html">Gordin Tárnája</a></li>
+<li><a href="the-great-wood.html">A Rengeteg</a></li>
+<li><a href="green-lords.html">A Zöld Urak</a></li>
+<li><a href="helior-the-daybringer.html">Helior, a Nappalhozó</a></li>
+<li><a href="hillfolk.html">A Dombok Népe</a></li>
+<li><a href="huffel-peaks.html">A Huffel-csúcsok</a></li>
+<li><a href="the-labyrinth.html">A Labirintus</a></li>
+<li><a href="lygos-and-the-south.html">Lygos és a Dél</a></li>
+<li><a href="the-makers.html">Az Alkotók</a></li>
+<li><a href="the-makers-roads.html">Az Alkotók útjai</a></li>
+<li><a href="marshedge.html">Lápszél</a></li>
+<li><a href="the-maw.html">A Torok</a></li>
+<li><a href="north-manmarch.html">Észak-Manmarch</a></li>
+<li><a href="the-pale-hunter.html">A Sápadt Vadász</a></li>
+<li><a href="primordial-powers.html">Ősi hatalmak</a></li>
+<li><a href="red-groves.html">Vörös ligetek</a></li>
+<li><a href="rime-lords.html">A Zúzmara Urai</a></li>
+<li><a href="the-ruined-tower.html">A Romtorony</a></li>
+<li><a href="south-manmarch.html">Dél-Manmarch</a></li>
+<li><a href="spirits-of-the-wild.html">A vadon szellemei</a></li>
+<li><a href="the-steplands.html">A Lépcsős Vidék</a></li>
+<li><a href="stone-lords.html">A Kő Urai</a></li>
+<li><a href="the-stream.html">A Patak</a></li>
+<li><a href="tempest-lords.html">A Vihar Urai</a></li>
+<li><a href="the-things-below.html">A Lenti Dolgok</a></li>
+<li><a href="three-coven-lake.html">A Három Boszorkánykör Tava</a></li>
+<li><a href="titan-bones.html">Titáncsontok</a></li>
+<li><a href="tor-the-rain-maker.html">Tor, az Esőhozó</a></li>
+<li><a href="useful-or-valuable-flora.html">Hasznos vagy értékes növények</a></li>
+<li><a href="ustrina.html">Ustrina</a></li>
+<li><a href="vor-svetelik.html">Vor Svetelik</a></li>
+<li><a href="waystones.html">Útjelző kövek</a></li>
+<li><a href="the-whitefang-mountains.html">A Fehéragyar-hegység</a></li>
+<li><a href="appendix-a-ages-of-the-world.html">A függelék: A világ korszakai</a></li>
+<li><a href="appendix-b-artifact-creation.html">B függelék: Ereklyék készítése</a></li>
+<li class="nav-hub"><a href="appendix-c-minor-arcana.html">C. függelék: Kis arkánumok</a></li>
+<li class="nav-arcana"><a href="minor-laoj-daveths-galvanic-infusion.html">1. Laoj Daveth Galvanikus Főzete</a></li>
+<li class="nav-arcana"><a href="minor-truth-seeds.html">2. Igazságmagvak</a></li>
+<li class="nav-arcana"><a href="minor-old-mothers-wine.html">3. Az Öreganya Bora</a></li>
+<li class="nav-arcana"><a href="minor-aalz-galts-sudden-sinkhole.html">4. Aalz Galt Hirtelen Víznyelője</a></li>
+<li class="nav-arcana"><a href="minor-shell-game-of-souls.html">5. Itt a Lélek, Hol a Lélek</a></li>
+<li class="nav-arcana"><a href="minor-thunderous-bellow.html">6. Mennydörgő Bömbölés</a></li>
+<li class="nav-arcana"><a href="minor-the-fiery-veil.html">7. A Tüzes Fátyol</a></li>
+<li class="nav-arcana"><a href="minor-the-tomb-bogs-mark.html">8. A Sírláp Jele</a></li>
+<li class="nav-arcana"><a href="minor-fear-of-the-flame.html">9. Félelem a Lángtól</a></li>
+<li class="nav-arcana"><a href="minor-mantle-wraiths.html">10. Palástlidércek</a></li>
+<li class="nav-arcana"><a href="minor-shattering-words-of-aalz-childric.html">11. Aalz Childric Zúzó Szavai</a></li>
+<li class="nav-arcana"><a href="minor-ffyrnig-tonic.html">12. Ffyrnig-tonik</a></li>
+<li class="nav-arcana"><a href="minor-song-of-the-dool-trees.html">13. A Doolfák Dala</a></li>
+<li class="nav-arcana"><a href="minor-ward-of-still-waters.html">14. A Csendes Vizek Oltalma</a></li>
+<li class="nav-arcana"><a href="minor-ice-weaving.html">15. Jégszövés</a></li>
+<li class="nav-arcana"><a href="minor-the-six-locks-of-sajua.html">16. Sajua Hat Zárja</a></li>
+<li class="nav-arcana"><a href="minor-heliors-shining-ring.html">17. Helior Ragyogó Gyűrűje</a></li>
+<li class="nav-arcana"><a href="minor-nerth-serpents-vigor.html">18. A Nerth-kígyó Ereje</a></li>
+<li class="nav-arcana"><a href="minor-goldleaf-cloak.html">19. Aranylevél Köpeny</a></li>
+<li class="nav-arcana"><a href="minor-opening-the-way.html">20. Az Út Megnyitása</a></li>
+<li class="nav-arcana"><a href="minor-the-drowning-scale.html">21. A Fulladás Pikkelye</a></li>
+<li class="nav-arcana"><a href="minor-preserving-runes.html">22. Megőrző Rúnák</a></li>
+<li class="nav-arcana"><a href="minor-peacebond.html">23. Békekötés</a></li>
+<li class="nav-arcana"><a href="minor-the-eye-opened.html">24. A Megnyílt Szem</a></li>
+<li class="nav-arcana"><a href="minor-sanctifying-mark.html">25. Megszentelő Jel</a></li>
+<li class="nav-arcana"><a href="minor-the-green-lords-shade.html">26. A Zöld Úr Árnya</a></li>
+<li class="nav-arcana"><a href="minor-chimeric-transmogrification.html">27. Kimérai Átváltoztatás</a></li>
+<li class="nav-arcana"><a href="minor-the-sylvan-web.html">28. Az Erdei Háló</a></li>
+<li class="nav-arcana"><a href="minor-flying-cloak.html">29. Repülő Köpeny</a></li>
+<li class="nav-arcana"><a href="minor-satchel-of-plenty.html">30. A Bőség Tarisznyája</a></li>
+<li class="nav-arcana"><a href="minor-dancing-wind-spirit.html">31. Táncoló Szélszellem</a></li>
+<li class="nav-arcana"><a href="minor-call-of-the-hunt.html">32. A Vadászat Hívása</a></li>
+<li class="nav-arcana"><a href="minor-convocation-of-the-soil.html">33. A Föld Egybehívása</a></li>
+<li class="nav-arcana"><a href="minor-unliving-chimera.html">34. Élettelen Kiméra</a></li>
+<li class="nav-arcana"><a href="minor-impudent-polymorph.html">35. Pimasz Alakváltás</a></li>
+<li class="nav-arcana"><a href="minor-make-pliant-the-stone.html">36. Tedd Engedelmessé a Követ</a></li>
+<li class="nav-arcana"><a href="minor-plaster-of-joining.html">37. Egyesítő Tapasz</a></li>
+<li class="nav-arcana"><a href="minor-cold-mind-iron-body.html">38. Hideg Elme, Vastest</a></li>
+<li class="nav-arcana"><a href="minor-little-friend.html">39. Kis Barát</a></li>
+<li class="nav-arcana"><a href="minor-revealing-light.html">40. Leleplező Fény</a></li>
+<li class="nav-arcana"><a href="minor-darkwalker-cloak.html">41. A Sötétben Járó Köpenye</a></li>
+<li class="nav-arcana"><a href="minor-the-flesh-is-like-clay.html">42. A Hús Olyan, Mint az Agyag</a></li>
+<li class="nav-arcana"><a href="minor-fetchs-mask.html">43. A Hasonmás Maszkja</a></li>
+<li class="nav-arcana"><a href="minor-witch-bottle.html">44. Boszorkánypalack</a></li>
+<li class="nav-arcana"><a href="minor-wishing-candles.html">45. Kívánsággyertyák</a></li>
+<li class="nav-arcana"><a href="minor-baleful-utterance.html">46. Vészjósló Kijelentés</a></li>
+<li class="nav-arcana"><a href="minor-aetherium-spear.html">47. Étheriumlándzsa</a></li>
+<li class="nav-arcana"><a href="minor-staff-of-magnetism.html">48. A Mágnesesség Botja</a></li>
+<li class="nav-arcana"><a href="minor-groundskimmer.html">49. Földsikló</a></li>
+<li class="nav-arcana"><a href="minor-thunderbolt-bow.html">50. Villámíj</a></li>
+<li class="nav-arcana"><a href="minor-bronze-protector.html">51. Bronz Oltalmazó</a></li>
+<li class="nav-arcana"><a href="minor-sublime-words.html">52. Fenséges Szavak</a></li>
+<li class="nav-arcana"><a href="minor-flaming-sword.html">53. Lángoló Kard</a></li>
+<li class="nav-arcana"><a href="minor-searing-touch.html">54. Perzselő Érintés</a></li>
+<li class="nav-arcana"><a href="minor-sigil-of-authority.html">55. A Hatalom Pecsétje</a></li>
+<li class="nav-arcana"><a href="minor-horn-of-storms.html">56. A Viharok Kürtje</a></li>
+<li class="nav-arcana"><a href="minor-moonstone.html">57. Holdkő</a></li>
+<li class="nav-arcana"><a href="minor-hand-of-aals-sannan.html">58. Aals Sannan Keze</a></li>
+<li class="nav-arcana"><a href="minor-bittersweet-elixir.html">59. Keserédes Elixír</a></li>
+<li class="nav-arcana"><a href="minor-the-brooms-lullaby.html">60. A Seprű Altatódala</a></li>
+<li class="nav-arcana"><a href="minor-the-angry-little-god.html">61. A Dühös Kis Isten</a></li>
+<li class="nav-arcana"><a href="minor-the-silver-branch.html">62. Az Ezüstág</a></li>
+<li class="nav-arcana"><a href="minor-void-elemental.html">63. Ürelementál</a></li>
+<li class="nav-arcana"><a href="minor-runes-of-creation.html">64. A Teremtés Rúnái</a></li>
+<li class="nav-hub"><a href="appendix-d-major-arcana.html">D. függelék: Nagy arkánumok</a></li>
+<li class="nav-arcana"><a href="major-staff-of-the-lidless-orb.html">1. A Szemhéjtalan Gömb Botja</a></li>
+<li class="nav-arcana"><a href="major-twisted-spear.html">2. A Csavart Lándzsa</a></li>
+<li class="nav-arcana"><a href="major-demonhide-cloak.html">3. A Démonbőr Köpeny</a></li>
+<li class="nav-arcana"><a href="major-norubas-ice-sphere.html">4. Noruba Jéggömbje</a></li>
+<li class="nav-arcana"><a href="major-mindgem.html">5. Az Elmekő</a></li>
+<li class="nav-arcana"><a href="major-whispering-rocks.html">6. A Suttogó Sziklák</a></li>
+<li class="nav-arcana"><a href="major-blood-quenched-sword.html">7. A Vérben Edzett Kard</a></li>
+<li class="nav-arcana"><a href="major-shield-of-the-wisent-witch.html">8. A Bölényboszorkány Pajzsa</a></li>
+<li class="nav-arcana"><a href="major-hectumel-codex.html">9. A Hec&#x27;tumel-kódex</a></li>
+<li class="nav-arcana"><a href="major-red-scepter.html">10. A Vörös Jogar</a></li>
+<li class="nav-arcana"><a href="major-ring-of-daagon.html">11. Daagon Gyűrűje</a></li>
+<li class="nav-arcana"><a href="major-rune-laden-scales.html">12. A Rúnákkal Terhes Pikkelyvért</a></li>
+<li class="nav-arcana"><a href="major-blackwood-fetishes.html">13. Feketefa Fétisek</a></li>
+<li class="nav-arcana"><a href="major-storm-markings.html">14. Viharjelek</a></li>
+<li class="nav-arcana"><a href="major-ineffable-words.html">15. A Kimondhatatlan Szavak</a></li>
+<li class="nav-arcana"><a href="major-redwood-effigy.html">16. A Vörösfa Képmás</a></li>
+<li class="nav-arcana"><a href="major-hungering-maw-of-hlad.html">17. Hlad Éhező Torka</a></li>
+<li class="nav-arcana"><a href="major-azure-hand.html">18. Az Azúr Kéz</a></li>
+<li><a href="bestiary.html">Bestiárium</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-foot"><details class="lang-switch"><summary title="Nyelv"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code" aria-hidden="true">HU</span><span class="lang-label">Nyelv</span><span class="lang-now">Magyar</span></summary><ul class="lang-list"><li><a href="../de/running-the-game.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="../running-the-game.html" hreflang="en" lang="en">English</a></li><li><a href="../es/running-the-game.html" hreflang="es" lang="es">Español</a></li><li><a href="../fr/running-the-game.html" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/running-the-game.html" hreflang="it" lang="it">Italiano</a></li><li><span class="lang-current" aria-current="page" lang="hu">Magyar</span></li><li><a href="../nl/running-the-game.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../pl/running-the-game.html" hreflang="pl" lang="pl">Polski</a></li><li><a href="../pt-BR/running-the-game.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="../sv/running-the-game.html" hreflang="sv" lang="sv">Svenska</a></li><li><a href="../tr/running-the-game.html" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="../cs/running-the-game.html" hreflang="cs" lang="cs">Čeština</a></li><li><a href="../ru/running-the-game.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/running-the-game.html" hreflang="uk" lang="uk">Українська</a></li><li><a href="../ja/running-the-game.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../zh-Hans/running-the-game.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/running-the-game.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../ko/running-the-game.html" hreflang="ko" lang="ko">한국어</a></li></ul></details><span class="sidebar-credit">A szöveg Jeremy Strandberg <em>Stonetop</em> című művéből, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></span><a class="sidebar-github" href="https://github.com/Bryan-Legend/stonetop-generator">GitHub</a><button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true" title="Kockahang"><span class="sound-on" aria-hidden="true">🔊</span><span class="sound-off" aria-hidden="true">🔇</span><span class="sound-label">Kockahang</span></button></div>
+    </aside>
+    <div class="main-wrap">
+      <div class="content-scroll" id="main">
+        <main class="content">
+          <h1 class="page-title">A játék vezetése</h1>
+<p>Egy szerepjátékot több tucatféleképpen lehet mesélni. A <em>Stonetopot</em> egy bizonyos módon kell. Ez az. A játék többi része erre a megközelítésre épül.</p>
+<p>Ne feledd: <strong>a játék egy beszélgetés</strong>.</p>
+<p>Te mondasz dolgokat, a többi játékos is mond dolgokat. Kérdezgetitek egymást, közbevágtok, egymás szavába vágtok. A játék szabályai bizonyos pillanatokban lépnek életbe, és megmutatják, merre halad a beszélgetés.</p>
+<p>Mesélőként különleges szereped van a beszélgetésben. <strong>A te dolgod leírni a világot, elmondani, mi történik, és megjeleníteni a szörnyeket és az NJK-kat</strong>. Te segíted a játék menetét, és te hozol döntéseket. Kikéred mások véleményét. Te keretezed a jeleneteket, és te irányítod a reflektorfényt. A játék rád, a mesélőre, nagy hatalmat ruház – és nagy felelősséget is.</p>
+<h2 id="your-agenda">A te célkitűzéseid</h2>
+<p>A <em>Stonetop</em> mesélésekor ezek a céljaid:</p>
+<ul class="bullets"><li>Jeleníts meg egy gazdag és rejtélyes világot</li><li>Szakítsd meg kalandokkal a karakterek életét</li><li>Játssz, hogy kiderüljön, mi történik</li></ul>
+<p>Mindennek, amit mesélőként mondasz és teszel, e három célt kell szolgálnia, és semmi mást. <em>Nem</em> a te célod (például) próbára tenni a játékosok ügyességét, „igazságos” harcokat biztosítani vagy megbüntetni a karaktereket.</p>
+<p>Végképp nem a te célod irányítani a játékosokat, vagy rákényszeríteni a „te” történetedet arra az útra, amerre szerinted haladnia kellene. Ha kétségeid vannak, kérdezd meg magadtól: <strong>ez a dolog, amit fontolgatsz, a három cél közül melyiket szolgálja?</strong> Ha a válasz az, hogy „egyiket sem”, akkor ne tedd. Csinálj valami mást.</p>
+<p>Az első célod, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>: élőt és lélegzőt, tele részletekkel, emberséggel és mélységgel.</p>
+<p>A hétköznapi gondok – a termés, a kereskedelem, az időjárás, a szomszédok véleménye – fontosak. A fantasztikus elemek is fontosak, de azok furcsák, ijesztők és alig értettek. A múlt nyugtalanul alszik. Kérdés kérdést követ.</p>
+<p>A második célod, hogy <strong>kalandokkal szakítsd meg a karakterek életét</strong>. A JK-knak megvan a maguk élete, otthonuk, amit gondozniuk kell, családjuk, amit etetniük kell. Az idejükre sokan és sok minden tart igényt.</p>
+<p>A te dolgod, hogy ezeknek a dolgoknak súlya legyen, de az is, hogy megszakítsd őket olyan fenyegetésekkel és lehetőségekkel, amelyekkel csak a JK-k tudnak (vagy hajlandók) foglalkozni. A kalandok a <em>játékosok</em> idejének nagy részét kitöltik majd, de a <em>karakterek</em> idejének nagy részét nem kellene.</p>
+<p>Végül, és ez a legfontosabb: <strong>játssz, hogy kiderüljön, mi történik</strong>. A te dolgod gazdag és rejtélyes világot megjeleníteni, fenyegetni azt, ami a JK-knak fontos, vagy lehetőségeket lebegtetni előttük, aztán megnézni, merre mennek innen a dolgok. Persze tervezel majd. Készülsz is. De amint elkezdődik a játék, a te dolgod követni, merre visznek a játékosok, merre visznek a kockák, és merre visz a fikció.</p>
+<p>A jutalom pedig ez: hogy őszintén meglep a történet, amely – természetesen, magától, varázslatosan – kibontakozik. Egy mese, amit egyedül sosem tudnál megszőni.</p>
+<h2 id="the-core-loop">Az alapciklus</h2>
+<p>Amikor ezt a játékot meséled, ezt <em>csinálod</em>. Persze több is van ennél, de ez a te és a játékosok közti beszélgetés alapszerkezete.</p>
+<p>1) Teremtsd meg a helyzetet</p>
+<ul class="bullets"><li>Keretezd az eseményeket</li><li>Írd le a környezetet</li><li>Adj részleteket és konkrétumokat</li><li>Tegyél fel kérdéseket, kérj ötleteket</li><li>Jelenítsd meg az NJK-kat és a szörnyeket</li><li>Válaszolj a kérdésekre, tisztázz</li></ul>
+<p>2) Tégy egy puha mesélői húzást</p>
+<p>Késztess cselekvésre és/vagy fokozd a feszültséget.</p>
+<p><strong>3) Kérdezd meg: „Mit csinálsz?”</strong></p>
+<p>4) Döntsd el, mi lesz a tetteik eredménye</p>
+<ul class="bullets"><li>Ha játékoshúzást váltanak ki, tedd, amit a húzás mond.</li><li>Ha 6- az eredmény, vagy figyelmen kívül hagyják a bajt, tégy egy kemény mesélői húzást (teremts bajt).</li><li>Egyébként mondd el, mi történik.</li></ul>
+<p>5) Ismételd</p>
+<ul class="bullets"><li>Világos és lebilincselő a helyzet? Tudnak cselekedni a JK-k? Vissza a 3. lépéshez.</li><li>Világos a helyzet, de eszkalálódik, mielőtt a JK-k cselekedhetnének? Vissza a 2. lépéshez.</li><li>Világos a helyzet, de kell neki egy kis lökés? Vissza a 2. lépéshez.</li><li>Nem világos a helyzet? Össze kell foglalni vagy frissíteni kell? Vissza az 1. lépéshez.</li><li>Véget ért az aktuális jelenet vagy helyzet? Zárd le, keresd a következőt. Vissza az 1. lépéshez.</li></ul>
+<p>A gyakorlatban a beszélgetés képlékeny, rendetlen és kaotikus. Szabályokra és a fikció részleteire vonatkozó kérdések szakítják meg. A játékosok beleszólnak és viccelődnek, megvitatják a lehetőségeiket, vagy karakterben kijátszanak egymással jeleneteket. Gyakran két vagy több beszélgetési „ciklussal” zsonglőrködsz egyszerre, ugrálva azok között a játékosok között, akiknek a karaktere épp a maga dolgával foglalatoskodik.</p>
+<p>De mindez alatt ott van ez a szerkezet, ez a ciklus.</p>
+<p>Ha valaha elveszettnek érzed magad, és nem tudod, mit tegyél vagy mondj, keresd meg, hol tartasz ebben a ciklusban, és onnan folytasd.</p>
+<p>Most nézzük meg részletesen az egyes lépéseket.</p>
+<h2 id="1-establish-the-situation"><span class="step-badge">1</span> Teremtsd meg a helyzetet</h2>
+<p>A te dolgod megteremteni azokat a helyzeteket, amelyekben a JK-k találják magukat. Tedd az alábbiak bármelyikét vagy mindegyikét, szükség szerint, abban a sorrendben, ami épp értelmes.</p>
+<h3 id="frame-the-action">Keretezd az eseményeket</h3>
+<p>Határozd meg, <strong>ki, hol és mikor</strong>.</p>
+<p>Fordulj egy vagy több JK-hoz, és mondd el (vagy kérdezd meg), hol vannak. Mondd el (vagy kérdezd meg), ki van még ott. Mondd el (vagy kérdezd meg), mikor történik mindez (az évszak, a napszak, mennyivel az előző jelenet vagy helyzet után).</p>
+<h3 id="describe-the-environment">Írd le a környezetet</h3>
+<p>Ha olyan helyről van szó, amit eddig még nem láttunk „kamerán”, mondd el (vagy kérdezd meg), milyen. Ha olyan helyről, amit már láttunk, mondd el (vagy kérdezd meg), hogyan változott (ha egyáltalán).</p>
+<p><strong>Adj legfeljebb 3 erős benyomást</strong> különböző érzékszervekből – a vér döbbenetes vöröse a havon, a pattogó tűz a kandallóban, az eső és a nedves föld illata.</p>
+<p>Néha adj érzelmi benyomásokat (a feszültség a szobában, a gyász az arcokon) vagy erkölcsi benyomásokat (a koszos, kétségbeesett koldusok szemben a díszesen öltözött, jóllakott nemesekkel).</p>
+<p><strong>Arra összpontosíts, ami számít</strong>. Ha a kocsmában vannak, az ott lévő emberekre, a zajra és a <em>hangulatra</em> összpontosíts. Ha egy romot fedeznek fel, a térre, a talajra, a látványra és a hangokra. Légy tömör, kezdésnek legfeljebb 3 benyomás. A játékosok elkalandoznak, ha túl sokat adsz nekik, és úgyis kérnek majd több részletet, ahol szükségük van rá vagy szeretnék. Ütőset és érzékletest akarsz, nem cikornyásat. Hemingwayt, nem Tolkient.</p>
+<h3 id="give-details-and-specifics">Adj részleteket és konkrétumokat</h3>
+<p>Mondd el (vagy kérdezd meg), mi történik. Ki mit csinál? Hol van mindenki egymáshoz képest? Mit látnak, hallanak és érzékelnek a karakterek?</p>
+<p>Ismét: arra összpontosíts, ami számít. Társas helyzetben az emberekre: ki van ott, hogy néznek ki, hogyan viselkednek. Ha egy romot fedeznek fel, a környezetre.</p>
+<p>Akciójelenetben a terepre és a harcolókra, a helyzetükre és a lendületükre.</p>
+<p>Időnként adj meg egy-egy nem lényeges részletet is.</p>
+<p>Társas jelenetben említsd meg, milyen ízű az étel vagy milyen érzés a szobában lenni. Harci jelenetben vess be egy szagot, vagy valamit, amit egy ellenfél visel. Az ilyen többletrészletek igazi textúrát adhatnak a helyzetnek.</p>
+<p>Használj térképeket, kellékeket és összehasonlításokat a tér és a viszonyok érzékeltetésére. Rajzold fel a szobát. Használj zsetonokat vagy bábukat. Hivatkozz valós terekre („Nagyjából ott van, ahol Bob hozzád képest.”). A hasonlatok és a metaforák a barátaid!</p>
+<h2 id="improvisation-prep">Improvizáció és előkészítés</h2>
+<p>Igen, ezt mind te találod ki (vagy megkéred rá a játékosokat). Végzel majd némi <strong>előkészítést</strong> előre (lásd <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">előkészítést</a>), vagy merítesz a világleírásból, de játék közben sok konkrétumot rögtönzöl.</p>
+<p>Ha egy részlet már elhangzott, kezeld úgy, mintha mindig is igaz lett volna. Építs rá, variálj rá. Keresd az összefüggéseket.</p>
+<p>Tedd fel magadnak a kézenfekvő kérdéseket, és döntsd el a (valószínűleg kézenfekvő) válaszokat. Szőj mindent egybe egy gazdag, rejtélyes világgá.</p>
+<h3 id="ask-questions">Tegyél fel kérdéseket</h3>
+<p>Nem neked kell minden részletet megadnod. Az egyik alapelved <a class="wiki-link" href="#your-principles" data-slug="running-the-game" data-fragment="your-principles" data-ref="page">Az alapelveid</a>: <strong>kérdezz, és építs a válaszokra</strong>. Hívd meg a játékosokat, hogy járuljanak hozzá a jelenethez, azzal, hogy a karaktereiket olyan dolgokról kérdezed, amiket tudnak, éreznek vagy átéltek. „Caradoc, mi a legátütőbb szag a cserzőműhelyben?” Vagy: „Vahid, te már jártál ennél a tónál.</p>
+<p>Milyen? Írd le nekünk.”</p>
+<p>Kérdezz arról is, amit a karakterek épp átélnek. Ne velük találtasd ki a kulcsrészleteket, de esetleg kérj tőlük egy témába illő részletet.</p>
+<p>„Rhianna, mi az, ami azonnal szembeötlik neked ezen a banditán? Mi különbözteti meg a többiektől?” Vagy: „Blodwen, mitől érzed ezt a helyet otthonosnak és biztonságosnak?”</p>
+<p>Kérdezz arról, mit csinálnak és mire készülnek, mivel töltik az idejüket és kivel lógnak együtt, és így tovább.</p>
+<p>Amikor expedíción vannak, kérdezd meg a menetrendjüket. Amikor Tábort Vernek, kérdezd meg, mit esznek, milyen a táborhely, ki melyik őrséget vállalja, és így tovább.</p>
+<p>Kérdezz arról, mit gondolnak és mit éreznek. „Vahid, min jár az eszed?” „Rhianna, mi aggaszt most a legjobban?”</p>
+<h3 id="portray-npcs-and-monsters">Jelenítsd meg az NJK-kat és a szörnyeket</h3>
+<p>Ha nem játékos karakterek (NJK-k) is érintettek, írd le őket. Mondd el, mit csinálnak. Ha a JK-k kapcsolatba lépnek velük, mondd el, hogyan reagálnak az NJK-k. Beszélj a hangjukon, és mondd ki, amit mondanak. Ha ez ijesztő számodra, vagy csak a lényegre akarsz térni, akkor <em>írd le</em>, mit mondanak, ahelyett hogy ténylegesen kimondanád.</p>
+<p>Ha a helyzetben szörnyek is vannak – fenevadak, szellemek, crinwinek és hasonlók –, jelenítsd meg őket is. Írd le őket: mekkorák, hogyan mozognak, milyen hangjuk és szaguk van. Mondd el, mit csinálnak, mire figyelnek. Mondd el, hogyan reagálnak a JK-kra.</p>
+<h3 id="answer-questions-clarify">Válaszolj a kérdésekre, tisztázz</h3>
+<p>A játékosok közbevágnak és kérdeznek. Légy őszinte és bőkezű az igazsággal és a részletekkel. Ha a válasz a JK-k számára nem lenne világos, mondd meg, és mondd el, mi kellene ahhoz, hogy rájöjjenek. A te dolgod, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>, nem az, hogy akadályokon ugráltasd őket, amíg kitalálják, mire gondolsz.</p>
+<p>Néha a játékosok olyasmit mondanak, ami arra utal, hogy félreértik a helyzetet. „Elvágom az ina hátulját”, mondja a Róka, amikor te úgy képzelted, hogy az erőszak a kocsma túloldalán zajlik, a JK-k szeme láttára. Ha ilyesmi történik, <strong>tisztázd a helyzetet a játékosokkal</strong>. Magyarázd el, te hogyan látod a dolgokat, de légy hajlandó a helyzetről alkotott képedet az övékéhez igazítani.</p>
+<p>„Hogy? Nem, ez a kocsma túlsó végében történik. Nem hiszem, hogy hagytad volna idáig fajulni, ha ott állsz mellettük, nem?”</p>
+<h2 id="2-make-a-soft-gm-move"><span class="step-badge">2</span> Tégy egy puha mesélői húzást</h2>
+<p>Világos a helyzet? Jó. Most tégy egy puha mesélői húzást – mondj valamit, ami cselekvésre késztet és/vagy fokozza a feszültséget.</p>
+<p>Válassz egyet a <strong>mesélői húzásaid</strong> közül <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">A mesélői húzásaid</a>, és tedd meg.</p>
+<p>Cselekvésre késztetés: mondd el, hogy valami rossz fog történni, vagy épp történik, de <strong>adj a JK-knak esélyt, hogy tegyenek ellene valamit</strong>. „Ahogy a kezed a késed markolatára talál, a crinwin olyan, hogy »sssszzzz«, és ugrik, ujjaival a torkod felé kap – mit csinálsz?”</p>
+<p>Cselekvésre úgy is késztethetsz, ha <strong>lehetőséget kínálsz nekik</strong>, vagy ha opciókat vázolsz, és <strong>választásra ösztönzöd őket</strong>.</p>
+<p>„Oké, elgurult melletted. Meglepődött, és van egy pillanatod. Ráugorhatsz a hátára, és megpróbálhatod leszúrni. Vagy elhúzhatsz onnan. Mit csinálsz?”</p>
+<p>Társas jelenetben az NJK-id kérhetnek vagy követelhetnek valamit. Mondhatnak valami sebezhetőt vagy érzelmeset, aztán a JK-ra nézhetnek, várva, hogy reagáljon.</p>
+<p>A puha húzások nem mindig késztetnek cselekvésre.</p>
+<p>Néha <strong>csak fokozzák a feszültséget</strong>.</p>
+<p>Elhasználhatod a holmijukat, előrevetítheted a bajt, vagy olyan módon hozhatsz bajt egy jelenetbe, amire nem lehet azonnal reagálni. „Már egy ideje itt lent vagytok, a fáklyáitok kezdenek leégni.” Vagy: „Újabb remegés. Egy kis föld hullik a mennyezetről.</p>
+<p>Mit csináltok?”</p>
+<h2 id="3-what-do-you-do"><span class="step-badge">3</span> „Mit csinálsz?”</h2>
+<p>Miután tettél egy puha mesélői húzást, kérdezd meg: <strong>„Mit csinálsz?”</strong> Ezzel visszaadod a szót a játékos(ok)nak, és arra ösztönzöd őket, hogy mondjanak valamit.</p>
+<p>Nem kell szó szerint azt mondanod, hogy „Mit csinálsz?”. Néha a húzásod már tartalmaz egy kérdést. Ha egy NJK-t jelenítesz meg, megteheted a húzásod, és várakozón nézhetsz a játékosokra. De ha bizonytalan vagy, kérdezd meg: „Mit csinálsz?”</p>
+<p>Ha olyasmit mondanak, aminek nincs értelme – amit lehetetlennek, érvénytelennek vagy ésszerűtlennek tartasz –, mondd meg nekik. Tisztázd a fikciót. Ha kitartanak mellette, <strong>mondd el nekik a következményeket és/vagy a feltételeket</strong>. Kérdezd meg, még mindig meg akarják-e tenni.</p>
+<p>Ha kérdeznek, válaszolj. Ha a válaszok nem kézenfekvők, <strong>mondd el nekik a feltételeket</strong>. „Ehhez egy kicsit körül kell szaglásznod, és Fürkészned kell.” Aztán passzold vissza nekik a labdát: „Mit csinálsz?”</p>
+<h2 id="players-jumping-in">Amikor a játékosok közbeugranak</h2>
+<p>A játékosok magukhoz ragadhatják a kezdeményezést, és bejelenthetnek egy cselekvést, mielőtt megkérdeznéd, hogy „Mit csinálsz?”, vagy akár még azelőtt, hogy puha mesélői húzást tettél volna. Nagyszerű!</p>
+<p>Ez azt jelenti, hogy belemerültek, és a helyzet elég lebilincselő ahhoz, hogy cselekedni akarjanak. Egyből ugorhatsz a cselekvésük eredményének eldöntésére.</p>
+<p>Ezzel együtt: ne hagyd, hogy a játékosok uralják a beszélgetést. Ha épp egy húzás közepén tartasz, vagy úgy gondolod, hogy valami még azelőtt történne, hogy cselekedhetnének, vagy másnak is esélyt akarsz adni, mondd nekik, hogy fogják vissza a lovaikat!</p>
+<h2 id="4-resolve-their-action"><span class="step-badge">4</span> Döntsd el a cselekvésük eredményét</h2>
+<p>A játékos elmondja, mit tesz a karaktere. Állapítsd meg, hogyan változik a helyzet, és/vagy mit fed fel a cselekvésük a helyzetről.</p>
+<p><strong>Kiváltottak egy játékoshúzást?</strong> Ha igen, melyiket? Játszd le azt a húzást. Ha nem vagy biztos benne, hogy kiváltottak-e egy húzást, vagy több információ kell a lejátszásához, kérdezz. Tisztázd a szándékukat és/vagy azt, hogyan fognak hozzá. Beszéljétek meg az asztalnál.</p>
+<p>Amikor egy játékos kivált egy húzást, <strong>kövesd a húzás menetét</strong>. Fedd fel azokat az információkat, amikre a húzás feljogosítja. Dolgozz együtt a játékossal annak megállapításán, hogyan változott a helyzet. (Részletesebben lásd: <strong>Játékos</strong><strong>húzások</strong>, <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Játékoshúzások</a>.)</p>
+<p>Amikor egy játékos húzása arra késztet, hogy hozzátegyél valamit a fikcióhoz, és nem tudod, mit mondj, <strong>meríts ihletet a mesélői húzásaidból</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">A mesélői húzásaid</a>.</p>
+<p><strong>Ha kiváltanak egy húzást, és 6- az eredmény</strong>, akkor XP-t jelölnek, te pedig kemény mesélői húzást teszel (hacsak a húzás kifejezetten mást nem mond).</p>
+<p>Ha olyasmit tesznek, ami nem vált ki játékoshúzást, akkor tőled várják, hogy mi történik. <strong>Figyelmen kívül hagytak egy fenyegetést vagy bajt</strong>, amire korábban figyelmeztetted őket? Tégy kemény mesélői húzást.</p>
+<p><strong>Egyébként</strong> mondd el, mi történik, és ez hogyan változtat a helyzeten. Talán csak mondd, hogy „Oké”, aztán vagy fordítsd máshova a <strong>reflektorfényt</strong> <a class="wiki-link" href="#the-spotlight" data-slug="running-the-game" data-fragment="the-spotlight" data-ref="page">A reflektorfény</a>, vagy kérdezd meg: „És aztán mit csinálsz?”</p>
+<h3 id="hard-gm-moves">Kemény mesélői húzások</h3>
+<p>Tégy kemény mesélői húzást, amikor egy JK...</p>
+<ul class="ellipsis"><li>teljesen figyelmen kívül hagy egy fenyegetést vagy bajt; vagy</li><li>kivált egy húzást, de 6- az eredmény (és a húzás nem mond mást).</li></ul>
+<p>A kemény mesélői húzás azt jelenti, hogy <strong>bajt teremtesz</strong>. Írd le a JK cselekedeteinek következményeit. Mondd el, mi sül el rosszul. Tedd a helyzetet jelentősen rosszabbá. Válassz egy <strong>mesélői húzást</strong> a listáidról <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">A mesélői húzásaid</a>, vagy csak mondd ki a kézenfekvő rossz dolgot. „Hű, egy 5-ös, mi? Túl gyors!</p>
+<p>Mielőtt a késed kiérne a hüvelyéből, már rajtad van, PUFF, kapsz <button type="button" class="dice-roll" data-dice="d6" title="Kattints a d6 dobásához — Shift: előny · Ctrl: hátrány">d6</button> sebzést, és a hátadon fekszel, az egyik karma a torkodon, a másik csuklónál fogva a földhöz szegezi a késes kezedet – mit csinálsz?”</p>
+<p>Ha 6- az eredmény, a kemény húzásod gyakran azzal jár, hogy a JK cselekvése kudarcot vall. Mondd el (vagy kérdezd meg), mi sül el rosszul és/vagy mik a következmények. <strong>De a 6- nem mindig jelenti, hogy a JK cselekvése kudarcot vall</strong>. Azt jelenti, hogy bajt teremtesz. Talán valami rossz történik, mielőtt megtehetnék a dolgukat; talán megteszik, amit elterveztek, de az valami nagyon rosszat okoz (vagy fed fel). A baj még csak nem is feltétlenül kapcsolódik közvetlenül a cselekvésükhöz – egyszerűen a nyomában is járhat.</p>
+<p>A kemény húzásnak mindig bajt kell teremtenie, de <strong>te döntöd el, mekkora bajt</strong>. A helyzet, a fikció, a játékos cselekedeteinek leírása és hasonlók alapján alakítsd a kemény húzásaidat. Néha egy kemény húzás nem sokkal rosszabb, mint egy puha.</p>
+<h2 id="5-repeat"><span class="step-badge">5</span> Ismételd</h2>
+<p>Eldöntötted, mi lesz a JK cselekvésének eredménye. A helyzet megváltozott vagy jobban feltárult, és innen görgeti tovább magát a játék.</p>
+<p><strong>Ha a helyzet világos és lebilincselő,</strong></p>
+<p><strong>és egy vagy több JK abban a helyzetben van, hogy cselekedjen</strong>, ugorj vissza egyenesen a 3. lépéshez, és kérdezd meg őket: „Mit csinálsz?”</p>
+<p><strong>Ha a helyzet világos, de a dolgok eszkalálódni fognak, mielőtt a JK-k cselekedhetnének</strong>, ugorj vissza a 2. lépéshez. Tégy egy puha mesélői húzást, hogy megmutasd, hogyan változnak a dolgok.</p>
+<p>Aztán kérdezd meg: „Mit csinálsz?”</p>
+<p>Hasonlóképpen, <strong>ha a helyzet világos, de valahogy állóvíz</strong>, és a játékosoknak kell egy kis lökés, ugorj vissza a 2. lépéshez. Tégy egy puha mesélői húzást, és kérdezd meg: „Mit csinálsz?”</p>
+<p><strong>Ha a helyzet nem világos, vagy ha össze kell foglalni vagy frissíteni kell</strong>, menj vissza az 1. lépéshez. Teremtsd meg újra a helyzetet. Aztán tégy egy puha mesélői húzást, és kérdezd meg: „Mit csinálsz?”</p>
+<p><strong>Ha az aktuális jelenet vagy helyzet véget ért</strong>, zárd le a dolgokat. Intézd el a logisztikát, az adminisztrációt és a többi metajátékos ügyet.</p>
+<p>Találjátok ki a játékosokkal, mi legyen a következő helyzet vagy jelenet. Ha ez nem világos, kérdezz, amíg az nem lesz.</p>
+<p>Menj vissza az 1. lépéshez. Teremtsd meg az (új) helyzetet, tégy egy puha mesélői húzást, és kérdezd meg: „Mit csinálsz?” Döntsd el a cselekvéseik eredményét.</p>
+<p>Nézd meg, hogyan változik a helyzet. Ismételd.</p>
+<p>Ez a játék alapciklusa.</p>
+<h2 id="the-spotlight">A reflektorfény</h2>
+<p>Játék közben pillanatról pillanatra változik, kihez beszélsz.</p>
+<p>Akihez épp beszélsz, az áll <strong>a reflektorfényben</strong>.</p>
+<p>Néha nem fókuszálod a reflektorfényt, és az egész csoporthoz beszélsz.</p>
+<p>Gyakran csak egyetlen karakterre irányítod. Amikor sok minden történik egyszerre, ide-oda lendíted egyének és csoportok között.</p>
+<p>A reflektorfény kezelésének nincs hivatalos menete. <strong>A legkézenfekvőbb pillanat a reflektorfény áthelyezésére az, amikor eldöntötted egy JK cselekvésének eredményét</strong>. Fordulj egy másik karakterhez, és írd le a helyzetet <em>neki</em>. Tégy puha húzást <em>felé</em>. Kérdezd meg <em>tőle</em>: „Mit csinálsz?”</p>
+<p>A reflektorfényt azonban bármikor áthelyezheted, amikor értelme van. Például ha megkérdezed, hogy „Mit csinálsz?”, és...</p>
+<ul class="ellipsis"><li><strong>a játékos lefagy vagy húzza az időt</strong>, válts át valaki másra, időt adva az első játékosnak a gondolkodásra. Később térj vissza hozzá; vagy...</li><li><strong>a JK olyasmibe fog, ami időbe telik</strong>, válts át valaki másra. Akkor térj vissza az első JK-hoz, amikor végez (vagy amikor valami megzavarja); vagy...</li><li><strong>tesz egy húzást, és nem vagy biztos benne, hogyan döntsd el az eredményét</strong>, nyerj magadnak időt a gondolkodásra azzal, hogy átváltasz valaki másra. Később térj vissza, és döntsd el az első játékos húzásának eredményét.</li></ul>
+<p>Használd a reflektorfényt arra, hogy jó játékvezető legyél.</p>
+<p>Tarts mindenkit bevonva. Gondoskodj róla, hogy mindenki kapjon jó sok játékidőt, és legyen esélye hozzájárulni.</p>
+<p>Nem baj, ha a játékosok egymás szavába vágnak, beleszólnak, vagy a karaktereik „soron kívül” cselekednek. Egyes húzások (mint a Védekezz) kifejezetten megengedik ezt nekik!</p>
+<p>Ezzel együtt: ne félj leállítani egy túlbuzgó vagy erőszakos játékost egy udvarias, de határozott rendreutasítással. „Andrew, ez most bunkóság. Épp Jamie-vel beszélek.”</p>
+<h2 id="split-the-party">Válaszd szét a csapatot</h2>
+<p>Meg fog történni. A JK-k szétválnak – szándékosan, vagy mert te <strong>választod szét őket</strong> vagy <strong>ejtesz foglyul valakit</strong> –, és máris két kisebb csoportod van. Semmi baj. A csapat szétválasztása nagyon szórakoztató lehet.</p>
+<p>A csapat szétválasztása azt jelenti, hogy egyszerre több beszélgetéssel és jelenettel zsonglőrködsz. Mozgasd a reflektorfényt oda-vissza a különböző jelenetek között, ahogy a vágó kemény vágásokkal ugrál a jelenetek között egy filmben.</p>
+<p>Ne időzz túl sokáig egyetlen csoportnál.</p>
+<p>Próbálj mindenkit bevonva és érdeklődve tartani aziránt, ami a többi jelenetben történik. Vághatsz a jelenetek között minden „akció” vagy játékoshúzás után, vagy két vágás között lejátszhatsz néhány beszélgetési „ciklust”. Ennek ritmusa és művészete van, és a különböző jelenettípusoknak más-más megközelítés tesz jót. A felfedezésnek és a párbeszédnek a hosszabb vágások.</p>
+<p>A nagy feszültségű, akciódús jelenetekhez a rövid, gyors vágások és sok függővég illik.</p>
+<h2 id="scenes-and-loose-play">Jelenetek és szabad játék</h2>
+<p>Játék közben a beszélgetés magától váltakozik a jelenetek és a szabad játék között. Ez nem hivatalos megkülönböztetés, sőt, nem is mindig tudatos. Gyakran természetesen, ösztönösen váltasz a kettő között.</p>
+<p><strong>A jelenetek közelképek</strong>. Meghatározott karakterek szerepelnek bennük, egy adott helyen, egy adott időben. Pillanatról pillanatra követed az eseményeket. A részletek bőségesek és konkrétak. A játékosok karakterben beszélnek, és te is karakterben jeleníted meg az NJK-kat.</p>
+<p>Még ha te és a játékosok nem is szólaltok meg ténylegesen a karaktereitek hangján, akkor is közelről, részletesen beszélitek végig a történteket.</p>
+<p>Egy jelenet során leírhatod az erdei tisztást, ahol a JK-k találják magukat, a rohanó patak hangját, és ahogy a medve szimatol, rángatja a fülét, és veszély után kutatva pásztázza a fák vonalát. „Rhianna, szerinted még nem vett észre. Mit csinálsz?”</p>
+<p>A jelenetek filmszerűek és magával ragadók, néha feszültek, gyakran izgalmasak. A játékosok elveszhetnek a karaktereikben, és valódi érzelmeket élhetnek át azzal kapcsolatban, ami történik.</p>
+<p><strong>A jó jeleneteknek célja van</strong>. Megvan az oka, hogy ezt a jelenetet ezekkel a karakterekkel ezen a helyen keretezted, nem? Mit próbálnak elérni a JK-k? Mit próbálsz átadni? Milyen kérdésre reméled a választ? Milyen konfliktus oldódik fel? Ha ismered a jelenet célját, az segít fókuszálni a részleteidet, a leírásaidat és a mesélői húzásaidat. És ha nem tudod megmondani egy jelenet célját, talán nincs is szükséged arra a jelenetre!</p>
+<p>Ha a jelenet célja teljesült, vagy a jelenet kifullad, zárd le.</p>
+<p>Térj át a következő kézenfekvő jelenetre („Beléptek a következő terembe, és látjátok...”), vagy válts szabad játékra.</p>
+<p><strong>A szabad játék az, ami a jelenetek között történik</strong>. Továbbra is az alapciklust követed, de távolabbról. Ahelyett, hogy leírnád, mi történik itt és most, arról beszélsz, mi történik percek, órák, napok vagy hetek alatt. Összefoglalsz és sűrítesz, kihagyod az apróságokat, és átsiklasz hosszabb időszakokon.</p>
+<p>Többet <em>beszélsz</em> a karakterekről, mint amennyit <em>megjeleníted</em> őket.</p>
+<p>Szabad játék közben leírhatod, ahogy a JK-k áthaladnak a Rengetegen (Great Wood), a csendes feszültséget, ahogy igyekeznek elkerülni a figyelmet, a hőséget és a csípő rovarokat, amelyek a nap előrehaladtával egyre rosszabbak. Feltehetsz olyan kérdéseket, mint: „Caradoc, min kalandoznak folyton a gondolataid?” vagy: „Rhianna, meddig akarsz menni, mielőtt tábort vertek?”</p>
+<p>A játékoshúzások szabad játék közben is működnek, csak tágabb léptékben. Küzdhetnek Egyként, hogy sötétedés előtt hazaérjenek, vagy Fürkészhetnek úgy, hogy néhány napon át figyelik a jövevényeket.</p>
+<p>Szabad játék közben az idő általában képlékeny.</p>
+<p>„Oké, elindultok, és délre elértek a keresztúthoz.” „Ó, várj. Mielőtt elindultunk, mondhatjuk, hogy Kereskedtem és Alkudoztam egy kis bendisgyökérért?” Persze, mondhatjuk.</p>
+<p>A szabad játék lazább, kevésbé intenzív.</p>
+<p><strong>Intézd el az adminisztrációt és a logisztikát</strong> a jelenetek között. Nézd át a jegyzeteidet, frissítsd őket, és talán dobj egy véletlenszerű <strong>felfedezést</strong> <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Felfedezések</a>. <strong>Beszélgessetek a játékról</strong>. Beszéljétek meg a karakterek terveit és céljait („Mit is akarunk elérni?”). Nézd meg, van-e a játékosoknak kérése („Szeretnék egy jelenetet Andrasszal”). <strong>Tartsatok szünetet</strong>, beszélgessetek a valós életről, és élvezzétek egymás társaságát.</p>
+<p>A szabad játék során sok idő telik el a fikcióban, különösen amíg a JK-k utaznak, vagy a kalandok között otthon töltik az idejüket. De azt akarod, hogy a valós idő nagy része jelenetekben teljen. A jelenetekre épülő játék sokkal zsigeribb, gazdagabb és izgalmasabb. <strong>Tereld a szabad játékot a jelenetek felé</strong>. Amint kínálkozik a következő jelenet, keretezd, és zoomolj vissza a részletes, pillanatról pillanatra haladó játékba.</p>
+<h2 id="your-gm-moves">A mesélői húzásaid</h2>
+<p>Amikor eljön a mesélői húzás ideje, és nem tudod, mit mondj, válassz egyet ezek közül, és tedd meg. <strong>Ezek az alapvető mesélői húzásaid</strong>:</p>
+<ul>
+<li>Jelezz bajt (a jövőben vagy a színen kívül)</li>
+<li>Fedj fel egy kellemetlen igazságot</li>
+<li>Tégy fel egy provokatív kérdést</li>
+<li>Hozz valakit szorult helyzetbe</li>
+<li>Használd el az erőforrásaikat</li>
+<li>Fordítsd ellenük a húzásukat</li>
+<li>Mutasd meg az árnyoldalt</li>
+<li>Sebezz meg valakit</li>
+<li>Válaszd szét őket</li>
+<li>Ejts foglyul valakit</li>
+<li>Kínálj lehetőséget (árral vagy anélkül)</li>
+<li>Mondd el a következményeket/ feltételeket (és kérdezz)</li>
+<li>Lépj közelebb a közelgő végzethez Ezek nem szakkifejezések. Amikor felfedsz egy kellemetlen igazságot, egyszerűen ezt teszed. Megállapítasz valamit a fikcióban, amiről a karakterek azt kívánják, bár ne lenne igaz. Amikor megsebzel valakit, elmondod, hogyan sérül meg valaki.</li>
+</ul>
+<p>A mesélői húzásaid inspiráljanak és erőt adjanak; ne korlátozzanak. Használd őket, amikor bizonytalan vagy, mit tegyél, vagy amikor kátyúba kerültél, és változtatni szeretnél. Ne stresszeld magad azon, hogy minden húzásod megfeleljen valaminek erről a listáról.</p>
+<h2 id="making-your-move">Megtenni a húzásodat</h2>
+<p>Amikor a helyzet világos, és <strong>előre akarod lendíteni az eseményeket</strong>, tégy egy puha húzást. Mondj valamit, ami cselekvésre készteti a JK-kat és/vagy fokozza a feszültséget.</p>
+<p>Tégy puha húzásokat folyamatosan, a játék alapciklusának részeként.</p>
+<p>Amikor a JK-k <strong>figyelmen kívül hagynak egy bajt</strong>, amit korábban megteremtettél, vagy amikor <strong>6- az eredményük egy játékoshúzáson</strong>, tégy kemény mesélői húzást. Teremts bajt. Történjen valami, amit a JK-k nem akarnak, vagy válljon lehetetlenné valami, amit akarnak.</p>
+<p>Mesélői húzást akkor is tehetsz, <strong>amikor egy játékos húzása arra késztet, hogy hozzátegyél valamit a fikcióhoz</strong>. Például amikor Dacolnak a Veszéllyel, és 7-9 az eredmény, a szabály szerint kisebb sikert, árat vagy következményt kell felkínálnod. <strong>Elhasználhatod az erőforrásaikat</strong> árként („Meg tudod csinálni, de el kell dobnod a készleteidet.”), vagy <strong>szorult helyzetbe hozhatod őket</strong> következményként („Sikerül, de a talaj megmozdul, ahogy földet érsz, és kezd beszakadni.”), vagy <strong>megmutathatod az árnyoldalt</strong> kisebb sikerként („Kijutsz, de Andras még mindig sántít és lemarad, a lény pedig egyre közelebb ér!”).</p>
+<p>Mindig <strong>olyan húzást tégy, ami a megteremtett helyzetből és/vagy az előkészületeidből következik</strong>. Ha crinwineket követnek a nyomukon az erdőben, és 6- az eredmény, tökéletesen jó húzás felfedni, hogy eltévedtek.</p>
+<p>De furcsa és nem menő lenne azt mondani: „Sziklák hullanak az égből, és agyonnyomnak, mindenki kap <button type="button" class="dice-roll" data-dice="1d10" title="Kattints a 1d10 dobásához — Shift: előny · Ctrl: hátrány">1d10</button> sebzést!”</p>
+<p>Ugyanígy <strong>a húzásaid tükrözzék a helyzet sajátosságait</strong>.</p>
+<p>Tegyük fel, hogy egy JK-ra őstulok ront, a JK Összecsap, és 6- az eredmény. Ha a JK egy hatalmas izmú Melák, aki a lándzsáját a rohamnak feszítette, a kemény húzásod egészen máshogy fest majd, mint ha a JK egy karcsú Róka, aki megpróbált kitérni a roham elől, és matadorként leszúrni.</p>
+<p><strong>Ne mondd ki a húzásod nevét</strong>, csak mondd el, mi történik a fikcióban. Ne mondd, hogy: „4-et dobtál, úgyhogy szétválasztalak titeket.”</p>
+<p>Mondd azt: „Rhianna, felébredsz, és rájössz, hogy Caradoc nincs őrségben. Nem is jön vissza egyhamar. A takarója eldobva hever a tűz fényének szélén.”</p>
+<h2 id="other-gm-moves">Egyéb mesélői húzások</h2>
+<p>Más mesélői húzáslistáid is vannak.</p>
+<p>Használd a <strong>felfedezői húzásaidat</strong>, amikor a JK-k <strong>expedíción</strong> vannak <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Expedíciók</a>, vagy <strong>egy helyszínt fedeznek fel</strong> (lásd <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Helyszínek</a>).</p>
+<p>Használd a <strong>fenyegetéshúzásokat</strong>, hogy egy fenyegetést vagy a befolyását behozd egy jelenetbe, vagy ha az már érintett <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Fenyegetések</a>.</p>
+<p>Használd a <strong>hátországi húzásokat</strong>, amikor a JK-k otthon vannak vagy egy másik településen töltenek időt, hogy érdekes dolgok történjenek ott (lásd <a class="wiki-link" href="homefront.html" data-slug="homefront" data-ref="page" >Hátország</a>).</p>
+<p>Használd egy <strong>veszély</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Veszélyek</a> · <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Veszélyek</a> vagy egy <strong>NJK</strong> <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >NJK-k és követők</a> saját húzásait, amikor ezek az elemek játékban vannak.</p>
+<h2 id="examples-of-gm-moves">Példák mesélői húzásokra</h2>
+<h3 id="announce-trouble">Jelezz bajt</h3>
+<h3 id="future-or-offscreen">(a jövőben vagy a színen kívül)</h3>
+<p>Ez az egyik legsokoldalúbb húzásod.</p>
+<p>A baj szinte mindig reakciót vált ki, vagy legalábbis aggodalmat kelt és fokozza a feszültséget.</p>
+<p>Kemény húzásként egy addig békés jelenetet harccá vagy konfliktussá változtathatsz, vagy egyértelművé teheted, hogy a JK-k tetteinek később következményei lesznek.</p>
+<hr>
+<blockquote><p><em>„BUMM BUMM BUMM! Rhianna, valaki dörömböl az ajtódon, felébresztve abból a nagyon is szükséges alvásból. Lowri a nevedet kiabálja, és hallod az őrharangok kongását. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Ahogy Caradoc és Blodwen távozik, egy ronda alak figyeli őket. Az arca tele sebhellyel, kegyetlen gúnyos vigyor, kés az oldalán. Oldalba böki a mellette ülő fickót, az ajtó felé biccent, és felállnak, majd mennek. Mit csináltok?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Glenys néhány pillanatig keményen bámul rád, aztán csak annyit mond: »JÓ.« És fújtatva elcsörtet. Egyelőre nem lóg a nyakadon, de tudod, hogy ezzel még foglalkoznod kell később.”</em></p></blockquote>
+<hr>
+<h3 id="reveal-an-unwelcome-truth">Fedj fel egy kellemetlen igazságot</h3>
+<p>Állapíts meg valamit igaznak, olyasmit, amiről nagyon szeretnék, ha nem lenne az. Talán mindig is igaz volt, csak most fedd fel. Vagy talán (különösen kemény húzásként) épp most döntöd el, hogy ez a rossz dolog igaz, és tudatod velük. Mindkettő működik.</p>
+<p>Ez remek húzás, amikor Tudnak Dolgokat vagy Fürkésznek. 7+ esetén őszinte válaszokkal vagy érdekes (talán hasznos) információval tartozol nekik, de semmi okuk nincs rá, hogy örüljenek annak, amit megtudnak. 6- esetén pedig igazán megszoríthatod a csavarokat.</p>
+<hr>
+<blockquote><p><em>„»Vvvaszil? Egek, dehogy. Vvvaszil elhagyta a vvvárost ezen a múlt őszön. Vissza Lygosba, úgy hallottam.« Elmosolyodik, és mintha túl sok foga lenne. »De bizzzonyára köthetünk valamiféle… megállapodást?«”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Mi történt itt nemrég? Hát, vagy egy tucatnyi lábnyom van a sárban, mind felkavarva, mintha dulakodás lett volna. Néhány vérfolt is, a lombokon. Elég nyilvánvaló, hogy Lowrit megtámadták a crinwinek.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jaj, 6-? Nos, a nap hátralévő részében átfésülöd a dombokat, és... gondolom, nem találod meg? Nem, várj. Tudod mit? Igenis megtalálod Cadit. Úgy egy kilométerre a favágótábortól megtalálod a holttestét. Valami leszúrta, egyenesen átdöfte a hasán.”</em></p></blockquote>
+<hr>
+<h3 id="ask-a-provocative-question">Tégy fel egy provokatív kérdést</h3>
+<p>Tégy fel egy kérdést, ami döntésre vagy reakcióra sarkall, még ha csak érzelmi reakcióra vagy arra a döntésre is, hogy nem cselekszenek. A kérdést felteheted te magad, vagy adhatod valamelyik NJK-d szájába. Vagy:</p>
+<p>tégy fel egy kérdést, ami bajt állít, de lehetőséget ad a játékosnak, hogy ő találja ki.</p>
+<hr>
+<blockquote><p><em>„Rhianna, Eira komoran néz, és azt mondja: »Garet sok vért veszít. Nem hiszem, hogy túléli, és rettenetesen le fog lassítani minket. Akarod, hogy megtegyem, amit kell?«”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Caradoc, te azt hiszem, a legvégén érkezel. Láttad azt a füstfelhőt kigomolyogni Vahid szájából. És ott van Vahid, aki teljesen normálisan viselkedik. Mi jár a fejedben most?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jaj, egy 4-es? Nos, azt hiszem, sikerül megsértened, nagyon megbántanod. Mit mondasz vagy teszel, amivel ezt éred el?”</em></p></blockquote>
+<hr>
+<h3 id="put-someone-in-a-spot">Hozz valakit szorult helyzetbe</h3>
+<p>Ez a <strong>bajjelzés</strong> agresszívabb változata – tenniük kell valamit, most, különben csúnya lesz.</p>
+<p>A „valaki” lehet JK vagy NJK is, és játszhatsz a reflektorfénnyel. Lehet, hogy nem az tesz ellene valamit, akit szorult helyzetbe hoztál.</p>
+<hr>
+<blockquote><p><em>„Majdnem! Megugrod, de nekicsapódsz az ágnak. Megcsúszol, épp csak sikerül megkapaszkodnod. Így lógsz arról az ágról, levegő után kapkodva, vagy 25 méter magasan, és kezd kicsúszni a fogásod. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„A nagydarab fickó feláll, és lenéz rád. »Minek neveztél, te nyeszlett kis patkány?« Rhianna, látod ezt, és észreveszed, hogy vagy három másik fickó, tagbaszakadt bányásztípusok, szintén feláll, mosoly egyiken sincs. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Szóval, ahogy mondtad, a sárkánygyík megnyugszik, ahogy a kezed az orrára teszed, és olyan, mint egy nyávogó kiscica. De Caradoc, te a bozótból figyelsz, és miközben Blodwen azt az egyet nyugtatja, kiszúrsz egy másik sárkánygyíkot, mögötte, jobbra tőle, ahogy lopakodik felé. Mindjárt ráveti magát, biztos vagy benne. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<h3 id="use-up-their-resources">Használd el az erőforrásaikat</h3>
+<p>Történik valami, ami megcsappantja a holmijukat, vagy teljesen elveszi tőlük. Az „erőforrások” itt lehetnek...</p>
+<ul class="ellipsis"><li><strong>kézzelfoghatók és konkrétak</strong> (a pajzsuk, a fáklyájuk, a lámpaolajuk);</li><li><strong>kézzelfoghatók, de elvontak</strong> (készletek, lőszer);</li><li><strong>megfoghatatlanok</strong> (a hírnevük, valakinek a bizalma); és/vagy</li><li><strong>teljesen gépies absztrakciók</strong> (HP, Fortuna, Hűség stb.).</li></ul>
+<p>Amikor valami elvontat, megfoghatatlant vagy pusztán gépiest veszítenek el, mindig vezesd vissza a fikcióhoz, és mutasd meg, hogyan nyilvánul meg. „Kicsit szúrósan néz, aztán kiábrándultan megrázza a fejét. Ha volt Hűsége, most 1-gyel kevesebb van.”</p>
+<p>Puha húzásként ezzel a húzással fokozhatod a feszültséget. Az a 4 HP most talán nem sokat jelent, de még néhány ütés után a játékos kezd majd <em>idegessé</em> válni.</p>
+<p>Ha egy konkrét erőforrást használsz el, a veszteség lehet ideiglenes („kiüti a kést a kezedből, és az átrepül a szobán”) vagy végleges („az ütés szétzúzza a pajzsodat”).</p>
+<p>Gyakran azon kapod magad, hogy ezt a húzást más húzásokkal együtt teszed meg, és ez rendben van.</p>
+<p>Főleg a HP fogy el szervesen más húzások részeként (lásd a <strong>Sebzés okozása és gyengeségek kiosztása</strong> keretes szöveget, <a class="wiki-link" href="#dealing-damage-and-inflicting-debilities" data-slug="running-the-game" data-fragment="dealing-damage-and-inflicting-debilities" data-ref="page">Sebzés okozása és gyengeségek kiosztása</a>).</p>
+<hr>
+<blockquote><p><em>„Már vagy egy órája lejöttetek ide. Szerintem a fáklyád kezd leégni. Talán tíz perc fényed maradt? Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Igen, szóval megcsúszik a kezed, és lezuhansz, végig ágaknak csapódva, BUMM, RECCS, PUFF. A hátadra érkezel, és elég biztos vagy benne, hogy valami eltört a batyudban. Veszíts 2 használat készletet, és kapj <button type="button" class="dice-roll" data-dice="1d6" title="Kattints a 1d6 dobásához — Shift: előny · Ctrl: hátrány">1d6</button> sebzést, a páncélt figyelmen kívül hagyva. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Aha, végig ott állt mögötted, amíg azt az utolsó részt mondtad. Hátranézel, és céklavörös, a sírás vagy a kiabálás határán, nem tudod eldönteni. De csak megfordul, és elcsörtet a földek felé. Szerintem elvesztette minden Hűségét, ami volt neki. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<h3 id="demonstrate-a-downside">Mutasd meg az árnyoldalt</h3>
+<p>Mutasd meg a húzásaik korlátait, vagy azt a terhet, amivel (például) a Melák szerepe jár. Mutasd meg nekik, hogyan boldogul egy <em>durva</em> fegyver egy vaskarddal vagy pajzzsal szemben.</p>
+<p>Mutasd meg nekik, miért rossz ötlet <em>meleg</em> páncélt viselni a tűző napon. Mutasd meg, miért nehéz alacsonynak, magasnak, fiatalnak, öregnek vagy bárminek lenni.</p>
+<hr>
+<blockquote><p><em>„Caradoc, Rhianna, ahogy a bozótból figyelitek a crinwineket, ezt halljátok: zörr-zörr-zörr. Biztosan Vahid batyuja, és a crinwinek is meghallják. Mit csináltok?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Caradoc, amikor másodszor próbálsz közbeszólni, Brennan azt mondja: »A felnőttek beszélnek, fiam.« És visszafordul Rhiannához. »Nos, hol is tartottál…?«”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„A lándzsád belefúródik, és az őstulok felbődül, de aztán ágaskodik, kicsavarodik, és a lándzsa nyele eltörik. Ott maradsz egy fél bottal a kezedben.”</em></p></blockquote>
+<hr>
+<h3 id="turn-their-move-back-on-them">Fordítsd ellenük a húzásukat</h3>
+<p>Ez jó választás 6- esetén. Vedd a húzást, amit tettek, és fordítsd meg valahogy. Talán az ellenfeleik kerülnek előnybe, talán nekik kell kitalálniuk valami rosszat, amivel dolgozhatsz, talán a húzásuk szűkíti a lehetőségeiket ahelyett, hogy bővítené. Légy kreatív.</p>
+<hr>
+<blockquote><p><em>„Ó, szerintem mindent tudsz erről a gonosz higanyról, Vahid. Miért nem meséled el nekünk azt a borzalmas találkozást, ami délen volt vele, és hogy miért remegsz bele mind a mai napig?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Kudarc, mi? Tudod mit, tedd fel az egyik Fürkéssz-kérdést így is, de hátránnyal teszel bármit, KIVÉVE hogy a válasz alapján cselekszel.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Igen, egyszerűen nem veszi be. Semmiképp nem fogod rávenni, hogy beköpje Mutrát. Sőt, elkezdi kiforgatni a beszélgetést, kérdezget téged, belezavar, és zavarba hoz. Szerinted mi kellene ahhoz, hogy kiszedje belőled, hol rejtette el Vahid a Szívet?”</em></p></blockquote>
+<hr>
+<h3 id="hurt-someone">Sebezz meg valakit</h3>
+<p>Okozz egy konkrét, problémás sérülést vagy sebet egy JK-nak vagy egy NJK-nak, aki fontos neki. Valami többet, mint puszta HP-veszteséget. Valami fájdalmasat, véreset, következményekkel járót, vagy mindhármat.</p>
+<p>Ez a húzás mindenképp azt jelenti, hogy az áldozat sebzést kap, JK esetén pedig azt is jelentheti, hogy gyengeséget jelöl.</p>
+<p>Azt pedig <em>biztosan</em> jelenti, hogy most már van egy <strong>problémás sebe</strong> (lásd <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Sebzés és gyógyulás</a>). Ez a fikció része, amivel foglalkoznia kell, és amire alapozhatod a mesélői húzásaidat.</p>
+<p>Hogy mennyire sebzed meg, az a fikciótól függ, attól, hogy a sérülés 7+ vagy 6- eredményből fakadt-e, a dobott sebzéstől és a sebzés címkéitől (<em>mocskos</em>, <em>taszító</em> stb.). Ha azért sebzed meg, mert 7-9-et dobott, amikor Összecsapott egy bunkós fickóval, és csak 2 sebzést kap, az egészen máshogy fest, mint egy 6- egy dühöngő sárkánygyík ellen, ami 12 <em>mocskos</em> sebzést okoz.</p>
+<p>Nyugodtan írd le a seb általános jellegét („Combon szúr, és érzed, hogy a lábad megbicsaklik.”), aztán dobasd a sebzést a játékossal („Kapsz <button type="button" class="dice-roll" data-dice="d6+2" title="Kattints a d6+2 dobásához — Shift: előny · Ctrl: hátrány">d6+2</button> sebzést.”), és igazítsd a sérülést az okozott sebzéshez („3 sebzés? Oké, szerintem féltérdre rogysz, és a lábad mintha lángolna, de még megtart,” szemben ezzel: „Jaj, 8 sebzés? Még talpon vagy? Nos, a lábad kicsúszik alólad, és csak úgy ömlik belőle a vér.”)</p>
+<p>Főszabályként csak akkor okozz maradandó, nyomorító sérülést, ha figyelmeztetted őket, hogy ez lehetséges (kifejezetten, vagy a veszély előrejelzésével/ bemutatásával), és vagy 6- volt az eredmény, vagy tudatosan figyelmen kívül hagyták a veszélyt. Ne lepd meg őket ilyesmivel.</p>
+<p>Például: ha azt mondod: „ennek a jószágnak</p>
+<p>15 centis fogai és fákat összeroppantó állkapcsa van… ha elkap, hiányozni fognak darabok belőled, biztos, hogy csak ott akarsz állni és csapkodni felé?”, és azt felelik: „Ja, aki mer, az nyer!”, majd 7-9-et dobnak, amikor Összecsapnak…</p>
+<p>nos, figyelmeztetted őket. Búcsút inthetnek annak a karnak, és üdvözölhetik a vérszökőkutat.</p>
+<p>Másfelől, ha ezt a jószágot fenyegetésként mutattad be, de nem amolyan <em>karleharapós</em> fenyegetésként, 7-9 esetén azt mondhatod: „Ráharap, mindenütt vér, és elkezd rázni.</p>
+<p>Van az agyadnak egy furcsa, nyugodt része, ami azt mondja: »Ó, mindjárt leszakad a karom«, de a többi részed csak ÁÁÁÁ. Kapsz <button type="button" class="dice-roll" data-dice="d10+3" title="Kattints a d10+3 dobásához — Shift: előny · Ctrl: hátrány">d10+3</button> sebzést, és jelöld be: <em>legyengült</em>. Mit csinálsz?” Még mindig elég kemény húzás, szerintem, de olyan, amiből felépülhetnek. Figyelmeztetés nélkül elvenni a karjukat? Nem menő.</p>
+<p>Ezzel együtt: az NJK-kat nyugodtan sebezd meg agresszívabban és brutálisabban, mint a JK-kat. Egy <em>követő</em> karjának elvétele (például) remek módja megmutatni, hogy a jószág támadásai <em>mocskosak</em> és szörnyűek, és ezzel emeled a téteket anélkül, hogy a JK-kat kiszorítanád a főszerepből. (Egy jó tanács azért: figyelmeztetés nélkül ne bánj kegyetlenül egy állattárssal; a játékosok rendkívül ragaszkodnak a kedvenceikhez.)</p>
+<p>Ha egyszer bekövetkezett, a seb vagy sérülés a fikció része. Előfordulhat, hogy miatta a JK-nak Dacolnia kell a Veszéllyel valamiért, ami egyébként nem lenne veszélyes. Lehet egy újabb húzásod fikcióbeli indoka. Késztethet olyan húzásokra, amelyek súlyosbítják a sérülést.</p>
+<p>A HP-ről, a sebzésről, a gyengeségekről és a problémás sebekről bővebben lásd a <strong>Sebzés és gyógyulás</strong> fejezetet <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Sebzés és gyógyulás</a>.</p>
+<hr>
+<blockquote><p><em>„Mintha Eira felé nyúlna, a keze ködként kitágul, és megmarkolja a mellkasát, Eira pedig nyögni és rángatózni kezd, és látod, ahogy a bőre egyes részei megfeketednek. <button type="button" class="dice-roll" data-dice="1d12" title="Kattints a 1d12 dobásához — Shift: előny · Ctrl: hátrány">1d12</button> sebzést kap, a páncélt figyelmen kívül hagyva. Még talpon van? Nem? Oké, nos, elengedi, és ő csak a földre roskad. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Egyszerűen ÖSSZESZORÍT, és nem kapsz levegőt, nem tudsz mozdulni, aztán RECCS, érzed, hogy eltörik egy bordád, és A FENÉBE, ez fáj. Kapsz <button type="button" class="dice-roll" data-dice="d8+3" title="Kattints a d8+3 dobásához — Shift: előny · Ctrl: hátrány">d8+3</button> sebzést, a páncélt figyelmen kívül hagyva, és jelöld be:</em> legyengült<em>. Vahid, épp végzel a nafta meggyújtásával, amikor ez történik, és látod, ahogy Caradoc elkékül a tekercsei között. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jaj, ne. 9 sebzés? És még talpon vagy? Szóval, öhm... szerintem ahogy megpróbálod kirántani a karod, az, öhm… a francba, szerintem egyszerűen keményen ráharap, és csak ez az égető fájdalom van, és hátratántorodsz. Kiszabadultál, de lenézel, és a jobb karod egyszerűen nincs ott. A vér spriccel, fázol, és úgy érzed, mindjárt elájulsz. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<h2 id="dealing-damage-and-inflicting-debilities">Sebzés okozása és gyengeségek kiosztása</h2>
+<p>A „sebzés okozása” önmagában nem mesélői húzás; egy másik mesélői húzás részeként történik. Amikor olyan húzást teszel, amiben egy karakter összetörik, megsérül, ide-oda csapódik vagy megsebesül, a húzás részeként okozz neki sebzést.</p>
+<p>Mondd meg a játékosnak, mennyi sebzést kap (általában egy kockadobás, a sebzést okozó szörnytől vagy a körülményektől függően). Ennyi HP-t veszít. Ha 0-ra csökken, kiesik az eseményekből, és jó eséllyel A Halál Kapujában találja magát.</p>
+<p>Ugyanígy nincs „ossz ki egy gyengeséget” húzásod sem. Gyengeséget akkor oszthatsz ki, amikor <strong>megsebzel valakit</strong> vagy <strong>elhasználod az erőforrásaikat</strong>, vagy amikor bármilyen más húzást teszel, aminek az lenne az eredménye, hogy <em>legyengültek</em>, <em>kábák</em> vagy <em>csüggedtek</em> lesznek („Észreveszed, hogy remeg a kezed, inog a lábad… jelöld be: <em>legyengült</em>”).</p>
+<p>A sebzésről és a gyengeségekről bővebben lásd a <strong>Sebzés és gyógyulás</strong> fejezetet <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Sebzés és gyógyulás</a>.</p>
+<h3 id="separate-them">Válaszd szét őket</h3>
+<p>Válaszd szét a csapatot. Tegyél ellenfeleket vagy akadályokat közéjük. Valaki maradjon le.</p>
+<p>Tűnjön el egy követő vagy egy másik NJK.</p>
+<p>Küldj le valakit gurulva a lejtőn, kivonva a harcból. Ilyesmi.</p>
+<p>Ez a húzás gyakran jól párosítható azzal, hogy <strong>szorult helyzetbe hozod őket</strong>. Mert mi rosszabb, mint szorult helyzetben lenni? <em>Egyedül</em> lenni szorult helyzetben.</p>
+<hr>
+<blockquote><p><em>„Blodwen, úgy húsz percnyi tolakodás után a magas fűben kicsit széthúzódtok, és rájössz, hogy senki mást nem látsz. Eleinte még hallod őket, úgyhogy semmi gond, de aztán a fűben mozgásuk zaja elvész a szüntelen szélben. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Jaj. Igen, ahogy elmondod neki a szövegedet, kőarccal hallgat, semmi válasz. Aztán jön egy szünet, és mintha felsóhajtana, felzokogna, és megerednek a könnyei. »A fenébe, Caradoc.« És megfordul, bevágja az ajtót, és hallod, ahogy sír. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Oké, király, szóval Vahid, te kicsit beljebb vagy a folyosón, ugye? Lowrival, aki a lámpást tartja neked? Nos, ahogy kezded kibetűzni a rúnákat – valami »kapuról« vagy »átjáróról« vagy talán »útról« –, hallatszik egy ilyen KLONKK, amit a mellkasodban érzel, mindenki érzi, és aztán fém fémen csikorgó hang, és egy acélfüggöny zuhan le a mennyezetről, elvágva a folyosót. BUMM. Vahid, te és Lowri a túloldalán vagytok, egyedül, a por mindenütt gomolyog. Mit csináltok?”</em></p></blockquote>
+<hr>
+<h3 id="capture-someone">Ejts foglyul valakit</h3>
+<p>Ennek a húzásnak a puha változatában ejtsd foglyul őket, de maradj a jelenetben, esélyt adva nekik a szökésre (vagy másoknak a megmentésükre). A kemény változatában talán vágj egyenesen a következő jelenetre – foglyul ejtve, megkötözve, ki tudja, hová hurcolva –, és egyszerűen siklj át a részleteken, hogyan kerültek oda.</p>
+<hr>
+<blockquote><p><em>„Brennan füttyent, Ragan pedig, nyugodtan és villámgyorsan, egyszerűen megragadja Blodwent, megpördíti, és kést szorít a torkához. Brennan sóhajt, hátralép mögéjük. »Reméltem, hogy idáig nem jut a dolog, de nem hagytok sok választást. Most elmegyünk, és biztos vagyok benne, hogy a kisasszony hálás lenne, ha mindannyian ott tartanátok a kezeteket, ahol látom.« Elkezdenek hátrálni. Mit csináltok?”</em></p><p><em>„Caradoc, megérinted a gömböt, és olyan, mintha SUHH. Lebegsz a térben, lenézel a testedre. A világ szürke, ködös és fakó, és nem igazán érzed a lábadat. Vahid, te pár órával később érsz haza, és azt látod, hogy Caradoc a jéggömbre roskadva fekszik, az ujjai hozzáérnek, és egészen kékek. Nem reagál. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Igen, Vahid, Lowri ide-oda lengeti a fáklyát a sötétben, és mindketten kifelé fürkésztek, keresve, mi adta azt a zajt, mi, a közönség pedig látjuk, ahogy ez az árnyszerű alak mögétek magasodik hosszú, pókszerű ujjakkal. Azok az ujjak a szádra tapadnak, Vahid, egy másik alak pedig megragadja Lowrit. Van egy rövid dulakodás, aztán a kamera lepásztáz a földön heverő lámpásra, ami az oldalán fekszik, megrepedve, pislákolva. Halljuk, ahogy titeket elhurcolnak. Rhianna, mialatt ez történik…”</em></p></blockquote>
+<hr>
+<h3 id="offer-an-opportunity">Kínálj lehetőséget</h3>
+<h3 id="with-or-without-a-cost">(árral vagy anélkül)</h3>
+<p>Adj nekik egy rést, egy esélyt a cselekvésre.</p>
+<p>A lehetőség lehet konkrét („Ha most cselekszel, meglepheted őket.”) vagy általános („Úgy tűnik, nem vettek észre. Mit csinálsz?”). Járhat határozott árral („...de rengeteg zajt csap, és riadót fújnak.”) vagy lehetséges árral („...de sietned kell, hogy időben odaérj”), vagy semmilyennel.</p>
+<p>Ezt a húzást gyakran észre sem véve teszed meg. Amikor egyszerűen átadod a kezdeményezést egy játékosnak – amikor feszült, mozgalmas a helyzet, és megkérdezed, hogy „Mit csinálsz?”, anélkül hogy előbb <strong>bajt jeleznél</strong>, <strong>szorult helyzetbe hoznád</strong> vagy más módon reagálásra kényszerítenéd –, lehetőséget kínálsz neki.</p>
+<hr>
+<blockquote><p><em>„3 sebzés? A páncélja miatt ez nem elég, hogy leterítsd. Szerintem hátrarándul, és csak egy vágást ejtesz végig az arcán. De megingott. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Nem harapnak rá a csalira, Rhianna. De ha feltűnően kivonulnál a táborból, Andrast és Blodwent egyedül hagyva? Az működne. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Mi hasznos vagy értékes itt számodra? Az a falba illesztett, kéken izzó kristály. Ha szétzúzod, mindenféle káoszt szabadít el – épp a figyelemelterelést, ami kell.”</em></p></blockquote>
+<hr>
+<h3 id="tell-them-the-consequences-requirements-then-ask">Mondd el a következményeket/ feltételeket (és kérdezz)</h3>
+<p>Használd ezt a húzást közbeszólásként, a fikció tisztázására és a tétek rögzítésére, amikor azt mondják, hogy meg akarnak tenni valamit. „Ha ezt teszed, ugye tudod, hogy __?”</p>
+<p>Használd arra is, hogy utat mutass nekik, amikor egyébként el van zárva előttük az út. Használd arra, hogy érdemi döntésre kényszerítsd őket. Használd arra, hogy megfizessenek (idővel, erőforrásokkal, lehetőségekkel stb.), ha egy bizonyos utat akarnak követni.</p>
+<hr>
+<blockquote><p><em>„És Garet holtteste, Rhianna? Ha itt hagyod, a csapat többi tagja morogni fog – tudod, mennyire babonásak. Elégethetnéd, de az időbe telik, és elárulja, hol vagytok. Mit csinálsz?”</em></p><p><em>„Ha ezt teszed, rendben, de nem lesz esélyed eltávolodni. Biztosan elkap a robbanás. Megteszed?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Hát nem. Remeg a kezed, kiszáradt a szád, semmi másra nem tudsz gondolni, csak arra a baljós, gyűlölködő szemre. Ha lőni akarsz, előbb össze kell szedned magad. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Vahid, semmit sem tudsz kihámozni ezekből a rúnákból, legalábbis most nem. Talán ha másolatot dörzsölnél róluk, és lenne időd otthon tanulmányozni őket, az összes könyveddel, jegyzeteddel és mindennel. De itt kint nem. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Ez a jószág tömör kőből van. A nyilaid semmit sem érnek ellene, Rhianna. Ha meg akarod sebezni, vagy akár csak lelassítani, valami nagy és nehéz dologgal kell eltalálnod.”</em></p></blockquote>
+<hr>
+<h3 id="advance-towards-impending-doom">Lépj közelebb a közelgő végzethez</h3>
+<p>A <strong>fenyegetéseknek</strong> <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Fenyegetések</a> és a <strong>kockázatoknak</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Veszélyek</a> lehet közelgő végzetük, mindegyikhez egy sor baljós előjel vezet. Amikor ezt a húzást teszed, eldöntöd, hogy az egyik baljós előjel beteljesült, és megmutatod a karaktereknek.</p>
+<p>A gyakorlatban ez a húzás szinte mindig egy másik húzásként nyilvánul meg. <strong>Bajt jelzel</strong>, <strong>felfedsz egy kellemetlen igazságot</strong> vagy <strong>szorult helyzetbe hozol valakit</strong> (stb.) úgy, hogy az megmutassa: a baljós előjel beteljesült.</p>
+<p>Ritkán az is előfordulhat, hogy gonoszul kuncogsz, kipipálsz egy négyzetet, és azt mondod, rossz érzésük támad, vagy hideg szél fúj, anélkül hogy egyelőre felfednéd az előjelet. Ha ezt teszed, mindenképp vállald, hogy az előjel a színen kívül beteljesült. Ha nem, akkor valójában nem is tettél húzást.</p>
+<hr>
+<blockquote><p><em>„Niát abban a beomlott házban találod a falu szélén. Be kell préselned magad oda, és a szemednek hozzá kell szoknia a sötéthez, de amikor hozzászokik, összeszorul a gyomrod. Krétával rajzolt pókok vannak a falakon mindenütt, és… egy oltár? Rajta ágakból, szőrből és pókhálóból álló kupac, amiről rájössz, hogy egy nagy pók bálványa. Nia csupa mosoly, és azt mondja: »Szia, Blodwen, tetszenek a rajzaim?« Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Szóval a vállad fölött döfködsz felé, de közben tántorogsz, és szerintem, igen, megölöd, de végül nekitántorodsz az egyik régi oszlopnak. Hangos RECCS hallatszik, némi nyikorgás, és por kezd hullani a mennyezetről. Vahid, látod, ahogy ez történik. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Caradoc, ahogy elszenderedsz, álmodni kezdesz. Egy nagyon furcsa, élénk álmot. Olyan, mint amikor abban a régi alkotósírban voltál, és felnéztél, de… más. Fullasztóbb. Mintha földbe lennél temetve, mióta világ a világ, és fent van egy fény, messze a távolban. De… elég, érted? Valami, ami felé mozdulhatsz? Így hát nyújtózkodsz, és átkaparod magad a földön a fény felé, aztán felriadsz, és a mindenit, minden rázkódik, emberek sikoltoznak, gyerekek sírnak, földrengés van! Mit csinálsz?”</em></p></blockquote>
+<hr>
+<h2 id="example-of-play">Játékpélda</h2>
+<blockquote><p><em>Mindenki megérkezett. Beszélgettünk, kényelembe helyeztük magunkat, és készen állunk a kezdésre. Az ülés</em> <strong><em>szabad játékkal</em></strong><em> kezdődik. Megkérdezem, összefoglalná-e valaki az eddigieket. Rhianna játékosa vállalja.</em></p><p><em>„Elküldtünk egy favágó csapatot a Hegylábakhoz (Foothills). De valami kecskedémon megrémítette őket, és az – vagy valami – megsebesítette Andrast. Visszaküldték. Felmentünk, hogy kivizsgáljuk. Kiszedtünk valami hasznosat Andrasból, mielőtt elindultunk?”</em></p><p><em>Blodwen azt mondja: „Elég kába volt. Sikerült stabilizálnunk, de folyton azt nyöszörögte: »az a szem!« És szerintem rám is nyomult.”</em></p><p><em>„Ja, persze! Már felszerelkeztetek, és elindultatok a Hegylábak felé” – mondom.</em></p><p><em>Én</em> <strong><em>felteszek néhány kérdést</em></strong><em>, hogy bemelegedjünk. „De mielőtt belevágunk: Caradoc, szerinted ki szekált téged amiatt, hogy megint kalandra indulsz? Vahid, te miért örülsz annyira, hogy egy kicsit kiszabadulsz a faluból?”</em></p><p><em>Megtudjuk, hogy Sawyl, a tímár új inast keres, és hogy Caradoc emiatt mindenféle bűntudatot érez. Azt is megtudjuk, hogy Vahidnak szünet kell Maire özvegytől, aki görcsölteti a „megrögzött agglegény” stílusát. Jegyzetelek!</em></p><p><em>Oké, csapjunk bele. Én</em> <strong><em>keretezem az eseményeket</em></strong><em>, aztán</em> <strong><em>leírom a környezetet</em></strong><em>. „Négyen érkeztek a Hegylábakhoz, a második nap délutánján. A dombok a Síkságból emelkednek ki, és az út kanyarogva halad közöttük. Fiatal, vékony fák pöttyözik a lejtőket, egyre nagyobbak és öregebbek, ahogy beljebb haladtok a dombok közé. Ahogy a nap lebukik, végre áldott árnyékba értek.” (A részletek egy része az évkönyvből van, a többit én találtam ki.)</em></p></blockquote>
+<hr>
+<blockquote><p><em>Most látjuk először a Hegylábakat a játékban, ezért</em> <strong><em>kérdéseket teszek fel</em></strong><em>, például: „Milyen feltűnő különbséget veszel észre e dombok és a Rengeteg között?”</em></p><p><em>Miután megválaszolják a kérdéseimet, ráközelítek, és keretezek egy valódi jelenetet,</em> <strong><em>részleteket és konkrétumokat adva</em></strong><em>. „Közvetlenül napnyugta után értek a táborba. A pihenőhelyen van, de még így is kidöntött rönkökből torlaszt emeltek. Mind egy gyér főzőtűz köré húzódnak. Mindenki csendes, feszült, a fejszéjét markolja. Kicsit megriadnak, amikor felbukkantok, de amikor rájönnek, hogy ti négyen vagytok, megkönnyebbült moraj fut végig: »Rhianna az«, »az Áldott«, »Hála Tornak«.” (Figyeld meg, hogy az érzésekre és a viselkedésre összpontosítok inkább, mint a taktikai elrendezésre, mert ezek a lényeges részletek. Közben</em> <strong><em>megjelenítem az NJK-imat</em></strong><em>.) „Hé, Rhianna, kit tettél meg vezetőnek?” (Újabb kérdések!)</em></p><p><em>„Hm. Gondolom, Eliost.”</em></p><p><em>Megteszem a puha húzásomat, és</em> <strong><em>felteszek egy provokatív kérdést</em></strong><em>. „Király. Azt mondja: »Csak ti négyen vagytok? Szóval akkor végeztünk? Hazamehetünk?« Mások reménykedve bólogatnak.</em> <strong><em>Mit csinálsz?</em></strong><em>”</em></p><p><em>Rhianna játékosként, a mesélőhöz fordulva megkérdezi: „Várj, álljunk meg. Itt van a csapatom?” Én</em> <strong><em>megválaszolom a kérdését</em></strong><em>, megmondom neki, hogy nincsenek itt, aztán újra megkérdezem, mit csinál.</em></p><p><em>Rhianna (azon a szigorú hangján) azt feleli: „Hol a csapatom, Elios?” Ideje hogy</em> <strong><em>eldöntsem a cselekvése eredményét</em></strong><em>. Szorongatja Eliost (Győzz Meg, talán?), de semmi oka ellenállni, így a húzás nem váltódik ki. Csak elmondom, mi történik, és Elios hangján válaszolok. „»Még kint vannak. Vadásznak.«”</em></p></blockquote>
+<p>(folytatás a következő oldalon)</p>
+<hr>
+<p>(folytatás az előző oldalról)</p>
+<blockquote><p><em>A helyzet világos, de elkélne egy kis lökés, így tovább beszélek Eliosként, és teszek egy újabb puha húzást (</em><strong><em>bajt jelzek</em></strong><em>). „»Tudjátok, már vissza kellett volna érniük.« Mit csinálsz?”</em></p><p><em>A JK-k megvitatják, hogy megkeressék-e a csapatot, de úgy döntenek, maradnak, és több információt gyűjtenek. Továbbra sem váltanak ki húzást (olyasmiket kérdeznek, amikre a favágók szívesen válaszolnak), így csak</em> <strong><em>megjelenítem az NJK-mat</em></strong><em>. Elios és Terrwyn elmondják, hogy mindketten látták a démont egy hete, mielőtt Andrast megtámadták. „Olyan, mint egy nagy kecske, emberi koponyával, három szemmel és egy hatalmas szarvval.”</em></p><p><em>Épp</em> <strong><em>lehetőséget akartam kínálni</em></strong><em>, de Vahid közbeugrik: „Hallottam már valaha ilyesmiről?” Ez kiváltja a Tudj Dolgokat, így dob +INT-tel, és 8-at kap.</em></p><p><em>Az előkészületeimből tudom, hogy ez a démonkecske valójában egy őrzőszellem, és hogy az igazi fenyegetés egy hagr, ezért az egyik felfedezői húzásomat használva</em> <strong><em>sejtetem, hogy több van itt, mint ami látszik</em></strong><em>. „Úgy hangzik, mint egy shaksa, egy szellem vagy démon, amiben az északiak hisznek. Afféle temetők őrzője? Vagy talán ez csak metafora, és valójában a holtak ura? Honnan tudod ezt?”</em></p><p><em>„Ó, az ő egyik vallási szövegükből, egy délvidéki könyvtárban olvastam. Egyelőre megtartom magamnak.”</em></p><p><em>Frissítem a helyzetet. „Már teljesen besötétedett, és a csapat még mindig nem jött vissza.” Fókuszálom a reflektorfényt, és</em> <strong><em>lehetőséget kínálok</em></strong><em>. „Hé, Caradoc, mialatt ők Eliosszal és Terrwynnel beszéltek, te pillantásokat vettél észre a többiek között. Mintha félnének. De talán titkolnak is valamit? Mit csinálsz?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>„Ó, figyelmesen nézem őket, és próbálom kitalálni, mi folyik itt. Fürkészés?” Sajnos 4-et dob. Ideje egy kemény húzásnak!</em></p><p><em>Én</em> <strong><em>bajt jelzek</em></strong><em>. „Biztos vagy benne, hogy Iwan és Cadi többet tudnak, mint amit mondanak, de mielőtt bármit tehetnél ezzel, egy borzalmas üvöltés és recsegés hallatszik fentről, a dombok közül, aztán halkabb kiáltások – mintha emberek harcolnának. Mindannyian halljátok. Mit csináltok?”</em></p><p><em>Kérdeznek, én pedig kicsit tisztázom a helyzetet (sötét van, a harc zaja elég közelinek tűnik, egyikük sem ismeri jól ezeket a dombokat). Aztán Rhianna azt mondja: „Menjünk. Fel a dombok közé.”</em></p><p><em>Ezzel véget ér a jelenet! Jön egy kis szabad játék, miközben a logisztikát beszéljük meg. Vahid és Blodwen visz egy-egy fáklyát, amit a főzőtűznél gyújtanak meg. „Elindultok?” – kérdezem. Elindulnak.</em></p><p><em>Kizoomolok, és általánosságban írom le a helyzetet: „Sötét van, a dombok meredekek és erdősek, és hang után tájékozódtok, a csata zaját követve.” Megteszem a puha húzásomat, és</em> <strong><em>elmondom nekik a feltételeket</em></strong><em>. „Ha gyorsan próbáltok odaérni, az kiváltja a Küzdjetek Egyként húzást – a veszély az, hogy eltévedtek, szétszóródtok vagy megsérültök útközben. Ha ráérősen, óvatosan haladtok, nem váltotok ki húzást – de valószínűleg nem értek oda időben, hogy segítsetek a harcban. Mit csináltok?”</em></p><p><em>Úgy döntenek, hogy Küzdenek Egyként. Lejátsszuk a húzást, mindenki jól dob, így átváltunk a következő jelenetre. „Kétségbeesett, félvak rohanás az erdőn át, de aztán kibukkantok egy tisztásra. A pislákoló fáklyafényben látjátok, hogy Eira és Lowri egy hatalmas, behemót vadállattal néz szembe, vagy 3,5 méter magas és feleakkora széles.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>Alig veszek levegőt, mielőtt megtenném a puha húzásomat (</em><strong><em>szorult helyzetbe hozok valakit</em></strong><em>): „Felkap egy kis fát bunkóként, és üvölt, épp mindkettejüket készül szétzúzni, ők pedig csak bámulják, tátott szájjal.” Eddig a csoporthoz beszéltem, fókuszálatlan reflektorfénnyel, így most szűkítek rajta. „Rhianna, Blodwen, ti értetek ide elsőként – mit csináltok?”</em></p><p><em>Rhianna játékosa nem habozik. „Lelövöm. Fejbe. Lődd Ki?” Igen, de mondom neki, hogy várjon, amíg kiderül, mit csinál Blodwen.</em></p><p><em>Blodwen kérdez. „Szóval ez olyan, mint egy ember? Csak nagyon nagy?” Aha. „És még nem vett észre minket?” Aha, egyelőre, épp csak odaértek. „Felismerem? Lehet, hogy az egyik favágónk, mutálódva vagy ilyesmi?”</em></p><p><em>„Hát – mondom neki –, kétlem, hogy egy futó pillantással meg tudnád mondani fáklyafénynél. Szánhatnál rá egy pillanatot, és Fürkészhetnél. Megteszed?”</em></p><p><em>„Nem. Kiabálhatnék és lengethetném a fáklyát, hogy eltereljem a figyelmét?” – kérdezi. Caradoc játékosa megjegyzi, hogy ez úgy hangzik, mint a Védekezz kiváltója („közbelépsz, hogy megvédj másokat”), és mindannyian egyetértünk. De abban is egyetértünk, hogy Rhianna még előtte leadja a lövését.</em></p><p><em>Rhianna 8-at dob a Lődd Kire, és azt választja, hogy elmozdul a tiszta lövésért. Csak 3 sebzést okoz, mínusz 1 páncél. Alig sérül meg, Rhianna pedig épp veszélynek tette ki magát.</em></p><p><em>„Szerintem be kell lépned a tisztásra, hogy leadhasd a lövést, nem? Vállon súrolod, és – jó hír – megakasztja a lendítést, vicsorog, és feléd fordul, békén hagyja Eirát és Lowrit. A rossz hír viszont, hogy rád szegezi a nagy, kidülledő, borzalmas szemét, és az elméd egyszerűen kiürül, a térded remegni kezd, még gondolkodni sem tudsz.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>Ezzel Rhianna húzása lezárult, így áthelyezem a reflektorfényt, és</em> <strong><em>lehetőséget kínálok</em></strong><em>. „Blodwen, még mindig Védekezni akarsz?”</em></p><p><em>Igen, és 9-et dob. Azonnal elkölti a Készenlétét, hogy minden figyelmet a védencéről (most Rhiannáról) magára vonjon. „Király, ez hogy néz ki?” – kérdezem.</em></p><p><em>„Rhianna elé lépek, lengetem a fáklyámat, és ordítok, hogy »JÁÁÁÁÁ!«”</em></p><p><em>Persze bejön. Elmondom, hogyan fordítja a hagr a szemét felé, eltöltve őt ugyanazzal a rettegéssel, amit Rhianna is érzett.</em></p><p><em>Áthelyezem a reflektorfényt Caradocra és Vahidra. Elmondom nekik, hogy épp most érkeztek, gyorsan összefoglalom a helyzetet, aztán</em> <strong><em>lehetőséget kínálok</em></strong><em>. „Most Blodwenre figyel, mit csináltok?”</em></p><p><em>Vahid Fürkészve méri fel a helyzetet. Úgy döntünk, ezt később játsszuk le, mert Caradoc előreront, pajzs fel, lándzsával alacsonyan döfve. Blodwenre figyelt, így egyetértünk, hogy Caradoc elég közel juthat, hogy támadjon, de az még nagyon is képes és hajlandó visszavágni. Ez kiváltja az Összecsapást, de Caradoc 4-et dob.</em></p><p><em>Kemény húzást kell tennem, és a kézenfekvő dolog az, hogy megsebzem. „Szerintem látja, hogy jössz, Caradoc, és meglendíti azt a faágat, mielőtt közel érnél. Fejbe kapod, és minden fehér lesz, cseng a füled, és mi a fene folyik itt egyáltalán?</em></p></blockquote>
+<p><em>Kapsz <button type="button" class="dice-roll" data-dice="d10+3" title="Kattints a d10+3 dobásához — Shift: előny · Ctrl: hátrány">d10+3</button> sebzést, és jelöld be:</em> kába<em>.</em></p>
+<blockquote><p><em>Rhianna, magadhoz térsz, és látod, ahogy fejbe vágja Caradocot, aki elrepül, és egy kupacban ér földet. Mit csinálsz?”</em></p><p><em>És innen megyünk tovább.</em></p></blockquote>
+<h2 id="your-principles">Az alapelveid</h2>
+<p>Ezek az alapelvek az irányelveid, a bevált gyakorlataid, a <em>Stonetop</em> mesélésének viselkedési szabályai. Törekedj a követésükre.</p>
+<p>Ezek a legbiztosabb módjai annak, hogy elérd a céljaidat.</p>
+<ul class="bullets"><li>Kövesd a szabályokat</li><li>Kezdd és fejezd be a fikcióval</li><li>A karaktereket szólítsd meg, ne a játékosokat</li><li>Kérdezz, és építs a válaszokra</li><li>Szurkolj a játékos karaktereknek</li><li>Öleld magadhoz a fantasztikusat és a hétköznapit</li><li>Aknázd ki a világleírást</li><li>Tartsd tiszteletben az előkészületeidet</li><li>Lehelj életet a karaktereidbe</li><li>Gondolj a színen kívülre is</li><li>Vidd haza</li><li>Hagyd lélegezni a dolgokat</li><li>Hagyd égni a dolgokat</li></ul>
+<p>Az alapelveid követése nem mindig könnyű.</p>
+<p>Néha nem világos, hogyan néz ki egy adott alapelv az adott pillanatban. Néha az alapelvek ütköznek egymással. A munkád nagy része, hogy értelmezd ezeket az alapelveket, és úgy alkalmazd őket, ahogy a legjobbnak látod. Gyakran ösztönösen teszed majd, és hogy pontosan hogyan követed az alapelveidet, az a saját mesélői stílusod nagy része.</p>
+<h3 id="follow-the-rules">Kövesd a szabályokat</h3>
+<p>Sok szabály van, különösen játékoshúzások formájában: alaphúzások és követői húzások, különleges húzások, felfedezői húzások és települési húzások. Minden karakterfüzetnek vannak húzásai. A betétlapoknak is. Az arkánumoknak is. A veszélyeknek, a felfedezéseknek, a fenyegetéseknek és a helyszíneknek is lehetnek a játékosoknak szóló húzásai.</p>
+<p>Remélhetőleg ez magától értetődik, de: <strong>amikor egy húzás kiváltódik, kövesd a húzás menetét, és mondd el, amit a húzás</strong></p>
+<p><strong>megkövetel tőled</strong>. A szabályok azért vannak, hogy a beszélgetést és a fikciót bizonyos irányokba tereljék, és hogy tisztázzák, mi történik a bizonytalanság pillanataiban.</p>
+<p>Add meg a játékosoknak a húzásaik és a dobásaik teljes hasznát. Persze, tedd próbára, hogy ki tudják-e váltani ezeket a húzásokat, és mérsékeld az eredményeket a megteremtett fikció és az előkészületeid alapján. De ne csalj egy húzás eredményén, mert szerinted a dolgoknak egy bizonyos irányba kellene menniük, vagy mert attól tartasz, hogy „túl könnyű” vagy „túl nehéz” lesz. Az nem a te dolgod. Te azért <strong>játszol, hogy kiderüljön, mi történik</strong>, nem?</p>
+<p>Nem hivatkozhatsz egy játékoshúzásra, hacsak a kiváltója ténylegesen nem teljesül. <em>Nem</em> mondhatod azt, hogy „A crinwin rád támad, dobj +DEX-szel, és Dacolj a Veszéllyel!” Az istenekre, dehogy. Azt mondod, hogy a crinwin rájuk ugrik, és megkérdezed: „Mit csinálsz?” Ha olyasmit tesznek, ami kivált egy húzást, <em>akkor azt</em> teszed.</p>
+<p>Nem baj, ha a többi alapelved szolgálatában a szabályok szellemében javasolsz valamit, ahelyett hogy a betűjüket követnéd, de légy nyílt ezzel kapcsolatban, és kérj beleegyezést. „7-9-et dobtál az Összecsapásra? Dobd a sebzésed. 9!? Hűha. Szóval tudom, hogy az áll benne, hogy kiteszed magad az ellenfeled támadásának, de arra gondolok, hogy a »támadás« ebben az esetben az, hogy a fejszéd beszorul a koponyájába, és eltart egy ideig, mire kiszabadítod. Így jó neked?”</p>
+<h3 id="begin-and-end-with-the-fiction">Kezdd és fejezd be a fikcióval</h3>
+<p>Ne feledd: „a fikció” az a közös, elképzelt tér, amelyet te és a játékosok a beszélgetés során megteremtetek, valamint a különböző karakterek cselekedetei és egymáshoz viszonyított helyzete ebben a képzeletbeli térben.</p>
+<p>Amikor szabályokra kerül sor – amikor egy játékos kivált egy húzást, sebzést dob, elkölt egy erőforrást vagy bármi ilyesmi –, alapozd meg a szabályokat a fikcióban. Ha nem tudod elképzelni, mit csinál ténylegesen a karakter, vagy hogyan csinálja, kérdezz, és tisztázd a fikciót, mielőtt a kockákhoz nyúlnál. Miután a kockák gurultak, és a szabályok megmondták, mi történik, írd le, hogyan néz ki ez a fikcióban (vagy kérd meg rá a játékost). <strong>Fikció, aztán szabályok, aztán vissza a fikcióhoz.</strong> Mindig.</p>
+<p>Ugyanígy, amikor mesélői húzást teszel, olyan húzást tégy, ami a megteremtett fikcióból fakad. Ne mondd ki a húzás nevét – tartsd meg magadnak –, hanem írd le, hogyan nyilvánul meg a fikcióban. Mutasd, ne mondd.</p>
+<p>A fikcióval kezdeni és befejezni kulcsfontosságú ahhoz, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>. Ha spórolsz a fikcióval, és csak a mechanikára összpontosítasz, azt veszed észre, hogy a világod színtelen, unalmas és vérszegény.</p>
+<hr>
+<blockquote><p><strong>Rossz:</strong> <em>„Megtámadod a hagrt? Király, dobj Összecsapásra. 10? Kitérsz a támadása elől, vagy extra sebzést okozol? Oké, dobd a sebzésed +<button type="button" class="dice-roll" data-dice="1d6" title="Kattints a 1d6 dobásához — Shift: előny · Ctrl: hátrány">1d6</button>. 7 sebzés? Még talpon van, és visszaüt <button type="button" class="dice-roll" data-dice="1d10+3" title="Kattints a 1d10+3 dobásához — Shift: előny · Ctrl: hátrány">1d10+3</button></em> taszító<em> sebzéssel, és ledönt a lábadról. Megint jön feléd, mit csinálsz?”</em></p><p><strong>Jó:</strong> <em>„Megtámadod a hagrt? Király, hogy néz ki? Felfelé döfsz a hasába? Persze, dobj Összecsapásra. 10? Kitérsz a támadása elől, vagy extra sebzést okozol? Oké, dobd a sebzésed +<button type="button" class="dice-roll" data-dice="1d6" title="Kattints a 1d6 dobásához — Shift: előny · Ctrl: hátrány">1d6</button>. 7 sebzés? Szóval ahogy mondtad, belé döfsz, a hasába, és a hagr kétrét görnyed, fájdalmasan üvölt, de mielőtt eltávolodhatnál, kiegyenesedik, és kézfejjel arcon csap. Kapsz <button type="button" class="dice-roll" data-dice="d10+3" title="Kattints a d10+3 dobásához — Shift: előny · Ctrl: hátrány">d10+3</button> sebzést, ahogy elrepülsz, és egy kupacban érsz földet, forog a fejed. Hallod, ahogy feléd csörtet, fájdalmasan és dühösen hörögve. Mit csinálsz?”</em></p></blockquote>
+<hr>
+<h3 id="address-the-characters-not-the-players">A karaktereket szólítsd meg, ne a játékosokat</h3>
+<p>A <em>karaktereket</em> kérdezd meg, mit csinálnak. A <em>karaktereknek</em> mondd el, mit látnak és hallanak. A <em>karaktereknek</em> mondd el, mi nyilvánvaló számukra. Ne mondd: „Brian, mit csinál Vahid, hogy ébren maradjon?” Mondd inkább: „Vahid, mit csinálsz, hogy ébren maradj?” Ne mondd Jamie-nek: „Rhianna látja, hogy hazudik.” Mondd (Iwan nyafogós hangján): „Szó sincs róla, Rhianna, tudod, hogy sosem tennék ilyet”, aztán (a saját hangodon): „De elfordítja a tekintetét, és egyszerűen látod, hogy kamuzik.”</p>
+<p>Ha így beszélsz, a játék a fikción marad. Arra ösztönzöd a játékosokat, hogy a karaktereikként gondolkodjanak, beszéljenek és reagáljanak. A fikciót úgy teremted meg, ahogy a karakterek érzékelik, mert őket szólítod meg.</p>
+<h3 id="ask-questions-and-build-on-the-answers">Kérdezz, és építs a válaszokra</h3>
+<p>Kérdezz folyamatosan, mindenhol.</p>
+<p>Kérdezz, <strong>hogy megállapítsd a szándékot</strong>. „Mielőtt reggel elindultok, szeretne még valaki valamit csinálni?”</p>
+<p>Kérdezz, <strong>hogy tisztázd a szándékot</strong>, és egy lapon legyél a játékosokkal.</p>
+<p>„Igen, gondolom, kikerülheted. De mit remélsz ezzel elérni?”</p>
+<p>Kérdezz, <strong>hogy tisztázd a fikciót</strong>. „Persze, Fürkészhetsz. Hogy néz ki ez?”</p>
+<p>Kérdezd meg a karaktereket, <strong>mit gondolnak vagy éreznek</strong>. „Caradoc, ott állsz, vérzel, ahol Wynfor megszúrt, és az a tekintet a szemében – alig ismersz rá. Mi jár a fejedben most?”</p>
+<p>Kérdezd a karaktereket <strong>a múltjukról vagy a mindennapi életükről</strong>. „Rhianna, ki tanított meg vadászni és nyomot olvasni?” „Blodwen, az anyáddal élsz, ugye? Van más testvéred?</p>
+<p>Milyen belülről a ház?”</p>
+<p>Kérdezd a karaktereket <strong>olyan dolgokról, amiket tudnak</strong>. „Rhianna, te már találkoztál Brennannel.</p>
+<p>Mi a legjellegzetesebb vonása?”</p>
+<p>Kérdezd a karaktereket <strong>arról, amit hallottak, vagy amit hisznek</strong>, ahol a válaszuk nem feltétlenül teljesen igaz. „Blodwen, milyen történeteket hallottál a Csendes Ikrekről, és arról, hogyan kezdtek kísérteni a Patak (Stream) mentén? Szerinted mi az igazság?”</p>
+<p>Tegyél fel olyan kérdéseket, <strong>amelyek részleteket állítanak, miközben ötletet kérnek</strong>. „Vahid, mit vettél észre, ami minden eltűnt gyerekben közös?” „Rhianna, milyen kis szertartást végeznek mindig az emberek, amikor átkelnek a Patakon?”</p>
+<p>Kérd meg a karaktereket, <strong>hogy fessék le neked a jelenetet</strong>, egy adott témához kérve tőlük részleteket.</p>
+<p>„Mi árulja el itt mindegyikőtöknek, hogy ezt a helyet megérintették a Fae-k?” „Mit láttok itt, amit már ezerszer láttatok?” „Mi a legfeltűnőbb a Síkságon kora tavasszal?”</p>
+<p>Tegyél fel olyan kérdéseket, <strong>amelyek a fentiek közül többet is megtesznek.</strong> „Caradoc, amikor visszaértetek a faluba, kinek a reakciója lepett meg a legjobban? Hogyan reagált, és mit éreztél ezzel kapcsolatban?”</p>
+<p>Építsd vissza a válaszaikat a fikcióba, azonnal vagy később. Ne söpörd le a válaszaikat, hacsak nem egy ellentmondásra akarsz rámutatni. Tegyél fel további kérdéseket.</p>
+<p>Gondold végig, mit vonnak maguk után a válaszaik, és vonj le belőlük következtetéseket. A válaszaik meglephetnek – ez a móka része –, de folytasd úgy, mintha az a válasz mindig is a megteremtett világ igaz és nyilvánvaló része lett volna.</p>
+<p>Ha arra kéred a játékosaidat, hogy járuljanak hozzá a fikcióhoz, az segít abban, hogy <strong>játssz, hogy kiderüljön, mi történik</strong>. A játékosaid mindig olyan részletekkel állnak elő, amikre te nem gondoltál volna, és ettől a közösen teremtett világ egy kicsit meglepőbb lesz. Ha a játékosok által megteremtett részletekre építesz, az segít abban, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>. Az emberek gyakran jobban kötődnek azokhoz a dolgokhoz, amelyek megteremtésében részt vettek, és amikor előhozol egy karaktert vagy részletet, amit négy üléssel korábban vezettek be, és annak jelentősége van, az igazán életre kelti a világot.</p>
+<h3 id="be-a-fan-of-the-player-characters">Szurkolj a játékos karaktereknek</h3>
+<p>A JK-k a történet főszereplői.</p>
+<p>Tartsd rajtuk a játék fókuszát. Drukkolj nekik. Ünnepeld a győzelmeiket. Gyászold a veszteségeiket. Engedd meg magadnak, hogy kíváncsi legyél velük kapcsolatban dolgokra, aztán találd meg a módját, hogy a játék során választ kapj. Törődj velük. Légy a rajongójuk.</p>
+<p>Ha szurkolsz a játékos karaktereknek, az nem jelenti azt, hogy hagyod őket azt tenni, amit csak akarnak.</p>
+<p>Te vagy a megpróbáltatásaik szerzője. <strong>Kalandokkal kell megszakítanod az életüket</strong>. Fenyegesd őket. Sebezd meg őket. Vedd célba azt, ami fontos nekik. Adj nekik mindenféle nehéz döntést.</p>
+<p>De adj nekik lehetőségeket is: hogy a pillanatban ragyoghassanak, és hogy hosszú távon jobbá tegyék a dolgokat. Hadd élvezzék azt, amiért megdolgoztak.</p>
+<p>A <em>Stonetop</em> nagy cselekvési szabadságot ad a játékos karaktereknek. Tartsd ezt tiszteletben. Ne rövidítsd meg őket a húzásaikban vagy a dobásaikban. Nézd meg, mit kezdenek a hatalmukkal, a rangjukkal és a hozzáértésükkel. <strong>Játssz, hogy kiderüljön, mi történik.</strong></p>
+<h2 id="the-line">A Határ</h2>
+<p>A <em>Stonetopban</em> és a hozzá hasonló játékokban van egy határ aközött, amiért a játékosok felelnek, és aközött, amiért te, a mesélő. A játékosok felelnek a karaktereikért: mit tesznek és mondanak; mit éreznek és gondolnak; hogyan élnek; mik a múltbeli tapasztalataik. Mesélőként te felelsz a világért: a környezetért, az NJK-kért, a veszélyekért és a felfedezésekért.</p>
+<p>Az itt leírt kérdések némelyike elmossa a Határt. Amikor megkérdezed Vahidot, mi a közös az összes eltűnt gyerekben, valójában arra kéred Vahid játékosát, hogy olyasmit tegyen, ami általában a mesélő felelőssége:</p>
+<p>hogy részleteket találjon ki a világról.</p>
+<p>A trükk az, hogy <strong>a karaktereket szólítsd meg, ne a játékosokat</strong>. Ne kérd meg a játékost, hogy találja ki, mit talál a következő teremben, hogyan reagál egy NJK, vagy hogyan sebzi meg a csapda. A <em>karaktert</em> kérdezd valamiről, amit tud, amit hallott, amit átélt. Így a kérés visszakerül a Határ az ő oldalára. Ez egy gondolati bűvésztrükk, de hatásos.</p>
+<p>Még így is kényelmetlen vagy kiábrándító lehet egyes játékosoknak a Határ elmosása. Vannak játékosok, akiknek teljesen rendben van, ha részleteket találnak ki a világról, mások viszont úgy érzik, hogy ez elveszi a beleélés élményét, vagy üressé és kitalálttá teszi a világot. Igazítsd a kérdéseidet, és azt, ahogyan felteszed őket, a saját és a játékosaid ízléséhez.</p>
+<h3 id="embrace-the-fantastic-and-the-mundane">Öleld magadhoz a fantasztikusat és a hétköznapit</h3>
+<p>A világ tele van fantasztikus elemekkel:</p>
+<p>szellemekkel, szörnyekkel, szeszélyes Fae-kkel, az Alkotók ősi műveivel, a Lenti Dolgok sötétségével. Domborítsd ki ezeket az elemeket. Használd őket arra, hogy rejtélyessé tedd a világot.</p>
+<p>Ugyanakkor alapozd meg a játékot emberi gondokban: az évszakok változásában, a közelgő aratásban, a barátokban és a szomszédokban.</p>
+<p>Fenyegesd a JK-kat valós veszélyekkel:</p>
+<p>zord időjárással, vadállatokkal, éhezéssel, kihűléssel. Kérdezz rá, milyen élelmet hoztak, vagy hogyan jutottak ahhoz a köpenyhez. Tedd a világot hétköznapi részletekben gazdaggá.</p>
+<p><strong>Állítsd szembe egymással a fantasztikusat és a hétköznapit</strong>. Ha egy kaland egy természetfeletti fenyegetés vagy lehetőség körül forog, mindenképp tegyél bele teljesen hétköznapi kihívásokat, veszélyeket és felfedezéseket. Ha egy ülés többnyire hétköznapi gondokról szól (például egy kereskedelmi útról Lápszélre (Marshedge) vagy egy őstulokvadászatról), szórj bele néhány fantasztikus elemet. A kettő kölcsönhatása még gazdagabbá és rejtélyesebbé teszi a világot.</p>
+<h3 id="exploit-the-setting-guide">Aknázd ki a világleírást</h3>
+<p>A <em>Stonetop</em> rengeteg kidolgozott háttérrel érkezik, de sok üres foltot hagy, amit te és a játékosaid töltötök ki játék közben. A háttér ugródeszkának szánt a kreativitásodhoz. Segít beállítani a hangulatot, és közös kiindulópontot ad mindannyiótoknak.</p>
+<p>Részleteket ad, amikre építhetsz. Sejteti a válaszokat, de nem mindig adja meg őket. Használd a kidolgozott hátteret arra, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>.</p>
+<p>Használd a világleírást ihletforrásként, de ne érezd magad lekötelezettnek neki. Ha a játékosaid olyasmivel állnak elő, ami ellentmond a kidolgozott háttérnek, ne söpörd le az ötletüket csak azért, mert a könyv mást mond. A könyv nem tekintély, hanem erőforrás, amit kiaknázhatsz.</p>
+<p>Ezzel együtt: <strong>gondold meg, mit változtatsz meg vagy vetsz el</strong>. Biztonságosabb konkrét részleteket megváltoztatni, mint átfogó témákat. Ha a Róka azt mondja, hogy Brennan valaha bandát vezetett Lápszélen, és ölve tört a hatalomra (szemben a világleírás történetével, miszerint bandita volt, akit a tanács bírónak fogadott fel), az nem nagy ügy. De ha te és a Kereső úgy döntötök, hogy az Alkotók gnómméretű ezermesterek voltak, nem pedig kifürkészhetetlen titánok, akkor mindenféle háttérrészletet újra kell gondolnod (az utak méretét, a Romtorony léptékét, az egyes Alkotó-típusokhoz kapcsolódó témákat és így tovább).</p>
+<h3 id="respect-your-prep">Tartsd tiszteletben az előkészületeidet</h3>
+<p>Az ülések között előkészületeket teszel (azaz „előkészítesz”). Megírsz fenyegetéseket és NJK-kat. Veszélyeket és felfedezéseket alkotsz vagy választasz. Kitalálsz összecsapásokat, és felfedezendő helyszíneket tervezel.</p>
+<p>Az előkészítés egy része lehetőségekről szól: dolgokról, amiket a JK-k <em>talán</em> felfedeznek, veszélyekről, amelyekkel <em>szembekerülhetnek</em>, gondokról, amelyek <em>talán</em> felmerülnek.</p>
+<p>Az ilyen előkészület kvantumállapotban létezik; amíg ténylegesen nem használod ezeket az ötleteket, és nem vezeted be őket a fikcióba, nem igazak. Csak ötletek – ötletek, amelyek segítenek abban, hogy <strong>kalandokkal szakítsd meg a karakterek életét</strong>.</p>
+<p><strong>Az előkészítésed nagy része viszont döntésekből áll</strong> – valódi, kötelező érvényű döntésekből arról, milyen a világ <em>valójában</em>. Ide tartoznak olyan dolgok, mint egy szörny ösztöne, húzásai és HP-ja, vagy hogy egy helyszín hogyan lett olyan, amilyen, vagy hogy ki ölte meg Maire özvegyet. Ide tartozhatnak döntések arról, mi <em>fog</em> történni, ha a JK-k nem avatkoznak közbe, vagy hogyan reagálna egy NJK erre vagy arra. Az ilyen előkészület már a fikció része, még ha még nem is fedted fel a játékosok előtt.</p>
+<p>Ezeket a döntéseket gondosan és megfontoltan hozd meg. Szánj rá időt. Kövesd a következő fejezetek irányelveit.</p>
+<p>Aztán játék közben <strong>tartsd tiszteletben az előkészületeidet</strong>. Kezeld őket a fikció igazságaként. Ezeket a döntéseket szem előtt tartva írd le a világot, jelenítsd meg a karaktereidet, és tedd meg a mesélői húzásaidat. Ha jól készültél, azt tapasztalod, hogy ha ragaszkodsz az előkészületeidhez, az nemcsak abban segít, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>, hanem (paradox módon) abban is, hogy <strong>játssz, hogy kiderüljön, mi történik</strong>.</p>
+<p>Az <strong>előkészítésről</strong> bővebben lásd <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">előkészítést</a>.</p>
+<h3 id="give-your-characters-life">Lehelj életet a karaktereidbe</h3>
+<p>Adj nevet az NJK-idnak. Adj nekik jól elkülönülő személyiséget. Vágyakat, szükségleteket és furcsaságokat.</p>
+<p>Véleményeket és meggyőződéseket. Ha menni fog, jelenítsd meg őket jellegzetes hanggal vagy modorral. Keltsd életre őket, és játszd őket úgy, mintha valódi emberek lennének.</p>
+<p>Írd le az NJK-idat emlékezetes vonásokkal. A játékosoknak gyakran nehezen marad meg, hogy a kovácsot Taliesennek hívják, de arra emlékezni fognak, hogy a kovács egy nagydarab, hangos fickó, fehér üstökkel.</p>
+<p>Ne hagyd, hogy a JK-k átgázoljanak az NJK-idon.</p>
+<p><strong>Szurkolj a játékos karaktereknek</strong>, persze, de ez nem jelenti azt, hogy az NJK-idnak egyszerűen azt kell tenniük, amit a JK-k akarnak. Ha úgy érzed, hogy a JK-k nyomást gyakorolnak az NJK-idra, vagy olyasmire csábítják őket, amit nem akarnának megtenni, nos, erre való a Győzz Meg húzás.</p>
+<p>A nem emberi karaktereidbe is lehelj életet.</p>
+<p>Írd le persze, hogyan néznek ki, de azt is, hogyan mozognak, milyen a hangjuk és a szaguk, hogyan viselkednek.</p>
+<p>A fenevadaknak, a szellemeknek, sőt a teljesen idegen Lenti Dolgoknak is van személyiségük. Alakíts ki képet az indítékaikról, és arról, hogyan viselkednek nyomás alatt. A fenevadaknál gondolj az életmódjukra. Az élőholtaknál: mi tartja vissza őket attól, hogy átlépjenek az Utolsó Ajtón?</p>
+<p>A mágikus lényeknél gondolj a furcsa szabályokra, amelyeket követnek. Mindegyiknél: hozd ezeket a részleteket a színre, vagy legalább sejtesd őket. Ez sokat segít abban, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>.</p>
+<h3 id="think-offscreen-too">Gondolj a színen kívülre is</h3>
+<p>Amikor megteremted a helyzetet, kérdésekre válaszolsz vagy húzásokat teszel, gondolj a színen kívüli eseményekre. Mit csinálnak az NJK-id és a szörnyeid? Mit tettek? Milyen nyomokat hagytak? Mivel foglalatoskodtak, ami nyilvánvalóvá válik? Mit csinálnak most, ami később fontossá válhat? Sződ bele a válaszokat abba, amit mondasz.</p>
+<p>Gondolj arra is, mit csinálnak a JK-k, és ez hogyan alakítaná a színen kívüli eseményeket. Ha nagy zajt csapnak, miközben átvágnak a Rengetegen, ki hallja meg, hogy jönnek, és hogyan reagál? Ha szövetséget kötnek Gordin Tárnájával (Gordin&#x27;s Delve), hogyan reagál a Dombok Népe (Hillfolk) – akiknek pikkjük van a Tárnalakókra?</p>
+<p>Ha azt mondták a falunak, hogy öt napig lesznek távol, és két hétig maradnak el, ki gondolja, hogy meghaltak? Ki lép elő, és próbálja átvenni az irányítást? Ki használja ki az alkalmat, hogy azt tegye, amit akar?</p>
+<p>Ha a színen kívülre is gondolsz, az segít abban, hogy <strong>gazdag és rejtélyes világot jeleníts meg</strong>, mert a világ nagyobbnak érződik majd a JK-knál. Segít abban, hogy <strong>kalandokkal szakítsd meg a karakterek életét</strong>, mert a színen kívüli fenyegetések és lehetőségek gyorsan olyasmivé válnak, amivel a JK-knak foglalkozniuk kell. És segít abban, hogy <strong>játssz, hogy kiderüljön, mi történik</strong>, mert tágabb léptékben kezdesz gondolkodni a következményekről, okokról és okozatokról.</p>
+<h3 id="bring-it-home">Vidd haza</h3>
+<p>Tedd magát Stonetop faluját a játékod alapjává, a JK-k kalandjainak kezdetévé és végévé. Fenyegesd a falut, a megélhetését vagy a lakóit. Adj nekik esélyt, hogy haladjanak a fejlesztések felé, vagy hogy végre leszámoljanak a régóta húzódó fenyegetésekkel.</p>
+<p>Amikor a JK-k kalandra indulnak, mutasd meg, hogyan reagálnak a szomszédaik. Ki jön ki elbúcsúztatni őket? Ki van betegre aggódva, hogy nem térnek vissza? Ki zsörtölődik, hogy ez ostobaság? Ki ad nekik valamit útravalóul, mert veszélyes egyedül menni?</p>
+<p>Kalandok közben tegyél fel olyan kérdéseket, amelyek visszakötnek a JK-k stonetopi életéhez. Ki tanított meg vadászni? Ki jött ide veled annak idején, és mi lett vele? Melyik öregnek volt egyszer dolga ezekkel a lényekkel?</p>
+<p>Kinek az életét változtatná meg leginkább ez a kincs? Kinek a mosolyára gondolsz idekint, a csillagok alatt?</p>
+<p>Amikor a JK-k hazatérnek, gondold végig, mi történt, amíg távol voltak, és írd le, hogyan fogadják őket a falubeliek. Ki a legboldogabb? Ki neheztel a visszatérésük miatt? Ki hibáztatja őket, amiért egyáltalán felkavarták ezt az egész bajt, nem törődve azzal, hogy rendbe hozták a dolgokat?</p>
+<p>A kalandok között kérdezd a karaktereket a mindennapi életükről és kapcsolataikról. Mutasd meg, hogyan változik a falu a bajai és a JK-k által megragadott lehetőségek nyomán. Írd le, ahogy az NJK-k öregszenek, gyerekeik születnek, többre vágynak, vagy kevesebbel is beérik. Mutasd meg, hogyan hatottak rájuk a JK-k kalandjai.</p>
+<p>Vidd haza.</p>
+<h3 id="let-things-breathe">Hagyd lélegezni a dolgokat</h3>
+<p>Hagyd, hogy hosszabb idők teljenek el a kalandok, vagy akár az egyes húzások között. Nagy a világ odakint, és a JK-knak hétköznapi, napi teendőik vannak. Állj ellen a kísértésnek, hogy napról napra, óráról órára kövesd a JK-k életét. Hagyd, hogy hetek vagy hónapok teljenek el egyetlen mondattal: „A következő három hétben mindannyiótokat lefoglal az aratás, aztán...”</p>
+<p>Amikor egy fenyegetés kirajzolódik, nem kell azonnalinak és vészesnek lennie. Megmutathatod, hogy mozgolódik, de tarthatod távol és messze. Kérdezd meg a JK-kat, mit tesznek ellene, de a válaszukat napok vagy hetek alatt is lejátszhatod.</p>
+<p>Csak akkor közelíts rá és keretezz jelenetet, amikor a fikció azonnali, konkrét cselekvést kíván; amint ez véget ért, zoomolj vissza. Hagyd a fenyegetést lassú tűzön főni, amíg ki nem fut, és olyasmivé nem válik, amivel a JK-knak foglalkozniuk kell.</p>
+<h3 id="let-things-burn">Hagyd égni a dolgokat</h3>
+<p>Bármennyire is tetszenek a terveid, bármennyire is megszeretsz néhány NJK-t, bármennyire is kötődnek majd hozzájuk a játékosok:</p>
+<p>senkit és semmit ne védj.</p>
+<p>Sok mesélőnek megvan az a hajlama, egy nagyon is természetes hajlama, hogy dédelgesse a JK-kat, és óvja azokat az NJK-kat, akik fontosak neki. Hogy megőrizze a status quót. Hogy megkímélje a gonoszait egy jövőbeli összecsapásra, még akkor is, amikor a JK-k húzásai, dobásai és merész tettei jogosan a föld alá juttatnák őket.</p>
+<p>Ez a hajlam? Égesd ki. Aztán hagyj minden mást is égni. Nem azért játszol, hogy megóvd a kedvenceidet. Azért <strong>játszol, hogy kiderüljön, mi történik</strong>.</p>
+<p>Ez nem azt jelenti, hogy mindent el kell követned, hogy elpusztítsd, amit a karakterek szeretnek. Azt viszont igen, hogy fenyegesd ezeket a dolgokat, és ha a karaktereknek nem sikerül megmenteniük őket, vidd végig. Fogadd el a kemény, visszavonhatatlan következményeket. Játssz a tűzzel. Hagyd égni a dolgokat.</p>
+<h2 id="other-things-to-do">Egyéb teendők</h2>
+<p><strong>Jegyzetelj.</strong> Rengeteg részletet fogsz kitalálni, és nehéz lehet mindet számon tartani. Ki kell találnod, milyen eszköz és milyen részletesség válik be neked, de ezeket érdemes lehet leírnod:</p>
+<ul class="bullets"><li>NJK-nevek (és vonások, fontos kapcsolatok)</li><li>A te és a játékosok által megteremtett történelmi események (és mikor/hol/ki)</li><li>Érdekes részletek, amiket nem akarsz elfelejteni</li><li>Az egyes ülések eseményeinek összefoglalója. Írhatsz hivatalos összefoglalókat az ülésekről, hogy megoszd a játékosaiddal, de ezek a jegyzetek főleg neked szólnak. Csak annyit írj, amennyit hasznosnak találsz.</li></ul>
+<p><strong>Rajzolj térképeket.</strong> Sok térképet. Nem csak az előkészítés részeként, hanem kellékként vagy viszonyítási pontként játék közben is. Amikor kitör egy harc, és sok minden történik, firkantsd fel gyorsan a terepet egy táblára vagy egy papírlapra (vagy dobj be néhány figurát, ha van). Amikor egy romot fedeznek fel, rajzolj egy vázlatos térképet (vagy biztasd őket, hogy ők rajzoljanak), hogy segítsen megteremteni a fizikai teret. Amikor egy új településre mennek, adj nekik egy térképet a különböző negyedekről és városrészekről.</p>
+<p>Egészítsd ki a meglévő térképeket is. Tedd fel a JK-k otthonait a település térképére. Add hozzá a játék közben felmerülő érdekes helyeket. Rajzold be az útjukat a Környék vagy a Világ Vége (World&#x27;s End) térképére.</p>
+<p><strong>Hagyj üres foltokat</strong> a térképeiden és az előkészületeidben, hogy játék közben vagy később töltsétek ki őket. Hagyj magadnak olyan dolgokat, amiken eltűnődhetsz. Ha eszedbe jut egy kérdés, nem kell most rögtön megválaszolnod (vagy megkérned a játékosokat, hogy válaszolják meg). Hagyd üresen, talán jegyezd fel, és térj vissza rá egy későbbi ülésen.</p>
+<p><strong>Tartsd mozgásban a dolgokat.</strong> Ne hagyd, hogy a játék lendülete elhaljon. Keretezd a jeleneteket határozottan, és közelíts rá vagy távolodj el aszerint, mennyire érdekes a dolog (neked és a játékosoknak).</p>
+<p>Ha semmi sem történik, vagy tégy egy mesélői húzást, vagy ugorj előre az időben oda, ahol valami érdekes <em>történik</em>.</p>
+<p><strong>Vonj be mindenkit.</strong> Mozgasd körbe a reflektorfényt az asztalnál. Gondoskodj róla, hogy mindenki kapjon jó sok játékidőt. Légy egyértelmű abban, kihez beszélsz, és ne félj megvárakoztatni a közbevágó játékosokat.</p>
+<p>„Blodwen, látod… Brian, várj, Hobbes-szal beszélek.”</p>
+<p><strong>Tartsatok szüneteket.</strong> Így mindenki átgondolhatja, mi történt, és mit akar tenni legközelebb. Így ti – a valós emberek, akik együtt töltitek az időt – jobban megismerhetitek egymást, megbeszélhetitek a valós élet dolgait, vagy egyszerűen csak hülyéskedhettek. Ezek is fontosak.</p>
+<p><strong>Vond be a játékosaidat a világépítésbe</strong>, és gondoskodj róla, hogy megértsék: a világ ugyanúgy az övék, mint a tiéd. Ha kérdeznek valamit a világról, és nincs kéznél a válasz, fordítsd vissza nekik. „Jó kérdés. Blodwen, mit IS csinálnak Stonetop lakói a halottaikkal?”</p>
+<p><strong>Néha hárítsd el magadtól a döntést.</strong> Tedd a kimenetelt a karakter kezébe („Csupa vér, de nem halt meg. Még megmentheted. Megteszed?”). Beszéld meg a kimenetelt a játékosokkal („Mit gondoltok? Andras él vagy meghalt?”). Hagyd, hogy a kockák döntsenek („Tudod mit, dobj A Halál Kapujában húzásra érte.”).</p>
+<p>Hagyd, hogy az NJK-id döntsenek, az ösztöneik, a vágyaik és szükségleteik, a jegyzeteid és a belső logikájukról alkotott saját érzéked alapján.</p>
+<p>(„Nem, ő nem az a fajta, aki szellemként visszatér, úgyhogy… igen, meghalt.”)</p>
+<h2 id="the-die-of-fate">A Sors Kockája</h2>
+<p>A döntés elhárításának egyik módja, hogy hagyod a kockákat dönteni. Ez gyakran azt jelenti, hogy egy játékos húzásának eredménye határozza meg, mi történik. De használhatod a Sors Kockáját is.</p>
+<p>A Sors Kockája csak egy kockadobás, általában <button type="button" class="dice-roll" data-dice="d6" title="Kattints a d6 dobásához — Shift: előny · Ctrl: hátrány">d6</button>, ahol az alacsonyabb eredmény rosszat, a magasabb jót jelent. Dobasd a Sors Kockáját egy játékossal, amikor nincs határozott véleményed arról, minek kellene történnie vagy hogyan kellene alakulnia valaminek, és/vagy amikor az egész csak szerencse kérdése. Milyen ma az idő? Mibe futnak bele útközben? Hány használat készletet tudnak zsákmányolni? Általában az 1-2 rossz, a 3-4 semleges vagy vegyes, az 5-6 pedig elég jó.</p>
+<p>Néha előre elkészítesz egy eredménylistát a Sors Kockájához. Például: mi történik, amikor tábort vernek?</p>
+<div class="roll-table bare-numbered"><table><tbody>
+<tr><th scope="row">1</th><td>A crinwinek megtámadják a tábort!</td></tr>
+<tr><th scope="row">2-3</th><td>A crinwinek megpróbálnak kicsalogatni valakit a táborból.</td></tr>
+<tr><th scope="row">4-5</th><td>Ott vannak kint, csak figyelnek titeket.</td></tr>
+<tr><th scope="row">6</th><td>Elkerülitek a figyelmüket.</td></tr>
+</tbody></table></div>
+<p>Ne érezd úgy, hogy a <button type="button" class="dice-roll" data-dice="d6" title="Kattints a d6 dobásához — Shift: előny · Ctrl: hátrány">d6</button>-ra vagy korlátozva, különösen ha előre összeállítottál egy eredménytáblázatot. Ha 12 érdekes kimeneteled van, dobass velük <button type="button" class="dice-roll" data-dice="d12" title="Kattints a d12 dobásához — Shift: előny · Ctrl: hátrány">d12</button>-vel.</p>
+<h2 id="what-not-to-do">Amit ne tégy</h2>
+<p><strong>Ne tervezz cselekményszálat vagy történetet.</strong> Ne tervezd meg a JK-k karakterívét. Ne tervezz drámai pillanatokat, amikor a JK-k <em>épp</em> akkor érkeznek, amikor ez a bizonyos dolog történik (függetlenül attól, mennyi ideig tartott odaérniük, vagy mit csináltak előtte). Ne feltételezd, hogy a JK-k egy bizonyos utat választanak, vagy hogy sikerrel járnak vagy kudarcot vallanak egy bizonyos feladatban. Mindez szembemegy azzal, hogy <strong>játszol, hogy kiderüljön, mi történik</strong>. Ez az, amikor te döntöd el előre, egyedül, mi fog történni. Egyáltalán nem ezért vagy itt.</p>
+<p>Ehelyett: készíts elő helyzeteket, lehetséges találkozásokat és felfedezendő helyeket. Készíts elő fenyegetéseket és NJK-kat jól használható ösztönökkel, talán néhány baljós előjellel és közelgő végzettel. Hogy ezt hogyan csináld, lásd az <strong>Előkészítés</strong> részt <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">előkészítést</a>.</p>
+<p><strong>Ne mondd meg, mit dobjanak, mielőtt elmondták volna, mit csinálnak.</strong> <em>Nem</em> mondhatsz olyan baromságot, hogy „a bandita támad, Dacolj</p>
+<p>a Veszéllyel DEX-szel.” Mert 1) nem így működik, és 2) mi van, ha nem gyorsan vagy ügyesen cselekszenek (ez a DEX-szel való Dacolás a Veszéllyel kiváltója)? Mi van, ha félreütik a támadását, és lesújtanak rá a pajzsukkal? Mi van, ha elszenvedik az ütést, és átdöfik? Mi van, ha port szórnak a szemébe, és lágyékon rúgják? Ha megmondod a játékosoknak, hogy tegyenek meg egy húzást, anélkül hogy ők előbb elmondták volna, hogy tettek valamit, ami kiváltja a húzást, átveszed az irányítást a karaktereik felett, és te diktálod, mit tesznek.</p>
+<p>Megszeged a játék szabályait.</p>
+<p>Ehelyett: tedd meg a puha mesélői húzásodat, és kérdezd meg: „Mit csinálsz?” Aztán a válasz alapján döntsétek el közösen, kiváltottak-e húzást, és ha igen, melyiket. Aztán dobnak arra a húzásra, és onnan te döntöd el az eredményét.</p>
+<p><strong>Ne dobass velük „csak úgy”</strong>, vagy mert „talán nem vennék észre”, vagy bármi ilyen hülyeség miatt. Tudod, hogy más játékokban eldöntöd, hogy egy szörny a táborhoz lopakodik, és észlelésdobást kérsz a JK-tól? Ilyesmi nincs a <em>Stonetopban</em>.</p>
+<p>Ehelyett egyszerűen tégy egy puha mesélői húzást, például <strong>jelezz bajt</strong>, ami sejteti a szörny jelenlétét. „Rájössz, hogy a tücskök mind elhallgattak. Aztán talán csak képzelődsz. De mintha hallottál volna valamit… nevetést? Kint az erdőben. Mit csinálsz?”</p>
+<p>És talán felébresztik a többieket, vagy kiáltanak, vagy óvatosan kikémlelnek az erdőbe, és félrebillentik a fejüket, kiváltva a Fürkéssz húzást. Akárhogy reagálnak is, onnan vezeted tovább a játékot.</p>
+<p><strong>Ne hagyd abba a mesélői húzásokat</strong>, különösen, amikor a játékosok 10+-t dobnak. Persze, leírod, mi történik, és megadod nekik a sikert, amit kiérdemeltek. Néha egy játékos egyszerűen magához ragadja a kezdeményezést, és folytatja (és ez király, menj vele). De általában a játékosok továbbra is rád néznek, hogy lássák, mi történik. A fikció tovább pörög, a rosszfiúk pedig továbbra is rossz dolgokat tesznek.</p>
+<p>Szóval amikor a Melák 10+-t dob az Összecsapásra, és bevisz a sebzést, az ellenfél még áll, és van még vagy két másik rosszfiú a közelben, ne csak annyit mondj, hogy „Király, még áll, mit csinálsz?”</p>
+<p>Ehelyett: gondold végig, hogyan reagál az első ellenfél a találatra, és mit csinál a másik kettő. Tégy olyan húzást, ami mindezt figyelembe veszi, és <em>aztán</em> kérdezd meg: „Mit csinálsz?”</p>
+<h2 id="gming-is-a-practice">A mesélés gyakorlás kérdése</h2>
+<p>Bármilyen szerepjáték mesélése gyakorlás, mint a jóga, a zene vagy a harcművészetek. Nem olyasmi, amit egyszer s mindenkorra elsajátítasz. Mindig van hova fejlődni, mindig van mit tanulni.</p>
+<p>Kifejezetten a <em>Stonetop</em> mesélése önálló készség, önálló gyakorlat. Még ha van is tapasztalatod hasonló játékok (például a <em>Dungeon World</em> vagy az <em>Apocalypse World</em>) mesélésében, akkor is van egy tanulási görbe. A Stonetop könnyebben megy, ha már meséltél más játékokat, de ez a tapasztalat ellened is dolgozhat! Szokásokat kell levetkőznöd, és új megközelítésekhez kell alkalmazkodnod, és ez nehéz lehet.</p>
+<p>A lényeg: a <em>Stonetop</em> mesélése nem éppen könnyű, de <strong>csinálva leszel benne jobb, úgy, hogy átgondolod, hogyan mentek a dolgok, és legközelebb megpróbálod jobban csinálni</strong>.</p>
+<p>Az első kaland során a <strong>céljaidra</strong> <a class="wiki-link" href="#your-agenda" data-slug="running-the-game" data-fragment="your-agenda" data-ref="page">A te célkitűzéseid</a>, az <strong>alapciklus </strong>követésére <a class="wiki-link" href="#the-core-loop" data-slug="running-the-game" data-fragment="the-core-loop" data-ref="page">Az alapciklus</a> és az <strong>alapvető játékoshúzások</strong> kiváltóinak felismerésére <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Játékoshúzások</a> összpontosíts. Támaszkodj az előkészületeidre – erre valók –, és ne kapkodj. Számíts rá, hogy kicsit döcögősen mennek a dolgok, amíg te és a játékosaid tanuljátok a szabályokat. Ne aggódj az ütős leírások, az NJK-k megszólaltatása vagy minden egyes alapelv betartása miatt.</p>
+<p>Az első „karakterben” játszott ülés után kérj visszajelzést a játékosaidtól. Mit élveztek? Mi volt döcögős? Miből szeretnének többet látni a következő üléseken? Kérj pontosítást, ha kell, de ne védekezz, és ne próbáld magyarázkodni.</p>
+<p>Próbálj alázatos és nyitott lenni.</p>
+<p>Amikor van egy kis időd, nézd át az ülést a céljaid fényében. <strong>Gazdag és rejtélyes világot jelenítettél meg</strong>, vagy a világ laposnak, üresnek, önkényesnek tűnt?</p>
+<p><strong>Kalandokkal szakítottad meg az életüket </strong>, vagy hagytad, hogy vánszorogjanak a dolgok? <strong>Azért játszottál, hogy kiderüljön, mi történik</strong>, vagy arra az útra kényszerítetted a dolgokat, amerre szerinted menniük kellett? Ha nem a céljaidat követted, kérdezd meg magadtól: „Hogyan nézett volna ki, ha a céljaimat követem?” Legközelebb <em>azt</em> csináld.</p>
+<p>Nézd át az alapelveidet. Előfordult, hogy nem követted őket? Hogyan hatott ez a játékra? Hogyan nézett volna ki ehelyett az alapelv követése?</p>
+<p>Gondolj azokra a pillanatokra, amikor elakadtál, és nem tudtad, mit tegyél. Aztán nézd meg az alapciklust. Hol tartottál a ciklusban, amikor elakadtál? Mit csinálhattál volna másképp? Milyen előkészület segíthetett volna? Talán készíts elő valami ilyesmit a következő ülés előtt.</p>
+<p>Nézd át a játékoshúzásokat (alap, különleges, expedíciós stb.). Elmulasztottad, hogy egyes húzások kiváltódtak? Kértél játékoshúzást, holott a kiváltója nem igazán teljesült? A használt húzásoknál helyesen követted a menetüket?</p>
+<p>A következő ülésen próbáld jobban csinálni. Írj le 2-3 dolgot, amit meg akarsz csinálni, vagy amire összpontosítani akarsz. Tedd őket olyan helyre, ahol látod őket. Az ülés során próbáld megvalósítani őket.</p>
+<p>Ismételd a folyamatot. Kérj visszajelzést.</p>
+<p>Nézd át az ülést a céljaid, az alapelveid, a szabályok és az alapciklus fényében. Készülj úgy, hogy megerősítsd a gyenge pontjaidat. Tűzz ki célokat. Próbáld újra. Ismételd.</p>
+<p>Legyél jó. Aztán jobb. Aztán kiváló.</p>
+<h2 id="prep">Előkészítés</h2>
+<p>Az előkészítés az, amit az ülések között csinálsz: a magányos móka (vagy egyeseknek a stresszes munka), amivel felkészülsz a következő játékra. Az előkészítés része, hogy átnézed a korábbi ülések jegyzeteit, végiggondolod, mi történhet a következő ülésen, és elintézed azokat a dolgokat, amiket nem akarsz játék közben csinálni.</p>
+<p>Miért készülj elő? Néhány ok:</p>
+<p>Hogy <strong>érdekes dolgokat</strong> mondhass.</p>
+<p>Hogy <strong>felgyorsítsd a játékot</strong>, és ne kelljen mindenkinek várnia, amíg eldöntöd, mi történik, összerakod egy szörny adatait, vagy térképet rajzolsz.</p>
+<p>Hogy <strong>megerősítsd a gyenge pontjaidat</strong>. Ha például mindig megfeledkezel a JK-k követőiről, és hagyod, hogy a háttérbe olvadjanak, talán készíts elő néhány érdekes dolgot, amit azok a követők mondhatnak vagy tehetnek.</p>
+<p>Hogy <strong>csiszold a mesterségedet</strong>. Egyes dolgok jobbak, ha van időd végiggondolni őket – következetesebbek vagy jobban illenek a témához, gördülékenyebbek, a korábban felmerült dolgokra építenek stb.</p>
+<p>Hogy <strong>engedélyt adj magadnak</strong> a kemény játékra és arra, hogy bajt zúdíts a JK-kra. Ha hajlamos vagy visszafogni az ütéseidet (és ki nem az?), nagyon sokat segíthet, ha már meg van teremtve egy közelgő végzet, vagy ha a rosszfiúidnak adsz egy olyan húzást, mint „letépi egy karját”.</p>
+<p>Csak annyit készíts elő, amennyit hasznosnak és értékesnek találsz. Hacsak nem más mesélőknek készítesz valamit, nincs értelme olyan részleteket leírni, amelyek számodra magától értetődők. Ne írd le, hogy néz ki Nia, hacsak nem gondolod, hogy elfelejted, vagy ha nem kifejezetten fel akarod rá hívni a figyelmet játék közben.</p>
+<p>Fontold meg, hogy az alábbiak közül néhányat vagy mindet előkészíted:</p>
+<h2 id="threats">Fenyegetések</h2>
+<p>A folyamatos, visszatérő problémák, amelyek bajt okoznak a JK-knak. Dolgok, amelyek rosszabbra fordulnak, ha nem törődnek velük, vagy bonyolult kapcsolatok, amelyeket játék közben jobban fel szeretnél fedezni. Egy egész fejezet szól a <strong>fenyegetések</strong> előkészítéséről és használatáról <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Fenyegetések</a>.</p>
+<h2 id="hooks">Horgok</h2>
+<p>Ha egy fenyegetéssel vagy lehetőséggel ki akarod lökni a JK-kat a terepre, megéri előkészíteni egy horgot. Egy horog a következőkből áll:</p>
+<p>felvezető kérdések, egy terv a kezdő jelenetek keretezésére, néhány konkrét mesélői húzás, amit meg akarsz tenni, és néhány lehetséges reakció. A horog előkészítésének irányelveit lásd az <strong>Első kaland</strong> fejezetben <a class="wiki-link" href="first-adventure.html" data-slug="first-adventure" data-ref="page" >Első kaland</a>.</p>
+<h2 id="expeditions">Expedíciók</h2>
+<p>Ha tudod (vagy sejted), hogy a JK-k elhagyják a falut, előkészítheted a választásaidat a <strong>Jelölj Ki Útvonalat</strong> húzáshoz <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Expedíciók</a>.</p>
+<p>Fontold meg, hogy rajzolsz egy térképet, előkészítesz érdekes helyeket, és nagyjából elképzelsz néhány találkozást, amibe útközben belefuthatnak.</p>
+<p>A részleteket lásd az Expedíciók fejezet „<strong>Mit készíts elő”</strong> részében <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Expedíciók</a>.</p>
+<h2 id="sites">Helyszínek</h2>
+<p>Gondold végig az összes fontos helyet, amelyet a JK-k várhatóan felfedeznek vagy útba ejtenek egy ülés során. Milyen? Hogyan írod majd le? Milyen kérdéseket teszel fel róla? Mi a története? Kell hozzá térkép vagy szemléltető eszköz? Vannak benne veszélyek vagy felfedezések? Ötletekért lásd <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Helyszínek</a>.</p>
+<h2 id="dangers">Veszélyek</h2>
+<p>A kockázatok, szörnyek és ellenséges NJK-k, amelyekkel a JK-k találkozhatnak.</p>
+<p>Keress felhasználható bejegyzéseket a világleírásban, vagy készíts sajátot. Ezt persze menet közben is megteheted, de elveszi az asztalnál töltött időt, és jobb, ha előre megvan. Az irányelveket lásd a <strong>Veszélyek</strong> fejezetben <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Veszélyek</a>.</p>
+<h2 id="discoveries">Felfedezések</h2>
+<p>Rejtvények, nyomok, rejtélyek, kincsek, arkánumok… ezek mind felfedezések. Némelyiket menet közben rögtönzöd. Némelyikről néhány jegyzetet akarsz majd készíteni. Némelyiket (különösen az arkánumokat) részletesen ki akarod majd dolgozni. Bővebben lásd <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Felfedezések</a>.</p>
+<h2 id="npcs">NJK-k</h2>
+<p>Ha vannak NJK-k, akikkel várhatóan találkoznak játék közben, gondold végig a nevüket, a róluk feltenni kívánt kérdéseket, a meghatározó vonásaikat, hogyan írod le és jeleníted meg őket. Talán adj nekik ösztönt, kapcsolatokat és motivációkat. Ha egy NJK-ból követő válhat, fontold meg, hogy játék előtt leírod a tulajdonságait, címkéit, húzásait, árát és ösztönét. Az irányelveket lásd <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >NJK-k és követők</a>.</p>
+<p>Ez a sok előkészület talán úgy tűnhet, mintha szembemenne azzal, hogy <strong>játszol, hogy kiderüljön, mi történik</strong>, de valójában nem. Nem történetet, cselekményt vagy egymást elkerülhetetlenül követő jelenetek sorát készíted elő.</p>
+<p>Olyan dolgokat készítesz elő, amelyek érdekes mondanivalót adnak, felgyorsítják a játékot, megerősítik a gyenge pontjaidat és csiszolják a mesterségedet, és engedélyt adnak a kemény játékra. A jó előkészítés nem azt jelenti, hogy mindent forgatókönyvbe írsz; azt jelenti, hogy alapokat raksz le, amelyek segítenek improvizálni.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div id="wiki-preview" class="wiki-preview" hidden></div>
+  <div id="dice-toast" class="dice-toast" hidden></div>
+  <script>window.WIKI_UI={"books": {"book1": "I. könyv", "book2": "II. könyv", "sites": "Helyszínek"}, "page_words": ["oldal"], "english_only": "Csak angolul érhető el", "js": {"feedback_link": "Visszajelzés küldése erről az oldalról", "feedback_head": "Visszajelzés küldése", "feedback_about": "Oldal", "feedback_what": "Min kellene változtatni?", "feedback_placeholder": "Egy rossz szám, egy hiányzó lépés, egy összekuszálódott táblázat…", "feedback_email": "E-mail (nem kötelező, a válaszhoz)", "feedback_send": "Küldés", "feedback_cancel": "Mégse", "feedback_close": "Bezárás", "feedback_sending": "Küldés…", "feedback_sent": "Visszajelzés elküldve – köszönjük.", "feedback_failed": "Nem sikerült elküldeni ({error}). Próbáld újra.", "feedback_network": "hálózati hiba", "search_empty": "Nincs a(z) „{query}” keresésnek megfelelő oldal.", "search_pages_one": "1 oldal", "search_pages_many": "{n} oldal", "search_showing": " ({n} megjelenítve)", "search_in_title_text": "cím + szöveg", "search_in_title": "cím", "search_in_text": "a szövegben", "preview_no_summary": "Nincs összefoglaló.", "preview_missing": "Ehhez a hivatkozáshoz nincs előnézet.", "location_label": "Hollét", "location_who": "Kinél van", "location_unknown": "— ismeretlen —", "location_other": "Máshol / valaki másnál…", "location_placeholder": "Hol van, vagy kinél van", "arcana_head": "Arkánumok", "arcana_none": "Nincs nála semmi. Állítsd egy arkánum hollétét erre: „{title}”, és itt megjelenik.", "sync_label": "Kampány", "sync_copied": "{what} kimásolva", "sync_copy_this": "Másold ki ezt a hivatkozást", "sync_nothing_export": "Még nincs mit exportálni", "sync_saved": "{n} elem mentve ide: {file}", "sync_not_json": "az a fájl nem JSON", "sync_not_export": "az nem kampányexport", "sync_data": "Kampányadatok", "sync_export": "Exportálás", "sync_export_title": "A kampány állapotának mentése fájlba", "sync_import": "Importálás", "sync_import_title": "Mentett fájl beolvasztása ebbe a kampányba", "sync_nothing_import": "Abban a fájlban nincs mit importálni", "sync_imported": "{n} elem importálva {stores} tárolóba", "sync_skipped": " · kihagyva: {names}", "sync_read_failed": "Nem sikerült beolvasni azt a fájlt", "sync_sharing_gm": "Megosztás KM-ként", "sync_sharing_table": "Megosztás az asztallal", "sync_copy_player": "Játékoshivatkozás másolása", "sync_copy_gm": "KM-hivatkozás másolása", "sync_copy_mine": "Saját hivatkozás másolása", "sync_player_link": "Játékoshivatkozás", "sync_gm_link": "KM-hivatkozás", "sync_link": "Hivatkozás", "sync_no_player_token": "Ez a böngésző KM-hivatkozással csatlakozott, így nincs nála játékostoken. A játékoshivatkozást abból a böngészőből másold ki, amelyik a kampányt létrehozta.", "sync_stop": "Megosztás leállítása", "sync_stopped": "Megosztás leállítva – ez a böngésző megtartja a saját másolatát", "sync_what_shared": "A kipipált fejlesztések, a veszélyórák, a válaszok, a lapok és a karakterek HP-ja mindenkivel meg van osztva. Az ellenségek HP-ját csak a KM látja.", "sync_share_head": "A kampány megosztása", "sync_worker": "Szinkronszerver", "sync_create": "Kampány létrehozása", "sync_creating": "Létrehozás…", "sync_enter_endpoint": "Előbb add meg a szinkronszerver címét", "sync_unreachable": "A szinkronszerver nem érhető el", "sync_paste": "Vagy illeszd be a hivatkozást, amit a KM küldött:", "sync_join_link": "Csatlakozási hivatkozás", "sync_join": "Csatlakozás", "sync_bad_link": "Ez nem tűnik csatlakozási hivatkozásnak", "sync_joined": "Csatlakoztál: {campaign}", "sync_the_campaign": "a kampány", "sync_status_on": "A kampány meg van osztva az asztallal", "sync_status_offline": "A szinkronszerver nem érhető el – a változások itt mentődnek, és később utolérik", "sync_status_local": "Ez a böngésző megtartja a saját másolatát"}, "playbooks": {"the-blessed": "Az Áldott", "the-fox": "A Róka", "the-heavy": "A Melák", "the-judge": "A Bíró", "the-lightbearer": "A Fényhozó", "the-marshal": "A Marsall", "the-ranger": "A Vadonjáró", "the-seeker": "A Kereső", "the-would-be-hero": "A Hősjelölt"}};</script>
+  <script src="../js/wiki.js"></script>
+</body>
+</html>

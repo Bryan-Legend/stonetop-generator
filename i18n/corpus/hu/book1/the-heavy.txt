@@ -77,7 +77,7 @@ HR
 C	 <b>PÁNCÉLOS</b> Amikor <b><i>pajzsot viselsz</i></b>, csak ◇-t jelölj (a ◇◇ helyett). Ezenfelül figyelmen kívül hagyhatod a <i>nehézkes</i> címkét bármely viselt páncélodon.
 P	Ha ezt a húzást a játék kezdetén veszed fel, adj a málhádhoz egy ◇◇ vas sodronyinget, ◇◇ bronz mellvértet vagy ◇◇ pikkelypáncélt (mind 2 páncél, <i>meleg</i>, <i>nehézkes</i>).
 C	<b>HARCI MÁMOR</b> Amikor <b><i>vért ontasz — a sajátodat vagy másét — és</i></b> <b><i>elveszel a harcban</i></b>, figyelmen kívül hagyod a félelmet, a fájdalmat, az elmeirányítást és a gyengeségek hatásait, amíg harcolsz.
-P	Amikor <b><i>véget ér az akció</i></b>, dobj +CON-nal: <b>10+ esetén</b> ez aztán pezsdítő volt, visszanyersz 1d4 HP-t; <b>7–9 esetén</b> kifulladtál és kábult vagy, de néhány perc pihenő után rendbe jössz; <b>6- esetén</b> jelölj be egy gyengeséget, de ne jelölj XP-t.
+P	Amikor <b><i>véget ér az akció</i></b>, dobj +CON-nal: <b>10+ esetén</b> ez aztán pezsdítő volt, visszanyersz 1d4 HP-t; <b>7-9 esetén</b> kifulladtál és kábult vagy, de néhány perc pihenő után rendbe jössz; <b>6- esetén</b> jelölj be egy gyengeséget, de ne jelölj XP-t.
 C2	<b>BERZERKER</b>
 P	(Feltétel: Harci Mámor)
 P	Amíg <b><i>Harci Mámorban vagy</i></b>, a közelharci támadásaid megkapják a <i>terület</i> címkét, és mindenkire lesújtasz a közeledben (barátra és ellenségre egyaránt). A sebzést minden célpontra külön dobd.
@@ -85,7 +85,7 @@ C	<b>FÁBÓL FARAGOTT</b> Növeld a maximális HP-dat 4-gyel.
 CX	<b>VESZÉLYES</b>
 P	(Feltétel: a Melák)
 P	Amikor <b><i>okozod a sebzésedet</i></b>, előnyöd van.
-C	<b>RETTEGETT</b> Amikor <b><i>belevetd magad a csatába</i></b>, dobhatsz +CHA-val: <b>10+ esetén</b> mindkettő; <b>7–9 esetén</b> válassz 1-et:
+C	<b>RETTEGETT</b> Amikor <b><i>belevetd magad a csatába</i></b>, dobhatsz +CHA-val: <b>10+ esetén</b> mindkettő; <b>7-9 esetén</b> válassz 1-et:
 B	A gyengébb ellenfelek megrettennek, habozni kezdenek vagy elmenekülnek előled.
 B	A bátor ellenfelek rád összpontosítanak, benned látva a legnagyobb fenyegetést.
 P	<b>6- esetén</b> válassz 1-et, de kérdezd meg a mesélőt, mi kerülte el a figyelmedet.
@@ -98,7 +98,7 @@ HR
 C	<b>MEGFÉLEMLÍTŐ</b> Amikor <b><i>erőszakkal vagy fenyegetéssel Győzöl Meg</i></b>, előnyöd van.
 HR
 CX	<b>SZÍVÓS</b>
-P	Amikor <b><i>A Halál Kapujában állsz,</i></b> dobhatsz +CON-nal vagy +semmivel (te választasz). <b>7–9 esetén</b> bejelölhetsz egy általad választott gyengeséget, hogy visszanyerj 1 HP-t.
+P	Amikor <b><i>A Halál Kapujában állsz,</i></b> dobhatsz +CON-nal vagy +semmivel (te választasz). <b>7-9 esetén</b> bejelölhetsz egy általad választott gyengeséget, hogy visszanyerj 1 HP-t.
 HR
 C2	<b>MEGÁLLÍTHATATLAN</b> ◇◇◇◇◇
 P	(Feltétel: Szívós)
@@ -127,7 +127,7 @@ B	Nem kívánt kárt vagy sérülést okozol
 B	Megviseli a szervezetedet (jelölj be egy gyengeséget)
 C	<b>NEMEZIS</b> (Feltétel: 6+ szint és Könyörtelen) Amikor <b><i>Összecsapsz, és az ellenfeled túléli</i></b>, minden jövőbeli támadásod ellene +1d6 sebzést okoz.
 C	<b>RENDÍTHETETLEN OLTALMAZÓ</b> (Feltétel: 6+ szint és Oltalmazó) Amíg <b><i>Készenlétet tartasz (a Védekezz húzásból)</i></b>, mindig elszenvedheted egy támadás sebzését/hatását a védenced helyett; nem kell Készenlétet költened, egyszerűen megteheted.
-C	<b>KŐKEMÉNY</b> (Feltétel: 6+ szint és Jéghideg) Amikor <b><i>úgy Dacolsz a Veszéllyel (vagy Küzdötök Egyként), hogy</i></b> <b><i>nyugodt maradsz és folytatod</i></b>, a 6- eredményt kezeld 7–9-ként.
+C	<b>KŐKEMÉNY</b> (Feltétel: 6+ szint és Jéghideg) Amikor <b><i>úgy Dacolsz a Veszéllyel (vagy Küzdötök Egyként), hogy</i></b> <b><i>nyugodt maradsz és folytatod</i></b>, a 6- eredményt kezeld 7-9-ként.
 C	<b>KIVÁLÓ TULAJDONSÁG</b> (Feltétel: 6+ szint) Növeld egyik tulajdonságodat +1-gyel (legfeljebb +3-ig).
 PAGE	116
 H2	Erőszakos múlt

@@ -18,7 +18,7 @@ P	Akárhogy is, ezek az emberek befogadtak. Ideje tisztességesen élni, nem?
 P	Extra húzásként a Betörés vagy az Enyves Kéz (te választasz) egyikével kezdesz, extra különleges javaként pedig vagy betörőszerszámokkal, vagy egy rejtett dugi kinccsel (te választasz). Jelöld be őket most.
 C	<b>A TÉKOZLÓ HAZATÉR</b> Réges-régen elmentél, messzire utaztál, és az eszedből éltél. Miért mentél el? Milyen tetteiddel dicsekszel, és melyeket bánod?
 P	Mindig vágytál vissza Stonetopba, és most visszatértél. Afféle híresség lettél, és barátaid (vagy majdnem azok) szerteszét élnek az ismert világban.
-P	Amikor <b><i>kijelented, hogy ismersz valakit Stonetopon</i></b> <b><i>kívül</i></b>, valakit, aki segíthet, nevezd meg, és dobj +CHA-val: <b>10+ esetén</b> igen, tud segíteni (mondd el, miért hajlandó rá); <b>7–9 esetén</b> tud segíteni, de válassz 1-et az alábbi listából; <b>6- esetén</b> a mesélő választ 1-et, és még valamit.
+P	Amikor <b><i>kijelented, hogy ismersz valakit Stonetopon</i></b> <b><i>kívül</i></b>, valakit, aki segíthet, nevezd meg, és dobj +CHA-val: <b>10+ esetén</b> igen, tud segíteni (mondd el, miért hajlandó rá); <b>7-9 esetén</b> tud segíteni, de válassz 1-et az alábbi listából; <b>6- esetén</b> a mesélő választ 1-et, és még valamit.
 B	Még mindig haragszik
 B	Előbb neki lesz szüksége valamire tőled
 B	Réges-rég felhagyott az ilyesmivel
@@ -76,13 +76,13 @@ HR
 P	A Rajtaütés VAGY a Fegyverforgatás; a Veszélyérzék VAGY az Éles Szem; és 1 választott húzással kezdesz.
 HR
 C	<b>MINDEN A KARBAN VAN</b> ◇ <i>maradt pár</i> ◇ <i>elfogyott</i> A kezedben bármely kés vagy tőr megkapja a <i>hajítható</i> címkét. Ezenfelül néhány vas dobópengét (<i>közepes</i>) hordasz magadnál; ezek nem foglalnak helyet a málhádban. Töltsd fel a lőszered, valahányszor Felszerelkezel.
-C	<b>RAJTAÜTÉS</b> Amikor <b><i>rajtaütsz egy közeli ellenfélen</i></b>, okozhatod a sebzésed, vagy dobhatsz inkább +DEX-szel: <b>10+ esetén</b> okozd a sebzésed és válassz 2-t; <b>7–9 esetén</b> okozz sebzést és válassz 1-et:
+C	<b>RAJTAÜTÉS</b> Amikor <b><i>rajtaütsz egy közeli ellenfélen</i></b>, okozhatod a sebzésed, vagy dobhatsz inkább +DEX-szel: <b>10+ esetén</b> okozd a sebzésed és válassz 2-t; <b>7-9 esetén</b> okozz sebzést és válassz 1-et:
 B	Okozz +1d4 sebzést
 B	Akadályozd meg, hogy zajt csapjon/riadót fújjon
 B	Surranj el, mielőtt reagálhatna
 B	Teremts lehetőséget; te vagy egy szövetséges előnyt kap a következő húzásra, amellyel kihasználja
 C	<b>BETÖRÉS</b> Amikor <b><i>egyedül beosonsz egy veszélyes</i></b> <b><i>helyre</i></b>, dobj +INT-tel: <b>7+ esetén</b> visszatérsz, és a mesélő elmondja, hová jutottál és mit tudtál meg.
-P	Ezután <b>10+ esetén</b> válassz még 2-t; <b>7–9 esetén</b> válassz még 1-et:
+P	Ezután <b>10+ esetén</b> válassz még 2-t; <b>7-9 esetén</b> válassz még 1-et:
 B	Tisztán megúsztad, gyanút sem keltve
 B	Elcsórtál valami értékeset (a mesélő választ)
 B	Előkészítettél valamit, amit visszatértedkor kihasználhatsz
@@ -91,7 +91,7 @@ P	<b>6- esetén</b> vagy visszatérsz, de bajjal a nyomodban, vagy eltűntél (t
 C	<b>MINT A MACSKA</b> Amikor <b><i>könnyű terhet viszel és óvatosan cselekszel</i></b>, hangtalanul mozogsz. Amikor <b><i>árnyékban vagy sötétben rejtőzöl</i></b>, láthatatlan maradsz, amíg magadra nem vonod a figyelmet, helyet nem változtatsz vagy támadsz.
 TAKES	3
 C	<b>EZERMESTER</b> (Feltétel: 2+ szint és a Róka) Valahányszor felveszed ezt a húzást, válassz egy húzást a Melák, a Marsall, a Vadonjáró vagy a Kereső karakterfüzetéből, amelynek egyébként megfelelsz. (Nem veheted fel a Javított Tulajdonságot vagy a Kiváló Tulajdonságot.)
-C	<b>VESZÉLYÉRZÉK</b> Mindig megkérdezheted a mesélőtől: „Van itt csapda vagy les?” Ha azt mondja, „igen”, dobj +INT-tel: <b>10+ esetén</b> tedd fel a mesélőnek mindkét alábbi kérdést; <b>7–9 esetén</b> kérdezz 1-et; <b>mindkét esetben</b> előnyt kapsz a következő dobásodra, amellyel a válasz(ok) szerint cselekszel.
+C	<b>VESZÉLYÉRZÉK</b> Mindig megkérdezheted a mesélőtől: „Van itt csapda vagy les?” Ha azt mondja, „igen”, dobj +INT-tel: <b>10+ esetén</b> tedd fel a mesélőnek mindkét alábbi kérdést; <b>7-9 esetén</b> kérdezz 1-et; <b>mindkét esetben</b> előnyt kapsz a következő dobásodra, amellyel a válasz(ok) szerint cselekszel.
 Q	Mi indítja be a lest vagy a csapdát?
 Q	Mi történik, amint beindul?
 P	<b>6- esetén</b> ne jelölj XP-t; tudod, hogy csapda vagy les van itt, de egyelőre semmi rossz nem történik.
@@ -101,7 +101,7 @@ C	<b>JAVÍTOTT TULAJDONSÁG</b> Valahányszor felveszed ezt a húzást, növeld 
 C	<b>ELLENÁLLHATATLAN</b> Amikor <b><i>kapcsolatba lépsz valakivel</i></b>, megkérdezheted a játékosát, vonzónak talál-e, és őszinte választ kapsz (általában „igen”).
 P	Amikor <b><i>úgy Győzöl Meg, hogy jelentős</i></b> <b><i>bájaidat használod fel ütőkártyaként</i></b>, előnyöd van.
 C	<b>NEVESS A VESZÉLYEN</b> Amikor <b><i>épp +CON-nal dobnál, és viccet</i></b> <b><i>csinálsz a rád váró megpróbáltatásból</i></b>, dobhatsz helyette +CHA-val.
-C	<b>ENYVES KÉZ</b> Amikor <b><i>kézügyességi trükköt hajtasz végre egy gyanútlan</i></b> <b><i>balekon</i></b>, sikerrel jársz, és senki sem veszi észre. Ha figyelnek, dobj +DEX-szel: <b>10+ esetén</b> sikerrel jársz, és senki sem veszi észre; <b>7–9 esetén</b> sikerrel jársz VAGY senki sem veszi észre (te választasz).
+C	<b>ENYVES KÉZ</b> Amikor <b><i>kézügyességi trükköt hajtasz végre egy gyanútlan</i></b> <b><i>balekon</i></b>, sikerrel jársz, és senki sem veszi észre. Ha figyelnek, dobj +DEX-szel: <b>10+ esetén</b> sikerrel jársz, és senki sem veszi észre; <b>7-9 esetén</b> sikerrel jársz VAGY senki sem veszi észre (te választasz).
 PAGE	111
 C	<b>ÉLES SZEM</b> Amikor <b><i>Fürkészel</i></b>, 1 további kérdést tehetsz fel. Még 6- esetén is feltehetsz 1 kérdést (bár lehet, hogy nem fog tetszeni, ahogyan megtudod a választ).
 C	<b>CSÍPŐS NYELV</b> Amikor <b><i>egy NJK büszkeségét egy jól irányzott</i></b> <b><i>beszólással sebzed meg</i></b>, 1-et meg kell tennie (ő választ):
@@ -112,7 +112,7 @@ C	<b>FEGYVERFORGATÁS</b> Amikor <b><i>gyorsan és kecsesen forgatsz egy fegyver
 C2	<b>HÁRÍTÁS ÉS VISSZAVÁGÁS</b>
 P	(Feltétel: Fegyverforgatás)
 P	Amikor <b><i>olyan fegyverrel Védekezel, amelyet</i></b> <b><i>gyorsan tudsz forgatni</i></b>, 1 Készenlétet elkölthetsz arra, hogy egyszerre felezd a támadás hatását/sebzését és visszavágj a támadónak (hátránnyal okozd a sebzésed), ahelyett hogy mindkettőre 1-1 Készenlétet költenél.
-C	<b>EZÜSTNYELV</b> ◇◇◇ Amikor <b><i>szavakkal kerülöd el a gyanút vagy a bajt</i></b>, dobj +CHA-val: <b>10+ esetén</b> tarts 3 Merszet; <b>7–9 esetén</b> tarts 1 Merszet. A Merszet elköltheted, 1 az 1-ben, hogy:
+C	<b>EZÜSTNYELV</b> ◇◇◇ Amikor <b><i>szavakkal kerülöd el a gyanút vagy a bajt</i></b>, dobj +CHA-val: <b>10+ esetén</b> tarts 3 Merszet; <b>7-9 esetén</b> tarts 1 Merszet. A Merszet elköltheted, 1 az 1-ben, hogy:
 B	Akadálytalanul mozogj vagy manőverezz
 B	Kiállj közvetlen vizsgálatot vagy kihallgatást
 B	Máshová tereld a gyanút vagy a figyelmet
@@ -122,12 +122,12 @@ Q	Általában véve mit próbál titkolni?
 Q	Mit szeretne, hogy történjen?
 C	<b>CSATATÁNCOS</b> (Feltétel: 6+ szint és Fegyverforgatás) Amikor <b><i>+DEX-szel dobsz a Csapj Össze húzásra</i></b>, <b>12+ esetén</b> okozod a sebzésed, elkerülöd az ellenség támadását, és lenyűgözöd/megszégyeníted/megfélemlíted az ellenfeleidet.
 C	<b>ALATTOMOS ÜTÉS</b> (Feltétel: 6+ szint és Rajtaütés) Amikor <b><i>Rajtaütsz egy</i></b> <b>ököl</b> <b><i>fegyverrel</i></b>, előnyöd van a sebzésdobásra.
-C	<b>SZEMED AZ AJTÓN</b> (Feltétel: 6+ szint) Amikor <b><i>neked és a szövetségeseidnek el kell tűnnötök innen</i></b>, nevezd meg a menekülőutat, és dobj +INT-tel: <b>10+ esetén</b> már itt sem vagytok; <b>7–9 esetén</b> maradhattok vagy mehettek, de ha mentek, annak ára van — a mesélő elmondja, mit (vagy kit) hagysz hátra vagy viszel magaddal.
+C	<b>SZEMED AZ AJTÓN</b> (Feltétel: 6+ szint) Amikor <b><i>neked és a szövetségeseidnek el kell tűnnötök innen</i></b>, nevezd meg a menekülőutat, és dobj +INT-tel: <b>10+ esetén</b> már itt sem vagytok; <b>7-9 esetén</b> maradhattok vagy mehettek, de ha mentek, annak ára van — a mesélő elmondja, mit (vagy kit) hagysz hátra vagy viszel magaddal.
 C	<b>HAZUG, MINT A VÍZFOLYÁS</b> (Feltétel: 6+ szint) Amikor <b><i>Dacolsz a Veszéllyel, Meggyőzöl vagy Hátráltatsz</i></b> <b><i>csalással</i></b>, előnyöd van.
 P	Amikor egy másik húzás (például a Fürkészés) megengedi egy játékosnak, hogy kérdést tegyen fel neked, dönthetsz úgy, hogy nem válaszolsz.
 C	<b>HÁTSÓ SZÁNDÉK</b> (Feltétel: 6+ szint, Hárítás és Visszavágás, valamint Rajtaütés) Amikor <b><i>Védekezel, és 1 Készenlétet költesz Hárításra</i></b>
 P	<b><i>és Visszavágásra</i></b>, válassz 1 lehetőséget a Rajtaütés listájáról is.
-C	<b>SÍKOS</b> (Feltétel: 6+ szint) Amikor <b><i>azért dobsz, hogy elkerüld az elfogást vagy az irányítást</i></b>, a 6- eredményt kezeld 7–9-ként. 12+ esetén mondd el, hogyan fordítod meg a helyzetet, vagy használod ki a körülményeket a javadra.
+C	<b>SÍKOS</b> (Feltétel: 6+ szint) Amikor <b><i>azért dobsz, hogy elkerüld az elfogást vagy az irányítást</i></b>, a 6- eredményt kezeld 7-9-ként. 12+ esetén mondd el, hogyan fordítod meg a helyzetet, vagy használod ki a körülményeket a javadra.
 C	<b>KIVÁLÓ TULAJDONSÁG</b> (Feltétel: 6+ szint) Növeld egyik tulajdonságodat +1-gyel (legfeljebb +3-ig).
 PAGE	112
 H2	Nagyotmondások

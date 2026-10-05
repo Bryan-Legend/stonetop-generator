@@ -72,7 +72,7 @@ C	<b>Építőmesteri szerszámok</b>: vonalzók, mérőszalagok, mérőrudak, f�
 C	<b>Laboratórium</b>: vegyszerek, reagensek, fiolák, mérőedények, ◇ mérlegek, ◇ dekanterek stb. Minden évszakban d4-1 használatnyi ◇ naftát állítasz elő (<i>hajítható</i>, <i>terület</i>, <i>veszélyes</i>, figyelmen kívül hagyja a páncélt).
 C	<b>Kellékek</b>: kristályok, tömjén, talizmánok, vér, csont, szarv, gőtebéka szeme, ◇ parázstartók, ◇◇ egy üst stb.
 C	<b>Kereskedelmi kapcsolatok</b>: kis mennyiségű só, üveg, selyem, fűszer, gyógynövény, festék, elefántcsont stb.
-P	(egyeztesd a KM-mel)
+P	(egyeztesd a mesélővel)
 PAGE	134
 H2	Húzások
 HR
@@ -80,26 +80,26 @@ P	A Jártas és a Dolgozz Azzal, Amid Van húzással, valamint 1 húzással kezd
 HR
 C	<b>RÁHANGOLÓDOTT</b> Amikor <b><i>Fürkészel</i></b>, mindig ingyen megkérdezheted: „Mit itat át itt a mágia?”, még 6- esetén is.
 C	<b>A HATALOM CSATORNÁJA</b> Amikor <b><i>egy nagy arkánum Következményét kellene</i></b> <b><i>bejelölnöd</i></b>, ehelyett bejelölhetsz itt 1 négyzetet, hátrányos hatás nélkül. (Ezek a jelölések sosem törlődnek.)
-C	<b>ELLENINTÉZKEDÉSEK</b> Amikor <b><i>tanúja vagy egy mágikus hatásnak</i></b>, megkérdezheted a KM-et: „hogyan lehet ezt semlegesíteni vagy megszakítani?”, és őszinte választ kapsz. Te vagy egy szövetséges előnyt kaptok a következő dobáshoz, amellyel a válasz alapján cselekszetek.
+C	<b>ELLENINTÉZKEDÉSEK</b> Amikor <b><i>tanúja vagy egy mágikus hatásnak</i></b>, megkérdezheted a mesélőt: „hogyan lehet ezt semlegesíteni vagy megszakítani?”, és őszinte választ kapsz. Te vagy egy szövetséges előnyt kaptok a következő dobáshoz, amellyel a válasz alapján cselekszetek.
 C	<b>MINDEN VÉRZIK</b> Amikor <b><i>kihasználod egy természetellenes ellenfél sajátos gyengeségét vagy sebezhetőségét</i></b>, +1d6 sebzést okozol.
-C	<b>MINDEN ÉG</b> Amikor <b><i>végzetes hibát keresve megvizsgálsz</i></b> <b><i>egy mesterművet vagy mágikus alkotást</i></b>, dobj +INT-tel: <b>7+ esetén</b> a KM felfedi, hogyan lehet a legjobban elpusztítani/szabotálni; <b>10+ esetén</b> te vagy egy szövetséges előnyt is kaptok, hogy az információ alapján cselekedjetek.
+C	<b>MINDEN ÉG</b> Amikor <b><i>végzetes hibát keresve megvizsgálsz</i></b> <b><i>egy mesterművet vagy mágikus alkotást</i></b>, dobj +INT-tel: <b>7+ esetén</b> a mesélő felfedi, hogyan lehet a legjobban elpusztítani/szabotálni; <b>10+ esetén</b> te vagy egy szövetséges előnyt is kaptok, hogy az információ alapján cselekedjetek.
 TAKES	3
 C	<b>JAVÍTOTT TULAJDONSÁG</b> Minden alkalommal, amikor ezt a húzást választod, növeld egy tulajdonságodat 1-gyel (legfeljebb +2-ig).
 TAKES	3
 C	<b>A TITKOS MŰVÉSZETEK BEAVATOTTJA</b> (Feltétel: 2+ szint és a Kereső) Van egy „szent tarsolyod” (3 Hozzávaló, <i>mágikus</i>), mint Az Áldottnak, de figyelemre méltó tulajdonságok nélkül. Minden alkalommal, amikor ezt a húzást választod, válassz Az Áldott egy olyan húzását, amelynek egyébként megfelelsz. (Nem választhatod a Javított Tulajdonságot vagy a Kiváló Tulajdonságot.)
-C	<b>ALKUDJUNK</b> Amikor <b><i>Fürkészel</i></b>, add a kérdések listájához: „Mit akarnak vagy mire van valójában szükségük?”. Amikor <b><i>úgy Győzöl Meg, hogy felkínálsz valamit, amiről tudod,</i></b> <b><i>hogy akarják vagy szükségük van rá</i></b>, a 7–9-et kezeld 10+-ként.
+C	<b>ALKUDJUNK</b> Amikor <b><i>Fürkészel</i></b>, add a kérdések listájához: „Mit akarnak vagy mire van valójában szükségük?”. Amikor <b><i>úgy Győzöl Meg, hogy felkínálsz valamit, amiről tudod,</i></b> <b><i>hogy akarják vagy szükségük van rá</i></b>, a 7-9-et kezeld 10+-ként.
 C	<b>NAPLÓ</b> ◇◇ Van egy naplód (2 használat, <i>lassú</i>), amely nem foglal helyet a málhádban. Amikor te (és csak te) <b><i>fellapozod a naplódat és elhasználsz egyet</i></b>, figyelmen kívül hagyhatod egy épp megtett Tudj Dolgokat dobásodat, és 10+-ként kezelheted az eredményt. <b><i>Évszakváltáskor</i></b> állítsd vissza a naplót 2 használatra.
 C	<b>SZARKA</b> Amikor <b><i>Nálad Van, Ami Kell</i></b>, elővehetsz valami különöset, konkrétat, talán még értékeset vagy egy kicsit mágikusat is, de ha így teszel, mondd el, honnan szerezted, és az alábbiak közül 2-t:
 B	Miben nem egészen megfelelő, de talán megteszi?
 B	Milyen bajt okoztál otthon, hogy megszerezd
 B	Miért vonja magára a nem kívánt figyelmet a használata
 B	Hogy ez az egyetlen ilyen holmid, és miért csak egyszer fog működni
-C	<b>SOSEM TANÁCSTALAN</b> Amikor <b><i>Dolgokat Tudsz és 6--t dobsz</i></b>, választhatod, hogy nem jelölsz XP-t. Ha nem jelölsz XP-t, a legrosszabb, ami történhet, hogy a KM semmi érdekeset vagy hasznosat nem mond a témáról, hanem azt mondja el, hogyan tudhatnál meg többet.
+C	<b>SOSEM TANÁCSTALAN</b> Amikor <b><i>Dolgokat Tudsz és 6--t dobsz</i></b>, választhatod, hogy nem jelölsz XP-t. Ha nem jelölsz XP-t, a legrosszabb, ami történhet, hogy a mesélő semmi érdekeset vagy hasznosat nem mond a témáról, hanem azt mondja el, hogyan tudhatnál meg többet.
 C	<b>POLIGLOTT</b> Amikor <b><i>először találkozol egy élő nyelvvel a játékban</i></b>, írd le, mennyire ismered (ha egyáltalán), és hogyan tetted szert rá.
 P	Amikor <b><i>Dolgokat Tudsz bármilyen írásról, szövegről, rúnáról</i></b> <b><i>vagy jelképről, amellyel találkozol</i></b>, előnyöd van.
 C2	<b>KRIPTOLÓGUS</b>
 P	(Feltétel: Poliglott)
-P	Amikor <b><i>kódolt, elfeledett vagy</i></b> <b><i>titokzatos jeleket vagy írást tanulmányozol</i></b>, dobj +INT-tel: <b>10+ esetén</b> néhány perc alatt teljesen megfejted őket; <b>7–9</b> <b>esetén</b> néhány perc alatt megérted a lényeget, de a teljes megfejtés nagyjából egy órát vesz igénybe.
+P	Amikor <b><i>kódolt, elfeledett vagy</i></b> <b><i>titokzatos jeleket vagy írást tanulmányozol</i></b>, dobj +INT-tel: <b>10+ esetén</b> néhány perc alatt teljesen megfejted őket; <b>7-9</b> <b>esetén</b> néhány perc alatt megérted a lényeget, de a teljes megfejtés nagyjából egy órát vesz igénybe.
 PAGE	135
 C	<b>GYORS TANULÓ</b> Amikor <b><i>olyan mágikus dolgot tanulmányozol, amelynek megértése</i></b> <b><i>hónapokig tartana</i></b>, ehelyett csak hetekig tart.
 P	Ha hetekig tartana, napokig tart. Ha napokig tartana, csak néhány óráig tart.
@@ -115,15 +115,15 @@ C	Az Alkotók és művészetük
 C	Az ősi hatalmak
 C	A Lenti Dolgok
 C	A vad világ és szellemei
-P	Amikor <b><i>Dolgokat Tudsz valamelyik témádról</i></b>, feltehetsz a KM-nek egy általad választott további kérdést (még 6- esetén is).
+P	Amikor <b><i>Dolgokat Tudsz valamelyik témádról</i></b>, feltehetsz a mesélőnek egy általad választott további kérdést (még 6- esetén is).
 CX	<b>DOLGOZZ AZZAL, AMID VAN</b>
-P	Amikor <b><i>ügyesen használod a környezetedet, hogy ártsd vagy</i></b> <b><i>akadályozd az ellenfele(i)det</i></b>, dobj +INT-tel: <b>10+ esetén</b> válassz 2-t; <b>7–9</b> <b>esetén</b> válassz 1-et:
+P	Amikor <b><i>ügyesen használod a környezetedet, hogy ártsd vagy</i></b> <b><i>akadályozd az ellenfele(i)det</i></b>, dobj +INT-tel: <b>10+ esetén</b> válassz 2-t; <b>7-9</b> <b>esetén</b> válassz 1-et:
 B	Megszakítod vagy meghiúsítod a cselekedetei(ke)t
 B	Lehetőséget teremtesz, amely neked vagy egy szövetségesnek előnyt ad a kihasználására tett következő dobáshoz
 B	A forráshoz illő sebzést okozol (d4 zúzódásért/horzsolásért, d6 vérontásért, d8, ha csontot törne, d10, ha egy közönséges embert megölne)
-C	<b>ARKÁN ADEPTUS</b> (Feltétel: 6+ szint) Amikor <b><i>varázslatot vagy mágikus hatást akarsz kitalálni</i></b>, részletezd a működését a KM-mel, és Készíts Tervet a kitalálására. Ha akarod, válassz egy követelményt, és kérj a KM-től alternatívát (például „előbb ____-nod kell” lehet „előbb ____-nod kell, különben hónapokig tart”).
+C	<b>ARKÁN ADEPTUS</b> (Feltétel: 6+ szint) Amikor <b><i>varázslatot vagy mágikus hatást akarsz kitalálni</i></b>, részletezd a működését a mesélővel, és Készíts Tervet a kitalálására. Ha akarod, válassz egy követelményt, és kérj a mesélőtől alternatívát (például „előbb ____-nod kell” lehet „előbb ____-nod kell, különben hónapokig tart”).
 C	<b>MÉLY BELÁTÁS</b> (Feltétel: 6+ szint és Ráhangolódott) Amikor <b><i>valami mágikus dolgot Fürkészel</i></b>, feltehetsz egy további kérdést, amely nem korlátozódik a listára. Még 6- esetén is feltehetsz ilyen kérdést.
-C	<b>RÖGTÖNZÉS</b> (Feltétel: 6+ szint és Gyors tanuló) Amikor <b><i>egy arkánum húzását vagy lehetőségét akarod használni</i></b> <b><i>anélkül, hogy feloldottad volna</i></b>, kérdezd meg a KM-et, milyen vakmerő kockázatot kíván és/vagy milyen következményekkel jár. Ha belevágsz, dobj +INT-tel: <b>7+ esetén</b> ezúttal működésre bírod — indítsd el a húzást vagy használd a lehetőséget, mintha feloldottad volna; <b>10+ esetén</b> ezenfelül jelölj be egy lépést az arkánum titkainak feloldása felé.
+C	<b>RÖGTÖNZÉS</b> (Feltétel: 6+ szint és Gyors tanuló) Amikor <b><i>egy arkánum húzását vagy lehetőségét akarod használni</i></b> <b><i>anélkül, hogy feloldottad volna</i></b>, kérdezd meg a mesélőt, milyen vakmerő kockázatot kíván és/vagy milyen következményekkel jár. Ha belevágsz, dobj +INT-tel: <b>7+ esetén</b> ezúttal működésre bírod — indítsd el a húzást vagy használd a lehetőséget, mintha feloldottad volna; <b>10+ esetén</b> ezenfelül jelölj be egy lépést az arkánum titkainak feloldása felé.
 C	<b>KIVÁLÓ TULAJDONSÁG</b> (Feltétel: 6+ szint) Növeld egy tulajdonságodat +1-gyel (legfeljebb +3-ig).
 C	<b>ELME A MÁGIA FELETT</b> (Feltétel: 6+ szint) Amikor <b><i>egy arkánum tanulmányozására vagy használatára dobsz</i></b>, +INT-tel dobhatsz a szokásos tulajdonság helyett.
 C	<b>TÚLCSATORNÁZÁS</b> (Feltétel: 6+ szint és A hatalom csatornája) Amikor <b><i>egy nagy arkánum Következményét kellene</i></b> <b><i>bejelölnöd</i></b>, ehelyett bejelölhetsz egy gyengeséget.
@@ -143,10 +143,10 @@ P	Elkezdted feltárni nagy arkánumod titkait; jelölj be 1-et vagy a betétlapj
 P	Mikor és hogyan történt ez?
 HR
 P	<b>KIS ARKÁNUMOK</b>
-P	Kérd el a KM-től a Kis Arkánumok lapjait. Húzz 3-at véletlenszerűen, és nézd meg mindkét oldalukat.
+P	Kérd el a mesélőtől a Kis Arkánumok lapjait. Húzz 3-at véletlenszerűen, és nézd meg mindkét oldalukat.
 P	Válassz egyet, amelynek titkait feltártad. Ha hordozható, vagy magadnál tartod, vagy biztonságos helyre rejtetted. Hol van most? Hogyan sikerült elsajátítanod?
 P	Válassz egy másikat, amelyet még nem sajátítottál el. Vagy a birtokodban van, vagy egy titkos helyen, amelyet csak te ismersz. Hol van? Hogyan találtad meg?
-P	A harmadikat még nem találtad meg, de van egy nyomod. Add vissza a lapot a KM-nek, de jegyezd fel lent. Játék közben kérdezd meg a KM-et, mit tudsz róla.
+P	A harmadikat még nem találtad meg, de van egy nyomod. Add vissza a lapot a mesélőnek, de jegyezd fel lent. Játék közben kérdezd meg a mesélőt, mit tudsz róla.
 H2	Bemutatkozás
 P	Várj itt a többiekre. Ha mindenki kész, sorban mutassátok be a karaktereiteket. Amikor <b><i>valaki elárul valamit, és többet akarsz</i></b> <b><i>tudni</i></b>, kérdezz rá. Amikor <b><i>valaki kérdést tesz</i></b> <b><i>fel neked</i></b>, válaszolj őszintén.
 STEP	1	Az első körödben <b>mutatkozz be</b>: név, névmások, előélet, származás és külső.
