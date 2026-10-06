@@ -74,13 +74,13 @@ PAGE	114
 H2	Træk
 P	Du starter med Farlig, Svær at Dræbe og enten Pansret ELLER Uhyggelige Reflekser.
 HR
-C	 <b>PANSRET</b> Når du <b><i>bærer et skjold</i></b>, sætter du kun kryds i ◇ (i stedet for ◇◇). Desuden kan du ignorere mærkatet <i>klodset</i> på enhver rustning, du bærer.
+C	 <b>PANSRET</b> Når du <b><i>bærer et skjold</i></b>, sætter du kun kryds i ◇ (i stedet for ◇◇). Desuden kan du ignorere tagget <i>klodset</i> på enhver rustning, du bærer.
 P	Hvis du tager dette træk ved spillets start, så tilføj en ◇◇ ringbrynje af jern, en ◇◇ bronzekyras eller en ◇◇ skælrustning til din oppakning (alle 2 rustning, <i>varm</i>, <i>klodset</i>).
 C	<b>KAMPGLÆDE</b> Når du <b><i>udgyder blod — dit eget eller andres — og</i></b> <b><i>fortaber dig i kampen</i></b>, ignorerer du frygt, smerte, tankekontrol og virkningerne af skavanker, så længe du bliver ved med at kæmpe.
 P	Når <b><i>kampen stopper</i></b>, så slå +CON: <b>på 10+</b> var det et kick, genvind 1d4 HP; <b>på 7-9</b> er du forpustet og ude af den, men du er okay efter et par minutters hvil; <b>på 6-</b> sæt kryds ved en skavank, men sæt ikke kryds ved XP.
 C2	<b>BERSÆRK</b>
 P	(Kræver Kampglæde)
-P	Mens <b><i>du er i din Kampglæde</i></b>, får dine nærkampsangreb mærkatet <i>område</i>, og du slår ud efter alle i nærheden (ven og fjende). Slå skade separat for hvert mål.
+P	Mens <b><i>du er i din Kampglæde</i></b>, får dine nærkampsangreb tagget <i>område</i>, og du slår ud efter alle i nærheden (ven og fjende). Slå skade separat for hvert mål.
 C	<b>SKÅRET AF TRÆ</b> Øg dine maksimale HP med 4.
 CX	<b>FARLIG</b>
 P	(Kræver Kraftkarlen)

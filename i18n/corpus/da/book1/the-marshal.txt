@@ -11,13 +11,13 @@ HR
 H2	Baggrund (Vælg 1)
 C	<b>ARVING</b> Du voksede op her, efterkommer af en lang slægt. Nogle af de største navne i Stonetops fortid sidder i dit stamtræ. Alle i landsbyen tager din autoritet for givet, og dit mandskab er en veletableret institution i byen.
 P	Du begynder med trækket Veteranmandskab ud over dine sædvanlige træk. Afkryds det nu.
-P	Når du <b><i>skaber dit Mandskab</i></b>, har det automatisk mærkaten <i>respekterede</i> (ud over dine sædvanlige valg og dem, du får fra Veteranmandskab).
+P	Når du <b><i>skaber dit Mandskab</i></b>, har det automatisk tagget <i>respekterede</i> (ud over dine sædvanlige valg og dem, du får fra Veteranmandskab).
 C	<b>ANGERFULD</b> Før du kom hertil, ledte du en bande af slubberter: banditter, plyndrere eller lejesoldater med blod på hænderne. Men noget ændrede sig. Et sandhedens øjeblik fik dig og dine følgesvende (i hvert fald nogle af dem) til at lægge det liv bag jer. Og af en eller anden grund tog folk i Stonetop imod jer.
 P	Når du <b><i>trækker på din blodige fortid for at Vide Ting</i></b>, må du slå +STR i stedet for +INT. Gør du det, spørger SL, hvem du dengang gjorde uret, eller hvem der stadig kan bære nag. Svar nu.
-P	Når du <b><i>skaber dit Mandskab</i></b>, har det automatisk mærkaten <i>krigere</i> (ud over dine sædvanlige valg).
+P	Når du <b><i>skaber dit Mandskab</i></b>, har det automatisk tagget <i>krigere</i> (ud over dine sædvanlige valg).
 C	<b>LYSENDE FORBILLEDE</b> Du er en født leder: dine ord inspirerer, dine planer vinder dagen, dine bedrifter fortælles vidt og bredt. Er du rørt af guderne? Flyder der ældgammelt blod i dine årer? Eller er du blot den forkæmper, Stonetop har brug for i disse svære tider?
 P	Du begynder med trækket Vi Lykkelige Få ud over dine sædvanlige træk. Afkryds det nu.
-P	Når du <b><i>skaber dit Mandskab</i></b>, har det automatisk mærkaten <i>hengivne</i> (ud over dine sædvanlige valg).
+P	Når du <b><i>skaber dit Mandskab</i></b>, har det automatisk tagget <i>hengivne</i> (ud over dine sædvanlige valg).
 H2	Instinkt (Vælg 1)
 C	<b>AUTORITET</b> At tage styringen og vise, hvem der bestemmer.
 HR
@@ -82,7 +82,7 @@ TAKES	2
 C2	<b>VETERANMANDSKAB</b>
 P	(Kræver Mandskab)
 P	Hver gang du tager dette træk, så vælg 1. Du kan også vælge deres Instinkt og Pris på ny.
-C2	Vælg 2 nye mærkater til dit Mandskab
+C2	Vælg 2 nye tags til dit Mandskab
 C2	Øg deres skadesterning fra d6 til d8
 C2	Øg hver enkelts maks-HP med 2
 C	<b>LEDER I FORRESTE LINJE</b> ◇◇ Når du <b><i>fører dit mandskab i kamp</i></b>, så hold 2 Nærvær. Brug Nærvær i stedet for mandskabets Loyalitet eller som Beredskab (som om du Forsvarede dem).

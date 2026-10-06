@@ -266,6 +266,7 @@ Pull Together · Deploy · Seasons Change · Death's Door.
 - **Sheet headings:** Baggrund (Vælg 1) · Instinkt (Vælg 1) · Udseende · Hjemegn og navn · Egenskaber · Særlige ejendele · Træk · Præsentationer
 - **Names:** Storskoven (Great Wood) · Moserand (Marshedge) · Spærrepasset (Barrier Pass) · Gordins Grube · Bakkefolket (Hillfolk) · Trappelandet (Steplands) · Ringmuren · de Gamle Veje · Tårnruinen · Ferriers Mose · Skaberne (Makers) · Tingene Dernede (Things Below) · den Sidste Dør · den Blege Jæger · Fae
 - **Tags:** hånd · tæt (close) · nær (near) · fjern (far) · rækkevidde (reach) · gennemborende (piercing) · område (area) · gruppe
+- **Whole-language pass (2026-10-05):** the binding list is `i18n/_work/da-brief.md` (self-contained, incl. the playbooks' own move names); sweep in `da-sweep.py`. Key choices: GM = spillederen (SL) · NPC/PC = SLP/spilperson (SP) · roll = slå · outcomes "på 10+" · debility (noun) = skavank · mark = markér · tag = tag (pl. tags; not mærkat) · site = sted · expedition = ekspedition · Homefront = Hjemmefronten · Bolster = Styrke Sig (hold Forberedelse) · Order Followers = Beordre Følgesvende · Strengthen Your Bond = Styrke Båndet · Stock = Beholdning · Burn Brightly = Brænde Klart · Read the Land = Læse Terrænet · the Line = Grænsen · announce trouble = varsle problemer · put someone in a spot = sæt nogen i en knibe · specter = gespenst · wraith = genfærd · Rune-laden Scales = Den Runetyngede Skælrustning · "(page N)" = "(side N)" (`page_words` in `ui/da.json`)
 
 ## nb — Norsk bokmål
 

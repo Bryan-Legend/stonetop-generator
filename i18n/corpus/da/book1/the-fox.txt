@@ -75,7 +75,7 @@ H2	Træk
 HR
 P	Du starter med Baghold ELLER Våbenfærdighed; Faresans ELLER Skarpsindig; og 1 valgfrit.
 HR
-C	<b>DET SIDDER I HÅNDLEDDET</b> ◇ <i>et par tilbage</i> ◇ <i>tom</i> Enhver kniv eller dolk får mærkatet <i>kastbar</i> i dine hænder. Du har også et par kasteknive af jern (<i>nær</i>) på dig; de fylder ikke i din oppakning. Genopfyld din ammunition, hver gang du Udruster Dig.
+C	<b>DET SIDDER I HÅNDLEDDET</b> ◇ <i>et par tilbage</i> ◇ <i>tom</i> Enhver kniv eller dolk får tagget <i>kastbar</i> i dine hænder. Du har også et par kasteknive af jern (<i>nær</i>) på dig; de fylder ikke i din oppakning. Genopfyld din ammunition, hver gang du Udruster Dig.
 C	<b>BAGHOLD</b> Når du <b><i>overrumpler en fjende i nærheden</i></b>, kan du give din skade eller i stedet vælge at slå +DEX: <b>på 10+</b> giver du din skade og vælger 2; <b>på 7-9</b> giver du skade og vælger 1:
 B	Giv +1d4 skade
 B	Forhindr dem i at larme/slå alarm

@@ -18,10 +18,10 @@ C	<b>Gwendyl</b>, din læremester, en dygtig helbreder
 C	<b>Olwin</b>, din salvede elskede, skæbnernes seer
 C	<b>Seren den Ældste</b>, vís og hård som vinteren
 C	<b>OPFOSTRET AF ULVE</b> Måske ikke af <i>ulve</i>, men du voksede op i vildmarken. Landets og luftens dyr var dine søskende. Den sukkende vind lærte dig at tale. Træerne og klipperne var dit hjem. Var du en af Skovfolket? Forladt eller forældreløs? Lokket ind i Skoven?
-P	Uanset hvad får du trækket Sporløse Skridt (gå hen og kryds det af nu). Og når du <b><i>Finder Føde</i></b>, har du fordel.
-P	Af en eller anden grund har du gjort dig kendt i Stonetop, og måske kalder du det endda dit hjem. Men menneskenes skikke er dig stadig fremmede. Én gang per spilgang, når <b><i>dine vilde vaner støder eller fremmedgør</i></b> <b><i>nogen</i></b>, så kryds XP af.
+P	Uanset hvad får du trækket Sporløse Skridt (gå hen og markér det nu). Og når du <b><i>Finder Føde</i></b>, har du fordel.
+P	Af en eller anden grund har du gjort dig kendt i Stonetop, og måske kalder du det endda dit hjem. Men menneskenes skikke er dig stadig fremmede. Én gang per spilgang, når <b><i>dine vilde vaner støder eller fremmedgør</i></b> <b><i>nogen</i></b>, så markér XP.
 C	<b>KAR</b> Et frø af Danus kraft har slået rod i din sjæl. Måske har det altid været der og er først spiret for nylig. Eller måske blev det sået i dig under en varslende begivenhed.
-P	Uanset hvad hjemsøges dine drømme af sære tegn og symboler. Du mærker den mystiske kraft i planter, sten og muld. Og du har mærket Jordmoderens voksende vrede, efterhånden som urene ting begynder at røre på sig. Tag trækket Danus Greb (gå hen og kryds det af nu).
+P	Uanset hvad hjemsøges dine drømme af sære tegn og symboler. Du mærker den mystiske kraft i planter, sten og muld. Og du har mærket Jordmoderens voksende vrede, efterhånden som urene ting begynder at røre på sig. Tag trækket Danus Greb (gå hen og markér det nu).
 P	Danus kraft strømmer gennem dig, men til en høj pris.
 P	Når du <b><i>skulle bruge 1 Beholdning fra din hellige</i></b> <b><i>pung</i></b>, kan du vælge at miste 2d4 HP i stedet.
 H2	Instinkt (Vælg 1)
@@ -98,7 +98,7 @@ CX	<b>ÅNDESPROG</b>
 P	Du kan tale med dyr og ånder. Du kan altid spørge spillederen: »Hvilke ånder er virksomme her?« og få et ærligt svar.
 C2	<b>LÅNE KRAFT</b>
 P	(Kræver Åndesprog)
-P	Når <b><i>en ånd eller et dyr låner dig kraft</i></b>, så bed spillederen om en af dens mærkater eller træk. Opbevar den i din pung i stedet for 1 Beholdning. Når du <b><i>bruger den lånte mærkat eller det lånte</i></b> <b><i>træk</i></b>, så slå +WIS: <b>på 10+</b> gør du det og kan bruge kraften igen; <b>på 7-9</b> gør du det, men mister kraften.
+P	Når <b><i>en ånd eller et dyr låner dig kraft</i></b>, så bed spillederen om en af dens tags eller træk. Opbevar den i din pung i stedet for 1 Beholdning. Når du <b><i>bruger den lånte tag eller det lånte</i></b> <b><i>træk</i></b>, så slå +WIS: <b>på 10+</b> gør du det og kan bruge kraften igen; <b>på 7-9</b> gør du det, men mister kraften.
 CX2	<b>PÅKALDE ÅNDERNE</b>
 P	(Kræver Åndesprog)
 P	Når du <b><i>bruger 1 Beholdning og udfører en kort rite</i></b>, viser et steds eller en genstands ånd(er) sig og hører dig ud. Hvad de gør derefter, er op til dem.
@@ -111,7 +111,7 @@ C	<b>VÆRN & BINDINGER</b> Når du <b><i>afmærker en grænse med hellige tegn</
 P	Når <b><i>dine værn eller bindinger første gang sættes på prøve</i></b>, så slå +INT: <b>på 10+</b> holder de, så længe tegnene er ubeskadigede (og det berørte væsen kan intet gøre for at påvirke dem direkte); <b>på 7-9</b> holder de indtil videre, men kan overvindes med kraft eller vilje.
 TAKES	2
 C	<b>VILD SJÆL</b> (Kræver niveau 2+ og Den Velsignede) Hver gang du tager dette træk, så få et Skovgænger-træk efter eget valg, som du opfylder kravene til. Du kan ikke vælge Forbedret Egenskab eller Overlegen Egenskab.
-C	<b>NATURENS VREDE</b> (Kræver niveau 6+ og Danus Greb) Danus Greb får mærkaten <i>område</i> og kan påvirke ethvert væsen. En dødelig, der bringes ned på 0 HP, bliver overmandet eller dræbt (du vælger) i stedet for at blive bundet i sten.
+C	<b>NATURENS VREDE</b> (Kræver niveau 6+ og Danus Greb) Danus Greb får tagget <i>område</i> og kan påvirke ethvert væsen. En dødelig, der bringes ned på 0 HP, bliver overmandet eller dræbt (du vælger) i stedet for at blive bundet i sten.
 C	<b>KRAFTIGE BESVÆRGELSER</b> (Kræver niveau 6+ og Amuletter & Talismaner) Når du <b><i>fremstiller et beskyttende amulet</i></b>, kan du bruge 1 ekstra Beholdning for at vælge 1:
 B	Nævn endnu en slags skade
 B	På 10+ bevarer amulettet sin kraft
