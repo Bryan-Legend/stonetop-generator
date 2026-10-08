@@ -1564,7 +1564,7 @@ def home_intro_html(template: str, href, dice_title: str = DICE_TITLE) -> str:
 
 HOME_FALLBACK = {
     "title": EDITION_NAME,
-    "doc_title": "Stonetop — hearth fantasy tabletop RPG (TTRPG) web edition",
+    "doc_title": EDITION_NAME,
     "topics": "Topics",
     "and": "and",
     "intro_html": HOME_INTRO_HTML,
