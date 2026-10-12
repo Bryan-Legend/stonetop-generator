@@ -87,7 +87,7 @@ TAKES	3
 C	<b>PARANNETTU KYKY</b> Aina kun otat tämän siirron, nosta yhtä kyvyistäsi 1:llä (enintään +2:een).
 TAKES	3
 C	<b>SALAISTEN TAITOJEN VIHITTY</b> (Vaatii tason 2+ ja Etsijän) Sinulla on ”pyhä pussi” (3 Ainesta, <i>maaginen</i>) kuten Siunatulla, mutta ilman merkittäviä piirteitä. Aina kun otat tämän siirron, valitse Siunatun siirto, jonka vaatimukset muuten täytät. (Et voi ottaa Parannettua Kykyä tai Ylivertaista Kykyä.)
-C	<b>TEHDÄÄN KAUPAT</b> Kun <b><i>Etsit Ymmärrystä</i></b>, lisää kysymysten listaan ”Mitä he todella haluavat tai tarvitsevat?”. Kun <b><i>Suostuttelet tarjoamalla jotain, minkä tiedät</i></b> <b><i>heidän haluavan tai tarvitsevan</i></b>, pidä tulosta 7–9 tuloksena 10+.
+C	<b>TEHDÄÄN KAUPAT</b> Kun <b><i>Etsit Ymmärrystä</i></b>, lisää kysymysten listaan ”Mitä he todella haluavat tai tarvitsevat?”. Kun <b><i>Suostuttelet tarjoamalla jotain, minkä tiedät</i></b> <b><i>heidän haluavan tai tarvitsevan</i></b>, pidä tulosta 7-9 tuloksena 10+.
 C	<b>LOKIKIRJA</b> ◇◇ Sinulla on lokikirja (2 käyttöä, <i>hidas</i>), joka ei vie tilaa kantamuksestasi. Kun sinä (ja vain sinä) <b><i>tutkit lokikirjaasi ja käytät kerran</i></b>, voit jättää huomiotta juuri heittämäsi Tiedä Asioita -heiton ja pitää tulosta 10+:na. Kun <b><i>Vuodenajat Vaihtuvat</i></b>, palauta lokikirja 2 käyttöön.
 C	<b>HARAKKA</b> Kun <b><i>Olet Varautunut</i></b>, voit tuoda esiin jotain outoa, tarkkaa, ehkä jopa arvokasta tai hieman maagista, mutta jos teet niin, kerro meille, mistä sen sait, ja 2 seuraavista:
 B	Miten se ei ole ihan oikea, mutta ehkä kelpaa?
@@ -99,7 +99,7 @@ C	<b>MONIKIELINEN</b> Kun <b><i>kohtaat pelissä ensimmäistä kertaa elävän k
 P	Kun <b><i>Tiedät Asioita mistä tahansa kirjoituksesta, tekstistä, riimuista</i></b> <b><i>tai symboleista, joita kohtaat</i></b>, sinulla on etu.
 C2	<b>KRYPTOLOGI</b>
 P	(Vaatii Monikielinen)
-P	Kun <b><i>tutkit salakirjoitettuja, unohtuneita tai</i></b> <b><i>salattuja merkkejä tai kirjoituksia</i></b>, heitä +INT: <b>10+:lla</b> pystyt tulkitsemaan ne kokonaan muutamassa minuutissa; <b>7–9:llä</b> <b>saat</b> selville pääasian muutamassa minuutissa, mutta täysi tulkinta vie noin tunnin.
+P	Kun <b><i>tutkit salakirjoitettuja, unohtuneita tai</i></b> <b><i>salattuja merkkejä tai kirjoituksia</i></b>, heitä +INT: <b>10+:lla</b> pystyt tulkitsemaan ne kokonaan muutamassa minuutissa; <b>7-9:llä</b> <b>saat</b> selville pääasian muutamassa minuutissa, mutta täysi tulkinta vie noin tunnin.
 PAGE	135
 C	<b>NOPEA OPPIMAAN</b> Kun <b><i>tutkit jotain maagista, jonka ymmärtämiseen pitäisi kulua</i></b> <b><i>kuukausia</i></b>, siihen kuluukin vain viikkoja.
 P	Jos siihen pitäisi kulua viikkoja, kuluu päiviä. Jos siihen pitäisi kulua päiviä, kuluu vain muutama tunti.
@@ -117,7 +117,7 @@ C	Alla Olevat
 C	Villi maailma ja sen henget
 P	Kun <b><i>Tiedät Asioita jostakin aiheistasi</i></b>, voit esittää PJ:lle valitsemasi jatkokysymyksen (jopa 6-:lla).
 CX	<b>KÄYTÄ MITÄ ON KÄSILLÄ</b>
-P	Kun <b><i>käytät ympäristöäsi ovelasti vahingoittaaksesi tai</i></b> <b><i>haitataksesi vihollistasi</i></b>, heitä +INT: <b>10+:lla</b> valitse 2; <b>7–9:llä</b> <b>valitse</b> 1:
+P	Kun <b><i>käytät ympäristöäsi ovelasti vahingoittaaksesi tai</i></b> <b><i>haitataksesi vihollistasi</i></b>, heitä +INT: <b>10+:lla</b> valitse 2; <b>7-9:llä</b> <b>valitse</b> 1:
 B	Keskeytä tai estä heidän toimensa
 B	Luo tilaisuus, joka antaa sinulle tai liittolaiselle edun seuraavaan heittoon sen hyödyntämiseksi
 B	Tee lähteeseen sopivaa vahinkoa (d4 mustelmista/naarmuista, d6 verenvuodatuksesta, d8 jos se murtaisi luita, d10 jos se tappaisi tavallisen ihmisen)

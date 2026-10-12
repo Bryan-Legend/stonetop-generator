@@ -79,9 +79,9 @@ C	<b>KYNTTILÄ PIMEYTTÄ VASTAAN</b> Kun <b><i>käytät pyhää valoa mutta olet
 C2	<b>LOISTAVA KILPI</b>
 P	(Vaatii Kynttilä pimeyttä vastaan)
 P	Kun <b><i>heilautat pyhää valoa torjuaksesi</i></b> <b><i>kehoon, mieleen tai sieluun kohdistuvan hyökkäyksen</i></b>, heitä +CHA: <b>10+</b><b>:lla</b> hyökkäys torjutaan, ja jos hyökkääjä on valosi ulottuvilla, se sokaistuu hetkeksi;
-P	<b>7–9:llä</b> hyökkäys torjutaan, mutta pyhä valosi lepattaa ja himmenee uhaten sammua;
+P	<b>7-9:llä</b> hyökkäys torjutaan, mutta pyhä valosi lepattaa ja himmenee uhaten sammua;
 P	<b>6-:lla</b> valosi sammuu ja hyökkäys osuu esteettä.
-C	<b>KAIKKI ON VALAISTU</b> Kun <b><i>katsot toista tarkasti ja näet hänen sielunsa</i></b> <b><i>paljaana</i></b>, heitä +WIS: <b>10+:lla</b> esitä hänen pelaajalleen 1 kysymys alla olevasta listasta sekä ”Ja mikä saisi hänet tuntemaan itsensä rakastetuksi, kauniiksi tai arvokkaaksi?”; <b>7–9</b><b>:llä</b> esitä hänelle 1 kysymys listasta. Joka tapauksessa hänen on vastattava totuudenmukaisesti.
+C	<b>KAIKKI ON VALAISTU</b> Kun <b><i>katsot toista tarkasti ja näet hänen sielunsa</i></b> <b><i>paljaana</i></b>, heitä +WIS: <b>10+:lla</b> esitä hänen pelaajalleen 1 kysymys alla olevasta listasta sekä ”Ja mikä saisi hänet tuntemaan itsensä rakastetuksi, kauniiksi tai arvokkaaksi?”; <b>7-9</b><b>:llä</b> esitä hänelle 1 kysymys listasta. Joka tapauksessa hänen on vastattava totuudenmukaisesti.
 Q	Mitä hän häpeää eniten?
 Q	Mitä hän eniten haluaa tai himoitsee?
 Q	Minkä toivon hän on hylännyt?
@@ -90,15 +90,15 @@ C	<b>JA KATSO, HALLAVA HEVONEN</b> Kun <b><i>vietät yön tuijottaen liekkiin</i
 CX	<b>PYHITETTY LIEKKI</b>
 P	Kun <b><i>kuiskaat liekille pyhityksen sanoja</i></b>, liekki luo pyhää valoa. Pimeyden olennoille pyhä valo on epämiellyttävää katsottavaa, mutta se ei tee todellista vahinkoa. Pyhä valo kestää, kunnes liekki sammuu tai kunnes pyhität toisen liekin, kumpi tahansa tapahtuu ensin.
 C	<b>SISÄINEN TULI</b> Kun <b><i>olet pimeässä</i></b>, näet sisäisen tulesi valossa. Kun <b><i>kärsit vahinkoa</i></b> <b><i>kylmästä tai tulesta</i></b>, vähennä sitä vahinkoa 2:lla.
-C	<b>OHJAAVA VALO</b> Kun <b><i>johdat yhtä tai useampaa sivuhahmoa vaaran läpi</i></b>, heitä +CHA: <b>10+:lla</b> pääsette kaikki läpi (ylistetty olkoon Helior); <b>7–9:llä</b> PJ kertoo, mitä tarvitaan, jotta kaikki pääsevät turvallisesti läpi.
-C	<b>HELIORIN RÄPÄYTTÄMÄTÖN SILMÄ</b> Kun <b><i>tuijotat aurinkoon niin kauan, että menetät</i></b> <b><i>näkösi</i></b>, nimeä tuntemasi henkilö tai paikka ja heitä +WIS: <b>10+:lla</b> näet kohteesi hetken kuin suuresta korkeudesta ja valitset 2 alla olevasta listasta; <b>7–9:llä</b> näet kohteesi hetken kuin suuresta korkeudesta ja valitset 1:
+C	<b>OHJAAVA VALO</b> Kun <b><i>johdat yhtä tai useampaa sivuhahmoa vaaran läpi</i></b>, heitä +CHA: <b>10+:lla</b> pääsette kaikki läpi (ylistetty olkoon Helior); <b>7-9:llä</b> PJ kertoo, mitä tarvitaan, jotta kaikki pääsevät turvallisesti läpi.
+C	<b>HELIORIN RÄPÄYTTÄMÄTÖN SILMÄ</b> Kun <b><i>tuijotat aurinkoon niin kauan, että menetät</i></b> <b><i>näkösi</i></b>, nimeä tuntemasi henkilö tai paikka ja heitä +WIS: <b>10+:lla</b> näet kohteesi hetken kuin suuresta korkeudesta ja valitset 2 alla olevasta listasta; <b>7-9:llä</b> näet kohteesi hetken kuin suuresta korkeudesta ja valitset 1:
 B	Näky kestää niin kauan kuin haluat
 B	Näkökulmasi siirtyy aivan lähelle
 B	Saat näkösi nopeasti takaisin
 TAKES	3
 C	<b>PARANNETTU KYKY</b> Aina kun otat tämän siirron, nosta yhtä kyvyistäsi 1:llä (enintään +2:een).
 CX	<b>HUUDA AURINKOJUMALAA AVUKSI</b>
-P	Kun <b><i>täytät pyhän valon Heliorin voimalla</i></b>, valitse tuntemasi Avuksihuuto ja heitä +WIS: <b>10+</b><b>:lla</b> se toimii kuvatusti, mutta sinun on valittava 1 seuraus alla olevasta listasta; <b>7–9:llä</b> se toimii kuvatusti, mutta sinä ja PJ valitsette kumpikin 1.
+P	Kun <b><i>täytät pyhän valon Heliorin voimalla</i></b>, valitse tuntemasi Avuksihuuto ja heitä +WIS: <b>10+</b><b>:lla</b> se toimii kuvatusti, mutta sinun on valittava 1 seuraus alla olevasta listasta; <b>7-9:llä</b> se toimii kuvatusti, mutta sinä ja PJ valitsette kumpikin 1.
 B	Avuksihuudolla on <i>heikennetty</i> vaikutuksensa
 B	Ponnistus uuvuttaa sinut; merkitse heikkous
 B	Valo sammuu, kun Avuksihuuto on valmis, polttoaineensa kuluneena
@@ -109,15 +109,15 @@ C	<b>LYHDYNSYTYTTÄJÄ</b> Kun <b><i>kuiskaat syttyvälle esineelle</i></b> (soi
 C	<b>HURSKAUS</b> ◇ Kun <b><i>vietät vähintään tunnin asianmukaisessa palvonnassa</i></b> <b><i>Heliorin edessä,</i></b> pidä 1 Siunaus. Muut uskovat pelaajahahmot, jotka osallistuvat palvontaan, pitävät myös 1 Siunauksen. Voit milloin tahansa käyttää 1 Siunauksen lisätäksesi +1 juuri tekemääsi heittoon oikeamielisen asian hyväksi.
 C	<b>PUHDISTAVAT LIEKIT</b> Kun <b><i>käytät pyhää valoa pimeyden</i></b> <b><i>olentoa vastaan</i></b>, se lasketaan aseeksi (d10 vahinkoa, <i>käsi</i>, <i>lähellä</i>, <i>alue</i>, 2 lävistävä) ja voit valita heittäväsi +WIS:llä Iske Yhteen -siirrossa.
 C	<b>SÄTEILEVÄT KASVOT</b> Kun <b><i>suot jollekulle hellää huomiotasi</i></b>, voit sen jälkeen Suostutella häntä edulla. Jos hän on seuralainen, voit sen sijaan valita Vahvista Sidettä (kuin olisit maksanut hänen hintansa).
-C	<b>NOUSE KUIN AURINKO</b> Kun <b><i>kiinnität huomion itseesi sanoin tai teoin</i></b>, heitä +CHA: <b>10+:lla</b> kaikki kääntyvät katsomaan, ja pidät heidän katseensa niin kauan kuin annat heille syyn katsoa; <b>7–9:llä</b> kaikki kääntyvät katsomaan.
-C	<b>KEVÄÄN ENSIMMÄINEN SULA</b> Kun <b><i>käytät aikaa (vähintään tunnin, ehkä enemmän)</i></b> <b><i>yrittäen herättää toivoa, ystävällisyyttä tai armoa sivuhahmossa</i></b>, heitä +CHA: <b>10+:lla</b> sytytät tulen syvälle hänen sisimpäänsä ja saat aikaan pysyvän muutoksen; <b>7–9:llä</b> herätät hyvyyden hänen sydämessään toistaiseksi, mutta lopulta hän palaa vanhoihin tapoihinsa; <b>6-:lla</b> hänen sydämensä kovettuu, ja mitä PJ muuten sanookin, et voi käyttää tätä siirtoa häneen uudelleen.
+C	<b>NOUSE KUIN AURINKO</b> Kun <b><i>kiinnität huomion itseesi sanoin tai teoin</i></b>, heitä +CHA: <b>10+:lla</b> kaikki kääntyvät katsomaan, ja pidät heidän katseensa niin kauan kuin annat heille syyn katsoa; <b>7-9:llä</b> kaikki kääntyvät katsomaan.
+C	<b>KEVÄÄN ENSIMMÄINEN SULA</b> Kun <b><i>käytät aikaa (vähintään tunnin, ehkä enemmän)</i></b> <b><i>yrittäen herättää toivoa, ystävällisyyttä tai armoa sivuhahmossa</i></b>, heitä +CHA: <b>10+:lla</b> sytytät tulen syvälle hänen sisimpäänsä ja saat aikaan pysyvän muutoksen; <b>7-9:llä</b> herätät hyvyyden hänen sydämessään toistaiseksi, mutta lopulta hän palaa vanhoihin tapoihinsa; <b>6-:lla</b> hänen sydämensä kovettuu, ja mitä PJ muuten sanookin, et voi käyttää tätä siirtoa häneen uudelleen.
 C	<b>PALA KAKSIN VERROIN KIRKKAAMMIN</b> (Vaatii tason 6+ ja Huuda Aurinkojumalaa Avuksi) Kun <b><i>Huudat Aurinkojumalaa Avuksi</i></b>, voit merkitä heikkouden käyttääksesi 2 Avuksihuutoa kerralla. Heitä kerran ja sovella seuraukset molempiin Avuksihuutoihin.
 C	<b>VAHVISTETUT AVUKSIHUUDOT</b> (Vaatii tason 6+ ja Huuda Aurinkojumalaa Avuksi) Kun Huudat Aurinkojumalaa Avuksi, voit valita ylimääräisen seurauksen ennen heittoa. Jos teet niin, Avuksihuudolla on <i>vahvistettu</i> vaikutuksensa.
-C	<b>KUNNIAKAS PALVELIJA</b> (Vaatii tason 6+ ja Huuda Aurinkojumalaa Avuksi) Kun <b><i>Huudat Aurinkojumalaa Avuksi ja heität 10+</i></b>, sinun ei tarvitse valita seurausta; <b>7–9:llä</b> sinä valitset seurauksen, mutta PJ ei.
+C	<b>KUNNIAKAS PALVELIJA</b> (Vaatii tason 6+ ja Huuda Aurinkojumalaa Avuksi) Kun <b><i>Huudat Aurinkojumalaa Avuksi ja heität 10+</i></b>, sinun ei tarvitse valita seurausta; <b>7-9:llä</b> sinä valitset seurauksen, mutta PJ ei.
 C	<b>NÄLKÄISET LIEKIT</b> (Vaatii tason 6+ ja Puhdistavat liekit) Kun <b><i>teet vahinkoa pyhällä valolla</i></b>, teet +1d6 vahinkoa, ja kohteesi verhoutuu pyhään valoon ja liekkeihin.
 C	<b>VALOA, LISÄÄ VALOA</b> (Vaatii tason 6+ ja Pyhitetty liekki) Kun <b><i>pyhität liekin</i></b>, se palaa tavallista kirkkaammin. Päre tai kynttilä valaisee <i>ulottuvuus</i>-etäisyydelle, öljylamppu, lyhty tai soihtu <i>likellä</i>-etäisyydelle ja kohdelyhty <i>kaukana</i>-etäisyydelle.
 C	<b>YLIVERTAINEN KYKY</b> (Vaatii tason 6+) Nosta yhtä kyvyistäsi +1:llä (enintään +3:een).
-C	<b>VALKOISEN LIEKIN KANTAJA</b> (Vaatii tason 6+ ja Huuda Aurinkojumalaa Avuksi) Kun <b><i>kanavoit Heliorin olemuksen esineeseen, jota</i></b> <b><i>kannat</i></b>, heitä +WIS: <b>10+:lla</b> se syttyy valkoiseen liekkiin, joka luo pyhää valoa (<i>ulottuvuus</i>, <i>alue</i>) eikä polta sinua tai esinettä, ja voit Huutaa Aurinkojumalaa Avuksi heti kuin olisit heittänyt 10+; <b>7–9:llä</b> se syttyy valkoiseen liekkiin, joka luo pyhää valoa (<i>ulottuvuus</i>, <i>alue</i>) eikä polta sinua tai esinettä.
+C	<b>VALKOISEN LIEKIN KANTAJA</b> (Vaatii tason 6+ ja Huuda Aurinkojumalaa Avuksi) Kun <b><i>kanavoit Heliorin olemuksen esineeseen, jota</i></b> <b><i>kannat</i></b>, heitä +WIS: <b>10+:lla</b> se syttyy valkoiseen liekkiin, joka luo pyhää valoa (<i>ulottuvuus</i>, <i>alue</i>) eikä polta sinua tai esinettä, ja voit Huutaa Aurinkojumalaa Avuksi heti kuin olisit heittänyt 10+; <b>7-9:llä</b> se syttyy valkoiseen liekkiin, joka luo pyhää valoa (<i>ulottuvuus</i>, <i>alue</i>) eikä polta sinua tai esinettä.
 PAGE	124
 H2	Ylistetty olkoon päivä
 P	Olet Heliorin, Päivänkantajan, auringon ja valon jumalan, toivon ja armon majakan, nimitetty palvelija.

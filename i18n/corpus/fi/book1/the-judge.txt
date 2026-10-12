@@ -118,7 +118,7 @@ C2	<b>RISUKIMPPU EI KATKEA</b>
 P	(Vaatii Monta kättä, kevyt työ)
 P	Kun Kamppailette Yhtenä, sinulla ja valitsemallasi liittolaisella on etu.
 PAGE	119
-C	<b>VASARA JA KIRJA</b> Kun <b><i>lyöt yliluonnollisen kaaoksen olentoa</i></b>, heitä +WIS: <b>10+:lla</b> tee vahinkosi ja valitse 1 alla olevasta listasta; <b>7–9:llä</b> tee vahinkoa ja valitse 1, mutta altistat myös itsesi vaaralle tai ei-toivotulle huomiolle.
+C	<b>VASARA JA KIRJA</b> Kun <b><i>lyöt yliluonnollisen kaaoksen olentoa</i></b>, heitä +WIS: <b>10+:lla</b> tee vahinkosi ja valitse 1 alla olevasta listasta; <b>7-9:llä</b> tee vahinkoa ja valitse 1, mutta altistat myös itsesi vaaralle tai ei-toivotulle huomiolle.
 B	Tee +1d6 vahinkoa
 B	Ohita olennon panssari tai muut puolustukset
 B	Tukahduta yksi sen luonnottomista voimista
@@ -139,7 +139,7 @@ P	(Vaatii tason 6+ ja Tuomitse)
 P	Kun <b><i>Nuhtelet</i></b>, voit julistaa ryhmän tai ryhmittymän, kunhan pystyt yksilöimään sen selvästi. Sovella Nuhteen vaikutuksia ryhmän jokaiseen jäseneen etäisyydestä riippumatta.
 C	<b>PEILIKILPI</b> (Vaatii tason 6+ ja Uskon aigis) Kun <b><i>Puolustat kilven kanssa</i></b>, voit käyttää 1 Valmiuden siepataksesi maagisen voiman ja ohjataksesi sen toiseen kohteeseen (tai ei mihinkään).
 C	<b>YLIVERTAINEN KYKY</b> (Vaatii tason 6+) Nosta yhtä kyvyistäsi +1:llä (enintään +3:een).
-C	<b>IKUINEN TORNI</b> (Vaatii tason 6+) Kun <b><i>Uhmaat Vaaraa taikuutta vastaan</i></b>, pidä tulosta 6- tuloksena 7–9.
+C	<b>IKUINEN TORNI</b> (Vaatii tason 6+) Kun <b><i>Uhmaat Vaaraa taikuutta vastaan</i></b>, pidä tulosta 6- tuloksena 7-9.
 PAGE	120
 H2	Kronikka
 P	Aratiin Tuomarin tehtävä on pitää Kronikkaa, yhteisön, sen ihmisten, heidän tietojensa ja perinteidensä historiaa. Kronikan sisältämän tiedon luonne riippuu Taustastasi, mutta se on enemmän kuin pelkkä kirja; se on fyysinen paikka. Päätä, millainen se on.

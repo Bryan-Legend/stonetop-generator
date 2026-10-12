@@ -59,7 +59,7 @@ C	<b>Porrasmaat</b> (Kukkulakansa): Bejn, Decla, Franza, Irv, Ivet, Jak, Sibl ta
 C	<b>Erämaa</b>: yhdistele 1-3 näistä: Syksy, Mäyrä, Iso, Musta, Verinen, Urhea, Varis, Poikanen, Pimeä, Kauris, Hammas, Hurja, Kukka, Lempeä, Vihreä, Synkkä, Hirvi, Lehti, Pieni, Yksinäinen, Vanha, Pöllö, Kalpea, Penikka, Nopea, Hiljainen, Sade, Punainen, Terävä, Käärme, Lumi, Kevät, Kesä, Pitkä, Puu, Keltainen, Valkoinen, Tuuli, Talvi, Susi, Kuiskaus
 WRITE	Minua kutsutaan...
 PAGE	106
-STATS	{"gloss": "Jaa nämä arvot: +2, +1, +1, +0, +0, -1. Kun vaiva on merkitty, heität haitalla.", "die": "d6", "hp": "HP (enint. 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Jaa nämä arvot: +2, +1, +1, +0, +0, -1. Kun heikkous on merkitty, heität haitalla.", "die": "d6", "hp": "HP (enint. 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	107
 H2	Erityinen omaisuus (Valitse 2 pyhän pussisi lisäksi)
 HR
@@ -98,7 +98,7 @@ CX	<b>HENKIEN KIELI</b>
 P	Voit puhua eläinten ja henkien kanssa. Voit aina kysyä pelinjohtajalta: ”Mitkä henget ovat täällä toimeliaita?” ja saada rehellisen vastauksen.
 C2	<b>LAINAA VOIMAA</b>
 P	(Vaatii Henkien Kielen)
-P	Kun <b><i>henki tai eläin lainaa sinulle voimaa</i></b>, pyydä pelinjohtajalta yksi sen määreistä tai siirroista. Säilytä se pussissasi 1 Aineksen paikalla. Kun <b><i>käytät lainattua määrettä tai</i></b> <b><i>siirtoa</i></b>, heitä +WIS: <b>10+:lla</b> onnistut ja voit käyttää voimaa uudelleen; <b>7-9:llä</b> onnistut, mutta menetät voiman.
+P	Kun <b><i>henki tai eläin lainaa sinulle voimaa</i></b>, pyydä pelinjohtajalta yksi sen tunnisteista tai siirroista. Säilytä se pussissasi 1 Aineksen paikalla. Kun <b><i>käytät lainattua tunnistetta tai</i></b> <b><i>siirtoa</i></b>, heitä +WIS: <b>10+:lla</b> onnistut ja voit käyttää voimaa uudelleen; <b>7-9:llä</b> onnistut, mutta menetät voiman.
 CX2	<b>KUTSU HENGET</b>
 P	(Vaatii Henkien Kielen)
 P	Kun <b><i>käytät 1 Aineksen ja toimitat lyhyen riitin</i></b>, paikan tai esineen henki (henget) ilmestyy ja kuuntelee sinua. Mitä ne tekevät seuraavaksi, on niiden asia.
@@ -111,7 +111,7 @@ C	<b>SUOJAMERKIT & SIDONNAT</b> Kun <b><i>merkitset rajan pyhillä merkeillä</i
 P	Kun <b><i>suojamerkkejäsi tai sidontojasi koetellaan ensi kertaa</i></b>, heitä +INT: <b>10+:lla</b> ne pitävät niin kauan kuin merkit pysyvät ehjinä (eikä kohde voi vaikuttaa niihin suoraan mitenkään); <b>7-9:llä</b> ne pitävät toistaiseksi, mutta ne voi murtaa voimalla tai tahdolla.
 TAKES	2
 C	<b>VILLI SIELU</b> (Vaatii tason 2+ ja Siunatun) Joka kerta kun otat tämän siirron, ota valitsemasi Samoojan siirto, jonka vaatimukset täytät. Et voi valita Parannettua Kykyä etkä Ylivertaista Kykyä.
-C	<b>LUONNON VIHA</b> (Vaatii tason 6+ ja Danun Otteen) Danun Ote saa <i>alue</i>-määreen ja voi vaikuttaa mihin tahansa olentoon. Kuolevainen, jonka HP laskee 0:aan, kukistetaan tai tapetaan (valintasi mukaan) sen sijaan, että se sidottaisiin kiveen.
+C	<b>LUONNON VIHA</b> (Vaatii tason 6+ ja Danun Otteen) Danun Ote saa <i>alue</i>-tunnisteen ja voi vaikuttaa mihin tahansa olentoon. Kuolevainen, jonka HP laskee 0:aan, kukistetaan tai tapetaan (valintasi mukaan) sen sijaan, että se sidottaisiin kiveen.
 C	<b>VOIMALLISET LOITSUT</b> (Vaatii tason 6+ ja Amulettien & Talismaanien) Kun <b><i>valmistat suojaavan taikakalun</i></b>, voit käyttää 1 Aineksen lisää valitaksesi 1:
 B	Nimeä yksi vahinkolaji lisää
 B	10+:lla taikakalu säilyttää tehonsa

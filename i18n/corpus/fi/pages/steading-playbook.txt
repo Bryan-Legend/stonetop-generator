@@ -154,7 +154,7 @@ STAT	gold-purses	Kukkarot	0	0	999		Kultakukkarot
 STAT	gold-handfuls	Kouralliset	0	0	999		Kultakouralliset
 STAT	gold-coins	Kolikot	0	0	999		Kultakolikot
 H2	Stonetopin asukkaat
-P	Lisää jokainen NPC, joka nimetään esittelyissä tai pelissä. Anna kullekin ammatti (vaikka vain maanviljelijä tai kodinhoitaja) ja vähintään 1 piirre.
+P	Lisää jokainen sivuhahmo, joka nimetään esittelyissä tai pelissä. Anna kullekin ammatti (vaikka vain maanviljelijä tai kodinhoitaja) ja vähintään 1 piirre.
 TABLE	res	30
 COL	name	Nimi (pronominit)
 COL	occ	Ammatti
@@ -167,11 +167,11 @@ ROW		kätilö
 ENDTABLE
 H3	Nimiä
 P	Aderyn, Aeronwen, Afanen, Afon, Alun, Andras, Aneirin, Awstin, Bedwyr, Berwyn, Betrys, Braith, Briallen, Bronwen, Bryn, Cadi, Cadoc, Cadwygan, Caron, Cefin, Ceinwen, Ceridwyn, Cerys, Colwyn, Deiniol, Dilwen, Dylis, Eifion, Eirlys, Eluned, Emrys, Enfys, Eurwen, Gaenor, Garet, Gethin, Glyndir, Heledd, Hywel, Ifan, Iorwerth, Iwan, Lewela, Leuca, Linos, Mado, Maldwyn, Malon, Mared, Marged, Martyn, Meirion, Menwen, Mererid, Neirin, Nia, Ofydd, Olwyn, Owain, Padrig, Parry, Pryce, Pryder, Rheinal, Rhisiart, Rhosyn, Rydderch, Sawyl, Siana, Sioned, Talfryn, Tegid, Tiwlip, Tomos, Tudyr, Winifred, Yorath
-H2	NPC-piirteet
+H2	Sivuhahmojen piirteet
 P	Anna tarpeen mukaan; valitse listasta tai keksi omia.
 P	kaksi vasenta kättä, kunnianhimoinen, kaikkien rakastama, kaunis lauluääni, paras kokki, paras kutoja, sokea, uskalsi Rauniotorniin (Ruined Tower), varovainen, iloinen, krooninen yskä, valittaa liikaa, pelkuri, janosi tunnustusta, utelias, flirttaili Faen kanssa vuosia sitten, kuuro, haluaa kipeästi lasta, tislää parhaan viskin, ei vedä omaa kuormaansa, juoppo, kotkansilmä, peloton, löytölapsi, kerää yrttejä Suurmetsästä (Great Wood), tekee parhaat kaupat, lahjakas tarinankertoja, jumalaapelkäävä, hyvä lasten kanssa, huoleton, riidoissa Suonreunan kanssa, hyväsydäminen, paljon selkärankaa, harhaileva katse, osaa eläinten kanssa, suonissa Fae-verta, aivan kamala tuuri, menettänyt rohkeutensa, ei kunnioita vanhempiaan, kauheita painajaisia, eniten lapsia, pää pilvissä, vihaa Kukkulakansaa (Hillfolk), kuulee ääniä, huumorintajuton, nuhteeton ulkoasu, mustasukkainen, vastanainut, pysyttelee omissa oloissaan, tietää kaikki juorut, rampa, tykkää satuttaa, eli Metsän kansan (Forest Folk) parissa, menetti kaikki lapsensa, rakkaudenkipeä, rakastaa koiriaan, uskollinen ystävä, komein, muutti tänne äskettäin, kaikkien avioliittojen on saatava hänen hyväksyntänsä, mykkä, ei pelkää syvää vettä, ei kovin terävä, vanhin, orpo, ylisuojeleva, kaunein, ylpeä, holtiton, kieltäytyy avioitumasta, kadehtii osaansa, juoksee kaikkialle, herkkä, hölmö, tappoi monta crinwiniä, stoalainen, itsepäinen, kärsii kouristuksista, vannoo tavanneensa Kalpean Metsästäjän (Pale Hunter), kertoo parhaat vitsit, helläsydäminen, hoitaa Jumalten paviljonkia, hoitaa sairaita ja haavoittuneita, hiukan outo, hyvin vahva, haluaa lapsia, lukenut, paljon matkustanut, leski, syö mitä tahansa
 H2	Stonetopin huomionarvoiset naapurit
-P	Lisää NPC:itä naapuriseuduilta, kun pelikirja niin kehottaa tai kun tarvitaan.
+P	Lisää sivuhahmoja naapuriseuduilta, kun pelikirja niin kehottaa tai kun tarvitaan.
 TABLE	nb	20
 COL	name	Nimi (pronominit)
 COL	home	Koti

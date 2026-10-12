@@ -11,13 +11,13 @@ HR
 H2	Tausta (Valitse 1)
 C	<b>VESA</b> Kasvoit täällä, pitkän suvun jälkeläisenä. Stonetopin menneisyyden suurimpia nimiä istuu sukupuussasi. Kaikki kylässä pitävät valtaasi itsestäänselvyytenä, ja miehistösi on vakiintunut instituutio kylässä.
 P	Aloitat siirrolla Veteraanimiehistö tavallisten siirtojesi lisäksi. Merkitse se nyt.
-P	Kun <b><i>luot Miehistösi</i></b>, sillä on automaattisesti määre <i>arvostettu</i> (tavallisten valintojesi ja Veteraanimiehistöstä saamiesi lisäksi).
+P	Kun <b><i>luot Miehistösi</i></b>, sillä on automaattisesti tunniste <i>arvostettu</i> (tavallisten valintojesi ja Veteraanimiehistöstä saamiesi lisäksi).
 C	<b>KATUVA</b> Ennen kuin tulit tänne, johdit hunsvottien joukkoa: rosvoja, ryöstäjiä tai verikätisiä palkkasotureita. Mutta jokin muuttui. Totuuden hetki sai sinut ja seuralaisesi (ainakin osan heistä) jättämään sen elämän taaksenne. Ja syystä tai toisesta Stonetopin väki otti teidät vastaan.
 P	Kun <b><i>ammennat verisestä menneisyydestäsi Tietääksesi Asioita</i></b>, voit heittää +STR:llä +INT:n sijaan. Jos teet niin, PJ kysyy, kenelle teit silloin vääryyttä tai kuka voi yhä kantaa kaunaa. Vastaa heti.
-P	Kun <b><i>luot Miehistösi</i></b>, sillä on automaattisesti määre <i>soturit</i> (tavallisten valintojesi lisäksi).
+P	Kun <b><i>luot Miehistösi</i></b>, sillä on automaattisesti tunniste <i>soturit</i> (tavallisten valintojesi lisäksi).
 C	<b>JOHTOTÄHTI</b> Olet syntynyt johtaja: sanasi innoittavat, suunnitelmasi voittavat päivän, urotöistäsi kerrotaan laajalti. Ovatko jumalat koskettaneet sinua? Virtaako suonissasi muinainen veri? Vai oletko yksinkertaisesti se sankari, jota Stonetop näinä vaikeina aikoina tarvitsee?
 P	Aloitat siirrolla Me Onnekkaat Harvat tavallisten siirtojesi lisäksi. Merkitse se nyt.
-P	Kun <b><i>luot Miehistösi</i></b>, sillä on automaattisesti määre <i>omistautunut</i> (tavallisten valintojesi lisäksi).
+P	Kun <b><i>luot Miehistösi</i></b>, sillä on automaattisesti tunniste <i>omistautunut</i> (tavallisten valintojesi lisäksi).
 H2	Vaisto (Valitse 1)
 C	<b>AUKTORITEETTI</b> Ottaa ohjat ja näyttää, kuka määrää.
 HR
@@ -82,7 +82,7 @@ TAKES	2
 C2	<b>VETERAANIMIEHISTÖ</b>
 P	(Vaatii Miehistön)
 P	Aina kun otat tämän siirron, valitse 1. Voit myös valita uudelleen heidän Vaistonsa ja Hintansa.
-C2	Valitse Miehistöllesi 2 uutta määrettä
+C2	Valitse Miehistöllesi 2 uutta tunnistetta
 C2	Nosta heidän vahinkonoppansa d6:sta d8:aan
 C2	Nosta kunkin maksimi-HP:ta 2:lla
 C	<b>ETULINJAN JOHTAJA</b> ◇◇ Kun <b><i>johdat miehistösi taisteluun</i></b>, pidä 2 Läsnäoloa. Käytä Läsnäoloa miehistösi Uskollisuuden sijaan tai Valmiutena (kuin Puolustaisit heitä).
@@ -98,10 +98,10 @@ Q	Mikä täällä ei ole paikallaan?
 C2	<b>VALMISTELE VASTAANOTTO</b> ◇◇
 P	(Vaatii Lue maastoa)
 P	Kun <b><i>annat liittolaistesi linnoittaa aseman ja</i></b> <b><i>väijyä taistelua odottaen</i></b>, pidä 1 Yllätys, jos on kiire, tai 2 Yllätystä, jos voit ottaa aikaa.
-P	Kun taistelu on alkanut, käytä 1 Yllätys paljastaaksesi etukäteen valmistelemasi juonen, puolustuksen tai likaisen tempun ja heitä +INT: <b>10+:lla</b> se toimii niin hyvin kuin voi odottaa, ja sinulla on vielä ässiä hihassa: saat takaisin 1 Yllätyksen; <b>7–9:llä</b> se toimii niin hyvin kuin voi odottaa.
+P	Kun taistelu on alkanut, käytä 1 Yllätys paljastaaksesi etukäteen valmistelemasi juonen, puolustuksen tai likaisen tempun ja heitä +INT: <b>10+:lla</b> se toimii niin hyvin kuin voi odottaa, ja sinulla on vielä ässiä hihassa: saat takaisin 1 Yllätyksen; <b>7-9:llä</b> se toimii niin hyvin kuin voi odottaa.
 C	<b>AVAUSISKU</b> Kun <b><i>Isket Yhteen ja saat 7+</i></b>, voit valita tekeväsi vahinkoa haitalla. Jos teet niin, luot aukon, jota liittolainen voi käyttää, kuin olisit Auttanut. Kuvaile se!
 C	<b>RAVISTA SE POIS</b> Kun <b><i>käsket liittolaista voittamaan pelon, kivun,</i></b> <b><i>epäilyn tai harhan</i></b>, heitä +CHA: <b>10+:lla</b> hän tekee sen;
-P	<b>7–9:llä</b> pelaajahahmo saa edun tehdäkseen sen; sivuhahmo tekee sen, mutta tarvitsee aikaa, kantaa sinulle kaunaa tai tuntee itsensä nöyryytetyksi (PJ päättää).
+P	<b>7-9:llä</b> pelaajahahmo saa edun tehdäkseen sen; sivuhahmo tekee sen, mutta tarvitsee aikaa, kantaa sinulle kaunaa tai tuntee itsensä nöyryytetyksi (PJ päättää).
 C	<b>KILPIMUURI</b> Kun <b><i>annat miehistösi muodostaa kilpimuurin</i></b>, he Puolustavat edulla ja <b>7+:lla</b> pitävät +2 Valmiutta (tavallisen kilpien +1:n sijaan). <b><i>Niin kauan kuin</i></b> <b><i>he pitävät muodostelman</i></b>, he voivat siirtyä hyökkäykseen menettämättä Valmiutta.
 PAGE	127
 C	<b>HERRA, LUPA KUOLLA, HERRA</b> Kun <b><i>joku seuralaisistasi kuolisi</i></b>, voit käyttää 1 hänen Uskollisuuttaan, jotta hän selviää (pois pelistä, mutta hengissä). Jos päästät hänet menemään, merkitse XP.
@@ -114,7 +114,7 @@ Q	Voinko luottaa häneen (että ______ )?
 Q	Mitä hän aikoo tehdä?
 Q	Missä hän on hyödyllisimmillään/vaarallisimmillaan?
 Q	Mitä hänen heikkouttaan voin käyttää hyväkseni?
-C	<b>ME ONNEKKAAT HARVAT</b> Kun <b><i>pidät liittolaisillesi innoittavan puheen</i></b> <b><i>ennen kuin kohtaatte hirvittävän uhan</i></b>, heitä +CHA: <b>10+:lla</b> kukin liittolainen pitää 2 Innoitusta; <b>7–9:llä</b> kukin liittolainen pitää 1 Innoituksen; <b>6-:lla</b> kukin pitää 1, mutta sinulla on haitta kaikkiin heittoihin, kunnes jaat kalvavat epäilyksesi jonkun toisen kanssa.
+C	<b>ME ONNEKKAAT HARVAT</b> Kun <b><i>pidät liittolaisillesi innoittavan puheen</i></b> <b><i>ennen kuin kohtaatte hirvittävän uhan</i></b>, heitä +CHA: <b>10+:lla</b> kukin liittolainen pitää 2 Innoitusta; <b>7-9:llä</b> kukin liittolainen pitää 1 Innoituksen; <b>6-:lla</b> kukin pitää 1, mutta sinulla on haitta kaikkiin heittoihin, kunnes jaat kalvavat epäilyksesi jonkun toisen kanssa.
 P	Kun taistelu on alkanut, liittolaisesi voivat käyttää
 P	Innoitustaan milloin tahansa, 1:1, tehdäkseen seuraavaa:
 B	Toimia pelottomasti kauhun tai ylivoimaisen vihollisen edessä

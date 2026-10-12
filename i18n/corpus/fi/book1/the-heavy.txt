@@ -77,7 +77,7 @@ HR
 C	 <b>PANSSAROITU</b> Kun <b><i>kannat kilpeä</i></b>, merkitse vain ◇ (eikä ◇◇). Lisäksi voit jättää huomiotta tunnisteen <i>kömpelö</i> missä tahansa käyttämässäsi panssarissa.
 P	Jos otat tämän siirron pelin alussa, lisää kantamukseesi ◇◇ rautainen rengashaarniska, ◇◇ pronssinen rintapanssari tai ◇◇ suomuhaarniska (kaikki 2 panssari, <i>lämmin</i>, <i>kömpelö</i>).
 C	<b>TAISTELUN HURMA</b> Kun <b><i>vuodatat verta — omaasi tai jonkun muun — ja</i></b> <b><i>kadotat itsesi taisteluun</i></b>, et välitä pelosta, kivusta, mielenhallinnasta etkä heikkouksien vaikutuksista niin kauan kuin jatkat taistelua.
-P	Kun <b><i>toiminta loppuu</i></b>, heitä +CON: <b>10+:lla</b> olipa se huumaavaa, palauta 1d4 HP; <b>7–9:llä</b> olet hengästynyt ja pihalla, mutta pärjäät muutaman minuutin levolla; <b>6-:lla</b> merkitse heikkous, mutta älä merkitse XP:tä.
+P	Kun <b><i>toiminta loppuu</i></b>, heitä +CON: <b>10+:lla</b> olipa se huumaavaa, palauta 1d4 HP; <b>7-9:llä</b> olet hengästynyt ja pihalla, mutta pärjäät muutaman minuutin levolla; <b>6-:lla</b> merkitse heikkous, mutta älä merkitse XP:tä.
 C2	<b>BERSERKKI</b>
 P	(Vaatii Taistelun Hurman)
 P	Kun <b><i>olet Taistelun Hurmassa</i></b>, lähitaisteluhyökkäyksesi saavat tunnisteen <i>alue</i>, ja huitaiset kaikkia lähellä olevia (niin ystäviä kuin vihollisia). Heitä vahinko erikseen jokaiselle kohteelle.
@@ -85,7 +85,7 @@ C	<b>PUUSTA VEISTETTY</b> Nosta enimmäis-HP:täsi 4:llä.
 CX	<b>VAARALLINEN</b>
 P	(Vaatii Korston)
 P	Kun <b><i>teet vahinkosi</i></b>, sinulla on etu.
-C	<b>PELOTTAVA</b> Kun <b><i>rynnistät taisteluun</i></b>, voit heittää +CHA: <b>10+:lla</b> molemmat; <b>7–9:llä</b> valitse 1:
+C	<b>PELOTTAVA</b> Kun <b><i>rynnistät taisteluun</i></b>, voit heittää +CHA: <b>10+:lla</b> molemmat; <b>7-9:llä</b> valitse 1:
 B	Heikommat viholliset lannistuvat, epäröivät tai pakenevat edestäsi.
 B	Urheat viholliset keskittyvät sinuun ja pitävät sinua suurimpana uhkana.
 P	<b>6-:lla</b> valitse 1, mutta kysy pelinjohtajalta, mitä jäi sinulta huomaamatta.
@@ -98,7 +98,7 @@ HR
 C	<b>UHKAAVA</b> Kun <b><i>Suostuttelet väkivallalla tai uhkauksilla</i></b>, sinulla on etu.
 HR
 CX	<b>SITKEÄHENKINEN</b>
-P	Kun <b><i>olet Kuoleman Ovella,</i></b> voit heittää +CON tai +ei mitään (valintasi mukaan). <b>7–9:llä</b> voit merkitä valitsemasi heikkouden palauttaaksesi 1 HP:n.
+P	Kun <b><i>olet Kuoleman Ovella,</i></b> voit heittää +CON tai +ei mitään (valintasi mukaan). <b>7-9:llä</b> voit merkitä valitsemasi heikkouden palauttaaksesi 1 HP:n.
 HR
 C2	<b>PYSÄYTTÄMÄTÖN</b> ◇◇◇◇◇
 P	(Vaatii Sitkeähenkisen)
@@ -127,7 +127,7 @@ B	Aiheutat ei-toivottua vahinkoa tai haittaa
 B	Se ottaa veronsa (merkitse heikkous)
 C	<b>NEMESIS</b> (Vaatii tason 6+ ja Hellittämättömän) Kun <b><i>Isket Yhteen ja vihollisesi selviää</i></b>, kaikki tulevat hyökkäyksesi sitä vastaan tekevät +1d6 vahinkoa.
 C	<b>VANKKUMATON SUOJELIJA</b> (Vaatii tason 6+ ja Suojelijan) Niin kauan kuin <b><i>pidät Valmiutta (Puolusta-siirrosta)</i></b>, voit aina kärsiä hyökkäyksen vahingon/vaikutukset suojattisi sijaan; Valmiutta ei tarvitse käyttää, voit vain tehdä niin.
-C	<b>KIVENKOVA</b> (Vaatii tason 6+ ja Jääkylmän) Kun <b><i>Uhmaat Vaaraa (tai Kamppailette Yhtenä)</i></b> <b><i>pysymällä rauhallisena ja jatkamalla</i></b>, kohtele 6-:ta kuin 7–9:ää.
+C	<b>KIVENKOVA</b> (Vaatii tason 6+ ja Jääkylmän) Kun <b><i>Uhmaat Vaaraa (tai Kamppailette Yhtenä)</i></b> <b><i>pysymällä rauhallisena ja jatkamalla</i></b>, kohtele 6-:ta kuin 7-9:ää.
 C	<b>YLIVERTAINEN KYKY</b> (Vaatii tason 6+) Nosta yhtä kykyäsi +1:llä (enintään +3:een).
 PAGE	116
 H2	Väkivaltainen menneisyys

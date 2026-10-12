@@ -123,7 +123,7 @@ P	Tästä lähtien, kun <b><i>johdat alkuhärkäjahtia</i></b> <b><i>keväällä
 P	<b>7-9</b>: saat 1d4 Ylijäämää mutta valitse 1 alla olevasta listasta; <b>6-</b>: valitse 1 alla olevasta listasta, tai valitse 2 ja saat 1d4 Ylijäämää.
 B	1d4 kylän hevosista ontuu tai kuolee
 B	Useita paikallisia loukkaantuu; asutus merkitsee <i>kuihtunut</i> (haitta siirroissa Lähetä Väkeä, Kutsu Koolle tai Talkoot)
-B	Pelinjohtaja valitsee jahdissa olleen NPC:n; tämä kuolee
+B	Pelinjohtaja valitsee jahdissa olleen sivuhahmon; tämä kuolee
 B	Kukkulakansa loukkaantuu jotenkin
 B	Lauma on heikko; jos jahdataan ensi vuonna, se tuhoutuu
 PAGE	157

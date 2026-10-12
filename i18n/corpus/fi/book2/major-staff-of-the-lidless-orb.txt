@@ -13,7 +13,7 @@ P	Vihertävästä lasista tehty kehrä, johon on syövytetty kissansilmäkuvio j
 P	Ja joskus voisi vannoa, että se katselee ympärilleen omin päin.
 P	Mutta sehän on järjetöntä.
 HR
-P	Kun <b><i>tartut sauvaan, suljet silmäsi ja katsot Luomettoman Kehrän läpi</i></b>, heitä +CON: <b>10+:lla</b> valitse 3 alla olevasta listasta; <b>7–9:llä</b> valitse 1.
+P	Kun <b><i>tartut sauvaan, suljet silmäsi ja katsot Luomettoman Kehrän läpi</i></b>, heitä +CON: <b>10+:lla</b> valitse 3 alla olevasta listasta; <b>7-9:llä</b> valitse 1.
 B	Kehrä näkee pimeyden läpi, luonnollisen tai maagisen
 B	Kehrä näkee harhan, lumouksen ja näkymättömyyden läpi
 B	Kehrä näkee voimakkaat tunteet auroina, jotka säteilevät ihmisistä ja viipyvät paikoissa
@@ -36,7 +36,7 @@ C	Luo katseesi kauas ja näe joko nykyisen olinpaikkasi mennyt aika tai sellaise
 C	Pidä Kehrää toisen olennon katseen edessä ja varasta sen näköaisti, jolloin se on sokea, kunnes käytät tätä vaikutusta uudelleen. Kun katsot Luomettoman Kehrän läpi, voit valita näkeväsi senhetkisen varastetun näköaistin avulla.
 C	Pidä Kehrää kuolevaisen olennon katseen edessä ja pidä se lumoutuneena, hypnotisoituna ja altiina ehdotuksillesi. Heikkotahtoinen olento tottelee suoraan; vahvatahtoinen voi vaatia suostuttelua.
 C	Osoita Kehrällä elävää uhria ja heitä 2d4. Jos heität enemmän kuin uhrin nykyiset HP, se kärsii pahoinvoinnista ja huimauksesta niin kauan kuin pysyt sen läheisyydessä (ja mahdollisesti jonkin aikaa sen jälkeen). Muuten uhri horjahtaa hetken mutta toipuu pian.
-P	Valittuasi vaikutuksen heitä +CON: <b>10+:lla</b> vaikutus tapahtuu kuvatusti; <b>7–9:llä</b> päätät joko merkitä Seurauksen ja antaa vaikutuksen tapahtua tai antaa vaikutuksen epäonnistua; <b>6-:lla</b> kysy PJ:ltä, mitä tapahtuu (mihin voi kuulua tai olla kuulumatta Seurauksen merkitseminen).
+P	Valittuasi vaikutuksen heitä +CON: <b>10+:lla</b> vaikutus tapahtuu kuvatusti; <b>7-9:llä</b> päätät joko merkitä Seurauksen ja antaa vaikutuksen tapahtua tai antaa vaikutuksen epäonnistua; <b>6-:lla</b> kysy PJ:ltä, mitä tapahtuu (mihin voi kuulua tai olla kuulumatta Seurauksen merkitseminen).
 HR
 H2	Seuraukset
 HR

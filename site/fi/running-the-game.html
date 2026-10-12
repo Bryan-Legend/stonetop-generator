@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pelin johtaminen — Stonetop, verkkoversio</title>
+  <meta name="description" content="Näin Stonetopia johdetaan: pelinjohtajan agenda, ydinsilmukka, valokeila, periaatteet ja siirrot (Running the Game).">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://stonetop.cc/fi/running-the-game.html">
+  <meta property="og:site_name" content="Stonetop, verkkoversio">
+  <meta property="og:title" content="Pelin johtaminen — Stonetop, verkkoversio">
+  <meta property="og:description" content="Näin Stonetopia johdetaan: pelinjohtajan agenda, ydinsilmukka, valokeila, periaatteet ja siirrot (Running the Game).">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:url" content="https://stonetop.cc/fi/running-the-game.html">
+  <meta property="og:image" content="https://stonetop.cc/images/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://stonetop.cc/running-the-game.html">
+  <link rel="alternate" hreflang="es" href="https://stonetop.cc/es/running-the-game.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://stonetop.cc/pt-BR/running-the-game.html">
+  <link rel="alternate" hreflang="de" href="https://stonetop.cc/de/running-the-game.html">
+  <link rel="alternate" hreflang="fr" href="https://stonetop.cc/fr/running-the-game.html">
+  <link rel="alternate" hreflang="pl" href="https://stonetop.cc/pl/running-the-game.html">
+  <link rel="alternate" hreflang="it" href="https://stonetop.cc/it/running-the-game.html">
+  <link rel="alternate" hreflang="ru" href="https://stonetop.cc/ru/running-the-game.html">
+  <link rel="alternate" hreflang="ja" href="https://stonetop.cc/ja/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://stonetop.cc/zh-Hans/running-the-game.html">
+  <link rel="alternate" hreflang="ko" href="https://stonetop.cc/ko/running-the-game.html">
+  <link rel="alternate" hreflang="nl" href="https://stonetop.cc/nl/running-the-game.html">
+  <link rel="alternate" hreflang="sv" href="https://stonetop.cc/sv/running-the-game.html">
+  <link rel="alternate" hreflang="cs" href="https://stonetop.cc/cs/running-the-game.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://stonetop.cc/zh-Hant/running-the-game.html">
+  <link rel="alternate" hreflang="tr" href="https://stonetop.cc/tr/running-the-game.html">
+  <link rel="alternate" hreflang="uk" href="https://stonetop.cc/uk/running-the-game.html">
+  <link rel="alternate" hreflang="hu" href="https://stonetop.cc/hu/running-the-game.html">
+  <link rel="alternate" hreflang="da" href="https://stonetop.cc/da/running-the-game.html">
+  <link rel="alternate" hreflang="nb" href="https://stonetop.cc/nb/running-the-game.html">
+  <link rel="alternate" hreflang="fi" href="https://stonetop.cc/fi/running-the-game.html">
+  <link rel="alternate" hreflang="x-default" href="https://stonetop.cc/running-the-game.html">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="../images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+  <link rel="stylesheet" href="../css/wiki.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://stonetop.cc/fi/running-the-game.html#article","url":"https://stonetop.cc/fi/running-the-game.html","mainEntityOfPage":"https://stonetop.cc/fi/running-the-game.html","headline":"Pelin johtaminen","name":"Pelin johtaminen","inLanguage":"fi","author":{"@type":"Person","name":"Jeremy Strandberg"},"publisher":{"@type":"Organization","name":"Lampblack & Brimstone","url":"https://lampblackandbrimstone.com/"},"license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"about":{"@id":"https://stonetop.cc/#game"},"isPartOf":[{"@id":"https://stonetop.cc/#book1"},{"@id":"https://stonetop.cc/#website"}],"description":"Näin Stonetopia johdetaan: pelinjohtajan agenda, ydinsilmukka, valokeila, periaatteet ja siirrot (Running the Game).","pagination":"167-206"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Stonetop","item":"https://stonetop.cc/fi/"},{"@type":"ListItem","position":2,"name":"Pelin johtaminen","item":"https://stonetop.cc/fi/running-the-game.html"}]}]}</script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4536408101e64ba59733ed69779dd45c"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body data-wiki-root="../">
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Näytä tai piilota navigointi">☰</button>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="wiki-title" href="./">Stonetop, verkkoversio</a>
+        <input type="search" id="nav-filter" class="nav-filter" placeholder="Hae…" autocomplete="off" aria-label="Hae">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <nav class="toc" aria-label="Aiheet">
+        <ul id="nav-list">
+          <li class="nav-book-label">Kirja I</li>
+<li class="has-sections"><a href="welcome-to-stonetop.html">Tervetuloa Stonetopiin</a><ul class="nav-sections"><li class="nav-section"><a href="welcome-to-stonetop.html#expectations">Odotukset</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#the-setting">Maailma</a></li><li class="nav-section"><a href="welcome-to-stonetop.html#why-play">Miksi pelata?</a></li></ul></li>
+<li class="has-sections"><a href="getting-started.html">Aluksi</a><ul class="nav-sections"><li class="nav-section"><a href="getting-started.html#review-the-setting">Käy maailma läpi</a></li><li class="nav-section"><a href="getting-started.html#set-expectations">Sovi odotuksista</a></li><li class="nav-section"><a href="getting-started.html#discuss-tone-and-content">Keskustelkaa sävystä ja sisällöstä</a></li><li class="nav-section"><a href="getting-started.html#create-characters">Luokaa hahmot</a></li><li class="nav-section"><a href="getting-started.html#intro-the-pcs">Esitelkää pelaajahahmot</a></li><li class="nav-section"><a href="getting-started.html#let-spring-burst-forth">antaa kevään puhjeta</a></li><li class="nav-section"><a href="getting-started.html#after-the-session">Pelikerran jälkeen</a></li></ul></li>
+<li class="has-sections"><a href="playing-the-game.html">Pelin pelaaminen</a><ul class="nav-sections"><li class="nav-section"><a href="playing-the-game.html#the-conversation">Keskustelu</a></li><li class="nav-section"><a href="playing-the-game.html#your-agenda">Tavoitteesi</a></li><li class="nav-section"><a href="playing-the-game.html#flow-of-play">Pelin kulku</a></li><li class="nav-section"><a href="playing-the-game.html#dice-and-moves">Nopat ja siirrot</a></li><li class="nav-section"><a href="playing-the-game.html#your-principles">Periaatteesi</a></li><li class="nav-section"><a href="playing-the-game.html#other-things-to-do">Muuta tehtävää</a></li><li class="nav-section"><a href="playing-the-game.html#your-character">Hahmosi</a></li><li class="nav-section"><a href="playing-the-game.html#arcana">Arkaanit</a></li><li class="nav-section"><a href="playing-the-game.html#followers">seuralaisia</a></li><li class="nav-section"><a href="playing-the-game.html#your-home">Kotisi</a></li><li class="nav-section"><a href="playing-the-game.html#moves">siirtoja</a></li><li class="nav-section"><a href="playing-the-game.html#gear-and-possessions">Varusteet ja omaisuus</a></li><li class="nav-section"><a href="playing-the-game.html#if-you-want-to">Jos haluat…</a></li></ul></li>
+<li class="nav-hub has-sections"><a href="playbooks-inserts.html">Pelikirjat ja liitteet</a><ul class="nav-sections"><li class="nav-section"><a href="the-blessed.html">Siunattu</a></li><li class="nav-section"><a href="the-fox.html">Kettu</a></li><li class="nav-section"><a href="the-heavy.html">Korsto</a></li><li class="nav-section"><a href="the-judge.html">Tuomari</a></li><li class="nav-section"><a href="the-lightbearer.html">Valonkantaja</a></li><li class="nav-section"><a href="the-marshal.html">Marski</a></li><li class="nav-section"><a href="the-ranger.html">Samooja</a></li><li class="nav-section"><a href="the-seeker.html">Etsijä</a></li><li class="nav-section"><a href="the-would-be-hero.html">Sankarinalku</a></li><li class="nav-section"><a href="inserts.html">Liitteet</a></li><li class="nav-section"><a href="inventory.html">Kantamus</a></li><li class="nav-section"><a href="animal-companion.html">Eläinkumppani</a></li><li class="nav-section"><a href="crew.html">Miehistö</a></li><li class="nav-section"><a href="initiates-of-danu.html">Danun Vihityt</a></li><li class="nav-section"><a href="invocations.html">Avuksihuudot</a></li><li class="nav-section"><a href="followers.html">Seuralaiset</a></li><li class="nav-section"><a href="ghost.html">Aave</a></li><li class="nav-section"><a href="revenant.html">Palannut</a></li><li class="nav-section"><a href="thrall.html">Kahlittu</a></li><li class="nav-section"><a href="steading-playbook.html">Asutuksen pelikirja</a></li></ul></li>
+<li class="has-sections current"><a href="running-the-game.html">Pelin johtaminen</a><ul class="nav-sections"><li class="nav-section"><a href="running-the-game.html#your-agenda">Agendasi</a></li><li class="nav-section"><a href="running-the-game.html#the-core-loop">Ydinsilmukka</a></li><li class="nav-section"><a href="running-the-game.html#the-spotlight">Valokeila</a></li><li class="nav-section"><a href="running-the-game.html#scenes-and-loose-play">Kohtaukset ja vapaa peli</a></li><li class="nav-section"><a href="running-the-game.html#your-gm-moves">Pelinjohtajan siirtosi</a></li><li class="nav-section"><a href="running-the-game.html#example-of-play">Esimerkki pelistä</a></li><li class="nav-section"><a href="running-the-game.html#your-principles">Periaatteesi</a></li><li class="nav-section"><a href="running-the-game.html#other-things-to-do">Muuta tehtävää</a></li><li class="nav-section"><a href="running-the-game.html#gming-is-a-practice">Pelinjohtaminen on harjoitus</a></li><li class="nav-section"><a href="running-the-game.html#prep">valmisteluja</a></li></ul></li>
+<li class="has-sections"><a href="player-moves.html">Pelaajien siirrot</a><ul class="nav-sections"><li class="nav-section"><a href="player-moves.html#defy-danger">Uhmaa Vaaraa</a></li><li class="nav-section"><a href="player-moves.html#aid">Auta</a></li><li class="nav-section"><a href="player-moves.html#clash">Iske Yhteen</a></li><li class="nav-section"><a href="player-moves.html#defend">Puolusta</a></li><li class="nav-section"><a href="player-moves.html#interfere">Häiritse</a></li><li class="nav-section"><a href="player-moves.html#know-things">Tiedä Asioita</a></li><li class="nav-section"><a href="player-moves.html#let-fly">Laukaise</a></li><li class="nav-section"><a href="player-moves.html#seek-insight">Etsi Ymmärrystä</a></li><li class="nav-section"><a href="player-moves.html#special-moves">Erityissiirrot</a></li><li class="nav-section"><a href="player-moves.html#advantage-disadvantage">Etu/Haitta</a></li><li class="nav-section"><a href="player-moves.html#burn-brightly">Palaa Kirkkaasti</a></li><li class="nav-section"><a href="player-moves.html#end-of-session">Pelikerran Päätös</a></li><li class="nav-section"><a href="player-moves.html#deaths-door">Kuoleman Ovella</a></li></ul></li>
+<li class="has-sections"><a href="harm-healing.html">Vahinko ja parantuminen</a><ul class="nav-sections"><li class="nav-section"><a href="harm-healing.html#hit-points-and-damage">Osumapisteet ja vahinko</a></li><li class="nav-section"><a href="harm-healing.html#debilities">Heikkouksia</a></li><li class="nav-section"><a href="harm-healing.html#problematic-wounds">Hankalat haavat</a></li><li class="nav-section"><a href="harm-healing.html#death-and-dying">Kuolema ja kuoleminen</a></li></ul></li>
+<li class="has-sections"><a href="first-adventure.html">Ensimmäinen seikkailu</a><ul class="nav-sections"><li class="nav-section"><a href="first-adventure.html#structure">Rakenne</a></li><li class="nav-section"><a href="first-adventure.html#background">Tausta</a></li><li class="nav-section"><a href="first-adventure.html#setup-questions">Asetelmakysymykset</a></li><li class="nav-section"><a href="first-adventure.html#setting-the-scene">Kohtauksen asettaminen</a></li><li class="nav-section"><a href="first-adventure.html#dropping-the-hook">Koukun heittäminen</a></li><li class="nav-section"><a href="first-adventure.html#heading-out">Matkaan</a></li></ul></li>
+<li class="has-sections"><a href="threats.html">Uhat</a><ul class="nav-sections"><li class="nav-section"><a href="threats.html#when-to-write-up-threats">Milloin uhkia kirjoitetaan</a></li><li class="nav-section"><a href="threats.html#writing-a-threat">Uhan kirjoittaminen</a></li><li class="nav-section"><a href="threats.html#example-threats">Esimerkkiuhkia</a></li><li class="nav-section"><a href="threats.html#updating-threats">Uhkien päivittäminen</a></li></ul></li>
+<li class="has-sections"><a href="expeditions.html">Retket</a><ul class="nav-sections"><li class="nav-section"><a href="expeditions.html#preparations">Valmistelut</a></li><li class="nav-section"><a href="expeditions.html#running-the-journey">Matkan johtaminen</a></li><li class="nav-section"><a href="expeditions.html#player-moves">pelaajien siirrot</a></li><li class="nav-section"><a href="expeditions.html#going-home">Kotiinpaluu</a></li><li class="nav-section"><a href="expeditions.html#what-to-prep">Mitä valmistella</a></li></ul></li>
+<li class="has-sections"><a href="sites.html">Kohteet</a><ul class="nav-sections"><li class="nav-section"><a href="sites.html#environmental-storytelling">Ympäristökerronta</a></li><li class="nav-section"><a href="sites.html#running-sites">Kohteiden johtaminen</a></li><li class="nav-section"><a href="sites.html#exploring-sites">Kohteiden tutkiminen</a></li><li class="nav-section"><a href="sites.html#creating-sites">Kohteiden luominen</a></li><li class="nav-section"><a href="sites.html#the-green-lords-tomb">VIHREÄN HERRAN HAUTA</a></li></ul></li>
+<li class="has-sections"><a href="dangers.html">Vaarat</a><ul class="nav-sections"><li class="nav-section"><a href="dangers.html#hazards">Vaaratekijät</a></li><li class="nav-section"><a href="dangers.html#monsters">Hirviöt</a></li><li class="nav-section"><a href="dangers.html#running-combat">Taistelun johtaminen</a></li></ul></li>
+<li class="has-sections"><a href="discoveries.html">Löydöt</a><ul class="nav-sections"><li class="nav-section"><a href="discoveries.html#clues">Vihjeet</a></li><li class="nav-section"><a href="discoveries.html#sites">Kohteet</a></li><li class="nav-section"><a href="discoveries.html#encounters">Kohtaamiset</a></li><li class="nav-section"><a href="discoveries.html#opportunities">Tilaisuudet</a></li><li class="nav-section"><a href="discoveries.html#artifacts">Artefaktit</a></li><li class="nav-section"><a href="discoveries.html#arcana">Arkaanit</a></li></ul></li>
+<li class="has-sections"><a href="npcs-followers.html">Sivuhahmot ja seuralaiset</a><ul class="nav-sections"><li class="nav-section"><a href="npcs-followers.html#npcs-in-play">Sivuhahmot pelissä</a></li><li class="nav-section"><a href="npcs-followers.html#creating-npcs">Sivuhahmojen luominen</a></li><li class="nav-section"><a href="npcs-followers.html#follower-moves">Seuralaisten siirrot</a></li><li class="nav-section"><a href="npcs-followers.html#order-followers">Käske Seuralaisia</a></li><li class="nav-section"><a href="npcs-followers.html#strengthen-your-bond">Vahvista Sidettä</a></li><li class="nav-section"><a href="npcs-followers.html#followers-in-play">Seuralaiset pelissä</a></li><li class="nav-section"><a href="npcs-followers.html#creating-followers">Seuralaisten luominen</a></li><li class="nav-section"><a href="npcs-followers.html#updating-followers">Seuralaisten päivittäminen</a></li><li class="nav-section"><a href="npcs-followers.html#losing-followers">Seuralaisten menettäminen</a></li></ul></li>
+<li class="has-sections"><a href="homefront.html">Kotirintama</a><ul class="nav-sections"><li class="nav-section"><a href="homefront.html#bringing-the-village-to-life">Kylän herättäminen eloon</a></li><li class="nav-section"><a href="homefront.html#running-the-homefront">Kotirintaman johtaminen</a></li><li class="nav-section"><a href="homefront.html#aftermath">Jälkiselvittely</a></li><li class="nav-section"><a href="homefront.html#the-steading-playbook">Asutuksen pelikirja</a></li><li class="nav-section"><a href="homefront.html#seasons-change">Vuodenaikojen Vaihtua</a></li><li class="nav-section"><a href="homefront.html#player-moves">Pelaajien siirrot</a></li><li class="nav-section"><a href="homefront.html#bolster">Valmistaudu</a></li><li class="nav-section"><a href="homefront.html#convalesce">Toipilasaika</a></li><li class="nav-section"><a href="homefront.html#deploy">Lähetä Väkeä</a></li><li class="nav-section"><a href="homefront.html#level-up">Nouse Tasolle</a></li><li class="nav-section"><a href="homefront.html#make-a-plan">Tee Suunnitelma</a></li><li class="nav-section"><a href="homefront.html#meet-with-disaster">Kohtaa Onnettomuus</a></li><li class="nav-section"><a href="homefront.html#muster">Kutsuvat Koolle</a></li><li class="nav-section"><a href="homefront.html#pull-together">Talkoisiin</a></li><li class="nav-section"><a href="homefront.html#trade-barter">Käy Kauppaa</a></li><li class="nav-section"><a href="homefront.html#what-to-prep">Mitä valmistella</a></li></ul></li>
+<li><a href="writing-moves-love-letters.html">Siirtojen ja rakkauskirjeiden kirjoittaminen</a></li>
+<li class="has-sections"><a href="the-game-ongoing.html">Pelin jatkuessa</a><ul class="nav-sections"><li class="nav-section"><a href="the-game-ongoing.html#ending-a-session">Pelikerran päättäminen</a></li><li class="nav-section"><a href="the-game-ongoing.html#between-sessions">Pelikertojen välillä</a></li><li class="nav-section"><a href="the-game-ongoing.html#starting-a-session">Pelikerran aloittaminen</a></li><li class="nav-section"><a href="the-game-ongoing.html#pacing">Tahti</a></li><li class="nav-section"><a href="the-game-ongoing.html#advancement">Kehittyminen</a></li><li class="nav-section"><a href="the-game-ongoing.html#retiring-pcs">Pelaajahahmojen jättäytyminen pois</a></li><li class="nav-section"><a href="the-game-ongoing.html#new-pcs">Uudet pelaajahahmot</a></li><li class="nav-section"><a href="the-game-ongoing.html#conflict-between-pcs">Pelaajahahmojen väliset konfliktit</a></li><li class="nav-section"><a href="the-game-ongoing.html#time-skips">Aikahypyt</a></li><li class="nav-section"><a href="the-game-ongoing.html#shake-ups">Mullistukset</a></li><li class="nav-section"><a href="the-game-ongoing.html#ending-your-game">Pelinne päättäminen</a></li></ul></li>
+<li><a href="acknowledgements.html">Kiitokset</a></li>
+<li><a href="mediography.html">Mediografia</a></li>
+<li class="nav-book-label">Kirja II</li>
+<li><a href="welcome-to-the-worlds-end.html">Tervetuloa Maailman Ääreen</a></li>
+<li><a href="../maps.html" class="nav-en" title="Saatavilla vain englanniksi" hreflang="en">Maps</a></li>
+<li><a href="the-village-of-stonetop.html">Stonetopin kylä</a></li>
+<li><a href="aratis-the-lawkeeper.html">Aratis, Lainvartija</a></li>
+<li><a href="barrier-pass.html">Muurisola</a></li>
+<li><a href="barrow-builders.html">Kumpujen rakentajat</a></li>
+<li><a href="blackwater-lake.html">Mustavesijärvi</a></li>
+<li><a href="crinwin.html">Crinwin</a></li>
+<li><a href="the-crombil.html">Crombil</a></li>
+<li><a href="danu-the-earth-mother.html">Danu, Maaemo</a></li>
+<li><a href="death-and-the-undying.html">Kuolema ja kuolemattomat</a></li>
+<li><a href="the-dread-river.html">Kauhujoki</a></li>
+<li><a href="fae.html">Fae</a></li>
+<li><a href="ferriers-fen.html">Ferrierin Räme</a></li>
+<li><a href="the-flats.html">Tasangot</a></li>
+<li><a href="fomoraij.html">Fomoraij</a></li>
+<li><a href="the-foothills.html">Kukkulajuuret</a></li>
+<li><a href="forest-folk.html">Metsän kansa</a></li>
+<li><a href="forge-lords.html">Ahjon Herrat</a></li>
+<li><a href="the-frozen-wastes.html">Jäätyneet Erämaat</a></li>
+<li><a href="gods-and-religion.html">Jumalat ja uskonto</a></li>
+<li><a href="the-golden-oak.html">Kultainen Tammi</a></li>
+<li><a href="gordins-delve.html">Gordinin Kaivos</a></li>
+<li><a href="the-great-wood.html">Suurmetsä</a></li>
+<li><a href="green-lords.html">Vihreät Herrat</a></li>
+<li><a href="helior-the-daybringer.html">Helior, Päivänkantaja</a></li>
+<li><a href="hillfolk.html">Kukkulakansa</a></li>
+<li><a href="huffel-peaks.html">Huffelin huiput</a></li>
+<li><a href="the-labyrinth.html">Labyrintti</a></li>
+<li><a href="lygos-and-the-south.html">Lygos ja etelä</a></li>
+<li><a href="the-makers.html">Tekijät</a></li>
+<li><a href="the-makers-roads.html">Tekijöiden tiet</a></li>
+<li><a href="marshedge.html">Suonreuna</a></li>
+<li><a href="the-maw.html">Kita</a></li>
+<li><a href="north-manmarch.html">Pohjois-Manmarch</a></li>
+<li><a href="the-pale-hunter.html">Kalpea Metsästäjä</a></li>
+<li><a href="primordial-powers.html">Alkuvoimat</a></li>
+<li><a href="red-groves.html">Punaiset Lehdot</a></li>
+<li><a href="rime-lords.html">Huurteen Herrat</a></li>
+<li><a href="the-ruined-tower.html">Rauniotorni</a></li>
+<li><a href="south-manmarch.html">Etelä-Manmarch</a></li>
+<li><a href="spirits-of-the-wild.html">Erämaan henget</a></li>
+<li><a href="the-steplands.html">Porrasmaat</a></li>
+<li><a href="stone-lords.html">Kiven Herrat</a></li>
+<li><a href="the-stream.html">Puro</a></li>
+<li><a href="tempest-lords.html">Myrskyn Herrat</a></li>
+<li><a href="the-things-below.html">Alla Olevat</a></li>
+<li><a href="three-coven-lake.html">Kolmen Noitapiirin Järvi</a></li>
+<li><a href="titan-bones.html">Titaanin luut</a></li>
+<li><a href="tor-the-rain-maker.html">Tor, Sateentekijä</a></li>
+<li><a href="useful-or-valuable-flora.html">Hyödyllinen tai arvokas kasvillisuus</a></li>
+<li><a href="ustrina.html">Ustrina</a></li>
+<li><a href="vor-svetelik.html">Vor Svetelik</a></li>
+<li><a href="waystones.html">Tienviittakivet</a></li>
+<li><a href="the-whitefang-mountains.html">Valkohammasvuoret</a></li>
+<li><a href="appendix-a-ages-of-the-world.html">Liite A: Maailman aikakaudet</a></li>
+<li><a href="appendix-b-artifact-creation.html">Liite B: Artefaktien luominen</a></li>
+<li class="nav-hub"><a href="appendix-c-minor-arcana.html">Liite C: Pienet arkanat</a></li>
+<li class="nav-arcana"><a href="minor-laoj-daveths-galvanic-infusion.html">1. Laoj Davethin Galvaaninen Haude</a></li>
+<li class="nav-arcana"><a href="minor-truth-seeds.html">2. Totuuden Siemenet</a></li>
+<li class="nav-arcana"><a href="minor-old-mothers-wine.html">3. Vanhan Äidin Viini</a></li>
+<li class="nav-arcana"><a href="minor-aalz-galts-sudden-sinkhole.html">4. Aalz Galtin Äkillinen Vajoama</a></li>
+<li class="nav-arcana"><a href="minor-shell-game-of-souls.html">5. Sielujen Kuppipeli</a></li>
+<li class="nav-arcana"><a href="minor-thunderous-bellow.html">6. Jylisevä Karjaisu</a></li>
+<li class="nav-arcana"><a href="minor-the-fiery-veil.html">7. Tulinen Huntu</a></li>
+<li class="nav-arcana"><a href="minor-the-tomb-bogs-mark.html">8. Hautasuon Merkki</a></li>
+<li class="nav-arcana"><a href="minor-fear-of-the-flame.html">9. Liekin Pelko</a></li>
+<li class="nav-arcana"><a href="minor-mantle-wraiths.html">10. Viittahaamut</a></li>
+<li class="nav-arcana"><a href="minor-shattering-words-of-aalz-childric.html">11. Aalz Childricin Murskaavat Sanat</a></li>
+<li class="nav-arcana"><a href="minor-ffyrnig-tonic.html">12. Ffyrnig-tonikki</a></li>
+<li class="nav-arcana"><a href="minor-song-of-the-dool-trees.html">13. Doolpuiden Laulu</a></li>
+<li class="nav-arcana"><a href="minor-ward-of-still-waters.html">14. Tyynten Vesien Suoja</a></li>
+<li class="nav-arcana"><a href="minor-ice-weaving.html">15. Jääkudonta</a></li>
+<li class="nav-arcana"><a href="minor-the-six-locks-of-sajua.html">16. Sajuan Kuusi Lukkoa</a></li>
+<li class="nav-arcana"><a href="minor-heliors-shining-ring.html">17. Heliorin Loistava Sormus</a></li>
+<li class="nav-arcana"><a href="minor-nerth-serpents-vigor.html">18. Nerthkäärmeen Elinvoima</a></li>
+<li class="nav-arcana"><a href="minor-goldleaf-cloak.html">19. Kultalehtiviitta</a></li>
+<li class="nav-arcana"><a href="minor-opening-the-way.html">20. Tien Avaaminen</a></li>
+<li class="nav-arcana"><a href="minor-the-drowning-scale.html">21. Hukuttava Suomu</a></li>
+<li class="nav-arcana"><a href="minor-preserving-runes.html">22. Säilyttävät Riimut</a></li>
+<li class="nav-arcana"><a href="minor-peacebond.html">23. Rauhanside</a></li>
+<li class="nav-arcana"><a href="minor-the-eye-opened.html">24. Silmä, Avattu</a></li>
+<li class="nav-arcana"><a href="minor-sanctifying-mark.html">25. Pyhittävä Merkki</a></li>
+<li class="nav-arcana"><a href="minor-the-green-lords-shade.html">26. Vihreän Herran Varjo</a></li>
+<li class="nav-arcana"><a href="minor-chimeric-transmogrification.html">27. Kimeerinen Muodonmuutos</a></li>
+<li class="nav-arcana"><a href="minor-the-sylvan-web.html">28. Metsän Verkko</a></li>
+<li class="nav-arcana"><a href="minor-flying-cloak.html">29. Lentävä Viitta</a></li>
+<li class="nav-arcana"><a href="minor-satchel-of-plenty.html">30. Yltäkylläisyyden Laukku</a></li>
+<li class="nav-arcana"><a href="minor-dancing-wind-spirit.html">31. Tanssiva Tuulenhenki</a></li>
+<li class="nav-arcana"><a href="minor-call-of-the-hunt.html">32. Jahdin Kutsu</a></li>
+<li class="nav-arcana"><a href="minor-convocation-of-the-soil.html">33. Mullan Koollekutsu</a></li>
+<li class="nav-arcana"><a href="minor-unliving-chimera.html">34. Eloton Kimeera</a></li>
+<li class="nav-arcana"><a href="minor-impudent-polymorph.html">35. Röyhkeä Hahmonvaihdos</a></li>
+<li class="nav-arcana"><a href="minor-make-pliant-the-stone.html">36. Taivuta Kivi</a></li>
+<li class="nav-arcana"><a href="minor-plaster-of-joining.html">37. Yhdistävä Laastari</a></li>
+<li class="nav-arcana"><a href="minor-cold-mind-iron-body.html">38. Kylmä Mieli, Rautainen Ruumis</a></li>
+<li class="nav-arcana"><a href="minor-little-friend.html">39. Pikku Ystävä</a></li>
+<li class="nav-arcana"><a href="minor-revealing-light.html">40. Paljastava Valo</a></li>
+<li class="nav-arcana"><a href="minor-darkwalker-cloak.html">41. Pimeänkulkijan Viitta</a></li>
+<li class="nav-arcana"><a href="minor-the-flesh-is-like-clay.html">42. Liha On Kuin Savea</a></li>
+<li class="nav-arcana"><a href="minor-fetchs-mask.html">43. Kaksoisolennon Naamio</a></li>
+<li class="nav-arcana"><a href="minor-witch-bottle.html">44. Noitapullo</a></li>
+<li class="nav-arcana"><a href="minor-wishing-candles.html">45. Toivekynttilät</a></li>
+<li class="nav-arcana"><a href="minor-baleful-utterance.html">46. Turmiollinen Lausuma</a></li>
+<li class="nav-arcana"><a href="minor-aetherium-spear.html">47. Aetheriumkeihäs</a></li>
+<li class="nav-arcana"><a href="minor-staff-of-magnetism.html">48. Magnetismin Sauva</a></li>
+<li class="nav-arcana"><a href="minor-groundskimmer.html">49. Maanviistäjä</a></li>
+<li class="nav-arcana"><a href="minor-thunderbolt-bow.html">50. Ukonnuolijousi</a></li>
+<li class="nav-arcana"><a href="minor-bronze-protector.html">51. Pronssinen Suojelija</a></li>
+<li class="nav-arcana"><a href="minor-sublime-words.html">52. Ylevät Sanat</a></li>
+<li class="nav-arcana"><a href="minor-flaming-sword.html">53. Liekehtivä Miekka</a></li>
+<li class="nav-arcana"><a href="minor-searing-touch.html">54. Polttava Kosketus</a></li>
+<li class="nav-arcana"><a href="minor-sigil-of-authority.html">55. Vallan Sinetti</a></li>
+<li class="nav-arcana"><a href="minor-horn-of-storms.html">56. Myrskyjen Torvi</a></li>
+<li class="nav-arcana"><a href="minor-moonstone.html">57. Kuukivi</a></li>
+<li class="nav-arcana"><a href="minor-hand-of-aals-sannan.html">58. Aals Sannanin Käsi</a></li>
+<li class="nav-arcana"><a href="minor-bittersweet-elixir.html">59. Katkeransuloinen Eliksiiri</a></li>
+<li class="nav-arcana"><a href="minor-the-brooms-lullaby.html">60. Luudan Kehtolaulu</a></li>
+<li class="nav-arcana"><a href="minor-the-angry-little-god.html">61. Vihainen Pikku Jumala</a></li>
+<li class="nav-arcana"><a href="minor-the-silver-branch.html">62. Hopeaoksa</a></li>
+<li class="nav-arcana"><a href="minor-void-elemental.html">63. Tyhjyyden Elementaali</a></li>
+<li class="nav-arcana"><a href="minor-runes-of-creation.html">64. Luomisen Riimut</a></li>
+<li class="nav-hub"><a href="appendix-d-major-arcana.html">Liite D: Suuret arkanat</a></li>
+<li class="nav-arcana"><a href="major-staff-of-the-lidless-orb.html">1. Luomettoman Kehrän Sauva</a></li>
+<li class="nav-arcana"><a href="major-twisted-spear.html">2. Kiertynyt Keihäs</a></li>
+<li class="nav-arcana"><a href="major-demonhide-cloak.html">3. Demoninnahkaviitta</a></li>
+<li class="nav-arcana"><a href="major-norubas-ice-sphere.html">4. Noruban Jääkehrä</a></li>
+<li class="nav-arcana"><a href="major-mindgem.html">5. Mielijalokivi</a></li>
+<li class="nav-arcana"><a href="major-whispering-rocks.html">6. Kuiskaavat Kivet</a></li>
+<li class="nav-arcana"><a href="major-blood-quenched-sword.html">7. Veressä Karkaistu Miekka</a></li>
+<li class="nav-arcana"><a href="major-shield-of-the-wisent-witch.html">8. Visenttinoidan Kilpi</a></li>
+<li class="nav-arcana"><a href="major-hectumel-codex.html">9. Hec&#x27;tumelin Koodeksi</a></li>
+<li class="nav-arcana"><a href="major-red-scepter.html">10. Punainen Valtikka</a></li>
+<li class="nav-arcana"><a href="major-ring-of-daagon.html">11. Daagonin Sormus</a></li>
+<li class="nav-arcana"><a href="major-rune-laden-scales.html">12. Riimuin Raskas Suomuhaarniska</a></li>
+<li class="nav-arcana"><a href="major-blackwood-fetishes.html">13. Mustapuiset Fetissit</a></li>
+<li class="nav-arcana"><a href="major-storm-markings.html">14. Myrskymerkit</a></li>
+<li class="nav-arcana"><a href="major-ineffable-words.html">15. Sanomattomat Sanat</a></li>
+<li class="nav-arcana"><a href="major-redwood-effigy.html">16. Punapuinen Kuva</a></li>
+<li class="nav-arcana"><a href="major-hungering-maw-of-hlad.html">17. Hladin Nälkäinen Kita</a></li>
+<li class="nav-arcana"><a href="major-azure-hand.html">18. Taivaansininen Käsi</a></li>
+<li><a href="bestiary.html">Bestiaario</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-foot"><details class="lang-switch"><summary title="Kieli"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code" aria-hidden="true">FI</span><span class="lang-label">Kieli</span><span class="lang-now">Suomi</span></summary><ul class="lang-list"><li><a href="../da/running-the-game.html" hreflang="da" lang="da">Dansk</a></li><li><a href="../de/running-the-game.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="../running-the-game.html" hreflang="en" lang="en">English</a></li><li><a href="../es/running-the-game.html" hreflang="es" lang="es">Español</a></li><li><a href="../fr/running-the-game.html" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/running-the-game.html" hreflang="it" lang="it">Italiano</a></li><li><a href="../hu/running-the-game.html" hreflang="hu" lang="hu">Magyar</a></li><li><a href="../nl/running-the-game.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../nb/running-the-game.html" hreflang="nb" lang="nb">Norsk bokmål</a></li><li><a href="../pl/running-the-game.html" hreflang="pl" lang="pl">Polski</a></li><li><a href="../pt-BR/running-the-game.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><span class="lang-current" aria-current="page" lang="fi">Suomi</span></li><li><a href="../sv/running-the-game.html" hreflang="sv" lang="sv">Svenska</a></li><li><a href="../tr/running-the-game.html" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="../cs/running-the-game.html" hreflang="cs" lang="cs">Čeština</a></li><li><a href="../ru/running-the-game.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/running-the-game.html" hreflang="uk" lang="uk">Українська</a></li><li><a href="../ja/running-the-game.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../zh-Hans/running-the-game.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/running-the-game.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../ko/running-the-game.html" hreflang="ko" lang="ko">한국어</a></li></ul></details><span class="sidebar-credit">Teksti teoksesta <em>Stonetop</em>, Jeremy Strandberg, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></span><a class="sidebar-github" href="https://github.com/Bryan-Legend/stonetop-generator">GitHub</a><button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true" title="Noppaääni"><span class="sound-on" aria-hidden="true">🔊</span><span class="sound-off" aria-hidden="true">🔇</span><span class="sound-label">Noppaääni</span></button></div>
+    </aside>
+    <div class="main-wrap">
+      <div class="content-scroll" id="main">
+        <main class="content">
+          <h1 class="page-title">Pelin johtaminen</h1>
+<p>Roolipeliä voi johtaa kymmenillä eri tavoilla. <em>Stonetopilla</em> on oma tapansa. Tässä se on. Muu peli rakentuu tämän lähestymistavan varaan.</p>
+<p>Muista: <strong>peli on keskustelua</strong>.</p>
+<p>Sinä sanot asioita, muut pelaajat sanovat asioita. Kysytte toisiltanne, keskeytätte toisianne, puhutte päällekkäin. Pelin säännöt astuvat kuvaan tietyillä hetkillä ja näyttävät, mihin keskustelu kulkee.</p>
+<p>Pelinjohtajana sinulla on keskustelussa erityinen rooli. <strong>Sinun tehtäväsi on kuvailla maailmaa, kertoa mitä tapahtuu ja esittää hirviöitä ja sivuhahmoja</strong>. Sinä fasilitoit ja teet ratkaisuja. Pyydät muilta ideoita. Rajaat kohtauksia ja suuntaat valokeilaa. Peli antaa sinulle, pelinjohtajalle, paljon valtaa – ja paljon vastuuta.</p>
+<h2 id="your-agenda">Agendasi</h2>
+<p>Nämä ovat tavoitteesi, kun johdat <em>Stonetopia</em>:</p>
+<ul class="bullets"><li>Esitä rikas ja salaperäinen maailma</li><li>Rytmitä hahmojen elämää seikkailuilla</li><li>Pelaa saadaksesi selville, mitä tapahtuu</li></ul>
+<p>Kaiken, mitä pelinjohtajana sanot ja teet, on tarkoitus palvella näitä kolmea tavoitetta eikä mitään muuta. Agendaasi <em>ei</em> kuulu (esimerkiksi) pelaajien taitojen koetteleminen, ”reilujen” taistelujen tarjoaminen tai hahmojen rankaiseminen.</p>
+<p>Agendaasi ei todellakaan kuulu pelaajien ohjaileminen tai ”oman” tarinasi pakottaminen kulkemaan niin kuin sinusta pitäisi. Jos epäröit, kysy itseltäsi: <strong>tätä asiaa, jota harkitset tekeväsi – mitä näistä kolmesta tavoitteesta se palvelee?</strong> Jos vastaus on ”ei mitään”, älä tee sitä. Tee jotain muuta.</p>
+<p>Ensimmäinen tavoitteesi on <strong>esittää rikas ja salaperäinen maailma</strong>: elävä ja hengittävä, täynnä yksityiskohtia, inhimillisyyttä ja syvyyttä.</p>
+<p>Arkiset huolet – sato, kauppa, sää, naapurien mielipiteet – ovat tärkeitä. Ihmeelliset ainekset ovat nekin tärkeitä, mutta ne ovat outoja, pelottavia ja huonosti ymmärrettyjä. Menneisyys nukkuu levottomasti. Kysymyksiä riittää.</p>
+<p>Toinen tavoitteesi on <strong>rytmittää hahmojen elämää seikkailuilla</strong>. Pelaajahahmoilla on elämänsä elettävänä, kotinsa hoidettavana, perheensä ruokittavana. Heidän aikaansa kohdistuu vaatimuksia.</p>
+<p>Sinun tehtäväsi on tehdä noista asioista merkityksellisiä, mutta myös keskeyttää ne uhilla ja tilaisuuksilla, joihin vain pelaajahahmot voivat (tai aikovat) tarttua. Seikkailut vievät suurimman osan <em>pelaajien</em> ajasta, mutta niiden ei pitäisi viedä suurinta osaa <em>hahmojen</em> ajasta.</p>
+<p>Lopuksi, ja tärkeimpänä: <strong>pelaa saadaksesi selville, mitä tapahtuu</strong>. Sinun tehtäväsi on esittää rikas ja salaperäinen maailma, uhata sitä, mistä pelaajahahmot välittävät, tai houkutella heitä tilaisuuksilla – ja katsoa sitten, mihin asiat siitä etenevät. Teet toki suunnitelmia. Teet valmisteluja. Mutta kun peli alkaa, sinun tehtäväsi on seurata sinne, minne pelaajat, nopat ja fiktio johtavat.</p>
+<p>Ja palkinto on tämä: aidosti yllättyä tarinasta, joka – luonnollisesti, orgaanisesti, maagisesti – kehkeytyy. Tarinasta, jota et ikinä olisi voinut punoa yksin.</p>
+<h2 id="the-core-loop">Ydinsilmukka</h2>
+<p>Kun johdat tätä peliä, tätä sinä <em>teet</em>. Siihen kuuluu toki muutakin, mutta tämä on sinun ja pelaajien välisen keskustelun perusrakenne.</p>
+<p>1) Pohjusta tilanne</p>
+<ul class="bullets"><li>Rajaa toiminta</li><li>Kuvaile ympäristöä</li><li>Anna yksityiskohtia ja täsmällisyyttä</li><li>Kysy kysymyksiä, pyydä ideoita</li><li>Esitä sivuhahmoja ja hirviöitä</li><li>Vastaa kysymyksiin, selvennä</li></ul>
+<p>2) Tee pehmeä pelinjohtajan siirto</p>
+<p>Herätä toimintaa ja/tai kiristä jännitettä.</p>
+<p><strong>3) Kysy: ”Mitä teet?”</strong></p>
+<p>4) Ratkaise heidän toimintansa</p>
+<ul class="bullets"><li>Jos he laukaisevat pelaajan siirron, tee niin kuin siirto sanoo.</li><li>Jos he heittävät 6- tai jättävät vaikeudet huomiotta, tee kova pelinjohtajan siirto (tuo pahaa kuvaan).</li><li>Muussa tapauksessa kerro, mitä tapahtuu.</li></ul>
+<p>5) Toista</p>
+<ul class="bullets"><li>Onko tilanne selvä ja kiinnostava? Pystyvätkö pelaajahahmot toimimaan? Takaisin vaiheeseen 3.</li><li>Onko tilanne selvä, mutta kiihtyykö se ennen kuin pelaajahahmot ehtivät toimia? Takaisin vaiheeseen 2.</li><li>Onko tilanne selvä, mutta kaipaako se tönäisyä? Takaisin vaiheeseen 2.</li><li>Onko tilanne epäselvä? Kaipaako se kertausta tai päivitystä? Takaisin vaiheeseen 1.</li><li>Onko nykyinen kohtaus tai tilanne ohi? Kääri se kokoon ja etsi seuraava. Takaisin vaiheeseen 1.</li></ul>
+<p>Käytännössä keskustelu on soljuvaa, sotkuista ja kaoottista. Sitä keskeyttävät kysymykset säännöistä ja fiktion yksityiskohdista. Pelaajat kommentoivat ja vitsailevat, punnitsevat vaihtoehtoja tai pelaavat kohtauksia keskenään hahmoissaan. Pyörität usein kahta tai useampaa keskustelun ”silmukkaa” yhtä aikaa ja hypit pelaajien välillä, joiden hahmoilla on kullakin omat puuhansa.</p>
+<p>Mutta kaiken alla on tämä rakenne, tämä silmukka.</p>
+<p>Jos joskus tunnet olevasi hukassa etkä tiedä, mitä tehdä tai sanoa seuraavaksi, selvitä, missä kohtaa silmukkaa olet, ja jatka siitä.</p>
+<p>Katsotaan nyt kutakin vaihetta tarkemmin.</p>
+<h2 id="1-establish-the-situation"><span class="step-badge">1</span> Pohjusta tilanne</h2>
+<p>Sinun tehtäväsi on pohjustaa tilanteet, joihin pelaajahahmot joutuvat. Tee mitä tahansa tai kaikki seuraavista tarpeen mukaan, siinä järjestyksessä kuin on järkevää.</p>
+<h3 id="frame-the-action">Rajaa toiminta</h3>
+<p>Määritä <strong>kuka, missä ja milloin</strong>.</p>
+<p>Puhuttele yhtä tai useampaa pelaajahahmoa ja kerro (tai kysy), missä he ovat. Kerro (tai kysy), kuka muu on paikalla. Kerro (tai kysy), milloin tämä tapahtuu (vuodenaika, vuorokaudenaika, kuinka kauan edellisestä kohtauksesta tai tilanteesta on kulunut).</p>
+<h3 id="describe-the-environment">Kuvaile ympäristöä</h3>
+<p>Paikasta, jota ei ole ennen nähty ”kameran edessä”, kerro (tai kysy), millainen se on. Jo nähdystä paikasta kerro (tai kysy), miten se on muuttunut (jos lainkaan).</p>
+<p><strong>Sisällytä enintään 3 vahvaa vaikutelmaa</strong> eri aisteista – veren järkyttävä punaisuus lumella, tulisijan rätisevä tuli, sateen ja märän maan tuoksu.</p>
+<p>Lisää joskus tunnevaikutelmia (huoneen jännite, suru kasvoilla) tai moraalisia vaikutelmia (likaiset, epätoivoiset kerjäläiset hienosti pukeutuneen, hyvin syöneen säätyläisväen rinnalla).</p>
+<p><strong>Keskity olennaiseen</strong>. Jos he ovat kestikievarissa, keskity siellä oleviin ihmisiin, meteliin ja <em>tunnelmaan</em>. Jos he tutkivat raunioita, keskity tilaan, jalansijaan, näkyyn ja ääneen. Pidä se lyhyenä, alkuun enintään 3 vaikutelmaa. Pelaajat lakkaavat kuuntelemasta, jos annat liikaa, ja he kysyvät lisää yksityiskohtia, kun tarvitsevat tai haluavat niitä. Tavoittele iskevää ja mielikuvia herättävää, älä koukeroista. Hemingwayta, ei Tolkienia.</p>
+<h3 id="give-details-and-specifics">Anna yksityiskohtia ja täsmällisyyttä</h3>
+<p>Kerro (tai kysy), mitä tapahtuu. Kuka tekee mitäkin? Missä kukin on suhteessa toisiinsa? Mitä hahmot näkevät, kuulevat ja aistivat?</p>
+<p>Keskity taas olennaiseen. Sosiaalisessa tilanteessa keskity ihmisiin: keitä paikalla on, miltä he näyttävät, miten he käyttäytyvät. Jos hahmot tutkivat raunioita, keskity ympäristöön.</p>
+<p>Toimintakohtauksessa keskity maastoon ja taistelijoihin, heidän sijaintiinsa ja liikkeeseensä.</p>
+<p>Lisää silloin tällöin jokin epäolennainen yksityiskohta.</p>
+<p>Sosiaalisessa kohtauksessa mainitse, miltä ruoka maistuu tai miltä huoneessa tuntuu. Taistelukohtauksessa heitä mukaan jokin haju tai jotain, mitä vihollisella on yllään. Tällainen ylimääräinen yksityiskohta voi antaa tilanteelle todellista tuntua.</p>
+<p>Käytä karttoja, rekvisiittaa ja vertauksia välittämään tilaa ja sijaintisuhteita. Luonnostele huone. Käytä pelimerkkejä tai nappuloita. Viittaa todellisiin tiloihin (”Hän on suunnilleen siinä missä Bob on suhteessa sinuun.”). Vertaukset ja metaforat ovat ystäviäsi!</p>
+<h2 id="improvisation-prep">Improvisointi ja valmistelu</h2>
+<p>Kyllä, keksit kaiken tämän itse (tai pyydät pelaajia keksimään). Teet jonkin verran <strong>valmisteluja</strong> etukäteen (ks. <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">valmisteluja</a>) tai ammennat maailmanoppaasta, mutta pelin aikana improvisoit monet yksityiskohdat.</p>
+<p>Kun yksityiskohta on vakiintunut, kohtele sitä kuin se olisi ollut totta alusta asti. Rakenna sen päälle ja muuntele sitä. Etsi yhteyksiä.</p>
+<p>Kysy itseltäsi ilmeiset kysymykset ja päätä (luultavasti ilmeiset) vastaukset. Puno kaikki yhteen rikkaaksi, salaperäiseksi maailmaksi.</p>
+<h3 id="ask-questions">Kysy kysymyksiä</h3>
+<p>Sinun ei tarvitse keksiä kaikkia yksityiskohtia itse. <a class="wiki-link" href="#your-principles" data-slug="running-the-game" data-fragment="your-principles">Yksi periaatteistasi</a> on <strong>kysyä ja rakentaa vastausten varaan</strong>. Kutsu pelaajat rakentamaan kohtausta kysymällä heidän hahmoiltaan asioista, joita he tietävät, tuntevat tai ovat kokeneet. ”Caradoc, mikä haju nahkurinverstaalla on kaikkein ylivoimaisin?” Tai ”Vahid, olet käynyt tällä lammella ennenkin.</p>
+<p>Miltä se näyttää? Kuvaile se meille.”</p>
+<p>Kysy myös siitä, mitä hahmot juuri nyt kokevat. Älä pyydä heitä keksimään keskeisiä yksityiskohtia, mutta voit pyytää heiltä teemaan sopivaa yksityiskohtaa.</p>
+<p>”Rhianna, mikä piirre tässä rosvossa pistää sinulle silmään? Siis mikä erottaa hänet muista?” Tai ”Blodwen, mikä tekee tästä paikasta kodikkaan ja turvallisen tuntuisen?”</p>
+<p>Kysy siitä, mitä he tekevät ja mitä he puuhaavat, miten he viettävät aikansa ja kenen kanssa he hengailevat ja niin edelleen.</p>
+<p>Kun he ovat retkellä, kysy heidän marssijärjestyksensä. Kun he Leiriytyvät, kysy, mitä he syövät, millainen leiripaikka on, kuka ottaa minkäkin vartiovuoron ja niin edelleen.</p>
+<p>Kysy, mitä he ajattelevat ja mitä he tuntevat. ”Vahid, mitä mietit?” ”Rhianna, mikä huolestuttaa sinua juuri nyt eniten?”</p>
+<h3 id="portray-npcs-and-monsters">Esitä sivuhahmoja ja hirviöitä</h3>
+<p>Jos mukana on sivuhahmoja (ei-pelaajahahmoja), kuvaile heidät. Kerro, mitä he tekevät. Jos pelaajahahmot ovat tekemisissä heidän kanssaan, kerro, miten sivuhahmot reagoivat. Puhu heidän äänellään ja sano, mitä he sanovat. Jos se tuntuu pelottavalta tai haluat vain päästä asiaan, <em>kuvaile</em>, mitä he sanovat, sen sijaan että sanoisit sen.</p>
+<p>Jos tilanteessa on hirviöitä – petoja, henkiä, crinwinejä ja muita sellaisia – esitä nekin. Kuvaile ne: kuinka suuria ne ovat, miten ne liikkuvat, miltä ne kuulostavat ja haisevat. Kerro, mitä ne tekevät ja mihin ne keskittyvät. Kerro, miten ne reagoivat pelaajahahmoihin.</p>
+<h3 id="answer-questions-clarify">Vastaa kysymyksiin, selvennä</h3>
+<p>Pelaajat keskeyttävät sinut ja kysyvät kysymyksiä. Ole rehellinen ja antelias totuuden ja yksityiskohtien suhteen. Jos vastaus ei olisi pelaajahahmoille selvä, sano niin ja kerro, mitä sen selvittäminen vaatisi. Sinun tehtäväsi on <strong>esittää rikas ja salaperäinen maailma</strong>, ei pakottaa heitä hyppimään esteiden yli ja arvailemaan, mitä ajattelet.</p>
+<p>Joskus pelaajat sanovat jotain, mikä paljastaa, että he ovat ymmärtäneet tilanteen väärin. ”Viillän häntä polven taakse”, Kettu sanoo, vaikka kuvittelit väkivallan tapahtuvan yleisen salin toisella puolella pelaajahahmojen katsellessa. Kun niin käy, <strong>selvennä tilanne pelaajien kanssa</strong>. Selitä, miten näet asiat, mutta ole myös valmis sovittamaan käsityksesi tilanteesta heidän käsitykseensä.</p>
+<p>”Häh? Ei, tämä tapahtuu kapakan toisella puolella. Et kai olisi antanut asioiden mennä näin pitkälle, jos olisit ollut siinä vieressä?”</p>
+<h2 id="2-make-a-soft-gm-move"><span class="step-badge">2</span> Tee pehmeä pelinjohtajan siirto</h2>
+<p>Onko tilanne selvä? Hyvä. Tee nyt pehmeä pelinjohtajan siirto – sano jotain, mikä herättää toimintaa ja/tai kiristää jännitettä.</p>
+<p>Valitse yksi <strong>pelinjohtajan siirroistasi</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">Pelinjohtajan siirtosi</a> ja tee se.</p>
+<p>Herättääksesi toimintaa: kerro, että jotain pahaa on tapahtumaisillaan tai jo tapahtumassa, mutta <strong>anna pelaajahahmoille tilaisuus tehdä asialle jotain</strong>. ”Kun kätesi löytää veitsenkahvan, crinwin on silleen ’hiissssss’ ja loikkaa sormet kohti kurkkuasi, mitä teet?”</p>
+<p>Voit herättää toimintaa myös <strong>tarjoamalla heille tilaisuuden</strong> tai esittämällä vaihtoehtoja ja <strong>pyytämällä heitä valitsemaan</strong>.</p>
+<p>”Okei, se kieri ohitsesi. Se on yllättynyt, ja sinulla on hetki aikaa. Voisit hypätä sen selkään ja yrittää puukottaa sitä. Tai häipyä sieltä. Mitä teet?”</p>
+<p>Sosiaalisessa kohtauksessa sivuhahmosi voivat pyytää tai vaatia jotain. He voivat sanoa jotain haavoittuvaa tai tunteikasta ja katsoa sitten pelaajahahmoa odottaen tämän reagoivan.</p>
+<p>Pehmeät siirrot eivät aina herätä toimintaa.</p>
+<p>Joskus ne <strong>vain kiristävät jännitettä</strong>.</p>
+<p>Saatat kuluttaa heidän tavaroitaan, enteillä vaikeuksia tai lisätä kohtaukseen vaikeuksia tavalla, johon ei voi heti tarttua. ”Olette olleet täällä alhaalla jo jonkin aikaa, soihtunne alkavat hiipua.” Tai ”Tulee uusi järähdys. Katosta varisee vähän multaa.</p>
+<p>Mitä teet?”</p>
+<h2 id="3-what-do-you-do"><span class="step-badge">3</span> ”Mitä teet?”</h2>
+<p>Kun olet tehnyt pehmeän pelinjohtajan siirron, kysy <strong>”Mitä teet?”</strong> Tämä antaa keskustelun takaisin pelaaja(i)lle ja kehottaa heitä sanomaan jotain.</p>
+<p>Sinun ei tarvitse kirjaimellisesti sanoa ”Mitä teet?” Joskus siirtoosi sisältyy kysymys. Sivuhahmoa esittäessäsi voit tehdä siirtosi ja vain katsoa pelaajia odottavasti. Mutta jos olet epävarma, kysy: ”Mitä teet?”</p>
+<p>Jos he sanovat jotain järjetöntä – jotain, mikä on mielestäsi mahdotonta, pätemätöntä tai kohtuutonta – kerro se heille. Selvennä fiktiota. Jos he pitävät pintansa, <strong>kerro heille seuraukset ja/tai vaatimukset</strong>. Kysy, haluavatko he yhä tehdä sen.</p>
+<p>Jos he kysyvät kysymyksiä, vastaa niihin. Jos vastaukset eivät ole ilmeisiä, <strong>kerro heille vaatimukset</strong>. ”Sinun pitää vähän penkoa ympäriinsä ja Etsiä Ymmärrystä.” Palauta sitten pallo heille: ”Mitä teet?”</p>
+<h2 id="players-jumping-in">Pelaajat hyppäävät mukaan</h2>
+<p>Pelaajat saattavat tarttua aloitteeseen ja ilmoittaa toiminnastaan ennen kuin kysyt ”Mitä teet?” tai jopa ennen kuin olet tehnyt pehmeän pelinjohtajan siirron. Hienoa!</p>
+<p>Se tarkoittaa, että he ovat mukana ja tilanne on niin kiinnostava, että he haluavat toimia. Voit hypätä suoraan heidän toimintansa ratkaisemiseen.</p>
+<p>Tästä huolimatta: älä anna pelaajien dominoida keskustelua. Jos olet kesken siirron, tai uskot jonkin tapahtuvan ennen kuin he ehtivät toimia, tai haluat antaa jollekulle muulle tilaisuuden toimia, käske heidän pidätellä hevosiaan!</p>
+<h2 id="4-resolve-their-action"><span class="step-badge">4</span> Ratkaise heidän toimintansa</h2>
+<p>Pelaaja kertoo, mitä hänen hahmonsa tekee. Määritä, miten tilanne muuttuu ja/tai mitä hänen toimintansa paljastaa tilanteesta.</p>
+<p><strong>Laukaisiko hän pelaajan siirron?</strong> Jos laukaisi, minkä? Ratkaise se siirto. Jos et ole varma, laukaisiko hän siirron, tai tarvitset lisätietoa ennen sen ratkaisemista, kysy. Selvitä hänen aikeensa ja/tai miten hän asiaan ryhtyy. Keskustele pöydän kanssa.</p>
+<p>Kun pelaaja laukaisee siirron, <strong>noudata siirron menettelyä</strong>. Paljasta kaikki tieto, johon siirto häntä oikeuttaa. Määritä yhdessä pelaajan kanssa, miten tilanne on muuttunut. (Ks. <strong>Pelaajien siirrot</strong>, <a class="wiki-link" href="player-moves.html" data-slug="player-moves" data-ref="page" >Pelaajien siirrot</a>, tarkemmin.)</p>
+<p>Kun pelaajan siirto kehottaa sinua lisäämään fiktioon jotain etkä tiedä, mitä sanoa, <strong>hae inspiraatiota pelinjohtajan siirroistasi</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves" data-ref="page">Pelinjohtajan siirtosi</a>.</p>
+<p><strong>Jos hän laukaisee siirron ja heittää 6-</strong>, hän merkitsee XP:n ja sinä teet kovan pelinjohtajan siirron (ellei siirto nimenomaan sano muuta).</p>
+<p>Jos hän tekee jotain, mikä ei laukaise pelaajan siirtoa, hän odottaa sinulta, mitä tapahtuu. <strong>Jättikö hän huomiotta uhan tai vaikeudet</strong>, joista varoitit aiemmin? Tee kova pelinjohtajan siirto.</p>
+<p><strong>Muussa tapauksessa</strong> kerro, mitä tapahtuu ja miten se muuttaa tilannetta. Ehkä sanot vain ”Okei” ja joko siirrät <strong>valokeilaa</strong> <a class="wiki-link" href="#the-spotlight" data-slug="running-the-game" data-fragment="the-spotlight" data-ref="page">Valokeila</a> tai sanot ”Mitä sitten teet?”</p>
+<h3 id="hard-gm-moves">Kovat pelinjohtajan siirrot</h3>
+<p>Tee kova pelinjohtajan siirto, kun pelaajahahmo...</p>
+<ul class="ellipsis"><li>jättää uhan tai vaikeudet kokonaan huomiotta; tai</li><li>laukaisee siirron mutta heittää 6- (eikä siirto sano muuta).</li></ul>
+<p>Kovan pelinjohtajan siirron tekeminen tarkoittaa, että <strong>tuot pahaa kuvaan</strong>. Kuvaile pelaajahahmon tekojen seuraukset. Kerro, miten asiat menevät pieleen. Tee tilanteesta selvästi huonompi. Valitse <strong>pelinjohtajan siirto</strong> <a class="wiki-link" href="#your-gm-moves" data-slug="running-the-game" data-fragment="your-gm-moves">listoiltasi</a> tai sano vain se ilmeinen paha asia. ”Uuh, 5, vai? Se on liian nopea!</p>
+<p>Ennen kuin veitsesi on irti tupesta, se on kimpussasi, HUMPS, ota <button type="button" class="dice-roll" data-dice="d6" title="Heitä d6 napsauttamalla — Shift: etu · Ctrl: haitta">d6</button> vahinkoa, ja olet selälläsi, sen toinen kynsi on kurkullasi ja toinen pitää veitsikättäsi ranteesta, mitä teet?”</p>
+<p>Kun he heittävät 6-, kova siirtosi tarkoittaa usein, että pelaajahahmon toiminta epäonnistuu. Kerro (tai kysy), miten se menee pieleen ja/tai mitkä ovat seuraukset. <strong>Mutta 6- ei aina tarkoita, että pelaajahahmon toiminta epäonnistuu</strong>. Se tarkoittaa, että tuot pahaa kuvaan. Ehkä jotain pahaa tapahtuu ennen kuin he ehtivät tehdä asiansa; ehkä he saavat tehtyä sen, mitä aikoivat, mutta se aiheuttaa (tai paljastaa) jotain todella pahaa. Paha ei välttämättä liity edes suoraan heidän toimintaansa – se voi yksinkertaisesti seurata aivan sen kintereillä.</p>
+<p>Kovan siirron pitää aina tuoda pahaa kuvaan, mutta <strong>sinä päätät, kuinka pahaa</strong>. Anna tilanteen, fiktion, pelaajan toiminnan kuvauksen ja niin edelleen ohjata kovia siirtojasi. Joskus kova siirto ei ole juuri pehmeää pahempi.</p>
+<h2 id="5-repeat"><span class="step-badge">5</span> Toista</h2>
+<p>Olet ratkaissut pelaajahahmon toiminnan. Tilanne on muuttunut tai paljastunut lisää, ja peli vyöryy siitä eteenpäin.</p>
+<p><strong>Jos tilanne on selvä ja kiinnostava</strong></p>
+<p><strong>ja yksi tai useampi pelaajahahmo pystyy toimimaan</strong>, hyppää suoraan takaisin vaiheeseen 3 ja kysy heiltä: ”Mitä teet?”</p>
+<p><strong>Jos tilanne on selvä, mutta asiat kiihtyvät ennen kuin pelaajahahmot ehtivät toimia</strong>, palaa vaiheeseen 2. Tee pehmeä pelinjohtajan siirto, joka näyttää, miten asiat muuttuvat.</p>
+<p>Kysy sitten: ”Mitä teet?”</p>
+<p>Samoin <strong>jos tilanne on selvä mutta vähän paikallaan</strong> ja pelaajat kaipaavat tönäisyä, palaa vaiheeseen 2. Tee pehmeä pelinjohtajan siirto ja kysy: ”Mitä teet?”</p>
+<p><strong>Jos tilanne on epäselvä tai kaipaa kertausta tai päivitystä</strong>, palaa vaiheeseen 1. Pohjusta tilanne uudelleen. Tee sitten pehmeä pelinjohtajan siirto ja kysy: ”Mitä teet?”</p>
+<p><strong>Jos nykyinen kohtaus tai tilanne on ohi</strong>, kääri asiat kokoon. Hoida logistiikka, kirjanpito ja muut metapeliasiat.</p>
+<p>Selvitä pelaajien kanssa, mikä seuraavan tilanteen tai kohtauksen pitäisi olla. Jos se ei ole selvää, kysy kunnes on.</p>
+<p>Palaa vaiheeseen 1. Pohjusta (uusi) tilanne, tee pehmeä pelinjohtajan siirto ja kysy: ”Mitä teet?” Ratkaise heidän toimintansa.</p>
+<p>Katso, miten tilanne muuttuu. Toista.</p>
+<p>Tämä on pelin ydinsilmukka.</p>
+<h2 id="the-spotlight">Valokeila</h2>
+<p>Pelin edetessä vaihdat hetkestä toiseen sitä, ketä puhuttelet.</p>
+<p>Se, jolle puhut juuri nyt, on <strong>valokeilassa</strong>.</p>
+<p>Joskus pidät valokeilan laajana ja puhuttelet ryhmää kokonaisuutena.</p>
+<p>Usein kohdistat sen vain yhteen hahmoon. Kun paljon toimintaa tapahtuu samanaikaisesti, heilautat sitä edestakaisin yksilöiden ja ryhmien välillä.</p>
+<p>Valokeilan hallintaan ei ole muodollista menettelyä. <strong>Ilmeisin hetki siirtää valokeilaa on sen jälkeen, kun olet ratkaissut pelaajahahmon toiminnan</strong>. Puhuttele toista hahmoa ja kuvaile tilanne <em>hänelle</em>. Tee pehmeä siirto <em>häneen</em>. Kysy <em>häneltä</em>: ”Mitä teet?”</p>
+<p>Voit kuitenkin siirtää valokeilaa aina, kun se on järkevää. Jos esimerkiksi kysyt ”Mitä teet?” ja...</p>
+<ul class="ellipsis"><li><strong>pelaaja jähmettyy tai jumittuu</strong>, siirry johonkuhun toiseen ja anna ensimmäiselle pelaajalle aikaa miettiä. Palaa häneen myöhemmin; tai...</li><li><strong>pelaajahahmo tekee jotain, mikä vie aikaa</strong>, siirry johonkuhun toiseen. Palaa ensimmäiseen pelaajahahmoon, kun hän saa työnsä valmiiksi (tai kun jokin keskeyttää hänet); tai...</li><li><strong>hän tekee siirron etkä ole varma, miten ratkaista se</strong>, osta itsellesi miettimisaikaa siirtymällä johonkuhun toiseen. Palaa ratkaisemaan ensimmäisen pelaajan siirto myöhemmin.</li></ul>
+<p>Käytä valokeilaa ollaksesi hyvä fasilitaattori.</p>
+<p>Pidä kaikki mukana. Varmista, että jokainen saa kunnolla aikaa kameran edessä ja tilaisuuden osallistua.</p>
+<p>Ei haittaa, jos pelaajat keskeyttävät toisiaan, kommentoivat tai antavat hahmojensa toimia ”vuoron ohi”. Jotkin siirrot (kuten Puolusta) antavat heille siihen nimenomaisen luvan!</p>
+<p>Tästä huolimatta: älä pelkää hillitä liian innokasta tai aggressiivista pelaajaa kohteliaalla mutta tiukalla nuhteella. ”Andrew, nyt olet epäkohtelias. Puhun juuri Jamielle.”</p>
+<h2 id="split-the-party">Hajota seurue</h2>
+<p>Niin tulee käymään. Pelaajahahmot hajaantuvat – tarkoituksella tai siksi, että <strong>erotat heidät</strong> tai <strong>vangitset jonkun</strong> – ja nyt sinulla on kaksi pienempää ryhmää. Ei se mitään. Seurueen hajottaminen voi olla tosi hauskaa.</p>
+<p>Seurueen hajottaminen tarkoittaa, että pyörität useita keskusteluja ja kohtauksia yhtä aikaa. Siirrä valokeilaa edestakaisin eri kohtausten välillä samaan tapaan kuin elokuvan leikkaaja tekee jyrkkiä leikkauksia kohtausten välillä.</p>
+<p>Älä viivy liian kauan yhden ryhmän luona.</p>
+<p>Yritä pitää kaikki mukana ja kiinnostuneina siitä, mitä muissa kohtauksissa tapahtuu. Voit leikata kohtausten välillä jokaisen ”toiminnon” tai pelaajan siirron jälkeen tai ratkaista muutaman keskustelun ”silmukan” leikkausten välissä. Tähän liittyy rytmi ja taito, ja erilaiset kohtaukset hyötyvät erilaisista lähestymistavoista. Tutkiminen ja dialogi hyötyvät pidemmistä otoksista.</p>
+<p>Jännittävät, toiminnantäyteiset kohtaukset toimivat hyvin lyhyillä, nopeilla leikkauksilla ja runsailla cliffhangereilla.</p>
+<h2 id="scenes-and-loose-play">Kohtaukset ja vapaa peli</h2>
+<p>Pelin aikana keskustelu siirtyy luontevasti kohtausten ja vapaan pelin välillä. Tämä ei ole muodollinen jako, eikä aina edes tietoinen. Siirryt usein niiden välillä luontevasti ja vaistonvaraisesti.</p>
+<p><strong>Kohtaukset ovat lähikuvia</strong>. Niissä on tiettyjä hahmoja tietyssä paikassa tiettyyn aikaan. Seuraat toimintaa hetki hetkeltä. Yksityiskohtia on runsaasti ja ne ovat täsmällisiä. Pelaajat puhuvat hahmoinaan, ja sinäkin esität sivuhahmot hahmoinaan.</p>
+<p>Vaikka sinä ja pelaajat ette varsinaisesti puhuisi hahmojenne äänillä, käytte keskustelua silti lähikuvan tarkkuudella.</p>
+<p>Kohtauksen aikana voit kuvailla metsäaukeaa, jolle pelaajahahmot ovat päätyneet, kohisevan puron ääntä ja sitä, miten karhu nuuhkii, nykii korviaan ja tähyilee puurajaa vaaran varalta. ”Rhianna, et usko sen huomanneen sinua vielä, mitä teet?”</p>
+<p>Kohtaukset ovat elokuvallisia ja mukaansatempaavia, joskus jännittyneitä, usein innostavia. Pelaajat voivat uppoutua hahmoihinsa ja tuntea aitoja tunteita tapahtumista.</p>
+<p><strong>Hyvillä kohtauksilla on tarkoitus</strong>. Rajasit tämän kohtauksen näille hahmoille tähän paikkaan jostain syystä, eikö niin? Mitä pelaajahahmot yrittävät saada aikaan? Mitä sinä yrität välittää? Mihin kysymykseen toivot vastausta? Mikä konflikti ratkeaa? Kun tiedät kohtauksen tarkoituksen, osaat kohdistaa yksityiskohtasi, kuvauksesi ja pelinjohtajan siirtosi. Ja jos et löydä kohtaukselle tarkoitusta, ehkä et tarvitse sitä kohtausta!</p>
+<p>Kun kohtauksen tarkoitus on täyttynyt tai kohtaus hiipuu, kääri se kokoon.</p>
+<p>Siirry seuraavaan ilmeiseen kohtaukseen (”Astut seuraavaan huoneeseen ja näet...”) tai vapaaseen peliin.</p>
+<p><strong>Vapaa peli on sitä, mitä tapahtuu kohtausten välillä</strong>. Noudatat yhä ydinsilmukkaa, mutta kuva on loitonnettu. Sen sijaan että kuvailisit, mitä tapahtuu tässä ja nyt, puhut siitä, mitä tapahtuu minuuttien, tuntien, päivien tai viikkojen kuluessa. Tiivistät ja lyhennät, ohitat pikkuasiat ja hyppäät ajanjaksojen yli.</p>
+<p><em>Puhut</em> hahmoista enemmän kuin <em>esität</em> heitä.</p>
+<p>Vapaassa pelissä voit kuvailla, miten pelaajahahmot kulkevat Suurmetsän (Great Wood) halki, hiljaista jännitystä heidän yrittäessään välttää huomiota, kuumuutta ja pistäviä hyönteisiä, jotka pahenevat päivän mittaan. Voit kysyä esimerkiksi: ”Caradoc, mihin ajatuksesi harhailevat yhä uudelleen?” tai ”Rhianna, kuinka pitkään aiot kulkea ennen kuin leiriydytte?”</p>
+<p>Pelaajien siirrot toimivat vapaassa pelissäkin, mutta loitonnetussa mittakaavassa. Hahmot voivat Kamppailla Yhtenä ehtiäkseen kotiin ennen yön tuloa tai Etsiä Ymmärrystä tarkkailemalla tulokkaita muutaman päivän ajan.</p>
+<p>Aika on vapaassa pelissä yleensä joustavaa.</p>
+<p>”Okei, lähdette matkaan ja keskipäivään mennessä olette tienristeyksessä.” ”Ai, hei. Voidaanko sanoa, että ennen lähtöä Kävin Kauppaa vähän bendisjuuresta?” Totta kai voidaan.</p>
+<p>Vapaa peli on rennompaa, vähemmän intensiivistä.</p>
+<p><strong>Hoida kirjanpito ja logistiikka</strong> kohtausten välillä. Tarkista muistiinpanosi, päivitä niitä ja ehkä heitä satunnainen <strong>löytö</strong> <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Löydöt</a>. <strong>Käykää metakeskusteluja</strong>. Puhukaa hahmojen suunnitelmista ja tavoitteista (”Mitä me taas yritimmekään saada aikaan?”). Katso, onko pelaajilla toiveita (”Haluaisin kohtauksen Andrasin kanssa”). <strong>Pitäkää taukoja</strong>, puhukaa tosielämän asioista ja nauttikaa toistenne seurasta.</p>
+<p>Vapaan pelin aikana fiktion sisällä kuluu paljon aikaa, varsinkin kun pelaajahahmot matkaavat tai viettävät aikaa kotona seikkailujen välillä. Mutta haluat, että suurin osa todellisesta ajasta kuluu kohtauksissa. Kohtauksiin perustuva peli on paljon elävämpää, rikkaampaa ja jännittävämpää. <strong>Työnnä vapaata peliä kohti kohtauksia</strong>. Heti kun seuraava kohtaus tarjoutuu, rajaa se ja zoomaa takaisin yksityiskohtaiseen, hetki hetkeltä etenevään peliin.</p>
+<h2 id="your-gm-moves">Pelinjohtajan siirtosi</h2>
+<p>Kun on aika tehdä pelinjohtajan siirto etkä tiedä, mitä sanoa, valitse jokin näistä ja tee se. <strong>Nämä ovat pelinjohtajan perussiirtosi</strong>:</p>
+<ul>
+<li>Ennakoi vaikeuksia (tulevia tai kulisseissa)</li>
+<li>Paljasta epämieluisa totuus</li>
+<li>Esitä provosoiva kysymys</li>
+<li>Aja joku ahtaalle</li>
+<li>Kuluta heidän voimavarojaan</li>
+<li>Käännä heidän siirtonsa heitä vastaan</li>
+<li>Näytä varjopuoli</li>
+<li>Satuta jotakuta</li>
+<li>Erota heidät</li>
+<li>Vangitse joku</li>
+<li>Tarjoa tilaisuus (hinnalla tai ilman)</li>
+<li>Kerro seuraukset/vaatimukset (ja kysy)</li>
+<li>Vie kohti uhkaavaa tuhoa Nämä eivät ole teknisiä termejä. Kun paljastat epämieluisan totuuden, yksinkertaisesti teet sen. Vakiinnutat fiktioon jotain, minkä hahmot toivoisivat olevan valetta. Kun satutat jotakuta, kerrot, miten joku loukkaantuu.</li>
+</ul>
+<p>Pelinjohtajan siirtojesi pitäisi innoittaa ja voimaannuttaa sinua, ei kahlita. Käytä niitä, kun et tiedä mitä tehdä tai kun olet jumissa ja haluat muuttaa asioita. Älä stressaa siitä, että jokainen tekemäsi siirto vastaa jotain tämän listan kohtaa.</p>
+<h2 id="making-your-move">Siirtosi tekeminen</h2>
+<p>Aina kun tilanne on selvä ja <strong>haluat viedä toimintaa eteenpäin</strong>, tee pehmeä siirto. Sano jotain, mikä kehottaa pelaajahahmoja toimimaan ja/tai kiristää jännitettä.</p>
+<p>Tee pehmeitä siirtoja koko ajan osana pelin ydinsilmukkaa.</p>
+<p>Kun pelaajahahmot <strong>jättävät huomiotta vaikeudet</strong>, jotka olet aiemmin tuonut esiin, tai kun he <strong>heittävät 6- pelaajan siirrossa</strong>, tee kova pelinjohtajan siirto. Tuo pahaa kuvaan. Anna tapahtua jotain, mitä pelaajahahmot eivät halua, tai tee jostain, mitä he haluavat, mahdotonta.</p>
+<p>Voit tehdä pelinjohtajan siirron myös <strong>kun pelaajan siirto kehottaa sinua lisäämään jotain fiktioon</strong>. Kun he esimerkiksi Uhmaavat Vaaraa ja heittävät 7-9, sinua kehotetaan tarjoamaan vähäisempi onnistuminen, hinta tai seuraus. Voit <strong>kuluttaa heidän voimavarojaan</strong> hintana (”Pystyt siihen, mutta joudut pudottamaan tarvikkeesi.”) tai <strong>ajaa heidät ahtaalle</strong> seurauksena (”Selviät, mutta maa liikahtaa alastulossasi ja alkaa pettää.”) tai <strong>näyttää varjopuolen</strong> vähäisempänä onnistumisena (”Pääset turvaan, mutta Andras ontuu yhä ja jää jälkeen, otus lähestyy!”).</p>
+<p><strong>Tee aina siirto, joka seuraa vakiintuneesta tilanteesta ja/tai valmisteluistasi</strong>. Jos he jäljittävät crinwinejä metsän halki ja heittävät 6-, olisi aivan kelpo siirto paljastaa, että he ovat eksyneet.</p>
+<p>Mutta olisi outoa ja ikävää sanoa: ”Taivaalta putoaa kiviä ja ne murskaavat teidät, kaikki ottavat <button type="button" class="dice-roll" data-dice="1d10" title="Heitä 1d10 napsauttamalla — Shift: etu · Ctrl: haitta">1d10</button> vahinkoa!”</p>
+<p>Samaan tapaan <strong>siirtojesi pitäisi heijastaa tilanteen erityispiirteitä</strong>.</p>
+<p>Oletetaan, että pelaajahahmo kohtaa rynnistävän alkuhärän, laukaisee Iske Yhteen -siirron ja heittää 6-. Jos pelaajahahmo on jäntevä Korsto, joka tuki keihäänsä rynnäkköä vastaan, kova siirtosi näyttäisi aivan erilaiselta kuin jos hän olisi hoikka Kettu, joka yritti väistää rynnäkön ja pistää sitä kuin matadori.</p>
+<p><strong>Älä sano siirtosi nimeä</strong>, kerro vain, mitä fiktiossa tapahtuu. Älä sano: ”Heitit 4, joten erotan sinut.”</p>
+<p>Sano: ”Rhianna, heräät ja tajuat, ettei Caradoc ole vartiossa. Hän ei palaa vähään aikaan. Hänen huopansa lojuu nuotion valopiirin reunalla.”</p>
+<h2 id="other-gm-moves">Muut pelinjohtajan siirrot</h2>
+<p>Käytössäsi on myös muita pelinjohtajan siirtojen listoja.</p>
+<p>Käytä <strong>tutkimussiirtojasi</strong>, kun pelaajahahmot ovat <strong>retkellä</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Retket</a> tai <strong>tutkivat kohdetta</strong> (ks. <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Kohteet</a>).</p>
+<p>Käytä <strong>uhkien siirtoja</strong> tuodaksesi uhan tai sen vaikutuksen <a class="wiki-link" href="threats.html" data-slug="threats" >kohtaukseen tai kun se on jo mukana</a>.</p>
+<p>Käytä <strong>kotirintaman siirtoja</strong>, kun pelaajahahmot ovat kotona tai viettävät aikaa toisessa asutuksessa, saadaksesi siellä aikaan kiinnostavia asioita (ks. <a class="wiki-link" href="homefront.html" data-slug="homefront" data-ref="page" >Kotirintama</a>).</p>
+<p>Käytä <strong>vaaran</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Vaarat</a> · <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Vaarat</a> tai <strong>sivuhahmon</strong> <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >Sivuhahmot ja seuralaiset</a> omia siirtoja, kun ne ovat pelissä.</p>
+<h2 id="examples-of-gm-moves">Esimerkkejä pelinjohtajan siirroista</h2>
+<h3 id="announce-trouble">Ennakoi vaikeuksia</h3>
+<h3 id="future-or-offscreen">(tulevia tai kulisseissa)</h3>
+<p>Tämä on yksi monipuolisimmista siirroistasi.</p>
+<p>Vaikeudet herättävät melkein aina reaktion tai saavat ainakin väen huolestumaan ja kiristävät jännitettä.</p>
+<p>Kovana siirtona voit muuttaa aiemmin rauhallisen kohtauksen taisteluksi tai konfliktiksi tai tehdä selväksi, että pelaajahahmojen teoilla on myöhemmin seurauksia.</p>
+<hr>
+<blockquote><p><em>”PUM PUM PUM! Rhianna, ovellesi paukutetaan, ja heräät kipeästi tarvitsemastasi unesta. Lowri huutaa nimeäsi, ja kuulet vartiokellojen kalkattavan. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Kun Caradoc ja Blodwen lähtevät, tämä ilkeä tyyppi katsoo heidän peräänsä. Hänellä on arpiset kasvot, julma virne ja veitsi vyöllä. Hän tönäisee vieressään istuvaa kaveria, nyökkää ovelle, ja he nousevat ja lähtevät. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Glenys tuijottaa sinua tiukasti hetken ja on sitten silleen ’HYVÄ ON.’ Hän tuhahtaa ja marssii tiehensä. Hän ei ole enää riesanasi toistaiseksi, mutta tiedät, että joudut vielä selvittämään sen myöhemmin.”</em></p></blockquote>
+<hr>
+<h3 id="reveal-an-unwelcome-truth">Paljasta epämieluisa totuus</h3>
+<p>Vakiinnuta todeksi jotain, minkä he todella toivoisivat olevan valetta. Ehkä se oli totta alusta asti, ja paljastat sen vasta nyt. Tai ehkä (varsinkin kovana siirtona) päätät juuri nyt, että tämä paha asia on totta, ja kerrot sen heille. Kumpikin tapa toimii.</p>
+<p>Tämä on loistava siirto käytettäväksi, kun he Tietävät Asioita tai Etsivät Ymmärrystä. Tuloksella 7+ olet heille velkaa rehellisiä vastauksia tai kiinnostavaa (ehkä hyödyllistä) tietoa, mutta ei ole mitään syytä, miksi heidän pitäisi olla tyytyväisiä oppimaansa. Ja tuloksella 6- voit todella kiristää ruuveja.</p>
+<hr>
+<blockquote><p><em>”’Vvvasil? Tavvvaton ajatus. Vvvasil lähti kaupungisssta nyt syksyllä. Takaisin Lygokseen, kuulin.’ Hän hymyilee, ja on kuin hänellä olisi liikaa hampaita. ’Mutta varmasssti voimme tehdä jonkinlaisen… järjessstelyn?’”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Mitä täällä on hiljattain tapahtunut? No, mudassa on ainakin tusinan verran jälkiä, kaikki sotkettuina kuin siinä olisi ollut tappelu. Muutama veriroiske myös lehvästössä. On aika selvää, että Lowrin kimppuun hyökkäsivät crinwinit.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Auts, 6-? No, etsit kukkuloilta loppupäivän ja... et kai sitten löydä häntä? Ei, odota. Tiedätkö mitä? Sinä löydät Cadin. Ehkä vajaan kilometrin päässä hakkuuleiristä löydät hänen ruumiinsa. Jokin on lävistänyt hänet, seivästänyt hänet vatsan läpi.”</em></p></blockquote>
+<hr>
+<h3 id="ask-a-provocative-question">Esitä provosoiva kysymys</h3>
+<p>Esitä kysymys, joka pakottaa päätökseen tai reaktioon, vaikka se olisi vain tunnereaktio tai päätös olla toimimatta. Voit esittää kysymyksen itse tai panna sen jonkun sivuhahmosi suuhun. Vaihtoehtoisesti:</p>
+<p>esitä kysymys, joka toteaa jotain pahaa mutta antaa pelaajalle tilaisuuden muotoilla sen.</p>
+<hr>
+<blockquote><p><em>”Rhianna, Eira näyttää synkältä, ja hän on silleen: ’Garet menettää paljon verta. En usko, että hän selviää, ja hän hidastaa meitä hirmuisesti. Haluatko, että hoidan tarvittavan?’”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Caradoc, tulet paikalle aivan tämän kaiken lopussa, luulisin. Näit sen savupilven, joka tupruaa Vahidin suusta. Ja siinä on Vahid, käyttäytyy aivan normaalisti kuin mitään ei olisi tapahtunut. Mitä päässäsi liikkuu juuri nyt?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Auts, 4? No, taidat onnistua loukkaamaan häntä, siis todella pahoittamaan hänen mielensä. Mitä sanot tai teet, joka saa sen aikaan?”</em></p></blockquote>
+<hr>
+<h3 id="put-someone-in-a-spot">Aja joku ahtaalle</h3>
+<p>Tämä on aggressiivisempi versio <strong>vaikeuksien ennakoimisesta</strong> – heidän on tehtävä jotain, nyt, tai tilanne muuttuu rumaksi.</p>
+<p>”Joku” voi olla pelaajahahmo tai sivuhahmo, ja voit leikitellä valokeilalla. Ehkä se, jonka ajat ahtaalle, ei olekaan se, joka tekee asialle jotain.</p>
+<hr>
+<blockquote><p><em>”Niin lähellä! Hyppäät, mutta paiskaudut oksaan. Liukastut ja saat juuri ja juuri otteen. Roikut siitä oksasta näin, haukot henkeä, ehkä 25 metrin korkeudessa, ja otteesi alkaa lipsua. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Iso mies nousee ja mulkoilee sinua ylhäältä. ’Miksi sä mua sanoit, senkin laiha rotta?’ Rhianna, näet tämän ja huomaat noin kolme muuta kaveria, roteva kaivosmiestyyppejä, nousemassa myös, eikä hymyä näy kenelläkään. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Eli, niin kuin sanoit, traakki rauhoittuu, kun lasket kätesi sen kuonolle, ja se on kuin naukuva kissanpentu. Mutta Caradoc, katselet pensaikosta, ja kun Blodwen rauhoittaa sitä, huomaat toisen traakin hänen takanaan oikealla hiipimässä lähemmäs. Se on loikkaamaisillaan hänen kimppuunsa, olet siitä varma, mitä teet?”</em></p></blockquote>
+<hr>
+<h3 id="use-up-their-resources">Kuluta heidän voimavarojaan</h3>
+<p>Tapahtuu jotain, mikä kuluttaa heidän tavaroitaan tai vie ne heiltä kokonaan. ”Voimavarat” voivat tässä olla...</p>
+<ul class="ellipsis"><li><strong>konkreettisia ja täsmällisiä</strong> (heidän kilpensä, soihtunsa, lamppuöljynsä);</li><li><strong>konkreettisia mutta abstrakteja</strong> (tarvikkeet, ammukset);</li><li><strong>aineettomia</strong> (heidän maineensa, jonkun luottamus); ja/tai</li><li><strong>täysin mekaanisia abstraktioita</strong> (HP, Onni, Uskollisuus jne.).</li></ul>
+<p>Kun he menettävät jotain abstraktia, aineetonta tai puhtaasti mekaanista, tuo se aina takaisin fiktioon ja näytä, miten se ilmenee. ”Hän mulkaisee vähän ja pudistaa sitten pettyneenä päätään. Jos hänellä oli Uskollisuutta, sitä on nyt 1 vähemmän.”</p>
+<p>Pehmeänä siirtona käytä tätä kiristämään jännitettä. Ne 4 HP:tä eivät ehkä merkitse nyt paljon, mutta parin iskun jälkeen pelaaja alkaa <em>hermostua</em>.</p>
+<p>Kun kulutat tietyn voimavaran, menetys voi olla väliaikainen (”hän läimäisee veitsen kädestäsi, se lentää huoneen poikki”) tai pysyvä (”isku murskaa kilpesi”).</p>
+<p>Huomaat usein tekeväsi tämän siirron muiden siirtojen ohella, ja se on ihan okei.</p>
+<p>Varsinkin HP:t kuluvat erottamattomana osana muita siirtoja (ks. sivupalkki <strong>Vahingon tekeminen ja heikkouksien aiheuttaminen</strong>, <a class="wiki-link" href="#dealing-damage-and-inflicting-debilities" data-slug="running-the-game" data-fragment="dealing-damage-and-inflicting-debilities" data-ref="page">Vahingon tekeminen ja heikkouksien aiheuttaminen</a>.)</p>
+<hr>
+<blockquote><p><em>”Siitä on jo noin tunti, kun tulitte tänne alas. Luulen, että soihtusi alkaa hiipua. Siis valoa on ehkä kymmeneksi minuutiksi jäljellä? Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Joo, eli otteesi lipeää ja putoat, kolhien oksiin koko matkan, PAM PLAK HUMPS. Sinä putoat suoraan selällesi ja olet aika varma, että tunsit jonkin hajoavan repussasi. Menetä 2 käyttöä tarvikkeita ja ota <button type="button" class="dice-roll" data-dice="1d6" title="Heitä 1d6 napsauttamalla — Shift: etu · Ctrl: haitta">1d6</button> vahinkoa panssarista välittämättä. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Jep, hän seisoi ihan sinun takanasi, kun sanoit sen viimeisen jutun. Sinä katsot taaksesi, ja hän on punainen kuin punajuuri, itkun tai huudon partaalla, et ole varma. Mutta hän vain kääntyy ja marssii tiehensä pelloille. Taisi siinä mennä kaikki Uskollisuus, jota hänellä oli. Mitä teet?”</em></p></blockquote>
+<hr>
+<h3 id="demonstrate-a-downside">Näytä varjopuoli</h3>
+<p>Näytä heidän siirtojensa rajat tai se painolasti, joka tulee esimerkiksi Korstona olemisen mukana. Näytä heille, miten <em>karkea</em> ase pärjää rautamiekkaa tai -kilpeä vastaan.</p>
+<p>Näytä heille, miksi <em>lämpimän</em> panssarin pitäminen paahtavassa auringossa on huono ajatus. Näytä heille, miksi on vaikeaa olla lyhyt, tai pitkä, tai nuori, tai vanha, tai mitä tahansa.</p>
+<hr>
+<blockquote><p><em>”Caradoc, Rhianna, kun tarkkailette crinwinejä pensaikosta, kuulette tällaista: kalks-kalks-kalks. Vahidin reppu, varmasti, ja crinwinit kuulevat sen myös. Mitä teette?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Caradoc, kun yrität toista kertaa sanoa väliin, Brennan on silleen ’Aikuiset puhuvat, poika.’ Ja hän kääntyy takaisin Rhiannaan päin. ’No niin, mitä olitkaan sanomassa…?’”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Keihäsi uppoaa, ja alkuhärkä mylvii, mutta sitten se nousee takajaloilleen ja kiertyy, ja keihään varsi napsahtaa poikki. Jäät pitelemään puolikasta keppiä.”</em></p></blockquote>
+<hr>
+<h3 id="turn-their-move-back-on-them">Käännä heidän siirtonsa heitä vastaan</h3>
+<p>Tämä on hyvä käyttää tuloksella 6-. Ota siirto, jota he olivat tekemässä, ja käännä se jotenkin nurin. Ehkä annat edun heidän vihollisilleen, ehkä pyydät heitä keksimään jotain pahaa, jonka varaan voit rakentaa, ehkä heidän siirtonsa kaventaa heidän vaihtoehtojaan laajentamisen sijaan. Ole luova.</p>
+<hr>
+<blockquote><p><em>”Ai, kyllä sinä taidat tietää kaiken tästä pahasta elohopeasta, Vahid. Mitäpä jos kertoisit meille siitä kamalasta kohtaamisesta, joka sinulla oli sen kanssa etelässä, ja siitä, miten se on järkyttänyt sinua tähän päivään asti.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Huti, vai? Tiedätkö mitä, kysy silti yksi Etsi Ymmärrystä -kysymyksistä, mutta teet haitalla kaiken MUUN kuin vastauksen mukaan toimimisen.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Joo, hän ei vain osta sitä. Et mitenkään saa häntä vasikoimaan Mutrasta. Itse asiassa hän alkaa kääntää keskustelua ympäri, kysellä sinulta kysymyksiä, saada sinut sekoamaan sanoissasi ja hämilleen. Mitä luulet, mitä vaatisi, että hän saisi sinut lörpöttelemään, minne Vahid on piilottanut Sydämen?”</em></p></blockquote>
+<hr>
+<h3 id="hurt-someone">Satuta jotakuta</h3>
+<p>Aiheuta pelaajahahmolle tai sivuhahmolle, josta he välittävät, tietty, hankala vamma tai haava. Jotain enemmän kuin pelkkä HP:n menetys. Jotain kivuliasta, veristä, seurauksiltaan vakavaa tai kaikkea kolmea.</p>
+<p>Tämän siirron käyttö tarkoittaa ehdottomasti, että uhri ottaa vahinkoa, ja pelaajahahmon kohdalla se voi tarkoittaa myös heikkouden merkitsemistä.</p>
+<p>Se tarkoittaa <em>ehdottomasti</em>, että heillä on nyt <strong>hankala haava</strong> (ks. <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Vahinko ja parantuminen</a>). Se on osa fiktiota, jotain, minkä kanssa heidän on pärjättävä ja minkä varaan voit rakentaa pelinjohtajan siirtojasi.</p>
+<p>Se, kuinka pahasti satutat heitä, riippuu fiktiosta, siitä, tuliko vahinko tuloksesta 7+ vai 6-, heitetystä vahingosta ja vahingon tunnisteista (<em>sotkuinen</em>, <em>sysäävä</em> jne.). Kun satutat heitä, koska he heittivät 7-9 Iskiessään Yhteen nuijaa heiluttavan miehen kanssa ja ottavat vain 2 vahinkoa, se näyttää aivan erilaiselta kuin 6- raivotraakkia vastaan, joka tekee 12 <em>sotkuista</em> vahinkoa.</p>
+<p>Kuvaile vapaasti haavan yleinen luonne (”Hän iskee sinua reiteen, ja tunnet jalkasi pettävän.”), anna sitten pelaajan heittää vahinko (”Ota <button type="button" class="dice-roll" data-dice="d6+2" title="Heitä d6+2 napsauttamalla — Shift: etu · Ctrl: haitta">d6+2</button> vahinkoa.”) ja säädä vammaa tehdyn vahingon mukaan (”3 vahinkoa? Okei, luulen että vajoat toiselle polvelle ja jalkasi on kuin tulessa, mutta se kantaa vielä painosi”, verrattuna: ”Huh, 8 vahinkoa? Oletko vielä pystyssä? No, jalkasi pettää altasi ja siitä vain pulppuaa verta.”)</p>
+<p>Nyrkkisääntönä: aiheuta pysyvä, toimintakyvyn vievä vamma vain, jos olet varoittanut sen olevan mahdollista (suoraan tai ennakoimalla/näyttämällä vaaran) ja he joko heittivät 6- tai jättivät vaaran tietoisesti huomiotta. Älä yllätä heitä sellaisella.</p>
+<p>Esimerkiksi: jos sanot ”sillä otuksella on</p>
+<p>15-senttiset hampaat ja leuat, jotka murskaavat puita… jos se saa sinut kiinni, sinulta puuttuu paloja, haluatko varmasti vain seistä siinä ja huitoa sitä?” ja he vastaavat ”Joo, rohkea rokan syö!” ja heittävät sitten 7-9 Iskiessään Yhteen…</p>
+<p>no, varoitit heitä. Sano hyvästit sille kädelle ja terve verisuihkulle.</p>
+<p>Toisaalta jos olet esittänyt otuksen uhkana mutta et, tyyliin, <em>käsiäpurevana</em> uhkana, tuloksella 7-9 voisit sanoa: ”Se haukkaa, verta on kaikkialla, ja se alkaa riepotella sinua.</p>
+<p>Aivoissasi on jokin outo, rauhallinen osa, joka on silleen ’Ai, käsi on kohta irti’, mutta kaikki muu sinussa vain AAARGH. Ota <button type="button" class="dice-roll" data-dice="d10+3" title="Heitä d10+3 napsauttamalla — Shift: etu · Ctrl: haitta">d10+3</button> vahinkoa ja merkitse <em>heikentynyt</em>. Mitä teet?” Edelleen aika kova siirto, sanoisin, mutta sellainen, josta he voivat toipua. Käden vieminen varoittamatta? Ei kivaa.</p>
+<p>Tästä huolimatta: satuta sivuhahmoja vapaasti aggressiivisemmin ja raaemmin kuin pelaajahahmoja. Esimerkiksi <em>seuralaisen</em> käden vieminen on loistava tapa näyttää, että otuksen hyökkäykset ovat <em>sotkuisia</em> ja kauheita, ja nostaa panoksia viemättä pelaajahahmoilta päähenkilön asemaa. (Neuvon kuitenkin: älä runtele eläinkumppania varoittamatta; pelaajat ovat lemmikeistään hyvin tarkkoja.)</p>
+<p>Kun haava tai vamma on kerran aiheutettu, se on osa fiktiota. Se voi pakottaa pelaajahahmon Uhmaamaan Vaaraa yrittäessään jotain, mikä ei muuten olisi vaarallista. Se voi olla fiktiivinen perustelu jollekin toiselle siirrollesi. Se voi kehottaa sinua tekemään siirtoja, jotka pahentavat vammaa.</p>
+<p>Lisää HP:stä, vahingosta, heikkouksista ja hankalista haavoista luvussa <strong>Vahinko ja parantuminen</strong> <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Vahinko ja parantuminen</a>.</p>
+<hr>
+<blockquote><p><em>”Se kurottaa kohti Eiraa, ja sen käsi laajenee kuin usva ja puristaa hänen rintaansa, ja hän alkaa vain voihkia ja kouristella, ja näet hänen ihonsa mustuvan paikoitellen. Hän ottaa <button type="button" class="dice-roll" data-dice="1d12" title="Heitä 1d12 napsauttamalla — Shift: etu · Ctrl: haitta">1d12</button> vahinkoa panssarista välittämättä. Onko hän vielä pystyssä? Ei? Okei, no, se päästää hänestä irti ja hän vain lysähtää maahan. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Se vain PURISTAA etkä pysty hengittämään, et liikkumaan, sitten NAKS, tunnet kylkiluun murtuvan ja HYVÄ TAIVAS tämä sattuu. Ota <button type="button" class="dice-roll" data-dice="d8+3" title="Heitä d8+3 napsauttamalla — Shift: etu · Ctrl: haitta">d8+3</button> vahinkoa panssarista välittämättä ja merkitse</em> heikentynyt<em>. Vahid, saat juuri sytytettyä naftan, kun tämä tapahtuu, ja näet Caradocin sinertävän sen kiemuroissa. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Voi juku. 9 vahinkoa? Ja olet yhä pystyssä? Joo, öö... luulen että kun yrität riuhtoa kätesi vapaaksi, se, öö… hitsi, luulen että se vain haukkaa kovaa, ja tulee vain tämä viiltävä kipu ja horjahdat taaksepäin. Olet vapaa, mutta katsot alas, ja oikea kätesi on vain poissa. Verta suihkuaa, sinua palelee ja luulet, että saatat pyörtyä. Mitä teet?”</em></p></blockquote>
+<hr>
+<h2 id="dealing-damage-and-inflicting-debilities">Vahingon tekeminen ja heikkouksien aiheuttaminen</h2>
+<p>”Vahingon tekeminen” ei ole itsessään pelinjohtajan siirto; se tapahtuu osana jotain toista pelinjohtajan siirtoa. Kun teet siirron, jossa hahmo saa kolhuja, loukkaantuu, paiskautuu tai vahingoittuu, tee hänelle vahinkoa osana sitä siirtoa.</p>
+<p>Kerro pelaajalle, kuinka paljon vahinkoa hän ottaa (yleensä nopanheitto sen hirviön tai olosuhteiden perusteella, joista vahinko tuli). Hän menettää niin monta HP:tä. Jos ne putoavat 0:aan, hän on poissa pelistä ja luultavasti Kuoleman Ovella.</p>
+<p>Samoin sinulla ei ole siirtoa ”aiheuta heikkous”. Voit aiheuttaa heikkouden, kun <strong>satutat jotakuta</strong> tai <strong>kulutat heidän voimavarojaan</strong>, tai kun teet minkä tahansa muun siirron, jonka seurauksena hahmo on <em>heikentynyt</em>, <em>tokkurainen</em> tai <em>kurja</em> (”Huomaat käsiesi tärisevän, jalkasi horjuvat… merkitse <em>heikentynyt</em>”).</p>
+<p>Lisää vahingosta ja heikkouksista luvussa <strong>Vahinko ja parantuminen</strong> <a class="wiki-link" href="harm-healing.html" data-slug="harm-healing" data-ref="page" >Vahinko ja parantuminen</a>.</p>
+<h3 id="separate-them">Erota heidät</h3>
+<p>Hajota seurue. Pane vihollisia tai esteitä heidän väliinsä. Anna jonkun jäädä jälkeen.</p>
+<p>Anna seuralaisen tai muun sivuhahmon kadota.</p>
+<p>Lähetä joku kierimään rinnettä alas, pois taistelusta. Sen sorttista.</p>
+<p>Tämä siirto sopii usein hyvin yhteen siirron <strong>aja heidät ahtaalle</strong> kanssa. Sillä mikä on pahempaa kuin olla ahtaalla? Olla ahtaalla <em>yksin</em>.</p>
+<hr>
+<blockquote><p><em>”Blodwen, kun olette ehkä kaksikymmentä minuuttia tunkeneet korkean heinikon läpi, te kaikki hajaannutte vähän ja tajuat, ettet näe ketään muuta. Aluksi kuulet heidät, joten ei hätää, mutta sitten heidän äänensä heinikossa hukkuu lakkaamattomaan tuuleen. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Auts. Joo, kun pidät hänelle puheesi, hän on aika kivikasvoinen, ei reaktiota. Sitten tulee tauko, ja hän ikään kuin henkäisee ja nyyhkäisee ja sitten tulevat kyyneleet. ’Hemmetti, Caradoc.’ Ja hän kääntyy ja paiskaa oven kiinni, ja kuulet hänen itkevän. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Okei, siistiä, eli Vahid, olet vähän kauempana käytävällä, eikö? Ja Lowri pitää lyhtyä sinulle? No, kun alat saada selvää riimuista – jotain ”portaalista” tai ”oviaukosta” tai ehkä ”tiestä” – kuuluu tällainen KLON-KLUNK, jonka tunnet rinnassasi, kaikki tuntevat, ja sitten kirskuva metalli metallia vasten -ääni, ja teräsverho putoaa katosta ja katkaisee käytävän. BUUM. Vahid, sinä ja Lowri olette sen toisella puolella, kahdestaan, ja pöly tupruaa joka puolella. Mitä teette?”</em></p></blockquote>
+<hr>
+<h3 id="capture-someone">Vangitse joku</h3>
+<p>Tämän siirron pehmeässä versiossa vangitse heidät mutta pysy kohtauksessa ja anna heille tilaisuus paeta (tai muille tilaisuus pelastaa heidät). Kovassa versiossa voit leikata suoraan seuraavaan kohtaukseen – vangittuina, sidottuina, raahattuina ties minne – ja ohittaa yksityiskohdat siitä, miten he sinne päätyivät.</p>
+<hr>
+<blockquote><p><em>”Brennan viheltää, ja Ragan, tyynenä ja vikkelänä kuin mikä, vain tarttuu Blodweniin ja pyöräyttää hänet ympäri, veitsi kurkulla. Brennan huokaa ja astuu heidän taakseen. ’Toivoin, ettei tähän tultaisi, mutta ette jätä minulle paljon vaihtoehtoja. Me lähdemme nyt, ja olen varma, että nuori neiti tässä arvostaisi, jos pitäisitte kaikki kätenne siellä, missä näen ne.’ He alkavat perääntyä, mitä teette?”</em></p><p><em>”Caradoc, kosketat kehrää, ja se on kuin HUUSS. Leijut avaruudessa ja katsot alas ruumiiseesi. Maailma on harmaa, utuinen ja haalistunut, ja et oikein tunne jalkojasi. Vahid, tulet kotiin pari tuntia myöhemmin ja löydät Caradocin lysähtäneenä jääkehrän päälle, sormet siinä kiinni ja ihan sinisinä. Hän ei reagoi. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Joo, Vahid, Lowri heiluttelee soihtua pimeässä, ja te molemmat tähyilette etsien sitä, mikä päästi äänen, ja me yleisö näemme tämän varjoisan hahmon kohoavan takananne pitkine, hontelo sormineen. Ne sormet painuvat suullesi, Vahid, ja toinen hahmo tarttuu Lowriin. Seuraa lyhyt kamppailu, ja sitten kamera ikään kuin panoroi lattialla lojuvaan lyhtyyn, kyljellään, haljenneena ja lepattavana. Kuulemme äänet, kun teitä kahta raahataan pois. Rhianna, samaan aikaan…”</em></p></blockquote>
+<hr>
+<h3 id="offer-an-opportunity">Tarjoa tilaisuus</h3>
+<h3 id="with-or-without-a-cost">(hinnalla tai ilman)</h3>
+<p>Anna heille aukko, tilaisuus toimia.</p>
+<p>Tilaisuus voi olla täsmällinen (”Jos toimit nyt, yllätät heidät.”) tai yleinen (”He eivät näytä huomanneen teitä, mitä teette?”). Siihen voi liittyä varma hinta (”...mutta siitä lähtee kova meteli ja hälytys pääsee valloilleen.”) tai mahdollinen hinta (”...mutta sinun pitää kiirehtiä ehtiäksesi ajoissa”) tai ei hintaa lainkaan.</p>
+<p>Teet tämän siirron usein huomaamattasi. Kun vain annat pelaajalle aloitteen – kun tilanne on jännittynyt ja vauhdikas ja kysyt ”Mitä teet?” ensin <strong>ennakoimatta vaikeuksia</strong> tai <strong>ajamatta heitä ahtaalle</strong> tai muuten saamatta heitä reagoimaan – tarjoat heille tilaisuuden.</p>
+<hr>
+<blockquote><p><em>”3 vahinkoa? Hänen panssarinsa kanssa se ei riitä kaatamaan häntä. Luulen, että hän nytkähtää taaksepäin ja saat vain viillettyä haavan alas hänen poskeaan. Mutta hän on perääntymässä, mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”He eivät tartu syöttiin, Rhianna. Mutta jos tekisit numeron siitä, että lähdet leiristä ja jätät Andrasin ja Blodwenin sinne yksin? Se tepsisi. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Mikä täällä on sinulle hyödyllistä tai arvokasta? Tuo seinään upotettu hehkuva sininen kide. Jos murskaat sen, se päästää valloilleen kaikenlaista kaaosta, juuri sen harhautuksen, jota tarvitset.”</em></p></blockquote>
+<hr>
+<h3 id="tell-them-the-consequences-requirements-then-ask">Kerro seuraukset/vaatimukset (ja kysy)</h3>
+<p>Käytä tätä siirtoa keskeytyksenä, keinona selventää fiktiota ja asettaa panokset, kun he sanovat haluavansa tehdä jotain. ”Jos teet noin, tajuathan, että __?”</p>
+<p>Käytä tätä siirtoa myös antaaksesi heille tien eteenpäin, kun reitti on muuten tukossa. Käytä sitä pakottaaksesi merkitykselliseen päätökseen. Käytä sitä saadaksesi heidät maksamaan (ajassa, voimavaroissa, tilaisuuksissa jne.), jos he haluavat kulkea tiettyä tietä.</p>
+<hr>
+<blockquote><p><em>”Entä Garetin ruumis, Rhianna? Jos jätät sen, muu miehistö alkaa nurista – tiedät, miten taikauskoisia he ovat. Voisit polttaa sen, mutta se vie aikaa ja paljastaa sijaintinne. Mitä teet?”</em></p><p><em>”Jos teet niin, hyvä on, mutta sinulla ei ole tilaisuutta päästä alta pois. Jäät varmasti räjähdyksen sisään. Teetkö sen?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Ei, ei käy. Kätesi tärisevät, suusi on kuiva, et pysty ajattelemaan muuta kuin sitä turmiollista, vihamielistä silmää. Jos haluat ampua, sinun on ensin koottava itsesi. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Vahid, et saa näistä riimuista mitään tolkkua, et ainakaan nyt. Ehkä jos ottaisit niistä hankauskuvan ja sinulla olisi aikaa tutkia niitä kotona kaikkien kirjojesi ja muistiinpanojesi ja muun äärellä. Mutta et täällä. Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Se otus on tehty umpikivestä. Nuolesi eivät tee sille yhtään mitään, Rhianna. Jos haluat satuttaa sitä tai edes hidastaa sitä, sinun pitää iskeä siihen jollain isolla ja raskaalla.”</em></p></blockquote>
+<hr>
+<h3 id="advance-towards-impending-doom">Vie kohti uhkaavaa tuhoa</h3>
+<p><strong>Uhilla</strong> <a class="wiki-link" href="threats.html" data-slug="threats" data-ref="page" >Uhat</a> ja <strong>vaaratekijöillä</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Vaarat</a> voi olla uhkaava tuho, ja kutakin edeltää sarja synkkiä enteitä. Kun teet tämän siirron, päätät, että yksi noista synkistä enteistä on käynyt toteen, ja näytät sen hahmoille.</p>
+<p>Käytännössä tämä siirto ilmenee melkein aina jonakin toisena siirtona. <strong>Ennakoit vaikeuksia</strong> tai <strong>paljastat epämieluisan totuuden</strong> tai <strong>ajat jonkun ahtaalle</strong> (jne.) tavalla, joka osoittaa synkän enteen käyneen toteen.</p>
+<p>Harvoin saatat naurahtaa pahaenteisesti, rastia ruudun ja sanoa, että heillä on paha aavistus tai että kylmä tuuli puhaltaa, paljastamatta vielä varsinaista ennettä. Kun teet näin, sitoudu siihen, että enne on käynyt toteen kulisseissa. Jos et sitoudu, et ole oikeastaan tehnyt siirtoa lainkaan.</p>
+<hr>
+<blockquote><p><em>”Löydät Nian siitä sortuneesta talosta kylän laidalla. Sinun pitää puristautua sisään, ja silmiesi pitää tottua pimeään, mutta kun ne tottuvat, vatsasi muljahtaa. Seinät ovat täynnä liidulla piirrettyjä hämähäkkejä, ja… alttari? Siinä on keppien, turkin ja seitin möykky, jonka tajuat olevan ison hämähäkin epäjumalankuva. Nia hymyilee leveästi ja on silleen ’Hei Blodwen, tykkäätkö mun piirustuksista?’ Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Eli, pistät sitä olkasi yli, mutta horjahtelet samalla ympäriinsä. Ja luulen, että joo, tapat sen, mutta päädyt horjahtamaan päin yhtä vanhoista pylväistä. Kuuluu kova RASAHDUS ja natinaa, ja katosta alkaa varista pölyä. Vahid, sinä näet tämän, mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Caradoc, kun vaivut uneen, huomaat näkeväsi unta. Todella outoa, elävää unta. Se on kuin silloin, kun olit siinä vanhassa Tekijöiden haudassa ja katsoit ylös, mutta… erilainen. Ahdistavampi. Kuin olisit haudattuna multaan, olisit ollut ikuisesti, ja yläpuolella on valo, kaukana. Mutta se… riittää, tiedäthän? Jotain, mitä kohti pyrkiä? Niinpä kurottaudut ja kaivaudut mullan läpi kohti valoa, ja havahdut hereille ja hyvä luoja, kaikki tärisee ja ihmiset kirkuvat ja lapset itkevät, se on maanjäristys! Mitä teet?”</em></p></blockquote>
+<hr>
+<h2 id="example-of-play">Esimerkki pelistä</h2>
+<blockquote><p><em>Kaikki ovat paikalla. Olemme jutelleet, asettuneet mukavasti ja olemme valmiita aloittamaan. Pelikerta alkaa</em> <strong><em>vapaalla pelillä</em></strong><em>. Kysyn, haluaako joku kerrata. Rhiannan pelaaja haluaa.</em></p><p><em>”Lähetimme hakkuuporukan Kukkulajuurille (Foothills). Mutta jonkinlainen vuohidemoni säikytti heidät, ja se – tai jokin – haavoitti Andrasia. He lähettivät hänet takaisin. Me lähdimme tutkimaan. Saimmeko Andrasilta mitään hyödyllistä ennen lähtöä?”</em></p><p><em>Blodwen sanoo: ”Hän oli aika sekaisin. Me saimme hänen tilansa vakaaksi, mutta hän voihki koko ajan ’se silmä!’ Ja taisi hän vähän iskeä minua.”</em></p><p><em>”Aivan, aivan! Olitte jo varustautuneet ja lähteneet kohti Kukkulajuuria”, sanon.</em></p><p><em>Minä</em> <strong><em>kysyn muutaman kysymyksen</em></strong> <em>lämmitelläksemme. ”Mutta ennen kuin aloitamme – Caradoc, kuka sinusta piikitteli sinua siitä, että lähdet taas uuteen seikkailuun? Ja Vahid, miksi olet niin iloinen päästessäsi hetkeksi pois kylästä?”</em></p><p><em>Saamme kuulla, miten nahkuri Sawyl on etsinyt uutta oppipoikaa ja miten Caradoc tuntee siitä kaikenlaista syyllisyyttä. Saamme myös kuulla, että Vahid kaipaa taukoa leski Mairesta, joka on kampittanut hänen ”paatunut poikamies” -tyyliään. Teen muistiinpanoja!</em></p><p><em>Okei, aloitetaan. Minä</em> <strong><em>rajaan toiminnan</em></strong> <em>ja sitten</em> <strong><em>kuvailen ympäristöä</em></strong><em>. ”Te neljä saavutte Kukkulajuurille toisen matkapäivän iltapäivänä. Kukkulat kohoavat Tasangoilta (Flats), ja tie kiemurtelee niiden välissä. Rinteillä kasvaa nuoria, ohuita puita, jotka käyvät isommiksi ja vanhemmiksi, mitä syvemmälle kukkuloille etenette. Kun aurinko laskee, saatte vihdoin siunattua varjoa.” (Osa näistä yksityiskohdista on almanakasta; loput keksin itse.)</em></p></blockquote>
+<hr>
+<blockquote><p><em>On ensimmäinen kerta, kun näemme Kukkulajuuret pelissä, joten minä</em> <strong><em>kysyn kysymyksiä</em></strong> <em>kuten: ”Minkä silmiinpistävän eron huomaatte näiden kukkuloiden ja Suurmetsän (Great Wood) välillä?”</em></p><p><em>Kun he ovat vastanneet kysymyksiini, zoomaan sisään ja rajaan varsinaisen kohtauksen,</em> <strong><em>annan yksityiskohtia ja täsmällisyyttä</em></strong><em>. ”Saavutte leiriin heti auringonlaskun jälkeen. Se on levähdyspaikalla, mutta silti he ovat pystyttäneet kaadetuista rungoista jonkinlaisen barrikadin. He kaikki kyyhöttävät heikon keittotulen ympärillä. Kaikki ovat hiljaa, jännittyneitä, puristavat kirveitään. He säikähtävät vähän, kun saavutte, mutta kun he tajuavat, että se olette te neljä, kuuluu helpottunut mutina. ’Se on Rhianna’ ja ’Siunattu’ ja ’Kiitos Torin.’” (Huomaa, miten keskityn tunteisiin ja käytökseen enemmän kuin taktiseen asetelmaan, koska ne ovat ne yksityiskohdat, joilla on merkitystä. Lisäksi</em> <strong><em>esitän sivuhahmojani</em></strong><em>.) ”Hei, Rhianna, kenet panit johtoon?” (Lisää kysymyksiä!)</em></p><p><em>”Hmm. Elioksen kai.”</em></p><p><em>Teen pehmeän siirtoni ja</em> <strong><em>esitän provosoivan kysymyksen</em></strong><em>. ”Hienoa. Hän on silleen: ’Vain te neljä? Eli mitä, olemmeko valmiit? Voimmeko mennä kotiin?’ Muut nyökkäävät toiveikkaina.</em> <strong><em>Mitä teet?</em></strong><em>”</em></p><p><em>Rhianna kysyy minulta, pelaajalta pelinjohtajalle: ”Hetkinen, odota. Onko minun miehistöni täällä?” Minä</em> <strong><em>vastaan hänen kysymykseensä</em></strong><em>, kerron, ettei ole, ja kysyn sitten häneltä uudelleen, mitä hän tekee.</em></p><p><em>Rhianna vastaa (sillä tiukalla äänellään): ”Missä miehistöni on, Elios?” Nyt on aika</em> <strong><em>ratkaista hänen toimintansa</em></strong><em>. Hän painostaa Eliosta (Suostuttele, ehkä?), mutta tällä ei ole mitään syytä vastustella, joten siirto ei laukea. Kerron vain, mitä tapahtuu, ja vastaan Elioksen äänellä. ”’He ovat yhä ulkona. Metsällä.’”</em></p></blockquote>
+<p>(jatkuu seuraavalla sivulla)</p>
+<hr>
+<p>(jatkoa edelliseltä sivulta)</p>
+<blockquote><p><em>Tilanne on selvä mutta kaipaa tönäisyä, joten jatkan puhumista Eliosena ja teen toisen pehmeän siirron (</em><strong><em>ennakoin vaikeuksia</em></strong><em>). ”’Tiedättekö, heidän olisi pitänyt jo palata.’ Mitä teet?”</em></p><p><em>Pelaajahahmot pohtivat miehistön etsimistä, mutta päättävät pysyä paikallaan ja hankkia lisätietoja. He eivät vieläkään laukaise siirtoja (he kysyvät asioita, joihin hakkuumiehet vastaavat mielellään), joten minä vain</em> <strong><em>esitän sivuhahmoani</em></strong><em>. Elios ja Terrwyn kertovat, miten molemmat näkivät demonin viikko sitten, ennen kuin Andrasin kimppuun hyökättiin. ”Kuin iso vuohi, jolla on ihmisen kallo, kolme silmää ja valtava sarvi.”</em></p><p><em>Aioin</em> <strong><em>tarjota tilaisuuden</em></strong><em>, mutta Vahid hyppää mukaan: ”Olenko koskaan kuullut mistään tällaisesta?” Se laukaisee Tiedä Asioita -siirron, joten hän heittää +INT ja saa 8.</em></p><p><em>Tiedän valmisteluistani, että tämä demonivuohi on oikeasti suojelushenki ja että todellinen uhka on hagr, joten käytän yhtä tutkimussiirroistani ja</em> <strong><em>vihjaan, että asiassa on enemmän kuin päältä näkyy</em></strong><em>. ”Kuulostaa shaksalta, hengeltä tai demonilta, johon pohjoisen väki uskoo. Kuin hautausmaiden vartija? Tai ehkä se on vertauskuva ja se on kuin kuolleiden herra? Mistä tiedät tämän?”</em></p><p><em>”Ai, eräästä heidän uskonnollisesta tekstistään, luin sen etelässä eräässä kirjastossa. Pidän sen toistaiseksi omana tietonani.”</em></p><p><em>Päivitän tilanteen: ”Nyt on täysi yö eikä miehistö ole vieläkään palannut.” Kohdistan valokeilan ja</em> <strong><em>tarjoan tilaisuuden</em></strong><em>. ”Hei, Caradoc, kun muut puhuivat Elioksen ja Terrwynin kanssa, huomasit muiden vilkuilevan toisiaan. Siis he pelkäävät. Mutta ehkä salaavat myös jotain? Mitä teet?”</em></p></blockquote>
+<hr>
+<blockquote><p><em>”Uu, tarkkailen tarkasti ja yritän selvittää, mitä on tekeillä. Etsi Ymmärrystä?” Valitettavasti hän heittää 4. Kovan siirron aika!</em></p><p><em>Minä</em> <strong><em>ennakoin vaikeuksia</em></strong><em>. ”Olet varma, että Iwan ja Cadi tietävät enemmän kuin sanovat, mutta ennen kuin ehdit tehdä asialle mitään, kukkuloilta kuuluu kamala karjaisu ja ryminää ja sitten pienempiä huutoja – kuin ihmisiä taistelemassa. Kaikki kuulette sen. Mitä teette?”</em></p><p><em>He kysyvät kysymyksiä, ja minä selvennän tilannetta vähän (on pimeää, taistelun äänet kuulostavat aika läheisiltä, kukaan heistä ei tunne näitä kukkuloita hyvin). Sitten Rhianna sanoo: ”Mennään. Kukkuloille.”</em></p><p><em>Se päättää kohtauksen! Seuraa vähän vapaata peliä, kun puhumme logistiikasta. Vahid ja Blodwen ottavat kumpikin soihdun, sytytettynä keittotulesta. ”Lähdettekö?” kysyn. He lähtevät.</em></p><p><em>Loitonnan ja kuvailen tilannetta yleisesti: ”On pimeää, kukkulat ovat jyrkkiä ja metsäisiä, ja suunnistatte äänen perusteella taistelun ääniä seuraten.” Teen pehmeän siirtoni ja</em> <strong><em>kerron heille vaatimukset</em></strong><em>. ”Jos yritätte päästä perille nopeasti, se laukaisee Kamppailkaa Yhtenä -siirron – vaarana on, että eksytte, joudutte erillenne tai loukkaannutte matkalla. Jos otatte aikaa ja liikutte varovasti, ette laukaise siirtoa – mutta ette luultavasti ehdi ajoissa avuksi taisteluun. Mitä teette?”</em></p><p><em>He päättävät Kamppailla Yhtenä. Ratkaisemme siirron, ja he kaikki heittävät hyvin, joten siirrymme seuraavaan kohtaukseen. ”Se on epätoivoinen, puolisokea juoksu metsän halki, mutta sitten putkahdatte aukiolle. Lepattavassa soihdunvalossa näette Eiran ja Lowrin vastakkain valtavan, möhkälemäisen raakalaisen kanssa, joka on nelimetrinen ja puolet siitä leveä.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>Tuskin ehdin vetää henkeä ennen pehmeää siirtoani (</em><strong><em>ajan jonkun ahtaalle</em></strong><em>): ”Se nostaa pienen puun kuin nuijan ja karjaisee, valmiina murskaamaan heidät molemmat, ja he molemmat vain tuijottavat sitä ammollaan.” Olen puhutellut ryhmää valokeila laajana, joten nyt tiukennan sitä. ”Rhianna, Blodwen, te ehditte ensin – mitä teette?”</em></p><p><em>Rhiannan pelaaja ei epäröi. ”Ammun sitä. Päähän. Laukaise?” Kyllä, mutta pyydän häntä odottamaan, kunnes näemme, mitä Blodwen tekee.</em></p><p><em>Blodwen kysyy kysymyksiä. ”Eli tämä on kuin ihminen? Vain tosi iso?” Jep. ”Ja se ei ole huomannut meitä?” Jep, toistaiseksi, he juuri saapuivat. ”Tunnistanko sen? Siis onko se ehkä yksi hakkuumiehistämme, muuntunut tai jotain?”</em></p><p><em>”Hmm”, sanon hänelle. ”Tuskin pystyt sanomaan sitä pikaisella vilkaisulla soihdun valossa. Voisit pysähtyä hetkeksi ja Etsiä Ymmärrystä. Teetkö sen?”</em></p><p><em>”En. Voisinko vaikka huutaa ja heiluttaa soihtua ja harhauttaa sitä?” hän kysyy. Caradocin pelaaja huomauttaa, että tämä kuulostaa Puolusta-siirron laukaisimelta (”hyppäät suojelemaan muita”), ja me kaikki olemme samaa mieltä. Mutta olemme myös samaa mieltä, että Rhianna ehtisi laukaista ennen sitä.</em></p><p><em>Rhianna saa Laukaise-siirrossa 8 ja valitsee liikkua saadakseen esteettömän laukauksen. Hän tekee vain 3 vahinkoa, miinus 1 panssari. Se tuskin haavoittuu, ja Rhianna altisti juuri itsensä vaaralle.</em></p><p><em>”Luulen, että sinun pitää astua aukiolle saadaksesi laukauksen, eikö? Osut sitä olkaan, ja – hyvä uutinen – se pysäyttää iskunsa, murisee ja kääntyy sinua kohti ja jättää Eiran ja Lowrin rauhaan. Huono uutinen kuitenkin on, että se naulitsee sinut isolla, pullottavalla, kamalalla silmällään, ja mielesi tyhjenee, polvesi alkavat vapista, et pysty edes ajattelemaan.”</em></p></blockquote>
+<hr>
+<blockquote><p><em>Se ratkaisee Rhiannan siirron, joten siirrän valokeilaa ja</em> <strong><em>tarjoan tilaisuuden</em></strong><em>. ”Blodwen, haluatko yhä Puolustaa?”</em></p><p><em>Haluaa, ja heittää 9. Hän käyttää heti Valmiutensa vetääkseen kaiken huomion suojattavaltaan (nyt Rhiannalta) itseensä. ”Hienoa, miltä se näyttää?” kysyn.</em></p><p><em>”Astun Rhiannan eteen, heilutan soihtuani ja huudan, tyyliin ’JAAAAAA!’”</em></p><p><em>Se toimii, tietenkin. Kerron, miten hagr kääntää silmänsä häneen ja täyttää hänet samalla kauhun tunteella, jonka Rhianna koki.</em></p><p><em>Siirrän valokeilan Caradociin ja Vahidiin. Kerron, että he saapuivat juuri, kertaan nopeasti tilanteen ja sitten</em> <strong><em>tarjoan tilaisuuden</em></strong><em>. ”Se keskittyy juuri nyt Blodweniin, mitä teette?”</em></p><p><em>Vahid tarkastelee tilannetta Etsimällä Ymmärrystä. Päätämme ratkaista sen myöhemmin, koska Caradoc ryntää kimppuun kilpi ylhäällä ja keihäs matalalla pistäen. Blodwen oli saanut sen huomion, joten olemme samaa mieltä, että Caradoc pääsee tarpeeksi lähelle hyökätäkseen, mutta se pystyy yhä hyvin ja haluaa iskeä takaisin. Tämä laukaisee Iske Yhteen -siirron, mutta Caradoc saa 4.</em></p><p><em>Minun on tehtävä kova siirto, ja ilmeisin vaihtoehto on satuttaa häntä. ”Taidat jäädä sen silmissä kiinni, Caradoc, ja se heilauttaa puunoksaa ennen kuin pääset lähelle. Saat iskun päähän, ja kaikki on vain valkoista, korvasi soivat, ja mitä täällä oikein tapahtuu?</em></p></blockquote>
+<p><em>Ota <button type="button" class="dice-roll" data-dice="d10+3" title="Heitä d10+3 napsauttamalla — Shift: etu · Ctrl: haitta">d10+3</button> vahinkoa ja merkitse</em> tokkurainen<em>.</em></p>
+<blockquote><p><em>Rhianna, havahdut ja näet sen lyövän Caradocia päähän; hän lensi ilmaan ja rojahti kasaan. Mitä teet?”</em></p><p><em>Ja siitä jatketaan.</em></p></blockquote>
+<h2 id="your-principles">Periaatteesi</h2>
+<p>Nämä periaatteet ovat ohjenuorasi, parhaat käytäntösi, käytössääntösi <em>Stonetopia</em> johtaessasi. Pyri noudattamaan niitä.</p>
+<p>Ne ovat varmin tapa saavuttaa agendasi.</p>
+<ul class="bullets"><li>Noudata sääntöjä</li><li>Aloita ja lopeta fiktioon</li><li>Puhuttele hahmoja, älä pelaajia</li><li>Kysy ja rakenna vastausten varaan</li><li>Ole pelaajahahmojen fani</li><li>Syleile ihmeellistä ja arkista</li><li>Hyödynnä maailmanopasta</li><li>Kunnioita valmistelujasi</li><li>Herätä hahmosi eloon</li><li>Ajattele myös kulisseissa</li><li>Tuo se kotiin</li><li>Anna asioiden hengittää</li><li>Anna asioiden palaa</li></ul>
+<p>Periaatteidesi noudattaminen ei aina ole helppoa.</p>
+<p>Joskus on epäselvää, miltä jokin periaate näyttää kyseisellä hetkellä. Joskus periaatteet ovat ristiriidassa keskenään. Suuri osa tehtävääsi on tulkita näitä periaatteita ja soveltaa niitä parhaaksi katsomallasi tavalla. Teet tätä usein vaistonvaraisesti, ja se, miten tarkalleen noudatat periaatteitasi, on iso osa omaa henkilökohtaista pelinjohtotyyliäsi.</p>
+<h3 id="follow-the-rules">Noudata sääntöjä</h3>
+<p>Sääntöjä on paljon, varsinkin pelaajien siirtojen muodossa: perussiirrot ja seuralaissiirrot, erikoissiirrot, tutkimussiirrot ja asutuksen siirrot. Jokaisella pelikirjalla on siirtoja. Liitteillä on siirtoja. Arkaaneilla on siirtoja. Vaaroilla, löydöillä, uhilla ja paikoilla voi kaikilla olla pelaajille suunnattuja siirtoja.</p>
+<p>Toivottavasti tämä on itsestään selvää, mutta: <strong>kun siirto laukeaa, noudata siirron menettelyä ja sano se, mitä siirto</strong></p>
+<p><strong>vaatii sinulta</strong>. Säännöt ovat olemassa työntääkseen keskustelua ja fiktiota tiettyihin suuntiin ja selventääkseen, mitä tapahtuu epävarmoina hetkinä.</p>
+<p>Anna pelaajille täysi hyöty heidän siirroistaan ja heitoistaan. Haasta toki heidän kykynsä laukaista noita siirtoja ja suhteuta tuloksia vakiintuneen fiktion ja valmistelujesi mukaan. Mutta älä kaunistele siirron tuloksia, koska sinusta asioiden pitäisi mennä tietyllä tavalla tai koska pelkäät asioiden olevan ”liian helppoja” tai ”liian vaikeita”. Se ei ole sinun tehtäväsi. Sinähän <strong>pelaat saadaksesi selville, mitä tapahtuu</strong>, eikö?</p>
+<p>Et saa vedota pelaajan siirtoon, ellei sen laukaisin oikeasti täyty. <em>Et</em> saa sanoa: ”Crinwin hyökkää kimppuusi, heitä +DEX ja Uhmaa Vaaraa!” Jumalat sentään, ei. Sanot, että crinwin loikkaa heitä kohti, ja kysyt: ”Mitä teet?” Jos he tekevät jotain, mikä laukaisee siirron, <em>silloin</em> teet <em>sen</em>.</p>
+<p>On ihan okei, jos muiden periaatteidesi hyväksi ehdotat jotain sääntöjen hengessä niiden tarkan kirjaimen sijaan, mutta ole siitä avoin ja pyydä suostumus. ”Sait 7-9 Iskiessäsi Yhteen? Heitä vahinkosi. 9!? Huh. Eli tiedän, että siinä sanotaan sinun altistuvan vihollisen hyökkäykselle, mutta ajattelen, että ’hyökkäys’ on tässä tapauksessa se, että kirveesi juuttuu hänen kalloonsa ja sen irrottamisessa menee hetki. Käykö se sinulle?”</p>
+<h3 id="begin-and-end-with-the-fiction">Aloita ja lopeta fiktioon</h3>
+<p>Muista: ”fiktio” on se jaettu, kuviteltu tila, jonka sinä ja pelaajat luotte keskustelemalla, sekä eri hahmojen toimet ja sijainnit suhteessa toisiinsa tuossa kuvitellussa tilassa.</p>
+<p>Kun sääntöihin vedotaan – kun pelaaja laukaisee siirron tai heittää vahinkoa tai käyttää voimavaran tai mitä tahansa – kiinnitä säännöt fiktioon. Jos et pysty kuvittelemaan, mitä hahmo oikeasti tekee tai miten hän sen tekee, kysy ja selvennä fiktiota ennen kuin tartutte noppiin. Kun nopat on heitetty ja säännöt kertovat, mitä tapahtuu, kuvaile, miltä se näyttää fiktiossa (tai pyydä pelaajaa kuvailemaan). <strong>Ensin fiktio, sitten säännöt, sitten takaisin fiktioon.</strong> Aina.</p>
+<p>Samoin kun teet pelinjohtajan siirron, tee siirto, joka kumpuaa vakiintuneesta fiktiosta. Älä sano siirron nimeä – pidä se omana tietonasi – vaan kuvaile, miten se ilmenee fiktiossa. Näytä, älä kerro.</p>
+<p>Fiktiosta aloittaminen ja siihen lopettaminen on ratkaiseva osa <strong>rikkaan ja salaperäisen maailman esittämistä</strong>. Jos säästelet fiktiossa ja keskityt vain mekaniikkaan, huomaat maailmasi olevan mitäänsanomaton, tylsä ja aneeminen.</p>
+<hr>
+<blockquote><p><strong>Huono:</strong> <em>”Hyökkäät hagrin kimppuun? Hienoa, heitä Iske Yhteen. 10? Väistätkö sen hyökkäyksen vai teetkö lisävahinkoa? Okei, heitä vahinkosi +<button type="button" class="dice-roll" data-dice="1d6" title="Heitä 1d6 napsauttamalla — Shift: etu · Ctrl: haitta">1d6</button>. 7 vahinkoa? Se on yhä pystyssä ja lyö sinua takaisin <button type="button" class="dice-roll" data-dice="1d10+3" title="Heitä 1d10+3 napsauttamalla — Shift: etu · Ctrl: haitta">1d10+3</button></em> sysäävää<em>, ja kaadut maahan. Se tulee taas kimppuusi, mitä teet?”</em></p><p><strong>Hyvä:</strong> <em>”Hyökkäät hagrin kimppuun? Hienoa, miltä se näyttää? Pistät ylöspäin sen vatsaan? Joo, selvä, heitä Iske Yhteen. 10? Väistätkö sen hyökkäyksen vai teetkö lisävahinkoa? Okei, heitä vahinkosi +<button type="button" class="dice-roll" data-dice="1d6" title="Heitä 1d6 napsauttamalla — Shift: etu · Ctrl: haitta">1d6</button>. 7 vahinkoa? Eli niin kuin sanoit, pistät sitä vatsaan, ja hagr taittuu kaksinkerroin ulvoen tuskasta, mutta ennen kuin ehdit pois, se suoristautuu ja läimäisee sinua kämmenselällä kasvoihin. Ota <button type="button" class="dice-roll" data-dice="d10+3" title="Heitä d10+3 napsauttamalla — Shift: etu · Ctrl: haitta">d10+3</button> vahinkoa, kun lennät ilmaan ja rojahdat kasaan pää pyörällä. Kuulet sen lönkyttävän sinua kohti tuskasta ja raivosta röhkien. Mitä teet?”</em></p></blockquote>
+<hr>
+<h3 id="address-the-characters-not-the-players">Puhuttele hahmoja, älä pelaajia</h3>
+<p>Kysy <em>hahmoilta</em>, mitä he tekevät. Kerro <em>hahmoille</em>, mitä he näkevät ja kuulevat. Kerro <em>hahmoille</em>, mikä heille on ilmeistä. Älä sano: ”Brian, mitä Vahid tekee pysyäkseen hereillä?” Sano sen sijaan: ”Vahid, mitä teet pysyäksesi hereillä?” Älä kerro Jamielle: ”Rhianna huomaa, että hän valehtelee.” Sano (Iwanin ruikuttavalla äänellä) ”Ei ikinä, Rhianna, tiedät etten koskaan tekisi niin”, ja sitten (omalla äänelläsi): ”Mutta hän kääntää katseensa pois, ja huomaat heti, että hän puhuu palturia.”</p>
+<p>Näin puhumalla pidät pelin keskittyneenä fiktioon. Kannustat pelaajia ajattelemaan, puhumaan ja reagoimaan hahmoinaan. Vakiinnutat fiktion sellaisena kuin hahmot sen havaitsevat, koska heitä sinä puhuttelet.</p>
+<h3 id="ask-questions-and-build-on-the-answers">Kysy ja rakenna vastausten varaan</h3>
+<p>Kysy koko ajan, joka paikassa.</p>
+<p>Kysy <strong>selvittääksesi aikeet</strong>. ”Ennen kuin lähdette aamulla, haluaako joku vielä tehdä jotain?”</p>
+<p>Kysy <strong>selventääksesi aikeita</strong> ja päästäksesi samalle sivulle pelaajien kanssa.</p>
+<p>”Joo, kai pääset hänen ohitseen. Mutta mitä toivot tässä saavuttavasi?”</p>
+<p>Kysy <strong>selventääksesi fiktiota</strong>. ”Toki, voit Etsiä Ymmärrystä. Miltä se näyttää?”</p>
+<p>Kysy hahmoilta, <strong>mitä he ajattelevat tai tuntevat</strong>. ”Caradoc, seisot siinä vuotaen verta kohdasta, johon Wynfor sinua pisti, ja hänen katseensa – tuskin tunnistat häntä. Mitä päässäsi liikkuu juuri nyt?”</p>
+<p>Kysy hahmoilta <strong>heidän menneisyydestään tai arkielämästään</strong>. ”Rhianna, kuka opetti sinut metsästämään ja jäljittämään?” ”Blodwen, asut äitisi kanssa, eikö? Onko sinulla muita sisaruksia?</p>
+<p>Miltä siellä näyttää sisältä?”</p>
+<p>Kysy hahmoilta <strong>asioista, jotka he tietäisivät</strong>. ”Rhianna, olet tavannut Brennanin ennenkin.</p>
+<p>Mikä on hänen tunnusomaisin piirteensä?”</p>
+<p>Kysy hahmoilta <strong>asioista, joista he ovat kuulleet, tai siitä, mitä he uskovat</strong>, jolloin heidän vastauksensa eivät välttämättä ole täysin totta. ”Blodwen, mitä tarinoita olet kuullut Hiljaisista Kaksosista (Quiet Twins) ja siitä, miten he alkoivat kummitella Purolla (Stream)? Mikä on sinusta totuus?”</p>
+<p>Esitä kysymyksiä, <strong>jotka toteavat yksityiskohtia ja pyytävät samalla ideoita</strong>. ”Vahid, mikä yhteinen piirre on mielestäsi kaikilla kadonneilla lapsilla?” ”Rhianna, minkä pienen rituaalin väki aina tekee ylittäessään Puron?”</p>
+<p>Pyydä hahmoja <strong>maalaamaan kohtaus sinulle</strong> kysymällä heiltä yksityiskohtia tietystä teemasta.</p>
+<p>”Mikä täällä kertoo kullekin teistä, että fae ovat koskettaneet tätä paikkaa?” ”Mitä näet täällä, mitä olet nähnyt tuhat kertaa ennenkin?” ”Mikä on silmiinpistävintä Tasangoissa varhain keväällä?”</p>
+<p>Esitä kysymyksiä, <strong>jotka tekevät useamman kuin yhden edellä mainituista.</strong> ”Caradoc, kun palasitte kylään, kenen reaktio yllätti sinut eniten? Miten hän reagoi, ja miltä se sinusta tuntui?”</p>
+<p>Ota heidän vastauksensa osaksi fiktiota heti tai myöhemmin. Älä tyrmää heidän vastauksiaan, paitsi huomauttaaksesi ristiriidasta. Esitä jatkokysymyksiä.</p>
+<p>Mieti, mitä heidän vastauksensa merkitsevät, ja jatka päättelyä siitä. Heidän vastauksensa voivat yllättää sinut – se kuuluu hupiin – mutta jatka kuin vastaus olisi aina ollut tosi ja ilmeinen osa vakiintunutta maailmaa.</p>
+<p>Kun pyydät pelaajia rakentamaan fiktiota, se auttaa sinua <strong>pelaamaan saadaksesi selville, mitä tapahtuu</strong>. Pelaajasi keksivät aina yksityiskohtia, joita sinä et keksisi, ja se tekee yhdessä luomastanne maailmasta vähän yllättävämmän. Kun rakennat pelaajien vakiinnuttamien yksityiskohtien varaan, se auttaa sinua <strong>esittämään rikkaan ja salaperäisen maailman</strong>. Ihmiset sitoutuvat usein enemmän asioihin, joita ovat olleet luomassa, ja kun otat esiin hahmon tai yksityiskohdan, jonka he toivat peliin neljä pelikertaa sitten, ja sillä on merkitystä, se todella herättää maailman eloon.</p>
+<h3 id="be-a-fan-of-the-player-characters">Ole pelaajahahmojen fani</h3>
+<p>Pelaajahahmot ovat tarinan päähenkilöitä.</p>
+<p>Pidä pelin painopiste heissä. Kannusta heitä. Juhli heidän voittojaan. Sure heidän menetyksiään. Anna itsesi ihmetellä asioita heistä ja etsi sitten tapoja saada vastaukset pelin kautta. Välitä heistä. Ole heidän faninsa.</p>
+<p>Pelaajahahmojen fanina oleminen ei tarkoita, että annat heidän tehdä mitä haluavat.</p>
+<p>Sinä kirjoitat heidän vastoinkäymisensä. Sinun on <strong>rytmitettävä heidän elämäänsä seikkailuilla</strong>. Uhkaa heitä. Satuta heitä. Käy käsiksi asioihin, joista he välittävät. Anna heille kaikenlaisia vaikeita valintoja.</p>
+<p>Mutta myös: anna heille tilaisuuksia sekä loistaa hetkessä että parantaa asioita pitkällä aikavälillä. Anna heidän nauttia asioista, joiden eteen he tekevät työtä.</p>
+<p><em>Stonetop</em> antaa pelaajahahmoille paljon toimijuutta. Kunnioita sitä. Älä riistä heiltä heidän siirtojaan tai heittojaan. Katso, mitä he tekevät vallallaan, asemallaan ja osaamisellaan. <strong>Pelaa saadaksesi selville, mitä tapahtuu.</strong></p>
+<h2 id="the-line">Raja</h2>
+<p><em>Stonetopissa</em> ja sen kaltaisissa peleissä on raja sen välillä, mistä pelaajat vastaavat ja mistä sinä pelinjohtajana vastaat. Pelaajat vastaavat hahmoistaan: mitä he tekevät ja sanovat; mitä he tuntevat ja ajattelevat; miten he elävät; heidän menneistä kokemuksistaan. Pelinjohtajana sinä vastaat maailmasta: ympäristöstä, sivuhahmoista, vaaroista ja löydöistä.</p>
+<p>Jotkin tässä kuvatut kysymykset hämärtävät Rajaa. Kun kysyt Vahidilta, mikä yhteinen piirre kadonneilla lapsilla on, pyydät oikeastaan Vahidin pelaajaa tekemään jotain, mikä yleensä kuuluu pelinjohtajalle:</p>
+<p>keksimään yksityiskohtia maailmasta.</p>
+<p>Temppu on <strong>puhutella hahmoja, ei pelaajia</strong>. Älä pyydä pelaajaa keksimään, mitä hän löytää seuraavasta huoneesta, miten sivuhahmo reagoi tai miten ansa satuttaa häntä. Kysy <em>hahmolta</em> jotain, minkä hän tietää, josta hän on kuullut tai minkä hän on kokenut. Tämä siirtää pyynnön takaisin hänen puolelleen Rajaa. Se on ajatuksen silmänkääntötemppu, mutta tehokas sellainen.</p>
+<p>Silti Rajan hämärtäminen voi tuntua joistakin pelaajista epämukavalta tai luotaantyöntävältä. Jotkut pelaajat keksivät mielellään yksityiskohtia maailmasta, mutta toisten mielestä se vie eläytymisen tunteen tai saa maailman tuntumaan ontolta ja keksityltä. Sovita kysymyksesi ja tapasi esittää ne omiin ja pelaajiesi mieltymyksiin.</p>
+<h3 id="embrace-the-fantastic-and-the-mundane">Syleile ihmeellistä ja arkista</h3>
+<p>Maailma on täynnä ihmeellisiä aineksia:</p>
+<p>henkiä, hirviöitä, oikukkaita fae-olentoja, Tekijöiden muinaisia teoksia, Alla Olevien (Things Below) pimeyttä. Korosta näitä aineksia. Käytä niitä tehdäksesi maailmasta salaperäisen.</p>
+<p>Mutta samalla kiinnitä peli inhimillisiin huoliin: vuodenaikojen kiertoon, tulevaan satoon, ystäviin ja naapureihin.</p>
+<p>Uhkaa pelaajahahmoja todellisen maailman vaaroilla:</p>
+<p>ankaralla säällä, villipedoilla, nälällä, kylmälle altistumisella. Kysy, mitä muonaa he toivat mukanaan tai mistä he saivat tuon viitan. Tee maailmasta rikas arkisilla yksityiskohdilla.</p>
+<p><strong>Aseta ihmeellinen ja arkinen vastakkain</strong>. Jos seikkailu kiertyy yliluonnollisen uhan tai tilaisuuden ympärille, muista sisällyttää siihen aivan arkisia haasteita, vaaroja ja löytöjä. Jos pelikerta koostuu enimmäkseen arkisista huolista (kuten kauppamatkasta Suonreunaan (Marshedge) tai alkuhärkäjahdista), ripottele mukaan ihmeellisiä aineksia. Näiden kahden vuorovaikutus tekee maailmasta sitäkin rikkaamman ja salaperäisemmän.</p>
+<h3 id="exploit-the-setting-guide">Hyödynnä maailmanopasta</h3>
+<p><em>Stonetopin</em> mukana tulee paljon valmista maailmaa, mutta se jättää paljon aukkoja sinun ja pelaajiesi täytettäväksi pelin aikana. Maailma on tarkoitettu ponnahduslaudaksi luovuudellesi. Se auttaa luomaan sävyn ja antaa teille kaikille yhteisen lähtökohdan.</p>
+<p>Se tarjoaa yksityiskohtia, joita muunnella. Se vihjaa vastauksiin, mutta ei aina anna niitä. Käytä vakiintunutta maailmaa <strong>esittääksesi rikkaan ja salaperäisen maailman</strong>.</p>
+<p>Käytä maailmanopasta innoituksena, mutta älä tunne olevasi sen velkaa. Jos pelaajasi antavat sinulle jotain, mikä on ristiriidassa vakiintuneen maailman kanssa, älä mitätöi heidän panostaan vain siksi, että kirjassa lukee toisin. Kirja ei ole auktoriteetti, se on voimavara, jota voit hyödyntää.</p>
+<p>Tästä huolimatta: <strong>harkitse tarkkaan, mitä muutat tai hylkäät</strong>. On turvallisempaa muuttaa yksittäisiä yksityiskohtia kuin laajoja teemoja. Jos Kettu sanoo, että Brennan johti aikoinaan jengiä Suonreunassa ja tappoi tiensä valtaan (toisin kuin maailmanoppaan tarinassa, jossa hän oli rosvo, jonka neuvosto palkkasi marskikseen), ei hätää. Mutta jos sinä ja Etsijä päätätte, että Tekijät olivat tonttujen kokoisia näpertelijöitä eivätkä käsittämättömiä titaaneja, sinun on mietittävä uudelleen kaikenlaisia maailman yksityiskohtia (teiden koko, Rauniotornin mittakaava, kuhunkin Tekijätyyppiin liittyvät teemat ja niin edelleen).</p>
+<h3 id="respect-your-prep">Kunnioita valmistelujasi</h3>
+<p>Pelikertojen välillä teet valmisteluja. Kirjoitat uhkia ja sivuhahmoja. Luot tai valitset vaaroja ja löytöjä. Mietit kohtaamisia ja suunnittelet tutkittavia paikkoja.</p>
+<p>Osa valmistelusta koskee mahdollisuuksia: asioita, joita pelaajahahmot <em>saattavat</em> löytää, vaaroja, joita he <em>voivat</em> kohdata, ongelmia, joita <em>saattaa</em> syntyä.</p>
+<p>Tällainen valmistelu elää kvanttitilassa; ennen kuin oikeasti käytät näitä ideoita ja tuot ne fiktioon, ne eivät ole totta. Ne ovat vain ideoita – ideoita, jotka auttavat sinua <strong>rytmittämään hahmojen elämää seikkailuilla</strong>.</p>
+<p><strong>Suuri osa valmistelustasi on kuitenkin päätösten tekemistä</strong> – todellisia, sitovia päätöksiä siitä, millainen maailma <em>on</em>. Tähän kuuluvat esimerkiksi hirviön vaisto, siirrot ja HP, se, miten jokin paikka on päätynyt sellaiseksi kuin se on, tai se, kuka tappoi leski Mairen. Siihen voi kuulua päätöksiä siitä, mitä <em>tapahtuu</em>, jos pelaajahahmot eivät puutu asiaan, tai miten sivuhahmo reagoisi X:ään tai Y:hyn. Tällainen valmistelu on jo osa fiktiota, vaikka et olisi vielä paljastanut sitä pelaajille.</p>
+<p>Tee nämä päätökset huolella ja harkiten. Ota aikaa. Noudata tulevien lukujen ohjeita.</p>
+<p>Sitten pelin aikana <strong>kunnioita valmistelujasi</strong>. Kohtele niitä fiktiivisenä totuutena. Kuvaile maailmaa, esitä hahmojasi ja tee pelinjohtajan siirtoja nämä päätökset mielessäsi. Jos olet valmistellut hyvin, huomaat, että niissä pysyminen ei ainoastaan auta sinua <strong>esittämään rikkaan ja salaperäisen maailman</strong>, vaan myös (paradoksaalisesti) auttaa sinua <strong>pelaamaan saadaksesi selville, mitä tapahtuu</strong>.</p>
+<p>Lisää <strong>valmistelusta</strong> <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">valmisteluja</a>.</p>
+<h3 id="give-your-characters-life">Herätä hahmosi eloon</h3>
+<p>Nimeä sivuhahmosi. Anna heille omanlaisensa persoonallisuudet. Halut, tarpeet ja omituisuudet.</p>
+<p>Mielipiteet ja uskomukset. Jos pystyt, esitä heidät omanlaisillaan äänillä tai maneereilla. Herätä heidät eloon ja pelaa heitä kuin he olisivat oikeita ihmisiä.</p>
+<p>Kuvaile sivuhahmojasi mieleenpainuvilla piirteillä. Pelaajien on usein vaikea muistaa, että sepän nimi on Taliesen, mutta he muistavat, että seppä on iso, äänekäs mies, jolla on valkoinen hiuspehko.</p>
+<p>Älä anna pelaajahahmojen tallata sivuhahmojesi yli.</p>
+<p><strong>Ole pelaajahahmojen fani</strong>, toki, mutta se ei tarkoita, että sivuhahmojesi pitäisi vain tehdä mitä pelaajahahmot haluavat. Jos tuntuu, että pelaajahahmot painostavat tai houkuttelevat sivuhahmojasi tekemään jotain, mitä he eivät haluaisi tehdä, no, sitä varten on Suostuttele-siirto.</p>
+<p>Herätä myös ei-ihmishahmosi eloon.</p>
+<p>Kuvaile toki, miltä ne näyttävät, mutta myös miten ne liikkuvat, miltä ne kuulostavat ja haisevat, miten ne käyttäytyvät.</p>
+<p>Pedoilla, hengillä, jopa täysin vierailla Alla Olevilla – niillä kaikilla on persoonallisuus. Muodosta käsitys niiden vaikuttimista ja siitä, miten ne toimivat paineen alla. Pedoista mieti niiden ekologiaa. Epäkuolleista mieti, mikä estää niitä kulkemasta Viimeisen Oven (Last Door) läpi.</p>
+<p>Maagisista olennoista mieti niiden noudattamia outoja sääntöjä. Kaikista edellä mainituista: tuo nuo yksityiskohdat näkyviin tai ainakin vihjaa niihin. Se auttaa paljon <strong>rikkaan ja salaperäisen maailman esittämisessä</strong>.</p>
+<h3 id="think-offscreen-too">Ajattele myös kulisseissa</h3>
+<p>Kun pohjustat tilannetta, vastaat kysymyksiin tai teet siirtoja, mieti tapahtumia kulisseissa. Mitä sivuhahmosi ja hirviösi tekevät? Mitä ne ovat tehneet? Mitä jälkiä ne jättivät? Mitä ne ovat puuhanneet, mikä tulee ilmi? Mitä ne tekevät nyt, mikä voi myöhemmin tulla merkitykselliseksi? Puno vastaukset siihen, mitä sanot.</p>
+<p>Mieti myös, mitä pelaajahahmot tekevät ja miten se muovaisi tapahtumia kulisseissa. Jos he pitävät paljon meteliä kulkiessaan Suurmetsän halki, kuka kuulee heidän tulevan ja miten tämä reagoi? Jos he solmivat liiton Gordinin Kaivoksen (Gordin&#x27;s Delve) kanssa, miten Kukkulakansa (Hillfolk) – jolla on kaunaa Kaivajia kohtaan – reagoi?</p>
+<p>Jos he kertoivat kylälle olevansa poissa viisi päivää ja ovatkin poissa kaksi viikkoa, kuka olettaa heidän kuolleen? Kuka astuu esiin ja yrittää ottaa johdon? Kuka tarttuu tilaisuuteen tehdä mitä haluaa?</p>
+<p>Kulisseissa ajatteleminen auttaa sinua <strong>esittämään rikkaan ja salaperäisen maailman</strong>, koska maailma tuntuu pelaajahahmoja suuremmalta. Se auttaa sinua <strong>rytmittämään hahmojen elämää seikkailuilla</strong>, koska kulisseissa olevista uhista ja tilaisuuksista tulee nopeasti asioita, joihin pelaajahahmojen on tartuttava. Ja se auttaa sinua <strong>pelaamaan saadaksesi selville, mitä tapahtuu</strong>, koska se saa sinut ajattelemaan seurauksia ja syy-seuraussuhteita laajemmassa mittakaavassa.</p>
+<h3 id="bring-it-home">Tuo se kotiin</h3>
+<p>Tee itse Stonetopin kylästä pelisi perusta, pelaajahahmojen seikkailujen alku ja loppu. Uhkaa kylää, sen elinkeinoa tai asukkaita. Anna heille tilaisuuksia edistyä kohti parannuksia tai vihdoin kukistaa pitkään kyteneet uhat.</p>
+<p>Kun pelaajahahmot lähtevät seikkailuun, näytä, miten heidän naapurinsa reagoivat. Kuka tulee saattamaan heitä? Kuka on sairas huolesta, etteivät he palaa? Kuka nurisee, että tämä on hulluutta? Kuka antaa heille jotain mukaan, koska yksin on vaarallista lähteä?</p>
+<p>Seikkailujen aikana esitä kysymyksiä, jotka liittyvät takaisin pelaajahahmojen elämään Stonetopissa. Kuka opetti sinut metsästämään? Kuka tuli tänne kanssasi kaikki ne vuodet sitten, ja mitä hänelle tapahtui? Kenellä vanhoista konkareista oli kerran kahakka näiden olentojen kanssa?</p>
+<p>Kenen elämää tämä aarre muuttaisi eniten? Kenen hymyä huomaat ajattelevasi täällä tähtien alla?</p>
+<p>Kun pelaajahahmot palaavat kotiin, mieti, mitä heidän poissaollessaan on tapahtunut, ja kuvaile, miten kyläläiset tervehtivät heitä. Kuka on onnellisin? Kuka paheksuu heidän paluutaan? Kuka syyttää heitä kaiken tämän hämmingin nostattamisesta, vaikka he ovat panneet asiat kuntoon?</p>
+<p>Seikkailujen välillä kysy hahmoilta heidän arkielämästään ja ihmissuhteistaan. Näytä, miten kylä muuttuu vastauksena vaikeuksiinsa ja pelaajahahmojen tarttumiin tilaisuuksiin. Kuvaile sivuhahmojen vanhenevan, saavan lapsia, tavoittelevan enempää, tyytyvän vähempään. Näytä, miten pelaajahahmojen seikkailut ovat vaikuttaneet heihin.</p>
+<p>Tuo se kotiin.</p>
+<h3 id="let-things-breathe">Anna asioiden hengittää</h3>
+<p>Anna ajanjaksojen kulua seikkailujen välillä tai jopa yksittäisten siirtojen välillä. Maailma on suuri, ja pelaajahahmoilla on arkisia, päivittäisiä askareita hoidettavanaan. Vältä kiusausta seurata pelaajahahmojen elämää päivästä päivään, tunnista tuntiin. Anna viikkojen tai kuukausien kulua yhdellä lauseella: ”Seuraavat kolme viikkoa sadonkorjuu pitää teidät kaikki kiireisinä, ja sitten...”</p>
+<p>Kun uhka häämöttää, sen ei tarvitse olla välitön ja vakava. Voit näyttää merkkejä sen heräämisestä, mutta pitää sen etäällä ja kaukaisena. Kysy pelaajahahmoilta, mitä he tekevät asialle, mutta voit ratkaista heidän reaktionsa päivien tai viikkojen kuluessa.</p>
+<p>Zoomaa sisään ja rajaa kohtaus vain, kun fiktio vaatii välitöntä, täsmällistä toimintaa; loitonna heti, kun se on ohi. Anna uhan hautua, kunnes se kiehuu yli ja muuttuu joksikin, mihin pelaajahahmojen on tartuttava.</p>
+<h3 id="let-things-burn">Anna asioiden palaa</h3>
+<p>Vaikka kuinka pitäisit suunnitelmistasi, vaikka kuinka rakastuisit joihinkin sivuhahmoihisi, vaikka kuinka pelaajat kiintyisivät niihin:</p>
+<p>älä suojele ketään äläkä mitään.</p>
+<p>Monilla pelinjohtajilla on taipumus, hyvin luonnollinen taipumus, hemmotella pelaajahahmoja ja suojella sivuhahmoja, joista he välittävät. Säilyttää vallitseva tila. Säästää konnansa tulevaa yhteenottoa varten, vaikka pelaajahahmojen siirtojen, heittojen ja rohkean toiminnan kuuluisi oikeutetusti panna heidät mullan alle.</p>
+<p>Se taipumus? Polta se pois. Anna sitten kaiken muunkin palaa. Et pelaa suojellaksesi lemmikkejäsi. <strong>Pelaat saadaksesi selville, mitä tapahtuu</strong>.</p>
+<p>Tämä ei tarkoita, että sinun pitäisi nähdä vaivaa tuhotaksesi asiat, joita hahmot rakastavat. Se tarkoittaa, että sinun pitäisi uhata niitä asioita, ja jos hahmot eivät onnistu pelastamaan niitä, sinun pitäisi viedä asia loppuun. Hyväksy kovat, peruuttamattomat seuraukset. Leiki tulella. Anna asioiden palaa.</p>
+<h2 id="other-things-to-do">Muuta tehtävää</h2>
+<p><strong>Tee muistiinpanoja.</strong> Syntyy paljon yksityiskohtia, ja kaiken muistaminen voi olla vaikeaa. Sinun on löydettävä itsellesi sopiva työkalu ja tarkkuustaso, mutta kirjoittamisen arvoisia asioita voivat olla:</p>
+<ul class="bullets"><li>Sivuhahmojen nimet (ja piirteet ja olennaiset suhteet)</li><li>Historialliset tapahtumat, jotka sinä ja pelaajat vakiinnutatte (ja milloin/missä/kuka)</li><li>Kiinnostavat yksityiskohdat, joita et halua unohtaa</li><li>Yhteenveto kunkin pelikerran tapahtumista. Voit kirjoittaa muodollisia pelikertojen tiivistelmiä pelaajillesi jaettavaksi, mutta enimmäkseen nämä muistiinpanot ovat sinua varten. Kirjoita vain sen verran kuin koet hyödylliseksi.</li></ul>
+<p><strong>Piirrä karttoja.</strong> Paljon karttoja. Ei vain osana valmisteluja, vaan rekvisiittana tai vertailukohtana pelin aikana. Kun taistelu puhkeaa ja meneillään on paljon, luonnostele maasto nopeasti valkotaululle tai paperille (tai heitä pöytään figuja, jos sinulla on). Kun he tutkivat raunioita, piirrä karkea kartta (tai kannusta heitä piirtämään) fyysisen tilan hahmottamiseksi. Kun he menevät uuteen asutukseen, anna heille kartta sen eri kaupunginosista ja osista.</p>
+<p>Täydennä myös olemassa olevia karttoja. Merkitse pelaajahahmojen kodit asutuksen karttaan. Lisää pelin aikana esiin tulevia kiinnostavia paikkoja. Piirrä heidän matkansa reitti Lähiseudun tai Maailman Äären (World&#x27;s End) karttoihin.</p>
+<p><strong>Jätä aukkoja</strong> karttoihisi ja valmisteluihisi täytettäväksi pelin aikana tai myöhemmin. Jätä itsellesi asioita, joita ihmetellä. Jos sinulle tulee mieleen kysymys, sinun ei tarvitse vastata siihen (tai pyytää pelaajia vastaamaan) juuri nyt. Jätä se aukoksi, ehkä raapusta se muistiinpanoihisi, ja palaa siihen tulevalla pelikerralla.</p>
+<p><strong>Pidä asiat liikkeessä.</strong> Älä anna pelin vauhdin hiipua. Rajaa kohtauksia rohkeasti ja zoomaa sisään ja ulos kiinnostuksen tason mukaan (omasi ja pelaajien).</p>
+<p>Kun mitään ei tapahdu, tee joko pelinjohtajan siirto tai hyppää ajassa eteenpäin kohtaan, jossa jotain kiinnostavaa <em>tapahtuu</em>.</p>
+<p><strong>Ota kaikki mukaan.</strong> Siirrä valokeilaa pöydän ympäri. Varmista, että jokainen saa kunnolla aikaa kameran edessä. Sano selvästi, ketä puhuttelet, äläkä pelkää panna keskeyttäviä pelaajia odottamaan.</p>
+<p>”Blodwen, näet… Brian, odota, puhun Hobbesille.”</p>
+<p><strong>Pitäkää taukoja.</strong> Niiden aikana kaikki voivat pohtia tapahtunutta ja miettiä, mitä haluavat tehdä seuraavaksi. Niiden aikana te – oikeat, yhdessä hengailevat ihmiset – voitte tutustua toisiinne paremmin, vaihtaa kuulumisia tai vain vitsailla. Sekin on tärkeää.</p>
+<p><strong>Ota pelaajasi mukaan maailmanrakennukseen</strong> ja varmista, että he ymmärtävät maailman olevan yhtä lailla heidän kuin sinun. Kun he kysyvät sinulta jotain maailmasta eikä sinulla ole valmista vastausta, käännä kysymys heille. ”Hyvä kysymys. Blodwen, mitä Stonetopin väki TODELLA tekee vainajilleen?”</p>
+<p><strong>Luovu joskus päätösvallasta.</strong> Pane lopputulos hahmon käsiin (”Hän on veressä päästä varpaisiin, mutta ei kuollut. Voit vielä pelastaa hänet. Teetkö sen?”). Keskustele lopputuloksesta pelaajien kanssa (”Mitä mieltä olette? Onko Andras elossa vai kuollut?”). Anna noppien päättää (”Tiedättekö mitä, heitä hänelle Kuoleman Ovella.”).</p>
+<p>Anna sivuhahmojesi päättää heidän vaistojensa, halujensa ja tarpeidensa, muistiinpanojesi ja oman käsityksesi heidän sisäisestä logiikastaan perusteella.</p>
+<p>(”Ei, hän ei ole sitä tyyppiä, joka palaisi aaveena, joten… joo, hän on kuollut.”)</p>
+<h2 id="the-die-of-fate">Kohtalon noppa</h2>
+<p>Yksi tapa luopua päätösvallasta on antaa noppien päättää. Usein se tarkoittaa, että pelaajan siirron tulos ratkaisee, mitä tapahtuu. Mutta voit käyttää myös Kohtalon noppaa.</p>
+<p>Kohtalon noppa on pelkkä nopanheitto, yleensä <button type="button" class="dice-roll" data-dice="d6" title="Heitä d6 napsauttamalla — Shift: etu · Ctrl: haitta">d6</button>, jossa pienempi tulos tarkoittaa huonoa ja suurempi hyvää. Pyydä pelaajaa heittämään Kohtalon noppaa, kun sinulla ei ole erityistä mielipidettä siitä, mitä pitäisi tapahtua tai miten jonkin pitäisi mennä, ja/tai kun kyse on vain onnesta. Millainen sää tänään on? Mitä he kohtaavat matkalla? Montako käyttöä tarvikkeita he saavat ryöstettyä? Yleensä 1-2 on huono, 3-4 neutraali tai vaihteleva ja 5-6 aika hyvä.</p>
+<p>Joskus valmistelet Kohtalon nopalle tulossarjan. Esimerkiksi: mitä tapahtuu, kun he leiriytyvät?</p>
+<div class="roll-table bare-numbered"><table><tbody>
+<tr><th scope="row">1</th><td>Crinwinit hyökkäävät leiriin!</td></tr>
+<tr><th scope="row">2-3</th><td>Crinwinit yrittävät houkutella jonkun pois leiristä.</td></tr>
+<tr><th scope="row">4-5</th><td>Ne ovat tuolla ulkona, vain tarkkailemassa teitä.</td></tr>
+<tr><th scope="row">6</th><td>Vältätte niiden huomion.</td></tr>
+</tbody></table></div>
+<p>Älä tunne olevasi sidottu <button type="button" class="dice-roll" data-dice="d6" title="Heitä d6 napsauttamalla — Shift: etu · Ctrl: haitta">d6</button>:een, varsinkaan kun sinulla on valmiiksi laadittu tulostaulukko. Jos sinulla on 12 kiinnostavaa lopputulosta, pyydä heitä heittämään <button type="button" class="dice-roll" data-dice="d12" title="Heitä d12 napsauttamalla — Shift: etu · Ctrl: haitta">d12</button>.</p>
+<h2 id="what-not-to-do">Mitä ei pidä tehdä</h2>
+<p><strong>Älä suunnittele juonikaarta tai juonta.</strong> Älä suunnittele pelaajahahmojen kehityskaaria. Älä suunnittele dramaattisia hetkiä, joissa pelaajahahmot saapuvat <em>juuri</em> kun tietty asia tapahtuu (riippumatta siitä, kauanko heillä meni perille pääsemiseen tai mitä he tekivät sitä ennen). Älä oleta, että pelaajahahmot valitsevat tietyn toimintatavan tai että he onnistuvat tai epäonnistuvat tietyssä tehtävässä. Kaikki tuo sotii sitä vastaan, että <strong>pelaat saadaksesi selville, mitä tapahtuu</strong>. Se on sitä, että sinä päätät etukäteen, yksin, mitä tapahtuu. Ehdottomasti ei sitä, mitä varten olet täällä.</p>
+<p>Sen sijaan: valmistele tilanteita, mahdollisia kohtaamisia ja tutkittavia paikkoja. Valmistele uhkia ja sivuhahmoja, joilla on hyviä, toimintaan johtavia vaistoja, ehkä synkkiä enteitä ja uhkaavia tuhoja. Ks. osio <strong>Valmistelu</strong> <a class="wiki-link" href="#prep" data-slug="running-the-game" data-fragment="prep" data-ref="page">valmisteluja</a> siitä, miten tämä tehdään.</p>
+<p><strong>Älä kerro heille, mitä heittää, ennen kuin he ovat kertoneet sinulle, mitä tekevät.</strong> Et <em>todellakaan</em> saa sanoa sellaista roskaa kuin ”rosvo hyökkää, Uhmaa</p>
+<p>Vaaraa DEX:llä.” Koska 1) se ei toimi niin ja 2) entä jos he eivät toimi nopeasti tai taitavasti (Uhmaa Vaaraa -siirron DEX-laukaisin)? Entä jos he torjuvat hänen hyökkäyksensä ja moukaroivat häntä kilvellään? Entä jos he ottavat iskun vastaan ja lävistävät hänet? Entä jos he heittävät multaa hänen silmiinsä ja potkaisevat häntä haaroihin? Kun käsket pelaajia tekemään siirron ilman, että he ovat ensin kertoneet tehneensä jotain siirron laukaisevaa, otat heidän hahmonsa hallintaasi ja sanelet, mitä he tekevät.</p>
+<p>Rikot pelin sääntöjä.</p>
+<p>Sen sijaan: tee pehmeä pelinjohtajan siirtosi ja kysy: ”Mitä teet?” Päättäkää sitten vastauksen perusteella yhdessä, laukaisivatko he siirron ja minkä siirron he laukaisivat. Sitten he heittävät sen siirron, ja sinä ratkaiset sen siitä eteenpäin.</p>
+<p><strong>Älä pakota heitä heittämään ”ihan vain siksi”</strong> tai koska ”ehkä he eivät huomaisi” tai mitään muuta sellaista roskaa. Siis tiedäthän, miten muissa peleissä päätät, että hirviö hiipii leiriin, ja pyydät pelaajahahmolta havaintoheittoa? Sellaista ei ole <em>Stonetopissa</em>.</p>
+<p>Teet sen sijaan vain pehmeän pelinjohtajan siirron, kuten <strong>ennakoit vaikeuksia</strong>, joka vihjaa hirviön läsnäoloon. ”Tajuat, että sirkat ovat kaikki hiljenneet. Ja sitten – ehkä se on vain mielikuvitustasi. Mutta luulit kuulevasi jonkin… nauravan? Tuolla metsässä. Mitä teet?”</p>
+<p>Ja ehkä he herättävät muut tai huhuilevat tai tähyilevät varovasti metsään pää kallellaan ja laukaisevat Etsi Ymmärrystä -siirron. Miten tahansa he reagoivat, johdat peliä siitä eteenpäin.</p>
+<p><strong>Älä lakkaa tekemästä pelinjohtajan siirtoja</strong>, varsinkaan kun pelaajat heittävät 10+. Kuvailet toki, mitä tapahtuu, ja annat heille ansaitsemansa onnistumisen. Joskus pelaaja vain tarttuu aloitteeseen ja jatkaa (ja se on hienoa, mene sen mukana). Mutta yleensä pelaajat odottavat yhä sinulta, mitä tapahtuu. Fiktio jauhaa eteenpäin, ja pahikset tekevät yhä pahoja asioita.</p>
+<p>Kun siis Korsto heittää 10+ Iskiessään Yhteen ja tekee vahinkonsa ja vihollinen on yhä pystyssä ja lähellä on pari muuta pahista, älä vain sano: ”Hienoa, hän on yhä pystyssä, mitä teet?”</p>
+<p>Sen sijaan: mieti, miten ensimmäinen vihollinen reagoi osumaan ja mitä kaksi muuta vihollista tekevät. Tee siirto, joka ottaa kaiken tämän huomioon, ja kysy <em>sitten</em>: ”Mitä teet?”</p>
+<h2 id="gming-is-a-practice">Pelinjohtaminen on harjoitus</h2>
+<p>Minkä tahansa roolipelin johtaminen on harjoitus, kuten jooga, musiikki tai kamppailulajit. Sitä ei koskaan hallitse täydellisesti. Parannettavaa on aina, aina on jotain opittavaa.</p>
+<p>Nimenomaan <em>Stonetopin</em> johtaminen on oma taitonsa, oma harjoituksensa. Vaikka sinulla olisi kokemusta samankaltaisten pelien (kuten <em>Dungeon World</em> tai <em>Apocalypse World</em>) johtamisesta, oppimiskäyrä on silti olemassa. Stonetop on helpompi omaksua, jos olet johtanut muita pelejä, mutta tuo kokemus voi myös kääntyä sinua vastaan! Joudut oppimaan pois tavoista ja sopeutumaan uusiin lähestymistapoihin, ja se voi olla vaikeaa.</p>
+<p>Pointti on: <em>Stonetopin</em> johtaminen ei ole aivan helppoa, mutta <strong>siinä kehittyy tekemällä, pohtimalla, miten asiat menivät, ja yrittämällä tehdä paremmin ensi kerralla</strong>.</p>
+<p>Ensimmäisen seikkailun aikana keskity <strong>agendaasi</strong> <a class="wiki-link" href="#your-agenda" data-slug="running-the-game" data-fragment="your-agenda" data-ref="page">Agendasi</a>, <strong>ydinsilmukan noudattamiseen</strong> <a class="wiki-link" href="#the-core-loop" data-slug="running-the-game" data-fragment="the-core-loop" data-ref="page">Ydinsilmukka</a> ja <strong>pelaajien perussiirtojen</strong> <a class="wiki-link" href="player-moves.html" data-slug="player-moves" >laukaisimien tunnistamiseen</a>. Nojaa valmisteluihisi – sitä varten ne ovat – ja ota aikaa. Varaudu siihen, että asiat ovat vähän kankeita, kun sinä ja pelaajasi opettelette sääntöjä. Älä murehdi iskevistä kuvauksista, sivuhahmojen äänistä tai jokaisen periaatteen noudattamisesta.</p>
+<p>Ensimmäisen ”hahmoissa” pelatun pelikerran jälkeen pyydä pelaajiltasi palautetta. Mistä he nauttivat? Mikä tuntui kankealta? Mitä he haluavat nähdä enemmän tulevilla pelikerroilla? Pyydä tarvittaessa tarkennusta, mutta älä ala puolustella äläkä yritä selitellä.</p>
+<p>Yritä olla nöyrä ja vastaanottavainen.</p>
+<p>Kun sinulla on aikaa, käy pelikerta läpi agendasi valossa. <strong>Esititkö rikkaan ja salaperäisen maailman</strong>, vai tuntuiko maailma lattealta, ontolta, mielivaltaiselta?</p>
+<p><strong>Rytmititkö heidän elämäänsä seikkailuilla</strong>, vai annoitko asioiden venyä? <strong>Pelasitko saadaksesi selville, mitä tapahtuu</strong>, vai pakotitko asiat kulkemaan polkua, jota pitkin niiden mielestäsi kuului mennä? Jos et tavoitellut agendaasi, kysy itseltäsi: ”Miltä agendani tavoittelu olisi näyttänyt?” Ensi kerralla tee <em>niin</em>.</p>
+<p>Käy periaatteesi läpi. Jätitkö joskus noudattamatta niitä? Miten se vaikutti peliin? Miltä periaatteen noudattaminen olisi sen sijaan näyttänyt?</p>
+<p>Mieti hetkiä, jolloin olit ymmälläsi etkä tiennyt, mitä tehdä. Katso sitten ydinsilmukkaa. Missä kohtaa silmukkaa olit, kun jumituit? Mitä olisit voinut tehdä toisin? Millainen valmistelu olisi voinut auttaa? Ehkä valmistele jotain sellaista ennen seuraavaa pelikertaa.</p>
+<p>Käy pelaajien siirrot läpi (perus-, erikois-, retkisiirrot jne.). Jäikö sinulta huomaamatta siirtojen laukeamisia? Pyysitkö pelaajan siirtoa, vaikka sen laukaisin ei oikeasti täyttynyt? Noudatitko käytettyjen siirtojen menettelyjä oikein?</p>
+<p>Yritä seuraavalla pelikerralla tehdä paremmin. Kirjoita ylös 2-3 asiaa, joita haluat tehdä tai joihin haluat keskittyä. Pane ne jonnekin, missä näet ne. Yritä pelikerran aikana tehdä ne.</p>
+<p>Toista prosessi. Pyydä palautetta.</p>
+<p>Käy pelikerta läpi agendasi, periaatteidesi, sääntöjen ja ydinsilmukan valossa. Valmistele tukeaksesi heikkouksiasi. Aseta tavoitteita. Yritä uudelleen. Toista.</p>
+<p>Tule hyväksi. Sitten paremmaksi. Sitten loistavaksi.</p>
+<h2 id="prep">Valmistelu</h2>
+<p>Valmistelu on sitä, mitä teet pelikertojen välillä: yksinäistä hupia (tai joillekin stressaavaa työtä) seuraavaan peliin valmistautumisessa. Valmisteluun kuuluu aiempien pelikertojen muistiinpanojen läpikäyntiä, sen pohtimista, mitä seuraavalla pelikerralla voisi tapahtua, ja sellaisten asioiden tekemistä, joita et halua tehdä pelin aikana.</p>
+<p>Miksi valmistella? Muutamasta syystä:</p>
+<p>Jotta sinulla olisi <strong>kiinnostavaa sanottavaa</strong>.</p>
+<p>Jotta <strong>peli sujuisi nopeammin</strong> eikä kaikkien tarvitsisi odottaa, kun päätät, mitä tapahtuu, laadit hirviölle arvoja tai piirrät karttaa.</p>
+<p>Jotta voisit <strong>tukea heikkouksiasi</strong>. Jos esimerkiksi aina unohdat pelaajahahmojen seuralaiset ja annat heidän hälvetä taustalle, valmistele ehkä noille seuralaisille jotain kiinnostavaa sanottavaa tai tehtävää.</p>
+<p>Jotta voisit <strong>hioa taitoasi</strong>. Jotkin asiat ovat parempia, kun ehdit miettiä niitä – ne ovat johdonmukaisempia tai temaattisempia, ne soljuvat paremmin, ne rakentuvat aiemmin esiin tulleiden asioiden varaan jne.</p>
+<p>Jotta <strong>antaisit itsellesi luvan</strong> pelata kovaa ja tuottaa pelaajahahmoille pahaa. Jos sinulla on taipumus säästellä iskuissa (ja kenellä meistä ei olisi?), voi todella auttaa, että uhkaava tuho on vakiintunut tai että pahiksillasi on siirto kuten ”repäise käsi irti”.</p>
+<p>Valmistele vain sen verran kuin koet hyödylliseksi ja arvokkaaksi. Ellet tee jotain muiden pelinjohtajien käyttöön, ei ole mitään järkeä kirjoittaa ylös yksityiskohtia, jotka ovat sinulle itsestään selviä. Älä kirjoita ylös, miltä Nia näyttää, ellet usko unohtavasi sitä tai halua nimenomaan kiinnittää siihen huomiota pelissä.</p>
+<p>Harkitse joidenkin tai kaikkien seuraavien valmistelemista:</p>
+<h2 id="threats">Uhat</h2>
+<p>Jatkuvat, toistuvat ongelmat, jotka aiheuttavat pelaajahahmoille vaikeuksia. Asiat, jotka pahenevat, jos niihin ei puututa, tai monimutkaiset suhteet, joita haluat tutkia pelissä lisää. <strong>Uhkien</strong> <a class="wiki-link" href="threats.html" data-slug="threats" >valmistelusta ja käytöstä on kokonainen luku</a>.</p>
+<h2 id="hooks">Koukut</h2>
+<p>Kun haluat työntää pelaajahahmot maastoon uhan tai tilaisuuden avulla, kannattaa valmistella koukku. Koukkuun kuuluu:</p>
+<p>pohjustuskysymyksiä, suunnitelma alkukohtausten rajaamiseen, joitakin tiettyjä pelinjohtajan siirtoja, joita aiot tehdä, ja joitakin mahdollisia reaktioita. Ks. luku <strong>Ensimmäinen seikkailu</strong> <a class="wiki-link" href="first-adventure.html" data-slug="first-adventure" data-ref="page" >Ensimmäinen seikkailu</a> ohjeita koukun valmisteluun.</p>
+<h2 id="expeditions">Retket</h2>
+<p>Jos tiedät (tai epäilet), että pelaajahahmot lähtevät kylästä, voit valmistella valintasi <strong>Suunnittele Reitti</strong> -<a class="wiki-link" href="expeditions.html" data-slug="expeditions" >siirtoon</a>.</p>
+<p>Harkitse kartan piirtämistä, kiinnostavien paikkojen valmistelemista ja muutaman matkalla mahdollisen kohtaamisen karkeaa kuvittelemista.</p>
+<p>Ks. Retket-luvun osio ”<strong>Mitä valmistella”</strong> <a class="wiki-link" href="expeditions.html" data-slug="expeditions" data-ref="page" >Retket</a> yksityiskohtia varten.</p>
+<h2 id="sites">Kohteet</h2>
+<p>Mieti jokaista tärkeää paikkaa, jonka odotat pelaajahahmojen tutkivan tai kohtaavan pelikerran aikana. Millainen se on? Miten kuvailet sitä? Mitä kysymyksiä esität siitä? Mikä on sen tarina? Tarvitsetko karttaa tai kuvallista apuvälinettä? Onko siellä vaaroja tai löytöjä? Ks. <a class="wiki-link" href="sites.html" data-slug="sites" data-ref="page" >Kohteet</a> ideoita varten.</p>
+<h2 id="dangers">Vaarat</h2>
+<p>Vaaratekijät, hirviöt ja vihamieliset sivuhahmot, joita pelaajahahmot voivat kohdata.</p>
+<p>Etsi maailmanoppaasta käytettäviä kohtia tai tee omasi. Voit toki tehdä tämän lennosta, mutta se vie aikaa pöydän ääressä, ja on parasta tehdä se etukäteen. Ks. luku <strong>Vaarat</strong> <a class="wiki-link" href="dangers.html" data-slug="dangers" data-ref="page" >Vaarat</a> ohjeita varten.</p>
+<h2 id="discoveries">Löydöt</h2>
+<p>Arvoitukset, vihjeet, mysteerit, aarteet, arkaanit… nämä ovat kaikki löytöjä. Jotkin keksit vain lennosta. Joistakin haluat tehdä muutaman muistiinpanon. Jotkin (varsinkin arkaanit) haluat kirjoittaa auki yksityiskohtaisesti. Ks. lisää <a class="wiki-link" href="discoveries.html" data-slug="discoveries" data-ref="page" >Löydöt</a>.</p>
+<h2 id="npcs">Sivuhahmot</h2>
+<p>Jos on sivuhahmoja, joita odotat heidän kohtaavan pelissä, mieti heidän nimiään, kysymyksiä, joita heistä esität, heidän määritteleviä piirteitään sekä sitä, miten kuvailet ja esität heitä. Anna heille ehkä vaisto, yhteyksiä ja vaikuttimia. Jos sivuhahmosta voi tulla seuralainen, harkitse hänen arvojensa, tunnisteidensa, siirtojensa, hintansa ja vaistonsa kirjaamista ennen peliä. Ks. <a class="wiki-link" href="npcs-followers.html" data-slug="npcs-followers" data-ref="page" >Sivuhahmot ja seuralaiset</a> ohjeita varten.</p>
+<p>Kaikki tämä valmistelu voi tuntua sotivan sitä vastaan, että <strong>pelaat saadaksesi selville, mitä tapahtuu</strong>, mutta oikeasti ei. Et valmistele tarinaa, juonta tai väistämätöntä kohtaussarjaa, jossa kohtaus seuraa toistaan.</p>
+<p>Valmistelet asioita, jotka antavat sinulle kiinnostavaa sanottavaa, nopeuttavat peliä, tukevat heikkouksiasi ja hiovat taitoasi sekä antavat sinulle luvan pelata kovaa. Hyvä valmistelu ei tarkoita kaiken käsikirjoittamista; se tarkoittaa pohjatyötä, joka auttaa sinua improvisoimaan.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div id="wiki-preview" class="wiki-preview" hidden></div>
+  <div id="dice-toast" class="dice-toast" hidden></div>
+  <script>window.WIKI_UI={"books": {"book1": "Kirja I", "book2": "Kirja II", "sites": "Paikat"}, "page_words": ["s.", "sivu", "sivulla", "sivuilla", "sivulta", "sivuilta", "sivulle", "sivuille", "sivua", "sivut"], "english_only": "Saatavilla vain englanniksi", "js": {"feedback_link": "Lähetä palautetta tästä sivusta", "feedback_head": "Lähetä palautetta", "feedback_about": "Sivu", "feedback_what": "Mitä pitäisi muuttaa?", "feedback_placeholder": "Väärä luku, puuttuva siirto, sekaisin mennyt taulukko…", "feedback_email": "Sähköposti (valinnainen, vastausta varten)", "feedback_send": "Lähetä", "feedback_cancel": "Peruuta", "feedback_close": "Sulje", "feedback_sending": "Lähetetään…", "feedback_sent": "Palaute lähetetty – kiitos!", "feedback_failed": "Lähetys epäonnistui ({error}). Yritä uudelleen.", "feedback_network": "verkkovirhe", "search_empty": "Yksikään sivu ei vastaa hakua ”{query}”.", "search_pages_one": "1 sivu", "search_pages_many": "{n} sivua", "search_showing": " (näytetään {n})", "search_in_title_text": "otsikko + teksti", "search_in_title": "otsikko", "search_in_text": "tekstissä", "preview_no_summary": "Tiivistelmää ei ole.", "preview_missing": "Tälle linkille ei ole esikatselua.", "location_label": "Sijainti", "location_who": "Kenellä se on", "location_unknown": "— tuntematon —", "location_other": "Muualla / jollakulla muulla…", "location_placeholder": "Missä se on tai kenellä se on", "arcana_head": "Arkanat", "arcana_none": "Ei yhtään. Aseta arkanan sijainniksi ”{title}”, niin se näkyy tässä.", "sync_label": "Kampanja", "sync_copied": "{what} kopioitu", "sync_copy_this": "Kopioi tämä linkki", "sync_nothing_export": "Ei vielä mitään vietävää", "sync_saved": "{n} tallennettu tiedostoon {file}", "sync_not_json": "tuo tiedosto ei ole JSONia", "sync_not_export": "tuo ei ole kampanjan vientitiedosto", "sync_data": "Kampanjan tiedot", "sync_export": "Vie", "sync_export_title": "Tallenna kampanjan tila tiedostoon", "sync_import": "Tuo", "sync_import_title": "Yhdistä tallennettu tiedosto tähän kampanjaan", "sync_nothing_import": "Tuossa tiedostossa ei ole mitään tuotavaa", "sync_imported": "{n} tuotu {stores} varastoon", "sync_skipped": " · ohitettu: {names}", "sync_read_failed": "Tiedostoa ei voitu lukea", "sync_sharing_gm": "Jaetaan pelinjohtajana", "sync_sharing_table": "Jaetaan pöydän kanssa", "sync_copy_player": "Kopioi pelaajalinkki", "sync_copy_gm": "Kopioi PJ-linkki", "sync_copy_mine": "Kopioi oma linkkini", "sync_player_link": "Pelaajalinkki", "sync_gm_link": "PJ-linkki", "sync_link": "Linkki", "sync_no_player_token": "Tämä selain liittyi PJ-linkillä, joten sillä ei ole pelaajatunnistetta. Kopioi pelaajalinkki siitä selaimesta, jossa kampanja luotiin.", "sync_stop": "Lopeta jakaminen", "sync_stopped": "Jakaminen lopetettu – tämä selain säilyttää oman kopionsa", "sync_what_shared": "Rastitetut parannukset, vaarakellot, vastaukset, lomakkeet ja hahmon HP jaetaan kaikille. Vihollisten HP on vain PJ:n nähtävissä.", "sync_share_head": "Jaa tämä kampanja", "sync_worker": "Synkronointipalvelin", "sync_create": "Luo kampanja", "sync_creating": "Luodaan…", "sync_enter_endpoint": "Anna ensin synkronointipalvelimen osoite", "sync_unreachable": "Synkronointipalvelimeen ei saatu yhteyttä", "sync_paste": "Tai liitä linkki, jonka PJ lähetti:", "sync_join_link": "Liittymislinkki", "sync_join": "Liity", "sync_bad_link": "Tuo ei näytä liittymislinkiltä", "sync_joined": "Liityit kampanjaan {campaign}", "sync_the_campaign": "kampanja", "sync_status_on": "Tätä kampanjaa jaetaan pöydän kanssa", "sync_status_offline": "Synkronointipalvelin ei vastaa – muutokset tallennetaan tänne ja lähetetään myöhemmin", "sync_status_local": "Tämä selain säilyttää oman kopionsa"}, "playbooks": {"the-blessed": "Siunattu", "the-fox": "Kettu", "the-heavy": "Korsto", "the-judge": "Tuomari", "the-lightbearer": "Valonkantaja", "the-marshal": "Marski", "the-ranger": "Samooja", "the-seeker": "Etsijä", "the-would-be-hero": "Sankarinalku"}};</script>
+  <script src="../js/wiki.js"></script>
+</body>
+</html>

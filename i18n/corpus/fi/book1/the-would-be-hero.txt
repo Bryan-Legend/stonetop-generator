@@ -10,7 +10,7 @@ P	<i>Useimmat toivovat hiljaista elämää. He viettävät päivänsä huolehtie
 HR
 H2	Tausta (Valitse 1)
 C	<b>HURJAPÄINEN NUORUUS</b> Stonetop on aina ollut kotisi, mutta arkielämän vaatimukset hiertävät, ja olet aina kaivannut enemmän. Jännitystä! Vaaraa!
-P	Kun <b><i>teet siirron ja jäät vajaaksi</i></b>, voit antaa kaikkesi ja muuttaa tuloksen 6- tulokseksi 7–9, 7–9 tulokseksi 10+ ja (jos sillä on merkitystä) 10–11 tulokseksi 12+. Mutta jos teet niin, valitse 1 (PJ täydentää yksityiskohdat):
+P	Kun <b><i>teet siirron ja jäät vajaaksi</i></b>, voit antaa kaikkesi ja muuttaa tuloksen 6- tulokseksi 7-9, 7-9 tulokseksi 10+ ja (jos sillä on merkitystä) 10-11 tulokseksi 12+. Mutta jos teet niin, valitse 1 (PJ täydentää yksityiskohdat):
 B	Loukkaannut (2d4 vahinkoa ja todellinen vamma)
 B	Aiheutat sivuvahinkoja, vaarannat muita tai kärjistät tilannetta muuten
 B	Jokin mukanasi oleva katoaa tai hajoaa
@@ -20,7 +20,7 @@ C	Joku antoi henkensä pelastaakseen sinut
 C	Esikuvasi uhrautui pelastaakseen monet
 C	Kompastuit synkkään arvoitukseen
 C	Sinun on hyvitettävä hirvittävä virhe Sinulla on aina mahdollisuus Palaa Kirkkaasti; voit heiton jälkeen käyttää 2 XP:tä lisätäksesi +1, vaikka XP:tä ei riittäisi tason nousuun.
-C	<b>VALITTU</b> ◇◇◇ Kohtalo on laskenut kätensä päällesi. Valitse alta 3–4 sanaa kuvaamaan kohtaloasi:
+C	<b>VALITTU</b> ◇◇◇ Kohtalo on laskenut kätensä päällesi. Valitse alta 3-4 sanaa kuvaamaan kohtaloasi:
 C	voideltu
 C	syntyessään merkitty
 C	tulosi ennustettu
@@ -49,7 +49,7 @@ C	Alla Olevat
 PB
 P	<b><i>Pelikerran alussa</i></b> heitä +Enteet: <b>7+:lla</b> menetät kaikki Enteet, ja PJ kuvailee näyn tai enteen, joka viittaa kohtaloosi ja/tai selventää nykyistä tilannettasi; lisäksi <b>10+:lla</b> esitä PJ:lle jatkokysymys ja saat selkeän, hyödyllisen vastauksen;
 P	<b><i>6-:lla</i></b> et merkitse XP:tä, pidät +1 Enteen ja kerrot meille viimeaikaisista painajaisistasi tai huolestuttavasta näystä ja siitä, miten pelkosi liittyvät niihin.
-P	<b><i>Kunnes kohtalosi on täyttynyt</i></b>, pidä Kuoleman Ovella tulosta 6- tuloksena 7–9 ja tulosta 7–9 tuloksena 10+.
+P	<b><i>Kunnes kohtalosi on täyttynyt</i></b>, pidä Kuoleman Ovella tulosta 6- tuloksena 7-9 ja tulosta 7-9 tuloksena 10+.
 H2	Vaisto (Valitse 1)
 C	<b>UHMA</b> Kieltäytyä perääntymästä, luovuttamasta, antamasta periksi.
 HR

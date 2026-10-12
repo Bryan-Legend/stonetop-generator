@@ -292,6 +292,7 @@ Pull Together · Deploy · Seasons Change · Death's Door.
 - **Sheet headings:** Tausta (Valitse 1) · Vaisto (Valitse 1) · Ulkonäkö · Kotiseutu ja nimi · Kyvyt · Erityinen omaisuus · Siirrot · Esittelyt
 - **Names:** Suurmetsä (Great Wood) · Suonreuna (Marshedge) · Muurisola (Barrier Pass) · Gordinin Kaivos · Kukkulakansa (Hillfolk) · Porrasmaat (Steplands) · Kehämuuri (Ringwall) · Vanhat Tiet · Rauniotorni · Ferrierin Räme · Tekijät (Makers) · Alla Olevat (Things Below) · Viimeinen Ovi · Kalpea Metsästäjä · Fae
 - **Tags:** käsi (hand) · lähellä (close) · likellä (near) · kaukana (far) · ulottuvuus (reach) · lävistävä (piercing) · alue (area) · ryhmä
+- **Whole-language pass (2026-10-12):** the binding list is `i18n/_work/fi-brief.md` (self-contained, incl. the playbooks' own move names); sweep in `fi-sweep.py`. Key choices: GM = pelinjohtaja (PJ) · NPC/PC = sivuhahmo/pelaajahahmo · roll = heitä · outcomes "<b>10+:lla</b>", "<b>7-9:llä</b>" · move triggers conjugated ("Kun Uhmaat Vaaraa") · debility (noun) = heikkous (not vaiva) · tag = tunniste (not määre) · load = kevyt/tavallinen/raskas kuorma · Consequences = Seuraukset (not Seuraamus) · site = kohde · expedition = retki · Bolster = Valmistaudu · wraith = haamu · specter = kummitus · Rune-laden Scales = Riimuin Raskas Suomuhaarniska · page refs always "(s. 18)" (`page_words` in `ui/fi.json`)
 
 ---
 
