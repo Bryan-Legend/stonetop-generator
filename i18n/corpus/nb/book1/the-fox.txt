@@ -18,7 +18,7 @@ P	Uansett har disse folkene tatt imot deg. På tide å leve et ærlig liv, ikke 
 P	Du starter med enten Innbrudd eller Lange Fingre (du velger) som et ekstra trekk, og enten innbruddsverktøy eller et skjult gjemmested (du velger) som en ekstra særlig eiendel. Kryss dem av nå.
 C	<b>DEN BORTKOMNE SØNNEN VENDER HJEM</b> Du dro for lenge siden, reiste langt og levde av vettet ditt. Hvorfor dro du? Hvilke bragder skryter du av, og hvilke angrer du på?
 P	Du lengtet alltid tilbake til Stonetop, og nå er du tilbake. Du er noe av en kjendis nå, og du har venner (eller nesten) spredt utover hele den kjente verden.
-P	Når du <b><i>erklærer at du kjenner noen utenfor</i></b> <b><i>Stonetop</i></b>, noen som kan hjelpe, navngi dem og slå +CHA: <b>på 10+</b> ja, de kan hjelpe (fortell hvorfor de er villige); <b>på 7–9</b> kan de hjelpe, men velg 1 fra listen nedenfor; <b>på 6-</b> velger spillederen 1 og litt til.
+P	Når du <b><i>erklærer at du kjenner noen utenfor</i></b> <b><i>Stonetop</i></b>, noen som kan hjelpe, navngi dem og slå +CHA: <b>på 10+</b> ja, de kan hjelpe (fortell hvorfor de er villige); <b>på 7-9</b> kan de hjelpe, men velg 1 fra listen nedenfor; <b>på 6-</b> velger spillederen 1 og litt til.
 B	De bærer fortsatt nag
 B	De kommer til å trenge noe fra deg først
 B	De sverget bort slikt for lenge siden
@@ -57,7 +57,7 @@ C	<b>Myrkant</b>: Comyna, Crevan, Fitz, Greagir, Maired, Nainsi, Naiclas eller S
 C	<b>Lygos eller et annet sted i sør</b>: Amit, Baz, Dafna, Mahsa, Parviz, Sanaz, Tzofiya, Yaniv
 WRITE	Jeg kalles...
 PAGE	110
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en plage er krysset av, slår du med ulempe.", "die": "d8", "hp": "HP (maks 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d8", "hp": "HP (maks 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	111
 H2	Særlige eiendeler (Velg 2)
 HR
@@ -76,13 +76,13 @@ HR
 P	Du starter med Bakhold ELLER Våpenferdighet; Faresans ELLER Skarpsindig; og 1 valgfritt.
 HR
 C	<b>DET SITTER I HÅNDLEDDET</b> ◇ <i>noen få igjen</i> ◇ <i>tomt</i> Enhver kniv eller dolk får merkelappen <i>kastbar</i> i hendene dine. Du har også noen kasteknivar av jern (<i>nær</i>) på deg; de tar ikke plass i oppakningen din. Fyll på ammunisjonen hver gang du Utruster Deg.
-C	<b>BAKHOLD</b> Når du <b><i>overrumpler en fiende i nærheten</i></b>, kan du gjøre skaden din eller i stedet velge å slå +DEX: <b>på 10+</b> gjør du skaden din og velger 2; <b>på 7–9</b> gjør du skade og velger 1:
+C	<b>BAKHOLD</b> Når du <b><i>overrumpler en fiende i nærheten</i></b>, kan du gjøre skaden din eller i stedet velge å slå +DEX: <b>på 10+</b> gjør du skaden din og velger 2; <b>på 7-9</b> gjør du skade og velger 1:
 B	Gjør +1d4 skade
 B	Hindre dem i å lage lyd/slå alarm
 B	Smette unna før de rekker å reagere
 B	Skape en åpning; du eller en alliert får fordel på neste trekk for å utnytte den
 C	<b>INNBRUDD</b> Når du <b><i>sniker deg alene inn på et farlig</i></b> <b><i>sted</i></b>, slå +INT: <b>på 7+</b> kommer du deg tilbake, og spillederen forteller hvor du kom deg og hva du fikk vite.
-P	Deretter, <b>på 10+</b>, velg også 2; <b>på 7–9</b>, velg også 1:
+P	Deretter, <b>på 10+</b>, velg også 2; <b>på 7-9</b>, velg også 1:
 B	Du slapp unna helt, uten å vekke mistanke
 B	Du rappet noe verdifullt (spillederens valg)
 B	Du la til rette for noe å utnytte når du kommer tilbake
@@ -91,7 +91,7 @@ P	<b>På 6-</b> kommer du deg enten tilbake, men med trøbbel i hælene, eller s
 C	<b>SOM EN KATT</b> Når du <b><i>bærer en lett bør og går varsomt fram</i></b>, beveger du deg lydløst. Når du <b><i>gjemmer deg i skygger eller mørke</i></b>, forblir du usett til du trekker oppmerksomhet mot deg selv, bytter posisjon eller angriper.
 TAKES	3
 C	<b>TUSENKUNSTNER</b> (Krever nivå 2+ og Reven) Hver gang du tar dette trekket, velg et trekk fra Slåsskjempens, Marskens, Villmarkingens eller Søkerens playbook som du ellers oppfyller kravene til. (Du kan ikke ta Forbedret Egenskap eller Overlegen Egenskap.)
-C	<b>FARESANS</b> Du kan alltid spørre spillederen: «Er det et bakhold eller en felle her?» Hvis svaret er «ja», slå +INT: <b>på 10+</b> stiller du spillederen begge spørsmålene nedenfor; <b>på 7–9</b> stiller du 1; <b>uansett</b> får du fordel på neste slag for å handle ut fra svaret (svarene).
+C	<b>FARESANS</b> Du kan alltid spørre spillederen: «Er det et bakhold eller en felle her?» Hvis svaret er «ja», slå +INT: <b>på 10+</b> stiller du spillederen begge spørsmålene nedenfor; <b>på 7-9</b> stiller du 1; <b>uansett</b> får du fordel på neste slag for å handle ut fra svaret (svarene).
 Q	Hva utløser bakholdet eller fellen?
 Q	Hva skjer når den er utløst?
 P	<b>På 6-</b> krysser du ikke av XP; du vet at det er en felle eller et bakhold, men ingenting ille skjer helt ennå.
@@ -101,10 +101,10 @@ C	<b>FORBEDRET EGENSKAP</b> Hver gang du tar dette trekket, øk en av egenskapen
 C	<b>UIMOTSTÅELIG</b> Når du <b><i>omgås noen</i></b>, kan du spørre spilleren deres om de synes du er tiltrekkende, og få et ærlig svar (som regel «ja»).
 P	Når du <b><i>Overtaler ved å bruke din betydelige</i></b> <b><i>sjarm som pressmiddel</i></b>, har du fordel.
 C	<b>LE AV FAREN</b> Når du <b><i>skal til å slå +CON og slår en</i></b> <b><i>vits om motgangen du står overfor</i></b>, kan du i stedet slå +CHA.
-C	<b>LANGE FINGRE</b> Når du <b><i>utfører et fingerferdig triks på et intetanende</i></b> <b><i>offer</i></b>, lykkes du, og ingen merker noe. Hvis du blir iakttatt, slå +DEX: <b>på 10+</b> lykkes du, og ingen merker noe; <b>på 7–9</b> lykkes du ELLER ingen merker noe (du velger).
+C	<b>LANGE FINGRE</b> Når du <b><i>utfører et fingerferdig triks på et intetanende</i></b> <b><i>offer</i></b>, lykkes du, og ingen merker noe. Hvis du blir iakttatt, slå +DEX: <b>på 10+</b> lykkes du, og ingen merker noe; <b>på 7-9</b> lykkes du ELLER ingen merker noe (du velger).
 PAGE	111
 C	<b>SKARPSINDIG</b> Når du <b><i>Søker Innsikt</i></b>, kan du stille 1 ekstra spørsmål. Selv på 6- kan du stille 1 spørsmål (selv om du kanskje ikke liker hvordan du får vite svaret).
-C	<b>SYLSKARP VITTIGHET</b> Når du <b><i>punkterer en SLPs stolthet med en velplassert</i></b> <b><i>spydighet</i></b>, må de gjøre 1 (de velger):
+C	<b>SYLSKARP VITTIGHET</b> Når du <b><i>punkterer en SLP-ers stolthet med en velplassert</i></b> <b><i>spydighet</i></b>, må de gjøre 1 (de velger):
 B	Angripe, og gjøre +1d4 skade hvis de treffer, men gi deg fordel på neste slag mot dem
 B	Senke seg til ditt nivå og svare med samme mynt
 B	Bruke noen øyeblikk på å koke, frese eller få kontroll på temperamentet
@@ -112,7 +112,7 @@ C	<b>VÅPENFERDIGHET</b> Når du <b><i>fører et våpen raskt og grasiøst</i></
 C2	<b>PARADE & RIPOSTE</b>
 P	(Krever Våpenferdighet)
 P	Når du <b><i>Forsvarer med et våpen du kan</i></b> <b><i>føre raskt</i></b>, kan du bruke 1 Beredskap til både å halvere et angreps virkninger/skade og slå tilbake mot angriperen (gjør skaden din med ulempe), i stedet for å bruke 1 Beredskap på hver.
-C	<b>SØLVTUNGE</b> ◇◇◇ Når du <b><i>bruker ord for å unngå mistanke eller trøbbel</i></b>, slå +CHA: <b>på 10+</b>, hold 3 Mot; <b>på 7–9</b>, hold 1 Mot. Du kan bruke Mot, 1 for 1, til å:
+C	<b>SØLVTUNGE</b> ◇◇◇ Når du <b><i>bruker ord for å unngå mistanke eller trøbbel</i></b>, slå +CHA: <b>på 10+</b>, hold 3 Mot; <b>på 7-9</b>, hold 1 Mot. Du kan bruke Mot, 1 for 1, til å:
 B	Bevege deg eller manøvrere uhindret
 B	Tåle direkte granskning eller avhør
 B	Lede mistanke eller oppmerksomhet et annet sted
@@ -122,12 +122,12 @@ Q	Hva prøver de, i grove trekk, å skjule?
 Q	Hva vil de skal skje?
 C	<b>KAMPDANSER</b> (Krever nivå 6+ og Våpenferdighet) Når du <b><i>slår +DEX for å Krysse Klinger</i></b>, <b>på 12+</b> gjør du skaden din, unngår fiendens angrep og imponerer/ydmyker/skremmer motstanderne dine.
 C	<b>LUMPENT SLAG</b> (Krever nivå 6+ og Bakhold) Når du <b><i>legger Bakhold med et</i></b> <b>hånd</b><b><i>våpen</i></b>, har du fordel på skadeslaget.
-C	<b>ØYE PÅ DØREN</b> (Krever nivå 6+) Når <b><i>du og dine allierte må komme dere ut herfra</i></b>, navngi fluktruten din og slå +INT: <b>på 10+</b> er dere borte; <b>på 7–9</b> kan dere bli eller gå, men går dere, koster det deg — spillederen forteller hva (eller hvem) du etterlater eller tar med deg.
+C	<b>ØYE PÅ DØREN</b> (Krever nivå 6+) Når <b><i>du og dine allierte må komme dere ut herfra</i></b>, navngi fluktruten din og slå +INT: <b>på 10+</b> er dere borte; <b>på 7-9</b> kan dere bli eller gå, men går dere, koster det deg — spillederen forteller hva (eller hvem) du etterlater eller tar med deg.
 C	<b>LØGNHALS</b> (Krever nivå 6+) Når du <b><i>Trosser Faren, Overtaler eller Hindrer ved</i></b> <b><i>å være bedragersk</i></b>, har du fordel.
 P	Når et annet trekk (som Søke Innsikt) lar en spiller stille deg et spørsmål, kan du velge å ikke svare.
 C	<b>BAKTANKE</b> (Krever nivå 6+, Parade & Riposte og Bakhold) Når du <b><i>Forsvarer og bruker 1 Beredskap på Parade</i></b>
 P	<b><i>& Riposte</i></b>, velg også 1 valg fra Bakholdets liste.
-C	<b>GLATT SOM EN ÅL</b> (Krever nivå 6+) Når du <b><i>slår for å unnslippe å bli tatt eller kontrollert</i></b>, behandle 6- som 7–9. På 12+, fortell hvordan du snur situasjonen eller bruker omstendighetene til din fordel.
+C	<b>GLATT SOM EN ÅL</b> (Krever nivå 6+) Når du <b><i>slår for å unnslippe å bli tatt eller kontrollert</i></b>, behandle 6- som 7-9. På 12+, fortell hvordan du snur situasjonen eller bruker omstendighetene til din fordel.
 C	<b>OVERLEGEN EGENSKAP</b> (Krever nivå 6+) Øk en av egenskapene dine med +1 (til maks +3).
 PAGE	112
 H2	Skrøner
@@ -169,7 +169,7 @@ P	Vent her på de andre. Når alle er klare, bytter dere på å presentere spill
 STEP	1	På din første tur, <b>presenter deg selv</b> med navn, pronomen, bakgrunn, hjemtrakter og utseende.
 STEP	2	På din andre tur, <b>beskriv dine særlige</b> <b>eiendeler</b> og hvordan du bidrar til landsbyen (utover arbeidet på åkrene).
 STEP	3	På din tredje tur, <b>fortell oss skrønene dine</b>. Pynt gjerne på dem og overdriv for de andre spillerne, men svar alltid spillederen sannferdig.
-STEP	4	På din neste tur, <b>svar på ett av følgende spørsmål</b>, og nevn én eller flere SLPer som bor i Stonetop.
+STEP	4	På din neste tur, <b>svar på ett av følgende spørsmål</b>, og nevn én eller flere SLP-er som bor i Stonetop.
 C	Hvem er din nærmeste slektning?
 C	Hvem holder tømmene til hjertet ditt?
 C	Hvem sin respekt betyr alt for deg?

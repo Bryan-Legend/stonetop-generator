@@ -55,7 +55,7 @@ C	<b>Manmarch</b>: Bathhilde, Clothar, Ganter, Hiltrude, Ludig, Luise, Modd elle
 C	<b>Lygos eller et annet sted i sør</b>: Arihl, Akios, Bhadur, Seble, Shahnaz, Shay, Tisi eller Zubin
 WRITE	Jeg kalles...
 PAGE	114
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en plage er krysset av, slår du med ulempe.", "die": "d10", "hp": "HP (maks 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d10", "hp": "HP (maks 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	115
 H2	Særlige eiendeler (Velg 2)
 HR
@@ -76,8 +76,8 @@ P	Du starter med Farlig, Vanskelig å Drepe og enten Pansret ELLER Uhyggelige Re
 HR
 C	 <b>PANSRET</b> Når du <b><i>bærer et skjold</i></b>, krysser du bare av ◇ (i stedet for ◇◇). I tillegg kan du ignorere merkelappen <i>klumpete</i> på all rustning du bærer.
 P	Tar du dette trekket ved spillets start, legg til en ◇◇ ringbrynje av jern, en ◇◇ bronsekyrass eller en ◇◇ skjellrustning i oppakningen din (alle 2 rustning, <i>varm</i>, <i>klumpete</i>).
-C	<b>KAMPGLEDE</b> Når du <b><i>utgyter blod — ditt eget eller andres — og</i></b> <b><i>mister deg selv i kampen</i></b>, ignorerer du frykt, smerte, tankekontroll og virkningene av plager så lenge du fortsetter å kjempe.
-P	Når <b><i>kampen stopper</i></b>, slå +CON: <b>på 10+</b> var det et rush, få tilbake 1d4 HP; <b>på 7–9</b> er du andpusten og ute av det, men du klarer deg etter noen minutters hvile; <b>på 6-</b> kryss av en plage, men kryss ikke av XP.
+C	<b>KAMPGLEDE</b> Når du <b><i>utgyter blod — ditt eget eller andres — og</i></b> <b><i>mister deg selv i kampen</i></b>, ignorerer du frykt, smerte, tankekontroll og virkningene av svakheter så lenge du fortsetter å kjempe.
+P	Når <b><i>kampen stopper</i></b>, slå +CON: <b>på 10+</b> var det et rush, få tilbake 1d4 HP; <b>på 7-9</b> er du andpusten og ute av det, men du klarer deg etter noen minutters hvile; <b>på 6-</b> kryss av en svakhet, men kryss ikke av XP.
 C2	<b>BERSERK</b>
 P	(Krever Kampglede)
 P	Mens <b><i>du er i Kampgleden din</i></b>, får nærkampangrepene dine merkelappen <i>område</i>, og du slår ut mot alle i nærheten (venn og fiende). Slå skade separat for hvert mål.
@@ -85,7 +85,7 @@ C	<b>SKÅRET UT AV TRE</b> Øk maks HP med 4.
 CX	<b>FARLIG</b>
 P	(Krever Slåsskjempen)
 P	Når du <b><i>gjør skaden din</i></b>, har du fordel.
-C	<b>FRYKTINNGYTENDE</b> Når du <b><i>kaster deg ut i kampen</i></b>, kan du velge å slå +CHA: <b>på 10+</b> begge; <b>på 7–9</b> velg 1:
+C	<b>FRYKTINNGYTENDE</b> Når du <b><i>kaster deg ut i kampen</i></b>, kan du velge å slå +CHA: <b>på 10+</b> begge; <b>på 7-9</b> velg 1:
 B	Svakere fiender skjelver, nøler eller flykter for deg.
 B	Tapre fiender retter seg mot deg og ser deg som den største trusselen.
 P	<b>På 6-</b> velg 1, men spør spillederen hva du har gått glipp av.
@@ -98,7 +98,7 @@ HR
 C	<b>SKREMMENDE</b> Når du <b><i>Overtaler med vold eller trusler</i></b>, har du fordel.
 HR
 CX	<b>VANSKELIG Å DREPE</b>
-P	Når du <b><i>er På Dødens Terskel,</i></b> kan du slå +CON eller +ingenting (du velger). <b>På 7–9</b> kan du krysse av en valgfri plage for å få tilbake 1 HP.
+P	Når du <b><i>er På Dødens Terskel,</i></b> kan du slå +CON eller +ingenting (du velger). <b>På 7-9</b> kan du krysse av en valgfri svakhet for å få tilbake 1 HP.
 HR
 C2	<b>USTOPPELIG</b> ◇◇◇◇◇
 P	(Krever Vanskelig å Drepe)
@@ -117,17 +117,17 @@ Q	Hvor befinner fienden min seg egentlig?
 Q	Hva her kan jeg bruke som våpen?
 P	Når <b><i>det bryter ut en kamp</i></b>, still spillederen 1 spørsmål du kunne stilt når du Søker Innsikt.
 C	<b>UHYGGELIGE REFLEKSER</b> Når du <b><i>er uten rustning og bærer en normal eller</i></b> <b><i>lett bør</i></b>, gir du ulempe på all skade du tar som du kunne unngått eller parert.
-C	<b>UBUNDET</b> Når du <b><i>utsettes for fysisk eller mental tvang</i></b>, kan du krysse av en plage for straks å bryte deg løs.
+C	<b>UBUNDET</b> Når du <b><i>utsettes for fysisk eller mental tvang</i></b>, kan du krysse av en svakhet for straks å bryte deg løs.
 C	<b>SKREKKEN PÅ SLAGMARKEN</b> Når du <b><i>reduserer en fiende til 0 HP</i></b>, beskriv hvordan du gjør det av med den. Feller du den på en særlig brutal eller imponerende måte, blir de allierte imponerte, forferdet eller redde og reagerer deretter.
 C	<b>UNDERGANGENS BRINGER</b> (Krever nivå 6+) Når du <b><i>slår 12+ for å Krysse Klinger og fienden din overlever</i></b>, nevn noe den eier (som sverdet, posisjonen, en lem, verdigheten, osv.), men ikke noe som ville drept den med én gang. Hva enn du nevner, er det brukket, knust, tapt. Fortell oss hvordan.
 C	<b>HOGD UT AV GRANITT</b> (Krever nivå 6+ og Skåret ut av Tre) Få +1 rustning (legges sammen med andre kilder) og øk maks HP med ytterligere 2 (+6 HP totalt).
 C	<b>VELDIGE MUSKLER</b> (Krever nivå 6+ og Muskelbunt) Når du <b><i>utfører en bragd av uvanlig styrke</i></b> (sprenger lenker, bryter gjennom en vegg, løfter en kampestein, osv.), får du det til (Å JA!), men velg 1:
 B	Det tar en stund
 B	Du forårsaker uønsket skade eller ødeleggelse
-B	Det tar på (kryss av en plage)
+B	Det tar på (kryss av en svakhet)
 C	<b>NEMESIS</b> (Krever nivå 6+ og Ubønnhørlig) Når du <b><i>Krysser Klinger og fienden din overlever</i></b>, gjør alle dine fremtidige angrep mot den +1d6 skade.
 C	<b>STANDHAFTIG BESKYTTER</b> (Krever nivå 6+ og Beskytter) Mens du <b><i>holder Beredskap (fra Forsvare)</i></b>, kan du alltid ta skaden/virkningene av et angrep i stedet for den du vokter; du trenger ikke bruke Beredskap, du kan bare gjøre det.
-C	<b>STEINKALD</b> (Krever nivå 6+ og Iskald) Når du <b><i>Trosser Faren (eller Kjemper som Én) ved</i></b> <b><i>å holde hodet kaldt og fortsette</i></b>, behandle 6- som 7–9.
+C	<b>STEINKALD</b> (Krever nivå 6+ og Iskald) Når du <b><i>Trosser Faren (eller Kjemper som Én) ved</i></b> <b><i>å holde hodet kaldt og fortsette</i></b>, behandle 6- som 7-9.
 C	<b>OVERLEGEN EGENSKAP</b> (Krever nivå 6+) Øk en av egenskapene dine med +1 (til maks +3).
 PAGE	116
 H2	En voldelig fortid
@@ -160,7 +160,7 @@ P	Vent her på de andre. Når alle er klare, bytter dere på å presentere spill
 STEP	1	På din første tur, <b>presenter deg selv</b> med navn, pronomen, bakgrunn, hjemtrakter og utseende.
 STEP	2	På din andre tur, <b>beskriv dine særlige</b> <b>eiendeler</b> og hvordan du bidrar til landsbyen (utover arbeidet på åkrene).
 STEP	3	På din tredje tur, <b>fortell oss om din voldelige</b> <b>fortid</b> og hva som holder deg våken om natta.
-STEP	4	På din neste tur, <b>svar på ett av følgende spørsmål</b>, og nevn én eller flere SLPer som bor i Stonetop.
+STEP	4	På din neste tur, <b>svar på ett av følgende spørsmål</b>, og nevn én eller flere SLP-er som bor i Stonetop.
 C	Hvem er din nærmeste slektning?
 C	Hvem er din kjære/ektefelle/forlovede?
 C	Hvem trenger/fortjener mest din beskyttelse?

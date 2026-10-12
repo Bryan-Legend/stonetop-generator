@@ -11,7 +11,7 @@ HR
 H2	Bakgrunn (Velg 1)
 C	<b>LYKKEVARSLENDE FØDSEL</b> ◇ Du ble født i Stonetop, og fødselen din ble merket av Lysets Gud. Kanskje ble du født under en formørkelse, eller i skinnet fra en klar ny stjerne? Kanskje har du et solformet fødselsmerke?
 P	Hva tegnet enn var, var båndet ditt til Helior klart tidlig. Du har en æresplass i Stonetop, selv om det ville være løgn å si at du ikke gjør noen urolige.
-P	Når <b><i>et av trekkene dine får deg til å krysse av en svekkelse</i></b>, kan du i stedet krysse av sirkelen til denne bakgrunnen, uten skadelig virkning. Visk den ut når du Slår Leir eller Frisker Til.
+P	Når <b><i>et av trekkene dine får deg til å krysse av en svakhet</i></b>, kan du i stedet krysse av sirkelen til denne bakgrunnen, uten skadelig virkning. Visk den ut når du Slår Leir eller Frisker Til.
 C	<b>OMVANDRENDE MYSTIKER</b> ◇◇◇ De ser på deg som en selvhøytidelig raring som kommer innom nå og da, snakker i gåter og gjør triks med lyset. Jo da, de vet at det er noe hellig ved deg, men det er jo ikke som om du er prest eller noe. Prester snakker fornuft.
 P	Når du <b><i>drar ut på vandring</i></b>, hold 1 Gåte hvis du er borte i dager, 2 hvis du er borte i uker, eller 3 hvis du er borte i måneder. Aller først i spillet holder du 3 Gåte. Bruk Gåte 1 for 1 til å:
 B	Komme tilbake fra vandringen akkurat når og der du trengs, fullt Utrustet
@@ -58,7 +58,7 @@ C	<b>Myrkant</b>: Adfin, Callach, Conlad, Eadna, Fionntan, Niamh, Orlaith eller 
 C	<b>Lygos eller et annet sted i sør</b>: Arash, Azar, Hafiz, Murat, Roshan, Shideh, Zara eller Zohara
 WRITE	Jeg kalles...
 PAGE	122
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svekkelse er krysset av, slår du med ulempe.", "die": "d4", "hp": "HP (maks. 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d4", "hp": "HP (maks. 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	123
 H2	Særlige eiendeler (Velg 2)
 HR
@@ -100,7 +100,7 @@ C	<b>FORBEDRET EGENSKAP</b> Hver gang du tar dette trekket, øk en av egenskapen
 CX	<b>PÅKALLE SOLGUDEN</b>
 P	Når du <b><i>fyller et hellig lys med Heliors kraft</i></b>, velg en Påkallelse du kan, og slå +WIS: <b>på</b> <b>10+</b> virker den som beskrevet, men du må velge 1 konsekvens fra listen nedenfor; <b>på 7-9</b> virker den som beskrevet, men du og SL velger 1 hver.
 B	Påkallelsen får sin <i>dempede</i> virkning
-B	Anstrengelsen tærer på deg; kryss av en svekkelse
+B	Anstrengelsen tærer på deg; kryss av en svakhet
 B	Lyset slukner når Påkallelsen er fullført, brenselet oppbrukt
 B	Du må sole deg en times tid før du bruker den Påkallelsen igjen Se innstikket <b>Påkallelser</b> for detaljer.
 PAGE	123
@@ -111,7 +111,7 @@ C	<b>LUTRENDE FLAMMER</b> Når du <b><i>fører et hellig lys mot en mørkets</i>
 C	<b>STRÅLENDE ÅSYN</b> Når du <b><i>gir noen din kjærlige oppmerksomhet</i></b>, kan du deretter Overtale dem med fordel. Er de en følgesvenn, kan du i stedet velge å Styrk Båndet (som om du betalte prisen deres).
 C	<b>STIG SOM SOLEN</b> Når du <b><i>trekker oppmerksomheten mot deg med ord eller handling</i></b>, slå +CHA: <b>på 10+</b> snur alle seg og ser, og du holder blikkene deres så lenge du gir dem grunn til å se; <b>på 7-9</b> snur alle seg og ser.
 C	<b>VÅRENS FØRSTE TØVÆR</b> Når du <b><i>bruker tid (minst en time, kanskje mer)</i></b> <b><i>på å vekke håp, godhet eller barmhjertighet i en SLP</i></b>, slå +CHA: <b>på 10+</b> tenner du en ild dypt i vedkommende og skaper en varig forandring; <b>på 7-9</b> vekker du godhet i vedkommendes hjerte for nå, men vedkommende faller til slutt tilbake til gamle vaner; <b>på 6-</b> forherdes vedkommendes hjerte, og hva SL ellers sier, kan du ikke bruke dette trekket på vedkommende igjen.
-C	<b>BRENN DOBBELT SÅ KLART</b> (Krever nivå 6+ og Påkalle Solguden) Når du <b><i>Påkaller Solguden</i></b>, kan du krysse av en svekkelse for å bruke 2 Påkallelser samtidig. Slå én gang, og bruk eventuelle konsekvenser på begge Påkallelsene.
+C	<b>BRENN DOBBELT SÅ KLART</b> (Krever nivå 6+ og Påkalle Solguden) Når du <b><i>Påkaller Solguden</i></b>, kan du krysse av en svakhet for å bruke 2 Påkallelser samtidig. Slå én gang, og bruk eventuelle konsekvenser på begge Påkallelsene.
 C	<b>FORSTERKEDE PÅKALLELSER</b> (Krever nivå 6+ og Påkalle Solguden) Når du Påkaller Solguden, kan du velge en ekstra konsekvens før du slår. Gjør du det, får Påkallelsen sin <i>forsterkede</i> virkning.
 C	<b>HERLIG TJENER</b> (Krever nivå 6+ og Påkalle Solguden) Når du <b><i>Påkaller Solguden og slår 10+</i></b>, trenger du ikke velge en konsekvens; <b>på 7-9</b> velger du en konsekvens, men SL gjør det ikke.
 C	<b>SULTNE FLAMMER</b> (Krever nivå 6+ og Lutrende flammer) Når du <b><i>gjør skade med et hellig lys</i></b>, gjør du +1d6 skade, og målet ditt oppslukes av hellig lys og flammer.

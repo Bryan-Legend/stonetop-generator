@@ -87,7 +87,7 @@ C	<b>Myrkant</b>: Bridin, Clian, Engis, Fearghul, Lan, Neasa, Nill eller Una
 C	<b>Lygos eller et annet sted i sør</b>: Chara, Davud, Korina, Omid, Parvaneh, Tamir, Takish eller Yannis
 WRITE	Jeg kalles...
 PAGE	138
-STATS	{"gloss": "Fordel disse verdiene: +1, +0, +0, +0, +0, -1. Når en svekkelse er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks. 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +1, +0, +0, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks. 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	139
 H2	Særlige eiendeler (Velg 2)
 HR

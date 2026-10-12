@@ -61,7 +61,7 @@ C	<b>Myrkant</b>: Aiden, Barrfind, Caolan, Ciara, Deirbhile, Moirin, Tiern eller
 C	<b>Lygos eller et annet sted i sør</b>: Dana, Eliana, Erez, Fikri, Isra, Persefoni, Spiro eller Vahid
 WRITE	Jeg kalles...
 PAGE	134
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svekkelse er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks. 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks. 16)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	135
 H2	Særlige eiendeler (Velg 2, i tillegg til skriversakene dine)
 HR
@@ -126,7 +126,7 @@ C	<b>DYP INNSIKT</b> (Krever nivå 6+ og Samstemt) Når du <b><i>Søker Innsikt 
 C	<b>IMPROVISER</b> (Krever nivå 6+ og Rask til å lære) Når du <b><i>vil bruke et arkanums trekk eller valg</i></b> <b><i>uten å ha låst det opp</i></b>, spør SL hvilken dumdristig risiko det krever og/eller hvilke konsekvenser du pådrar deg. Går du for det, slå +INT: <b>på 7+</b> får du det til å virke denne ene gangen — utløs trekket eller bruk valget som om du hadde låst det opp; og <b>på 10+</b> krysser du også av et steg mot å låse opp arkanumets mysterier.
 C	<b>OVERLEGEN EGENSKAP</b> (Krever nivå 6+) Øk en av egenskapene dine med +1 (til maks +3).
 C	<b>SINN OVER MAGI</b> (Krever nivå 6+) Når du <b><i>slår for å studere eller bruke et arkanum</i></b>, kan du slå +INT i stedet for egenskapen du normalt ville slått.
-C	<b>OVERKANALISERING</b> (Krever nivå 6+ og Maktens kanal) Når du <b><i>skulle krysse av en Konsekvens fra et større</i></b> <b><i>arkanum</i></b>, kan du i stedet krysse av en svekkelse.
+C	<b>OVERKANALISERING</b> (Krever nivå 6+ og Maktens kanal) Når du <b><i>skulle krysse av en Konsekvens fra et større</i></b> <b><i>arkanum</i></b>, kan du i stedet krysse av en svakhet.
 C	<b>SIKRET MOT OPPDAGELSE</b> (Krever nivå 6+ og Sikkerhet først) Når du <b><i>holder Beskyttelse</i></b>, kan du ikke skues eller fornemmes med magiske midler, og du har fordel til å Trosse Faren ved å snike.
 PAGE	136
 H2	Samling

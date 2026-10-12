@@ -59,7 +59,7 @@ C	<b>Myrkant</b>: Briget, Comhall, Elnor, Liadain, Mirdach, Onghus, Somha eller 
 C	<b>Lygos eller en annen by i sør</b>: Abrim, Cassander, Despina, Hypatta, Morecai, Nomika, Sofia eller Yose
 WRITE	Jeg kalles...
 PAGE	118
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svekkelse er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks. 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks. 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	119
 H2	Særlige eiendeler
 HR

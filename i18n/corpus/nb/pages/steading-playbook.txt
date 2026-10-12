@@ -4,8 +4,8 @@
 # source_sha256: b72b5037a2bee9ba8e8aad58de62a34e6c76a7d44c7c4f5b49b7b579b211575a
 # title: Bygdas playbook
 # nav_label: Bygdas playbook
-# description: Bygdas playbook til selve Stonetop: verdier, svekkelser, ressurser, eiendeler, innbyggere og alle de forbedringer, som står byen åpne.
-P	En utgave av bygdas playbook til selve Stonetop. Bruk den til å holde styr på byens verdier, svekkelser, ressurser, forbedringer osv. Se [[playing-the-game#your-home|Hjemmet deres]] for en forklaring av hvert element. Alt her deles med hele bordet.
+# description: Bygdas playbook til selve Stonetop: verdier, svakheter, ressurser, eiendeler, innbyggere og alle de forbedringer, som står byen åpne.
+P	En utgave av bygdas playbook til selve Stonetop. Bruk den til å holde styr på byens verdier, svakheter, ressurser, forbedringer osv. Se [[playing-the-game#your-home|Hjemmet deres]] for en forklaring av hvert element. Alt her deles med hele bordet.
 SHEET	steading
 H2	Stonetop
 STAT	fortunes	Lykke	+1	-1	3	starter på +1
@@ -154,7 +154,7 @@ STAT	gold-purses	Punger	0	0	999		Gullpunger
 STAT	gold-handfuls	Håndfuller	0	0	999		Håndfuller guld
 STAT	gold-coins	Mynter	0	0	999		Gullmynter
 H2	Stonetops innbyggere
-P	Legg til hver NPC, der nevnes under presentasjonene eller i spillet. Gi hver en yrke (selv om det bare er bonde eller hjemmeværende) og minst 1 trekk.
+P	Legg til hver SLP, der nevnes under presentasjonene eller i spillet. Gi hver en yrke (selv om det bare er bonde eller hjemmeværende) og minst 1 trekk.
 TABLE	res	30
 COL	name	Navn (pronomen)
 COL	occ	Yrke
@@ -167,11 +167,11 @@ ROW		jordmor
 ENDTABLE
 H3	Navne
 P	Aderyn, Aeronwen, Afanen, Afon, Alun, Andras, Aneirin, Awstin, Bedwyr, Berwyn, Betrys, Braith, Briallen, Bronwen, Bryn, Cadi, Cadoc, Cadwygan, Caron, Cefin, Ceinwen, Ceridwyn, Cerys, Colwyn, Deiniol, Dilwen, Dylis, Eifion, Eirlys, Eluned, Emrys, Enfys, Eurwen, Gaenor, Garet, Gethin, Glyndir, Heledd, Hywel, Ifan, Iorwerth, Iwan, Lewela, Leuca, Linos, Mado, Maldwyn, Malon, Mared, Marged, Martyn, Meirion, Menwen, Mererid, Neirin, Nia, Ofydd, Olwyn, Owain, Padrig, Parry, Pryce, Pryder, Rheinal, Rhisiart, Rhosyn, Rydderch, Sawyl, Siana, Sioned, Talfryn, Tegid, Tiwlip, Tomos, Tutyr, Winifred, Yorath
-H2	NPC-trekk
+H2	SLP-trekk
 P	Tildel efter behov; velg fra listen eller find på dine egne.
 P	to venstre hænder, ærgerrig, elsket av alle, smuk sangstemme, bedste kok, bedste vever, blind, vovede sig ind i Tårnruinen (Ruined Tower), forsigtig, munter, kronisk hoste, klager for meget, kujonagtig, hungrer efter anerkendelse, nysgerrig, havde en flirt med Fae for år siden, døv, vil desperat have et barn, brænder den bedste whisky, trekker ikke sit læs, dranker, ørneøje, frygtløs, hittebarn, samler urter i Storskogen (Great Wood), slår de bedste handler, begavet fortæller, gutfrygtig, god med børn, sorgløs, har et horn i siden på Myrkant, har et godt hjerte, har masser av ryggrad, har et vandrende øje, har håndelag med dyr, har Fae-blod i årerne, har bare frygtelig uheld, har mistet modet, har ingen respekt for de ældre, har forfærdelige mareridt, har flest børn, har hovedet i skyerne, hader Åsfolket (Hillfolk), hører stemmer, humorløs, uplettet ydre, jaloux, nygift, holder sig for sig selv, kender al sladder, halt, kan lide at gjøre ondt, levede blandt Skogfolket (Forest Folk), mistede alle sine børn, elskovssyg, elsker sine hunde, loyal ven, smukkest, flyttede hertil for nylig, skal godkende alle ægteskaber, stum, ikke bange for dybt vand, ikke så kvik, ældst, forældreløs, overbeskyttende, smukkest, stolt, letsindig, nægter at gifte sig, ærgrer sig over sin lod, løber overalt, følsom, enfoldig, drepte mange crinwin, stoisk, stædig, lider av kramper, sværger at have mødt den Bleke Jegeren (Pale Hunter), fortæller de bedste vittigheder, blødhjertet, passer Gutenes pavillon, plejer syge og sårede, rørt, meget stærk, vil have børn, belæst, berejst, enke/enkemand, spiser hvad som helst
 H2	Stonetops bemerkelsesverdige naboer
-P	Legg til NPC'er fra naboområder, når et playbook siger det, eller efter behov.
+P	Legg til SLP'er fra naboområder, når et playbook siger det, eller efter behov.
 TABLE	nb	20
 COL	name	Navn (pronomen)
 COL	home	Hjem

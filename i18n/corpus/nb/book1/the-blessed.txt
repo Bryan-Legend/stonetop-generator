@@ -59,7 +59,7 @@ C	<b>Trappelandet</b> (Åsfolket): Bejn, Decla, Franza, Irv, Ivet, Jak, Sibl ell
 C	<b>Villmarka</b>: kombiner 1-3 av disse: Høst, Grevling, Stor, Svart, Blodig, Modig, Kråke, Unge, Mørk, Hind, Hoggtann, Vill, Blomst, Mild, Grønn, Barsk, Hjort, Løv, Liten, Ensom, Gammel, Ugle, Blek, Valp, Rask, Stille, Regn, Rød, Skarp, Slange, Snø, Vår, Sommer, Høy, Tre, Gul, Hvit, Vind, Vinter, Ulv, Hvisking
 WRITE	Jeg kalles ...
 PAGE	106
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en plage er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d6", "hp": "HP (maks 18)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	107
 H2	Særlige eiendeler (Velg 2, i tillegg til den hellige pungen din)
 HR
@@ -93,7 +93,7 @@ C	<b>FORBEDRET EGENSKAP</b> Hver gang du tar dette trekket, øk en av egenskapen
 C	<b>INN I LØVENS HULE</b> Når du <b><i>nærmer deg et dyr rolig og uten å vise</i></b> <b><i>frykt</i></b>, gjør det deg ingen skade (selv om det kan true deg og sette nervene dine på prøve). Når du <b><i>legger hånden</i></b> <b><i>varsomt på et dyr</i></b>, roer det seg under berøringen din.
 C	<b>LYNAVLEDER</b> Når du <b><i>Forsvarer mens du berører jorden</i></b>, kan du bruke 1 Beredskap til å fange opp et magisk angrep i nærheten og lede det uskadelig ned i jorden.
 C	<b>LANDETS RITER</b> ◇◇◇◇ Én gang per årstid, når du <b><i>leder de hellige ritene</i></b>, hold 1 Gunst. Ofrer du også 1 Overskudd, hold 4 Gunst i stedet. Bruk Gunst i stedet for Beholdning, 1 for 1.
-P	Når du <b><i>offentlig ofrer noe eller noen som er</i></b> <b><i>høyt elsket</i></b>, fjern enten en av bygdas svekkelser, eller få fordel neste gang bygda slår +Lykke.
+P	Når du <b><i>offentlig ofrer noe eller noen som er</i></b> <b><i>høyt elsket</i></b>, fjern enten en av bygdas svakheter, eller få fordel neste gang bygda slår +Lykke.
 CX	<b>ÅNDESPRÅK</b>
 P	Du kan snakke med dyr og ånder. Du kan alltid spørre spillederen: «Hvilke ånder er virksomme her?» og få et ærlig svar.
 C2	<b>LÅNE KRAFT</b>

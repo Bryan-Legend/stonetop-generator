@@ -279,6 +279,7 @@ Pull Together · Deploy · Seasons Change · Death's Door.
 - **Sheet headings:** Bakgrunn (Velg 1) · Instinkt (Velg 1) · Utseende · Hjemtrakter og navn · Egenskaper · Særlige eiendeler · Trekk · Presentasjoner
 - **Names:** Storskogen (Great Wood) · Myrkant (Marshedge) · Sperrepasset (Barrier Pass) · Gordins Gruve · Åsfolket (Hillfolk) · Trappelandet (Steplands) · Ringmuren · de Gamle Veiene · Tårnruinen · Ferriers Myr · Skaperne (Makers) · Tingene Der Nede (Things Below) · den Siste Døren · den Bleke Jegeren · Fae
 - **Tags:** hånd · tett (close) · nær (near) · fjern (far) · rekkevidde (reach) · gjennomborende (piercing) · område (area) · gruppe
+- **Whole-language pass (2026-10-12):** the binding list is `i18n/_work/nb-brief.md` (self-contained, incl. the playbooks' own move names); sweep in `nb-sweep.py`. Key choices: GM = spillederen (SL; GM move = spilledertrekk, two l's like the playbooks) · NPC/PC = SLP/spillerperson (SP) · roll = slå · outcomes "på 10+", "på 7-9" · debility (noun) = svakhet (not plage/svekkelse) · tag = merkelapp · load = bør (lett/normal/tung bør) · Order Followers = Befal Følgesvenner · Loyal to the End = Tro til det Siste · specter = gespenst · wraith = gjenferd · barrow wight = haugbo · Earth Mother = Jordmoderen (jordmor = midwife) · Rune-laden Scales = Den Runetunge Skjellbrynjen · "(page N)" = "(side N)" (`page_words` in `ui/nb.json`)
 
 ## fi — Suomi
 

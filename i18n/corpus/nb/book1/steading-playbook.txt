@@ -4,7 +4,7 @@
 # source_sha256: b72b5037a2bee9ba8e8aad58de62a34e6c76a7d44c7c4f5b49b7b579b211575a
 # title: Bygdas playbook
 # nav_label: Bygdas playbook
-# description: Bygdas playbook til selve Stonetop: verdier, svekkelser, ressurser, eiendeler, innbyggere og alle de forbedringer, som står byen åpne.
+# description: Bygdas playbook til selve Stonetop: verdier, svakheter, ressurser, eiendeler, innbyggere og alle de forbedringer, som står byen åpne.
 PAGE	154
 BOX
 H3	Prosperity Resources
@@ -123,7 +123,7 @@ P	Herefter, når du <b><i>om våren leder</i></b> <b><i>uroksejagten</i></b>, sl
 P	<b>på 7-9</b> får du 1d4 Overskudd, men velg 1 fra listen nedenfor; <b>på 6-</b> velg 1 fra listen nedenfor, eller velg 2 og få 1d4 Overskudd.
 B	1d4 av byens heste blir halte eller drept
 B	En rekke lokale kommer til skade; bygden markerer <i>svekket</i> (ulempe på Sende Ut, Mønstre eller Ta i et Tak)
-B	Spillederen velger en NPC, der var med på jagten; den drepes
+B	Spillederen velger en SLP, der var med på jagten; den drepes
 B	Åsfolket blir på en eller annen måte fornærmet
 B	Flokken er svag; jager I næste år, blir den utryddet
 PAGE	157
@@ -192,7 +192,7 @@ C	Ta i et Tak 2 ganger, hver gang 1 årstid, 1 Overskudd og tømmer/forsyninger 
 C	Et lille, hengivent personale (vært, kok, staldkarl osv.)
 P	Når du <b><i>oppfyller kravene</i></b>, øk Lykke med 1. Navngiv kroen, legg til den til både Ressurslisten og kortet.
 P	Herefter, når <b><i>årstiderne skifter</i></b>, slår den venligste +Lykke: <b>på 10+</b> stil spillederen 3 spørsmål om den vide verden; <b>på 7-9</b> stil 1 spørsmål; <b>på 6-</b> stil 1 spørsmål, men spillederen beskriver noget bøvl, der kommer fra kroen eller dens gæster.
-P	En gang pr. årstid, når du <b><i>bruger 1 Overskudd og</i></b> <b><i>samler folk på kroen</i></b> (for at tale, fejre, komme til kræfter), slet en av bygdas svekkelser.
+P	En gang pr. årstid, når du <b><i>bruger 1 Overskudd og</i></b> <b><i>samler folk på kroen</i></b> (for at tale, fejre, komme til kræfter), slet en av bygdas svakheter.
 HR
 C	<b>MARKED</b> For handlende i egnen er Stonetop højst en eftertanke. Det skal vi endre.
 P	<b>Krever</b> 1 av følgende:
@@ -334,7 +334,7 @@ P	<b>Purses Handfuls Coins</b>
 PAGE	162
 HR
 H2	Residents of Stonetop
-P	Add each NPC that is named during introductions or play.
+P	Add each SLP that is named during introductions or play.
 P	Give each an occupation (even if just farmer or homemaker) and at least 1 trait.
 P	name (pronouns) occupation traits, relations, etc.
 HR
@@ -351,14 +351,14 @@ HR
 PAGE	163
 P	<b>NAMES</b>
 P	Aderyn, Aeronwen, Afanen, Afon, Alun, Andras, Aneirin, Awstin, Bedwyr, Berwyn, Betrys, Braith, Briallen, Bronwen, Bryn, Cadi, Cadoc, Cadwygan, Caron, Cefin, Ceinwen, Ceridwyn, Cerys, Colwyn, Deiniol, Dilwen, Dylis, Eifion, Eirlys, Eluned, Emrys, Enfys, Eurwen, Gaenor, Garet, Gethin, Glyndir, Heledd, Hywel, Ifan, Iorwerth, Iwan, Lewela, Leuca, Linos, Mado, Maldwyn, Malon, Mared, Marged, Martyn, Meirion, Menwen, Mererid, Neirin, Nia, Ofydd, Olwyn, Owain, Padrig, Parry, Pryce, Pryder, Rheinal, Rhisiart, Rhosyn, Rydderch, Sawyl, Siana, Sioned, Talfryn, Tegid, Tiwlip, Tomos, Tudyr, Winifred, Yorath
-H2	NPC traits
+H2	SLP traits
 HR
 P	all thumbs has the most children ambitious has their head in the clouds beloved by everyone hates the Hillfolk beautiful singing voice hears voices best cook humorless best weaver immaculate appearance blind jealous braved the Ruined Tower just got married cautious keeps to themselves cheery knows all the gossip chronic cough lame complains too much likes to hurt things cowardly lived among the Forest Folk craves recognition lost all their children curious lovesick dallied with the Fae years ago loves their dogs deaf loyal friend desperately wants a child most handsome distills the best whisky moved here recently doesn't pull their weight must approve any marriages drunkard mute eagle-eye not afraid of deep water fearless not too bright foundling oldest gathers herbs from the Wood orphan gets the best deals overprotective gifted storyteller prettiest gods-fearing prideful good with children reckless happy-go-lucky has a beef with Marshedge has a good heart has a lot of backbone has a wandering eye has a way with animals has Fae blood in their veins has just terrible luck has lost their nerve has no respect for their elders has terrible nightmares Assign as needed; choose from this list or make up your own.
 P	refuses to marry resents their lot in life runs everywhere sensitive simpleton slew many crinwin stoic stubborn suffers from fits swears they met the Pale Hunter tells the best jokes tender-hearted tends the Gods' Pavilion tends to the sick & injured touched very strong wants to have kids well-read well-traveled widowed will eat anything
 PAGE	164
 HR
 H2	Notable neighbors of Stonetop
-P	Add NPCs from neighboring areas when instructed by a playbook, or as needed.
+P	Add SLP-er from neighboring areas when instructed by a playbook, or as needed.
 P	name (pronouns) home occupation traits, relations, etc.
 HR
 PAGE	165

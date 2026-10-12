@@ -53,7 +53,7 @@ C	<b>Manmarch</b>: Berkhard, Gerhild, Hartig, Hilde, Sabrinne, Ulrike, Urrsla el
 C	<b>Lygos eller et annet sted i sør</b>: Ameer, Calixta, Hadar, Kelila, Sulaim, Ursa eller Xandros
 WRITE	Jeg kalles...
 PAGE	126
-STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svekkelse er krysset av, slår du med ulempe.", "die": "d8", "hp": "HP (maks. 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
+STATS	{"gloss": "Fordel disse verdiene: +2, +1, +1, +0, +0, -1. Når en svakhet er krysset av, slår du med ulempe.", "die": "d8", "hp": "HP (maks. 20)", "stats": [["Strength", "STR"], ["Dexterity", "DEX"], ["Intelligence", "INT"], ["Wisdom", "WIS"], ["Constitution", "CON"], ["Charisma", "CHA"]], "debilities": [["weakened", ["STR", "DEX"]], ["dazed", ["INT", "WIS"]], ["miserable", ["CON", "CHA"]]], "tracks": ["Damage", "HP", "Armor", "XP", "Level"]}
 PAGE	127
 H2	Særlige eiendeler (Velg 2)
 HR
