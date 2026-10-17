@@ -10,9 +10,12 @@ date. Two places apply the rule, sharing this module:
   with that sitemap's ``<lastmod>`` and a digest of the page's file. After the
   new pages are written, :func:`resolve` compares digests: same → the old
   date, different or new → today. Two builds with no source change therefore
-  write the same ``sitemap.xml``. With no previous sitemap to go on (a fresh
-  output folder), a page takes the date of the last git commit that changed
-  its file, if it is committed and unmodified, else today.
+  write the same ``sitemap.xml``. A page that differs from the last build, or
+  has no last build to go on (a fresh output folder), takes the date of the
+  last git commit that changed its file if it is committed and unmodified,
+  else today — so a partial build in between (``--langs none``, which writes
+  every English page without its hreflang cluster) leaves no trace once a
+  full build puts the pages back.
 
 * **The deploy** (``python -m generator.lastmod deploy``, run by
   ``.github/workflows/pages.yml``). The site about to be published is compared
@@ -290,7 +293,12 @@ def resolve(
         prev = previous.get(loc)
         if prev and prev[1] is not None and rel and prev[1] == digest(out / rel):
             result[loc] = prev[0]
-        elif not previous and rel:
+        elif rel:
+            # Changed since the last build, or no last build to go on: the
+            # page may still be exactly what is committed — a partial build
+            # in between (``--langs none`` rewrites every English page
+            # without its hreflang cluster) is not a change. A file
+            # committed and unmodified keeps its commit's date.
             if seeds is None:
                 seeds = fallback()
             result[loc] = min(seeds.get(rel, date), date)
