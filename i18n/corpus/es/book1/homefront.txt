@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Valor y monedas
 P	El mundo de Stonetop no tiene gobierno central, ni moneda común, ni tipos de cambio estándar. Entonces, ¿qué es un intercambio justo?
 P	Cualquier objeto tiene un Valor de 0 a 4 (o, rara vez, más alto). Los Valores no son lineales; son niveles. Un solo objeto de Valor 2 vale aproximadamente una docena de objetos de Valor 1. Tres objetos de Valor 1 no suman Valor 3; son solo tres objetos de Valor 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	«Un precio justo» significa intercambiar cosas del mismo Valor, pero puede que no sea de 1 a 1. Puede ser de 2 o incluso 3 a 1 cuando se cambia un recurso local y común por bienes importados, codiciados o especializados (o viceversa).
 P	Los tipos de cambio no tienen nada de estándar, pero...
 P	<b>Un objeto de Valor 0</b> suele valer:
 B	Una ◇ bolsa de monedas de cobre

@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Værdi og mønter
 P	Stonetops verden har ingen central regering, ingen fælles møntfod og ingen faste vekselkurser. Så hvad er en rimelig handel?
 P	Enhver genstand har en Værdi fra 0 til 4 (eller i sjældne tilfælde højere). Værdierne er ikke lineære; de er trin. En enkelt genstand med Værdi 2 er omtrent et dusin genstande med Værdi 1 værd. Tre enkelte genstande med Værdi 1 bliver ikke til Værdi 3; de er bare tre genstande med Værdi 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	”En rimelig pris” betyder, at man bytter ting med samme Værdi, men det er ikke nødvendigvis en 1-til-1-handel. Det kan være 2- eller endda 3-til-1, når man bytter en almindelig, lokal ressource for importerede, eftertragtede eller specialiserede varer (eller omvendt).
 P	Bytteforholdene er alt andet end faste, men …
 P	<b>En genstand med Værdi 0</b> er generelt det samme værd som:
 B	En ◇ pung med kobbermønter

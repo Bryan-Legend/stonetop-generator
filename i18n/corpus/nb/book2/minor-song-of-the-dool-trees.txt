@@ -27,4 +27,4 @@ P	• Forme lyd og skygge for å uroe og skremme
 P	• Manifestere seg som offerets frykt (kan bare skades av en som mestrer frykten sin)
 P	<b>Pris</b> nye, utsøkte frykter (Lojalitet ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Starter på 13

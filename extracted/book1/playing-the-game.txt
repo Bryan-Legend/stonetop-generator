@@ -978,46 +978,41 @@ P	Mark the ◇, ◇◇, or next to an item to indicate you are carrying it.
 P	Every PC has the same Inventory insert.
 P	Items that are printed on the insert are commonly available in Stonetop, things that any PC has access to if they need it. You might not own a shovel yourself, but you know someone who does, someone willing to loan it to you or trade you for it. The GM might ask where you got it, but if it's printed on the insert, you can acquire it, no problem.
 P	The insert also has blank spaces, where you can write in other common items or <b>special</b> <b>possessions</b> (see page 90).
-H3	Inventory
-P	for Caradoc
-P	When you
-P	<b><i>Outfit</i></b>, mark a number of
-B	For a<b>light load</b>
-B	For a (<i>quick & quiet</i>◇ below, on specific items or Undefined.
-P	<b>normal load</b> ),mark up to 3
-B	For a <b>heavy load</b>, mark 4-6 (<i>noisy, slow, hot, quick to tire</i>◇◇
+H3	Inventory for Caradoc
+P	When you <b><i>Outfit</i></b>, mark a number of ◇ below, on specific items or Undefined.
+B	For a <b>light load</b> (<i>quick & quiet</i>), mark up to 3 ◇
+B	For a <b>normal load</b>, mark 4-6 ◇
+B	For a <b>heavy load</b> (<i>noisy, slow, hot, quick to tire</i>), mark 7-9 ◇
+P	<b>Undefined</b> ◇◇◇◇◇◇◇◇◇
+P	When you <b><i>Have What You Need</i></b>, move ◇ from here to ◇ below.
+P	◇ <b>Supplies</b> (4+Prosperity uses ◇◇◇◇◇◇ )
+P	◇ <b>More supplies</b> (4+Prosperity uses ◇◇◇◇◇◇ )
+P	◇ <b>Even more supplies</b> (4+Prosperity uses ◇◇◇◇◇◇ )
+P	Use supplies to Recover, Make Camp, or have extra <i>small</i> items.
+P	◇ <b>Mess kit</b> (requires fire & water; makes Supplies last longer)
+P	◇ <b>Bedroll</b> (recover 1d6 extra HP when you Make Camp)
+P	◇ <b>Blanket</b> (<i>warm</i>) ◇ <b>Change of clothes</b>
+P	◇ <b>Rope</b>, ~25 ft ◇ <b>Shovel</b>
+P	◇◇ <b>Sledge/litter/travois</b>, roll-out ◇ <b>Snow-shoes</b>
+P	◇ <b>Torch</b> (lasts ~1 hour; <i>reach</i>, <i>area</i>, <i>dangerous</i>)
+P	◇ <b>Oil lamp</b> (◇◇◇ hours, <i>reach</i>, <i>area</i>, <i>crude</i>)
+P	◇ <b>Extra oil</b> (◇◇◇◇◇ hours, for lamp/lantern, useless as a weapon)
+P	◇◇ <b>Firewood</b> (enough to last 1 full night)
+P	◇ <b>Hatchet</b>, iron (<i>hand</i>, <i>thrown</i>, x piercing)
+P	◇ <b>Mallet</b>, iron and/or wood (<i>hand</i>)
+P	◇ <b>Mattock</b>, iron (<i>close</i>, x piercing, <i>messy</i>
+P	◇◇ <b>Maul</b>, iron (<i>close</i>
+H3	Small items
+P	Fit in a pocket, pouch, or boot.
+P	When you <b><i>Outfit</i></b>, mark below equal to 4+Prosperity.
 P	<b>Undefined</b>
-P	When you ◇◇◇ ), mark 7-9
-P	<b><i>Have What You Need</i></b>◇◇◇◇◇◇◇
-P	, move
-P	◇ <b>Supplies</b> ◇ from here to (4+Prosperity uses ◇ below. Small items
-P	◇ <b>More supplies</b> ◇
-P	◇ <b>Even more supplies</b> (4+Prosperity uses ◇◇◇◇ Fit in a pocket, pouch, or boot.
-P	◇◇◇◇◇◇ )
-P	Use supplies to Recover, Make Camp, or have extra (4+Prosperity uses ◇◇◇◇◇ ) When you
-P	◇◇◇ equal to 4+Prosperity. <b><i>Outfit</i></b>, mark below
-P	◇ <b>Mess kit</b> ◇◇◇◇◇ )
-P	(requires fire & water; makes Supplies last longer)<i>small</i> items.
-P	◇ <b>Bedroll</b> (recover 1d6 extra HP when you Make Camp) <b>Undefined</b>
-P	◇ <b>Blanket</b> ( When you <i>warm</i>) <b><i>Have What You Need</i></b>
-P	◇ <b>Rope</b>, ~25 ft move
-P	• from here to items below,, ◇◇ <b>Sledge/litter/travois</b> ◇ <b>Change of clothes</b> or expend supplies to mark an , roll-out ◇ <b>Shovel</b> additional.
-P	◇ <b>Torch</b> (lasts ~1 hour; ◇ <b>Snow-shoes</b>
-P	◇ <b>Oil lamp</b> <i>reach</i>, <i>area</i> <b>Knife</b> (◇◇ hours,, <i>dangerous</i> or <b>dagger</b>
-P	◇ <b>Extra oil</b> (◇◇◇ <i>reach</i> ) <b>Sling</b>, iron (
-P	◇◇◇, <i>area</i>, <i>crude</i> (<i>near</i>, <i>reload hand</i>)
-P	◇◇ <b>Firewood</b>◇◇◇◇◇ hours, for lamp/lantern, useless as a weapon)) low ammo, all out), <i>awkward</i> (enough to last 1 full night) ◇,
-P	<b>Rushlight</b> ◇
-P	◇ <b>Hatchet</b> minutes, (lasts ~15-30
-P	◇, iron(<i>hand close</i>
-P	◇ <b>Mallet</b>, iron and/or wood (, <i>thrown</i> <b>Tinderbox</b>, <i>crude</i>)
-P	,xpiercing) (
-P	<b>Mattock</b>86 <i>hand</i> <b>Needle & thread</b><i>slow</i>)
-P	◇, iron )
-P	◇◇ <b>Maul</b> (<i>close</i>,x piercing, <b>Handful of coppers</b>
-P	◇◇, iron (<i>close messy</i>
-P	◇ <b>Staff</b> ( <i>forcf l</i>, <i>awk</i> <b>Whisk</b>
-P	◇ <i>l</i> k
+P	When you <b><i>Have What You Need</i></b>, move from here to items below, or expend supplies to mark an additional.
+C	<b>Knife</b> or <b>dagger</b>, iron (<i>hand</i>)
+C	<b>Sling</b> (<i>near</i>, <i>reload</i>, <i>awkward</i>, ◇ low ammo, all out)◇
+C	<b>Rushlight</b> (lasts ~15-30 minutes, <i>close</i>, <i>crude</i>)
+C	<b>Tinderbox</b> (<i>slow</i>)
+C	<b>Needle & thread</b>
+C	<b>Handful of coppers</b>
 PAGE	87
 H2	Load
 P	Items that have a ◇ or ◇◇ in front of them contribute to your load. Count the total number of ◇ that you have marked. If you have…

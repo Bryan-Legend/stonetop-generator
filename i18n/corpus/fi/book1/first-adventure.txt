@@ -290,17 +290,17 @@ P	Kirjoita rakkauskirje arkistokortille, tulosta se ennen peliä tai lähetä se
 HR
 P	<i>Haluaisin ennakoida swyniä, mutta</i> <i>siitä suoraan kysyminen olisi liian</i> <i>ilmeistä. Sen sijaan kirjoitan tämän rakkaus-</i> <i>kirjeen Blodwenille. Se vakiinnuttaa</i> <i>muutaman mahdollisen syyllisen (mukaan lukien</i> <i>swynin) ja antaa hänelle mahdollisuuden</i> <i>saada lisää tietoa pelissä.</i>
 HR
-P	Dear Blodwen,
+P	Rakas Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Faet, kuten Valkoiset Pukit (ikuiset juhlijat), Aamunpuna (Blush-of-Dawn) (joka janoaa ihailua) ja Salava-täti (joka ”suojelee” viattomia)*
-P	Glasbrenit, kauniit puunhenget, joiden tiedetään lumonneen sieviä kuolevaisia
+P	Seren-muori on kertonut sinulle lukemattomia tarinoita Metsän luonnottomista olennoista. Viime aikoina hän on kuitenkin ottanut puheeksi olentoja, jotka vievät lapsia, kuten:
+P	* Faet, kuten Valkoiset Pukit (ikuiset juhlijat), Aamunpuna (Blush-of-Dawn) (joka janoaa ihailua) ja Salava-täti (joka ”suojelee” viattomia)
+P	* Glasbrenit, kauniit puunhenget, joiden tiedetään lumonneen sieviä kuolevaisia
 P	* Swynit, isot käärmeet, joilla on apinamaiset kasvot, hypnoottiset silmät ja lumoava ääni
-P	* The Fomoraij, of which she barely whispers, ancient evils hiding in the earth
+P	* Fomoraijit, joista hän tuskin uskaltaa kuiskata, ikiaikaiset pahuudet, jotka piileskelevät maan uumenissa
 PB
-P	Old Seren does drone on, and she rarely tells a story the same way twice, so let's see how well you've been listening. Roll +INT: on a 10+ hold 2 Stories; on a 7-9, hold 1 Story.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Vanha Seren jaarittelee kyllä, ja harvoin hän kertoo tarinan kahdesti samalla tavalla, joten katsotaan, kuinka hyvin olet kuunnellut. Heitä +INT: 10+:lla pidä 2 Tarinaa; 7-9:llä pidä 1 Tarina.
+P	Kun käytät 1 Tarinan ja kerrot meille yhden Serenin tarinan nimen, kysy PJ:ltä kysymys yhdestä yllä kuvatuista olennoista. PJ kertoo sinulle jotain kiinnostavaa, hyödyllistä ja olennaista, kuten tarina paljastaa.
+P	6-:lla pidä 1 Tarina, mutta kun käytät sen, PJ kertoo sinulle kaksi versiota tarinasta, joissa on ristiriitaista tietoa ja vain toinen on totta.
 P	halein – PJ:si
 P	Lisäohjeita: <b>Rakkauskirjeiden kirjoittaminen</b> (s. 568).
 PAGE	268

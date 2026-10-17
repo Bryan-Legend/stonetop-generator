@@ -290,17 +290,17 @@ P	Escribe la carta de amor en una ficha, imprímela antes de jugar o envíasela 
 HR
 P	<i>Me gustaría anticipar al swyn, pero</i> <i>preguntar directamente por él sería demasiado</i> <i>evidente. En su lugar, escribo esta carta</i> <i>de amor a Blodwen. Establece</i> <i>unos cuantos posibles culpables (entre ellos el</i> <i>swyn) y le da la opción de</i> <i>averiguar más en juego.</i>
 HR
-P	Dear Blodwen,
+P	Querida Blodwen:
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, like the White Billies (eternal revelers), Blush-of-Dawn (who seeks adoration), and Auntie Sallow (who "protects" the innocent)
-P	* The glasbren, beautiful tree spirits who've been known to entrance comely mortals
+P	Seren la Vieja te ha contado innumerables historias sobre criaturas antinaturales del Bosque. Últimamente, sin embargo, no para de sacar cosas que se llevan a los niños, como:
+P	* Los Fae, como los Chivos Blancos (White Billies; juerguistas eternos), Rubor del Alba (Blush-of-Dawn; que busca adoración) y la Tía Sauce (Auntie Sallow; que «protege» a los inocentes)
+P	* Los glasbren, hermosos espíritus de los árboles que, según se sabe, hechizan a mortales agraciados
 P	* Los swyn, grandes serpientes con cara de mono, ojos hipnóticos y voces cautivadoras
 P	* Los Fomoraij, de los que apenas se atreve a susurrar, antiguos males que se esconden en la tierra.
 PB
 P	La vieja Seren no para de enrollarse, y rara vez cuenta una historia dos veces igual, así que veamos lo bien que has escuchado. Tira +INT: con 10+ guarda 2 de reserva de Historias; con 7-9, guarda 1 de reserva de Historias.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Cuando gastes 1 de Historias y nos digas el nombre de uno de los cuentos de Seren, hazle al DJ una pregunta sobre una de las criaturas descritas arriba. El DJ te dirá algo interesante, útil y relevante, tal como lo revela el cuento.
+P	Con 6-, guarda 1 de Historias, pero cuando la gastes, el DJ te contará dos versiones de la historia con información contradictoria, de las que solo una es cierta.
 P	besos y abrazos, tu DJ
 P	Para más orientación, consulta <b>Escribir cartas de amor</b> (página 568).
 PAGE	268

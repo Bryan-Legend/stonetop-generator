@@ -290,17 +290,17 @@ P	Skriv kjærlighetsbrevet på et kartotekkort, skriv det ut før spillet, eller
 HR
 P	<i>Jeg vil gjerne varsle om swynen, men</i> <i>å spørre om den direkte ville være for</i> <i>åpenbart. I stedet skriver jeg dette kjærlighets-</i> <i>brevet til Blodwen. Det etablerer</i> <i>noen mulige skyldige (deriblant</i> <i>swynen) og gir henne muligheten til å</i> <i>lære mer i spill.</i>
 HR
-P	Dear Blodwen,
+P	Kjære Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, like the White Billies (eternal revelers), Blush-of-Dawn (who seeks adoration), and Auntie Sallow (who "protects" the innocent)
-P	* The glasbren, beautiful tree spirits who've been known to entrance comely mortals
+P	Seren den Gamle har fortalt deg utallige historier om unaturlige vesener i Skogen. I det siste har hun imidlertid snakket om ting som stjeler barn, som:
+P	* Fae, som de Hvite Bukkene (White Billies; evige festere), Morgenrøde (Blush-of-Dawn; som søker tilbedelse) og Tante Selje (Auntie Sallow; som «beskytter» de uskyldige)
+P	* Glasbren, vakre treånder som er kjent for å forhekse vakre dødelige
 P	* Swyner, store slanger med apeaktige ansikter, hypnotiske øyne og forheksende stemmer
-P	* The Fomoraij, of which she barely whispers, ancient evils hiding in the earth
+P	* Fomoraij, som hun knapt hvisker om, eldgammel ondskap som skjuler seg i jorden
 PB
-P	Old Seren does drone on, and she rarely tells a story the same way twice, so let's see how well you've been listening. Roll +INT: on a 10+ hold 2 Stories; on a 7-9, hold 1 Story.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Gamle Seren mumler i vei, og hun forteller sjelden en historie likt to ganger, så la oss se hvor godt du har hørt etter. Slå +INT: på 10+ hold 2 Historier; på 7-9, hold 1 Historie.
+P	Når du bruker 1 Historie og forteller oss navnet på en av Serens historier, still spillederen et spørsmål om et av vesenene ovenfor. Spillederen forteller deg noe interessant, nyttig og relevant, slik historien avslører det.
+P	På 6-, hold 1 Historie, men når du bruker den, forteller spillederen deg to versjoner av historien med motstridende informasjon, der bare én er sann.
 P	klem – spillederen din
 P	For mer veiledning, se <b>Å skrive kjærlighetsbrev</b> (side 568).
 PAGE	268

@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Valor e moedas
 P	O mundo de Stonetop não tem governo central, nem moeda comum, nem taxas de câmbio padronizadas. Então, o que é uma troca justa?
 P	Qualquer item tem um Valor de 0 a 4 (ou raramente mais). Os Valores não são lineares; são faixas. Um único item de Valor 2 vale cerca de uma dúzia de itens de Valor 1. Três itens individuais de Valor 1 não somam Valor 3; são só três itens de Valor 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	"Um preço justo" significa trocar coisas de mesmo Valor, mas pode não ser uma troca de 1 para 1 troca. Pode ser 2 para 1 ou até 3 para 1 ao trocar um recurso local comum por bens importados, desejáveis ou especializados (ou vice-versa).
 P	As taxas de câmbio são tudo menos padronizadas, mas…
 P	<b>Um item de Valor 0</b> em geral vale:
 B	Uma ◇ bolsa de moedas de cobre

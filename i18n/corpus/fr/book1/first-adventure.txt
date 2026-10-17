@@ -290,17 +290,17 @@ P	Écrivez la lettre d'amour sur une fiche, imprimez-la avant la partie, ou envo
 HR
 P	<i>J'aimerais préfigurer le swyn, mais</i> <i>poser une question directe à son sujet</i> <i>serait trop évident. À la place, j'écris</i> <i>cette lettre d'amour à Blodwen. Elle</i> <i>établit quelques coupables potentiels</i> <i>(dont le swyn) et lui donne l'option</i> <i>d'en apprendre davantage en jeu.</i>
 HR
-P	Dear Blodwen,
+P	Chère Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
+P	Seren la Vieille t'a raconté d'innombrables histoires de créatures contre nature dans le Bois. Ces derniers temps, cependant, elle a évoqué des choses qui volent les enfants, telles que :
 P	* Les fées, comme les Boucs Blancs (fêtards éternels), Rougeur-de-l'Aube (qui recherche l'adoration), et Tante Blafarde (qui « protège » les innocents)
 P	* Les glasbren, de beaux esprits des arbres connus pour envoûter les mortels séduisants
 P	* Les swyn, de grands serpents au visage simiesque, aux yeux hypnotiques et à la voix envoûtante
 P	* Les Fomoraij, dont elle ne parle qu'en chuchotant à peine, de vieux maux cachés dans la terre.
 PB
 P	La vieille Seren radote, et elle raconte rarement une histoire de la même façon deux fois, alors voyons voir si tu as bien écouté. Jette +INT : sur un 10+, garde 2 Récits ; sur un 7-9, garde 1 Récit.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Quand tu dépenses 1 Récit et nous dis le nom de l'une des histoires de Seren, pose au MJ une question sur l'une des créatures décrites ci-dessus. Le MJ te dira quelque chose d'intéressant, d'utile et de pertinent, tel que révélé par le récit.
+P	Sur un 6-, garde 1 Récit mais quand tu le dépenses, le MJ te racontera deux versions de l'histoire avec des informations contradictoires, dont une seule est vraie.
 P	bisous - ton MJ
 P	Pour plus de conseils, voir <b>Écrire des lettres d'amour</b> (page 568).
 PAGE	268

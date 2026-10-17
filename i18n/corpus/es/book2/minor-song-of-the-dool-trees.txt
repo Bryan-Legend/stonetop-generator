@@ -27,4 +27,4 @@ P	• Moldear el sonido y la sombra para inquietar y asustar
 P	• Manifestarse como los miedos de su víctima (solo le daña quien domina su miedo)
 P	<b>Coste</b> miedos nuevos y exquisitos (Lealtad ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Empieza en 13

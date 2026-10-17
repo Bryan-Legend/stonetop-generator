@@ -290,17 +290,17 @@ P	把情書寫在一張索引卡上，開玩前列印出來，或在網路上發
 HR
 P	<i>我想預示斯溫，但</i> <i>直接問會太</i> <i>明顯。於是我給布洛德溫寫了這封</i> <i>情書。它確立了</i> <i>幾個可能的元兇（包括</i> <i>斯溫）並給她在遊戲</i> <i>中瞭解更多的選項。</i>
 HR
-P	Dear Blodwen,
+P	親愛的布洛德溫：
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* 妖精，如白比利們（永恆的狂歡者）、曉霞（尋求崇拜者），以及蠟黃大娘（「保護」無辜者）*
-P	格拉斯布倫，美麗的樹木精魂，據說會迷住俊美的凡人
+P	老嫗瑟倫給你講過無數森林裡不自然生物的故事。不過最近，她一直在提起那些偷走孩子的東西，例如：
+P	* 妖精，如白比利們（永恆的狂歡者）、曉霞（尋求崇拜者），以及蠟黃大娘（「保護」無辜者）
+P	* 格拉斯布倫，美麗的樹木精魂，據說會迷住俊美的凡人
 P	* 斯溫，長著猴一般面孔、催眠眼睛和迷人心智嗓音的巨蛇
 P	* 福莫萊，她幾乎只敢耳語，藏在地裡的遠古邪惡
 PB
 P	老瑟倫確實會絮叨，而且很少把同一個故事講兩遍，所以讓我們看看你聽得有多認真。擲 +INT：10+ 時持有 2 個故事；7-9 時，持有 1 個故事。
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	當你花費 1 個故事並告訴我們瑟倫某個故事的名字時，向GM問一個關於上述某種生物的問題。GM會告訴你一些有趣、有用並且相關的事，如故事所揭示的。
+P	6- 時，持有 1 個故事，但當你花掉它時，GM會告訴你該故事的兩個版本，帶著互相衝突的資訊，其中只有一個是真的。
 P	xoxo - 你的GM
 P	更多指引見<b>撰寫情書</b>（page 568）。
 PAGE	268

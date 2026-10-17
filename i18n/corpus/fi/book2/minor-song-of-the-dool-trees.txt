@@ -27,4 +27,4 @@ P	• Muovata ääntä ja varjoa hermostuttaakseen ja pelotellakseen
 P	• Ilmentyä uhrinsa pelkoina (vain pelkonsa hallitseva voi vahingoittaa sitä)
 P	<b>Hinta</b> uusia, hienostuneita pelkoja (Uskollisuus ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Aluksi 13

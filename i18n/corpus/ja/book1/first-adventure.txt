@@ -290,17 +290,17 @@ P	ラブレターはインデックスカードに書くか、プレイ前に印
 HR
 P	<i>スウィンの伏線を張りたいが、</i><i>直接尋ねるのは露骨すぎる。</i><i>代わりに、ブロドウェンにこのラブレターを書く。</i><i>これで何人かの容疑者（スウィンを含む）</i><i>が確立され、</i><i>彼女にはプレイ中にもっと</i><i>知る選択肢が与えられる。</i>
 HR
-P	Dear Blodwen,
+P	親愛なるブロドウェンへ
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* フェイ。白い子ヤギたち（永遠の酒宴の徒）、暁の紅（崇拝を求める者）、ソロウおばさん（無垢な者を「守る」者）など*
-P	グラスブレン。見目麗しい人間を魅了することで知られる美しい木の精霊
+P	老婆セレンは森の不自然な生き物の話を数えきれないほど聞かせてくれた。だが最近、彼女は子どもをさらうものの話をよく持ち出す。たとえば：
+P	* フェイ。白い子ヤギたち（永遠の酒宴の徒）、暁の紅（崇拝を求める者）、ソロウおばさん（無垢な者を「守る」者）など
+P	* グラスブレン。見目麗しい人間を魅了することで知られる美しい木の精霊
 P	* スウィン。猿のような顔、催眠の目、魅惑の声を持つ大蛇
 P	* フォモライ（Fomoraij）。彼女がかろうじてささやくだけの、大地に潜む太古の悪
 PB
 P	セレン婆さんは長々と話すし、同じ話を二度同じように語ることはめったにない。だから、あなたがどれだけちゃんと聞いていたか見てみよう。+INTでロールせよ。10以上なら、物語2をホールドする。7～9なら、物語1をホールドする。
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	物語を1消費してセレンの話の名前をひとつ告げたとき、上に挙げた生き物の1つについてGMに質問せよ。GMはその話から明らかになる、何か興味深く、役に立つ、関係のあることを告げる。
+P	6以下なら、物語1をホールドするが、それを消費したとき、GMはその話の2つの版を告げる。それらは食い違う情報を含み、そのうち1つだけが真実だ。
 P	愛をこめて——あなたのGMより
 P	詳しい指針については<b>ラブレターの書き方</b>（568ページ）を参照。
 PAGE	268

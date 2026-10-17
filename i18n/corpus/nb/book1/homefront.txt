@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Verdi og mynter
 P	Stonetops verden har ingen sentralmakt, ingen felles valuta og ingen faste vekslingskurser. Så hva er en rettferdig handel?
 P	Enhver gjenstand har en Verdi fra 0 til 4 (eller i sjeldne tilfeller høyere). Verdiene er ikke lineære; de er trinn. Én enkelt gjenstand med Verdi 2 er verdt omtrent et dusin gjenstander med Verdi 1. Tre enkeltstående gjenstander med Verdi 1 blir ikke til sammen Verdi 3; de er bare tre gjenstander med Verdi 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	«En rimelig pris» betyr å bytte ting med samme Verdi, men det er ikke nødvendigvis en 1-mot-1-byttehandel. Det kan være 2 eller til og med 3 mot 1 når man bytter en vanlig, lokal ressurs mot importerte, ettertraktede eller spesialiserte varer (eller omvendt).
 P	Vekslingskursene er alt annet enn faste, men …
 P	<b>En gjenstand med Verdi 0</b> er vanligvis verdt:
 B	En ◇ pung med kobbermynter

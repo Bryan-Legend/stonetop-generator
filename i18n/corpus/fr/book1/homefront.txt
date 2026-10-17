@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Valeur et pièces
 P	Le monde de Stonetop n'a ni gouvernement central, ni monnaie commune, ni taux de change standard. Alors, qu'est-ce qui constitue un échange équitable ?
 P	Tout objet donné a une Valeur de 0 à 4 (ou rarement plus). Les Valeurs ne sont pas linéaires ; ce sont des paliers. Un seul objet de Valeur 2 vaut environ une douzaine d'objets de Valeur 1. Trois objets individuels de Valeur 1 ne s'additionnent pas pour donner une Valeur 3 ; ce sont juste trois objets de Valeur 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	« Un prix équitable » signifie échanger des objets de même Valeur, mais ce n'est pas forcément un échange. Il pourrait être de 2 contre 1, voire 3 contre 1, lorsqu'on échange une ressource locale courante contre des biens importés, désirables, ou spécialisés (ou vice versa).
 P	Les taux de change sont tout sauf standards, mais…
 P	<b>Un objet de Valeur 0</b> vaut généralement :
 B	Une ◇ bourse de pièces de cuivre

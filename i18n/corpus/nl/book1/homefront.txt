@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Waarde en munten
 P	De wereld van Stonetop kent geen centraal gezag, geen gemeenschappelijke munt en geen vaste wisselkoersen. Wat is dan een eerlijke ruil?
 P	Elk voorwerp heeft een Waarde van 0 tot 4 (of zelden hoger). Waarden zijn niet lineair; het zijn treden. Eén voorwerp met Waarde 2 is ongeveer een dozijn voorwerpen met Waarde 1 waard. Drie losse voorwerpen met Waarde 1 tellen niet op tot Waarde 3; het zijn gewoon drie voorwerpen met Waarde 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	“Een eerlijke prijs” betekent dingen met dezelfde Waarde ruilen, maar het hoeft geen ruil van 1-op-1 te zijn. Het kan 2- of zelfs 3-op-1 zijn als je een gewone, lokale hulpbron ruilt voor ingevoerde, begeerde of gespecialiseerde goederen (of omgekeerd).
 P	Wisselkoersen zijn allesbehalve vast, maar...
 P	<b>Een voorwerp met Waarde 0</b> is doorgaans gelijk aan:
 B	Een ◇ buidel koperen munten

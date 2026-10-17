@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Değer ve sikkeler
 P	Stonetop dünyasında merkezî bir yönetim, ortak bir para birimi ya da standart takas oranları yoktur. Peki adil bir takas nedir?
 P	Her eşyanın 0'dan 4'e (ya da nadiren daha yüksek) bir Değeri vardır. Değerler doğrusal değildir; kademelerdir. Tek bir Değer 2 eşya yaklaşık bir düzine Değer 1 eşyaya bedeldir. Üç ayrı Değer 1 eşya toplanıp Değer 3 etmez; sadece üç Değer 1 eşyadır.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	“Adil bir fiyat”, aynı Değere sahip şeyleri takas etmek demektir, ama bu her zaman bire bir bir takas olmayabilir. Yaygın, yerel bir kaynağı ithal, rağbet gören ya da uzmanlık ürünü mallarla takas ederken (ya da tersi) ikiye bir, hatta üçe bir olabilir.
 P	Takas oranları standart olmaktan çok uzaktır, ama...
 P	<b>Değer 0 bir eşya</b> genellikle şuna bedeldir:
 B	Bir ◇ kese bakır sikke

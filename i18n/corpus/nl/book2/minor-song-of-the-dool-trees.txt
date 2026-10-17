@@ -27,4 +27,4 @@ P	• Geluid en schaduw vormen om zenuwachtig en bang te maken
 P	• Zich manifesteren als de angsten van zijn slachtoffer (alleen te deren door iemand die zijn angst overwint)
 P	<b>Prijs</b> nieuwe, verfijnde angsten (Loyaliteit ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Begint op 13

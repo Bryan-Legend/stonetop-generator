@@ -27,4 +27,4 @@ P	• Kształtować dźwięk i cień, by niepokoić i straszyć
 P	• Objawić się jako lęki ofiary (zranić go może tylko ten, kto zapanuje nad swoim strachem)
 P	<b>Cena</b> nowe, wyszukane lęki (Lojalność ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Zaczyna z 13

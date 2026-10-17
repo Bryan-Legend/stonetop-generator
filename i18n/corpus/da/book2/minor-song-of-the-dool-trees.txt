@@ -27,4 +27,4 @@ P	• Forme lyd og skygge til at forurolige og skræmme
 P	• Manifestere sig som sit offers frygt (kan kun skades af en, der mestrer sin frygt)
 P	<b>Pris</b> nye, udsøgte frygte (Loyalitet ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Starter på 13

@@ -290,17 +290,17 @@ P	Schreib den Liebesbrief auf eine Karteikarte, druck ihn vor dem Spiel aus oder
 HR
 P	<i>Ich würde gern auf den Swyn vorausdeuten, aber</i> <i>direkt danach zu fragen, wäre zu</i> <i>offensichtlich. Stattdessen schreibe ich diesen Liebes-</i> <i>brief an Blodwen. Er etabliert ein</i> <i>paar mögliche Übeltäter (darunter den</i> <i>Swyn) und gibt ihr die Möglichkeit,</i> <i>im Spiel mehr zu erfahren.</i>
 HR
-P	Dear Blodwen,
+P	Liebe Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, like the White Billies (eternal revelers), Blush-of-Dawn (who seeks adoration), and Auntie Sallow (who "protects" the innocent)
-P	* The glasbren, beautiful tree spirits who've been known to entrance comely mortals
+P	Seren die Alte hat dir unzählige Geschichten über unnatürliche Geschöpfe im Wald erzählt. In letzter Zeit aber erzählt sie immer wieder von Dingen, die Kinder stehlen, etwa:
+P	* Fae wie die Weißen Böcke (ewige Zecher), Morgenröte (die nach Anbetung giert) und Tante Salweide (die die Unschuldigen „beschützt“)
+P	* Die Glasbren, wunderschöne Baumgeister, die dafür bekannt sind, anmutige Sterbliche zu betören
 P	* Swyn, große Schlangen mit affenartigen Gesichtern, hypnotischen Augen und betörenden Stimmen
 P	* Die Fomoraij, von denen sie kaum zu flüstern wagt, uralte Übel, die sich in der Erde verbergen
 PB
 P	Die alte Seren leiert gern, und sie erzählt eine Geschichte selten zweimal gleich, also sehen wir mal, wie gut du zugehört hast. Würfle +INT: bei 10+ halte 2 Geschichten; bei 7-9 halte 1 Geschichte.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Wenn du 1 Geschichte ausgibst und uns den Namen einer von Serens Erzählungen nennst, stell der SL eine Frage zu einem der oben beschriebenen Geschöpfe. Die SL sagt dir etwas Interessantes, Nützliches und Relevantes, wie es die Erzählung enthüllt.
+P	Bei 6- halte 1 Geschichte, aber wenn du sie ausgibst, erzählt dir die SL zwei Versionen der Geschichte mit widersprüchlichen Informationen, von denen nur eine wahr ist.
 P	xoxo – deine SL
 P	Weitere Hinweise findest du unter <b>Liebesbriefe schreiben</b> (Seite 568).
 PAGE	268

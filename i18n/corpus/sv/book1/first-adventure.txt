@@ -290,17 +290,17 @@ P	Skriv kärleksbrevet på ett registerkort, skriv ut det före spelet eller ski
 HR
 P	<i>Jag vill förebåda swynen, men</i> <i>att fråga om den direkt vore</i> <i>för uppenbart. I stället skriver</i> <i>jag det här kärleksbrevet</i> <i>till Blodwen. Det fastställer några möjliga bovar (bland</i> <i>dem swynen) och ger henne</i> <i>möjlighet att lära sig mer i spel.</i>
 HR
-P	Dear Blodwen,
+P	Kära Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, like the White Billies (eternal revelers), Blush-of-Dawn (who seeks adoration), and Auntie Sallow (who "protects" the innocent)
-P	* The glasbren, beautiful tree spirits who've been known to entrance comely mortals
+P	Seren Gumman har berättat otaliga sagor för dig om onaturliga varelser i Skogen. På sistone har hon dock tagit upp sådant som stjäl barn, som:
+P	* Fae, som de Vita Bockarna (White Billies, eviga festprissar), Gryningsrodnad (Blush-of-Dawn, som söker beundran) och Moster Sälg (Auntie Sallow, som ”skyddar” de oskyldiga)
+P	* Glasbren, vackra trädandar som är kända för att förhäxa vackra dödliga
 P	* Swyn, stora ormar med apliknande ansikten, hypnotiska ögon och förtrollande röster
 P	* Fomoraij, som hon knappt vågar viska om, uråldrig ondska som gömmer sig i jorden
 PB
 P	Gamla Seren pratar på, och hon berättar sällan en saga på samma sätt två gånger, så låt oss se hur väl du har lyssnat. Slå +INT: på 10+ håll 2 Berättelser; på 7-9, håll 1 Berättelse.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	När du spenderar 1 Berättelse och berättar namnet på en av Serens sagor, ställ en fråga till SL om en av varelserna ovan. SL berättar något intressant, användbart och relevant, så som sagan avslöjar det.
+P	På 6-, håll 1 Berättelse, men när du spenderar den berättar SL två versioner av sagan med motstridig information, och bara en av dem är sann.
 P	kram – din SL
 P	För mer vägledning, se <b>Att skriva kärleksbrev</b> (sidan 568).
 PAGE	268

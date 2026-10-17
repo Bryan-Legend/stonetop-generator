@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Arvo ja kolikot
 P	Stonetopin maailmassa ei ole keskushallintoa, yhteistä valuuttaa eikä vakiintuneita vaihtokursseja. Mikä siis on reilu kauppa?
 P	Jokaisella esineellä on Arvo 0-4 (tai harvoin korkeampi). Arvot eivät ole lineaarisia; ne ovat luokkia. Yksi Arvon 2 esine on suunnilleen tusinan Arvon 1 esineen arvoinen. Kolme erillistä Arvon 1 esinettä ei tee yhteensä Arvoa 3; ne ovat vain kolme Arvon 1 esinettä.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	”Kohtuullinen hinta” tarkoittaa saman Arvon asioiden vaihtamista, mutta se ei välttämättä ole 1:1-kauppa. Suhde voi olla 2:1 tai jopa 3:1, kun yleistä paikallista voimavaraa vaihdetaan tuontitavaraan, haluttuun tai erikoistuneeseen tavaraan (tai päinvastoin).
 P	Vaihtosuhteet ovat kaikkea muuta kuin vakiintuneita, mutta…
 P	<b>Arvon 0 esine</b> vastaa yleensä:
 B	◇ kukkarollista kuparikolikoita

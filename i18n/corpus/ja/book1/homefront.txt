@@ -1004,7 +1004,7 @@ PAGE	542
 H2	価値と硬貨
 P	ストーントップの世界には中央政府も、共通の通貨も、標準的な交換比率もない。では、何が公正な取引なのか？
 P	どの品物にも0から4（まれにそれ以上）の価値がある。価値は直線的ではなく、段階である。価値2の品物1つは、価値1の品物およそ12個に相当する。価値1の品物を3つ合わせても価値3にはならない。価値1の品物が3つあるだけだ。
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	「公正な値」とは同じ価値のものを交換することだが、1対1とは限らない。ありふれた地元の資源を、輸入品や望まれる品や専門的な品と交換するとき（あるいはその逆のとき）は、2対1や3対1にさえなるかもしれない。
 P	交換比率は標準などとは程遠いが……
 P	<b>価値0の品物</b>は、おおむね次のものに相当する：
 B	銅貨の◇財布1つ

@@ -586,6 +586,10 @@ def extract_page_rich(
     map_labels = map_label_spans(page)
     # text set on a slant across both columns, read as a band of its own
     tilted_band: tuple[float, float] | None = None
+    card_ids: set[int] = set()  # the spans set on that slant
+    card_gutter: float | None = None
+    card_marks: tuple | None = None
+    card_bi = -1
 
     spans: list[dict] = []
     seen_spans: set = set()
@@ -625,6 +629,11 @@ def extract_page_rich(
                         "font": s.get("font", ""),
                         "size": s.get("size", 9.0),
                         "tilted": tilted,
+                        **(
+                            {"dir": tuple(ln["dir"]), "origin": tuple(s["origin"]),
+                             "bbox": tuple(s["bbox"]), "asc": s.get("ascender", 1.0)}
+                            if tilted and s.get("origin") else {}
+                        ),
                     }
                 )
     if not spans:
@@ -634,6 +643,7 @@ def extract_page_rich(
     tails: list = []
     diamonds: list = []
     boxes_sq: list = []
+    curved_boxes: list = []  # the same, all curves: only a slanted card's
     hrules: list = []  # horizontal rules (hairlines)
     badges: list = []  # rounded plaques the numbered steps sit in
     box_rect = None
@@ -665,6 +675,8 @@ def extract_page_rich(
                 # the playbook portraits beside "The characters"), and without
                 # this it turns three playbook blurbs into a checklist.
                 boxes_sq.append(r)
+            elif 7 <= ni <= 10 and abs(w - h) <= 1.0:
+                curved_boxes.append(r)  # a box drawn turned (p. 86's card)
         elif w <= 4.5 and h <= 6.5 and 5 <= ni <= 9:
             tails.append(r)  # flourish on the question spiral
         elif w >= 40 and h <= 1.5 and ni <= 3:
@@ -2041,10 +2053,102 @@ def extract_page_rich(
             if sp.get("tilted") and 7.5 <= sp["size"] <= 10.5
         ]
         if two_col and sum(len(sp["text"].split()) >= 4 for sp in slant) >= 3:
-            tilted_band = (
-                min(sp["y"] for sp in slant) - 1.0,
-                max(sp["y"] for sp in slant) + 1.0,
-            )
+            # Read the card in its own frame: every span set at its slant is
+            # turned level about the card's middle, so its lines are lines
+            # again and its columns columns. (The sample inventory on p. 86 is
+            # a sheet of two columns and a run of items beside them; read off
+            # the page's axes its lines interleave.)
+            tally: dict[tuple[float, float], int] = defaultdict(int)
+            for sp in slant:
+                if sp.get("dir") and len(sp["text"].split()) >= 4:
+                    tally[(round(sp["dir"][0], 2), round(sp["dir"][1], 2))] += 1
+            c, s = max(tally, key=tally.get)
+            norm = (c * c + s * s) ** 0.5
+            c, s = c / norm, s / norm
+            card = [
+                sp for sp in spans if sp.get("dir")
+                and abs(sp["dir"][0] - c) < 0.01 and abs(sp["dir"][1] - s) < 0.01
+            ]
+            # A card laid over the foot of the page runs off it: a span whose
+            # baseline is past the edge is not on the page (p. 86's last line).
+            off = {id(sp) for sp in card if sp["origin"][1] > page_h}
+            card = [sp for sp in card if id(sp) not in off]
+            spans = [sp for sp in spans if id(sp) not in off]
+            px = sum(sp["origin"][0] for sp in card) / len(card)
+            py = sum(sp["origin"][1] for sp in card) / len(card)
+
+            def level(x: float, y: float) -> tuple[float, float]:
+                dx, dy = x - px, y - py
+                return px + dx * c + dy * s, py - dx * s + dy * c
+
+            sizes: dict[float, int] = defaultdict(int)
+            for sp in card:
+                sizes[round(sp["size"], 1)] += len(sp["text"])
+            body = max(sizes, key=sizes.get)
+            for sp in card:
+                ox, oy = level(*sp["origin"])
+                bx0, by0, bx1, by1 = sp["bbox"]
+                # the bbox of a run of type turned by the slant
+                w = ((bx1 - bx0) * c - (by1 - by0) * s) / (c * c - s * s)
+                sp["x"], sp["x1"] = ox, ox + max(w, 0.0)
+                # one line's faces share a baseline, not a top: the name
+                # written in by hand ("Caradoc") rises well above the type
+                sp["y"] = oy - 0.8 * body
+            card_ids = {id(sp) for sp in card}
+            ys = [sp["y"] for sp in card]
+            tilted_band = (min(ys) - 1.0, max(ys) + 1.0)
+            # Its own columns: the widest clear channel through the middle
+            # of it, with a column's worth of type each side. A line above
+            # where the right-hand column starts may cross it (p. 86's opening
+            # sentence runs the card's width).
+            x0s = min(sp["x"] for sp in card)
+            x1s = max(sp["x1"] for sp in card)
+
+            def channel(g: int) -> bool:
+                right = [sp["y"] for sp in card if sp["x"] >= g]
+                top = min(right) if right else float("inf")
+                return not any(
+                    sp["x"] + 1.0 < g < sp["x1"] - 1.0 and sp["y"] >= top - 2.0
+                    for sp in card
+                )
+
+            clear = [
+                g for g in range(int(x0s + (x1s - x0s) * 0.3), int(x0s + (x1s - x0s) * 0.75))
+                if channel(g)
+            ]
+            runs: list[list[int]] = []
+            for g in clear:
+                if runs and g == runs[-1][-1] + 1:
+                    runs[-1].append(g)
+                else:
+                    runs.append([g])
+            for run in sorted(runs, key=len, reverse=True)[:1]:
+                g = (run[0] + run[-1]) / 2
+                left = sum(_span_mid_x(sp) < g for sp in card)
+                if len(run) >= 4 and min(left, len(card) - left) >= 8:
+                    card_gutter = g
+            # The marks drawn on the card (its ◇ slots and boxes) turn with it,
+            # and stop marking the level lines beside it.
+            lo_x, hi_x = x0s - 8.0, x1s + 8.0
+            lo_y, hi_y = tilted_band[0] - 8.0, tilted_band[1] + 12.0
+
+            def turn(rects: list) -> tuple[list, list]:
+                on, rest = [], []
+                for r in rects:
+                    cx, cy = level((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2)
+                    if lo_x <= cx <= hi_x and lo_y <= cy <= hi_y:
+                        hw, hh = r.width / 2, r.height / 2
+                        on.append(fitz.Rect(cx - hw, cy - hh, cx + hw, cy + hh))
+                    else:
+                        rest.append(r)
+                return on, rest
+
+            turned = [turn(m) for m in (spirals, tails, diamonds, boxes_sq)]
+            card_marks = tuple(on for on, _ in turned)
+            spirals, tails, diamonds, boxes_sq = (rest for _, rest in turned)
+            # a box set on the slant is drawn in curves, like artwork; on the
+            # card it is a box
+            card_marks[3][:] = _dedupe_rects(card_marks[3] + turn(curved_boxes)[0])
 
     # A playbook page is banded by full-measure rules, and each band's two
     # columns belong to that band alone: read as two full-height columns, the
@@ -2062,7 +2166,8 @@ def extract_page_rich(
             bands.append((lo, tilted_band[0]))
             band_gutters.append(gutter)
             bands.append(tilted_band)
-            band_gutters.append(page.rect.width + 1)
+            card_bi = len(bands) - 1
+            band_gutters.append(card_gutter or page.rect.width + 1)
             lo = tilted_band[1]
         bands.append((lo, float("inf")))
         band_gutters.append(gutter)
@@ -2123,8 +2228,21 @@ def extract_page_rich(
     if stats_json:
         result.append(M_STATS + stats_json)
 
+    if card_bi < 0 or bands[card_bi] != tilted_band:
+        card_ids = set()  # banded otherwise (a playbook, a follower's box)
+    page_marks = (spirals, tails, diamonds, boxes_sq)
     for bi, (band_lo, band_hi) in enumerate(bands):
-        band_spans = [sp for sp in spans if band_lo <= sp["y"] < band_hi]
+        if card_ids and bi == card_bi:
+            band_spans = [sp for sp in spans if id(sp) in card_ids]
+            spirals, tails, diamonds, boxes_sq = card_marks
+        else:
+            # level type beside the card is read with the columns above it
+            hi = tilted_band[1] if card_ids and bi == card_bi - 1 else band_hi
+            band_spans = [
+                sp for sp in spans
+                if id(sp) not in card_ids and band_lo <= sp["y"] < hi
+            ]
+            spirals, tails, diamonds, boxes_sq = page_marks
         if not band_spans:
             continue
         if bi and playbook and result and result[-1] != M_BAND:

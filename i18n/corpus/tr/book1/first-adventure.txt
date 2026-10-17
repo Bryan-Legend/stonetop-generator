@@ -290,17 +290,17 @@ P	Aşk mektubunu bir fiş kartına yaz, oyundan önce çıktısını al ya da oy
 HR
 P	<i>Swyn'i önceden sezdirmek isterdim, ama</i> <i>onu doğrudan sormak fazla</i> <i>bariz olurdu. Bunun yerine Blodwen'e bu aşk</i> <i>mektubunu yazıyorum. Birkaç olası</i> <i>suçlu kuruyor (swyn de</i> <i>aralarında) ve ona oyunda daha fazlasını</i> <i>öğrenme seçeneği veriyor.</i>
 HR
-P	Dear Blodwen,
+P	Sevgili Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, like the White Billies (eternal revelers), Blush-of-Dawn (who seeks adoration), and Auntie Sallow (who "protects" the innocent)
-P	* The glasbren, beautiful tree spirits who've been known to entrance comely mortals
+P	Kocakarı Seren sana Orman'daki doğadışı yaratıklara dair sayısız masal anlattı. Ama son zamanlarda çocukları kaçıran şeylerden söz edip duruyor; mesela:
+P	* Fae; Beyaz Tekeler (ebedî eğlence düşkünleri), Şafak Kızıllığı (tapınılmak ister) ve Söğüt Teyze (masumları “korur”) gibi
+P	* Glasbren'ler; güzel ölümlüleri büyülediği bilinen güzel ağaç ruhları
 P	* Swyn'ler; maymunsu yüzlü, hipnotik gözlü ve büyüleyici sesli iri yılanlar
 P	* Fomoraij; toprağın içinde saklanan kadim kötülükler, adlarını ancak fısıltıyla anar
 PB
 P	Yaşlı Seren durmadan geveler ve bir hikâyeyi nadiren iki kez aynı şekilde anlatır; bakalım onu ne kadar iyi dinlemişsin. +INT at: 10+ gelirse 2 Hikâye tut; 7-9 gelirse 1 Hikâye tut.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	1 Hikâye harcayıp bize Seren'in masallarından birinin adını söylediğinde, OY'ye yukarıda anlatılan yaratıklardan biri hakkında bir soru sor. OY sana masalın açığa vurduğu ilginç, faydalı ve ilgili bir şey söyler.
+P	6- gelirse 1 Hikâye tut, ama onu harcadığında OY sana hikâyenin çelişkili bilgiler içeren iki versiyonunu anlatır; yalnızca biri doğrudur.
 P	Sevgiler - OY'n
 P	Daha fazla rehberlik için bkz. <b>Aşk mektubu yazmak</b> (s. 568).
 PAGE	268

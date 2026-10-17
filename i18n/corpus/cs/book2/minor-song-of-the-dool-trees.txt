@@ -27,4 +27,4 @@ P	• Tvarovat zvuk a stín, aby znervózňoval a děsil
 P	• Projevit se jako strachy své oběti (ublížit mu může jen ten, kdo svůj strach ovládne)
 P	<b>Cena</b> nové, vybrané strachy (Věrnost ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Začíná na 13

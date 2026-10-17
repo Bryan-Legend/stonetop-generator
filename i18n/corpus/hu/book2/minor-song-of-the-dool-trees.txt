@@ -27,4 +27,4 @@ P	• Hangot és árnyékot formál, hogy nyugtalanítson és megrémítsen
 P	• Az áldozata félelmeinek alakjában nyilvánul meg (csak az sebezheti meg, aki úrrá lesz a félelmén)
 P	<b>Ár</b> új, kifinomult félelmek (Hűség ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Kezdetben 13

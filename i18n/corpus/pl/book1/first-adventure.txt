@@ -290,17 +290,17 @@ P	Napisz list miłosny na karcie katalogowej, wydrukuj go przed grą albo wyśli
 HR
 P	<i>Chciałbym zapowiedzieć swyna, ale</i> <i>pytanie o niego wprost byłoby zbyt</i> <i>oczywiste. Zamiast tego piszę ten list</i> <i>miłosny do Blodwen. Ustala on</i> <i>kilku potencjalnych winowajców (w tym</i> <i>swyna) i daje jej możliwość</i> <i>dowiedzenia się więcej w grze.</i>
 HR
-P	Dear Blodwen,
+P	Droga Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, jak Białe Koźlęta (wieczni biesiadnicy), Rumieniec Świtu (który pragnie uwielbienia) i Ciotka Łoza (która „chroni” niewinnych)*
-P	Glasbreny, piękne duchy drzew, znane z tego, że urzekają urodziwych śmiertelników
+P	Seren Starucha opowiedziała ci niezliczone historie o nienaturalnych stworzeniach w Puszczy. Ostatnio jednak wciąż wraca do istot, które porywają dzieci, takich jak:
+P	* Fae, jak Białe Koźlęta (wieczni biesiadnicy), Rumieniec Świtu (który pragnie uwielbienia) i Ciotka Łoza (która „chroni” niewinnych)
+P	* Glasbreny, piękne duchy drzew, znane z tego, że urzekają urodziwych śmiertelników
 P	* Swyny, wielkie węże o małpich twarzach, hipnotycznych oczach i urzekających głosach
 P	* Fomoraij, o których ledwie szepcze, pradawne zło kryjące się w ziemi Stara
 PB
 P	Seren lubi ględzić i rzadko opowiada tę samą historię dwa razy tak samo, zobaczmy więc, jak uważnie słuchałaś. Rzuć +INT: przy 10+ zyskujesz 2 zapasu Opowieści; przy 7-9 zyskujesz 1 zapas Opowieści.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Gdy wydajesz 1 Opowieść i podajesz nam tytuł jednej z opowieści Seren, zadaj MG pytanie o jedno z opisanych wyżej stworzeń. MG powie ci coś ciekawego, przydatnego i istotnego, co ujawnia ta opowieść.
+P	Przy 6- zyskujesz 1 zapas Opowieści, ale gdy go wydasz, MG opowie ci dwie wersje historii ze sprzecznymi informacjami, z których tylko jedna jest prawdziwa.
 P	całuski – twój MG
 P	Więcej wskazówek znajdziesz w części <b>Pisanie listów miłosnych</b> (str. 568).
 PAGE	268

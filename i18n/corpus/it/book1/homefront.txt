@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Valore e monete
 P	Il mondo di Stonetop non ha un governo centrale, né una moneta comune, né tassi di cambio standard. Quindi, cosa costituisce uno scambio equo?
 P	Ogni oggetto ha un Valore da 0 a 4 (o, raramente, più alto). I Valori non sono lineari: sono fasce. Un solo oggetto di Valore 2 vale all'incirca una dozzina di oggetti di Valore 1. Tre singoli oggetti di Valore 1 non fanno Valore 3: sono solo tre oggetti di Valore 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	«Un prezzo equo» significa scambiare cose dello stesso Valore, ma non necessariamente in rapporto 1 a 1. Potrebbe essere 2 o anche 3 a 1 quando si scambia una risorsa comune e locale con merci importate, desiderabili o specializzate (o viceversa).
 P	I tassi di cambio sono tutt'altro che standard, ma...
 P	<b>Un oggetto di Valore 0</b> vale in genere:
 B	Una ◇ borsa di monete di rame

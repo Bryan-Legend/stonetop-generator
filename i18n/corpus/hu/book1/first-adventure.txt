@@ -290,17 +290,17 @@ P	Írd a szerelmes levelet egy kartonlapra, nyomtasd ki játék előtt, vagy kü
 HR
 P	<i>Szeretném előrevetíteni a swynt, de</i> <i>ha közvetlenül kérdeznék rá, túl</i> <i>nyilvánvaló lenne. Ehelyett ezt a szerelmes</i> <i>levelet írom Blodwennek. Megnevez</i> <i>néhány lehetséges tettest (köztük a</i> <i>swynt), és lehetőséget ad neki, hogy</i> <i>játék közben többet tudjon meg.</i>
 HR
-P	Dear Blodwen,
+P	Kedves Blodwen!
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* Fae, like the White Billies (eternal revelers), Blush-of-Dawn (who seeks adoration), and Auntie Sallow (who "protects" the innocent)
-P	* The glasbren, beautiful tree spirits who've been known to entrance comely mortals
+P	Seren, a Vénasszony számtalan mesét mondott neked a Rengeteg természetellenes lényeiről. Mostanában viszont olyan dolgokat hoz szóba, amelyek gyerekeket rabolnak el, például:
+P	* fae-ket, mint a Fehér Bakok (örök mulatozók), Hajnalpír (aki imádatra vágyik) és Fakó Néne (aki „óvja” az ártatlanokat)
+P	* a glasbreneket, gyönyörű faszellemeket, akikről tudni, hogy megbabonázzák a szép halandókat
 P	* a swyneket, nagy kígyókat majomszerű arccal, hipnotikus szemmel és igéző hanggal
 P	* a Fomoraijt, amelyekről alig suttog, ősi gonoszokat, amelyek a földben rejtőznek Az öreg
 PB
 P	Seren bizony hosszan duruzsol, és ritkán meséli ugyanúgy kétszer ugyanazt a történetet, úgyhogy lássuk, mennyire figyeltél. Dobj +INT: 10+ esetén tarts 2 Történetet; 7-9 esetén tarts 1 Történetet.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Amikor elköltesz 1 Történetet, és elmondod nekünk Seren egyik meséjének címét, tegyél fel a mesélőnek egy kérdést a fent leírt lények egyikéről. A mesélő elmond neked valami érdekeset, hasznosat és relevánsat, ahogy a mese felfedi.
+P	6- esetén tarts 1 Történetet, de amikor elkölted, a mesélő a történet két változatát mondja el neked, egymásnak ellentmondó információkkal, amelyek közül csak az egyik igaz.
 P	puszi – a mesélőd
 P	További útmutatásért lásd: <b>Szerelmes levelek írása</b> (568. oldal).
 PAGE	268

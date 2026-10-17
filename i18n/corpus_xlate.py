@@ -269,6 +269,14 @@ def split_translation(en_pieces: list[str], tr: str) -> list[str] | None:
     if len(scored) > 1 and scored[1][0] - best_cost < 0.02 and abs(scored[1][1] - best) > 3:
         return None  # two seams equally likely: do not guess
     head, tail = tr[:best].rstrip(), tr[tail_at:].strip()
+    # A bullet the book glued to the item before it (")* The glasbren",
+    # "…显眼。• 构装体") sits left of the space the cut was made at; it opens
+    # the next piece, as it does in the English.
+    bullet = en_pieces[1].lstrip()[:1]
+    if bullet in "*•" and head.endswith(bullet) and not en_pieces[0].rstrip().endswith(bullet):
+        head = head[:-1].rstrip()
+        if not tail.startswith(bullet):
+            tail = f"{bullet} {tail}"
     if len(en_pieces) == 2 and runs(tail) != runs(en_pieces[1]):
         return None
     rest = split_translation(en_pieces[1:], tail)

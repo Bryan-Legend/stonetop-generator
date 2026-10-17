@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Hodnota a mince
 P	Svět Stonetopu nemá ústřední vládu, společnou měnu ani standardní směnné kurzy. Co tedy znamená férová směna?
 P	Každý předmět má Hodnotu od 0 do 4 (výjimečně vyšší). Hodnoty nejsou lineární; jsou to stupně. Jediný předmět s Hodnotou 2 má cenu zhruba tuctu předmětů s Hodnotou 1. Tři jednotlivé předměty s Hodnotou 1 nedávají dohromady Hodnotu 3; jsou to prostě tři předměty s Hodnotou 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	„Férová cena“ znamená směňovat věci se stejnou Hodnotou, ale nemusí jít o 1 ku 1 směnu. Může to být 2 nebo i 3 ku 1, když se běžný místní zdroj směňuje za dovážené, žádané nebo specializované zboží (nebo naopak).
 P	Směnné kurzy jsou všechno, jen ne standardní, ale…
 P	<b>Předmět s Hodnotou 0</b> má obvykle cenu:
 B	◇ měšce měďáků

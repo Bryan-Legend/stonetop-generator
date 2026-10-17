@@ -27,4 +27,4 @@ P	• Sesi ve gölgeyi, sinirleri bozmak ve korkutmak için biçimlendir
 P	• Kurbanının korkuları olarak belir (ona yalnızca korkusuna hâkim olan biri zarar verebilir)
 P	<b>Bedel</b> yeni, enfes korkular (Sadakat ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	13'ten başlar

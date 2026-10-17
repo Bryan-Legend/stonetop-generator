@@ -27,4 +27,4 @@ P	• Plasmare suoni e ombre per innervosire e spaventare
 P	• Manifestarsi come le paure della vittima (può ferirlo solo chi domina la propria paura)
 P	<b>Costo</b> paure nuove e squisite (Lealtà ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Parte da 13

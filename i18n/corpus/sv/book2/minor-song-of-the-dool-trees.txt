@@ -27,4 +27,4 @@ P	• Forma ljud och skugga för att göra folk nervösa och skrämma dem
 P	• Ta gestalt som offrets rädslor (kan bara skadas av den som bemästrar sin rädsla)
 P	<b>Pris</b> nya, utsökta rädslor (Lojalitet ◇◇◇ )
 P	<b>HP</b>
-P	Starts at 13
+P	Börjar på 13

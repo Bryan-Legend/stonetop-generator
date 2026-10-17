@@ -1004,7 +1004,7 @@ PAGE	542
 H2	Värde och mynt
 P	Världen i Stonetop har ingen central regering, ingen gemensam valuta och inga fasta växelkurser. Så vad är ett rimligt byte?
 P	Varje föremål har ett Värde från 0 till 4 (eller i sällsynta fall högre). Värdena är inte linjära; de är nivåer. Ett enda föremål med Värde 2 är värt ungefär ett dussin föremål med Värde 1. Tre enskilda föremål med Värde 1 blir inte Värde 3 tillsammans; de är bara tre föremål med Värde 1.
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	”Ett rimligt pris” innebär att man byter saker med samma Värde, men det behöver inte vara ett 1-mot-1-byte. Det kan vara 2- eller till och med 3-mot-1 när man byter en vanlig, lokal resurs mot importerade, eftertraktade eller specialiserade varor (eller tvärtom).
 P	Växelkurserna är allt annat än fasta, men...
 P	<b>Ett föremål med Värde 0</b> är i allmänhet värt:
 B	En ◇ pung kopparmynt

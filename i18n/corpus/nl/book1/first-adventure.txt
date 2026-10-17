@@ -290,17 +290,17 @@ P	Schrijf de liefdesbrief op een systeemkaart, print hem voor het spel uit of st
 HR
 P	<i>Ik zou graag naar de swyn vooruitwijzen,</i> <i>maar er rechtstreeks naar vragen</i> <i>zou te doorzichtig zijn. In plaats</i> <i>daarvan schrijf ik deze liefdesbrief</i> <i>aan Blodwen. Hij legt een paar</i> <i>mogelijke daders vast (waaronder de</i> <i>swyn) en geeft haar de kans om in het spel meer te weten te komen.</i>
 HR
-P	Dear Blodwen,
+P	Lieve Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
+P	Seren de Oude Vrouw heeft je talloze verhalen verteld over onnatuurlijke wezens in het Woud. De laatste tijd heeft ze het echter steeds over dingen die kinderen wegroven, zoals:
 P	* Fae, zoals de Witte Bokken (eeuwige feestvierders), Dageraadsblos (die aanbidding zoekt) en Tante Wilg (die onschuldigen “beschermt”)* De
 P	glasbren, prachtige boomgeesten die erom bekendstaan knappe stervelingen te betoveren
 P	* Swyn, grote slangen met apenachtige gezichten, hypnotiserende ogen en betoverende stemmen
 P	* De Fomoraij, over wie ze nauwelijks durft te fluisteren, oeroude kwaden die zich in de aarde verbergen.
 PB
 P	De oude Seren dreunt maar door en vertelt zelden een verhaal twee keer hetzelfde, dus eens kijken hoe goed je hebt geluisterd. Werp +INT: bij 10+ houd 2 Verhalen; bij 7-9 houd 1 Verhaal.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Als je 1 Verhaal besteedt en ons de naam van een van Serens vertellingen noemt, stel de SL dan een vraag over een van de hierboven beschreven wezens. De SL vertelt je iets interessants, nuttigs en relevants, zoals de vertelling het onthult.
+P	Bij 6- houd je 1 Verhaal, maar als je het besteedt, vertelt de SL je twee versies van het verhaal met tegenstrijdige informatie, waarvan er maar één waar is.
 P	xoxo – je SL
 P	Zie voor meer richtlijnen <b>Liefdesbrieven schrijven</b> (pagina 568).
 PAGE	268

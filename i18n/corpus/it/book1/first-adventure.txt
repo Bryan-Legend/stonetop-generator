@@ -290,17 +290,17 @@ P	Scrivi la lettera d'amore su un cartoncino, stampala prima della partita o inv
 HR
 P	<i>Vorrei prefigurare lo swyn, ma chiedere</i> <i>direttamente di lui sarebbe troppo scoperto.</i> <i>Invece scrivo questa lettera d'amore a</i> <i>Blodwen. Stabilisce alcuni possibili colpevoli</i> <i>(tra cui lo swyn) e</i> <i>le dà la possibilità di</i> <i>saperne di più in gioco.</i>
 HR
-P	Dear Blodwen,
+P	Cara Blodwen,
 PB
-P	Seren the Crone has told you countless tales of unnatural creatures in the Wood. Lately, though, she's been bringing up things that steal away children, such as:
-P	* I Fae, come i Capretti Bianchi (eterni festaioli), Rossore-d'Aurora (che cerca adorazione) e Zia Salice (che «protegge» gli innocenti)*
-P	I glasbren, splendidi spiriti degli alberi noti per ammaliare i mortali avvenenti
+P	Seren la Vegliarda ti ha raccontato innumerevoli storie di creature innaturali nel Bosco. Ultimamente, però, continua a tirare in ballo cose che rapiscono i bambini, come:
+P	* I Fae, come i Capretti Bianchi (eterni festaioli), Rossore-d'Aurora (che cerca adorazione) e Zia Salice (che «protegge» gli innocenti)
+P	* I glasbren, splendidi spiriti degli alberi noti per ammaliare i mortali avvenenti
 P	* Gli swyn, grossi serpenti con facce da scimmia, occhi ipnotici e voci ammalianti
 P	* I Fomoraij, di cui sussurra appena, antichi mali nascosti nella terra La vecchia
 PB
 P	Seren ha la parlantina lunga, e raramente racconta una storia due volte allo stesso modo, quindi vediamo quanto sei stata attenta. Tira +INT: con 10+ tieni 2 Storie; con 7-9, tieni 1 Storia.
-P	When you spend 1 Story and tell us the name of one of Seren's tales, ask the GM a question about one of the creatures described above. The GM will tell you something interesting, useful, and relevant, as revealed by the tale.
-P	On a 6-, hold 1 Story but when you spend it, the GM will tell you two versions of the story with conflicting information, only one of which is true.
+P	Quando spendi 1 Storia e ci dici il nome di uno dei racconti di Seren, fai al GM una domanda su una delle creature descritte sopra. Il GM ti dirà qualcosa di interessante, utile e pertinente, come rivelato dal racconto.
+P	Con 6-, tieni 1 Storia, ma quando la spendi il GM ti racconterà due versioni della storia con informazioni contrastanti, di cui solo una è vera.
 P	baci e abbracci – il tuo GM
 P	Per ulteriori indicazioni, vedi <b>Scrivere lettere d'amore</b> (pag. 568).
 PAGE	268
