@@ -45,8 +45,7 @@ PAGE	349
 H2	Running sites
 P	When the PCs explore a site, you run the game normally and follow the <b>core loop</b> (page 169). You play out a series of scenes and situations, as always. They just happen to take place in that site.
 H2	Considerations
-P	As PCs explore sites—as you establish the situation, make GM moves, and resolve
-P	PC actions—keep in mind:
+P	As PCs explore sites—as you establish the situation, make GM moves, and resolve PC actions—keep in mind:
 H3	The physical space
 P	Its rough dimensions, its construction, the height of ceilings and width of passages, obstacles, footing, slopes, different levels. You can use maps to help describe and clarify the site's layout and where things are.
 H3	Light sources
@@ -110,10 +109,8 @@ B	Portray followers and other NPCs
 B	Maybe Keep Company
 HR
 P	<i>The PCs and Andras are at Three Coven</i> <i>Lake, atop the dam and surveying the</i> <i>sprawling ruins. I present a choice of paths:</i> <i>climb the bluff to the north and check out the</i> <i>rooms carved into it, or explore the gentler</i> <i>southern shore. They stay clear of the water</i> <i>and go north.</i>
-P	<i>I haven't had time to fully prep, so, I skim the</i> <i>Three Coven Lake entry. There's lots of terrain and smaller sites I could pick from, but</i> <i>that's not inherently interesting. I decide to</i> <i>introduce a danger, person, or faction. I roll</i> <i>an</i> encounter <i>(</i>Book II<i>, page 443). I get a</i>
-P	<i>6 ("other entities") and then pick "Stone Lord</i> <i>constructs." I roll a</i> disposition <i>of "curious."</i>
-P	<i>I think a lithic servant is spying on the PCs</i> <i>(on behalf of some other entity?). I'm not</i> <i>sure where this encounter will occur, so I look</i> <i>at the</i> bluffs terrain <i>table (</i>Book II<i>, page</i>
-P	<i>441) and roll an "overhang" and "walkway/</i> <i>stairs… carved into the stone."</i>
+P	<i>I haven't had time to fully prep, so, I skim the</i> <i>Three Coven Lake entry. There's lots of terrain and smaller sites I could pick from, but</i> <i>that's not inherently interesting. I decide to</i> <i>introduce a danger, person, or faction. I roll</i> <i>an</i> encounter <i>(</i>Book II<i>, page 443). I get a</i> <i>6 ("other entities") and then pick "Stone Lord</i> <i>constructs." I roll a</i> disposition <i>of "curious."</i>
+P	<i>I think a lithic servant is spying on the PCs</i> <i>(on behalf of some other entity?). I'm not</i> <i>sure where this encounter will occur, so I look</i> <i>at the</i> bluffs terrain <i>table (</i>Book II<i>, page</i> <i>441) and roll an "overhang" and "walkway/</i> <i>stairs… carved into the stone."</i>
 P	<i>Okay, cool, but I think it'll take a bit of a hike</i> <i>to get there. They set a marching order, and I</i> <i>start transitioning to the scene. "So, you head</i> <i>up into the bluffs, climbing this crumbling,</i> <i>rock-strewn stairway. It's a slog, and Andras</i> <i>keeps wincing on his leg."</i>
 HR
 P	You might make a soft GM move, too. <b>Use</b> <b>up their resources</b> as they march ("Mark off another hour on your lamp oil"). <b>Hint</b> <b>at more than meets the eye</b> ("That's the third time you've seen that mark"). <b>Point</b> <b>to a looming danger</b> ("A bit later, you find these gouges, like from the talons of something really big").
@@ -144,8 +141,7 @@ P	<i>"So, what do you think? Do you want to</i> <i>head north and take those sta
 HR
 H3	Hint at more than meets the eye
 P	Think about something you want to reveal to the PCs, but that wouldn't be obvious.
-P	Then think about what telltale signs could point to it. Describe that. See what the PCs do. They'll often ask questions, Know
-P	Things, or Seek Insight—or all three!
+P	Then think about what telltale signs could point to it. Describe that. See what the PCs do. They'll often ask questions, Know Things, or Seek Insight—or all three!
 P	This move is a great way to telegraph a discovery—especially a <b>clue</b> (page 424) or an <b>opportunity</b> (page 428)—and to engage in environmental storytelling.
 HR
 P	<i>"While Vahid and Caradoc bicker about</i> <i>the rubble, Rhianna, you notice these</i> <i>smooth, curving patterns in the dirt.</i> <i>What do you do?"</i>
@@ -269,8 +265,7 @@ P	Consider the results in light of what you've already established. Envision the
 P	If you're creating the site on the fly, you can ask your players to roll the dice. Read the results out loud, or write them down and "Hmm" sagely, revealing them through play. Either way, take a short break to think through the rest of the process.
 HR
 P	<i>The swyn's lair is a Green Lord tomb,</i> <i>so I find the "Sites" section of the Green</i> <i>Lord entry. This is a "ruin," so I start</i>
-P	<i>there (</i>Book II<i>, page 214). The process</i>
-P	<i>has me roll or pick a Green Lord theme,</i> <i>and "tombs, mummification, constructed</i> <i>afterlives" is the obvious choice. I roll a 6</i> <i>for structure, "ziggurat/pyramid/dome"</i> <i>and the purpose is clearly a "tomb." I roll</i> <i>a 1 for architectural elements, "huge slabs</i> <i>of smooth stone…carved with scrollwork</i> <i>and bas relief." Because I want a Green</i> <i>Lord mummy to still be in there, I choose</i> <i>"buried, submerged, and/or overgrown,</i> <i>but mostly intact" for the site's condition.</i>
+P	<i>there (</i>Book II<i>, page 214). The process</i> <i>has me roll or pick a Green Lord theme,</i> <i>and "tombs, mummification, constructed</i> <i>afterlives" is the obvious choice. I roll a 6</i> <i>for structure, "ziggurat/pyramid/dome"</i> <i>and the purpose is clearly a "tomb." I roll</i> <i>a 1 for architectural elements, "huge slabs</i> <i>of smooth stone…carved with scrollwork</i> <i>and bas relief." Because I want a Green</i> <i>Lord mummy to still be in there, I choose</i> <i>"buried, submerged, and/or overgrown,</i> <i>but mostly intact" for the site's condition.</i>
 P	<i>The procedure then has me pick a Great</i> <i>Wood terrain, so I flip to that table and</i> <i>roll a 4, "clearing, meadow, sparse trees."</i> <i>It also says to populate it with lingering signs, artifacts, and dangers but I'll</i> <i>worry about that later.</i>
 P	<i>I ponder a bit and write down:</i>
 P	THE GREEN LORD'S TOMB
@@ -571,8 +566,7 @@ HR
 P	<i>I write up the great hall, starting with the</i> <i>pillars, the crinwin nests, and the stairs. I</i> <i>want to include an "unstable construction"</i> <i>hazard, telegraphing it with the collapsed</i> <i>pillar, the rubble, and the sagging ceiling.</i> <i>Then I prep the hazard as an impending</i> <i>doom and grim portents.</i>
 P	<i>I'm yet to decide where Pryder is. I know he's</i> <i>asleep in a burial niche, but where? I pick</i> <i>randomly, placing him between the mossy</i> <i>chamber and the great hall. I write up that</i> <i>hallway, with the crinwin who kidnapped</i> <i>Pryder jealously guarding him and some</i> <i>"trusted" crinwin spying on them.</i>
 P	<i>Speaking of crinwin: They get a second entry</i> <i>for the interior. I consider making a "crinwin</i> <i>encounter" table to reflect the weird stuff the</i> <i>crinwin get up to, but the crinwin are almost</i> <i>certainly going to be on alert when the PCs</i> <i>enter the tomb. Instead of a table, I write up</i> <i>some if/then tactics for them and a quick list</i> <i>of things they might be up to if caught unawares. I also add some details to other areas</i> <i>to reflect the crinwin's relationship to wasps,</i> <i>their obsessive hoarding, and their attempts</i> <i>to ape Sajra.</i>
-P	<i>Sajra also gets its own write-up. I realize</i> <i>that it might not be in the tomb when the</i> <i>PCs arrive, so I create a Die of Fate table for</i> <i>that. I start writing some if/then tactics, but</i>
-P	<i>Sajra is smart, mobile,</i> stealthy<i>,</i> cautious <i>and</i> magical<i>—there are too many options! I</i> <i>opt for a brief description of its priorities and</i> <i>likely tactics.</i>
+P	<i>Sajra also gets its own write-up. I realize</i> <i>that it might not be in the tomb when the</i> <i>PCs arrive, so I create a Die of Fate table for</i> <i>that. I start writing some if/then tactics, but</i> <i>Sajra is smart, mobile,</i> stealthy<i>,</i> cautious <i>and</i> magical<i>—there are too many options! I</i> <i>opt for a brief description of its priorities and</i> <i>likely tactics.</i>
 P	<i>I don't bother with a map or detailed writeup of the inner tomb just yet. I picture it as a</i> <i>fairly linear space largely separated from the</i> <i>main floor. I doubt the PCs will head in there</i> <i>this session. I'll improvise if they do.</i>
 PAGE	371
 H2	The Green Lord's Tomb

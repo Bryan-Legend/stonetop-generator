@@ -11,8 +11,7 @@ P	When you <b><i>gesture at an open flame with the scepter</i></b>, the flame fl
 P	When you <b><i>bleed a helpless, living creature and dip the Scepter's crystal in their still-warm blood</i></b>, mark 1 charge as the crystal soaks up the blood (to a maximum of 3):
 HR
 P	<b>INFLAME</b>
-P	When you <b><i>wield the Scepter and incite an individual to violent action</i></b>, you may erase 1 charge to roll
-P	+CHA: <b>on a 10+</b>, they must pick 1 from the list below; <b>on a 7-9</b>, they may choose to either lash out violently against a target of their choice or choose 1 from the list below.
+P	When you <b><i>wield the Scepter and incite an individual to violent action</i></b>, you may erase 1 charge to roll +CHA: <b>on a 10+</b>, they must pick 1 from the list below; <b>on a 7-9</b>, they may choose to either lash out violently against a target of their choice or choose 1 from the list below.
 B	Act as you suggest, without doubt or fear, dealing +1d4 damage while they do so
 B	Resist, but suffer painful burns (2d4 damage, ignores armor).
 P	When you <b><i>Inflame someone and they kill one or more living beings as a result</i></b>, mark 1:

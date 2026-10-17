@@ -102,8 +102,7 @@ PAGE	442
 P	1d12 stone lord site
 HR
 P	1 Sunken head of an enormous statue, coated in algae. Sings a haunting song each sunset.
-P	2 Vaulted chamber, littered with pieces of an obsidian mirror once
-P	30' across. Shards reflect brief vignettes of days long past.
+P	2 Vaulted chamber, littered with pieces of an obsidian mirror once 30' across. Shards reflect brief vignettes of days long past.
 P	3 Four-story "tower" carved out of a bluff. Crystals inside emanate light, awe, reverence.
 P	4 Bluff-sized building of seamless stone. Inside, a warren of unstable, bone-strewn apartments.
 P	5 Double doors, crudely barricaded.
@@ -218,8 +217,7 @@ P	See also: The <b>Blood-drunk Queen</b> (page 447).
 HR
 ICON	icons/danger.svg
 H3	Drowning
-P	When you <b><i>plunge beneath the water</i></b>, hold Breath equal to 1 + your CON. If you first took a deep breath, hold 2 extra
-P	Breath.
+P	When you <b><i>plunge beneath the water</i></b>, hold Breath equal to 1 + your CON. If you first took a deep breath, hold 2 extra Breath.
 P	When you <b><i>make a move while under water</i></b>, and that move involves a roll, choose 1 of the following after the move is resolved:
 B	Spend 1 Breath
 B	Mark a debility

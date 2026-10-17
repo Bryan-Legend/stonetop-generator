@@ -86,8 +86,7 @@ H2	Bookkeeping
 P	Pull out your notes, the steading playbook, your threat tracker—whatever tools you're using—and bring them up to date.
 P	<b>1) Update your threats</b>, following the procedure on page 298.
 P	<b>2) Update your NPCs</b>, wherever you track them. Cross off those who've died, update notes for existing ones, and add new NPCs from the previous session. See <b>Creating NPCs</b> (page 453) for guidance.
-P	<b>3) Update followers.</b> If you expect an NPC to start acting as a follower, then write them up using the steps on page
-P	474. Then review and update any existing followers, per page 480.
+P	<b>3) Update followers.</b> If you expect an NPC to start acting as a follower, then write them up using the steps on page 474. Then review and update any existing followers, per page 480.
 P	<b>4) Update the steading playbook</b> (page 154), to reflect changes to Fortunes, Surplus, debilities, resources, fortifications, and assets. Mark progress made towards improvements.
 P	<b>5) Review content guidelines</b> (page 66) and update them if needed, based on player discussions and your own needs.
 P	If you realize that the guidelines need to change, or that your group has been deviating from them, <b>check in</b> with the players (page 580) or make a note to do so.
@@ -163,12 +162,12 @@ P	<b>2) What you can't easily improvise</b>, like a map, a threat's impending do
 P	<b>3) What you</b> <i>want</i> <b>to prep</b>, because it brings you joy, reduces stress, or helps you meet a goal or grant a player's wish Specifically, resist the urge to prep a plot or every potential path the PCs might take.
 P	Prep what you need, what you can't improvise, and what helps you be your best. Then play to find out what happens.
 PAGE	580
+H2	Check-ins
 P	Play with any group long enough, and you're bound to have issues. Players who get on each other's nerves. Mismatched expectations. Disruptive behaviors. Hurt feelings. Miscommunications. Etc.
 P	When there's a player-level issue, talk to them about it. Don't let things fester, and for Tor's sake don't try to "fix" the issue with game mechanics or fictional "consequences" (punishments). There is no in-game solution for a player-level problem.
 P	<i>Stonetop</i> includes tools to facilitate this kind of communication. <b>Content guidelines</b> (page 66) help set expectations and boundaries. Reviewing them at the start of each session (see opposite page) keeps them top-of-mind. Calling "time out" gives you a way to course correct mid-session. And the End of Session move invites players to ask for things to change. (And if your group finds other communication or safety tools to be helpful, then by all means, use them!)
 P	Some issues, though, are best handled with a check-in: outside of a session, one-on-one or with only the relevant players. Maybe you do this in person, right after a session, or over a drink, or on a walk, or whatever. Maybe it's a call or an online chat. Pick an approach that feels comfortable for all involved.
 P	Encourage your players to initiate check-ins, too, with you and with each other. If they have a concern, the best thing to do is talk about it.
-H2	Check-ins
 P	If you suspect that a player is unhappy, then let them know what you've noticed and give them space to respond. "Hey, you seemed uncomfortable during that scene with Iwan. Did we cross a line there?" See where the conversation goes.
 P	Sometimes, it's unrelated to the game, or you misread the situation, or they just don't want to talk about it.
 P	When a player says that they're unhappy with something about the game, <i>listen</i>.
@@ -302,8 +301,7 @@ P	This approach can be fun and visceral, but it can also take up a lot of game-t
 P	<b>Time skip</b>. The new PC appears (or steps up) between sessions, during a stretch of downtime. Establish that they've been here (or been active) a while. Have the new PC do <b>Introductions</b> (page 56) more or less normally at the start of the next session (or between sessions, if that works for your group). Maybe write a <b>love letter</b> (page 568) to each existing PC that both covers events during the time skip and that establishes their connection to this new PC.
 H2	Getting them involved
 P	Once they're in play, make sure the new PC matters. Prepare hooks that touch on their background, instincts, or unresolved questions. Work their worldbuilding elements into the game. Give them a little more spotlight, and allow them to find their place in the game.
-P	Handled well, the introduction of a new
-P	PC is not disruptive. It deepens and adds new texture to your game.
+P	Handled well, the introduction of a new PC is not disruptive. It deepens and adds new texture to your game.
 PAGE	586
 H2	Conflict between PCs
 P	One of your players' agendas is to <b>portray</b> <b>a compelling character</b> (page 37), and such characters won't always agree. That's okay. Actually, that's great! Handled well, conflict between PCs can be high drama and some of the most memorable parts of the game.
@@ -367,9 +365,7 @@ P	Pivots like this can be hard. They make you rethink the game's core assumption
 HR
 P	<i>The PCs have left Stonetop to help allied</i> <i>Hillfolk clans in a war against their</i> <i>rivals. I write up a new steading playbook for the ally's war-camp, skip ahead</i> <i>a few months, and write love letters to</i> <i>establish the new situation. The next few</i> <i>seasons might involve stealth missions,</i> <i>attempts to secure resources, and pitched</i> <i>battles. When the war ends and the</i> <i>PCs head home, I'll write love letters to</i> <i>determine what happened while they</i> <i>were gone.</i>
 HR
-P	<i>The PCs have all died trying to stop the</i> <i>release of</i> <b><i>Y'aaw'kara</i></b> <i>(</i>Book II<i>, page</i>
-P	<i>421). A new ice age is unleashed and</i> <i>the Howling Curse plagues the land. We</i> <i>decide to skip ahead a decade or so and</i> <i>start fresh with all new PCs, and discuss</i> <i>how Stonetop has adapted to the harsh</i> <i>new climate, updating its resources and</i> <i>potential improvements accordingly.</i> <i>I rewrite the Seasons Change move,</i> <i>update the inventory inserts and gear</i> <i>lists, and give everyone a custom insert</i> <i>for tracking the</i> <b><i>Howling Curse</i></b> <i>(</i>Book
-P	II<i>, page 492).</i>
+P	<i>The PCs have all died trying to stop the</i> <i>release of</i> <b><i>Y'aaw'kara</i></b> <i>(</i>Book II<i>, page</i> <i>421). A new ice age is unleashed and</i> <i>the Howling Curse plagues the land. We</i> <i>decide to skip ahead a decade or so and</i> <i>start fresh with all new PCs, and discuss</i> <i>how Stonetop has adapted to the harsh</i> <i>new climate, updating its resources and</i> <i>potential improvements accordingly.</i> <i>I rewrite the Seasons Change move,</i> <i>update the inventory inserts and gear</i> <i>lists, and give everyone a custom insert</i> <i>for tracking the</i> <b><i>Howling Curse</i></b> <i>(</i>Book II<i>, page 492).</i>
 HR
 P	<i>The PCs have been exiled from Stonetop</i> <i>and have taken up lives as wandering</i> <i>adventurers. The steading playbook will</i> <i>no longer be relevant to them; most of</i> <i>the Homefront moves no longer apply,</i> <i>or would be much harder to trigger, so I</i> <i>rewrite some of the questions in the End</i> <i>of Session move, and update Level Up to</i> <i>require "a quiet stretch of downtime," instead of "a quiet stretch at home." All in</i> <i>all, the game will now play out more like</i> <i>a traditional fantasy-adventure RPG.</i>
 HR
@@ -404,8 +400,7 @@ P	If you have any of your own wishes that haven't been mentioned, share those no
 P	Open the floor for discussion. Let folks ask questions, make suggestions, endorse other folk's wishes, and reconsider their own. If your players wish for conflicting things, talk it over and come to a compromise.
 P	If they wish for something infeasible in the time you have, try to identify what is feasible instead.
 P	Prioritize. Everyone (including you) can pick one "must-have" item, and up to two "important" items. Give folks the chance to strike off items they added earlier that they don't actually care about. Everything else is low priority, a "nice to have."
-P	To be clear: this is a wish list, not a list of promises. You're all agreeing to try and fit these things in the game, but there's no guarantee how exactly they'll play out when that happens. "Deal with Brennan
-P	& the trade embargo" just means a chance to tie off those threads. Hopefully the PCs will succeed. But they might not!
+P	To be clear: this is a wish list, not a list of promises. You're all agreeing to try and fit these things in the game, but there's no guarantee how exactly they'll play out when that happens. "Deal with Brennan & the trade embargo" just means a chance to tie off those threads. Hopefully the PCs will succeed. But they might not!
 H2	Driving toward resolution
 P	From now on, push play towards those must-have and important wishes. Work them into your prep. Keep the wish list handy as a reference during play, and get to the "nice to have" wishes as you can.
 P	Make use of techniques for <b>increasing the</b> <b>pace</b> (page 582). Skip over the familiar.

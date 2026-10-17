@@ -57,8 +57,7 @@ C	You risk drawing the attention of the suarachan (except in winter)
 HR
 ICON	icons/person.svg
 H3	Fen-walker
-P	<i>Fen-wise</i>, <i>cautious</i>, <i>stealthy</i>, <i>observant</i>
-P	(and see below)
+P	<i>Fen-wise</i>, <i>cautious</i>, <i>stealthy</i>, <i>observant</i> (and see below)
 P	<b>HP</b> 8; <b>Armor</b> 1 (leather cuirass)
 P	<b>Damage</b> knife d8 (<i>hand</i>), sling d6 (<i>near</i>, <i>reload</i>)
 P	• Spot/avoid a hidden hazard

@@ -60,8 +60,7 @@ P	Holidays and celebrations. Myths and legends. Etc.
 P	There's a balance to strike, of course. Focus on stuff your group cares about. But don't assume that mundane stuff is unimportant.
 P	<b>Portray a</b> <b><i>rich</i></b> <b>and mysterious world</b>, not just a mysterious one.
 H3	Exploit the setting guide
-P	The Setting Overview handout and the <b>Village of Stonetop</b> entry (<i>Book II</i>, page
-P	12) provide plenty of details that can help bring the community to life.
+P	The Setting Overview handout and the <b>Village of Stonetop</b> entry (<i>Book II</i>, page 12) provide plenty of details that can help bring the community to life.
 P	When you frame a homefront scene, skim <b>the Impressions section</b>. Pick one or two and incorporate them into the scene. It's spring? Set the scene in the fields, planting beans, the PCs coated in cold wet mud. A PC visits their sibling? Mention the smell of fat rendering on the hearth, the rushlights hanging up to dry. Two PCs want a private moment? Frame a scene at night, with one of them manning a watchtower and the other one stopping by.
 P	<b>Extrapolate from what's established</b>, especially with things that strike you and the players as odd or anachronistic. The villagers don't fell living trees from the Great Wood. How does that affect construction and tools? Do houses have doors? Where do folks get wood for spears, bows, and arrows? They can't <i>fell</i> trees, but can they coppice them? Decide for yourself or (better yet) ask the PCs!
 P	<b>It's okay to change or ignore things</b>. <i>Exploit</i> the setting guide, don't feel constrained by it. With that said, think about what you're changing and what ripple effects that change might have. Little details (like swapping Stonetop's whisky for mead) are safer to change than core assumptions (like the village's egalitarian culture).
@@ -142,8 +141,7 @@ P	<b>How long were the PCs gone?</b> What have folks been up to or dealing with?
 P	<b>If anyone on the expedition was wounded</b> <b>or didn't make it home</b>, who will be most upset or affected by that?
 PAGE	491
 P	<b>What sort of work has been going on?</b>
-P	Refer to the Stonetop <b>impressions</b> (<i>Book</i>
-P	<i>II</i>, page 14) for ideas.
+P	Refer to the Stonetop <b>impressions</b> (<i>Book</i> <i>II</i>, page 14) for ideas.
 P	<b>Did the PCs Requisition any town assets?</b>
 P	How did the lack of those assets at home affect people's lives (if at all)?
 P	Before they left, <b>did the PCs trigger any</b> <b>moves that took time to resolve</b> (like Pull Together)? Resolve them now and think about how you'll show the results, or make note of when and how you'll resolve them later.
@@ -296,8 +294,7 @@ E	a player's move prompts you to present a threat, an opportunity, or a requirem
 E	it's time to make a GM move, and you <b>announce trouble</b> or <b>offer an opportunity</b> or otherwise drop a hook, and the PCs act on it; or
 E	a player rolls a 6- or knowingly invites trouble, and your hard GM move manifests as a crisis or kicks off an expedition.
 P	Don't panic. <b>Run the game.</b> Frame scenes. Manage the spotlight. Follow the core loop. Zoom out into loose play and identify the next scene or situation. <b>Ask</b> <b>questions and build on the answers.</b> Take a quick break if needed to collect your thoughts. <b>Respect your prep</b>, especially your threats. <b>Exploit the setting guide</b>, use it to improvise.
-P	If you and the players want to cut to the action, then frame the next scene with PCs <i>already on the adventure</i>. Then, ask questions to establish what led them here and what's already happened. Have them
-P	Outfit retroactively, and go!
+P	If you and the players want to cut to the action, then frame the next scene with PCs <i>already on the adventure</i>. Then, ask questions to establish what led them here and what's already happened. Have them Outfit retroactively, and go!
 P	If a spontaneous adventure doesn't wrap up by the session's end, cool. Now you have time to prep! See "<b>Between sessions"</b> on page 575).
 HR
 P	<i>Vahid and Caradoc surprise me with</i> <i>their trip to the Ruined Tower, but no</i> <i>problem. They Chart a Course, and I use</i> <i>that move and</i> Book II<i>'s entry for the</i> <i>Flats to plot out the trip. They head out,</i> <i>and I use impressions and questions from</i> Book II<i>, like, "What do wise travelers</i> <i>do to keep pack drakes away?" They arrive and we take a quick break. I look up</i> <i>the Ruined Tower, make some notes, and</i> <i>run the rest of the adventure from there.</i>
@@ -320,8 +317,7 @@ HR
 P	<i>When the Seasons Changed to autumn</i> <i>and Vahid rolled a 7, that meant that a</i> <i>threat would make itself known or get</i> <i>worse. They made the roll at the end of a</i> <i>session, so I spent time prepping a crisis:</i> <i>the crinwin raid on the village.</i>
 P	<i>That Seasons Change result also meant</i> <i>they got a seasonal gain. They picked a</i> <i>"trade opportunity," which I think will</i> <i>lead to an expedition to Gordin's Delve.</i> <i>But the coming crinwin attack will take</i> <i>up most (if not all) of the next session.</i> <i>So, all I do is prep the hook—Ulna, that</i> <i>merchant for Marshedge, will come back</i> <i>through Stonetop with news that the</i> <i>Delve is desperate for food.</i>
 HR
-P	For example, if a player rolls a 7 to Pull
-P	Together (building a palisade), and picks a "cost, requirement, or challenge," you could decide that it's just a dispute among the workers. But if the group is antsy for adventure, you could have the foreman wander off into the Great Wood.
+P	For example, if a player rolls a 7 to Pull Together (building a palisade), and picks a "cost, requirement, or challenge," you could decide that it's just a dispute among the workers. But if the group is antsy for adventure, you could have the foreman wander off into the Great Wood.
 P	Likewise, if your group wants downtime to focus on improvements, but the Seasons Change says a threat presents itself, you can make the threat not especially urgent or actionable. <b>Let things</b> <b>breathe</b>, remember?
 PAGE	502
 H2	moves
@@ -432,8 +428,7 @@ PAGE	507
 H3	Play them against each other
 P	Set up a triangle between two PCs and an NPC. Have the smith ask the Judge to do something about the Fox. Have the Seeker's wife tell the Blessed what the Seeker is up to. Have the midwife gossip about the Heavy with the Fox.
 P	Or, point out one PC's questionable actions to another PC, and ask what they think or do about it. Give them a chance to interfere (or Interfere) with each other.
-P	As a hard move, maybe have an NPC make an ultimatum about a PC. Or pick that moment for an NPC to betray one
-P	PC's trust to the others.
+P	As a hard move, maybe have an NPC make an ultimatum about a PC. Or pick that moment for an NPC to betray one PC's trust to the others.
 HR
 P	<i>"Blodwen… I know you fancy him. No,</i> <i>stop, I don't mind. I mean, of course I</i> <i>mind a little, but I made my choice. Just,</i> <i>some advice. Tell Caradoc how you feel.</i> <i>That boy is many things, but observant</i> <i>is not one of them."</i>
 HR
@@ -444,9 +439,7 @@ P	Just to be clear, you can and should use your standard GM moves during homefro
 P	Use your threat moves, too! If there's a plague (an <i>affliction</i>), maybe have it <b>worsen or quicken</b> ("The sick house is soon past capacity and more folks fall ill every day"). If the Stone has become a <i>MacGuffin</i>, maybe have it <b>draw attention to itself</b> ("It glows for a few nights, until it shoots like a dozen lightning bolts into the clear summer sky… probably visible all the way up in Gordin's Delve, maybe even in Barrier Pass").
 PAGE	508
 H2	The steading playbook
-P	The village of Stonetop gets its own playbook, reproduced starting on page
-P	154. You'll use this document to track
-P	Stonetop's:
+P	The village of Stonetop gets its own playbook, reproduced starting on page 154. You'll use this document to track Stonetop's:
 B	Stats and tags
 B	Resources and fortifications
 B	Current debilities
@@ -464,8 +457,7 @@ P	When Fortunes are high, people are (generally) happy and generous with each ot
 P	The future seems bright.
 P	When Fortunes are low, people are (generally) grumpy or despairing. They talk of dark times ahead. They start looking to themselves and their own rather than the community at large.
 P	Fortunes go up when the PCs <b>Return</b> <b>Triumphant</b> (page 339) or complete certain improvements (page 514). They go down when the village <b>Meets with</b> <b>Disaster</b> (page 532). Fortunes might go down when the PCs <b>Muster</b> (page 534), <b>Requisition</b> (page 308), or have the village <b>Pull Together</b> (page 536).
-P	Players roll +Fortunes to <b>Requisition</b> (page 308). More importantly, they roll
-P	+Fortunes when the <b>Seasons Change</b> (page 517) to see what the season has in store for the village and the PCs.
+P	Players roll +Fortunes to <b>Requisition</b> (page 308). More importantly, they roll +Fortunes when the <b>Seasons Change</b> (page 517) to see what the season has in store for the village and the PCs.
 P	After the players roll for Seasons Change, Fortunes reset to +1 (or +0 if the steading is <i>malcontent</i>). This means that changes to Fortunes themselves are passing, applying to only the next season.
 PAGE	509
 H2	Surplus
@@ -485,8 +477,7 @@ P	<b><i>Town</i></b> (500-1500 people): Consume 2d6
 P	+Population Surplus each winter; Muster, Pull Together, and Trade & Barter with advantage
 P	<b><i>City</i></b> (2,500+ people): Tracking Surplus is out of scope for such a big place; Muster, Pull Together, and Trade & Barter with advantage
 PB
-P	Stonetop starts as a <i>village</i>, home to about
-P	300 souls. If things go very poorly in play, it could shrink and become a <i>hamlet</i>. If the PCs complete enough improvements, it can become a <i>town</i>. Becoming a <i>city</i> is beyond the default scope of the game.
+P	Stonetop starts as a <i>village</i>, home to about 300 souls. If things go very poorly in play, it could shrink and become a <i>hamlet</i>. If the PCs complete enough improvements, it can become a <i>town</i>. Becoming a <i>city</i> is beyond the default scope of the game.
 PAGE	510
 H2	Population
 P	The steading's <b>Population</b> reflects the number of able bodies living there, relative to its Size.
@@ -513,8 +504,7 @@ B	How many uses they get from ◇ <b>supplies</b> (page 89)
 B	How many HP they regain when they <b>Recover</b> in the field (page 328)
 B	The <b><i>x</i></b> <b>piercing</b> value (page 94) of their iron weapons
 H3	Resources
-P	A steading's Prosperity is closely tied to its <b>resources</b>. On the steading playbook, these are listed to the right of the current
-P	Prosperity. At the start of play, Stonetop's resources include:
+P	A steading's Prosperity is closely tied to its <b>resources</b>. On the steading playbook, these are listed to the right of the current Prosperity. At the start of play, Stonetop's resources include:
 B	Farming (beans, potatoes, oats, and barley)
 B	Hunting/trapping (fur, meat, hides)
 B	Distilling (whisky)
@@ -535,8 +525,7 @@ P	In Stonetop, every able-bodied adult is expected to train with the militia, ma
 PAGE	513
 P	To increase Defenses, the PCs should complete the Weapons of War or the Well-trained Militia improvements. Other improvements provide a bonus in certain circumstances. If the PCs want to raise Defenses even higher, or raise it via some other means, then they can <b>Make a Plan</b> (page 530).
 H3	Fortifications
-P	Each steading has a list of fortifications and other resources that contribute to its Defenses. On the steading playbook, these are listed to the right of the current
-P	Defenses. At the start of play, Stonetop's fortifications (etc.) include:
+P	Each steading has a list of fortifications and other resources that contribute to its Defenses. On the steading playbook, these are listed to the right of the current Defenses. At the start of play, Stonetop's fortifications (etc.) include:
 B	The village militia
 B	The Ringwall (low, stone)
 B	A trio of watchtowers
@@ -561,8 +550,7 @@ P	Some improvements require individuals with specific skills, like "an <i>except
 P	Otherwise, they'll either need to recruit someone from abroad or wait for such a person to move to town.
 P	When an improvement requires Surplus or other materiel, it's used up or otherwise committed to the improvement. The Palisade improvement requires "lots of timber… (Value 3)." You can't use that timber for other projects without dismantling some or all of the palisade!
 P	Many improvements involve <b>Pulling</b>
-P	<b>Together</b> one or more times. See page
-P	536 for details.
+P	<b>Together</b> one or more times. See page 536 for details.
 H3	Benefits
 P	Once the PCs meet all the requirements for an improvement, the steading gains the listed benefit(s).
 P	Many improvements include a benefit of "increase Fortunes by 1." This is a one-time gain; when <b>Seasons Change</b> and Fortunes reset (page 517), this benefit no longer matters.
@@ -571,8 +559,7 @@ P	Other improvements provide new player moves, triggered by a particular action 
 P	The benefits for each improvement are mostly mechanical, but don't forget about the fictional impact! If the PCs unlock the Aurochs Hunting improvement by cooperating with the Hillfolk, then they've not only gained a new move and resource, they've improved their relationship with the Hillfolk!
 H3	Losing improvements
 P	Once an improvement is completed, assume that basic upkeep is done by the community as a whole. For example, once the Palisade is built, assume that the steading keeps it in good repair.
-P	Some improvements have additional, ongoing costs, like the requirement to spend
-P	1 Surplus every spring to maintain Weapons of War. If the PCs fail to pay that cost, they lose the improvement. Make a Plan with the PCs if they want to get it back.
+P	Some improvements have additional, ongoing costs, like the requirement to spend 1 Surplus every spring to maintain Weapons of War. If the PCs fail to pay that cost, they lose the improvement. Make a Plan with the PCs if they want to get it back.
 PAGE	515
 P	You can and should threaten or harm improvements the same way you can threaten anything else the PCs care about. If they don't do something to save it, then it will be lost and they'll lose its benefits. Again, Make a Plan with the PCs if they want to get it back.
 H3	Other improvements
@@ -626,20 +613,17 @@ P	When <b><i>autumn falls and the land</i></b> <b><i>is ripe for harvest</i></b>
 P	+Fortunes: <b>on a 10+</b>, pick 1 seasonal gain; <b>on a 7-9</b>, pick 1 seasonal gain, but a threat to the steading makes itself known or gets worse; <b>on a 6</b>-, threats abound (and don't mark XP).
 P	Whatever the result, reset Fortunes to +1.
 P	When <b><i>the harvest is complete</i></b>, roll 1d4; the steading generates that much Surplus.
-P	When <b><i>winter grips the</i></b> <b><i>land</i></b>, whoever is weariest rolls
-P	1d4+Population (min 0); the steading consumes that much Surplus. If there's not enough, reduce Surplus to 0, reduce Fortunes by 1, and pick 1:
+P	When <b><i>winter grips the</i></b> <b><i>land</i></b>, whoever is weariest rolls 1d4+Population (min 0); the steading consumes that much Surplus. If there's not enough, reduce Surplus to 0, reduce Fortunes by 1, and pick 1:
 B	Reduce Population by 1 (min -1) due to death, decripitude, and departure
 B	An important resource (one of the horses, the cistern, etc.) is lost or not maintained
 B	An important NPC dies, their role unfilled
 B	Your PC dies, leaves, or retires from play
-P	Then, roll +Fortunes: <b>on a 10+</b>, the winter is relatively mild, and each player can name a local NPC with whom their relationship improves at least a little (work together to figure out how); <b>on a 7-9</b>, the steading must consume additional
-P	Surplus equal to 1d4+Population before winter ends or suffer the consequences as above; <b>on a 6-</b>, as a 7-9, but also threats abound (and don't mark XP).
+P	Then, roll +Fortunes: <b>on a 10+</b>, the winter is relatively mild, and each player can name a local NPC with whom their relationship improves at least a little (work together to figure out how); <b>on a 7-9</b>, the steading must consume additional Surplus equal to 1d4+Population before winter ends or suffer the consequences as above; <b>on a 6-</b>, as a 7-9, but also threats abound (and don't mark XP).
 P	Whatever the result, reset Fortunes to +1.
 PAGE	518
 H3	Winter
 P	In winter, the village consumes 1d4 +
-P	Population Surplus. If Stonetop has shrunk to a <i>hamlet</i>, it consumes only 1d2
-P	+ Population. If it has grown to a <i>town</i>, it consumes 2d6 + Population. If there's not enough, then Surplus drops to 0, the village Meets with Disaster, and the player picks a consequence.
+P	Population Surplus. If Stonetop has shrunk to a <i>hamlet</i>, it consumes only 1d2 + Population. If it has grown to a <i>town</i>, it consumes 2d6 + Population. If there's not enough, then Surplus drops to 0, the village Meets with Disaster, and the player picks a consequence.
 P	Reflect such consequences in the fiction.
 P	Name specific folks who die or leave or grow infirm. Play out the scene where the granary's roof falls in. Make it clear how the smith's death will impact the village.
 P	(Note: the village is <i>already</i> Meeting with Disaster; these consequences don't trigger it again.)
@@ -744,8 +728,7 @@ P	This move happens during downtime, when a PC dedicates time and effort to trai
 P	The times listed assume that the PC is devoting themselves to Bolstering, to the exclusion of other projects, expeditions, or even day-to-day responsibilities. It should be noticeable and kind of a big deal. You can let them Bolster part time, if you want, but it should then take the better part of a season to gain just 1 Preparation.
 P	Time spent Bolstering doesn't count towards other projects, and vice versa.
 P	When the Marshal runs drills to achieve the Well-trained Militia improvement, they're Pulling Together, not Bolstering.
-P	But if the steading already has the Well-trained Militia improvement, and the Marshal spends an extra week drilling folks on a tactic they've already learned, then they're
-P	Bolstering.
+P	But if the steading already has the Well-trained Militia improvement, and the Marshal spends an extra week drilling folks on a tactic they've already learned, then they're Bolstering.
 P	The player has to describe how they're Bolstering. Clarify exactly what they're preparing for. If you think their efforts are unequal to the task, push back and <b>tell</b> <b>them the requirements</b>. A week spent seeking out tales from the elders might be a good way to Bolster for a trip among the Fae, but it won't help them improve the autumn harvest.
 P	Large-scale preparations require more than just the PCs' time and efforts. If the PCs want to Bolster for a coming Seasons Change roll or an upcoming battle, they need to involve the village as a whole. They might need to Persuade key NPCs, Pull Together, and/or spend 1 or more Surplus or similar resources.
 P	Once you and the player have settled on how they're Bolstering and for what, discuss the impacts of doing so. How long do they plan to spend? What work goes undone? Who do they ask/expect to cover for them?
@@ -817,16 +800,12 @@ P	Like any move, if you do it, you have to do it. Players can't delay Leveling U
 P	Players can pick any move from their playbook whose requirements they meet.
 P	They don't need to ask permission or justify their choice. If their pick asserts a fictional change (like the Seeker taking Initiate of Secret Arts and getting a sacred pouch), ask the player what that looks like and how that happened—not as a challenge, but to clarify the fiction.
 P	If a player wants a move from another playbook, but doesn't have an option that explicitly allows it, they're welcome to pitch the idea to the table. If everyone (not just you) agrees, okay. But consider whether the choice makes sense for their character, whether it creates a weird rules interaction, whether it infringes on another PC's niche, etc.
-P	A move that requires a specific playbook is never available to other playbooks. No one but the Heavy can take Dangerous, and no one but the Would-be Hero can have
-P	Potential for Greatness.
+P	A move that requires a specific playbook is never available to other playbooks. No one but the Heavy can take Dangerous, and no one but the Would-be Hero can have Potential for Greatness.
 PAGE	529
 P	Players can take a move that requires a certain level as they achieve that level. For example, they can take Superior Stat when they Level Up to level 6.
-P	If a move <i>replaces</i> a different move, then it
-P	requires the one it replaces. If a player takes such a move, they lose the original move
-P	and any benefits it conferred.
+P	If a move <i>replaces</i> a different move, then it requires the one it replaces. If a player takes such a move, they lose the original move and any benefits it conferred.
 P	There's no maximum level, but you might find that players start to run out of playbook moves that they're interested in taking. If that happens, encourage them to browse unused playbooks for moves that might make sense, and have them pitch them to the group. Or, if you have the time and inclination, create a playbook <b>insert</b> (page 57) that expands their list of potential playbook moves.
-P	The last step is for players to review their
-P	Instinct and Appearance, and to change them if they no longer feel right. To be clear, players can change these things at pretty much any time it makes sense for them to do so. The Level Up move just provides a formal reminder to consider doing so.
+P	The last step is for players to review their Instinct and Appearance, and to change them if they no longer feel right. To be clear, players can change these things at pretty much any time it makes sense for them to do so. The Level Up move just provides a formal reminder to consider doing so.
 HR
 P	<i>After killing the hagr and rescuing Rhianna's crew, the PCs stagger back to the</i> <i>logging camp. They set a watch order and</i> <i>settle in, and we end the session.</i>
 P	<i>Caradoc is currently level 5. After the</i> <i>End of Session move, he's got 16 XP—</i> <i>just enough to Level Up. "Yeah, but," I</i> <i>say, "this isn't home and it certainly isn't</i> <i>a stretch of downtime. You'll need to get</i> <i>back to Stonetop before you Level Up."</i>
@@ -1017,9 +996,10 @@ P	<b>On a 6- to Trade & Barter</b>, you do not get to make a hard GM move (and t
 P	When the PCs visit another community, the Trade & Barter move still applies but what's commonly available changes. In Gordin's Delve, for example, bronze and steel weapons are common, as are weapons of war. But among the Hillfolk, even iron-tipped spears and arrows are special items, requiring a Trade & Barter roll to acquire or sell them.
 P	When the PCs roll to Trade & Barter in another steading, they roll with that community's Prosperity. If the steading is a <i>hamlet</i>, they roll with disadvantage. If the steading is a <i>town</i> or a <i>city</i>, they roll with advantage.
 PAGE	542
+H2	Value and coins
 P	The world of Stonetop has no central government, no common currency, and no standard exchange rates. So, what constitutes a fair trade?
 P	Any given item has a Value from 0 to 4 (or rarely higher). Values are not linear; they are tiers. A single Value 2 item is worth about a dozen Value 1 items. Three individual Value 1 items don't add up to Value 3; they're just three Value 1 items.
-P	trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
+P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1 trade. It might be 2- or even 3-to-1 when trading a common, local resource for imported, desirable, or specialized goods (or vice versa).
 P	Exchange rates are anything but standard, but...
 P	<b>A Value 0 item</b> is generally worth:
 B	A ◇ purse of copper coins
@@ -1041,8 +1021,6 @@ B	A year (or so) of unskilled labor
 B	A season (or so) of skilled labor
 B	A cartload of common trade goods*
 B	An item of luxury or status (a gold ring, an artful silver torc, a gemstone, etc.)
-H2	Value and coins
-P	"A fair price" means trading things with the same Value, but it might not be a 1-to-1
 P	<b>A Value 3 item</b> is generally worth:
 B	A handful of gold coins
 B	A year (or so) of skilled labor
@@ -1108,8 +1086,7 @@ B	GM moves you'd like to make
 PB
 P	Put these items in roughly the order you expect them to come up, grouped however makes sense to you. Put tick boxes next to each item. During play, tick off the items as you introduce them. But stay loose! You might not get to them all, and some might cease to be relevant as the session plays out.
 P	<b>For any scenes or situations you expect</b> <b>to frame</b>, write down the details you think will help during play: when and where, activities, impressions, questions, GM moves, lines of dialogue, etc.
-P	<b>Think about how you can involve PCs in</b> <b>each others' scenes</b>, or create interesting
-P	PC-PC-NPC triangles.
+P	<b>Think about how you can involve PCs in</b> <b>each others' scenes</b>, or create interesting PC-PC-NPC triangles.
 P	<b>If you plan to introduce any new NPCs</b>, create them now to whatever level of detail you find valuable (page 453).
 P	<b>If you expect the next session to feature</b> <b>any established NPCs</b>, review your notes on them or just think about how you portray them. Think about how they'll act in the upcoming session. Add details to their description if needed, or change established details if it feels right. Maybe stat them up as <b>monsters</b> (page 391), as <b>threats</b> (page 282), and/or as <b>followers</b> (page 474).
 PAGE	546

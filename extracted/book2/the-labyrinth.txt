@@ -50,8 +50,7 @@ E	you are led by someone wise to the Labyrinth's ways, add +1;
 E	you are stumbling around blind, roll with disadvantage; and/or
 E	one of you has the Mental Map move (from the Ranger playbook), roll with advantage.
 P	<b>On a 10</b>+, you find your way to a portable light source, an exit from the Labyrinth, or a familiar path—GM's choice as to which;
-P	<b>on a 7-9</b>, you encounter <b>thraulgwyn</b> (page 247), a Forge Lord <b>ruin</b> (page 160), or an obstruction (page 244)—GM's choice, and afterwards you might need to make this move again; <b>on a 6-</b>, decide as a group whether you find yourselves in the <b>Deeps</b> (page 250), or stumble out of the Labyrinth days or weeks later, with all your debilities marked and only 1d8 HP remaining. If you choose the latter, each
-P	PC must pick 1:
+P	<b>on a 7-9</b>, you encounter <b>thraulgwyn</b> (page 247), a Forge Lord <b>ruin</b> (page 160), or an obstruction (page 244)—GM's choice, and afterwards you might need to make this move again; <b>on a 6-</b>, decide as a group whether you find yourselves in the <b>Deeps</b> (page 250), or stumble out of the Labyrinth days or weeks later, with all your debilities marked and only 1d8 HP remaining. If you choose the latter, each PC must pick 1:
 B	You have suffered a permanent injury or impairment—what and how?
 B	A follower of yours didn't make it out—who and why?
 B	You lost a treasured (or at least vital) item—what and how?

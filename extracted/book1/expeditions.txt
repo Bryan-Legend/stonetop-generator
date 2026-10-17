@@ -42,6 +42,7 @@ P	What do you do?" Sometimes, they'll fail to meet the requirements and call the
 P	Once they set out on the journey, you'll frame scenes and situations that show them traveling and approaching their destination.
 P	During some of those scenes, you'll make GM moves that introduce the challenges you outlined. You'll ask the players what they do, resolve the situation, and—assuming the PCs keep going—move on to the next one. See <b>Running the Journey</b> starting on page 312 for more guidance.
 PAGE	304
+H2	"… a corresponding amount of supplies"
 P	"Supplies" are something characters can have in their inventory. They represent stuff that the PCs might need or want on an expedition: food, water, whisky, bandages, salves, etc. The steading's Prosperity stat affects the quality and quantity of supplies available to the PCs; they add the steading's Prosperity to the number of uses they get out of each ◇ of supplies.
 P	Supplies get used when...
 E	they <b>Recover</b> (page 328);
@@ -49,7 +50,6 @@ E	they <b>Make Camp</b> (page 334);
 E	they <b>Have What They Need</b> (page 326) to produce additional <i>small</i> items; and
 E	you <b>use up their resources</b>, and supplies are what you use up.
 P	By default, each person in the party consumes 1 use of supplies per day. But if someone has and uses a mess kit ◇ (which requires water and fire) then 1 use of supplies can cover up to four people.
-H2	"… a corresponding amount of supplies"
 P	In other words, when they use a mess kit...
 E	a party of up to 4 will expend 1 use of supplies per day;
 E	a party of 5-8 will expend 2 uses of supplies per day; or
@@ -173,12 +173,12 @@ P	Your players will certainly come up with other things to do before leaving. Fo
 P	If they trigger a move that impacts their preparations or that would be quickly resolved, have them roll it before they leave.
 P	If they trigger a move that takes time to resolve, roll it when they return.
 PAGE	311
+H2	Flashbacks
 P	Sometimes, the PCs get into the field and a player realizes that they should have done something before they left.
 P	Let simple things go with, "Yeah, sure, of course." For more involved activities, consider playing it out as a flashback. Frame a scene in the past and play it out normally, with moves and rolls and such. When the scene is done, jump back to "now."
 P	The key thing about flashbacks is that they shouldn't contradict or nullify anything that's happened "on screen" already. For example, if the PCs have already gotten lost trying to follow some tracks, don't let them flashback to borrow a bloodhound.
 P	It's your call whether to allow a flashback, keeping your principles in mind.
 P	When in doubt, ask the table at large for their opinion.
-H2	Flashbacks
 HR
 P	<i>While out on the bear hunt, Blodwen</i> <i>realizes that she'd really like to have</i> <i>borrowed one of the horse's moves,</i> <i>"Sniff out danger on the wind." She</i> <i>asks if she could have done that.</i>
 P	<i>Blodwen can calm animals with a touch</i> <i>and they generally love her, but these</i> <i>horses are rather nervous, so this isn't</i> <i>a sure thing. I decide to do a flashback:</i> <i>"Okay… it's back this morning, before</i> <i>you all left. You're in the stable, the</i> <i>horses are still sleeping. Which one do</i> <i>you wake up, and how?"</i>
@@ -397,8 +397,7 @@ P	Usually: introduce a challenge by making a soft GM move. Ask the PCs what they
 P	The PCs might overcome the challenge quickly and easily or things might snowball into a steaming mess. Follow the core loop and <b>play to find out what happens</b>. When the situation is resolved, move on to the next one.
 P	If you introduce a challenge in response to a 6- on a PC move, then feel free to drop them right into the thick of it. If someone gets a 6- to <b>Forage</b> (page 336) and one of the challenges is "you risk getting lost," then you can just have them get lost as your hard move. You don't have to <i>threaten</i> them with getting lost, first. They're lost!
 P	Present each challenge only once. After the party deals with it, then tick that challenge off your list. Present a different challenge, or the next point of interest, or the next leg of travel, or have them arrive at their destination.
-P	With that said: a challenge that they've addressed could come back to haunt them if they make poor decisions or if the dice don't go their way. Yeah, they might have
-P	Struggled as One to handle the treacherous mire of Ferrier's Fen, but they're still in the fen! A 6- on a future roll could still send someone plunging into the water, and running off blindly into the mists is still a good way to get drowned.
+P	With that said: a challenge that they've addressed could come back to haunt them if they make poor decisions or if the dice don't go their way. Yeah, they might have Struggled as One to handle the treacherous mire of Ferrier's Fen, but they're still in the fen! A 6- on a future roll could still send someone plunging into the water, and running off blindly into the mists is still a good way to get drowned.
 PAGE	323
 HR
 P	<i>The PCs are en route to Three Coven Lake</i> <i>from Marshedge. Their current leg of travel</i> <i>has them following the Sruth into the Steplands. This seems like a good time to add a</i> <i>challenge: "the terrain is treacherous."</i>
@@ -429,6 +428,7 @@ P	If you want, let the Die of Fate guide your choices. For example, you could as
 P	Another way to use the Die of Fate is with preset results, based on the season. Here are some general tables that do just that.
 P	Use these as-is, or make your own for specific locales and specific seasons, informed by the most recent <b>Seasons Change</b> move (page 517).
 PAGE	325
+H2	Weather tables
 P	late winter/early spring
 HR
 P	1d6 weather
@@ -456,7 +456,7 @@ P	1 Cold, drenching rain and/or sleet
 P	2 Cold, windy, light rain or early snow
 P	3 Chilly, windy, clouds on the horizon; roll again later with disadvantage
 P	4-6 Crisp, breezy
-H2	Weather tables
+PB
 P	spring/early summer
 P	1d6 weather
 P	1 A heavy storm; high winds, hail, thunder, lightning
@@ -516,8 +516,7 @@ P	<i>"Well," says Rhianna, "It'd have to be something lightweight, enough to fil
 P	say things like "Wait, a clay pot? Didn't you tumble down a rocky slope earlier? I don't think anything fragile like that would have survived."
 PAGE	328
 P	<b>RECOVER</b>
-P	When you <b><i>take time to catch your</i></b> <b><i>breath and tend to what ails you</i></b>, expend 1 use of supplies and regain
-P	HP equal to 4+Prosperity. You can't gain this benefit again until you take more damage.
+P	When you <b><i>take time to catch your</i></b> <b><i>breath and tend to what ails you</i></b>, expend 1 use of supplies and regain HP equal to 4+Prosperity. You can't gain this benefit again until you take more damage.
 P	When you <b><i>tend to a debility or a problematic wound</i></b>, say how. The GM will either say that it's taken care of or tell you what else is required to do so.
 P	Characters will often need to Recover while on an expedition. This move is described in detail on page 246, in the <b>Harm & Healing</b> chapter.
 P	<b>STRUGGLE AS ONE</b>
@@ -547,8 +546,7 @@ P	<b>Put them in different spots at the same</b> <b>time</b>. "Blodwen, as twili
 P	<b>Pick one and put them in a spot</b>, ignoring the other 6- results for now. Resolve that spot. Then, <b>say how time has passed and</b> <b>put the next character in a different spot</b>.
 P	This is a great technique to demonstrate a really long and arduous trek, or one with multiple dangers. In this case, each 10+ can be used only once.
 P	If anyone finds themselves in a spot and there isn't a 10+ to save them (or the player who rolled 10+ can't come up with something plausible, or chooses not to), then zoom in and play out the scene from there. Ask the affected character what they do. Or, tell someone else what they see and ask <i>them</i> what they do. Maybe they just Defy Danger and roll a 10+ and it's all good. Maybe it snowballs into an absolute disaster. <b>Play to find out.</b>
-P	If the scene resolves and they've gotten themselves out of the spot, don't make them Struggle as One again against the same challenge. Just skip ahead to the end of the struggle. But if, in the process of resolving any 6- results, the situation changes such that they face a new or different danger, then it's okay to have them
-P	Struggle as One again.
+P	If the scene resolves and they've gotten themselves out of the spot, don't make them Struggle as One again against the same challenge. Just skip ahead to the end of the struggle. But if, in the process of resolving any 6- results, the situation changes such that they face a new or different danger, then it's okay to have them Struggle as One again.
 P	Regardless of the results, this move is a great time to ask questions. "Blodwen, have you ever been up this high before? How does the view make you feel?" "Vahid, as the path slipped out from under your feet and you started to fall, what went through your mind?" "Rhianna, after you've hauled Caradoc back up on the path, huffing and puffing… what do you say to him?"
 PAGE	330
 HR
@@ -665,8 +663,7 @@ P	<i>I ask Vahid what he does to keep awake,</i> <i>and what he's thinking about
 HR
 PAGE	336
 P	<b>FORAGE</b>
-P	When you <b><i>spend a few hours seeking</i></b> <b><i>food in the wild</i></b>, roll +WIS. In winter, you have disadvantage. <b>On a 10+</b>, pick
-P	2; <b>on a 7-9</b>, pick 1:
+P	When you <b><i>spend a few hours seeking</i></b> <b><i>food in the wild</i></b>, roll +WIS. In winter, you have disadvantage. <b>On a 10+</b>, pick 2; <b>on a 7-9</b>, pick 1:
 B	You acquire ◇ provisions (1d6 uses)
 B	You acquire an extra 1d6 uses of provisions
 B	You discover something interesting or useful

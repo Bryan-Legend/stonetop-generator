@@ -59,9 +59,7 @@ C	~20 able-bodied workers; and
 C	Pulling Together over 9-12 days (for travel and work)
 P	Trips traditionally take place in autumn, after the harvest is complete and only if there are no more-pressing needs in town.
 P	The <b>Palisade</b> steading improvement
-P	requires ~1,000 logs of good timber (Value
-P	3). A wagonload of timber (Value 2) contains ~40-50 logs, meaning you need
-P	~20-25 wagonloads. To gather that much timber:
+P	requires ~1,000 logs of good timber (Value 3). A wagonload of timber (Value 2) contains ~40-50 logs, meaning you need ~20-25 wagonloads. To gather that much timber:
 C	You need ~20 able-bodied workers, a wagon, and two horses working for the course of a season
 C	You must talk to a few town elders, and get their support
 C	You risk accidents and attacks
@@ -80,8 +78,7 @@ C	An extra wagon (Value 3) and extra horse or mule (Value 3) to haul timber to a
 C	Four seasons of operation, each generating a wagonload of timber (Value 2)
 P	When you <b><i>mark all the requirements</i></b>, add "Logging: timber, wood" to the resources list and increase Fortunes by 1.
 P	Henceforth, as long as the camp is in operation, the steading has a ready supply of timber for improvements and other projects, and it consumes 1 less Surplus than usual in winter.
-P	However, the logging camp consumes
-P	1 Surplus every summer or else it ceases operation.
+P	However, the logging camp consumes 1 Surplus every summer or else it ceases operation.
 H2	Terrain
 HR
 P	Pick 1 or combine 2, or have someone roll the Die of Fate (d12).

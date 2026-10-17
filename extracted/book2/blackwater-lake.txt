@@ -4,8 +4,7 @@ PAGE	48
 P	In the west of the <b>Steplands</b> (page 372), in the shadow of the <b>Huffel Peaks</b> (page 236), there is a large and placid lake. A low ridge surrounds it, and a wide, rocky shore. The Aberzh River flows in from the west. No rivers or streams flow out.
 P	The water is dark, and very deep, and very, very still. It is always cold but never freezes.
 P	There are no waves. The wind shuns the surface. No birds dare alight.
-P	This was once great Dulenn, city of Dark
-P	Waters, the slow-beating heart of the <b>Stone Lords</b>' vast domain (page 382).
+P	This was once great Dulenn, city of Dark Waters, the slow-beating heart of the <b>Stone Lords</b>' vast domain (page 382).
 P	Whereas <b>Teirstered</b> (page 438) was a city of towers and splendor, Dulenn was a solemn place. A quiet warren, carved and sung from bedrock with the beauty of a limestone cave.
 P	There was no lake, then. Not above the ground. But it was called "Dark Waters" for a reason. For seven deep tunnels led to seven mighty seals, each guarded by Stone Lord sentinels who sang a ceaseless lulling song. Behind those doors was a vast and lightless lake. A hole in the earth. A <b>Mouth of Daagon</b> (page 55).
 P	When the <b>Green Lords</b> (page 210) roused the Things Below to help them quell the <b>Fae</b> (page 94), the seals below Dulenn cracked. Daagon began to whisper.
@@ -166,8 +165,7 @@ PAGE	54
 HR
 ICON	icons/danger.svg
 H3	Drowning
-P	When you <b><i>plunge beneath the water</i></b>, hold Breath equal to 1 + your CON. If you first took a deep breath, hold 2 extra
-P	Breath.
+P	When you <b><i>plunge beneath the water</i></b>, hold Breath equal to 1 + your CON. If you first took a deep breath, hold 2 extra Breath.
 P	When you <b><i>make a move while under the</i></b> <b><i>Blackwater</i></b>, and that move involves a roll, choose 1 of the following after the move is resolved:
 B	Spend 1 Breath
 B	Mark a debility

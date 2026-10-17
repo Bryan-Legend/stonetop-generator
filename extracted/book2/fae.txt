@@ -8,8 +8,7 @@ P	Some Fae resented their servitude. Some found loopholes in the promises and oa
 P	An uprising began. Rebels gutted tombs, burned plantations, put their masters to the spear. Gangs of free Fae roved the Great Wood, burning, liberating, recruiting. Gangs became armies.
 P	The Green Lords grew desperate. They called on the <b>Things Below</b> (page 412), corrupted themselves with unholy power.
 P	They bred living weapons, hunted down the rebels, and took terrible vengeance.
-P	The uprising nearly failed, but the Green Lords had drawn the ire of their fellow
-P	Makers. The <b>Stone Lords</b> (page 382), in particular, were horrified by the Green Lords' corruption. They worked a terrible spell to shatter the heart of the Green Lord's domain, turning it into the ruined bog that today we call Ferrier's Fen. Then they allied with the Fae, and waged war against the Green Lords who survived.
+P	The uprising nearly failed, but the Green Lords had drawn the ire of their fellow Makers. The <b>Stone Lords</b> (page 382), in particular, were horrified by the Green Lords' corruption. They worked a terrible spell to shatter the heart of the Green Lord's domain, turning it into the ruined bog that today we call Ferrier's Fen. Then they allied with the Fae, and waged war against the Green Lords who survived.
 P	After the siege of <b>Vor Svetelik</b> (page 468), the Fae found themselves adrift and bereft of purpose. Many were no longer bound by oath or obligation. Ringleaders bickered and squabbled. Factions formed.
 P	Armies disbanded. And the Fae became the fractured people they are today.
 PAGE	95
@@ -84,12 +83,9 @@ P	Mix, match, and riff on words related to plants and beasts and rocks, features
 P	Some simple names: Acorn, Cobweb, Hob, Jackdaw, Kettle, Lark, Moth, Quills, Rill, Robin, Stewpot, Trillium, Uncle Whiskers, Whistler, Wobbles, Yellowtail
 PB
 P	Some whimsical names: Bellweather, Bitterlips, Moonbeam, Peasebottom, Poppy o' Twilight, Rainpetal, Stagthorn, Thistledust, Whiteoak, Yellow Britches
-P	Some ominous names: Bonekettle, Father
-P	Longfingers, Grinning Nel, the Hangman, the King of Dirges, Old Sorrows, the Pale Sisters, Stonetooth, the Weeping Rose Some grandiose names: Dawnwhisper, Fireblossom, Breath of Thunder, Hare
-P	Starblade, the Midnight Mare, Rain Upon the Valley, Silverstag, the Storm King
+P	Some ominous names: Bonekettle, Father Longfingers, Grinning Nel, the Hangman, the King of Dirges, Old Sorrows, the Pale Sisters, Stonetooth, the Weeping Rose Some grandiose names: Dawnwhisper, Fireblossom, Breath of Thunder, Hare Starblade, the Midnight Mare, Rain Upon the Valley, Silverstag, the Storm King
 PB
-P	Some Fae might go by many names, or change their names over time. If a given
-P	Fae is known to the locals, consider what they call it in their local tongue. A Fae named Moonbeam, for example, might be called "Pelydrlloer" in Stonetop or "Mondstrohl" by the Manmarchers.
+P	Some Fae might go by many names, or change their names over time. If a given Fae is known to the locals, consider what they call it in their local tongue. A Fae named Moonbeam, for example, might be called "Pelydrlloer" in Stonetop or "Mondstrohl" by the Manmarchers.
 P	Perhaps each Fae has a true and secret name, by which they can be commanded and bound. If so, it must be their most treasured and precious secret.
 PAGE	98
 HR
@@ -250,8 +246,7 @@ P	Also: are they <b>corrupted</b> (page 430) by the Things Below? Roll 1d6; on a
 P	Pick or create a <b>name</b> (page 97), and write up their stat block. All Fae have the <i>fae</i> tag; many are also <i>magical</i>. They have unnatural resilience (4 Armor, 0 vs. iron), being neither fully flesh nor fully spirit.
 HR
 P	<i>My little wicker-man clearly descends</i> <i>from a plant-spirit. I get an 11 for what</i> <i>he was bred to do ("work/labor/toil…"),</i> <i>a 2 for his role in the war ("victim…"),</i> <i>and a 12 for his lasting mark, followed</i> <i>by a 6 ("fierce protectiveness") and 3</i> <i>("enmity"). He's not corrupted.</i>
-P	<i>I see him tending to some Green Lord's</i> <i>garden, all the while collecting trinkets</i> <i>and plants and rocks from the soil. He</i> <i>was fiercely protective of his collection</i> <i>and cared little for his fellow Fae. His</i> <i>plot burned and his hoard was lost, and</i> <i>he became a loner and outcast, eschewing</i> <i>the war. A few centuries ago, he found</i> <i>the tomb, called it home, and started to</i> <i>rebuild his hoard of trinkets. But a</i> <b><i>swyn</i></b> (page 222) <i>has forced him out, and he</i>
-P	<i>desperately wants his stuff back.</i>
+P	<i>I see him tending to some Green Lord's</i> <i>garden, all the while collecting trinkets</i> <i>and plants and rocks from the soil. He</i> <i>was fiercely protective of his collection</i> <i>and cared little for his fellow Fae. His</i> <i>plot burned and his hoard was lost, and</i> <i>he became a loner and outcast, eschewing</i> <i>the war. A few centuries ago, he found</i> <i>the tomb, called it home, and started to</i> <i>rebuild his hoard of trinkets. But a</i> <b><i>swyn</i></b> (page 222) <i>has forced him out, and he</i> <i>desperately wants his stuff back.</i>
 P	<i>I call him "Thornthumb," for the prickly</i> <i>gardener he is. I write him up like so:</i>
 P	THORNTHUMB
 P	Solitary, small, fae, stealthy, magical, devious
@@ -425,8 +420,7 @@ B	It's cursed, stolen, or otherwise dangerous to use or possess
 B	To even find it, you've put yourself in some Fae's debt
 HR
 P	<b>HAGGLE</b>
-P	When you <b><i>dicker with a Fae</i></b> (anywhere, not just in the Wandering Market), roll
-P	+WIS. Roll with advantage if they like you, and disadvantage if they wish you ill. <b>On</b> <b>a 12+</b>, it costs but a pittance; <b>on a 10-11</b>, pick 1; <b>on a 7-9</b>, pick 2; <b>on a 6-</b>, pick 3:
+P	When you <b><i>dicker with a Fae</i></b> (anywhere, not just in the Wandering Market), roll +WIS. Roll with advantage if they like you, and disadvantage if they wish you ill. <b>On</b> <b>a 12+</b>, it costs but a pittance; <b>on a 10-11</b>, pick 1; <b>on a 7-9</b>, pick 2; <b>on a 6-</b>, pick 3:
 B	The price is Value 2, at least
 B	The price is irreplaceable, cherished, heartbreaking to lose
 B	The price is not truly yours to pay
@@ -486,8 +480,7 @@ P	When you <b><i>fly the Red Pennant in battle</i></b>, all who fight on your si
 B	Rush forward, driving back their foes
 B	Hold fast, making their foes pay for every inch
 B	Fight savagely, giving no quarter If spending Blood results in you Ordering
-P	Followers or Deploying, or another PC
-P	Clashing, the roll has advantage. Each time you spend Blood, those affected gain some small, animalistic or stony trait (little horns, weird eyes, crag-like wrinkles, etc.).
+P	Followers or Deploying, or another PC Clashing, the roll has advantage. Each time you spend Blood, those affected gain some small, animalistic or stony trait (little horns, weird eyes, crag-like wrinkles, etc.).
 P	When you <b><i>spend the last Blood or the battle</i></b> <b><i>ends</i></b>, the Red Pennant's color fades and a few (~1 in 6) of those manifested traits will linger, especially in those who fought hardest. It will not function again until you soak it in the blood of fallen foes.
 P	This is the battle standard of the <b>Bloody</b> <b>Boots</b> (page 112), their most sacred relic.
 P	Don't expect them to just let it go.

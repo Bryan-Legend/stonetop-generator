@@ -11,14 +11,11 @@ C	… hold fast as lightning courses through the staff, attuning to its magic (y
 C	… spend a few days practicing with the charged-up staff.
 H3	Staff of Magnetism
 P	Charge: ◇◇◇
-P	When <b><i>lightning courses through the staff,</i></b> it holds
-P	3 Charge (max 3).
+P	When <b><i>lightning courses through the staff,</i></b> it holds 3 Charge (max 3).
 P	When <b><i>the staff holds Charge and you focus your</i></b> <b><i>will and senses through it</i></b>, you can sense iron, steel, cobalt, and nickel within <i>near</i> range and move such objects slowly and awkwardly. You can manipulate only items that you could lift with one hand.
 P	When you <b><i>tap into the power stored within the</i></b> <b><i>staff</i></b>, pick 1:
 B	Extend its effects up to <i>far</i> range
 B	Move items quickly and suddenly, fast enough to attack or defend (<i>dangerous</i>)
 B	Manipulate an object of considerable mass, as much as you can deadlift
-P	Each time you tap into the staff's power, roll
-P	1d6. If you roll higher than the staff's current
-P	Charge, it loses 1 Charge.
+P	Each time you tap into the staff's power, roll 1d6. If you roll higher than the staff's current Charge, it loses 1 Charge.
 P	48

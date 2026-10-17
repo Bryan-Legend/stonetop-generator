@@ -154,5 +154,4 @@ HR
 P	A PC Judge can use their Censure move to denounce another as "an agent of chaos."
 P	When they do, the move works regardless of what you think. You can ask questions about their motivations or their thinking, but they're the Judge, not you.
 P	With the Hound of Aratis move, the Judge can easily identify things "tainted by chaos," and The Hammer and the Book lets them smite things "of supernatural chaos." The <b>Things Below</b> (page 412) count, as does anything corrupted by them or infused with their power.
-P	Beyond that, consider what the Judge has
-P	Censured and the doctrine of Aratis that's been established in play. Ask the Judge what they think counts. Consider what you know about the entity in question, and make a ruling. If in doubt, defer to the Die of Fate or the results of a relevant move.
+P	Beyond that, consider what the Judge has Censured and the doctrine of Aratis that's been established in play. Ask the Judge what they think counts. Consider what you know about the entity in question, and make a ruling. If in doubt, defer to the Die of Fate or the results of a relevant move.

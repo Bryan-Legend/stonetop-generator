@@ -36,8 +36,7 @@ P	If it's unclear which stat they're using, ask questions until it is. If it cou
 P	Don't suffer nonsense. If you say "an arrow is flying at you, what do you do?" and they reply with something like "I flash a smile at the arrow and charm it into missing me," they aren't Defying Danger—they're taking an arrow in the face. <b>Tell them the</b> <b>consequences and ask</b> if they still want to do that.
 P	On a 10+, they do it as well as one could hope. Describe what happens (or ask them to). Often, you'll give them an opportunity to act. But if the danger was particularly dire or their action particular desperate (or reckless), then maybe the best one could hope for is simply avoiding the worst of it.
 PAGE	211
-P	On a 7-9, present a lesser success, cost, or consequence. There should be something obvious, or else they wouldn't be Defying
-P	Danger.
+P	On a 7-9, present a lesser success, cost, or consequence. There should be something obvious, or else they wouldn't be Defying Danger.
 B	<b>Lesser success</b>: they get most of what they wanted but not all of it. "You leap across the pit, but end up hanging halfoff. It'll take time to pull yourself up."
 B	<b>Cost</b>: they do it, but they lose or suffer something in the process. "You leap across the pit, but land badly and twist your ankle."
 B	<b>Consequence</b>: they do it, but with an unwelcome outcome. "You leap across the pit, but the platform crumbles as you jump. No going back that way!"
@@ -291,8 +290,7 @@ P	<i>"Do we even need to roll?" she asks. "We're</i> <i>professional hunters, an
 P	<i>"Huh. I suppose. Yeah, just roll your crew's</i> <i>damage then, once per crinwin. And add +1</i> <i>for outnumbering them."</i>
 PAGE	224
 P	<b>PERSUADE (vs. NPCs)</b>
-P	When you <b><i>press or entice an NPC</i></b>, say what you want them to do (or not do). If they <b><i>have reason to resist</i></b>, roll
-P	+CHA: <b>on a 10+</b>, they either do as you want or reveal the easiest way to convince them; <b>on a 7-9</b>, they reveal something you can do to convince them, though it'll likely be costly, tricky, or distasteful.
+P	When you <b><i>press or entice an NPC</i></b>, say what you want them to do (or not do). If they <b><i>have reason to resist</i></b>, roll +CHA: <b>on a 10+</b>, they either do as you want or reveal the easiest way to convince them; <b>on a 7-9</b>, they reveal something you can do to convince them, though it'll likely be costly, tricky, or distasteful.
 P	This version of Persuade triggers when a PC tries to convince an NPC to do something. If you, as the NPC, put up resistance and the PC persists, it's Persuade. Clarify what they want the NPC to do/not do, and challenge their approach if it doesn't make sense. "How would she know you want her to do that? Do you, like, ask?"
 P	Once the goal is set, decide if the NPC has reason to resist. Consider their instinct, personality, background, wants, needs, fears, etc. If they've no reason to resist, they do it. But if the NPC has a reason (even an irrational one), then call for the roll.
 P	On a 10+, weigh the PC's approach against the NPC's resistance. If the resistance was weak or the PC's approach is strong, just have the NPC do it. But if you don't think the PC's approach would cut it, reveal the easiest way the PC could convince them.
@@ -366,8 +364,7 @@ P	<i>"Fine," sighs Rhianna. "You've got ten</i> <i>minutes. Go make your marks. 
 PAGE	228
 P	<b>SEEK INSIGHT</b>
 P	When you <b><i>study a situation or person</i></b>, looking to the GM for insight, roll
-P	+WIS: <b>on a 10+</b>, ask the GM 3 questions from the list below; <b>on a 7-9</b>, ask
-P	1; <b>either way</b>, take advantage on your next move to act on the answers.
+P	+WIS: <b>on a 10+</b>, ask the GM 3 questions from the list below; <b>on a 7-9</b>, ask 1; <b>either way</b>, take advantage on your next move to act on the answers.
 Q	What happened here recently?
 Q	What is about to happen?
 Q	What should I be on the lookout for?
@@ -477,14 +474,12 @@ P	Take notes, ask for clarification, and do your best to make those wishes come 
 PAGE	233
 P	<b>DEATH'S DOOR</b>
 P	When you <b><i>are dying</i></b>, you glimpse the Last Door and the Lady of Crows (describe them). Then, roll +nothing:
-P	<b>on a 10+</b>, you wrest yourself back to the realm of the living—return to
-P	1 HP but say how your brush with death has marked you; <b>on a 7-9</b>, the Lady waves you off—you're no longer dying but you're out of the action; <b>on</b> <b>a 6-</b>, your time has come—choose 1:
+P	<b>on a 10+</b>, you wrest yourself back to the realm of the living—return to 1 HP but say how your brush with death has marked you; <b>on a 7-9</b>, the Lady waves you off—you're no longer dying but you're out of the action; <b>on</b> <b>a 6-</b>, your time has come—choose 1:
 B	Make one last move as if you rolled a 12+, then step through the Last Door
 B	Refuse to go; gain the Revenant or Ghost insert
 B	Call on one of the Things Below by name and beseech it to intercede; gain the Thrall insert
 PB
-P	This move is discussed in detail on page
-P	245, in the <b>Harm and Healing</b> chapter.
+P	This move is discussed in detail on page 245, in the <b>Harm and Healing</b> chapter.
 H2	Other player moves
 P	Other player moves are discussed in detail elsewhere:
 H3	Follower moves

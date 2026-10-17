@@ -10,5 +10,4 @@ C	… you must meditate for a few weeks on the magic that infuses them.
 C	… you risk triggering the spell contained in the runes, and collapsing the entire structure.
 H3	Shattering Words of Aalz Childric
 P	When you <b><i>carve the shattering words of Aalz</i></b> <b><i>Childric into stone or rock</i></b>, designate a key word or phrase.
-P	When you or another <b><i>speaks the key word or</i></b> <b><i>phrase and wills the spell to trigger</i></b>, you roll
-P	+CON: <b>on a 10+</b>, the rune-carved stone shatters and is immediately reduced to rubble; <b>on a 7-9</b>, the stone cracks and buckles, slowly breaking apart into a number of pieces.
+P	When you or another <b><i>speaks the key word or</i></b> <b><i>phrase and wills the spell to trigger</i></b>, you roll +CON: <b>on a 10+</b>, the rune-carved stone shatters and is immediately reduced to rubble; <b>on a 7-9</b>, the stone cracks and buckles, slowly breaking apart into a number of pieces.

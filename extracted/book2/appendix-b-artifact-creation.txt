@@ -114,6 +114,7 @@ P	9 Can only/cannot be perceived by ___ (Fae, spirits, the dead, murderers, etc.
 P	10 Glows/thrums/vibrates in the presence of ___ (gold, magic, lies, poison, etc.)
 P	11 Protects against/repels ___ (emotional magic, fire/heat, ghosts, etc.)
 P	12 Roll twice, but treat one of the results as a drawback or flaw
+PB
 P	Artifacts with extraordinary properties might also have an additional special characteristic. Pick or roll:
 P	1d12 extra characteristic?
 HR

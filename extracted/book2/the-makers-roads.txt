@@ -20,8 +20,7 @@ P	When you <b><i>attempt to commit violence upon</i></b> <b><i>the road</i></b>,
 P	<b>on a 10+</b>, go for it; <b>on a 7-9</b>, you act but have disadvantage on any rolls to commit violence (including damage); <b>on a 6-</b>, you fail to act and mark <i>dazed</i>.
 H2	The Crossroads
 HR
-P	The West Road crosses the Highway about
-P	15 miles from town. A copse of <b>dool trees</b> (page 73) grows nearby. Despite the wards, there's something unsettling about the Crossroads. Everyone feels it. No one likes to talk about it.
+P	The West Road crosses the Highway about 15 miles from town. A copse of <b>dool trees</b> (page 73) grows nearby. Despite the wards, there's something unsettling about the Crossroads. Everyone feels it. No one likes to talk about it.
 Q	What about this place tells you that the veil between life and death is thin here?
 Q	Whose ghost is said to haunt the Flats near the Crossroads?
 PAGE	271
@@ -71,8 +70,7 @@ P	Veteran travelers warn of the nosgalau, the night lights that lure travelers f
 Q	Which of you have seen the nosgalau on a prior journey?
 Q	Who were you with? Which of you was lured off the road?
 Q	What do you think the nosgalau really are? Why do you think that?
-P	When you <b><i>hear the call of the nosgalau</i></b>, say whose voice you hear on the wind and why you feel compelled to join them. Then, roll
-P	+WIS: <b>on a 10+</b>, say how you see through the deception, and you'll never hear their call again; <b>on a 7-9</b>, either mark XP and follow the call, or tell us how you detect the lie this one time; <b>on a 6-</b>, you heed the call and go to the nosgalau, unless your allies restrain you.
+P	When you <b><i>hear the call of the nosgalau</i></b>, say whose voice you hear on the wind and why you feel compelled to join them. Then, roll +WIS: <b>on a 10+</b>, say how you see through the deception, and you'll never hear their call again; <b>on a 7-9</b>, either mark XP and follow the call, or tell us how you detect the lie this one time; <b>on a 6-</b>, you heed the call and go to the nosgalau, unless your allies restrain you.
 P	What befalls their victims is for you to decide, but it isn't good. Perhaps they…
 E	fall prey to some mundane danger, like a mire or <b>pack drake</b> (page 134);
 E	vanish in the night (the grass twisted in strange patterns), only to reappear elsewhere, muddy and haunted-eyed, with patchy memories; or

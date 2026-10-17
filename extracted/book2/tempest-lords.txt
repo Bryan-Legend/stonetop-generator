@@ -11,8 +11,7 @@ P	Soon, only a few Tempest Lords remained, enigmas even among other Makers.
 P	One of these survivors, Stormcatcher, made her way to the <b>the Flats</b> (page 126), beyond even the most far-flung of the empire's old outposts. There, between four other nations of Makers, she built her tower. And when the horrors of the <b>Things</b> <b>Below</b> (page 412) were set loose upon the world, Stormcatcher's tower—what folks now call the <b>Ruined Tower</b> (page 332)—was the last of the Makers' enclaves to fall.
 H2	Language and names
 HR
-P	Tempest Lord writing was ideogrammatic (characters represent ideas, not sounds), and they spoke a primordial language—all who heard it understood it as their native tongue. As such, the names of Tempest
-P	Lords are rendered as descriptions, titles, or honorifics.
+P	Tempest Lord writing was ideogrammatic (characters represent ideas, not sounds), and they spoke a primordial language—all who heard it understood it as their native tongue. As such, the names of Tempest Lords are rendered as descriptions, titles, or honorifics.
 P	Example names: Brinedrinker, Eyes-Like-Lightning, Fardweller, Foehammer, Lightning-Is-Her-Spear, His-Smile-Isa-Harbor, Mind-Like-Fire, Moonspeaker, Oarbreaker, Rainchaser, Soother-Of-Waves, Sparkspitter, Squalltalker, Starfinder, Taller-Than-Masts, Voice-of-Thunder, Wavecutter, Waymaker, Windwalker
 P	When other Makers spoke or wrote of them, they used their own tongue. Windwalker was called <i>Vetrodokha</i> by the <b>Green</b> <b>Lords</b> (page 210) and <i>Avaelkerzhaer</i> by the <b>Stone Lords</b> (page 382).
 PAGE	399
@@ -142,8 +141,7 @@ P	6-7 Mundane object (tool/vessel/ lantern/etc.), though perhaps not recognized 
 P	8-9 Art or decoration (jewel/statue/ inlay/torc/amulet/ring/etc.)
 P	10 Clothing/armor (robe/tunic/apron/ cuirass/brigandine/etc.)
 P	11 Weapon (spear/arrow/sword/maul/ shield/trident/wand/etc.)
-P	12 Construction (archway/truss/beam/ door/plating/pipes/etc.), likely
-P	<i>immobile</i>
+P	12 Construction (archway/truss/beam/ door/plating/pipes/etc.), likely <i>immobile</i>
 PB
 P	Consider rolling 1d6 to inform size/scale.
 P	1d12 characteristic
@@ -278,8 +276,7 @@ ICON	icons/danger.svg
 H3	Vitrification
 P	A few Tempest Lords could call up a bolt of power so raw and potent that it would turn whatever it touched into glass.
 P	It was dangerous for even them to use, but no foe could stand against it.
-P	It's possible that some device still exists that can unleash this sort of power. If so, treat it as a threat (a <i>MacGuffin</i>; <b>Instinct</b> to tempt people into using it). It would
-P	require vast amounts of energy and involve extraordinary risks.
+P	It's possible that some device still exists that can unleash this sort of power. If so, treat it as a threat (a <i>MacGuffin</i>; <b>Instinct</b> to tempt people into using it). It would require vast amounts of energy and involve extraordinary risks.
 P	When you <b><i>are struck by a vitrifying bolt</i></b>, reduce your HP to 0 and roll +CON: <b>on a 10+</b>, you merely suffer terrible burns and will soon be at Death's Door; <b>on a 7-9</b>, you and your possessions are turned to jagged glass, but you might be restored; <b>on a 6-</b>, you die but your corpse, your soul, and your possessions are also turned into jagged glass—should the vitrification be reversed, it's as though you rolled a 6- on Death's Door.
 P	Vitrification can be reversed, but you must decide how it's done. Perhaps it involves:
 E	vast amounts of power and great risk;

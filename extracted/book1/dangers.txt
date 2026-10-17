@@ -107,8 +107,7 @@ P	<i>shadowed)</i>
 P	* Reveal a mass of vines entwining a desiccated crinwin corpse <i>(how it's foreshadowed)</i>
 P	* Slip a tendril around a limb, slowly and quietly <i>(how it hinders)</i>
 P	* Sprout thorns and inject a numbing, euphoric poison <i>(how it harms)</i>
-P	* Lash out with more tendrils to subdue struggling prey <i>(how it</i>
-P	<i>escalates)</i>
+P	* Lash out with more tendrils to subdue struggling prey <i>(how it</i> <i>escalates)</i>
 P	<i>I also give it an instinct: "to ensnare."</i>
 P	<i>I'm not seeing this hazard as doing damage—it just restrains prey, makes it bliss</i> <i>out and stop struggling, and then slowly</i> <i>suffocates it. I figure that anyone who gets</i> <i>injected with the euphoric poison will</i> <i>need to Defy Danger to do anything other</i> <i>than relax and enjoy themselves.</i>
 HR
@@ -130,8 +129,7 @@ P	O IMPENDING DOOM: Ceiling collapses, burying anyone still inside (Death's Door
 HR
 PAGE	388
 H3	As player moves
-P	Write a custom player-facing move to reflect the hazard (or part of it), like "When you <b><i>breathe in the horrible stench of the Maw</i></b>, roll
-P	+CON…." When the PCs encounter the hazard and the move becomes relevant, share it with the players. Resolve it like you would any other player-facing move.
+P	Write a custom player-facing move to reflect the hazard (or part of it), like "When you <b><i>breathe in the horrible stench of the Maw</i></b>, roll +CON…." When the PCs encounter the hazard and the move becomes relevant, share it with the players. Resolve it like you would any other player-facing move.
 P	A player-facing move is a great way to establish and communicate stakes. You can tell a player that they'll have to Defy Danger to leap across the chasm, but unless you also tell them what will happen on a 10+, a 7-9, and 6-, they don't <i>really</i> know the risks. With a custom move, you can bake the stakes right in.
 P	Player moves are also a good way to handle "weird" hazards, like magic that messes with their minds or that follows strange rules of cause-and-effect. A player move can abstract these situations and give them a vague, dreamlike quality.
 P	Remember: everything <b>begins and ends</b> <b>with the fiction</b>. If the PCs come up with a clever way to bypass a hazard or its trigger, then your move might no longer apply.
@@ -141,8 +139,7 @@ H3	As a combination
 P	Many hazards will work best as a combination of these approaches. You might start with a detailed description of a trapped chamber, then add a player-facing move for what happens when they try to bypass the trap in a particular way. Or you might write up a series of GM moves and an instinct for a wildfire, plus a countdown describing how the fire spreads. Get creative.
 HR
 P	<i>I previously wrote up the ruined crinwin nest—and the climb to reach it—as</i> <i>just a detailed description. I noted that</i> <i>it might do 1d10+3 damage on a fall,</i> <i>but thinking about it more, the fall could</i> <i>easily kill someone or seriously injure</i> <i>them. I want the PCs to know just how</i> <i>dangerous the climb could be, so I write</i> <i>up this custom move:</i>
-P	<b>When you fall from the boughs of</b> <b>the tree</b>, take 1d10+3 damage (ignores armor, forceful) and roll
-P	+CON: on a 10+, you're bruised and bleeding and in a lot of pain, but miraculously nothing's busted; on a 7-9, something's broken—ask the GM what; on a 6-, you landed bad and you're at Death's Door.
+P	<b>When you fall from the boughs of</b> <b>the tree</b>, take 1d10+3 damage (ignores armor, forceful) and roll +CON: on a 10+, you're bruised and bleeding and in a lot of pain, but miraculously nothing's busted; on a 7-9, something's broken—ask the GM what; on a 6-, you landed bad and you're at Death's Door.
 HR
 PAGE	389
 HR
@@ -313,8 +310,7 @@ P	<i>They're obviously</i> Fae<i>, and notable</i> <i>both for using magic and w
 P	group<i>,</i> large<i>,</i> Fae<i>,</i> magical<i>,</i> organized.
 PAGE	396
 H2	4	Hit points
-P	Determine the monster's maximum
-P	HP by answering the following questions:
+P	Determine the monster's maximum HP by answering the following questions:
 HR
 VT	<b>How does it hunt or fight?</b> (pick 1)	hp
 VR	In large groups (6 or more, <i>horde</i>)	3
@@ -334,8 +330,7 @@ VR	It's particularly tough/durable	+4
 VR	It's smiled upon by the fates	+2
 VR	It's animated by more than biology	+4
 VR	It lacks vital organs	+3
-P	<i>The Almtakers fight as a pair, with the</i>
-P	group <i>tag, so they start with 6 HP each.</i>
+P	<i>The Almtakers fight as a pair, with the</i> group <i>tag, so they start with 6 HP each.</i>
 P	<i>They're also</i> large<i>, giving them +4 HP.</i>
 P	<i>The Fae have strange forms, but they</i> <i>are still living things with discernible</i> <i>anatomy: they bleed, have hearts, brains,</i> <i>joints, and so forth. But these Fae—with</i> <i>their woody flesh and massive frames—</i> <i>are particularly tough. I give them +4</i> <i>HP, for a total of 14 HP each.</i>
 HR
@@ -443,8 +438,7 @@ HR
 P	<i>The Almtakers have all the special qualities associated with Fae. I don't want</i> <i>to write all that out, so I just say "Fae</i> <i>nature" and a page reference.</i>
 P	<i>I think they have three glowing, empty</i> <i>eyes. That's weird and creepy, but won't</i> <i>really affect play. They have woody flesh,</i> <i>but I've already accounted for that in</i> <i>their HP and armor. I've already noted</i> <i>their vulnerability to iron.</i>
 P	<i>They have no mouths, but "speak" telepathically. I think they're entirely honest.</i> <i>And I think their presence messes with</i> <i>time and space—things change places</i> <i>without moving, moments take minutes,</i> <i>minutes pass in moments, that sort of</i> <i>thing. Those are all important traits that</i> <i>might influence play, so I write down</i>
-P	Special qualities: Fae nature (Book
-P	II, page 98), telepathic; can't lie or mislead; subtly warp space/time.
+P	Special qualities: Fae nature (Book II, page 98), telepathic; can't lie or mislead; subtly warp space/time.
 HR
 PAGE	401
 H2	8	Instinct
@@ -520,8 +514,7 @@ P	THE ALMTAKERS, guardian Fae
 P	(group, large, Fae, magical, organized)
 P	<b>HP</b> 14; <b>Armor</b> 5 (resilience, skill), 2 vs. iron (hide, skill)
 P	<b>Damage</b> powerful blows d6+3 w/disadvantage (close, reach, forceful)
-P	<b>Special qualities</b> Fae nature (Book II, page 98), telepathic, can't lie or mislead; subtly warps local time
-P	& space
+P	<b>Special qualities</b> Fae nature (Book II, page 98), telepathic, can't lie or mislead; subtly warps local time & space
 PB
 P	<b>Instinct</b> to protect its master
 P	> Lock eyes, then teleport them away
@@ -660,8 +653,7 @@ P	When the PCs face multiple foes (and they often will), break up the action int
 P	Unengaged foes—those that aren't pinned down in combat—are all sorts of potential trouble. Incorporate them into your moves whenever you have the chance. <b>Announce</b> <b>trouble</b> and have them move to flank the PCs. <b>Demonstrate a downside</b> of being outnumbered and have them block a PC's path. <b>Reveal an unwelcome truth</b> and have one come out of nowhere and smack a PC when they roll a 6-. Bad guys don't just sit around waiting to be attacked.
 P	<b>When a PC or follower engages multiple</b> <b>foes</b>, make more aggressive moves than when they face a single foe. If they ignore the threat posed by multiple foes, <b>tell them</b> <b>the consequences and ask</b>. If they carry on and ignore the threat, or roll a 6-, or otherwise suffer the enemy's attack, then make your move extra hard.
 P	When <b><i>a PC or follower's attack could feasibly hurt multiple foes</i></b>—because of the <i>area</i> tag, because a <i>group</i> of followers is making or Aiding the attack, or just because the player describes it in a way that makes sense—then the player rolls to Clash or Let Fly just once, but they roll damage separately against each foe.
-P	<b>When multiple PCs and/or followers</b> <b>attack a foe at once</b>, one of them rolls Clash or Let Fly and the others Aid. If a group of followers attacks a single foe (or a significantly smaller group), they effectively
-P	Aid themselves.
+P	<b>When multiple PCs and/or followers</b> <b>attack a foe at once</b>, one of them rolls Clash or Let Fly and the others Aid. If a group of followers attacks a single foe (or a significantly smaller group), they effectively Aid themselves.
 P	<b>When multiple combatants deal damage</b> <b>to a single foe</b>, roll one combatant's damage (usually the best one) and add +1 extra damage for each capable attacker after the first. Apply tags from all the attackers as they make sense. For example, if a PC fights two Hillfolk warriors (d8 damage, 1 piercing) riding horses (d6+2 damage, <i>forceful</i>) and suffers their attack, you'd probably roll damage from one horse and add +3; that's d6+5 damage (1 piercing, <i>forceful</i>). Ouch.
 P	Clever tactics can make a huge difference when dealing with multiple combatants.
 P	Holding a chokepoint reduces the number of foes they have to fight at once. Focusing fire on a tough opponent can help drop it more quickly. Attacking a group's flank and dropping some of them before they can react? Golden.
@@ -678,16 +670,12 @@ P	<i>They also suffered the crinwin's attack. I don't</i> <i>have a particular m
 P	<i>"Really? Didn't I cut the first one down</i> <i>before it could hurt me?"</i>
 P	<i>I could tell her that it got a lick in before</i> <i>it went down, but whatever. "Good point.</i> <i>1d6 damage to each of you." She takes 4</i> <i>damage herself. Garet takes 1 and Eira</i> <i>takes 5. They're all still up, but Eira's in</i> <i>trouble. I let that inform my move and I</i> <b><i>put her in a spot</i></b><i>. "Okay, so Eira got tripped</i> <i>by hers and it's on her chest, smashing her</i> <i>head against the wall. She looks out of it</i> <i>and, Rhianna, you've still got a crinwin in</i> <i>your face. Meanwhile, Caradoc…"</i>
 PAGE	416
-P	If the PCs have a group of followers, then you'll often want to abstract their actions in combat. Resolve the group's actions with as few individual moves as possible. For example, if the Marshal's crew of six opens fire on a horde of 20 crinwin, have the Marshal make a single Let Fly roll to see how it goes.
-P	If the group deals damage to another
-P	group, or takes damage from another
-P	group, then you can roll damage once per side and abstract the results. A group deals damage and has HP and armor as though it was one individual member of the group. For example, the marshal's crew of six would deal 1d6 damage, have 8 HP, and 1 armor from their hide armor. The horde of crinwin would deal 1d6 damage, have 3 HP, and have 1 armor from their agility and reflexes.
 H2	Abstracting groups
+P	If the PCs have a group of followers, then you'll often want to abstract their actions in combat. Resolve the group's actions with as few individual moves as possible. For example, if the Marshal's crew of six opens fire on a horde of 20 crinwin, have the Marshal make a single Let Fly roll to see how it goes.
+P	If the group deals damage to another group, or takes damage from another group, then you can roll damage once per side and abstract the results. A group deals damage and has HP and armor as though it was one individual member of the group. For example, the marshal's crew of six would deal 1d6 damage, have 8 HP, and 1 armor from their hide armor. The horde of crinwin would deal 1d6 damage, have 3 HP, and have 1 armor from their agility and reflexes.
 P	If one group outnumbers the other, they get a +1 bonus to damage and armor for every multiplier past 1. For example, the 20 crinwin outnumber the crew of six by about 3:1, so they'd get a +2 bonus to damage and armor.
-P	Damage represents casualties. If one
-P	group loses half its HP, then about half that group's numbers are out the action.
-P	Adjust the bonuses to damage and armor accordingly! So if the crew of six dealt 4 damage to the crinwin when they Let Fly, that'd do 1 damage after armor and reduce the crinwin from 3 HP to
-P	2 HP. One third of the crinwin (let's say seven of them) would be out of the action, reducing their advantage to only about 2:1. Their bonus to damage and armor is now only +1.
+P	Damage represents casualties. If one group loses half its HP, then about half that group's numbers are out the action.
+P	Adjust the bonuses to damage and armor accordingly! So if the crew of six dealt 4 damage to the crinwin when they Let Fly, that'd do 1 damage after armor and reduce the crinwin from 3 HP to 2 HP. One third of the crinwin (let's say seven of them) would be out of the action, reducing their advantage to only about 2:1. Their bonus to damage and armor is now only +1.
 P	Shift the spotlight between the group and individual PCs. Switch the scale and "zoom" of the action accordingly.
 P	Foes that are engaged by individual PCs aren't really part of a group. So if one PC ran in and attacked two crinwin while another PC
 P	Defended and drew the attention of another three, the Marshal's crew of six would be left contending with only eight crinwin (20 to start, less 7 dead from Letting Fly, less 5 occupied by PCs). That's basically even numbers, so the crinwin have lost their bonus to armor and damage.

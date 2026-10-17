@@ -37,8 +37,7 @@ P	He's a threat.
 P	And one last example:
 P	ANWEN (<i>villain</i>)
 P	<b>Instinct</b> to maintain order at all costs
-P	Exiled from Stonetop years back, after poisoning folk (weak ones) during a harsh winter (less mouths to feed). Runs a bar/brothel in Gordin's Delve; fingers in lots of pies. <b>Ropr</b> (<i>beast</i>, to keep Anwen's favor) is her
-P	#2. Soft spot for <b>Iona</b> (<i>wildcard</i>, to live comfortably).
+P	Exiled from Stonetop years back, after poisoning folk (weak ones) during a harsh winter (less mouths to feed). Runs a bar/brothel in Gordin's Delve; fingers in lots of pies. <b>Ropr</b> (<i>beast</i>, to keep Anwen's favor) is her #2. Soft spot for <b>Iona</b> (<i>wildcard</i>, to live comfortably).
 P	<b>GM moves:</b>
 P	• Find someone's weakness
 P	• Sacrifice another to advance a goal
@@ -196,8 +195,7 @@ PAGE	286
 PB
 P	threat type
 P	<b><i>Magical entity</i></b>
-P	<i>Magical entities</i> include spirits, many
-P	Fae, the Things Below, even gods or their agents. They are beings that live and breathe magic and power, for whom mundane concerns like food and shelter are alien or superfluous.
+P	<i>Magical entities</i> include spirits, many Fae, the Things Below, even gods or their agents. They are beings that live and breathe magic and power, for whom mundane concerns like food and shelter are alien or superfluous.
 P	<i>Magical entities</i> are often bound by strange, seemingly arbitrary limitations and laws. They must often act on the world subtly or through intermediaries.
 P	<b>GM moves for</b> <b><i>magical entities</i></b><b>:</b>
 P	• Spy on someone, unseen/from afar
@@ -404,8 +402,7 @@ HR
 P	<i>For Sajra the Swyn, I wonder:</i>
 P	* Will Brynfor's parents forgive
 P	Caradoc?
-P	* What will become of the stolen children, the ones brought under
-P	Sajra's control?
+P	* What will become of the stolen children, the ones brought under Sajra's control?
 P	* What brought Sajra to move into the Green Lord's tomb, anyway?
 P	<i>That last one, though, isn't a stakes</i> <i>question—it's a detail about the past. I</i> <i>add the first two to my threat write-up</i> <i>as stakes, and add a question about why</i> <i>Sajra arrived to the description.</i>
 HR
@@ -451,8 +448,7 @@ P	O Some of the (entranced) children return
 P	O Children recruit followers
 P	O Reveals itself, demands servitude
 P	O IMPENDING DOOM: Subjugates the town, killing or mesmerizing any opposition
-P	STAKES: Will Wynfor's parents forgive
-P	Caradoc? What will become of the stolen children brought under Sajra's control?
+P	STAKES: Will Wynfor's parents forgive Caradoc? What will become of the stolen children brought under Sajra's control?
 P	GM MOVES
 P	> Plant a suggestion in another's mind
 P	> Turn the weak-willed into fawning servants
@@ -465,8 +461,7 @@ P	<b>Instinct</b> to undermine others' worth
 P	Blodwen's mother, jealous of her importance to the village and her relationship with Gwendyl and Seren.
 P	Resents Rhianna. Distrusts Vahid.
 P	Thinks Caradoc is a fool.
-P	<b>Stakes:</b> How far will she go to control Blodwen? How much will
-P	Blodwen put up with?
+P	<b>Stakes:</b> How far will she go to control Blodwen? How much will Blodwen put up with?
 P	<b>GM moves:</b>
 P	• Provide (unwanted?) advice or aid
 P	• Force an issue or a confrontation

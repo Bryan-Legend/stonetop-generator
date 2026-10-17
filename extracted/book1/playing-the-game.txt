@@ -122,8 +122,7 @@ P	<i>"Here we go," you say. "I yell and rush it,</i> <i>shield up, stabbing with
 P	<i>"That sure sounds like you're fighting in</i> <i>melee with this 10-foot-tall bear. Roll</i> <i>+STR to Clash!"</i>
 P	<i>You get lucky and roll a 4 and a 5. With</i> <i>your STR +1, that's a 10! You (perhaps</i> <i>unwisely) choose to strike hard for extra</i> <i>damage, but suffer its attack in turn. You</i> <i>deal 6 damage total, not bad! You and</i> <i>the GM agree that this means your strike</i> <i>landed and you bloodied the big beast.</i>
 P	<i>But you also suffer its attack. The GM</i> <i>says "As you connect, it just THWAPS</i> <i>you with its right paw. Take 1d10+4</i> <i>damage. Roll it." You take 9 damage</i> <i>(almost half your hit points). The GM</i> <i>says, "I think you get your shield up but</i> <i>the force of the blow smacks it into your</i> <i>head, and sends you staggering back.</i>
-P	<i>Mark the</i> dazed <i>debility, as the world</i>
-P	<i>starts spinning."</i>
+P	<i>Mark the</i> dazed <i>debility, as the world</i> <i>starts spinning."</i>
 P	<i>If you had rolled a 6 or less, then the</i> <i>GM probably would have said that the</i> <i>bear thwacked you (as above) before you</i> <i>were able to stab it. But, hey, at least you</i> <i>would have gotten to mark XP.</i>
 HR
 H2	Hold and spend
@@ -264,8 +263,7 @@ H2	Other things to do
 P	<b>Take notes!</b> NPC names and traits. Who's related to whom. Bits of history and lore.
 P	Places. Things. The events of each session.
 P	If you think it'll be helpful to reference later, write it down. Your future self will thank you.
-P	<b>Learn the rules.</b> You don't have to be an expert, but learn the basics. Know that "roll
-P	+STR" means you roll 2d6 and add your STR. Familiarize yourself with the <b>basic</b> <b>moves</b> (page 70), especially their triggers. Understand how <b>outfitting, gear, and</b> <b>possessions</b> work (page 86).
+P	<b>Learn the rules.</b> You don't have to be an expert, but learn the basics. Know that "roll +STR" means you roll 2d6 and add your STR. Familiarize yourself with the <b>basic</b> <b>moves</b> (page 70), especially their triggers. Understand how <b>outfitting, gear, and</b> <b>possessions</b> work (page 86).
 P	<b>Know your character.</b> You're the one with the playbook in front of you. Know what your stats are (or where to find them).
 P	Know what your damage die is. Know your moves, what triggers them, and what they do. Double-check things, sure, and everyone makes mistakes. But you are responsible for your character. Don't expect the GM or other players to tell you what your PC is capable of.
 P	<b>Watch for moves triggering.</b> It's everyone's job to call out when moves trigger, or to question it when someone invokes a move without its trigger being met. "This feels like you're enticing her… Persuade?"
@@ -366,8 +364,7 @@ B	<b>Intelligence (INT)</b>: your memory, learning, and quick thinking. Roll +IN
 B	<b>Wisdom (WIS)</b>: your intuition, selfcontrol, and awareness. Roll +WIS to Seek Insight, or when you rely on your willpower or senses to Defy Danger.
 B	<b>Constitution (CON)</b>: your stamina, grit, determination, and endurance. Roll +CON to Defend, or to Defy Danger by holding steady or enduring hardship.
 B	<b>Charisma (CHA)</b>: your ability to charm and connect with others, and to get a read on what others want. Roll +CHA to Persuade, or to Defy Danger socially.
-P	Most playbooks will have you distribute the following to your stats: +2, +1, +1, +0, +0, and -1. Assign them as you wish, but you'll probably be happiest if you put the positive numbers in the stats you expect to use often. (Note: The Would-be Hero starts with worse stats than other playbooks, but offsets this through their
-P	Potential for Greatness move.)
+P	Most playbooks will have you distribute the following to your stats: +2, +1, +1, +0, +0, and -1. Assign them as you wish, but you'll probably be happiest if you put the positive numbers in the stats you expect to use often. (Note: The Would-be Hero starts with worse stats than other playbooks, but offsets this through their Potential for Greatness move.)
 P	You can increase your stats by taking the <b>Improved Stat</b> or <b>Superior Stat</b> playbook moves (see pages 106 and 107).
 H3	Debilities
 P	During play, a move or the GM might tell you to "mark a debility." There are three debilities:
@@ -380,8 +377,7 @@ P	Debilities last until a move like <b>Recover</b> (page 328) or <b>Make Camp</b
 PAGE	53
 H2	Damage
 P	Your playbook lists a die for damage. When you have the chance to hurt a foe, roll this die to see how much damage you deal.
-P	Your damage die is independent of your weapon. If you're the Heavy, you deal 1d10 damage; if you're the Lightbearer, you deal
-P	1d4. It doesn't matter whether you wield a dagger or a maul, or you're choking them with your bare hands. Your damage die reflects how dangerous you are. Your weapon is just a tool. (Some weapons of war deal "+1 damage," but they're the exception.)
+P	Your damage die is independent of your weapon. If you're the Heavy, you deal 1d10 damage; if you're the Lightbearer, you deal 1d4. It doesn't matter whether you wield a dagger or a maul, or you're choking them with your bare hands. Your damage die reflects how dangerous you are. Your weapon is just a tool. (Some weapons of war deal "+1 damage," but they're the exception.)
 P	Some moves override your damage die. A Lightbearer using Purifying Flames deals 1d10 damage, but only when they wield a holy light against a creature of darkness.
 P	(And, no, you don't add STR or DEX to your damage rolls.)
 H2	Hit points (HP)
@@ -419,9 +415,7 @@ P	Each playbook has a selection of moves.
 P	You'll start play with 3 or 4 of them; your playbook tells you which, or which to choose from. Each time you <b>Level Up</b> (page 81), you get a new move from your playbook.
 P	Some playbook moves lack <b>triggers</b> (page 39); you simply gain their benefit when you take them. If you take the Improved Stat move, you permanently increase one of your stats. If you take a move that lets you always ask something, you can just do that now!
 P	If a move says "(Requires __)," then you must meet that requirement in order to take the move. The requirement might be a level, another move, or the specific playbook (meaning that other playbooks can never take this move, even when they take a move that lets them pick from another playbook, see below.)
-P	If a move <i>replaces</i> a different move, then it
-P	requires the one it replaces. When you take such a move, you lose the original move
-P	and any benefits that it conferred.
+P	If a move <i>replaces</i> a different move, then it requires the one it replaces. When you take such a move, you lose the original move and any benefits that it conferred.
 P	Many playbooks include a move that lets you pick from another playbook. Most of these moves limit which playbooks you can pick from.
 P	If you really want to take a specific move from another playbook, but you don't have an option to do so, then pitch your idea to the GM and the other players. If everyone agrees, okay. But there are reasons why the playbooks have access to the moves they do. Magic-oriented playbooks have less flexibility when picking from other playbooks, and their moves aren't as freely available to others.
 PAGE	56
@@ -432,8 +426,7 @@ P	Expect the GM to ask questions about this stuff. When and where did this happe
 P	Who else was involved? How'd you end up there in the first place? Etc. It's good to think a little about this in advance, but as always, hold your ideas lightly. You might want to change them a bit once you hear what the other players have to say.
 H2	Introductions
 P	Each playbook ends with a procedure for introducing your character to the group.
-P	This is to meant to happen during the first session, after you all choose and fill out your playbooks. The GM will walk the
-P	group through it, together, asking lots of questions. Pay attention to the other players, ask questions yourself, and riff on the details they provide.
+P	This is to meant to happen during the first session, after you all choose and fill out your playbooks. The GM will walk the group through it, together, asking lots of questions. Pay attention to the other players, ask questions yourself, and riff on the details they provide.
 P	The introductions procedure assumes that your character is already established in the village. If you're making a new character to add to an ongoing game, work with the GM and other players to determine the best way to introduce your new PC.
 P	If your new PC was previously an NPC who is "stepping up" to PC status, then maybe do a pared-down version of this procedure between sessions (via email, group chat, etc.) or at the start of the next one. Some of the answers might be obvious, but some might be surprises.
 PAGE	57
@@ -480,8 +473,7 @@ P	For example, if you mastered Laoj Davith's Galvanic Infusion (using up both of
 E	they'd need to acquire a couple pieces of aetherium before trying to unlock its mysteries themselves;
 E	you might <b>Aid</b> (page 212) them by sharing your notes and coaching them, granting advantage when they Defy Danger to avoid the risk; and/or...
 E	they might need only a few days of dedicated study, rather than a few weeks, as long as you show them the ropes.
-P	If they complete all the requirements, then they can cast Laoj
-P	Davith's Galvanic Infusion, too!
+P	If they complete all the requirements, then they can cast Laoj Davith's Galvanic Infusion, too!
 P	Remember, though, that every arcanum is different. A magic spear that you bind to yourself with blood and fire isn't as easily shared as a spell written on a scroll.
 PAGE	60
 H2	Major arcana
@@ -737,8 +729,7 @@ PB
 P	For more information, see page 222.
 PAGE	73
 P	<b>PERSUADE (vs. NPCs)</b>
-P	When you <b><i>press or entice an NPC</i></b>, say what you want them to do (or not do). If they <b><i>have reason to resist</i></b>, roll
-P	+CHA: <b>on a 10+</b>, they either do as you want or reveal the easiest way to convince them; <b>on a 7-9</b>, they reveal something you can do to convince them, though it'll likely be costly, tricky, or distasteful.
+P	When you <b><i>press or entice an NPC</i></b>, say what you want them to do (or not do). If they <b><i>have reason to resist</i></b>, roll +CHA: <b>on a 10+</b>, they either do as you want or reveal the easiest way to convince them; <b>on a 7-9</b>, they reveal something you can do to convince them, though it'll likely be costly, tricky, or distasteful.
 P	For more information, see page 224.
 P	<b>PERSUADE (vs. PCs)</b>
 P	When you <b><i>press or entice a PC and</i></b> <b><i>they resist</i></b>, ask their player: "Could I possibly get you to do this, yes or no?"
@@ -748,8 +739,7 @@ P	<b>on a 10+</b>, they mark XP if they do what you want, and if they don't, the
 P	For more information, see page 226.
 P	<b>SEEK INSIGHT</b>
 P	When you <b><i>study a situation or person</i></b>, looking to the GM for insight, roll
-P	+WIS: <b>on a 10+</b>, ask the GM 3 questions from the list below; <b>on a 7-9</b>, ask
-P	1; <b>either way</b>, take advantage on your next move to act on the answers.
+P	+WIS: <b>on a 10+</b>, ask the GM 3 questions from the list below; <b>on a 7-9</b>, ask 1; <b>either way</b>, take advantage on your next move to act on the answers.
 Q	What happened here recently?
 Q	What is about to happen?
 Q	What should I be on the lookout for?
@@ -768,8 +758,7 @@ P	If you <b><i>have advantage/disadvantage on</i></b> <b><i>a damage roll</i></b
 P	Then add any bonus dice that apply.
 P	For more information, see page 230.
 P	<b>BURN BRIGHTLY</b>
-P	When you <b><i>have enough XP to Level</i></b> <b><i>Up</i></b> (6 + twice your current level), you may spend 2 XP after any roll to add
-P	+1 to that roll (maximum +1 per roll).
+P	When you <b><i>have enough XP to Level</i></b> <b><i>Up</i></b> (6 + twice your current level), you may spend 2 XP after any roll to add +1 to that roll (maximum +1 per roll).
 P	For more information, see page 231.
 P	<b>END OF SESSION</b>
 P	When a <b><i>session ends</i></b>, point out how you demonstrated or struggled with your instinct. If you can, mark XP.
@@ -787,8 +776,7 @@ P	For more information, see page 232.
 PAGE	75
 P	<b>DEATH'S DOOR</b>
 P	When you <b><i>are dying</i></b>, you glimpse the Last Door and the Lady of Crows (describe them). Then, roll +nothing:
-P	<b>on a 10+</b>, you wrest yourself back to the realm of the living—return to
-P	1 HP but say how your brush with death has marked you; <b>on a 7-9</b>, the Lady waves you off—you're no longer dying but you're out of the action; <b>on</b> <b>a 6-</b>, your time has come—choose 1:
+P	<b>on a 10+</b>, you wrest yourself back to the realm of the living—return to 1 HP but say how your brush with death has marked you; <b>on a 7-9</b>, the Lady waves you off—you're no longer dying but you're out of the action; <b>on</b> <b>a 6-</b>, your time has come—choose 1:
 B	Make one last move as if you rolled a 12+, then step through the Last Door
 B	Refuse to go; gain the Revenant or Ghost insert
 B	Call on one of the Things Below by name and beseech it to intercede; gain the Thrall insert
@@ -798,8 +786,7 @@ PAGE	76
 H2	Follower moves
 P	These moves apply when you interact with your <b>followers</b> (page 64).
 P	<b>ORDER FOLLOWERS</b>
-P	When you <b><i>direct your follower to do</i></b> <b><i>something that would trigger a player</i></b> <b><i>move</i></b>, and they do it, they trigger the move. If the move involves rolling, you roll for them. Instead of rolling
-P	+STAT, roll and…
+P	When you <b><i>direct your follower to do</i></b> <b><i>something that would trigger a player</i></b> <b><i>move</i></b>, and they do it, they trigger the move. If the move involves rolling, you roll for them. Instead of rolling +STAT, roll and…
 E	if they have at least one appropriate tag or move, add +1, or +2 if they're also <i>exceptional</i>;
 E	if they have no relevant tag or move, add +0; and
 E	if any of their tags would get in the way, roll with disadvantage.
@@ -844,10 +831,8 @@ P	Alternately, you can expend a use of supplies to mark an additional small item
 P	Whatever you produce, it must be something you could have had all along. The GM or any player can veto unreasonable items.
 P	For more information, see page 326.
 P	<b>RECOVER</b>
-P	When you <b><i>take time to catch your</i></b> <b><i>breath and tend to what ails you</i></b>, expend 1 use of supplies and recover
-P	HP equal to 4+Prosperity. You can't gain this benefit again until you take more damage.
-P	When you <b><i>tend to a debility or a problematic wound</i></b>, say how. The GM will either say that it's taken care of or tell you what's required to do so (Defying Danger, expending supplies or some other resource, finding ___, Making
-P	Camp, etc.).
+P	When you <b><i>take time to catch your</i></b> <b><i>breath and tend to what ails you</i></b>, expend 1 use of supplies and recover HP equal to 4+Prosperity. You can't gain this benefit again until you take more damage.
+P	When you <b><i>tend to a debility or a problematic wound</i></b>, say how. The GM will either say that it's taken care of or tell you what's required to do so (Defying Danger, expending supplies or some other resource, finding ___, Making Camp, etc.).
 P	For more information, see page 328.
 P	<b>STRUGGLE AS ONE</b>
 P	When you <b><i>Defy Danger as a group</i></b>, establish the party's approach and each roll +STAT (per Defy Danger):
@@ -873,8 +858,7 @@ B	Clear a debility
 P	If <b><i>your rest was particularly peaceful,</i></b> <b><i>comfortable, or enjoyable,</i></b> you also gain advantage on your next roll.
 P	For more information, see page 248 and page 334.
 P	<b>FORAGE</b>
-P	When you <b><i>spend a few hours seeking</i></b> <b><i>food in the wild</i></b>, roll +WIS. In winter, you have disadvantage. <b>On a 10+</b>, pick
-P	2; <b>on a 7-9</b>, pick 1:
+P	When you <b><i>spend a few hours seeking</i></b> <b><i>food in the wild</i></b>, roll +WIS. In winter, you have disadvantage. <b>On a 10+</b>, pick 2; <b>on a 7-9</b>, pick 1:
 B	You acquire ◇ provisions (1d6 uses)
 B	You acquire an extra 1d6 uses of provisions
 B	You discover something interesting or useful
@@ -936,8 +920,7 @@ PB
 P	For more information, see page 534.
 PAGE	83
 P	<b>PULL TOGETHER</b>
-P	When you <b><i>set a community to work on</i></b> <b><i>improvements, to secure new resources,</i></b> <b><i>or to make major repairs</i></b>, spend whatever the GM says is required (time, material, Surplus, etc.) and roll
-P	+Population: <b>on a 10+</b>, the job gets done; <b>on a 7-9</b>, pick 1:
+P	When you <b><i>set a community to work on</i></b> <b><i>improvements, to secure new resources,</i></b> <b><i>or to make major repairs</i></b>, spend whatever the GM says is required (time, material, Surplus, etc.) and roll +Population: <b>on a 10+</b>, the job gets done; <b>on a 7-9</b>, pick 1:
 B	It gets done, but other work doesn't; reduce Fortunes by 1
 B	It gets done, but the work is shoddy, crude
 B	It gets done, but there's a consequence (bad blood, an injury, a threat unearthed, etc.)
@@ -968,14 +951,12 @@ P	+Fortunes: <b>on a 10+</b>, pick 1 seasonal gain; <b>on a 7-9</b>, pick 1 seas
 P	Whatever the result, reset Fortunes to +1.
 P	When <b><i>the harvest is complete</i></b>, roll 1d4; the steading generates that much Surplus.
 P	For more information, see page 516.
-P	When <b><i>winter grips the</i></b> <b><i>land</i></b>, whoever is weariest rolls
-P	1d4+Population; the steading consumes that much Surplus. If there's not enough, reduce Surplus to 0 and Meet with Disaster. Then, pick 1:
+P	When <b><i>winter grips the</i></b> <b><i>land</i></b>, whoever is weariest rolls 1d4+Population; the steading consumes that much Surplus. If there's not enough, reduce Surplus to 0 and Meet with Disaster. Then, pick 1:
 B	Reduce Population by 1 (min -1) due to death, decrepitude, and departure
 B	An important resource (one of the horses, the cistern, etc.) is lost or not maintained
 B	An important NPC dies, their role unfilled
 B	Your PC dies, leaves, or retires from play
-P	Then, roll +Fortunes: <b>on a 10+</b>, the winter is relatively mild, and each player can name a local NPC with whom their relationship improves at least a little (work together to figure out how); <b>on a 7-9</b>, the steading must consume additional
-P	Surplus equal to 1d4+Population before winter ends or suffer the consequences as above; <b>on a 6-</b>, as a 7-9, but also threats abound (and don't mark XP).
+P	Then, roll +Fortunes: <b>on a 10+</b>, the winter is relatively mild, and each player can name a local NPC with whom their relationship improves at least a little (work together to figure out how); <b>on a 7-9</b>, the steading must consume additional Surplus equal to 1d4+Population before winter ends or suffer the consequences as above; <b>on a 6-</b>, as a 7-9, but also threats abound (and don't mark XP).
 P	Whatever the result, reset Fortunes to +1.
 PAGE	85
 H2	Seasonal gains
@@ -991,66 +972,52 @@ H2	Gear and possessions
 P	You don't keep track of every item or possession that your PC owns. You and your family have a whole house full of belongings, and you're part of a tight-knit community that freely shares, gifts, and trades goods with each other. In general, you'll track only:
 B	Your current inventory (the stuff you have on your person right now)
 B	Your special possessions (the ones you start play with, and those that you acquire in play)
-H3	Inventory
-P	for Caradoc
-P	When you
-P	<b><i>Outfit</i></b>, mark a number of
-B	For a<b>light load</b>
-B	For a <b>normal load</b> (<i>quick & quiet</i>◇
-B	For a, mark 4-6 ),mark up to 3 <b>heavy load</b>
-P	(<i>noisy, slow, hot, quick to tire</i>◇
-P	<b>Undefined</b>
-P	When you ◇◇◇◇◇◇
-P	<b><i>Have What You Need</i></b>◇◇◇◇◇
-P	, move
-P	◇ <b>Supplies</b> ◇ from here to (4+Prosperity uses
-P	◇ <b>More supplies</b>
-P	◇ <b>Even more supplies</b> (4+Prosperity uses ◇◇◇◇◇ )
-P	Use supplies to Recover, Make Camp, or have extra (4+Prosperity uses ◇◇◇◇◇ )
-P	◇ <b>Mess kit</b> ◇◇ (requires fire & water; makes Supplies last longer)
-P	◇ <b>Bedroll</b> (recover 1d6 extra HP when you Make Camp)
-P	◇ <b>Blanket</b> (
-P	<i>warm</i>)
-P	◇ <b>Rope</b>, ~25 ft
-P	◇◇ <b>Sledge/litter/travois</b> ◇ <b>Change of clothes</b>
-P	, roll-out ◇ <b>Shovel</b>
-P	◇ <b>Torch</b> (lasts ~1 hour; ◇ <b>Snow-shoes</b>
-P	◇ <b>Oil lamp</b> <i>reach</i>, <i>area</i> (◇◇ hours,, <i>dangerous</i>
-P	◇ <b>Extra oil</b> (◇◇◇ <i>reach</i> )
-P	◇◇◇, <i>area</i>, <i>crude</i>
-P	◇◇ <b>Firewood</b>◇◇◇◇◇ hours, for lamp/lantern, useless as a weapon))
-P	(enough to last 1 full night)
-P	◇ <b>Hatchet</b>, iron
-P	◇ <b>Mallet</b> (<i>hand</i>, <i>thrown</i>
-P	◇, iron and/or wood (,xpiercing)
-P	◇ <b>Mattock</b>86 <i>hand</i>
-P	◇, iron )
-P	◇◇ <b>Maul</b> (<i>close</i>,x piercing, ◇◇, iron (<i>close messy</i>
-P	◇ <b>Staff</b> (<i>l forcf l</i>, <i>awk</i>
 H2	Inventory
 P	When you <b>Outfit</b> for an expedition (page 77), you'll fill out your Inventory insert.
 P	Mark the ◇, ◇◇, or next to an item to indicate you are carrying it.
 P	Every PC has the same Inventory insert.
 P	Items that are printed on the insert are commonly available in Stonetop, things that any PC has access to if they need it. You might not own a shovel yourself, but you know someone who does, someone willing to loan it to you or trade you for it. The GM might ask where you got it, but if it's printed on the insert, you can acquire it, no problem.
 P	The insert also has blank spaces, where you can write in other common items or <b>special</b> <b>possessions</b> (see page 90).
-P	below, on specific items or Undefined.
-P	), mark 7-9
-H3	◇ below. Small items
-P	Fit in a pocket, pouch, or boot.
-P	When you equal to 4+Prosperity. <b><i>Outfit</i></b>, mark below
-P	◇ ) <i>small</i> items. <b>Undefined</b>
-P	When you move <b><i>Have What You Need</i></b>
-P	• from here to items below,, or expend supplies to mark an additional.
-P	<b>Knife</b> or <b>dagger</b>, iron (
-P	<b>Sling</b> (<i>near hand</i>)
-P	, <i>reload</i>, <i>awkward</i>
-P	◇ low ammo, all out),
-P	<b>Rushlight</b> ◇ minutes, (lasts ~15-30
-P	<i>close</i>, <i>crude</i>
-P	<b>Tinderbox</b> )
-P	<b>Needle & thread</b> (<i>slow</i>)
-P	<b>Handful of coppers</b>
-P	<b>Whisk</b> k
+H3	Inventory
+P	for Caradoc
+P	When you
+P	<b><i>Outfit</i></b>, mark a number of
+B	For a<b>light load</b>
+B	For a (<i>quick & quiet</i>◇ below, on specific items or Undefined.
+P	<b>normal load</b> ),mark up to 3
+B	For a <b>heavy load</b>, mark 4-6 (<i>noisy, slow, hot, quick to tire</i>◇◇
+P	<b>Undefined</b>
+P	When you ◇◇◇ ), mark 7-9
+P	<b><i>Have What You Need</i></b>◇◇◇◇◇◇◇
+P	, move
+P	◇ <b>Supplies</b> ◇ from here to (4+Prosperity uses ◇ below. Small items
+P	◇ <b>More supplies</b> ◇
+P	◇ <b>Even more supplies</b> (4+Prosperity uses ◇◇◇◇ Fit in a pocket, pouch, or boot.
+P	◇◇◇◇◇◇ )
+P	Use supplies to Recover, Make Camp, or have extra (4+Prosperity uses ◇◇◇◇◇ ) When you
+P	◇◇◇ equal to 4+Prosperity. <b><i>Outfit</i></b>, mark below
+P	◇ <b>Mess kit</b> ◇◇◇◇◇ )
+P	(requires fire & water; makes Supplies last longer)<i>small</i> items.
+P	◇ <b>Bedroll</b> (recover 1d6 extra HP when you Make Camp) <b>Undefined</b>
+P	◇ <b>Blanket</b> ( When you <i>warm</i>) <b><i>Have What You Need</i></b>
+P	◇ <b>Rope</b>, ~25 ft move
+P	• from here to items below,, ◇◇ <b>Sledge/litter/travois</b> ◇ <b>Change of clothes</b> or expend supplies to mark an , roll-out ◇ <b>Shovel</b> additional.
+P	◇ <b>Torch</b> (lasts ~1 hour; ◇ <b>Snow-shoes</b>
+P	◇ <b>Oil lamp</b> <i>reach</i>, <i>area</i> <b>Knife</b> (◇◇ hours,, <i>dangerous</i> or <b>dagger</b>
+P	◇ <b>Extra oil</b> (◇◇◇ <i>reach</i> ) <b>Sling</b>, iron (
+P	◇◇◇, <i>area</i>, <i>crude</i> (<i>near</i>, <i>reload hand</i>)
+P	◇◇ <b>Firewood</b>◇◇◇◇◇ hours, for lamp/lantern, useless as a weapon)) low ammo, all out), <i>awkward</i> (enough to last 1 full night) ◇,
+P	<b>Rushlight</b> ◇
+P	◇ <b>Hatchet</b> minutes, (lasts ~15-30
+P	◇, iron(<i>hand close</i>
+P	◇ <b>Mallet</b>, iron and/or wood (, <i>thrown</i> <b>Tinderbox</b>, <i>crude</i>)
+P	,xpiercing) (
+P	<b>Mattock</b>86 <i>hand</i> <b>Needle & thread</b><i>slow</i>)
+P	◇, iron )
+P	◇◇ <b>Maul</b> (<i>close</i>,x piercing, <b>Handful of coppers</b>
+P	◇◇, iron (<i>close messy</i>
+P	◇ <b>Staff</b> ( <i>forcf l</i>, <i>awk</i> <b>Whisk</b>
+P	◇ <i>l</i> k
 PAGE	87
 H2	Load
 P	Items that have a ◇ or ◇◇ in front of them contribute to your load. Count the total number of ◇ that you have marked. If you have…
@@ -1071,8 +1038,7 @@ P	<i>You and Vahid arrive at the Ruined</i> <i>Tower that night, and you use up 
 P	• ◇◇ <i>firewood. You're down to 4</i> ◇ <i>total,</i> <i>which is still a normal load.</i>
 P	<i>The next morning, you leave your</i>
 P	• ◇ <i>shovel with Vahid at the campsite</i> <i>and explore the upper levels of the ruin.</i> <i>You're now carrying only 3</i> ◇ <i>total, so</i> <i>you have a light load and you're able to</i> <i>move about quietly.</i>
-P	<i>You discover a</i> ◇◇ <i>half-buried plaque</i> <i>in the courtyard, made of bronze and</i> <i>etched with Maker-runes. The coast appears to be clear, so you go get Vahid and</i> <i>your</i> ◇ <i>shovel. You spend a few minutes</i> <i>digging the plaque out of the dirt. Vahid</i> <i>confirms that it's a valuable artifact, so</i> <i>you bring it with you. You add</i> <i>"</i> ◇◇ <i>bronze plaque" to a blank line of</i> <i>your Inventory insert, and you're back up</i>
-P	<i>to 6</i> ◇ <i>total.</i>
+P	<i>You discover a</i> ◇◇ <i>half-buried plaque</i> <i>in the courtyard, made of bronze and</i> <i>etched with Maker-runes. The coast appears to be clear, so you go get Vahid and</i> <i>your</i> ◇ <i>shovel. You spend a few minutes</i> <i>digging the plaque out of the dirt. Vahid</i> <i>confirms that it's a valuable artifact, so</i> <i>you bring it with you. You add</i> <i>"</i> ◇◇ <i>bronze plaque" to a blank line of</i> <i>your Inventory insert, and you're back up</i> <i>to 6</i> ◇ <i>total.</i>
 P	<i>All that digging, though, draws the</i> <i>attention of a beznpol—a great big</i> <i>armored stoat! After a quick but bloody</i> <i>fight, you kill it! Its scales sure seem</i> <i>valuable, so you skin the beast and add</i> <i>"</i> ◇ <i>beznpol hide" to your Inventory.</i> <i>You're now at 7</i> ◇ <i>total, which is a</i> <i>heavy load.</i>
 HR
 PAGE	88
@@ -1143,8 +1109,7 @@ P	<i>One of Vahid's special possessions is</i> <i>"Books & scrolls (</i>◇◇�
 HR
 P	If you're a Seeker, add your arcana to your Inventory sheet, too! If they have a ◇ or ◇◇ on the front side, they count towards your load, as always. Otherwise, they're small items, or something that you wouldn't carry around with you.
 H3	Possessions gained in play
-P	When you acquire a new item in play, add it to your Inventory insert in the appropriate spot. When you return home, leave it on your insert. It's now one of your special possessions; you can mark it when you
-P	Outfit or Have What You Need.
+P	When you acquire a new item in play, add it to your Inventory insert in the appropriate spot. When you return home, leave it on your insert. It's now one of your special possessions; you can mark it when you Outfit or Have What You Need.
 P	You can, of course, freely discard a new special possession, or give it away, or trade it to another PC. But if you want to sell it to an NPC, you must roll to <b>Trade &</b> <b>Barter</b> (page 83).
 PAGE	91
 HR

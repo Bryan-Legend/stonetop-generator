@@ -24,8 +24,7 @@ E	you make any GM move that involves them getting hit, knocked around, roughed u
 P	If you make a GM move and that move could theoretically kill, disable, or knock out a normal person, then deal damage as well. Dealing damage should almost never be your move, but it will often be <i>part</i> of your move.
 H3	How much damage?
 P	If the source of the damage is a prepared <b>danger</b> (page 379), use the danger's stats.
-P	For example, if your move is to have a hagr pluck a PC up from the ground and start choking them, then you'd deal the hagr's
-P	1d10+3 damage.
+P	For example, if your move is to have a hagr pluck a PC up from the ground and start choking them, then you'd deal the hagr's 1d10+3 damage.
 P	<b>When multiple combatants deal damage</b> <b>at the same time</b>, roll the single highest damage die among them and add +1 for each additional combatant. The tags from all the combatants apply. So if six coedwig (thorn-spirits, dealing d6 damage, 1 piercing) and a birdwraig (tree spirit, d8+3 damage, <i>forceful</i>) all pound on the Heavy at once, the Heavy is taking d8+9 damage (1 piercing, <i>forceful</i>)—and probably having a very bad day.
 P	<b>If the damage isn't associated with a</b> <b>prepared danger</b>, then ask yourself what it could likely do to a normal person. If the worst it's likely to do is…
 E	cause bruises and scrapes, pain, or light burns, it inflicts d4 damage.
@@ -54,8 +53,7 @@ E	they're at <b>Death's Door</b> (page 245) and roll a 10+;
 E	they have a few days of downtime and <b>Convalesce</b> (page 249);
 E	another move says that they do; or
 E	you <b>offer them an opportunity</b> to regain HP and they take it.
-P	Non-follower NPCs and monsters regain
-P	HP when you decide that they do. Use the player moves as guidelines: a few minutes of rest and access to supplies will restore 3-5 HP; a night's rest will restore HP equal to half their maximum; a few days of rest and recovery will restore them to full HP. The fiction, of course, takes precedence. A supernaturally tough and resilient creature might restore its HP more quickly; a magical construct might not regain HP unless someone or something repairs or recharges it.
+P	Non-follower NPCs and monsters regain HP when you decide that they do. Use the player moves as guidelines: a few minutes of rest and access to supplies will restore 3-5 HP; a night's rest will restore HP equal to half their maximum; a few days of rest and recovery will restore them to full HP. The fiction, of course, takes precedence. A supernaturally tough and resilient creature might restore its HP more quickly; a magical construct might not regain HP unless someone or something repairs or recharges it.
 P	Remember, HP aren't "meat points."
 P	Regaining HP doesn't mean that wounds have closed or bones have knitted; it means they've grown accustomed to the pain, gotten the bleeding to stop, caught their breath. The injuries are still there until they heal. It's just that the character has more fight back in them, and is once again further away from a lethal blow.
 PAGE	241
@@ -127,8 +125,7 @@ HR
 P	<b><i>Tell them the requirements:</i></b> <i>"If you want</i> <i>to walk on that ankle, you'll need to splint it</i> <i>and find a cane or a crutch. And something</i> <i>to dull the pain would be good, too. What</i> <i>do you do?"</i>
 PAGE	245
 H2	Death and dying
-P	When a PC is reduced to 0 HP by an attack that could kill them, they're dying and must make this move. They might also be dying because the fiction demands it: if they fall
-P	100 feet onto rocks, they don't take damage, they're at 0 HP and on Death's Door.
+P	When a PC is reduced to 0 HP by an attack that could kill them, they're dying and must make this move. They might also be dying because the fiction demands it: if they fall 100 feet onto rocks, they don't take damage, they're at 0 HP and on Death's Door.
 P	<b>DEATH'S DOOR</b>
 P	When you <b><i>are dying</i></b>, you glimpse the Last Door and the Lady of Crows (describe them). Then, roll +nothing:
 P	<b>on a 10+</b>, you wrest yourself back to the realm of the living—return to
@@ -145,18 +142,15 @@ P	They can make one last move, but after that they're dead. There's no saving th
 P	If they refuse to go, ask why. Have them look at the Ghost or Revenant inserts and pick their Terrible Purpose. If they can't tell you, they shouldn't pick this option.
 P	To become a Thrall, the PC must know the name of a Thing Below. If none of the Things Below have come up in play, maybe the PC can Know Things before dying?
 P	If the character "sticks around," they are in for a steady downward progression, becoming more and more unstable and monstrous.
-P	Play up the horror. Show how their "lives" are no longer the same. Push their Terrible
-P	Purpose or Impulse into play. For a Ghost or Revenant, create their Terrible Purpose as an affliction; for a Thrall, create their master as a <i>magical entity</i> (see <b>Threats</b>, page 277).
+P	Play up the horror. Show how their "lives" are no longer the same. Push their Terrible Purpose or Impulse into play. For a Ghost or Revenant, create their Terrible Purpose as an affliction; for a Thrall, create their master as a <i>magical entity</i> (see <b>Threats</b>, page 277).
 P	An undead PC should feel like they're on borrowed time—because they are. The other PCs should be wary of their undead ally.
 P	Wary, at the very least.
 PAGE	246
 H2	and recovery
 P	The following moves deal with regaining HP, clearing debilities, and treating or recovering from problematic wounds.
 P	<b>RECOVER</b>
-P	When you <b><i>take time to catch your</i></b> <b><i>breath and tend to what ails you</i></b>, expend 1 use of supplies and recover
-P	HP equal to 4+Prosperity. You can't gain this benefit again until you take more damage.
-P	When you <b><i>tend to a debility or a problematic wound</i></b>, say how. The GM will either say that it's taken care of or tell you what's required to do so (Defying Danger, expending supplies or some other resource, finding ___, Making
-P	Camp, etc.).
+P	When you <b><i>take time to catch your</i></b> <b><i>breath and tend to what ails you</i></b>, expend 1 use of supplies and recover HP equal to 4+Prosperity. You can't gain this benefit again until you take more damage.
+P	When you <b><i>tend to a debility or a problematic wound</i></b>, say how. The GM will either say that it's taken care of or tell you what's required to do so (Defying Danger, expending supplies or some other resource, finding ___, Making Camp, etc.).
 P	As with any move: ask them what this looks like. Are they tending to wounds?
 P	Having a snack? Applying a poultice?
 P	Chewing on willow bark? What?
@@ -223,8 +217,7 @@ P	Don't make the requirements unduly hard. Your job is to <b>be a fan of the pla
 HR
 P	<i>Rhianna lost her right arm at Three</i> <i>Coven Lake (and she got off easy; Andras</i> <i>didn't make it home at all). Some quick</i> <i>thinking saved her life, but she's unsure</i> <i>how she'll be an effective warrior and</i> <i>archer. She's not about to retire, though.</i>
 P	<i>So, we Make a Plan. "What do you hope</i> <i>to accomplish? Are you looking to replace</i> <i>or regrow the arm through magic? Or</i> <i>learn to shoot one-handed?" Rhianna's</i> <i>practical to a fault, and doesn't even consider a magical option. I look at the list of</i> <i>possible requirements, and write down:</i>
-P	O You must design and make some prosthetic or device for drawing
-P	& releasing a bow one-handed O You must learn to use the device O It'll take months of practice
+P	O You must design and make some prosthetic or device for drawing & releasing a bow one-handed O You must learn to use the device O It'll take months of practice
 PB
 P	<i>We decide that a leather mouth-bit</i> <i>attached to the bowstring would let her</i> <i>pull and release. It's a simple thing to</i> <i>make with help from Sawyl the tanner.</i>
 P	<i>Later, I frame a scene with Rhianna</i> <i>practicing her new setup. I ask what it</i> <i>looks like, what she's struggling with.</i> <i>Then Andras's mom comes by and thanks</i> <i>Rhianna for taking him under her</i> <i>wing, saying how proud she was to have</i> <i>Andras protecting the village. Rhianna's</i> <i>left feeling all sorts of bitter over losing</i> <i>him in search of Vahid's damn fire-jewel.</i>

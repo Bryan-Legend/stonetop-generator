@@ -115,8 +115,7 @@ B	Horses (Value 3) traded for a similar amount of Surplus (Value 2), plus help w
 B	Someone versed in training and caring for horses, willing to move to Stonetop
 B	An arcanum of the <b>Stone Lords</b> (page 382), the <b>Barrow Builders</b> (page 34), the <b>spirits of the wild</b> (page 356), or the <b>Things Below</b> (page 412).
 H3	Special items
-P	The following might be acquired among the Hillfolk, but the PCs must roll Trade
-P	& Barter to acquire them. This is in addition to the special items on the Moves &
+P	The following might be acquired among the Hillfolk, but the PCs must roll Trade & Barter to acquire them. This is in addition to the special items on the Moves &
 P	Gear handout.
 P	When the PCs <b><i>Trade & Barter among the</i></b> <b><i>Hillfolk</i></b>, they use the local Prosperity (-1 by default) with disadvantage for being a <i>hamlet</i>. <b>On a 6-</b>, they don't mark XP and this band doesn't have/want it—maybe they know of another band who might?
 VT	goods

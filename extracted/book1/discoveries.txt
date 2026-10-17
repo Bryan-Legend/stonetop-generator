@@ -59,8 +59,7 @@ P	• The constructs bear that same sigil from the scroll; the PCs might interro
 P	<i>(And now I start thinking about who or</i> <i>what the sorcerer's rival might be, and</i> <i>how the PCs might encounter them…)</i>
 HR
 P	<b>Decide where and how the PCs could</b> <b>find any clues you prepare</b>. Some clues will be tied to a specific place, NPC, or monster. Other clues will be notional, things you can introduce whenever and wherever it makes sense.
-P	If you suspect that a clue will prompt your
-P	PCs to Know Things or Seek Insight or use some other information-gathering move, consider what information you might provide. Maybe write down something interesting and something useful, or what isn't what it seems, etc.
+P	If you suspect that a clue will prompt your PCs to Know Things or Seek Insight or use some other information-gathering move, consider what information you might provide. Maybe write down something interesting and something useful, or what isn't what it seems, etc.
 HR
 P	<i>Continuing the previous example, the</i> <i>second and third clues are clearly tied to</i> <i>encounters with specific entities. But the</i> <i>first clue—the map—could theoretically</i> <i>be found anywhere in the ruined city.</i>
 P	<i>I suspect that Vahid will Know Things</i> <i>about that sigil if he finds it on the map</i> <i>or the constructs, so I jot down:</i>
@@ -117,8 +116,7 @@ P	<i>I look at the</i> discoveries <i>table (</i>Book II<i>, page 203) and see "
 P	<i>I'm not sure when or where the PCs will</i> <i>encounter Thornthumb; but I think he'll</i> <i>notice them at some point and either try</i> <i>to steal from them (especially if he learns</i> <i>of the Mindgem) or approach them and</i> <i>offer info about Sajra (if he thinks they</i> <i>can defeat it).</i>
 P	<i>As for this encounter's purpose and</i> <i>stakes: I think this guy will be fun to</i> <i>play, and he's got lots of potential to help,</i> <i>hinder, and frustrate the PCs!</i>
 HR
-P	<b>Create the NPCs</b> if you haven't already, following the steps on page 453. If there's more than one NPC, decide which one(s) the PCs are most likely to interact with and focus on them. Portray the others as a
-P	group, zooming in with more detail only as you need to.
+P	<b>Create the NPCs</b> if you haven't already, following the steps on page 453. If there's more than one NPC, decide which one(s) the PCs are most likely to interact with and focus on them. Portray the others as a group, zooming in with more detail only as you need to.
 H2	Running encounters
 P	Run encounters like any other part of the game. Follow the <b>core loop</b> (page 169).
 P	Frame the action with the encounter about to start, or just starting, or already underway. Describe the environment and portray your characters. Make a soft GM move, ask what the PCs do, and resolve their actions. Repeat until the encounter resolves itself or becomes a new situation.
@@ -230,8 +228,7 @@ PAGE	433
 P	& Barter. As above, the PCs can Know Things or Make a Plan to find a buyer, or wait for a trade opportunity. If they find a buyer, assign the artifact a Value, typically 2 or 3 but sometimes as much as 4.
 P	Trying to sell valuable or powerful artifacts is a fraught enterprise, a great way to turn those artifacts into <i>MacGuffin</i> threats. If the PCs refuse an offer, then the other party might try to steal the artifact (or send goons to do so). Even if the trade is successful, word might get out that Stonetop has such things, or that the PCs know where to find them, and that can lead to all sorts of unwanted attention.
 H2	Buying artifacts
-P	As a rule, specific and/or magical artifacts are unique items—the PCs can't just Trade
-P	& Barter to acquire them.
+P	As a rule, specific and/or magical artifacts are unique items—the PCs can't just Trade & Barter to acquire them.
 P	If a PC wants to acquire such an artifact, they might:
 B	Know Things about where such things can be found, or who might have one (and then attempt to acquire it)
 B	Make a Plan with the GM
@@ -307,10 +304,8 @@ P	<i>Interesting! Apparently, this Green Lord</i> <i>revered Aratis, the god of 
 HR
 H3	As a steading improvement
 P	If the artifact could benefit the village of Stonetop as a whole, then write it up as a steading improvement. This is a good way to reflect resources (like a mine or a water source), improvements to the food supply (a new crop, weather magic, etc.), or other artifacts with far-reaching benefits.
-P	Make a Plan with the PCs to establish the requirements, the ongoing costs (if any), and the benefits of completing it. See page
-P	514 for more about <b>improvements</b>.
-P	For examples, see the <b>golden sapling</b> (<i>Book</i> <i>II</i>, page 189) and <b>rhoillyg orchard</b> (<i>Book</i>
-P	<i>II</i>, page 216).
+P	Make a Plan with the PCs to establish the requirements, the ongoing costs (if any), and the benefits of completing it. See page 514 for more about <b>improvements</b>.
+P	For examples, see the <b>golden sapling</b> (<i>Book</i> <i>II</i>, page 189) and <b>rhoillyg orchard</b> (<i>Book</i> <i>II</i>, page 216).
 PAGE	437
 P	<i>I ponder a little bit and then write the</i> <i>following, riffing on the Judge's move,</i> <b><i>Censure</i></b> <i>(page 118).</i>
 P	REDWOOD BRAZIER (◇◇, magical, near, area)
@@ -365,8 +360,7 @@ P	<i>"Okay," I tell Caradoc, "In the rubble near</i> <i>the tower, you find this
 P	Some arcana are <b>sites</b> (page 345), or part of one. Place them where they make sense, and feel free to tweak the details on the front of the card. The "runes around a ruined hall" arcanum describes a throne room, but maybe a smithy makes more sense in your game?
 P	A few arcana represent tales or specific encounters. Present these to the PCs as <b>clues</b> (page 424), <b>encounters</b> (page 426), or <b>opportunities</b> (page 428).
 P	Again, feel free to modify the specifics on the front of the card to meet your needs.
-P	A handful of arcana—notably <b>Storm Marking</b>s and the <b>Ineffable Words</b> (<i>Book II</i>, pages
-P	566 and 568)—represent a PC being infused with magical power. Offer these as opportunities, or even inflict them as consequences when the PCs are exposed to truly potent magic.
+P	A handful of arcana—notably <b>Storm Marking</b>s and the <b>Ineffable Words</b> (<i>Book II</i>, pages 566 and 568)—represent a PC being infused with magical power. Offer these as opportunities, or even inflict them as consequences when the PCs are exposed to truly potent magic.
 PAGE	440
 H2	Identifying arcana
 P	Be generous with info about arcana. You want the players to know what's involved in unlocking them and using them. They need that info to make informed decisions.
@@ -375,14 +369,12 @@ P	When the PCs discover an arcanum, you might…
 E	<b>just give the player(s) the card</b> and have them read it, front and back. Maybe the PC doesn't know all this info yet; work with the player to figure out how and when they figure it out.
 E	<b>offer riches at a price</b> or <b>tell them</b> <b>the requirements</b> to learn more about the arcanum, which might involve taking a risk and Defying Danger, or talking to someone, or Seeking Insight. If they do so successfully, give them the card.
 E	<b>prompt them to Know Things</b> about the arcanum: <b>on a 10+</b>, give them the card and have them read both sides;
-P	<b>on a 7-9</b>, have them read the front, and show them the back when they have some time to study it or learn more; <b>on</b> <b>a 6-</b>, either have them read the front
-P	and then have something bad happen, or hint at the arcanum's power and tell them how they could learn more.
+P	<b>on a 7-9</b>, have them read the front, and show them the back when they have some time to study it or learn more; <b>on</b> <b>a 6-</b>, either have them read the front and then have something bad happen, or hint at the arcanum's power and tell them how they could learn more.
 P	A few major arcana lend themselves to a slow reveal. For example, you might tell the PC that rubbing this magic ring calls up a mist.
 P	But the first time someone dies in that fog, the ring asks, "May I take this one?" and you give the player the insert for the <b>Ring of Daagon</b> (<i>Book II</i>, page 560). Judge for yourself whether this would work for any given arcanum, and whether your player(s) would enjoy it.
 H2	Unlocking arcana
 P	To unlock their mysteries, many arcana (especially minor arcana) ask the PCs to invest significant time and effort. They have requirements like, "spend a few weeks deciphering the glyphs," or, "acquire the special ingredients," or "risk lasting harm to your physique and health."
-P	<b>Give players opportunities to pursue</b> <b>these requirements</b>. When there's downtime, ask if they want to work on unlocking any arcana. If they're unsure how to do so, give them suggestions. Maybe they can
-P	Know Things about it, or Trade & Barter for what they need, or Make a Plan.
+P	<b>Give players opportunities to pursue</b> <b>these requirements</b>. When there's downtime, ask if they want to work on unlocking any arcana. If they're unsure how to do so, give them suggestions. Maybe they can Know Things about it, or Trade & Barter for what they need, or Make a Plan.
 P	Establish which requirement the PC is working on and how they're going about it.
 P	<b>Begin and end with the fiction</b>. Ask what this looks like. Where and when are they doing it? Who is involved?
 P	Also, <b>bring it home</b>. Ask what chores they're neglecting or who they get to cover for them. Think about how NPCs in the village react. Who might be affected, or put at risk, or confront the PC? Use your homefront <b>threats</b> (page 277) and <b>moves</b> (page 502) here.
@@ -424,13 +416,13 @@ B	Each character must unlock its mysteries individually, tracking their own prog
 B	Each character tracks their own consequences individually, meaning they can each suffer the same consequence Of course, each arcanum is different and there will be exceptions. For example, the consequences for the <b>Mindgem</b> (<i>Book II</i>, page 548) all affect the Mighty Servant itself, reflecting how it learns and changes.
 P	Thus, multiple PCs giving orders to the Mighty Servant would all be marking off the same list of consequences.
 PAGE	443
+H2	NPCs using artifacts and arcana
 P	At some point, an NPC or monster will get their hands on a magical artifact or arcanum. The PCs might give it to them, or teach them to use it or the spell it imparts. Or, the NPC might acquire/steal/borrow it from the PCs.
 P	Or it might be in the NPC's possession to begin with.
 P	Most magical artifacts and all arcana are written to be player-facing, often with custom moves or procedures that assume a PC is using them. So how does that work when an NPC or monster is the active party?
 P	First, consider whether the NPC or monster can use the artifact/arcanum at all. Not everyone has the talent, learning, or aptitude to learn spells or command magical effects. Of course, some magical artifacts just work and anyone can use them.
 P	If an antagonistic NPC or monster is learning to use an artifact/arcanum, you can reflect that as an impending doom and grim portents, or even write up the artifact/arcanum itself as a threat (a <i>MacGuffin</i>, probably).
 P	If one or more friendly NPCs are learning to use an artifact or arcanum, and that's something the PCs want to happen, then Make a Plan to lay out the requirements. If their mastery of this magic would provide some lasting benefit to the village, then write it up as a <b>steading improvement</b> (page 514).
-H2	NPCs using artifacts and arcana
 P	To reflect a monster or NPC using a magical artifact or arcanum, you might…
 E	just <b>imagine how it works in their</b> <b>hands</b>, and incorporate that into your descriptions and GM moves when you portray them;
 E	<b>reflect it in their stat block</b>, as one or more tags, special qualities, moves, or combinations thereof;
@@ -518,8 +510,7 @@ B	Its starting moves
 B	How it's unlocked
 B	Its mysteries
 B	Its consequences
-P	Refer to the existing major arcana for a sense of structure and what's possible. See <b>Noruba's Ice Sphere</b> (page 61) for one example, and Appendix D (<i>Book II</i>, page
-P	540) for the rest
+P	Refer to the existing major arcana for a sense of structure and what's possible. See <b>Noruba's Ice Sphere</b> (page 61) for one example, and Appendix D (<i>Book II</i>, page 540) for the rest
 H2	Title, tags, and description
 P	Give your major arcanum a Proper Title, something capitalized, evocative, maybe a little ominous. The "Misty Mirror" and "The Everflame" are good examples.
 P	List its tags and other <b>game elements</b> (page 437), including its load (if any).
@@ -548,8 +539,7 @@ E	unlock further mysteries after marking a certain number of consequences; or…
 E	do something else to unlock them.
 P	See page 551 for advice on <b>writing custom</b> <b>player moves</b>. Look to other major arcana for inspiration, but don't be afraid to try something new and unique.
 P	Keep the mysteries as concise as you can.
-P	They need to share one side of a half-page insert with the consequences; you've got
-P	~200 words to work with, 300 at most.
+P	They need to share one side of a half-page insert with the consequences; you've got ~200 words to work with, 300 at most.
 H2	Consequences
 P	Create 5-10 consequences that a PC might incur when they use the arcanum's mysteries. If you write 6 or fewer, give some of them multiple checkboxes to indicate that they can be suffered multiple times. A major arcanum should have ~8 checkboxes total.
 P	Make 2-3 of the consequences not-so-bad, maybe even beneficial. But by the time the player is marking the fourth or fifth one, things should be feeling grim.

@@ -11,8 +11,7 @@ E	the <b>Stone Lords</b> (page 382), who carved cities out of bedrock, raised to
 E	the <b>Tempest Lords</b> (page 398), who harnessed the primal forces of sky and sea, who sailed forth to conquer much of the world.
 P	The Tempest Lords' empire was the oldest and greatest nation of Makers, and for a long time the others lived in their shadow. But hubris led to the empire's ruin, and allowed the other Makers to rise in power. There were rivalries between them, certainly, and border conflicts, but for centuries they largely lived in peace. They traded goods and ideas, even cooperated on grand projects like the <b>Makers' Roads</b> (page 270).
 P	The peace did not last forever. The Green Lords called on the <b>Things Below</b> (page 412) to crush their rebellious servants, a crime for which the Stone Lords would not stand. They led their brethren against the now-corrupted Green Lords, shattered their lands and tried to wipe them from the earth. They succeeded, but at great cost.
-P	For the whispers of the Things Below had become a song. And over the decades, the Stone Lords' own human servants were themselves corrupted. In a flurry of violence, they broke the seals and turned against their masters, and ushered in the <b>Time of Cataclysm</b> (page 413). The power of the Things Below was loosed upon the world, and one-by-one the remaining
-P	Makers fell.
+P	For the whispers of the Things Below had become a song. And over the decades, the Stone Lords' own human servants were themselves corrupted. In a flurry of violence, they broke the seals and turned against their masters, and ushered in the <b>Time of Cataclysm</b> (page 413). The power of the Things Below was loosed upon the world, and one-by-one the remaining Makers fell.
 P	That was a few centuries ago, at least. But the bones of those civilizations remain.
 H2	Hooks
 HR

@@ -450,8 +450,7 @@ Q	Are you married? Single? Betrothed? Widowed? Any kids?
 Q	Are your parents still alive? Your grandparents? Siblings?
 H2	6 & 7	PC connections
 P	In step 6, the players start to flesh out the relationships between their PCs.
-P	The first player picks a question from step
-P	6, and asks it aloud to the other players.
+P	The first player picks a question from step 6, and asks it aloud to the other players.
 P	Anyone can answer "me," and the asking player writes their name down in the space provided. Then, the next player goes, and the next. Repeat until everyone has gone.
 P	If no one bites on a particular question, talk it through. Encourage the others to really consider it, but don't force someone to say "me." If no one bites, have the player ask a different question.
 P	As always, ask follow-up questions to flesh out the details. "So, Ari, you've been with Vahid the entire way, huh? You met back in Lygos, then. What brought you together?"

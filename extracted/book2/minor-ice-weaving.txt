@@ -10,8 +10,7 @@ C	… decipher the script, written in a form of the Rime Lords' alphabet.
 C	… spend months studying the text and practicing the techniques therein.
 C	… risk permanently damaging your health as you master them.
 H3	Ice Weaving
-P	When you <b><i>will dark ice to form</i></b>, lose 1 HP, +1
-P	HP for each of the following you desire:
+P	When you <b><i>will dark ice to form</i></b>, lose 1 HP, +1 HP for each of the following you desire:
 B	It's enough to make a small wall or encase a person (else, it's ◇◇ at most)
 B	It's hard as stone
 B	It's solid to spirits, able to block/harm/ hinder them Then, roll +CON: <b>on a 10+</b>, pick 2; <b>on a 7-9</b>, pick 1, or pick 2 and lose 2 more HP.

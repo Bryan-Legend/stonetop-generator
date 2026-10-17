@@ -173,8 +173,7 @@ P	To the Hillfolk, the downing of a <i>d'lkornek</i> ("thorn-dragon") is a hero'
 P	<b>Something interesting</b>: Some scholars hold that the Stone Lords imbued horned drakes with elemental qualities. Specimens of their hide are commonly mistaken for dolostone or some other mineral, and Hillfolk prize their horns (Value 3).
 P	<b>Something useful:</b> The horns of a <i>d'lkornek</i> act like <b>power-crystals</b> (page 389), but larger and with great capacity.
 P	They are extremely dangerous to harvest; a wise butcher slowly bleeds away their energy over the course of days.
-P	Adult horned drakes might be accompanied
-P	by their young (<i>group</i>, <i>large</i>, <i>hardy</i>; <b>HP</b> 14;
+P	Adult horned drakes might be accompanied by their young (<i>group</i>, <i>large</i>, <i>hardy</i>; <b>HP</b> 14;
 P	<b>Damage</b> d8+3; <b>Instinct</b> to get curious, to play fight), whom they aggressively defend.
 PAGE	355
 HR

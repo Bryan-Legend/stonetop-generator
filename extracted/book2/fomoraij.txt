@@ -86,8 +86,7 @@ ICON	icons/treasure.svg
 H3	Bloodshot amber
 P	◇ each, <i>magical</i>
 P	1d4 fist-sized gems, riddled with red-black intrusions.
-P	When you <b><i>drip blood onto an amber</i></b>, name a manifest spirit in your presence and roll
-P	+CHA. If the spirit has an intact <b>tether</b> (page 358), roll with disadvantage. <b>On a</b> <b>10+</b>, the spirit is imprisoned in the amber;
+P	When you <b><i>drip blood onto an amber</i></b>, name a manifest spirit in your presence and roll +CHA. If the spirit has an intact <b>tether</b> (page 358), roll with disadvantage. <b>On a</b> <b>10+</b>, the spirit is imprisoned in the amber;
 P	<b>on a 7-9</b>, the amber starts to suck the spirit in, but it may yet fight back; <b>on a 6-</b>, the spirit wrests free and the amber shatters.
 P	When you <b><i>imprison a spirit in a bloodshot</i></b> <b><i>amber</i></b>, it is wracked with pain and cannot manifest. Only one spirit can be imprisoned at a time. When you <b><i>touch the amber with</i></b> <b><i>bare skin</i></b>, you can communicate with the spirit within and release it if you want (even if you weren't the one who imprisoned it).
 P	When a bloodshot amber is found, it likely contains a spirit that has been trapped in agony for centuries.
@@ -166,8 +165,7 @@ P	10 Minions/servants/ability to send out extensions of itself
 P	11 Mobility (jumping, flying, climbing, burrowing, squeezing, etc.)
 P	12 Unnatural resilience/vigor/durability
 PB
-P	Should a PC or an important NPC become infected by a Fomoraij (or one of their servants), write it up as a threat (an <i>affliction</i>). If a PC willingly becomes an infected servant, consider creating a playbook insert, using the <b>Thrall</b> for inspiration (see
-P	<i>Book I</i>, page 152).
+P	Should a PC or an important NPC become infected by a Fomoraij (or one of their servants), write it up as a threat (an <i>affliction</i>). If a PC willingly becomes an infected servant, consider creating a playbook insert, using the <b>Thrall</b> for inspiration (see <i>Book I</i>, page 152).
 HR
 P	<i>I want a big scary servant of</i> <b><i>Yaarowslow the Many</i></b> <i>(page 142), a</i> <b><i>hagr</i></b> <i>(page 208) that stumbled on the tainted</i> <i>spring. I roll "a foul substance, injected/</i> <i>inhaled/imbibed" and think of Yaarowslow's silvery slime. I get "by eating</i> <i>away at what they once were" as a means</i> <i>of control, and imagine the silver slime</i> <i>corrupting it from the inside, replacing its</i> <i>blood and organs and overwhelming its</i> <i>mind with voices and delusions. For gifts,</i> <i>I pick "unnatural resilience/vigor/durability" and "a way to spread its infection</i> <i>and/or its master's influence." I then roll</i> <i>for a third gift and get "an area attack."</i>
 P	<i>I update the hagr's stat block to reflect</i> <i>these changes, and end up with this:</i>

@@ -10,8 +10,7 @@ HR
 P	When you <b><i>spend a few hours staring into the stones and listening to their whispers</i></b>, name someone you know but on whom you have never used this power before. Then, roll +INT: <b>on a 10+</b>, the stones reveal a secret about them; <b>on a 7-9</b>, the stones reveal a secret, but you must first reveal a secret to the stones (about your hopes, fears, regrets, desires); <b>on a 6-</b>, the stones pry a secret from you.
 P	When you <b><i>reveal a secret to the stones</i></b>, or they pry one from your mind, mark 1:
 MARK	5
-P	When you <b><i>make the last mark</i></b>, you unlock the mysteries of the rocks, and are able to use Shadow
-P	Magic (see reverse).
+P	When you <b><i>make the last mark</i></b>, you unlock the mysteries of the rocks, and are able to use Shadow Magic (see reverse).
 P	When <b><i>one of the rocks is shattered</i></b>, cross off one of the Shadow Magic options; it is no longer available.
 P	front
 PAGE	551

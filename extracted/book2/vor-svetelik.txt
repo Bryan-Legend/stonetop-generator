@@ -194,8 +194,7 @@ H3	Blade wasps
 P	Like wasps, but bigger and with iron-infused stingers. Hey, at least they're not venomous.
 P	When you <b><i>are stung by a single blade wasp</i></b>, it hurts, draws blood, and takes some effort not to cry out.
 P	When you <b><i>get swarmed by blade wasps</i></b>, take 1d6 damage (<i>messy</i>, ignores armor) and you're wracked with pain. Doing anything other than curling up and writhing means that you're Defying Danger (likely with CON). Each subsequent time you take damage from the swarm, increase the die one step (max d12).
-P	When you <b><i>flee a blade wasp swarm</i></b>, roll
-P	+CON: <b>on a 10+</b>, you escape the swarm but pick 1 from the list below; <b>on a 7-9</b>, you escape the swarm but pick 2:
+P	When you <b><i>flee a blade wasp swarm</i></b>, roll +CON: <b>on a 10+</b>, you escape the swarm but pick 1 from the list below; <b>on a 7-9</b>, you escape the swarm but pick 2:
 B	Suffer damage from the swarm
 B	Mark a debility from blood loss
 B	An important piece of gear is lost or ruined

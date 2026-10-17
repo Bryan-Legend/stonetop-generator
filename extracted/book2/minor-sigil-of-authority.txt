@@ -11,8 +11,7 @@ C	… spend 1 of your follower's Loyalty to charge the ring.
 C	… attempt to influence one of your followers with the ring, at the risk of failing to ever master its power and/or alienating your follower(s).
 H3	Sigil of Authority
 P	Authority: ◇◇◇
-P	When you <b><i>Strengthen Your Bond</i></b> with a member of your community, you can choose to hold
-P	+1 Authority (max 3) in lieu of your follower holding +1 Loyalty. If you <b><i>remove the ring</i></b>, lose all Authority.
+P	When you <b><i>Strengthen Your Bond</i></b> with a member of your community, you can choose to hold +1 Authority (max 3) in lieu of your follower holding +1 Loyalty. If you <b><i>remove the ring</i></b>, lose all Authority.
 P	When you <b><i>Persuade your follower(s) while holding Authority</i></b>, you have advantage.
 P	You can spend Authority 1-for-1 to:
 B	Wrap yourself in majesty for up to a few minutes, drawing all attention, cowing the weak-willed, and speaking in a voice that all can hear (<i>far</i>, <i>area</i>)

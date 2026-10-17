@@ -8,8 +8,7 @@ P	A chunk of makerglass the size of a human head; inspection reveals facets with
 P	When you <b><i>touch the glass with bare skin and open your mind to it</i></b>, you contact the intelligence within—lonely, confused, longing for meaning and connection.
 P	It will happily speak with you, mind-to-mind. It knows much about the past, but naught of its own history or purpose. At least, not yet.
 HR
-P	When you <b><i>consult the Mindgem about the Makers, their arts, or their history</i></b>, ask a question and roll
-P	+INT: <b>on a 7+</b>, it answers but <b>on a 10+</b>, pick 1; <b>on a 7-9</b>, pick 2:
+P	When you <b><i>consult the Mindgem about the Makers, their arts, or their history</i></b>, ask a question and roll +INT: <b>on a 7+</b>, it answers but <b>on a 10+</b>, pick 1; <b>on a 7-9</b>, pick 2:
 B	The answer is cryptic, vague, or lacking crucial context
 B	It takes a long time—hours or even days—to get the answer
 B	Your mind is left reeling; take disadvantage on your next roll

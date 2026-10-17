@@ -309,9 +309,7 @@ H3	A black menhir
 P	<i>magical</i>, <i>immobile</i>
 P	A number of these megaliths have appeared in the <b>Great Wood</b> (page 200) of late. They are jagged chunks of basalt, tall as a tall lad, etched with intricate patterns that could be writing, almost. The earth around them is broken and disturbed. They are unmarred by moss or lichen, untouched by shoot or vine.
 P	When you <b><i>study the intricate markings and</i></b> <b><i>let your mind wander</i></b>, you receive a vision or intuition about the current situation.
-P	The GM will describe it. But first, roll
-P	+WIS: <b>on a 10+</b>, pick only 1; <b>on a 7-9</b>, pick
-P	2; <b>on a 6-</b>, alas, all 3 are true.
+P	The GM will describe it. But first, roll +WIS: <b>on a 10+</b>, pick only 1; <b>on a 7-9</b>, pick 2; <b>on a 6-</b>, alas, all 3 are true.
 B	Part of what you learn is false or misleading (but what?)
 B	You start to suffer nightmares, of horrors shifting in the earth
 B	The menhir asks a question about your shame, guilt, or fears—answer truly
@@ -545,8 +543,7 @@ P	• Snort and giggle
 P	• Start a fire, incidentally
 P	• Gnaw through and eat anything, eventually
 P	• Refuse to die, persist beyond reason
-P	There is a burnt and blasted place, where the <b>Steplands</b> (page 372) abut <b>Ferrier's</b> <b>Fen</b> (page 116). It once boasted a <b>Stone</b> <b>Lord</b> (page 382) fortress: grand, a tower eternal, lit by a fiery gem. But the servants rebelled. The seals were sundered. Ta'l
-P	Themyin, the Burning Child, shattered the gem and toppled the tower and laughed and laughed and laughed. His rage still boils to the surface, poisoning any beast bold enough to forage in these ruins. His cruelty sends them forth, to uproot and topple, to sunder and burn.
+P	There is a burnt and blasted place, where the <b>Steplands</b> (page 372) abut <b>Ferrier's</b> <b>Fen</b> (page 116). It once boasted a <b>Stone</b> <b>Lord</b> (page 382) fortress: grand, a tower eternal, lit by a fiery gem. But the servants rebelled. The seals were sundered. Ta'l Themyin, the Burning Child, shattered the gem and toppled the tower and laughed and laughed and laughed. His rage still boils to the surface, poisoning any beast bold enough to forage in these ruins. His cruelty sends them forth, to uproot and topple, to sunder and burn.
 ICON	icons/spirit.svg
 H3	Morgais
 P	<i>Solitary</i>, <i>spirit</i>, <i>hoarder</i>, <i>devious</i>, <i>watery</i>, <i>beautiful</i>, <i>corrupted</i>

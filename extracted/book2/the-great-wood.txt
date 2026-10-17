@@ -292,8 +292,7 @@ P	• Recover from even mortal wounds, over time
 P	When a boar lives long enough, and survives enough close calls, and dines year after year on the roots and nuts of ferro trees, it eventually becomes a raselbaedd.
 P	The size of a horse, with tusks like short spears and a hide that's crisscrossed with scars and that bristles with broken blades.
 P	When you <b><i>deal 2 damage or less to a raselbaedd</i></b>, <b><i>before armor,</i></b> your weapon chips or shatters on its hide.
-P	A raselbaedd's hide (<i>immobile</i>, Value 2) can be harvested by a competent hunter with a fine steel blade (2 piercing, Value 2). It can then be fashioned into 1d4 raselbaedd ◇ cuirasses (2 armor, Value 3). Doing so
-P	requires:
+P	A raselbaedd's hide (<i>immobile</i>, Value 2) can be harvested by a competent hunter with a fine steel blade (2 piercing, Value 2). It can then be fashioned into 1d4 raselbaedd ◇ cuirasses (2 armor, Value 3). Doing so requires:
 C	An exceptional tanner
 C	An upgraded workshop with fine steel tools (Value 3)
 C	A season of labor per cuirass
@@ -313,8 +312,7 @@ HR
 ICON	icons/beast.svg
 H3	Wisent
 P	<i>Group</i>, <i>large</i>, <i>cautious</i>
-P	<b>HP</b> 10; <b>Armor</b> 0 <b>Damage</b> headbutt, gore, trample d8+3
-P	(<i>hand</i>, <i>close</i>, <i>forceful</i>)
+P	<b>HP</b> 10; <b>Armor</b> 0 <b>Damage</b> headbutt, gore, trample d8+3 (<i>hand</i>, <i>close</i>, <i>forceful</i>)
 P	<b>Instinct</b> to protect the herd
 P	• Put itself between a threat and the young
 P	• Stampede (<i>area</i>, <i>forceful</i>, <i>messy</i>)

@@ -10,8 +10,7 @@ HR
 P	Before the tower fell, this was home to Stormcatcher, last (?) of the <b>Tempest Lords</b> (page 398). The tower was like the mast of some mighty ship, catching wind and lightning, holding their power in the <b>Storm Orb</b> (page 339), fueling her many magics.
 P	For centuries, Stormcatcher's tower stood betwixt the realms of the other <b>Makers</b> (page 264). They would trade with her, and seek her council or her aid. But though the <b>Makers' Roads</b> (page 270) ran to her very gate, she stood apart from them all.
 P	Yet she did not live alone. A bustling community grew up around her tower. Laborers, artisans, and scholars. Farmers and domestic help. Soldiers, even. Generations of families. Refugees seeking new homes.
-P	Ambassadors and outcasts from the other
-P	Makers. Seekers, misfits, and castaways from distant lands.
+P	Ambassadors and outcasts from the other Makers. Seekers, misfits, and castaways from distant lands.
 P	When the Time of Cataclysm came—when the <b>Stone Lords</b>' (page 382) slaves rebelled and unleashed the <b>Things Below</b> (page 412), when the <b>Rime Lords</b>' (page 316) disciples turned savage, when the <b>Forge Lords</b>' (page 156) cities were buried by ash and war—Stormcatcher's tower endured. A bastion of civilization.
 P	An island of safety. A refuge.
 P	It could not last. Cultists of <b>Og'molok</b> <b>the Faceless Horde</b> (page 349) swarmed the ramparts, driving the defenders back.
@@ -129,8 +128,7 @@ P	The base of the tower is ~300' across; rubble and piled-up soil spread out eve
 P	<b>Spires:</b> Four <b>metal spires</b> support the tower's walls, one at each cardinal direction:
 P	massive, rusted, straining towards the sky.
 P	The south and west spires each stretch another 200' or so above the walls (~400' tall total). A length of cable dangles from the tip of the south spire.
-P	<b>Rubble:</b> The <b>northeast third</b> of the tower is just rubble, thick walls, and soil piled
-P	~30' high, topped with grass and shrubs.
+P	<b>Rubble:</b> The <b>northeast third</b> of the tower is just rubble, thick walls, and soil piled ~30' high, topped with grass and shrubs.
 P	The rubble is riddled with trenches, pits, old excavations, buried rooms, burrows.
 P	<b>Ground floor:</b> The <b>south and west thirds</b> of the tower are intact at ground level, containing huge vaulted chambers (~40' ceilings), including:
 B	A <b>parlor</b> with tall narrow windows. Stylized friezes (faded, vandalized, full of bird nests) show scenes of the <b>Tempest Lord</b> (page 398) empire.
@@ -465,8 +463,7 @@ H3	Ferocedes Ogran, ghostly
 H3	Forge Lord
 P	<i>Solitary</i>, <i>large</i>, <i>spirit</i>, <i>undead</i>, <i>magical</i>, <i>organized</i>, <i>obsessive</i>, <i>absentminded</i>
 P	<b>HP</b> 23; <b>Armor</b> 4 (metal, amorphous)
-P	<b>Damage</b> pummel d12+3 (<i>close</i>, <i>reach</i>, <i>forceful</i>) or barrage of metal d10+1
-P	(<i>near</i>, <i>area</i>, <i>messy</i>, <i>forceful</i>, <i>reload</i>,
+P	<b>Damage</b> pummel d12+3 (<i>close</i>, <i>reach</i>, <i>forceful</i>) or barrage of metal d10+1 (<i>near</i>, <i>area</i>, <i>messy</i>, <i>forceful</i>, <i>reload</i>,
 P	1 piercing)
 P	<b>Special qualities</b> tethered to his forge, and can't venture far from it; speaks Tempest Lord (understood by all)
 P	<b>Instinct</b> to preserve/restore the tower, to ignore harsh truths

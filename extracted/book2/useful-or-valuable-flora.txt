@@ -34,8 +34,7 @@ P	A thorny shrub with delicious berries that glow with soft, golden light (<i>ha
 HR
 ICON	icons/flora.svg
 H3	Sleeping elksheart
-P	A giant mushroom, sometimes big as a house, found in dark forests. Fills the air with paralytic spores (<i>inhaled</i>); the mycelium digest the victims. Carefully collect spores to use as a poison (<i>dangerous</i>, Value
-P	1). Burn the cap to destroy the spores, cut it up, and feed a town with it (1d4 Surplus, <i>immobile</i>, Value 2).
+P	A giant mushroom, sometimes big as a house, found in dark forests. Fills the air with paralytic spores (<i>inhaled</i>); the mycelium digest the victims. Carefully collect spores to use as a poison (<i>dangerous</i>, Value 1). Burn the cap to destroy the spores, cut it up, and feed a town with it (1d4 Surplus, <i>immobile</i>, Value 2).
 HR
 ICON	icons/flora.svg
 H3	Violet lotus

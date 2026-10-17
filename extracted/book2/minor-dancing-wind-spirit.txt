@@ -11,8 +11,7 @@ P	<b>on a 6-</b>, you make no progress but do manage to summon an irate zephyr.
 MARK	3
 P	When you <b><i>mark all three circles</i></b>, you unlock the mysteries of the flute.
 H3	Dancing Wind Spirit
-P	When you <b><i>play a tune to make the wind itself</i></b> <b><i>dance</i></b>, the andalau (zephyr spirit) tied to the flute manifests. Treat it as a follower; it holds
-P	1 Loyalty to start. When you <b><i>dismiss the spirit</i></b> <b><i>while it holds no Loyalty</i></b>, the flute splits and falls apart; the andalau is set free.
+P	When you <b><i>play a tune to make the wind itself</i></b> <b><i>dance</i></b>, the andalau (zephyr spirit) tied to the flute manifests. Treat it as a follower; it holds 1 Loyalty to start. When you <b><i>dismiss the spirit</i></b> <b><i>while it holds no Loyalty</i></b>, the flute splits and falls apart; the andalau is set free.
 ICON	icons/spirit.svg
 H3	The Andalau of the Flute
 P	<i>Spirit, tiny, stealthy, mischievous</i>

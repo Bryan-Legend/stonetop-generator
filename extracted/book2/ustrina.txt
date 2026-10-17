@@ -31,8 +31,7 @@ B	A merchant from Gordin's Delve brings an Ustrina to Stonetop. It wishes to stu
 PAGE	465
 H2	True nature
 HR
-P	The Ustrina never remove their masks, robes, or gloves. Rumors abound, of course, but if anyone reliable knows what they truly look like, they aren't telling. The true nature of the Ustrina is up to you and your
-P	group to decide, but possibilities include:
+P	The Ustrina never remove their masks, robes, or gloves. Rumors abound, of course, but if anyone reliable knows what they truly look like, they aren't telling. The true nature of the Ustrina is up to you and your group to decide, but possibilities include:
 B	Flesh and blood, much like us, but with elaborate traditions of privacy and decorum
 B	Mutant scavengers of the Forge Lords' ruins, horrible to behold, disguised when they deal with humanity
 B	Naught but <b>elemental spirits</b> (page 360), animating a simple skeleton of bronze
@@ -58,8 +57,7 @@ P	4), like a sapphire the size of your eye, a ◇◇ chest of gold coins, a ◇ 
 P	1d12 what they want
 HR
 P	1 A dozen or so... (roll 1d6 or pick)
-P	1 … children/infants/newborns
-P	2 … healthy human adults
+P	1 … children/infants/newborns 2 … healthy human adults
 P	3 … human adults, of whatever quality
 P	4 … fresh human corpses
 P	5 … human corpses in whatever state

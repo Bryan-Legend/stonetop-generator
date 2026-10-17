@@ -129,6 +129,56 @@ def _plain(text: str) -> str:
     return re.sub(r"[\W_]+", "", re.sub(r"<[^>]+>", "", text)).lower()
 
 
+# Scripts set without spaces between words: a seam joins with nothing.
+UNSPACED = {"ja", "zh-Hans", "zh-Hant"}
+
+
+def _join_translation(
+    en: str, old_body: list[str], tr_body: list[str], used: set[int], code: str
+) -> str | None:
+    """The translation of a line the extractor now makes of two or more old
+    lines in a row (a sentence it used to break at a line end): their
+    translations, joined. None unless the old lines' letters add up to
+    exactly this line's."""
+    from generator.translate import _split_file_line
+
+    want = _plain(en)
+    if not want:
+        return None
+    for i, raw in enumerate(old_body):
+        if i in used:
+            continue
+        _t, p0 = _split_file_line(raw)
+        if len(p0) != 1:
+            continue
+        head = _plain(p0[0])
+        if not head or head == want or not want.startswith(head):
+            continue
+        acc, k = head, i + 1
+        while len(acc) < len(want) and k < len(old_body):
+            if old_body[k] == "PB" or old_body[k].startswith("PAGE\t"):
+                k += 1
+                continue
+            _tk, pk = _split_file_line(old_body[k])
+            if len(pk) != 1 or not want.startswith(acc + _plain(pk[0])):
+                break
+            acc += _plain(pk[0])
+            k += 1
+        if acc != want:
+            continue
+        run = [
+            j for j in range(i, k)
+            if old_body[j] != "PB" and not old_body[j].startswith("PAGE\t")
+        ]
+        pieces = []
+        for j in run:
+            _tt, tp = _split_file_line(tr_body[j])
+            pieces.append((tp[0] if tp else "").strip())
+        used.update(run)
+        return ("" if code in UNSPACED else " ").join(p for p in pieces if p)
+    return None
+
+
 def _kind(ch: str) -> str:
     """The shape of the character a piece opens with."""
     if not ch:
@@ -240,6 +290,8 @@ def cmd_realign(args: argparse.Namespace) -> int:
     work: list[str] = []
     changed: list[str] = []
     split_report: list[tuple[str, list[str]]] = []
+    join_report: list[str] = []
+    used_old: set[int] = set()
     trunc_report: list[tuple[str, str]] = []
     unsplit: list[str] = []
     for kind, prefix in (("sheet", "S"), ("book", "B")):
@@ -264,6 +316,7 @@ def cmd_realign(args: argparse.Namespace) -> int:
                 f"{args.old} {len(old_body)}; they never aligned, nothing to carry"
             )
             return 1
+        used_old = set()  # old lines a join has already taken
         # Every old English line, with its translation(s) in page order.
         pool: dict[str, list[str]] = {}
         for en_raw, tr_raw in zip(old_body, tr_body):
@@ -355,6 +408,14 @@ def cmd_realign(args: argparse.Namespace) -> int:
                 if pos is not None and pos in split_tr and len(idx) == 1:
                     work.append(f"{prefix}{n}\t{tag}\t{split_tr[pos]}")
                     continue
+                joined = (
+                    _join_translation(parts[idx[0]], old_body, tr_body, used_old, args.code)
+                    if len(idx) == 1 else None
+                )
+                if joined is not None:
+                    work.append(f"{prefix}{n}\t{tag}\t{joined}")
+                    join_report.append(joined)
+                    continue
                 changed.append(f"{prefix}{n}\t{tag}\t" + "\t".join(parts[i] for i in idx))
                 continue
             _tr_tag, tr_parts = _split_file_line(cands.pop(0))
@@ -384,6 +445,10 @@ def cmd_realign(args: argparse.Namespace) -> int:
         print(f"  {len(split_report)} line(s) the extractor split, their translation cut to match:")
         for _en, cut in split_report:
             print("    " + _say(" | ".join(cut)))
+    if join_report:
+        print(f"  {len(join_report)} line(s) the extractor joined, their translations joined to match:")
+        for tr in join_report:
+            print("    " + _say(tr))
     if trunc_report:
         print(f"  {len(trunc_report)} line(s) the extractor cut short, their translation cut to match:")
         for _en, tr in trunc_report:

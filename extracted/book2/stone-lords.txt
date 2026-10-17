@@ -176,8 +176,7 @@ ICON	icons/treasure.svg
 H3	Power-crystal
 P	◇, <i>magical</i>, <i>dangerous</i>
 P	A chunk of crystal the size of a clenched fist. If charged, it thrums or crackles with power. If depleted, it fills you with a sense of emptiness and longing.
-P	When you <b><i>brandish the depleted power-crystal at a source of elemental energy</i></b>, roll
-P	+CON: <b>on a 10+</b>, the crystal absorbs the energy fully and as safely as possible (it is now charged); <b>on a 7-9</b>, the crystal absorbs the energy (it's now charged) but pick 1:
+P	When you <b><i>brandish the depleted power-crystal at a source of elemental energy</i></b>, roll +CON: <b>on a 10+</b>, the crystal absorbs the energy fully and as safely as possible (it is now charged); <b>on a 7-9</b>, the crystal absorbs the energy (it's now charged) but pick 1:
 B	You are harmed by the coursing energy, taking damage as the GM sees fit
 B	The power stored in the crystal is extremely unstable, likely to discharge without warning
 B	The crystal cracks; henceforth, treat a 10+ on this move as a 7-9, and you can't pick this option again.
@@ -367,8 +366,7 @@ ICON	icons/construct.svg
 H3	Mosaic swarm
 P	<i>Solitary</i>, <i>large</i>, <i>construct</i>, <i>amorphous</i>, <i>stealthy</i>
 P	<b>HP</b> 24; <b>Armor</b> 3 (made of thousands of ceramic tiles)
-P	<b>Damage</b> jagged fists of ceramic d10+3
-P	(<i>hand</i>, <i>close</i>, <i>forceful</i>)
+P	<b>Damage</b> jagged fists of ceramic d10+3 (<i>hand</i>, <i>close</i>, <i>forceful</i>)
 P	<b>Special qualities</b> externally powered; bug-like mind; blind; tremorsense; unharmed by piercing weapons; half damage from cutting weapons; vulnerable to attacks that are blunt and <i>forceful</i> or <i>area</i>
 P	<b>Instinct</b> to destroy intruders
 P	• Wait for intruders to get close, rattling softly

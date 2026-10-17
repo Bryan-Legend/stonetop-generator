@@ -11,8 +11,7 @@ C	… acquire the recipe's unusual and unsavory ingredients (Value 1).
 C	… spend a few days practicing the incantation, risking a mistake on your first attempt, with potentially disastrous results.
 H3	Wishing Candles
 P	Uses: ◇◇◇◇◇
-P	When you <b><i>spend a few days following the unsavory recipe from the scroll</i></b> (Value 1), gain 1d4+1
-P	Wishing Candles.
+P	When you <b><i>spend a few days following the unsavory recipe from the scroll</i></b> (Value 1), gain 1d4+1 Wishing Candles.
 P	When you <b><i>burn a Wishing Candle and utter the</i></b> <b><i>ugly incantation</i></b>, say what you wish to acquire:
 P	it will come into your possession soon. Roll the Die of Fate to learn the cost. If it was an item of Value 1 or less, roll twice and take your pick.
 P	1d6 cost

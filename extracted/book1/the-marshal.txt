@@ -110,8 +110,7 @@ Q	What do they intend to do?
 Q	How are they most useful/dangerous?
 Q	What weakness of theirs can I exploit?
 C	<b>WE HAPPY FEW</b> When you <b><i>give an inspiring speech to your allies</i></b> <b><i>before facing a dire threat</i></b>, roll +CHA: <b>on a 10+</b>, each ally holds 2 Inspiration; <b>on a 7-9</b>, each ally holds 1 Inspiration; <b>on a 6-</b>, each ally holds 1, but you have disadvantage on all rolls until you share your nagging doubts with someone else.
-P	Once battle is joined, your allies can spend their
-P	Inspiration at any time, 1-for-1 to do the following:
+P	Once battle is joined, your allies can spend their Inspiration at any time, 1-for-1 to do the following:
 B	Act fearlessly in the face of terror or overwhelming odds
 B	Keep 1 HP instead of being reduced to 0 HP
 B	Add 1d6 to a damage roll they just made

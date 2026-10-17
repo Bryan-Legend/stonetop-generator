@@ -17,7 +17,6 @@ P	When you <b><i>pickle fresh ffyrnig root in a suspension of boar bile for two 
 P	When you <b><i>take a draught of ffyrnig tonic,</i></b> pick 1:
 B	Regain HP equal to ½ half your max
 B	Clear a debility
-P	Also, you have advantage on your next roll to take bold, physical action. But until you take such an action, you have disadvantage on any rolls that
-P	require patience, care, or thoughtfulness.
+P	Also, you have advantage on your next roll to take bold, physical action. But until you take such an action, you have disadvantage on any rolls that require patience, care, or thoughtfulness.
 P	When you <b><i>drink a second draught of ffyrnig tonic</i></b> <b><i>before getting a good night's sleep</i></b>, it has no effect other than to make you ill (mark a debility).
 P	12

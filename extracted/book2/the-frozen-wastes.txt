@@ -139,10 +139,8 @@ VR	Hound, follower (keen-nosed, fierce, tireless); HP 6; Damage d6 (hand, grabby
 VR	Hunting drake, follower (tiny, sharp- eyed, swift-winged); HP 3; Damage d4 (hand); Instinct to test its limits; Cost hours/days of training	1
 VR	Mammoth (huge, hardy, keen-nosed); HP 15; Damage d6+5 (reach, forceful, or hand, area, forceful); Instinct to suffer no insult or threat; sickly in warmer climes	3
 H3	Special items
-P	The following might be acquired among mammoth herders, but the PCs must roll Trade & Barter to acquire them. This is in addition to the special items on the Moves
-P	& Gear handout.
-P	When PCs <b><i>Trade & Barter among a band</i></b> <b><i>of mammoth herders</i></b>, they use the local
-P	Prosperity (-1 by default) with disadvantage because it's a <i>hamlet</i>. <b>On a 6-</b>, they don't mark XP—this band simply doesn't have or want what the PCs are after/selling.
+P	The following might be acquired among mammoth herders, but the PCs must roll Trade & Barter to acquire them. This is in addition to the special items on the Moves & Gear handout.
+P	When PCs <b><i>Trade & Barter among a band</i></b> <b><i>of mammoth herders</i></b>, they use the local Prosperity (-1 by default) with disadvantage because it's a <i>hamlet</i>. <b>On a 6-</b>, they don't mark XP—this band simply doesn't have or want what the PCs are after/selling.
 VT	goods
 VR	Pottery	0
 VR	Bronze or iron items, of any sort	1

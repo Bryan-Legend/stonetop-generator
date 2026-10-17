@@ -179,8 +179,7 @@ ICON	icons/treasure.svg
 H3	A pale wooden sword
 P	◇, <i>close</i>, <i>crude</i>, <i>magical</i>
 P	Carved from a dool tree with a silver knife, and polished with oils infused with moonlight. The grip is worn smooth but the "blade" is chipped and notched, unlikely to stand up to iron or bronze.
-P	When you <b><i>wield the sword against a</i></b> <b><i>manifest undead spirit</i></b>, you can hurt it (deal damage normally). If you reduce it to
-P	0 HP, the manifest form dissipates but the spirit can reform at its tether normally.
+P	When you <b><i>wield the sword against a</i></b> <b><i>manifest undead spirit</i></b>, you can hurt it (deal damage normally). If you reduce it to 0 HP, the manifest form dissipates but the spirit can reform at its tether normally.
 ICON	icons/treasure.svg
 H3	A tattered standard
 P	◇◇, <i>magical</i>
@@ -272,8 +271,7 @@ P	3-6 Must stay on the premises/site
 P	7-10 Can roam a few miles; returns daily
 P	11-12 Can wander far and wide, but must return periodically
 PB
-P	If a ghost's manifest form is reduced to
-P	0 HP, they dissipate and return to their tether. They usually won't manifest before the next sunset; if they do, their max HP are halved.
+P	If a ghost's manifest form is reduced to 0 HP, they dissipate and return to their tether. They usually won't manifest before the next sunset; if they do, their max HP are halved.
 P	If a tether is destroyed, then the ghost might… (pick 1)
 E	fade away, utterly destroyed;
 E	pass through the Last Door (now, or after some final act);

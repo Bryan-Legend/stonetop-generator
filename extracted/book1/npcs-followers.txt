@@ -44,8 +44,7 @@ P	Try to <b>stick to the core loop</b>! Establish the situation—the time and p
 P	Have the NPC ask, "So, what can I do for you?" Or, have them say something provocative and give the player a chance to respond.
 P	Or, step out of character and say how the NPC is acting nervous, or how they look unwell, or how there's a strange new idol on their hearth that wasn't there before. Ask, "What do you do?" Go from there.
 P	Remember to <b>be honest and generous</b> <b>with the truth and detail</b>. When you make a GM move (soft or hard) via an NPC's voice, step out of character and be explicit about the implications of what you just said. If you intend to portray an NPC being shifty and nervous, deliver their lines and then say, "He's being shifty and nervous." Don't assume that your players will properly interpret your portrayal.
-P	<b>Keep an eye out for players triggering moves during dialogues</b>. If you (as an NPC) put up resistance and the PC persists, they just triggered Persuade. If you ask the PCs a pointed question and they straight-up lie, they're probably Defying Danger. If the PCs have special moves that kick in during a conversation (like Under
-P	Your Skin or Up With People), ask the player if they want to use them.
+P	<b>Keep an eye out for players triggering moves during dialogues</b>. If you (as an NPC) put up resistance and the PC persists, they just triggered Persuade. If you ask the PCs a pointed question and they straight-up lie, they're probably Defying Danger. If the PCs have special moves that kick in during a conversation (like Under Your Skin or Up With People), ask the player if they want to use them.
 P	When the purpose of a scene has been resolved, or when the dialogue starts to fizzle out or swirl, <b>wrap up the scene</b>. Step out of character, transition to the next scene, move the spotlight, and/or shift into loose play.
 PAGE	453
 H2	Creating NPCs
@@ -309,8 +308,7 @@ PAGE	462
 H2	Follower moves
 P	These moves become relevant when PCs interact with their followers.
 P	<b>ORDER FOLLOWERS</b>
-P	When you <b><i>direct your follower to do</i></b> <b><i>something that would trigger a player</i></b> <b><i>move</i></b>, and they do it, they trigger the move. If the move involves rolling, you roll for them. Instead of rolling
-P	+STAT, roll and…
+P	When you <b><i>direct your follower to do</i></b> <b><i>something that would trigger a player</i></b> <b><i>move</i></b>, and they do it, they trigger the move. If the move involves rolling, you roll for them. Instead of rolling +STAT, roll and…
 E	if they have at least one appropriate tag or move, add +1, or +2 if they're also <i>exceptional</i>;
 E	if they have no relevant tag or move, add +0; and
 E	if any of their tags would get in the way, roll with disadvantage.
@@ -319,12 +317,10 @@ P	Followers are NPCs—they don't usually trigger player-facing moves. You might
 P	That changes, though, when a follower acts at a PC's behest. The follower is acting as an extension of the PC's will, and so we look to the dice and player-facing moves to find out what happens.
 P	If a PC tells a follower to do something that they don't want to do, the PC must Persuade or otherwise convince them to do it—just like they would with any other NPC. <b>Loyalty</b> (page 464) makes this easier, but most followers won't charge a thunder drake without some convincing!
 P	Assuming the follower <i>does</i> do what the PC says, and that action would trigger a player-facing move if a PC did it, then resolve the move normally. The player rolls on the follower's behalf, and makes any decisions they'd normally make if their PC triggered the move. If they roll a 6-, the player marks XP.
-P	Followers don't have stats like STR or INT. If a move calls for rolling +STAT, the player looks at the follower's tags and moves. If any of them indicate that the follower is good at this, the player adds
-P	+1 (even if multiple tags or moves apply).
+P	Followers don't have stats like STR or INT. If a move calls for rolling +STAT, the player looks at the follower's tags and moves. If any of them indicate that the follower is good at this, the player adds +1 (even if multiple tags or moves apply).
 P	Otherwise, they add +0.
 P	If the follower is <i>exceptional</i>, AND they have another tag or move that applies, then the player rolls +2. But if no other tag or move applies, the player still rolls +0 for an <i>exceptional</i> follower.
-P	If any of a follower's tags would actively hinder the move that they're making, the player rolls with disadvantage. A roll can get both a +1 (or +2) and disadvantage. If Vahid sends his <i>stealthy</i>, <i>mischievous</i> wind
-P	spirit to spy on someone, the <i>stealthy</i> tag helps (+1) but the <i>mischievous</i> tag means that it might get distracted and try to prank the target (imposing disadvantage).
+P	If any of a follower's tags would actively hinder the move that they're making, the player rolls with disadvantage. A roll can get both a +1 (or +2) and disadvantage. If Vahid sends his <i>stealthy</i>, <i>mischievous</i> wind spirit to spy on someone, the <i>stealthy</i> tag helps (+1) but the <i>mischievous</i> tag means that it might get distracted and try to prank the target (imposing disadvantage).
 PAGE	463
 HR
 P	<i>Rhianna just saw Caradoc get smashed by</i> <i>the hagr, and she rushes to his side yelling,</i> <i>"Eira, Lowri—shoot!" They recover their</i> <i>wits, nock arrows, and Let Fly.</i>
@@ -333,8 +329,7 @@ P	<i>"Nice!" I say. "It howls in pain and rears up,</i> <i>looking for what stun
 HR
 P	<i>Rhianna doesn't trust the hostler up in</i> <i>Gordin's Delve, so she tells Andras that he'll</i> <i>be sleeping in the cart and keeping an eye on</i> <i>it and the horse.</i>
 P	<i>Andras is a follower and he'll be keeping</i> <i>watch off-screen, so I say, "I think you're</i> <i>having him Defy Danger, the danger being</i> <i>whatever the hostler gets up to. But don't</i> <i>roll it just yet." I have Rhianna roll the</i> <i>next day, after a few PC-focused scenes.</i>
-P	<i>Andras's</i> observant <i>tag applies, so she adds</i>
-P	<i>+1 but she gets a 5. "Caradoc, a bloodynosed Andras finds you at the inn, and he's</i> <i>like, They stole Fflur! What do we do?'"</i>
+P	<i>Andras's</i> observant <i>tag applies, so she adds</i> <i>+1 but she gets a 5. "Caradoc, a bloodynosed Andras finds you at the inn, and he's</i> <i>like, They stole Fflur! What do we do?'"</i>
 HR
 P	Try to resolve follower actions with as few moves and rolls as possible. Zoom out and resolve complicated tasks with a single Defy Danger. If a follower takes the same action as a PC, treat that as the follower Aiding the PC rather than triggering a move of their own.
 HR
@@ -355,12 +350,9 @@ B	Do something they don't want to do (as long as it's not abhorrent or suicidal)
 P	When a follower is without orders or they act on their own initiative, the GM says what they do and decides how it goes.
 P	Each follower has a cost, like "genuine affection" or "coin, payment, treasure" or "training." When a PC pays that cost—when they provide it directly or ensure that the follower receives it—then the follower gains Loyalty.
 P	Paying a follower's cost should be a meaningful moment. Ideally, it should involve intentional action taken by the PC. Put the onus on the player to point out when they've paid their follower's cost, but of course—as with any move—anyone can point out this move has been triggered. If anyone disagrees, talk it out.
-P	The PC and/or follower should have a significant scene "on camera" before they can
-P	Strengthen Their Bond again. If a PC pays a cost like "training" multiple times over a stretch of downtime or loose play, then the follower holds only +1 Loyalty.
+P	The PC and/or follower should have a significant scene "on camera" before they can Strengthen Their Bond again. If a PC pays a cost like "training" multiple times over a stretch of downtime or loose play, then the follower holds only +1 Loyalty.
 H2	Loyalty
-P	When a follower's cost is paid, they hold
-P	+1 Loyalty, up to 3. If a follower holds
-P	3 Loyalty, then Strengthen Your Bond doesn't trigger.
+P	When a follower's cost is paid, they hold +1 Loyalty, up to 3. If a follower holds 3 Loyalty, then Strengthen Your Bond doesn't trigger.
 P	The follower holds the Loyalty but the PC they follow (or rather, that PC's player) chooses to spend it. As a rule, a follower is tied to one PC, and only that PC can pay its cost or spend its Loyalty. But if an NPC follows the party as a whole, then any PC can generate or spend that follower's Loyalty.
 P	A PC will typically spend a follower's Loyalty after you make a GM move and show that the follower is afraid, or about to do something dumb, or doesn't want to do as they're told. The player can spend Loyalty to resolve that problem without having to trigger a move like Persuade or Defy Danger.
 P	A player can proactively spend Loyalty, too, but if they do, consider whether it's really necessary. If the follower wasn't going to balk or do something dumb, tell the player that there's no need to spend the Loyalty after all.
@@ -409,8 +401,7 @@ P	no, no way." Or, "You can tell he doesn't want to, you're going to have to con
 P	The player can then choose to spend the follower's Loyalty (if they hold any) to have them "do something they don't want to do." Or the PC can Persuade the follower, or use a different move to convince them. Or they could let it drop and do something else. Whatever they do, <b>follow</b> <b>the rules</b> and the dice and portray the follower with integrity, and <b>play to find out</b> <b>what happens</b>.
 P	<b>Play up a follower's instinct, tags, and</b> <b>traits as a source of trouble for the PCs</b>.
 P	Does the Ranger's wolf have an instinct of "to fill its belly?" Then have it chomp on the obvious bait, or refuse to leave a carcass uneaten. Is one of the Marshal's crew a gambler? Have her leave her post to join a game of dice, or have a creditor from Gordin's Delve show up to collect. The player can spend 1 Loyalty to have their follower "resist acting on their instinct/ tags/traits," but if they don't, they need to convince them to stop or else deal with the consequences.
-P	Emphasizing a follower's fear, foibles, and troublesome behaviors makes their Loyalty valuable! If a follower always just does what the PC says and never gets scared or acts up, then their player will see no reason to pay the follower's cost and Strengthen
-P	Their Bond.
+P	Emphasizing a follower's fear, foibles, and troublesome behaviors makes their Loyalty valuable! If a follower always just does what the PC says and never gets scared or acts up, then their player will see no reason to pay the follower's cost and Strengthen Their Bond.
 HR
 P	<i>Vahid walks down the road from the</i> <i>logging camp and plays a spritely tune,</i> <i>calling up the andalau that's tied to his</i> <i>flute. Wind gusts and swirls, and when</i> <i>Vahid stops playing I stage whisper,</i> <i>"More! More more more!"</i>
 P	<i>Vahid wants the spirit to find those</i> <i>ruins that Iwan visited, and lead him</i> <i>to them. Given the andalau's instinct</i> <i>("to play and frolic") and</i> mischievous <i>tag, I don't think it wants to. I sigh and</i> <i>whisper, "Boooorrrrring."</i>
@@ -440,11 +431,9 @@ P	For examples of <b>followers in fights</b>, see pages 213, 223, 415, 463, and 
 H2	When followers Defend
 P	When a PC Orders Followers to Defend and gets a 7+, the <i>follower</i> holds Readiness but the player decides when and how they spend it.
 P	When a player spends their follower's Readiness, consider whether the follower would actually do what the player wants.
-P	Would they really suffer this attack in place of their ward? Would they really draw all attention to themselves? If the answer feels like "no," then the player has to spend both
-P	1 Readiness <i>and</i> 1 Loyalty—they're unlikely to have time to Persuade the follower!
+P	Would they really suffer this attack in place of their ward? Would they really draw all attention to themselves? If the answer feels like "no," then the player has to spend both 1 Readiness <i>and</i> 1 Loyalty—they're unlikely to have time to Persuade the follower!
 P	When a PC Defends and a follower Aids them, that PC holds the Readiness but they can spend it to have the <i>follower</i> suffer the damage/effects of an attack, or to have the <i>follower</i> draw all attention from their ward to themselves. Ask the player what this looks like. If they're slyly using the follower as a meat shield, then the follower doesn't get much say in the matter (but they might have lots to say if they survive).
-P	If the player just expects the follower to take one for the team, well… that might
-P	require spending Loyalty, too.
+P	If the player just expects the follower to take one for the team, well… that might require spending Loyalty, too.
 H2	Followers at 0 HP
 P	When a follower is reduced to 0 HP, their fate is in your hands. If the source of damage was potentially lethal, then they're out of the action and you pick 1:
 B	They're dead, immediately
@@ -493,8 +482,7 @@ P	<i>Glaw just saw something creepy and</i> <i>supernatural, and Rhianna's crew 
 P	<i>"I put a hand on his shoulder. 'Nia's in</i> <i>there, and she's one of ours. I'm going in</i> <i>with the Blessed, and Vahid, and Caradoc. But I need you sharp out here." I ask</i> <i>whether she's Persuading him to stay cool</i> <i>or spending Loyalty to have him overcome fear. "I'll spend the Loyalty. I'm not</i> <i>risking a 6- here." The crew only held 1</i> <i>Loyalty to start with, and now it's gone.</i> <i>But Glaw will hold steady!</i>
 HR
 PAGE	472
-P	<b>Each member of a group has their own</b> <b>HP</b>, and they take damage and lose HP individually. If multiple members of the
-P	group take damage at once, roll damage separately for each member and deduct it from their current HP.
+P	<b>Each member of a group has their own</b> <b>HP</b>, and they take damage and lose HP individually. If multiple members of the group take damage at once, roll damage separately for each member and deduct it from their current HP.
 HR
 P	<i>The Mother-of-Spiders sends a wave</i> <i>of arachnids after the PCs as they flee</i> <i>the ziggurat with Nia. Rhianna's crew</i> <i>provides cover fire (Aiding the PCs as</i> <i>they Struggle as One), but that draws</i> <i>the attention of the swarm.</i>
 P	<i>Rhianna yells for them to run for the</i> <i>waystone. We all agree that they're Defying Danger. Rhianna rolls +0 (none of</i> <i>their tags apply to an outright sprint)</i> <i>and, alas, gets a 2.</i>
@@ -507,9 +495,7 @@ PAGE	473
 HR
 P	<i>Vahid chases off the spiders by using his</i> <i>Fear of the Flame arcanum. Rhianna</i> <i>goes back and drags Hari out of there.</i> <i>Everyone makes it back to the waystone,</i> <i>where Thornthumb the spriggan has</i> <i>been waiting for them.</i>
 P	<i>Before heading back through the Fae</i> <i>paths, Blodwen tends to Hari, restoring</i> <i>his HP and stabilizing him, but he's still</i> <i>paralyzed. Rhianna has Lowri turn</i> <i>his 2 undefined</i> ◇ <i>into a roll-out litter</i> <i>to carry Hari. She writes "</i> ◇◇ <i>litter</i> <i>(Lowri)" on her crew's inventory list.</i>
-P	<i>She then has the rest of her crew each</i>
-P	<i>turn one undefined</i> ◇ <i>into</i> ◇ <i>supplies,</i>
-P	<i>for 20 uses total (five followers, 4 uses</i> <i>each). The four PCs then Recover, as do</i> <i>the four followers who are down HP, using bandages and whisky and food that</i> <i>the followers brought with them. The</i> <i>followers have 12 uses of supplies left.</i>
+P	<i>She then has the rest of her crew each</i> <i>turn one undefined</i> ◇ <i>into</i> ◇ <i>supplies,</i> <i>for 20 uses total (five followers, 4 uses</i> <i>each). The four PCs then Recover, as do</i> <i>the four followers who are down HP, using bandages and whisky and food that</i> <i>the followers brought with them. The</i> <i>followers have 12 uses of supplies left.</i>
 P	<i>Rhianna could decide that Glaw and Eira</i> <i>used up all their supplies and now each</i> <i>carry only five</i> ◇ <i>total, but it doesn't really</i> <i>matter at this point. If it becomes important later (like, if one of the crew members</i> <i>gets separated from the group), we can</i> <i>decide then who was carrying what.</i>
 HR
 H2	When a group...
@@ -597,8 +583,7 @@ P	<b>Mixed blessing tags:</b> <i>animal-lover</i>,
 P	<i>annoying</i>, <i>big</i>, <i>bully</i>, <i>callous</i>, <i>cautious</i>, <i>devious</i>, <i>eager</i>, <i>thieving</i>, <i>gossipy</i>, <i>honest</i>, <i>kind</i>, <i>little</i>, <i>shameless</i>, <i>terrifying</i>
 PAGE	477
 H2	3	Hit points
-P	Determine the follower's maximum
-P	HP by answering the following questions:
+P	Determine the follower's maximum HP by answering the following questions:
 HR
 VT	<b>How resilient are they?</b> (pick 1)	hp
 VR	Weak/frail/soft	3
@@ -729,6 +714,5 @@ HR
 P	<i>Vahid's put-upon wind spirit returns</i> <i>from spying on Thornthumb, full of news</i> <i>and playful energy—right as Vahid sits</i> <i>down for dinner with the widow Maire.</i> <i>He steps outside and pleads with the</i> <i>spirit to behave for now, and promises</i> <i>to play the flute out in the fields later, so</i> <i>that the spirit can dance and frolic.</i>
 P	<i>The andalau is out of Loyalty, so</i> <i>Vahid rolls to Persuade. Alas, he rolls a 4.</i> <i>I ask Vahid how he thinks he screws this</i> <i>up, and he says that he loses his temper</i> <i>and starts shouting, trying to bully it</i> <i>into behaving.</i>
 P	<i>I decide that the spirit has had enough.</i> <i>"It gets quiet and still. Then, hoo boy. The</i> <i>wind picks up, more and more, getting</i> <i>stronger. Gods, you didn't think it could</i> <i>be this strong. It howls, screams, and</i> <i>snatches at the flute." Vahid tries to hold</i> <i>on, but rolls a 3 to Defy Danger, and the</i> <i>flute gets smashed apart on the Stone.</i>
-P	<i>The spirit was tethered to that flute, and</i> <i>now it's not. It's certainly no longer a</i> <i>follower. An untethered spirit would</i> <i>normally dissipate, but I think this one</i> <i>holds a grudge. It vanishes for now, but</i> <i>between sessions, I write it up as a threat</i> <i>(a</i> magical entity<i>,</i> <b><i>Instinct</i></b> <i>to torment</i>
-P	<i>Vahid).</i>
+P	<i>The spirit was tethered to that flute, and</i> <i>now it's not. It's certainly no longer a</i> <i>follower. An untethered spirit would</i> <i>normally dissipate, but I think this one</i> <i>holds a grudge. It vanishes for now, but</i> <i>between sessions, I write it up as a threat</i> <i>(a</i> magical entity<i>,</i> <b><i>Instinct</i></b> <i>to torment</i> <i>Vahid).</i>
 HR
