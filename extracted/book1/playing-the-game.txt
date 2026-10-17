@@ -435,8 +435,7 @@ P	Or the group might skip ahead in time, saying that your new PC arrived a coupl
 H2	Inserts
 P	Every playbook comes with an insert, a half-page sheet that you can slip inside your folded playbook. Copies of these are provided for reference in this book, starting on page 141.
 P	Every playbook gets an insert for tracking your current <b>inventory</b> (page 142), the other side of which is used to track <b>followers</b> (page 147) or playbook-specific information, such as the Lightbearer's <b>invocations</b> (page 146) or the Marshal's <b>crew</b> (page 144).
-P	The Blessed and Ranger might have special inserts, if you take a particular background or move. The Seeker gets an additional insert for their <b>major arcanum</b> (see <i>Book II</i>, starting on page
-P	540). So does the Heavy, but only if you pick the <b>Storm-marked</b> background (page 113).
+P	The Blessed and Ranger might have special inserts, if you take a particular background or move. The Seeker gets an additional insert for their <b>major arcanum</b> (see <i>Book II</i>, starting on page 540). So does the Heavy, but only if you pick the <b>Storm-marked</b> background (page 113).
 P	You can gain new inserts during play. If you die and you refuse to step through the Last Door, then you gain the <b>Ghost</b>, <b>Revenant</b>, or <b>Thrall</b> inserts (pages 148, 150, and 152). Your GM might also give you a custom-made insert to represent a unique set of abilities that your character acquires during play (see <b>Writing Moves & Love</b>
 P	<b>Letters</b>, page 549).
 PAGE	58

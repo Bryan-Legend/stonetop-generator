@@ -89,8 +89,7 @@ P	10 Massive tree trunk, ~10 paces wide, broken off at top. Remaining wood glint
 P	11 Ramparts of iron-infused trees, sporting long thorns, blocking what once were streets. Rusted, crumbling, uprooted in places.
 P	12 Underground "cage" made of tree roots infused with iron. Still intact, no apparent entrances.
 PB
-P	The above are just examples. See page
-P	214 if you need to create more or different ruins.
+P	The above are just examples. See page 214 if you need to create more or different ruins.
 PAGE	472
 H2	Discoveries
 HR

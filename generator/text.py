@@ -743,7 +743,7 @@ def should_join(a: str, b: str) -> bool:
         # ("…on how to play or run it, see" + "Book I: Stonetop.", or the
         # read-aloud's "The goal is to" + "make the game enjoyable, …").
         if not _is_item_tag_line(a) and re.search(
-            r"\b(?:see|of|and|or|the|to|a|an|with|for|that|than|but|in|on|at|by)"
+            r"\b(?:see|of|and|or|the|to|a|an|with|for|that|than|but|in|on|at|by|pages?)"
             r"\s*$",
             _defmt(a),
             re.I,
@@ -774,6 +774,10 @@ def should_join(a: str, b: str) -> bool:
         return False
     if not a or not b:
         return False
+    # A page reference broken over the line ("…See "What to prep" on page" +
+    # "544 of the Homefront chapter."): no sentence ends on "page".
+    if re.search(r"\bpages?\s*$", a, re.I) and re.match(r"\d", b):
+        return True
     # Steading requirement group-headers start their own line, never a wrap
     if re.match(r"^(Requires?\b|And then\b|And (?:either|one|any)\b)", b, re.I):
         return False

@@ -63,7 +63,7 @@ _SKIP_MARKERS = (
 # "pages 106 and 107" — not the "see" or the "Book II," around it, which
 # the page keeps.
 # (the same numbers the renderer reads: "336 and 350", "213, 223, and 472")
-_PAGE_REF = re.compile(r"\bpages?\s+" + PAGE_NUMS, re.I)
+_PAGE_REF = re.compile(r"\b(?:pages?\s+|p\.\s*)" + PAGE_NUMS, re.I)
 _MAX_BOX = re.compile(r"\bMax\.?\s*\d+", re.I)
 _CALLOUT = re.compile(r"\s\d{1,2}$")
 _TAGS = re.compile(r"<[^>]+>")
@@ -119,6 +119,12 @@ def unshown_lines(lines: list[str], body_html: str, title: str = "") -> list[str
     """
     shown = page_text(body_html)
     title_key = _norm(title)
+    # An index line ("Order Followers 462") is shown as a link named for it,
+    # the number gone (``_bare_page_ref`` in structure.py).
+    linked = {
+        _norm(_html.unescape(_TAGS.sub(" ", t)))
+        for t in re.findall(r'<a\b[^>]*class="wiki-link"[^>]*>(.*?)</a>', body_html, re.S)
+    }
     missing: list[str] = []
     for line in lines:
         if line.startswith(_SKIP_MARKERS):
@@ -142,6 +148,9 @@ def unshown_lines(lines: list[str], body_html: str, title: str = "") -> list[str
             item_key = _norm(strip_markers(item))
             if len(item_key) >= _MIN_LEN and item_key in shown:
                 continue
+        bare = re.fullmatch(r"(\D*[^\W\d_]\D*?)\s+\d{1,3}", text)
+        if bare and _norm(bare.group(1)) in linked:
+            continue
         if len(key) < _MIN_LEN or key in shown or undoubled in shown or (title_key and key in title_key):
             continue
         missing.append(text)

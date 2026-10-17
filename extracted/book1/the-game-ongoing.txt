@@ -119,8 +119,7 @@ B	<b>Minor arcana</b> (page 444)
 B	<b>Major arcana</b> (page 446)
 E	<b>likely to interact with NPCs</b>, review your notes on them. If you think you'll introduce new NPCs, see <b>Creating</b> <b>NPCs</b> (page 453) for guidance.
 E	<b>likely to gain a new follower</b>, then find their stats in <i>Book II</i> or make them from scratch (page 474).
-E	<b>heading home or into a stretch of</b> <b>downtime</b>, then prep for a homefront session. See "<b>What to prep"</b> on page
-P	544 of the Homefront chapter.
+E	<b>heading home or into a stretch of</b> <b>downtime</b>, then prep for a homefront session. See "<b>What to prep"</b> on page 544 of the Homefront chapter.
 H3	Other things you might prep
 B	An <b>adventure hook</b> to kick off a new adventure (page 578)
 B	<b>Custom moves</b> (page 551) to use in a specific situation.

@@ -315,7 +315,9 @@ def _strip_link_label_noise(label: str) -> str:
     lead = re.compile(
         r"^(?:"
         r"or|and|maybe|even|perhaps|possibly|just|like|including|"
-        r"a|an|the|some|any|its|their"
+        r"a|an|the|some|any|its|their|"
+        # "…spends 1 of her crew's Loyalty (see page 464)"
+        r"of|her|his|our|your|my|for|from|with|by|to|in|on|at"
         r")\s+",
         re.I,
     )
@@ -604,6 +606,35 @@ def title_index_lookup(title: str, current_book: str | None = None) -> dict | No
     return arts[0]
 
 
+# An index line set as a name and the page it is on, with no "page" before
+# the number ("Order Followers 462", Player Moves' "Other player moves"): the
+# name becomes the link and the number goes — when that page carries a
+# section of that name, so a table row ending on a count is left alone.
+_BARE_REF_RE = re.compile(r"(?P<name>\D*[^\W\d_]\D*?)\s+(?P<pg>\d{1,3})")
+
+
+def _bare_page_ref(
+    en: str, shown: str, lookup: dict, current_slug: str | None, section_index: dict | None
+) -> str | None:
+    m = _BARE_REF_RE.fullmatch(en)
+    if not m:
+        return None
+    page = int(m.group("pg"))
+    art = lookup.get(page)
+    if not art:
+        return None
+    frag = resolve_section_fragment(page, m.group("name"), art["slug"], section_index)
+    if not frag:
+        return None
+    # the translation's words, without its copy of the number
+    label = re.sub(r"\s*\d{1,3}\s*$", "", _defmt(shown)).strip() or m.group("name")
+    href = ("" if art["slug"] == current_slug else f'{art["slug"]}.html') + f"#{frag}"
+    return (
+        f'<a class="wiki-link" href="{href}" data-slug="{art["slug"]}" '
+        f'data-fragment="{frag}">{html.escape(label)}</a>'
+    )
+
+
 def linkify_pages(
     text: str,
     lookup: dict[int, dict],
@@ -620,7 +651,11 @@ def linkify_pages(
     even if the current article is from Book I (and vice versa).
     """
 
+    en_plain = _defmt(strip_tags(text)).strip()
     text = T(text)
+    bare = _bare_page_ref(en_plain, text, lookup, current_slug, section_index)
+    if bare is not None:
+        return bare
     placeholders: list[str] = []
 
     def store(s: str) -> str:
@@ -689,6 +724,14 @@ def linkify_pages(
         text_out = label if label else (
             _TITLES.get(art["slug"]) or art["title"]
         )
+        # With no name to go on, land on the section the page falls in
+        # ("on page 544 of the Homefront chapter" → Homefront#what-to-prep),
+        # as an in-article ref does, rather than the top of the chapter. A
+        # ref to the chapter's first page means the chapter: its top.
+        if not frag and not label and page != art.get("start_page"):
+            sec = _PAGE_SECTIONS.get((art["slug"], page))
+            if sec:
+                frag = sec["id"]
         href = f"{art['slug']}.html"
         if frag:
             href = f"{href}#{frag}"
@@ -718,7 +761,10 @@ def linkify_pages(
             return f"{primary} ({extras})" if extras else primary
         return " · ".join(page_link(p, book_id=book_id) for p in pages)
 
-    work = text
+    # A worked example sets each of its lines as an italic run of its own,
+    # so a reference can straddle two ("(see page</i> <i>464)"). Runs only a
+    # space apart are one run: the references below see their words whole.
+    work = re.sub(I_OFF + r"(\s+)" + I_ON, r"\1", text)
 
     # Cross-book first: "Makers' Roads (Book II, page 270)" / "Book I, page 245"
     # Match Roman numerals carefully: Book II before Book I.
@@ -738,7 +784,7 @@ def linkify_pages(
             return store(html.escape(full))
         # Keep the printed "Book II, " lead-in and link the page part, so the
         # sentence still reads as the book prints it.
-        cut = full.lower().find("page")
+        cut = m.start("pw") - m.start()
         prefix, rest = (full[:cut], full[cut:]) if cut > 0 else ("", full)
         pages = parse_page_nums(m.group("pages"))
         # Re-emit sentinels swallowed by the linked part so bold/italic runs
@@ -753,7 +799,8 @@ def linkify_pages(
     work = re.sub(
         rf"Book{_FS}\s*{_FS}(?P<book>II|I|2|1){_FS}\s*[,:]?\s*{_FS}"
         rf"(?:see\s+)?(?:starting\s+on\s+)?"
-        rf"pages?{_FS}\s+{_FS}(?P<pages>{PAGE_NUMS})",
+        # "Book II, p. 222" (the Sites chapter's danger lists)
+        rf"(?P<pw>pages?{_FS}\s+|p\.\s*){_FS}(?P<pages>{PAGE_NUMS})",
         repl_book_page,
         work,
         flags=re.IGNORECASE,
