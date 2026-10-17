@@ -22,3 +22,4 @@ P	• Shape sound and shadow to unnerve and frighten
 P	• Manifest as its victim's fears (harmed only by one who masters their fear)
 P	<b>Cost</b> new, exquisite fears (Loyalty ◇◇◇ )
 P	<b>HP</b>
+P	Starts at 13

@@ -627,7 +627,7 @@ Resources and recurring words. Blessed: tr · uk · hu · da · nb · fi. Fox: p
 | Stock (sacred pouch) | tr Stok · uk Зілля · hu Hozzávaló · da/nb Beholdning · fi Aines |
 | sacred pouch | tr kutsal kese · uk священна торбинка · hu szent tarsoly · da/nb hellig pung · fi pyhä pussi |
 | Boon | tr Nimet · uk Благодать · hu Adomány · da/nb Gunst · fi Lahja |
-| Earth Mother | tr Toprak Ana · uk Мати-Земля · hu Földanya · da Jordmoderen · nb Jordmoren · fi Maaemo |
+| Earth Mother | tr Toprak Ana · uk Мати-Земля · hu Földanya · da Jordmoderen · nb Jordmoderen · fi Maaemo |
 | Pavilion of the Gods | tr Tanrıların Köşkü · uk Павільйон Богів · hu Istenek Pavilonja · da Gudernes Pavillon · nb Gudenes Paviljong · fi Jumalten Paviljonki |
 | Readiness | pl Gotowość · nl Paraatheid · sv/nb Beredskap · da Beredskab · cs Pohotovost · fi Valmius · hu Készenlét · tr Hazırlık · ru Готовность · uk Готовність · zh 戒备/戒備 |
 | Nerve (Silver Tongued) | pl Tupet · nl Lef · sv Nerv · da Mod · nb Mot · cs Kuráž · fi Pokka · hu Mersz · tr Cüret · ru/uk Выдержка/Витримка · zh 胆识/膽識 |

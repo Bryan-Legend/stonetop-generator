@@ -6,7 +6,6 @@ P	High in the hills, a stream of snowmelt fills a deep pool in the rocks before 
 P	There is magic here; to unlock its secrets, either...
 C	… spend a week or so experimenting at the pool, then roll +INT: <b>on a 10+</b>, you figure it out; <b>on a 7-9</b>, no luck; <b>on a 6-</b>, you are interrupted by danger; or...
 C	… get a firsthand account of the pool's powers in use.
-P	front 14 back Starts at 13
 H3	Ward of Still Waters
 P	Strain: ◇◇◇◇◇◇◇
 P	When you <b><i>cut yourself with iron or steel and toss</i></b> <b><i>the blooded metal into the pool</i></b>, you form a bond with the waters. So long as you carry a vial of the pool's water on your person, you are protected by the ward of still waters.

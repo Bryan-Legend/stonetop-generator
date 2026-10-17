@@ -21,7 +21,7 @@ C	<b>OPPFOSTRET AV ULVER</b> Kanskje ikke av <i>ulver</i>, men du vokste opp i v
 P	Uansett får du trekket Sporløse Skritt (gå og kryss det av nå). Og når du <b><i>Finner Føde</i></b>, har du fordel.
 P	Av en eller annen grunn har du gjort deg kjent i Stonetop, og kanskje kaller du det til og med hjemmet ditt. Men menneskenes skikker er fortsatt fremmede for deg. Én gang per spilløkt, når <b><i>de ville vanene dine støter eller fremmedgjør</i></b> <b><i>noen</i></b>, kryss av XP.
 C	<b>KAR</b> Et frø av Danus kraft har slått rot i sjelen din. Kanskje har det alltid vært der og først nylig spiret. Eller kanskje ble det sådd i deg under en varslende hendelse.
-P	Uansett hjemsøkes drømmene dine av underlige tegn og symboler. Du kjenner den mystiske kraften i planter, stein og jord. Og du har kjent Jordmorens voksende vrede, i takt med at urene ting begynner å røre på seg. Ta trekket Danus Grep (gå og kryss det av nå).
+P	Uansett hjemsøkes drømmene dine av underlige tegn og symboler. Du kjenner den mystiske kraften i planter, stein og jord. Og du har kjent Jordmoderens voksende vrede, i takt med at urene ting begynner å røre på seg. Ta trekket Danus Grep (gå og kryss det av nå).
 P	Danus kraft strømmer gjennom deg, men til en høy pris.
 P	Når du <b><i>skulle bruke 1 Beholdning fra den hellige</i></b> <b><i>pungen din</i></b>, kan du velge å miste 2d4 HP i stedet.
 H2	Instinkt (Velg 1)
@@ -121,7 +121,7 @@ B	Pasienten din lider varig skade eller traume
 B	Du lider selv under noen av lidelsens virkninger
 B	Den blir skadelig og farlig å kvitte seg med
 C	<b>OVERLEGEN EGENSKAP</b> (Krever nivå 6+) Øk en av egenskapene dine med +1 (til maks +3).
-C	<b>JORDMORENS STEMME</b> (Krever nivå 6+ og Åndespråk) Når du <b><i>taler på Danus vegne</i></b>, respekterer naturlige dyr og villmarkas ånder myndigheten din. Alle utenom de mest egenrådige vil gjøre som du befaler, selv mot sine egne instinkter.
+C	<b>JORDMODERENS STEMME</b> (Krever nivå 6+ og Åndespråk) Når du <b><i>taler på Danus vegne</i></b>, respekterer naturlige dyr og villmarkas ånder myndigheten din. Alle utenom de mest egenrådige vil gjøre som du befaler, selv mot sine egne instinkter.
 PAGE	108
 H2	Hellig pung
 P	Den hellige pungen din (<i>magisk</i>) tar ikke plass i oppakningen din. Den kan romme opptil 3 Beholdning (hellige urter, pulver, steiner, fargestoffer, kritt, leire og så videre). Hver gang du når et partallsnivå, kan pungen romme +1 Beholdning. Når <b><i>noen</i></b> <b><i>andre enn deg ser i den hellige pungen din og rører ved</i></b> <b><i>innholdet</i></b>, er Beholdningen ødelagt.
@@ -146,7 +146,7 @@ C	Den kan ikke skjæres, rives i stykker eller brennes med naturlige midler.
 C	Med mindre noen spesifikt leter etter pungen din, overser de den.
 C	Så lenge pungen er lukket, kan ingenting i den oppdages eller finnes med magi, og ingenting i den kan unnslippe eller påvirke verden utenfor.
 C	Unaturlige og urene skapninger tåler ikke å røre ved den.
-H2	Jordmoren
+H2	Jordmoderen
 P	Danu har lenge vært æret av alle folkeslag, om enn ikke alltid tilbedt eller tjent av prester. I Stonetops Gudenes Paviljong er Danus helligdom ...
 P	(velg 1)
 C	... elsket, flittig brukt og overlesset med offergaver og bønner.

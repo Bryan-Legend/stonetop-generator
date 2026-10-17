@@ -2924,9 +2924,21 @@ def extract_minor_arcana_rich(
     page = doc[page_1based - 1]
     h = page.rect.height
     mid_y = h * 0.50
-    for winfo in page.get_text("words"):
+    # The cut goes under the top card's front/back label line, not over it:
+    # the top card's own small print can sit beside its labels (an HP box's
+    # "Starts at 13", p. 514), and the next card starts a good 12pt lower.
+    words = page.get_text("words")
+    card_no, card_nos = "", set()
+    for winfo in words:
         if winfo[4].lower() in {"front", "back"} and 270 < winfo[1] < 340:
-            mid_y = winfo[1] - 2
+            mid_y = winfo[3] + 6
+            # the top card's number, printed between its labels
+            card_no = next((w[4] for w in words if w[4].isdigit()
+                            and abs(w[1] - winfo[1]) < 4
+                            and 150 < w[0] < 240), "")
+            # set twice, outline and fill, it may read "1111" (or "11" for 1)
+            n = len(card_no) // 2
+            card_nos = {card_no, card_no[:n]} if card_no == card_no[:n] * 2 else {card_no}
             break
     y0, y1 = (45, mid_y) if half == "top" else (mid_y, h - 25)
     lines = extract_page_rich(page, y_clip=(y0, y1))
@@ -2936,6 +2948,9 @@ def extract_minor_arcana_rich(
     for l in lines:
         l = re.sub(r"\s*\bfront\b\s*\d*\s*\bback\b\s*$", "", l, flags=re.I)
         l = re.sub(r"\s*\b(front|back)\b\s*\d*\s*$", "", l, flags=re.I)
+        l = re.sub(r"^(\x02\w+ )?(front|back)\s+(?=\S)", r"\1", l)
+        if half == "top" and _defmt(strip_markers(l)).strip() in card_nos:
+            continue
         if _defmt(strip_markers(l)).strip():
             cleaned.append(l)
     if pages_out is not None:
