@@ -12,6 +12,7 @@ import shutil
 from pathlib import Path
 
 from . import REPO_ROOT
+from .cards import card_urls
 from .lastmod import write_output
 from .i18n import (
     UI_FALLBACK,
@@ -132,6 +133,27 @@ def meta_description(text: str, limit: int = 160) -> str:
     return clean[: limit - 1].rsplit(" ", 1)[0].rstrip(",.;:—-") + "…"
 
 
+def card_images(path: str) -> list[str] | None:
+    """The page's cards for its JSON-LD ``image``, square first."""
+    card = card_urls(path, SITE_BASE_URL)
+    return [card["square"], card["wide"]] if card else None
+
+
+def favicon_links_html(rel_prefix: str) -> str:
+    """The icon links every page carries (images from cards.write_favicons).
+
+    Google takes a page's favicon from these and crops it to a circle; it
+    wants a square that is a multiple of 48px, so the 192px PNG is offered
+    beside the SVG. /favicon.ico at the root is the crawlers' fallback.
+    """
+    p = rel_prefix
+    return (
+        f'  <link rel="icon" href="{p}images/favicon.svg" type="image/svg+xml">\n'
+        f'  <link rel="icon" href="{p}images/favicon-192.png" type="image/png" sizes="192x192">\n'
+        f'  <link rel="apple-touch-icon" href="{p}images/apple-touch-icon.png">'
+    )
+
+
 def social_meta_html(
     title: str,
     description: str,
@@ -169,7 +191,7 @@ def social_meta_html(
         full = f"{title} — {brand}"
     base = SITE_BASE_URL.rstrip("/")
     url = base + "/" + path.lstrip("/")
-    img = base + "/images/favicon.png"
+    card = card_urls(path, base)
     e = html.escape
     tags = [
         f'  <meta name="description" content="{e(desc)}">',
@@ -185,9 +207,22 @@ def social_meta_html(
         '  <meta property="og:type" content="article">',
         f'  <meta property="og:locale" content="{e(og_locale)}">',
         f'  <meta property="og:url" content="{e(url)}">',
-        f'  <meta property="og:image" content="{e(img)}">',
-        '  <meta name="twitter:card" content="summary">',
     ]
+    if card:
+        # The page's own preview card (generator/cards.py, --cards).
+        tags += [
+            f'  <meta property="og:image" content="{e(card["wide"])}">',
+            '  <meta property="og:image:type" content="image/png">',
+            '  <meta property="og:image:width" content="1200">',
+            '  <meta property="og:image:height" content="630">',
+            f'  <meta property="og:image:alt" content="{e(full)}">',
+            '  <meta name="twitter:card" content="summary_large_image">',
+        ]
+    else:
+        tags += [
+            f'  <meta property="og:image" content="{e(base)}/images/favicon.png">',
+            '  <meta name="twitter:card" content="summary">',
+        ]
     for alt in alternates or []:
         # ``url`` overrides ``path`` where the address to index and the address
         # to link to differ: the home page is canonically the bare directory,
@@ -357,6 +392,7 @@ def page_structured_data(
     home_url: str,
     hub: tuple[str, str] | None = None,
     is_home: bool = False,
+    images: list[str] | None = None,
 ) -> str:
     """The JSON-LD for one page, in whatever language it is written in.
 
@@ -384,6 +420,8 @@ def page_structured_data(
             "license": LICENSE_URL,
             "isAccessibleForFree": True,
         }
+        if images:
+            page["image"] = images
         graph += [
             _website_entity(base),
             _game_entity(base),
@@ -425,6 +463,9 @@ def page_structured_data(
         ]
     if description:
         article["description"] = description
+    if images:
+        # Square first: it is what search shows beside a result.
+        article["image"] = images
     if art.get("start_page"):
         # Which printed pages this one is made of, so a citation can name them.
         article["pagination"] = (
@@ -1218,6 +1259,7 @@ def page_shell(
         home_url=home_url,
         hub=hub,
         is_home=slug == "index",
+        images=card_images(path),
     )
     e = html.escape
     dir_attr = f' dir="{e((locale or {}).get("dir") or "ltr")}"' if locale else ""
@@ -1248,8 +1290,7 @@ def page_shell(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e(doc_title)}</title>
 {meta_html}
-  <link rel="icon" href="{rel_prefix}images/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="{rel_prefix}images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+{favicon_links_html(rel_prefix)}
   <link rel="stylesheet" href="{rel_prefix}css/wiki.css">
 {jsonld}
 {ANALYTICS_HTML}
@@ -1287,6 +1328,33 @@ def page_shell(
 """
 
 
+def page_map_js(maps: dict) -> str:
+    """``window.WIKI_PAGE_MAP``, with each page's section table stored once.
+
+    Every printed page of a chapter carries the chapter's whole
+    name → id table (``sections``), so writing the map out flat repeated
+    it once per page — ~2.4 MB of each language's previews-data.js. The
+    tables go in once per slug and a small function hangs them back on
+    every page as the file loads, so wiki.js reads the map as before.
+    """
+    tables: dict[str, dict] = {}
+    slim: dict[str, dict] = {}
+    for bid, page_map in maps.items():
+        slim[bid] = {}
+        for num, hit in page_map.items():
+            hit = dict(hit)
+            secs = hit.pop("sections", None)
+            if secs is not None:
+                tables.setdefault(hit["slug"], secs)
+            slim[bid][num] = hit
+    dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+    return (
+        "window.WIKI_PAGE_MAP = (function (s, m) {"
+        "for (var b in m) for (var p in m[b]) m[b][p].sections = s[m[b][p].slug] || {};"
+        "return m;})(" + dump(tables) + "," + dump(slim) + ");\n"
+    )
+
+
 def write_localized_data(
     lang_dir: Path,
     code: str,
@@ -1311,7 +1379,9 @@ def write_localized_data(
         if not got:
             pv[slug] = entry
             continue
-        pv[slug] = {**entry, **got}
+        # ``text`` is the page's whole text, for search; a hover preview
+        # never reads it, and it was half of every language's file.
+        pv[slug] = {**entry, **{k: v for k, v in got.items() if k != "text"}}
     docs = []
     for doc in search_docs:
         got = local.get(doc["slug"])
@@ -1345,10 +1415,8 @@ def write_localized_data(
     nl = "\n"
     write_output((js_dir / "previews-data.js"), 
         "window.WIKI_PREVIEWS = "
-        + json.dumps(pv, ensure_ascii=False, indent=2)
-        + ";" + nl + "window.WIKI_PAGE_MAP = "
-        + json.dumps(maps, ensure_ascii=False, indent=2)
-        + ";" + nl,
+        + json.dumps(pv, ensure_ascii=False, separators=(",", ":"))
+        + ";" + nl + page_map_js(maps),
         encoding="utf-8",
     )
     write_output((js_dir / "search-index.js"), 
@@ -2483,6 +2551,7 @@ def write_index_custom(
         lang="en",
         home_url=SITE_BASE_URL.rstrip("/") + "/",
         is_home=True,
+        images=card_images(""),
     )
 
     html_out = f"""<!DOCTYPE html>
@@ -2492,8 +2561,7 @@ def write_index_custom(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(HOME_FALLBACK["doc_title"])}</title>
 {home_meta}
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="images/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+{favicon_links_html("")}
   <link rel="stylesheet" href="css/wiki.css">
 {jsonld}
 {ANALYTICS_HTML}

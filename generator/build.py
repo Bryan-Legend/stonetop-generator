@@ -32,6 +32,7 @@ from .articles import (
     ensure_unique_slugs,
 )
 from .chrome import (
+    page_map_js,
     SITE_BASE_URL,
     apply_override,
     arcana_hub_html,
@@ -64,6 +65,7 @@ from .chrome import (
     write_sitemap,
 )
 from . import blocks as blockdata
+from . import cards
 from . import lastmod
 from .lastmod import snapshot as lastmod_snapshot, write_output
 from .coverage import report as report_unshown
@@ -285,6 +287,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "Off by default: the books' TEXT is CC BY-SA 4.0 but the artwork "
             "(maps included) is © Lucie Arnoux, so map images must not be "
             "published. Use this only for a local, unpublished build."
+        ),
+    )
+    p.add_argument(
+        "--cards",
+        action="store_true",
+        help=(
+            "Also draw each page's preview cards (cards/, the "
+            "og:image and search thumbnail) and the favicons, for every page "
+            "whose title or opening text changed since the last --cards run. "
+            "Off by default: thousands of images, needed only when pages change."
         ),
     )
     p.add_argument(
@@ -526,6 +538,7 @@ def main(argv: list[str] | None = None) -> None:
         if args.output is not None
         else (REPO_ROOT / "site").resolve()
     )
+    cards.configure(out, args.cards)
     corpus = (
         args.corpus.expanduser().resolve() if args.corpus else corpus_dir()
     )
@@ -1272,7 +1285,7 @@ def main(argv: list[str] | None = None) -> None:
         print(f"  Bestiary: {len(entries)} stat blocks")
 
     clock.phase("write previews / search index / home")
-    previews_json = json.dumps(previews, ensure_ascii=False, indent=2)
+    previews_json = json.dumps(previews, ensure_ascii=False, separators=(",", ":"))
 
     page_maps: dict[str, dict] = {}
     for bid, book_lookup in lookups.items():
@@ -1289,15 +1302,13 @@ def main(argv: list[str] | None = None) -> None:
                 "sections": sec_map,
             }
         page_maps[bid] = page_map
-    page_map_json = json.dumps(page_maps, ensure_ascii=False, indent=2)
     # JS globals (not separate JSON) so hover previews work over file://
     if only_pages is None:
-        write_output((out / "js" / "previews-data.js"), 
+        write_output((out / "js" / "previews-data.js"),
             "window.WIKI_PREVIEWS = "
             + previews_json
-            + ";\nwindow.WIKI_PAGE_MAP = "
-            + page_map_json
-            + ";\n",
+            + ";\n"
+            + page_map_js(page_maps),
             encoding="utf-8",
         )
     search_json = json.dumps(search_docs, ensure_ascii=False, separators=(",", ":"))
@@ -1376,6 +1387,13 @@ def main(argv: list[str] | None = None) -> None:
             lastmod.sweep(out / t["code"])
         write_build_manifest(out, owned)
     lastmod.save_cache(out)
+    if args.cards and shard is None:
+        clock.phase("preview cards")
+        cards.build_cards(
+            out,
+            cards.all_languages(),
+            jobs_n=args.jobs or default_jobs(),
+        )
     if args.profile:
         clock.report(time.perf_counter() - t_start)
     print(
