@@ -99,11 +99,11 @@
 }
 
 :root {
-  /* Warm near-black ground under parchment type. Only two hues carry meaning:
+  /* Pure black ground under parchment type. Only two hues carry meaning:
      the #cfbea2 parchment of headings, links and icons, and the #5d142b wine
      that does every structural job — bands, fills, rules, washes. */
-  --bg: #0b0909;
-  --bg-page: #100e0e;
+  --bg: #000;
+  --bg-page: #000;
   --bg-elev: #1c1a1a;
   --bg-hover: #272220;
   --ink: #eee8df;
@@ -217,9 +217,6 @@ body {
   font-synthesis-weight: none;
   color: var(--ink);
   background-color: var(--bg);
-  background-image:
-    radial-gradient(ellipse 90% 55% at 0% 0%, rgba(var(--accent-rgb), 0.07), transparent 46%),
-    radial-gradient(ellipse 70% 50% at 100% 100%, rgba(var(--link-rgb), 0.06), transparent 52%);
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -624,7 +621,6 @@ html, body {
   border: none;
   border-radius: 0;
   background-color: var(--bg-page);
-  background-image: linear-gradient(180deg, rgba(var(--accent-rgb), 0.035), transparent 7rem);
 }
 
 .content {
