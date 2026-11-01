@@ -9,8 +9,9 @@ are not published):
   the standing stone and the edition's name, then the book and section, the
   page's title and its opening paragraphs, cut with "…" where they run out
   of room. Text is never shrunk to fit; titles are.
-* ``cards/<code>/<slug>-square.png`` — 800×800, Google's 1:1. Search
-  shows it at ~104px beside a result, so it carries the title alone, large.
+* ``cards/<code>/<slug>-square.png`` — 800×800, Google's 1:1, offered as
+  the page's ``primaryImageOfPage``. A thumbnail is small, so it carries the
+  title alone, large. Google chooses the image; it may still take the wide one.
 
 Rendering every page in every language takes a while and the images change
 only when a page's title or opening text does, so this runs under

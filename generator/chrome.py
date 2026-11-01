@@ -139,6 +139,13 @@ def card_images(path: str) -> list[str] | None:
     return [card["square"], card["wide"]] if card else None
 
 
+def _primary_image(images: list[str]) -> dict:
+    """The square card as ``primaryImageOfPage``: Google's named way to prefer
+    an image for a result's thumbnail. ``og:image`` stays the wide card, which
+    is what link previews want. A hint only; Google makes the choice."""
+    return {"@type": "ImageObject", "url": images[0], "width": 800, "height": 800}
+
+
 def favicon_links_html(rel_prefix: str) -> str:
     """The icon links every page carries (images from cards.write_favicons).
 
@@ -422,6 +429,7 @@ def page_structured_data(
         }
         if images:
             page["image"] = images
+            page["primaryImageOfPage"] = _primary_image(images)
         graph += [
             _website_entity(base),
             _game_entity(base),
@@ -439,7 +447,7 @@ def page_structured_data(
         "@type": "Article",
         "@id": url + "#article",
         "url": url,
-        "mainEntityOfPage": url,
+        "mainEntityOfPage": {"@id": url + "#webpage"},
         "headline": title,
         "name": title,
         "inLanguage": lang,
@@ -464,7 +472,6 @@ def page_structured_data(
     if description:
         article["description"] = description
     if images:
-        # Square first: it is what search shows beside a result.
         article["image"] = images
     if art.get("start_page"):
         # Which printed pages this one is made of, so a citation can name them.
@@ -474,6 +481,15 @@ def page_structured_data(
             else str(art["start_page"])
         )
     graph.append(article)
+    webpage = {
+        "@type": "WebPage",
+        "@id": url + "#webpage",
+        "url": url,
+        "mainEntity": {"@id": url + "#article"},
+    }
+    if images:
+        webpage["primaryImageOfPage"] = _primary_image(images)
+    graph.append(webpage)
 
     trail = [("Stonetop", home_url)]
     if hub:
