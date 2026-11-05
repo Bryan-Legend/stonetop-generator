@@ -638,6 +638,23 @@ def extract_page_rich(
                 )
     if not spans:
         return []
+    # An overprint: a stale span left under its revision at the same origin,
+    # its text a prefix of the revised one (The Heavy, p. 113: "honest" under
+    # "honest. They look out for each other. But sometimes,"). Read both,
+    # and the revision came out as a line of its own.
+    def _shadowed(a: dict) -> bool:
+        ta = a["text"].strip()
+        return any(
+            b is not a
+            and abs(b["x"] - a["x"]) < 0.5
+            and abs(b["y"] - a["y"]) < 0.5
+            and b["font"] == a["font"]
+            and b["x1"] > a["x1"] + 1.0
+            and b["text"].strip().startswith(ta)
+            for b in spans
+        )
+
+    spans = [s for s in spans if not _shadowed(s)]
 
     spirals: list = []
     tails: list = []
@@ -1460,6 +1477,36 @@ def extract_page_rich(
                 out.append(M_H3 + dtext[:1].upper() + dtext[1:])
                 continue
 
+            # A small-caps kicker centered over a display name set under it
+            # (Threats, p. 284: "threat type" over "Affliction"). The name is
+            # the heading; the kicker is a label, like "steading improvement"
+            # over an improvement. Read alone, the kicker opening the right
+            # column was glued onto the left column's last bullet.
+            nxt = recs[idx] if idx < len(recs) else None
+            if (
+                rec.get("fell_solo")
+                and not single_column
+                and not is_fell
+                and table is None
+                and len(dtext) <= 40
+                and nxt is not None
+                and nxt.get("text")
+                and "BoldItalic" in (nxt.get("lead_font") or "")
+                and (nxt.get("lead_size") or 0) >= 11.0
+                and 0 < nxt["y"] - y < 2.0 * rec["size"]
+                and abs(
+                    (nxt["x"] + nxt["x1"]) / 2 - (rec["x"] + rec["x1"]) / 2
+                ) <= 4.0
+            ):
+                idx += 1
+                prev_y, prev_x1, prev_size = nxt["y"], nxt.get("x1"), nxt.get("size")
+                state["last_line"] = ""
+                entry_active = False
+                list_kind = None
+                name = _defmt(nxt["text"]).strip()
+                out.append(M_H3 + name)
+                continue
+
             # Headings end any open table
             if is_avara or is_fell:
                 close_table()
@@ -2176,6 +2223,17 @@ def extract_page_rich(
         edges = [float("-inf")] + sorted(cuts) + [float("inf")]
         bands = [(lo, hi) for lo, hi in zip(edges, edges[1:])]
         band_gutters = [gutter] * len(bands)
+        # A band set across the full measure (the epigraph under the class
+        # name) is one column. Split at the gutter, a span centered right of
+        # it went to the right column, read after the left — The Heavy's
+        # "honest. They look out for each other. But sometimes," (p. 113).
+        if not single_column:
+            for bi, (lo, hi) in enumerate(bands):
+                kinds = {
+                    k for row, k in zip(rows, row_kind) if lo <= row[0]["y"] < hi
+                }
+                if "cross" in kinds and "two" not in kinds:
+                    band_gutters[bi] = page.rect.width + 1
 
     # A follower's box on an arcanum's card (the Blackwood Fetishes' Astor
     # and Halix, the Mindgem's Mighty Servant) is two columns inside the one
@@ -2260,7 +2318,12 @@ def extract_page_rich(
             )
             # Only a full-measure band is bounded in height; a playbook's
             # bands keep reading as they always have.
-            if full_top_band is not None or tilted_band or follower_bands:
+            # (A playbook band read as one column is bounded too: across
+            # the whole measure it would take every rule on the page.)
+            if (
+                full_top_band is not None or tilted_band or follower_bands
+                or (playbook and band_gutter > page.rect.width)
+            ):
                 recs = build_lines(col, x_lo, x_hi, band_lo, band_hi)
             else:
                 recs = build_lines(col, x_lo, x_hi)
