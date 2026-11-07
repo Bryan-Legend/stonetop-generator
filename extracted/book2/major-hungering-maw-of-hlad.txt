@@ -41,7 +41,7 @@ H2	Consequences
 HR
 C	A powerful earthquake strikes the area. Each time you choose this option, the quake is longer, more powerful, more destructive.
 C	The ring fuses to your flesh and bone and can no longer be removed without cutting off your finger.
-C	The air in your presence is always noticeably colder, though you yourself are unharmed and unfazed by even the bitterest cold.
+C2	The air in your presence is always noticeably colder, though you yourself are unharmed and unfazed by even the bitterest cold.
 C	The ring wounds your soul, reducing your max HP by 4. Until your soul is healed, your instinct becomes "Hunger: to fill the emptiness inside you with excess." Should you roll a 6- on Death's Door, you die and become a wraith (a monster in the GM's control).
 C	The ring opens a gaping vortex, sucking in the life-force of everything around it (d10 damage, <i>near</i>, <i>area</i>, <i>grabby</i>, ignores armor) and weakening stone and metal and wood. You can, perhaps, close the vortex through a force of will.
 C	The earth shakes. The ring tears at your life-force (1d10 damage, <i>messy</i>, ignores armor, mark all three debilities). The ring is gone and your hand is left a withered and palsied thing. And somewhere, a hole has opened in the world.

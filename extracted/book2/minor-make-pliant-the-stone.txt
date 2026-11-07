@@ -14,4 +14,3 @@ P	<b>On a 10+</b>, you maintain control and the chime will ring for about a minu
 P	<b>On a 7-9</b>, pick 1:
 B	Maintain control as per a 10+, but you must pour yourself into the effort—mark another debility
 B	Realize that you can't control it and dampen the chime before it causes any harm (say how)
-P	36

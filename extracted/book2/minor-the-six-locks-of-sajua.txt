@@ -16,4 +16,3 @@ P	<b>on a 7-9</b>, their soul is bound, but all mundane metal in your presence r
 P	When you <b><i>extract a promise from a bound soul</i></b>
 P	<b><i>and then open the lock that binds it</i></b>, the soul is compelled to fulfill the letter of its promise before it goes its own way. Tell the GM to treat it as a ghost (though not necessarily as a follower); the open lock serves as its tether, at least for now.
 P	Each time you release a soul, mark 1 Disturbance and roll 1d6. If you roll less than your Disturbance, you hear the call of the Pale Hunter in the distance. Expect a visit soon.
-P	16

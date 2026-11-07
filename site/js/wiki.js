@@ -1253,9 +1253,11 @@
   // When a roll-table's own dice button is rolled, highlight the row whose
   // number (or range, e.g. "5-6") contains the total.
   function highlightRollRow(btn, total) {
-    var head = btn.closest(".roll-table-head");
+    // The head is a bar over the table, or (a table in two columns) the
+    // table's own head row.
+    var head = btn.closest(".roll-table-head, .roll-cols-head");
     if (!head) return;
-    var table = head.parentNode;
+    var table = head.closest(".roll-table");
     if (!table || !table.classList || !table.classList.contains("roll-table")) {
       return;
     }

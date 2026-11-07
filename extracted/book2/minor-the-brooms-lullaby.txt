@@ -13,4 +13,3 @@ H3	The Broom's Lullaby
 P	<i>magical, area, near</i>
 P	When you <b><i>start sweeping an area as you softly</i></b> <b><i>sing the lullaby</i></b>, roll +CHA: <b>on a 7+</b>, those who see and hear you stop to watch and listen, at least for a bit, entranced or confused or bemused as fits their nature and the circumstances. They snap out of it if harmed or threatened. <b>Also,</b> <b>on a 10+</b>, you can hold their attention for the length of the lullaby, as long as no one is harmed or threatened.
 P	When you <b><i>sing the full lullaby, sweeping all</i></b> <b><i>the while</i></b>, roll +CHA: <b>on a 10+</b>, all who hear you fall into a deep sleep and will be prone to dismiss this as just a dream; <b>on a 7-9</b>, all who hear you start to nod off or lapse into a light, jerking sleep, but they will certainly remember this when they come to; <b>on a 6-</b>, at least one of your audience snaps to and realizes just how weird this all is.
-P	60

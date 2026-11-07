@@ -18,4 +18,3 @@ B	What are they really feeling right now?
 B	What do they intend to do?
 B	What here are they most afraid of?
 B	Is something controlling their mind, emotions, or actions, and if so, what?
-P	24

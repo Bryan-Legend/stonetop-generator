@@ -33,10 +33,10 @@ HR
 H2	Consequences
 HR
 C	You no longer mark 1 (see reverse) when you simply <i>defeat</i> a being that wields chaotic magic; you must destroy it instead.
-C	Mere minions and mindless horrors will no longer suffice. You only mark 1 for destroying a potent agent of chaos, such as a mighty demon or sorcerer.
+C2	Mere minions and mindless horrors will no longer suffice. You only mark 1 for destroying a potent agent of chaos, such as a mighty demon or sorcerer.
 C	When you <b><i>use or knowingly submit to chaotic magic</i></b>, the Rune-laden Scales cease to benefit you or anyone you consider to be a friend or ally.
 C	When you <b><i>kill a living creature out of anger, fear, or passion</i></b>, even an agent of chaos, take disadvantage on all rolls until you ceremonially atone and purify yourself.
-C	When you <b><i>take any violent action out of anger, fear, or passion</i></b>, even against an agent of chaos, take disadvantage on all rolls until you ceremonially atone and purify yourself.
+C2	When you <b><i>take any violent action out of anger, fear, or passion</i></b>, even against an agent of chaos, take disadvantage on all rolls until you ceremonially atone and purify yourself.
 C	You come to the attention of one of the mightiest of the Things Below, and they make your doom—or your corruption—a priority.
 C	You ascend into a vision state, in which you meet the spirit of the last hero to wear the Scales. Should you refuse the quest they offer, the Rune-laden Scales cease to function.
 P	back

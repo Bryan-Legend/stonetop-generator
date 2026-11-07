@@ -46,8 +46,8 @@ HR
 C	You draw the attention of some powerful, hungry entity of the spirit world. It has your scent.
 C	Your physical body withers and fades—permanently mark the <i>weakened</i> debility
 C	Your emotions dull. You can no longer be affected by fear, hate, passion, or other powerful emotions (for good or ill).
-C	Replace your instinct with "Detachment: To distance yourself from human connections and emotions."
+C2	Replace your instinct with "Detachment: To distance yourself from human connections and emotions."
 C	Your skin tinges bluish; your body becomes cold to the touch. You are unaffected by even the bitterest cold, but find heat and warmth unbearable.
-C	When you take damage from fire, roll twice and take the higher result.
+C2	When you take damage from fire, roll twice and take the higher result.
 C	When you <b><i>roll 6- at Death's Door</i></b>, you have no choice: gain the Ghost insert (with the Ice Sphere as your tether).
 P	back

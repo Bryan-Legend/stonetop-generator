@@ -1150,6 +1150,28 @@ ul.bestiary .be-from a:hover { color: var(--link-hover); }
   width: 100%;
   font-size: 0.95em;
 }
+/* A roll table in two columns: the dice button sits in the head row,
+   over the numbers, and each column has its head (the Mindgem's purpose
+   and cost). */
+.roll-table-cols .roll-cols-head th {
+  border-bottom: 1px solid var(--rule);
+  background: rgba(var(--accent-rgb), 0.09);
+  font-family: var(--font-serif);
+  color: var(--head);
+  font-weight: 400;
+  font-size: 1.05rem;
+  text-align: left;
+  padding: 0.35rem 0.5rem;
+}
+/* Each column as wide as it needs: the column heads drop the fixed width
+   every table head cell gets, and the first column (short: "To punish",
+   "1 to 5") is fitted to its longest entry, the last taking the rest. */
+.roll-table-cols .roll-cols-head th:not(:first-child) { width: auto; }
+.roll-table-cols tr > :nth-child(2) { width: 1%; white-space: nowrap; }
+/* A consequence hanging under the one above it; a table it asks for sits
+   under its label, set in to the label's text. */
+ul.check-list ul.check-sublist { margin: 0.1rem 0 0.2rem 1.45rem; }
+li.check-item > .roll-table { margin-left: 1.45rem; width: calc(100% - 1.45rem); }
 .roll-table table.roll-subtable th,
 .roll-table table.roll-subtable td {
   padding-top: 0.05rem;

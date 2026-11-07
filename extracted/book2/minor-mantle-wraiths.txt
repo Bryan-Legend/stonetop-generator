@@ -23,4 +23,3 @@ P	• Suck the vitality from their prey
 P	<b>Cost</b> souls feasted upon (Loyalty ◇◇◇ )
 P	<b>HP</b>
 P	Starts at 13 each
-P	10

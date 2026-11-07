@@ -5985,7 +5985,7 @@
     },
     {
      "kind": "roll-table",
-     "name": "Hp Stats",
+     "name": "HP",
      "id": "hp-stats"
     },
     {
@@ -7018,6 +7018,11 @@
      "kind": "stat-block",
      "name": "The Mighty Servant",
      "id": "the-mighty-servant"
+    },
+    {
+     "kind": "roll-table",
+     "name": "Purpose",
+     "id": "purpose-cost"
     }
    ],
    "major-whispering-rocks": [],

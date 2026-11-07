@@ -47,15 +47,13 @@ C	It begins to understand (or perhaps it remembers) lies and deception. It gains
 P	• Reveal an earlier deception or half-truth
 C	It develops a sense of pride; cross off the <i>meek</i> tag.
 C	It realizes its potential as a weapon. Replace the <i>slow</i> tag with the <i>warrior</i> tag, and its damage becomes 1d10+5 (<i>hand, close, messy, forceful</i>, 3 piercing)
-C	It becomes aggressive and reckless in battle. Its attacks gain the <i>area</i> and <i>dangerous</i> tags.
+C2	It becomes aggressive and reckless in battle. Its attacks gain the <i>area</i> and <i>dangerous</i> tags.
 C	It remembers its original purpose. The GM will pick 1 or have you roll 1d4 on the table below to determine the Servant's new cost (replacing "wonder, excitement, joy").
-P	<b>1d4</b> purpose cost
-HR
-P	1 To punish Victory against Hillfolk, sorcerers, the Things Below
-P	2 To preserve Acquiring artifacts of the past, safely hiding them away
-P	3 To purge Destroying artifacts of the Green Lords or Things Below
-P	4 To build Progress towards building an enormous, enigmatic edifice
-C	Its instinct becomes "to pursue its purpose." You must Persuade it to do anything unrelated to that purpose, and it will flat-out refuse to act against its purpose.
-C	It wanders off in pursuit of its purpose, implacably pursuing it. It is no longer a follower, though you might still be able to Persuade it.
-PB
+VT	<b>1d4</b> purpose	cost
+VR	1 To punish	Victory against Hillfolk, sorcerers, the Things Below
+VR	2 To preserve	Acquiring artifacts of the past, safely hiding them away
+VR	3 To purge	Destroying artifacts of the Green Lords or Things Below
+VR	4 To build	Progress towards building an enormous, enigmatic edifice
+C2	Its instinct becomes "to pursue its purpose." You must Persuade it to do anything unrelated to that purpose, and it will flat-out refuse to act against its purpose.
+C2	It wanders off in pursuit of its purpose, implacably pursuing it. It is no longer a follower, though you might still be able to Persuade it.
 P	back

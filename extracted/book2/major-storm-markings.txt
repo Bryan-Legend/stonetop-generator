@@ -42,5 +42,5 @@ C	Name an NPC who is present and whose regard you value. They are terrified of t
 C	From now on, when you gain Fury, gain +1 Fury. But you also have disadvantage on rolls to control your temper.
 C	A storm forms (or worsens) in your immediate area. It arrives unnaturally fast, but not miraculously so.
 C	A terrible storm begins to form in your immediate area and pummels the entire region. Blizzards, tornados, floods—it's bad.
-C	A terrible storm forms (as above) and the weather remains freakish for a few months. Your steading takes -2 to its next roll to generate Surplus, and its next Fortunes roll for Seasons Change is automatically a 6-. Other communities in the region likewise suffer.
+C2	A terrible storm forms (as above) and the weather remains freakish for a few months. Your steading takes -2 to its next roll to generate Surplus, and its next Fortunes roll for Seasons Change is automatically a 6-. Other communities in the region likewise suffer.
 P	back

@@ -54,9 +54,9 @@ HR
 H2	Consequences
 HR
 C	Your skin becomes clammy and squamous.
-C	You can breathe water through your skin, but must keep it moist or suffer increasing debilities.
+C2	You can breathe water through your skin, but must keep it moist or suffer increasing debilities.
 C	You gain nourishment only from meat. Plants, grains and the like no longer count as supplies or provisions when you need to eat.
-C	Only raw flesh nourishes you, but you are immune to food-borne illness.
+C2	Only raw flesh nourishes you, but you are immune to food-borne illness.
 C	1d6 sinkholes appear within a few miles of you. At the bottom of each, a megalith protrudes from standing water, attended by servants of Daagon.
 C	The ring's Cost becomes "Living, helpless, intelligent sacrifices."
 P	back

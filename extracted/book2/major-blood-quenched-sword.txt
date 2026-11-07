@@ -37,7 +37,7 @@ C	You lose yourself in a blood-rage, no longer distinguishing between friend, fo
 P	When you <b><i>attack the nearest living creature</i></b>, you have advantage on damage rolls.
 P	When you <b><i>attempt to stay your hand</i></b>, roll +WIS: <b>on a 10+</b>, you do so, and can choose to calm yourself and end the rage with a few moments focus; <b>on a 7-9</b>, you stay your hand, but must choose a different target for your rage; <b>on a 6-</b>, attack without mercy or doubt.
 C	Pick someone who survives this battle (friend or foe). You are convinced that they covet the Blood-quenched Sword. Until you put them in their place, you are either <i>dazed</i> or <i>miserable</i> (your choice).
-C	Your instinct becomes "Paranoia: to accuse someone of plotting against or wanting to steal the Blood-quenched Sword, and do something about it."
+C2	Your instinct becomes "Paranoia: to accuse someone of plotting against or wanting to steal the Blood-quenched Sword, and do something about it."
 C	You can no longer sleep or rest without the Blood-quenched Sword at hand.
 C	You no longer gain sustenance from food. When you <b><i>slay a living, bleeding creature with the</i></b> <b><i>Sword</i></b>, hold 1 Sustenance (max 3). When you would consume a ration, lose 1 Sustenance instead. ◇◇◇
 C	You can always ask the GM "Does this NPC disrespect me or intend to do me harm?" and the GM will answer honestly "Yes" or "No." If they answer "Yes," gain advantage to end their life and take disadvantage to do anything else.

@@ -15,4 +15,3 @@ B	You get a sense of your quarry's recent activities, or the activity surroundin
 B	You discover something unexpected about the forest, or that which can be found within it (ask the GM what you learn)
 B	You spend only an hour or so adrift (else, you spend all day)
 P	Whatever you learn, it is limited by and filtered through the senses the forest.
-P	28

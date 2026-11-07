@@ -1156,6 +1156,23 @@ def extract_page_rich(
                     normalize_text(head_spans[-1]["text"]).strip(),
                     head_spans[-1]["x"],
                 )
+            # A roll table in two columns: its dice, then a Fell head over
+            # each column ("1d4" "purpose" … "cost", the Mindgem's purpose
+            # cost). The second head stands a tab stop off the first.
+            elif (
+                len(head_spans) >= 3
+                and re.fullmatch(r"\d*d\d+", head_spans[0]["text"].strip())
+                and all("FellType" in g["font"] for g in head_spans[1:])
+                and head_spans[-1]["size"] >= 9.5
+                and len(head_spans[-1]["text"].strip()) <= 14
+                and head_spans[-1]["x"] - head_spans[-2]["x1"] >= 8
+            ):
+                label_head = (
+                    _cell([(g["x"], g["x1"], g["text"], g["font"]) for g in lead]),
+                    normalize_text(head_spans[-1]["text"]).strip(),
+                    head_spans[-1]["x"],
+                    "dice",
+                )
             recs.append(
                 {
                     "y": y_top,
@@ -1394,9 +1411,11 @@ def extract_page_rich(
                 entry_active = False
                 list_kind = None
                 continue
-            if rec.get("label_head") and not DICE_HEAD_RE.match(dtext):
+            if rec.get("label_head") and (
+                not DICE_HEAD_RE.match(dtext) or len(rec["label_head"]) > 3
+            ):
                 close_table()
-                left, label, label_x = rec["label_head"]
+                left, label, label_x = rec["label_head"][:3]
                 above = out[-1].lstrip(PARA_BREAK + PARA_ROW_BREAK + PARA_WRAP) if out else ""
                 if (
                     above
@@ -1654,8 +1673,30 @@ def extract_page_rich(
                 # move that hangs under the one above it (Borrow Power and
                 # Call the Spirits under Spirit Tongue).
                 sub = False
-                if playbook and rec.get("check_x") is not None:
+                # So does a card's: the Mindgem's "It becomes aggressive…"
+                # hangs under the consequence above it.
+                if (playbook or single_column or y_clip) and rec.get("check_x") is not None:
                     sub = (rec["check_x"] - col_x0) >= 5.0
+                if sub and not playbook:
+                    # On a card, only under another box (a table that box
+                    # asks for may stand between); a list set in under a
+                    # rule or a paragraph hangs from nothing.
+                    above = next(
+                        (o for o in reversed(out)
+                         if not o.startswith((M_VT, M_VR, M_VF, M_TH))),
+                        "",
+                    )
+                    last = state.get("card_check")  # (x, sub) of that box
+                    sub = (
+                        above.startswith((M_C, M_C2))
+                        and last is not None
+                        and (
+                            rec["check_x"] - last[0] >= 5.0
+                            or (last[1] and abs(rec["check_x"] - last[0]) < 2.0)
+                        )
+                    )
+                if not playbook and rec.get("check_x") is not None:
+                    state["card_check"] = (rec["check_x"], sub)
                 # A move that can be taken more than once prints a box for
                 # each time (Improved Stat: two; Big Magic: three).
                 if playbook and rec.get("check_n", 1) > 1:
@@ -1732,6 +1773,9 @@ def extract_page_rich(
                 and (
                     out[-1][:3] in (M_B, M_Q, M_E, M_C)
                     or out[-1].startswith((M_B2, M_BC, "• "))
+                    # a card's indented box, as its other boxes (a sheet's
+                    # keeps its "(Requires …)" and move text as lines)
+                    or (not playbook and out[-1].startswith(M_C2))
                 )
             ):
                 body_p, tail_p = _split_trailing_fmt(out[-1])
@@ -3109,18 +3153,33 @@ def extract_minor_arcana_rich(
     # the top card's own small print can sit beside its labels (an HP box's
     # "Starts at 13", p. 514), and the next card starts a good 12pt lower.
     words = page.get_text("words")
-    card_no, card_nos = "", set()
+
+    def number_beside(label) -> set[str]:
+        """The card's number, printed between its front/back labels."""
+        no = next((w[4] for w in words if w[4].isdigit()
+                   and abs(w[1] - label[1]) < 4
+                   and 150 < w[0] < 240), "")
+        if not no:
+            return set()
+        # set twice, outline and fill, it may read "1111" (or "11" for 1)
+        n = len(no) // 2
+        return {no, no[:n]} if no == no[:n] * 2 else {no}
+
+    card_nos: set[str] = set()
     for winfo in words:
         if winfo[4].lower() in {"front", "back"} and 270 < winfo[1] < 340:
             mid_y = winfo[3] + 6
-            # the top card's number, printed between its labels
-            card_no = next((w[4] for w in words if w[4].isdigit()
-                            and abs(w[1] - winfo[1]) < 4
-                            and 150 < w[0] < 240), "")
-            # set twice, outline and fill, it may read "1111" (or "11" for 1)
-            n = len(card_no) // 2
-            card_nos = {card_no, card_no[:n]} if card_no == card_no[:n] * 2 else {card_no}
+            if half == "top":
+                card_nos = number_beside(winfo)
             break
+    if half == "bottom":
+        # the bottom card's labels (and number) sit at the foot of the page
+        label = max(
+            (w for w in words if w[4].lower() in {"front", "back"} and w[1] > mid_y),
+            key=lambda w: w[1], default=None,
+        )
+        if label is not None:
+            card_nos = number_beside(label)
     y0, y1 = (45, mid_y) if half == "top" else (mid_y, h - 25)
     lines = extract_page_rich(page, y_clip=(y0, y1))
     lines = merge_wrapped_lines(lines)
@@ -3130,7 +3189,7 @@ def extract_minor_arcana_rich(
         l = re.sub(r"\s*\bfront\b\s*\d*\s*\bback\b\s*$", "", l, flags=re.I)
         l = re.sub(r"\s*\b(front|back)\b\s*\d*\s*$", "", l, flags=re.I)
         l = re.sub(r"^(\x02\w+ )?(front|back)\s+(?=\S)", r"\1", l)
-        if half == "top" and _defmt(strip_markers(l)).strip() in card_nos:
+        if _defmt(strip_markers(l)).strip() in card_nos:
             continue
         if _defmt(strip_markers(l)).strip():
             cleaned.append(l)

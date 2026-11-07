@@ -12,4 +12,3 @@ B	You must never again ____.
 B	Henceforth, you must always seek to ____ when you have the chance.
 P	Should they <b><i>fail to follow the geas</i></b>, their life is forfeit and the tomb-bog spirit will track them down and smother them.
 P	Should they <b><i>prove themselves innocent to the</i></b> <b><i>tomb-bog spirit</i></b>, your life is forfeit instead.
-P	8

@@ -20,4 +20,3 @@ P	When you <b><i>speak the Silent Word that completes</i></b> <b><i>the spell</i
 B	Mark another debility & lose 1d10 HP
 B	The elements run amok, triggering a fire/earthquake/avalanche/storm/etc.
 B	The effect lasts only while you focus on it, and then the object is damaged in a manner of the GM's choosing
-P	64

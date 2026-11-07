@@ -15,4 +15,3 @@ B	Twist their senses, making them perceive something untrue
 B	Plague them with nightmares until they wash in rain or snow
 B	Cause an emotion in their heart to swell, possibly overwhelming them
 P	If the person you currently hold Sway over finds and breaks the Witch Bottle, you will yourself suffer all the torments you have ever inflicted with it.
-P	44

@@ -41,10 +41,10 @@ HR
 H2	Consequences
 HR
 C	Over a few days, you lose all body hair. Your skin pales and develops scaly patches.
-C	Over a few days, you lose all your remaining hair and grow a fine layer of scales over all your skin except that on your face. Gain +1 armor.
+C2	Over a few days, you lose all your remaining hair and grow a fine layer of scales over all your skin except that on your face. Gain +1 armor.
 C	Your body temperature drops and your skin becomes cool to the touch; you have disadvantage on all rolls while exposed to the cold. Your metabolism also slows, and you need to consume supplies or provisions only once every 2 days.
-C	Your heart rate and breathing slows, and you can hold supremely still for hours on end. You can easily be mistaken for dead. You only need to eat once every 3 days, but you gain no benefit from healing arts or magic.
+C2	Your heart rate and breathing slows, and you can hold supremely still for hours on end. You can easily be mistaken for dead. You only need to eat once every 3 days, but you gain no benefit from healing arts or magic.
 C	Over a few days, your ears grow smaller and flatten against your head. Your tongue grows longer, and you can distend your jaw and throat to swallow things no human should be able to.
-C	Your eyes grow milky, you no longer blink, and you have trouble seeing things that aren't moving. Your tongue becomes forked, and you gain a preternatural sense of smell and touch.
-C	Anything that you perceive, Hec'tumel perceives it too.
+C2	Your eyes grow milky, you no longer blink, and you have trouble seeing things that aren't moving. Your tongue becomes forked, and you gain a preternatural sense of smell and touch.
+C2	Anything that you perceive, Hec'tumel perceives it too.
 P	back

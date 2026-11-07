@@ -18,4 +18,3 @@ P	____ <b>Intensity: 1</b> = dangerous to be out in;
 P	<b>2-3</b> = damages weak structures; <b>4</b> = lays waste to weak structures and damages sturdy ones.
 P	____ <b>Reach: 1</b> = a mile or so; <b>2-3</b> = a dozen miles or so; <b>4</b> = dozens or scores of miles.
 P	____ <b>Duration</b> (once it gets going)<b>: 1</b> = less than an hour; <b>2-3</b> = a few hours; <b>4</b> = a day or so.
-P	56

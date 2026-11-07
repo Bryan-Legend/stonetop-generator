@@ -295,22 +295,13 @@ P	A spirit bound to a matrix must follow any orders given in the Tempest Lord's 
 P	<b>Power and size:</b> Each matrix absorbs a particular type of power, and current HP of its vortex reflects its current power.
 P	As a vortex gains or loses HP, its size, armor, and damage change as well. At 0 HP, it dissipates and its matrix falls to the ground, inert until it absorbs more HP.
 P	Pick or roll to determine a vortex's starting size, HP, Armor, and Damage.
-P	1d12 hp stats
-HR
-P	1-4 1 to 5 <i>tiny</i>; Armor 1;
-P	Damage d8-2 (<i>hand</i>)
-P	5-7 6 to 11 <i>small</i>; Armor 2;
-P	Damage d8 (<i>hand</i>)
-P	8-9 12 to 18 Armor 2;
-P	Damage d10 (<i>hand</i>, <i>close</i>)
-P	10-11 19 to 23 <i>large</i>; Armor 3;
-P	Damage d10+3 (<i>hand</i>,
-P	<i>close</i>, <i>reach</i>, <i>forceful</i>)
-P	12 24 to 28 <i>huge</i>; Armor 3;
-P	Damage d10+5 (<i>hand</i>,
-P	<i>close</i>, <i>reach</i>, <i>area</i>, <i>forceful</i>)
+VT	<b>1d12</b> hp	stats
+VR	1-4 1 to 5	<i>tiny</i>; Armor 1; Damage d8-2 (<i>hand</i>)
+VR	5-7 6 to 11	<i>small</i>; Armor 2; Damage d8 (<i>hand</i>)
+VR	8-9 12 to 18	Armor 2; Damage d10 (<i>hand</i>, <i>close</i>)
+VR	10-11 19 to 23	<i>large</i>; Armor 3; Damage d10+3 (<i>hand</i>, <i>close</i>, <i>reach</i>, <i>forceful</i>)
+VR	12 24 to 28	<i>huge</i>; Armor 3; Damage d10+5 (<i>hand</i>, <i>close</i>, <i>reach</i>, <i>area</i>, <i>forceful</i>)
 PAGE	409
-PB
 P	<b>Attacking the matrix:</b> A matrix itself has only 3 HP. If reduced to 0 HP, the spirit within escapes, dealing the vortex's current damage (+<i>area</i>, one range tag greater than normal).
 P	When <b><i>a PC tries to strike the matrix inside</i></b> <b><i>an active vortex</i></b>, the vortex's Armor applies. Also, tell them the requirements and/ or consequences. such as:
 B	You'll have disadvantage to Clash/ Let Fly/deal damage

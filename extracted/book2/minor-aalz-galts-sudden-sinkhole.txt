@@ -12,4 +12,3 @@ H3	Aalz Galt's Sudden Sinkhole
 P	When you <b><i>sing a rumbling note and focus your</i></b> <b><i>will upon a point of earth or stone</i></b>, mark a debility and roll +INT:
 P	<b>On a 10+</b>, the earth or stone that you focus on remains intact, but the earth or stone beneath it crumbles, dissolves, and flows away, creating an empty pocket about as wide as your arms can encircle and about as deep as you are tall. The surface seems stable, but is prone to crack or break under stress.
 P	<b>On a 7-9</b>, the song works as above, but it siphons even more energy from your body. Mark another debility and take 2d4 damage (ignores armor).
-P	4

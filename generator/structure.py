@@ -677,6 +677,17 @@ def linkify_pages(
         if not art:
             return html.escape(label or f"p. {page}")
         frag = resolve_section_fragment(page, label, art["slug"], sidx)
+        # A label that is the cited chapter's own title names the chapter,
+        # not a block in it ("The Rime Lords (page 316)" is no "Rime Lord"
+        # stat block) — as the bold-name path already reads it. A block
+        # named exactly as the label (the Pale Hunter's, Crinwin's) keeps it.
+        if frag and label:
+            plain = _defmt(label).strip()
+            by_title = title_index_lookup(plain, current_book)
+            if by_title and by_title["slug"] == art["slug"]:
+                bare = lambda s: re.sub(r"^the-", "", s)
+                if bare(slugify_id(plain)) != bare(frag):
+                    frag = None
         # When the page path finds no in-article section for a distinctive
         # label, but that label uniquely names a section elsewhere, trust the
         # name over the page number. Fixes arcana discovery refs like
@@ -1112,6 +1123,7 @@ def _nest_subtables(entries: list) -> list:
             and re.search(r"\broll\s+\d*d\d+", plain, re.I)
             and i + 1 < len(entries)
             and _row_low(entries[i + 1][0]) == 1
+            and isinstance(entries[i + 1][1], str)
             and _defmt(entries[i + 1][1]).lstrip().startswith(("…", "..."))
         ):
             sub = []
@@ -1146,7 +1158,14 @@ def render_roll_table(
     rows = []
     for num, body in entries:
         sub = ""
-        if isinstance(body, tuple):  # a row with a table of its own
+        if isinstance(body, tuple) and all(sn == "•" for sn, _ in body[1]):
+            # a row with its picks bulleted under it
+            body, sub_entries = body
+            sub = '<ul class="bullets">' + "".join(
+                f"<li>{linkify_pages(sb, lookup, current_slug, section_index, **lkw)}</li>"
+                for _, sb in sub_entries
+            ) + "</ul>"
+        elif isinstance(body, tuple):  # a row with a table of its own
             body, sub_entries = body
             sub = (
                 '<table class="roll-subtable"><tbody>'
@@ -1170,6 +1189,59 @@ def render_roll_table(
         f"</div>"
         f'<table><tbody>{"".join(rows)}</tbody></table>'
         f"</div>"
+    )
+
+
+_DICE_LEAD_RE = re.compile(r"^\s*(\d*d\d+)\b\s*")
+
+
+def is_dice_columns_head(vt_title: str, vt_label: str | None) -> bool:
+    """A ``VT`` that heads a roll table in two columns: its title opens on
+    the dice ("1d4 purpose" … "cost", the Mindgem; "1d12 hp" … "stats",
+    Tempest Lords' vortex)."""
+    return bool(vt_label) and bool(_DICE_LEAD_RE.match(_defmt(vt_title)))
+
+
+def render_roll_table_cols(
+    title: str,
+    label: str,
+    rows: list[tuple[str, str]],
+    lookup: dict,
+    current_slug: str | None,
+    section_index: dict | None = None,
+    anchor_id: str | None = None,
+    link_kw: dict | None = None,
+) -> str:
+    """A roll table whose result is two columns, each with its own head
+    over it. ``title`` is the dice and the first head, ``label`` the
+    second; each row's first cell opens on its number. The dice button
+    sits in the head row, over the numbers."""
+    lkw = link_kw or {}
+
+    def lk(t: str) -> str:
+        return linkify_pages(t, lookup, current_slug, section_index, **lkw)
+
+    def head(t: str) -> str:
+        shown = _DICE_LEAD_RE.sub("", _defmt(T(t))).strip()
+        return "HP" if shown.lower() == "hp" else shown[:1].upper() + shown[1:]
+
+    dice = _DICE_LEAD_RE.match(_defmt(title)).group(1)
+    body = []
+    for first, second in rows:
+        m = re.match(r"^\s*(\d+(?:\s*[-–—]\s*\d+)?)\s+(.*)$", first, re.S)
+        num, cell = (m.group(1), m.group(2)) if m else ("", first)
+        body.append(
+            f'<tr><th scope="row">{html.escape(num)}</th>'
+            f"<td>{lk(cell)}</td><td>{lk(second)}</td></tr>"
+        )
+    id_attr = f' id="{html.escape(anchor_id)}"' if anchor_id else ""
+    return (
+        f'<div class="roll-table roll-table-cols"{id_attr}>'
+        f"<table><thead><tr class=\"roll-cols-head\">"
+        f'<th scope="col">{dice_button(dice)}</th>'
+        f'<th scope="col"><span class="roll-label">{html.escape(head(title))}</span></th>'
+        f'<th scope="col">{html.escape(head(label))}</th>'
+        f"</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
     )
 
 
@@ -2929,6 +3001,19 @@ def structure_html(
                         "</tbody></table>", row_html + "</tbody></table>", 1
                     )
                     continue
+                if vt_title and is_dice_columns_head(vt_title, vt_label):
+                    out.append(
+                        render_roll_table_cols(
+                            vt_title, vt_label, rows_v, lookup, current_slug,
+                            section_index,
+                            anchor_id=anchors.add(
+                                _DICE_LEAD_RE.sub("", _defmt(vt_title)).strip()
+                                + " " + _defmt(vt_label)
+                            ),
+                            link_kw=link_kw,
+                        )
+                    )
+                    continue
                 pretty = re.sub(r"\s+", " ", (vt_title or "Value")).strip()
                 if not vt_label and not pretty.lower().endswith("value"):
                     pretty = pretty + " value"
@@ -3542,6 +3627,21 @@ def structure_html(
                                 break  # a rule, then a new paragraph: the row is done
                             i += 1
                             continue
+                        # A row that ends on a colon may list its picks as
+                        # bullets under it (The Makers' sites: "1 The Forge
+                        # Lords:" / • Huffel Peaks / • Gordin's Delve …); they
+                        # are the row's, not the end of the table.
+                        if (
+                            lines[i].startswith(M_B)
+                            and isinstance(body, str)
+                            and _defmt(body).rstrip().endswith(":")
+                        ):
+                            items = []
+                            while i < n and lines[i].startswith(M_B):
+                                items.append(("•", lines[i][len(M_B):].strip()))
+                                i += 1
+                            body = (body, items)
+                            break
                         if lines[i].startswith("\x02"):
                             break
                         nxt = _plain(lines[i])

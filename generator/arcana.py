@@ -15,11 +15,16 @@ from .structure import (
     dice_button,
     linkify_pages,
     render_check_list,
+    render_roll_table_cols,
+    is_dice_columns_head,
     render_mark_track,
     render_stat_block,
 )
 from .text import (
     M_PB,
+    M_C2,
+    M_VR,
+    M_VT,
     strip_tags,
     M_FACE,
     BOLD_PREFIX_RE,
@@ -507,13 +512,23 @@ def _arcana_strip_tag_seps(text: str) -> str:
     return t
 
 
+# The slot qualified, before the tags it opens: "◇ if stowed; magical"
+# (Fetch's Mask). Read by its shape — diamonds, a few roman words, a
+# semicolon, then an italic tag — so a translation's words match too
+# ("◇, wenn verstaut; magisch", "◇ si rangé ; magique").
+_SLOT_QUALIFIER_RE = re.compile(
+    r"^\s*(?:◇\s*)+,?\s*([^;；\x04-\x07◇]{1,30}?)(\s*[;；]\s*)(?=\x06)"
+)
+
+
 def _arcana_tags_prose(text: str):
     """Peel a leading tag run (italic words, +N damage, etc.) off a line.
 
     Returns (tags_string, remaining_prose). The prose keeps its formatting.
     Handles bold commas and inventory diamonds between italic tag words.
     """
-    t = _arcana_strip_tag_seps(text)
+    q = _SLOT_QUALIFIER_RE.match(strip_tags(text or ""))
+    t = strip_tags(text or "")[q.end():] if q else _arcana_strip_tag_seps(text)
     tags: list[str] = []
     while t:
         t = _arcana_strip_tag_seps(t)
@@ -546,7 +561,23 @@ def _arcana_tags_prose(text: str):
             continue
         break
     tag_str = ", ".join(x for x in tags if x)
+    if q and tag_str:
+        tag_str = q.group(1).strip() + q.group(2).rstrip() + " " + tag_str
     return tag_str, t.strip()
+
+
+def _arcana_slots(text: str) -> str:
+    """The inventory diamonds a tag line opens on ("◇◇, indestructible,
+    magical…": the chime fills two slots). The tag peel drops them as
+    separators; the card shows them ahead of the tags, as the book does."""
+    m = re.match(r"^[\s,]*((?:◇\s*)+)", _defmt(strip_tags(text or "")))
+    return m.group(1).replace(" ", "") if m else ""
+
+
+def _arcana_tags_html(tags: str, slots: str, link) -> str:
+    """A card's tag line, its inventory diamonds first."""
+    lead = f'<span class="arcana-slots">{slots}</span> ' if slots else ""
+    return f'<p class="arcana-tags">{lead}{link(tags) if tags else ""}</p>'
 
 
 def _arcana_strip_running(line: str) -> str:
@@ -646,6 +677,7 @@ def structure_minor_arcana_html(
     fparts: list[str] = []
     disc_name = ""
     disc_tags = ""
+    disc_slots = ""
     i = 0
     n = len(front)
     # Discovery name: the first run of consecutive H3 title lines. A long title
@@ -690,6 +722,10 @@ def structure_minor_arcana_html(
             tg, prose = _arcana_tags_prose(_arcana_content(raw))
             if tg:
                 disc_tags = tg
+                disc_slots = _arcana_slots(_arcana_content(raw))
+            elif prose:
+                # no tags: the line is the card's own words, diamonds and all
+                prose = _arcana_content(raw)
             if prose:
                 desc_paras.append(prose)
             continue
@@ -708,7 +744,7 @@ def structure_minor_arcana_html(
     else:
         fparts.append(_arcana_title_line(power, UI("arcana/front", "Front"), tag="h3"))
     if disc_tags:
-        fparts.append(f'<p class="arcana-tags">{link(disc_tags)}</p>')
+        fparts.append(_arcana_tags_html(disc_tags, disc_slots, link))
     for p in desc_paras:
         fparts.append(f"<p>{link(p)}</p>")
     if unlock_items:
@@ -742,6 +778,7 @@ def structure_minor_arcana_html(
     # ---- Back face: power moves ----
     bparts: list[str] = []
     power_tags = ""
+    power_slots = ""
     n = len(back)
     # Skip power-name heading (may be one H3 or wrapped H3s); shown in header
     i = _skip_arcana_power_heading(back, 0, power_norm)
@@ -799,6 +836,7 @@ def structure_minor_arcana_html(
             tg, prose = _arcana_tags_prose(_arcana_content(raw))
             if tg and not prose:
                 power_tags = tg
+                power_slots = _arcana_slots(_arcana_content(raw))
                 first_prose = False
                 i += 1
                 continue
@@ -815,7 +853,7 @@ def structure_minor_arcana_html(
         parts.append('<div class="arcana-face arcana-back-face">')
         parts.append(_arcana_title_line(power, UI("arcana/reverse", "Reverse"), tag="h2"))
         if power_tags:
-            parts.append(f'<p class="arcana-tags">{link(power_tags)}</p>')
+            parts.append(_arcana_tags_html(power_tags, power_slots, link))
         parts.extend(bparts)
         parts.append("</div>")
     parts.append("</div>")
@@ -1018,6 +1056,44 @@ def _arcana_desc_tags(text: str):
     return _arcana_tags_prose(text)
 
 
+def _consequence_list(items, levels, tables, link, list_id) -> str:
+    """An arcanum's consequences: a box hanging under the one above it is
+    a list inside that item, and a table a consequence asks for sits under
+    its label (a click on the table must not tick the box). Ids run in
+    order across the levels (``cons-5`` is the sixth box however deep), so
+    ticks made when the list was flat still land."""
+    def li(idx: int) -> str:
+        cid = html.escape(f"{list_id}-{idx}")
+        return (
+            f'<li class="check-item"><label for="{cid}">'
+            f'<input type="checkbox" class="wiki-check" id="{cid}" '
+            f'data-check-id="{cid}"> <span>{link(items[idx])}</span></label>'
+            f"{tables.get(idx, '')}"
+        )
+
+    parts = [f'<ul class="check-list" data-check-list="{html.escape(list_id)}">']
+    sub_open = False
+    for idx, lvl in enumerate(levels):
+        if lvl == 2 and idx > 0:
+            if not sub_open:
+                parts.append('<ul class="check-list check-sublist">')
+                sub_open = True
+            parts.append(li(idx) + "</li>")
+            continue
+        if sub_open:
+            parts.append("</ul>")
+            sub_open = False
+        if idx > 0:
+            parts.append("</li>")
+        parts.append(li(idx))
+    if sub_open:
+        parts.append("</ul>")
+    if levels:
+        parts.append("</li>")
+    parts.append("</ul>")
+    return "".join(parts)
+
+
 def structure_major_arcana_html(
     lines: list[str],
     article_title: str,
@@ -1057,8 +1133,11 @@ def structure_major_arcana_html(
     def render_face(fl: list[str], face: str, front: bool):
         out: list[str] = []
         tags = ""
+        slots = ""
         desc_done = False
         cons_items: list[str] = []
+        cons_tables: dict[int, str] = {}
+        cons_levels: list[int] = []
         section = "moves"
         i = 0
         n = len(fl)
@@ -1141,8 +1220,36 @@ def structure_major_arcana_html(
                 i += 1
                 continue
             if section == "consequences":
+                if raw.startswith(M_VT) and cons_items:
+                    # A table the consequence above asks for ("roll 1d4 on
+                    # the table below", the Mindgem's purpose cost).
+                    vt_title, _, vt_label = raw[len(M_VT):].strip().partition("")
+                    rows = []
+                    i += 1
+                    while i < n and fl[i].startswith(M_VR):
+                        a, _, b = fl[i][len(M_VR):].partition("")
+                        rows.append((a.strip(), b.strip()))
+                        i += 1
+                    if is_dice_columns_head(vt_title, vt_label.strip()):
+                        cons_tables[len(cons_items) - 1] = render_roll_table_cols(
+                            vt_title, vt_label.strip(), rows, lookup,
+                            current_slug, section_index,
+                            anchor_id=anchors.add(
+                                re.sub(r"^\s*\d*d\d+\s*", "", dl(vt_title))
+                                + " " + dl(vt_label)
+                            ),
+                            link_kw=link_kw,
+                        )
+                    continue
+                if raw.startswith(M_C2):
+                    # A consequence hanging under the one above it.
+                    cons_items.append(_arcana_content(raw))
+                    cons_levels.append(2)
+                    i += 1
+                    continue
                 if raw.startswith(M_C):
                     cons_items.append(_arcana_content(raw))
+                    cons_levels.append(1)
                 elif cons_items and not raw.startswith("\x02"):
                     # The rest of a consequence, set as its own paragraph.
                     cons_items[-1] += " " + _arcana_content(raw)
@@ -1183,6 +1290,8 @@ def structure_major_arcana_html(
                 continue
             if front and not desc_done:
                 t, desc = _arcana_desc_tags(_arcana_content(raw))
+                if t and not tags:
+                    slots = _arcana_slots(_arcana_content(raw))
                 if t:
                     tags = f"{tags}, {t}" if tags else t
                 if desc:
@@ -1203,16 +1312,18 @@ def structure_major_arcana_html(
             lid = "cons"
             out.append('<div class="arcana-unlock arcana-consequences">')
             out.append(f'<p class="si-requires">{html.escape(T("Consequences"))}</p>')
-            out.append(render_check_list(cons_items, link, lid))
+            out.append(
+                _consequence_list(cons_items, cons_levels, cons_tables, link, lid)
+            )
             out.append(
                 '<p class="arcana-note"><em>'
                 + html.escape(UI("arcana/consequences_note", "Mark consequences as they apply."))
                 + "</em></p>"
             )
             out.append("</div>")
-        return "\n".join(out), tags
+        return "\n".join(out), (tags, slots)
 
-    front_html, tags = render_face(faces.get("front", []), "front", True)
+    front_html, (tags, slots) = render_face(faces.get("front", []), "front", True)
     back_html, _ = render_face(faces.get("back", []), "back", False)
 
     hid = anchors.add(power)
@@ -1222,7 +1333,7 @@ def structure_major_arcana_html(
         _arcana_title_line(power, UI("arcana/front", "Front"), tag="h2"),
     ]
     if tags:
-        parts.append(f'<p class="arcana-tags">{link(tags)}</p>')
+        parts.append(_arcana_tags_html(tags, slots, link))
     parts.append(front_html)
     parts.append("</div>")
     if back_html.strip():

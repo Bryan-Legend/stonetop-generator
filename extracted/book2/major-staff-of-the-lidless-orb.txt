@@ -36,10 +36,10 @@ HR
 H2	Consequences
 HR
 C	One of your eyes becomes strange, bulging, painful, and discolored. Your vision is more-or-less unaffected.
-C	Your other eye withers, atrophies, and goes pale and empty. Painful warts sprout all around the socket. Permanently mark the <i>miserable</i> debility.
+C2	Your other eye withers, atrophies, and goes pale and empty. Painful warts sprout all around the socket. Permanently mark the <i>miserable</i> debility.
 C	You begin to sprout warty, scale-like protrusions all over. These continue to grow until you gain +1 armor, but mortals who see these growths tend to be repulsed.
 C	You become incapable of seeing beauty. Your senses are unaltered, but nothing strikes you as beautiful. Grotesque and horrific sights still move you and hold a strange fascination.
-C	Replace your instinct with "Disgust: To marvel at things horrific and grotesque."
-C	You can clearly see the ugliness in other people. When you first meet an NPC, you can ask the GM "What secret shame or guilt do they bear?" and get an honest answer.
+C2	Replace your instinct with "Disgust: To marvel at things horrific and grotesque."
+C2	You can clearly see the ugliness in other people. When you first meet an NPC, you can ask the GM "What secret shame or guilt do they bear?" and get an honest answer.
 C	You become aware of El'rash-Orra, the Many Eyes, gazing up at you from Below. It whispers to you a task; refuse it—now or later—and the Lidless Orb goes dark, useless to you.
 P	back
