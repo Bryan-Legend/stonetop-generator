@@ -2487,6 +2487,12 @@
         ) +
         "</p></div>";
     }
+    /* The previews' HTML was built for the wiki root: from a language
+       directory (or a sheet on another site) its relative images would miss. */
+    bubble.querySelectorAll("img[src]").forEach(function (img) {
+      var s = img.getAttribute("src");
+      if (!/^([a-z]+:|\/|\.\.\/)/i.test(s)) img.src = SCRIPT_BASE + s;
+    });
     // Bind checkboxes in dynamically injected preview HTML (arcana unlocks, etc.)
     var previewSlug =
       link.getAttribute("data-slug") ||

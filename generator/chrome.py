@@ -36,6 +36,7 @@ from .text import (
 GITHUB_PROJECT_URL = "https://github.com/Bryan-Legend/stonetop-generator"
 LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 ISSUES_URL = GITHUB_PROJECT_URL.rstrip("/") + "/issues"
+TOKENS_URL = "https://2minutetabletop.com/"
 
 
 def sidebar_foot_html(ui: dict | None = None, lang_switch: str = "") -> str:
@@ -55,11 +56,16 @@ def sidebar_foot_html(ui: dict | None = None, lang_switch: str = "") -> str:
             f"CC BY-SA 4.0</a>"
         ),
     )
+    # The stat blocks' tokens (generator/tokens.py), licensed for the wiki.
+    token_credit = (ui.get("token_credit") or UI_FALLBACK["token_credit"]).format(
+        link=f'<a href="{html.escape(TOKENS_URL)}">2 Minute Tabletop</a>'
+    )
     dice = html.escape(ui.get("dice_sound") or UI_FALLBACK["dice_sound"])
     return (
         f'<div class="sidebar-foot">'
         f'{lang_switch}'
         f'<span class="sidebar-credit">{credit_html}</span>'
+        f'<span class="sidebar-credit">{token_credit}</span>'
         f'<a class="sidebar-github" href="{html.escape(GITHUB_PROJECT_URL)}">'
         f"GitHub</a>"
         f'<button type="button" class="sound-toggle" id="sound-toggle" '
@@ -1677,6 +1683,8 @@ HOME_FALLBACK = {
     "license_html": (
         "The books' <strong>text</strong> is by Jeremy Strandberg under "
         '<a href="{license}" rel="license">CC BY-SA 4.0</a>. '
+        'Creature tokens by <a href="https://2minutetabletop.com/">'
+        "2 Minute Tabletop</a>. "
         'Dice sounds by <a href="https://opengameart.org/content/'
         'wooden-dice-on-wodden-table-roll">Wuzzy</a>, '
         '<a href="https://creativecommons.org/publicdomain/zero/1.0/" '
@@ -2229,7 +2237,7 @@ def bestiary_html(
 
 
 _LOCAL_STAT_RE = re.compile(
-    r'<div class="stat-block[^"]*" id="([^"]+)"><h3 class="stat-name">(.*?)</h3>',
+    r'<div class="stat-block[^"]*" id="([^"]+)">(?:<span class="stat-tokens[^"]*"[^>]*>.*?</span>)?<h3 class="stat-name">(.*?)</h3>',
     re.S,
 )
 

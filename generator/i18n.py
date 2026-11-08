@@ -39,6 +39,7 @@ UI_FALLBACK = {
     "search_label": "Search",
     "nav_label": "Topics",
     "credit": "Text from {work} by Jeremy Strandberg, {license}",
+    "token_credit": "Tokens by {link}",
     "dice_sound": "Dice sound",
     "language": "Language",
     "translated_note": "",

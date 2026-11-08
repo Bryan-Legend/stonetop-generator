@@ -10,6 +10,11 @@ site/images/maps/
 site/.build-manifest
 site/.build-digests
 
+# 2 Minute Tabletop token art (Fairbanks, Davy). Used with permission, but
+# ~1.5 GB of PNGs: GitHub Pages caps a site at 1 GB, so only the tokens the
+# wiki uses get copied into site/ (see tokens.json).
+2 Minute Tabletop/
+
 # Legacy build folder name
 Book_II_Wiki/
 

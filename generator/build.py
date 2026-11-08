@@ -66,6 +66,7 @@ from .chrome import (
 )
 from . import blocks as blockdata
 from . import cards
+from . import tokens
 from . import lastmod
 from .lastmod import snapshot as lastmod_snapshot, write_output
 from .coverage import report as report_unshown
@@ -539,6 +540,9 @@ def main(argv: list[str] | None = None) -> None:
         else (REPO_ROOT / "site").resolve()
     )
     cards.configure(out, args.cards)
+    tokens.configure(out)
+    if shard is None:
+        tokens.write_images(out)  # before rendering: the pages read their sizes
     corpus = (
         args.corpus.expanduser().resolve() if args.corpus else corpus_dir()
     )

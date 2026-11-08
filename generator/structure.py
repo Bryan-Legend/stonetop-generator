@@ -12,6 +12,7 @@ import re
 
 from .blocks import cut_lines as block_cut_lines
 from .blocks import line_marks as block_line_marks
+from .tokens import token_html
 from .text import (
     TAG_RE,
     strip_tags,
@@ -1584,7 +1585,7 @@ def render_stat_block(
     id_attr = f' id="{html.escape(anchor_id)}"' if anchor_id else ""
     cls = "stat-block" + (f" {variant}" if variant else "")
     parts = [
-        f'<div class="{cls}"{id_attr}>'
+        f'<div class="{cls}"{id_attr}>{token_html(current_slug, anchor_id)}'
         f'<h3 class="stat-name">{icon_html}'
         f'{html.escape(_stat_name(name + name_tags if name_tags else pv(name)))}</h3>'
     ]

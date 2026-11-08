@@ -294,6 +294,7 @@ html, body {
   font-size: 0.72rem;
   line-height: 1.45;
 }
+.sidebar-credit + .sidebar-credit { margin-top: -0.3rem; }
 .sidebar-credit a { color: var(--muted); }
 .sidebar-credit a:hover { color: var(--link-hover); }
 .sidebar-github {
@@ -624,7 +625,7 @@ html, body {
 }
 
 .content {
-  --col-w: 360px;
+  --col-w: 420px;
   --text: var(--content);
   font-size: var(--text);
   line-height: 1.45;
@@ -1011,8 +1012,10 @@ h3 .book-icon,
 /* Enemy / monster blocks — tight, card-like (arcana wash + elevated shell) */
 .stat-block,
 .hazard-block {
-  /* may span columns: a tall block that refuses to break leaves the column before it empty */
-  break-inside: auto;
+  /* Starts a new column rather than split across two (Bryan, 2026-11-07), at
+     the cost of space under the column before. One taller than a column still
+     breaks: "avoid" gives way when nothing else fits. */
+  break-inside: avoid;
   margin: 0.4rem 0 0.55rem;
   padding: 0.45rem 0.6rem 0.5rem;
   background: var(--panel);
@@ -1074,6 +1077,23 @@ h3 .book-icon,
 .stat-block .stat-moves li {
   margin: 0.05rem 0;
 }
+/* 2 Minute Tabletop tokens (tokens.json, generator/tokens.py), licensed for the
+   wiki: the figure stands at the block's top right, the text wraps past it. */
+.stat-block .stat-tokens {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  margin: -0.15rem -0.25rem 0.15rem 0.5rem;
+  pointer-events: none;
+}
+.stat-block .stat-token {
+  height: 130px;
+  width: auto;
+  max-width: 175px;
+  object-fit: contain;
+}
+.stat-block .stat-tokens.many .stat-token { height: 104px; }
+.stat-block .stat-tokens.many .stat-token + .stat-token { margin-left: -24px; }
 .stat-block .stat-note {
   margin: 0.25rem 0 0;
   color: var(--ink);
@@ -1277,13 +1297,11 @@ body:has(.index-grid) .content {
  * left to page through — read it top-to-bottom instead. The maps strip and
  * the index keep their own layouts (both are more specific than these).
  */
-/* The steading playbook is tables of boxes and textareas, not prose, so it
-   takes its own column measure. The JS measure reads column-width, so it
-   follows. (The other sheets read better at the ordinary measure.) */
-.content:has([data-sheet="steading"]) { --col-w: 420px; }
+/* The steading playbook's tables of boxes and textareas once needed a wider
+   measure than the prose; since every page went to 420px it needs none. */
 .content:has([data-sheet="steading"]) textarea.wiki-field { min-height: 0; height: auto; }
 @media (max-width: 700px) {
-  .content, .content:has([data-sheet="steading"]) { --col-w: min(360px, calc(100vw - 2rem)); }
+  .content { --col-w: min(420px, calc(100vw - 2rem)); }
   .content-scroll {
     overflow-x: hidden;
     overflow-y: auto;
