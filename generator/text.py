@@ -1416,7 +1416,16 @@ def titlecase_label(text: str) -> str:
         head_letters = [c for c in head if c.isalpha()]
         if sep and head_letters and all(c.isupper() for c in head_letters):
             return smart_title(head) + sep + tail
+    # So can a gloss in brackets after a move's name ("PERSUADE (vs. NPCs)").
+    m = re.match(r"^([^()]*\S)(\s*\([^()]*\))$", text)
+    if m and _shouted_head(m.group(1)):
+        return smart_title(m.group(1)) + m.group(2)
     return text
+
+
+def _shouted_head(head: str) -> bool:
+    letters = [c for c in head if c.isalpha()]
+    return len(letters) >= 3 and all(c.isupper() for c in letters)
 
 
 def titlecase_name(text: str) -> str:

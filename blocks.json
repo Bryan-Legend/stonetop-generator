@@ -87,6 +87,16 @@
     },
     {
      "kind": "move-block",
+     "name": "Persuade (vs. NPCs)",
+     "id": "persuade-vs-npcs"
+    },
+    {
+     "kind": "move-block",
+     "name": "Persuade (vs. PCs)",
+     "id": "persuade-vs-pcs"
+    },
+    {
+     "kind": "move-block",
      "name": "Seek Insight",
      "id": "seek-insight"
     },
@@ -1770,6 +1780,16 @@
      "kind": "move-block",
      "name": "Let Fly",
      "id": "let-fly"
+    },
+    {
+     "kind": "move-block",
+     "name": "Persuade (vs. NPCs)",
+     "id": "persuade-vs-npcs"
+    },
+    {
+     "kind": "move-block",
+     "name": "Persuade (vs. PCs)",
+     "id": "persuade-vs-pcs"
     },
     {
      "kind": "move-block",

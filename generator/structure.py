@@ -2454,6 +2454,27 @@ def try_parse_improvement_block(
 # A sheet's check items, and the bold name a move's opens with (past any
 # provenance tag set after the opening sentinel).
 _CHECK_MARKS = (M_C, M_C2, M_CX, M_CX2)
+_MOVE_GLOSS_RE = re.compile(r"^(.*?\S)(\s*\([^()]*\))$")
+
+
+def _is_move_label(line: str) -> bool:
+    """A move's name in capitals, maybe followed by a gloss in brackets that
+    the book sets in mixed case ("PERSUADE (vs. NPCs)"): judged on the name."""
+    if _is_all_caps_label(line):
+        return True
+    m = _MOVE_GLOSS_RE.match(_defmt(line).strip())
+    return bool(m) and len(m.group(0)) <= 55 and _is_all_caps_label(m.group(1))
+
+
+def _move_label_title(label: str) -> str:
+    """Recase a move's name, leaving a bracketed gloss as printed."""
+    if not _is_all_caps_label(label):
+        m = _MOVE_GLOSS_RE.match(_defmt(label).strip())
+        if m:
+            return titlecase_label(m.group(1)) + m.group(2)
+    return titlecase_label(label)
+
+
 _MOVE_NAME_RE = re.compile(r"^\s*(?:• )?\x04([^\x04\x05]+)\x05")
 # The headings a sheet's moves are listed under: a playbook's Moves, an
 # insert's Terrible Purpose and Consequences.
@@ -4212,12 +4233,15 @@ def structure_html(
         if (
             rich_mode
             and not line.startswith("\x02")
-            and _is_all_caps_label(line)
+            and _is_move_label(line)
             and peek(1)
             and strip_markers(peek(1)).lstrip().startswith("When ")
         ):
-            name = titlecase_label(line.strip())
+            name = _move_label_title(_defmt(line).strip())
             hid = anchors.add(name, caps_label=True)
+            # The name in the page's language (the id stays the English's).
+            shown = _defmt(T(line)).strip()
+            shown = _move_label_title(shown) if shown else name
             i += 1
             inner: list[str] = []
             while i < n:
@@ -4227,7 +4251,7 @@ def structure_html(
                     break
                 if (
                     not L.startswith("\x02")
-                    and _is_all_caps_label(L)
+                    and _is_move_label(L)
                     and peek(1)
                     and strip_markers(peek(1)).lstrip().startswith("When ")
                 ):
@@ -4260,7 +4284,7 @@ def structure_html(
             )
             block = (
                 f'<div class="move-block" id="{html.escape(hid)}">'
-                f'<h3 class="move-name">{html.escape(name)}</h3>'
+                f'<h3 class="move-name">{html.escape(shown)}</h3>'
             )
             if trigger:
                 block += f'<p class="move-trigger">{link(trigger)}</p>'

@@ -873,7 +873,7 @@ class TextMemory:
         if (
             _defmt(s).strip() != en_plain
             and _defmt(s).strip() == titlecase_label(en_plain)
-            and out.upper() == out
+            and out.partition("(")[0].upper() == out.partition("(")[0]
         ):
             out = titlecase_label(out)
         # Keep the query's surrounding whitespace.
