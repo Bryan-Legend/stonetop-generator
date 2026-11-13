@@ -173,7 +173,7 @@ export function preflight(env, request) {
       "access-control-allow-origin": origin,
       "access-control-allow-methods": "GET, POST, DELETE, OPTIONS",
       "access-control-allow-headers":
-        "authorization, content-type, if-none-match",
+        "authorization, content-type, if-none-match, x-stonetop-since",
       "access-control-max-age": "86400",
       vary: "Origin",
     },

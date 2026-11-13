@@ -314,8 +314,7 @@ P	<b>Don't overthink it.</b> Don't waste your time deliberating every decision, 
 PAGE	50
 H2	Your character
 P	Every PC in <i>Stonetop</i> has a playbook. A playbook is a template, a set of choices and options that point towards a specific character archetype while still leaving room to make the character unique.
-P	There are nine standard <b>playbooks</b>, which you can find starting on page 103. In play, though, you'll use either a printed copy of your playbook or an electronic version thereof. You can download these playbooks (and other materials) from www.
-P	lampblackandbrimstone.com.
+P	There are nine standard <b>playbooks</b>, which you can find starting on page 103. In play, though, you'll use either a printed copy of your playbook or an electronic version thereof. You can download these playbooks (and other materials) from www.lampblackandbrimstone.com.
 P	To create your character, you'll choose a playbook and fill it out. Each playbook includes choices for your PC's…
 B	Background
 B	Instinct

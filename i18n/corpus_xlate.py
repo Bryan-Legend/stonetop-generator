@@ -28,6 +28,7 @@ pages/<slug>.txt, ``B140`` line 140 of extracted/<book>/<slug>.txt. The
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -175,7 +176,14 @@ def _join_translation(
             _tt, tp = _split_file_line(tr_body[j])
             pieces.append((tp[0] if tp else "").strip())
         used.update(run)
-        return ("" if code in UNSPACED else " ").join(p for p in pieces if p)
+        sep = "" if code in UNSPACED else " "
+        out = ""
+        for p in pieces:
+            if not p:
+                continue
+            # a web address the book broke after "www." takes no space
+            out += p if not out or re.search(r"(?<![\w.])www\.$", out) else sep + p
+        return out
     return None
 
 

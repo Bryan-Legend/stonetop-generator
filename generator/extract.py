@@ -2539,7 +2539,11 @@ def merge_wrapped_lines(
             # bold/italic word wrapped across a line ("crys-" + "tal") still
             # de-hyphenates instead of becoming "crys- tal".
             body, tail = _split_trailing_fmt(buf)
-            if body.endswith(("–", "—")):
+            if re.search(r"(?<![\w.])www\.$", body, re.I):
+                # A web address broken after "www.": no space inside it.
+                lead, rest = _split_leading_fmt(nxt)
+                buf = body + _cancel_fmt_seam(tail, lead) + rest
+            elif body.endswith(("–", "—")):
                 # Em/en dash line break: keep the dash, no extra space
                 lead, rest = _split_leading_fmt(nxt)
                 buf = body + _cancel_fmt_seam(tail, lead) + rest

@@ -52,7 +52,20 @@
       "all_minor": "Az összes kis arkánum",
       "uses": "Használat"
     },
-    "value": "Érték"
+    "value": "Érték",
+    "playkit": {
+      "heading": "A játékcsomag PDF-jei",
+      "all": "Mind a kilenc karakterlap",
+      "inserts": "Karakterlap-betétek",
+      "gm": "A mesélő lapja",
+      "printing": "Nyomtatási útmutató",
+      "spreads": "kétoldalas",
+      "booklet": "füzet",
+      "browse": "Vagy böngészd {folder}.",
+      "folder": "a teljes csomag mappáját",
+      "arcana": "Arkánumkártyák",
+      "errata": "Hibajegyzék"
+    }
   },
   "js": {
     "feedback_link": "Visszajelzés küldése erről az oldalról",
@@ -142,7 +155,7 @@
     "lede_html": "Statikus, hivatkozott wiki a <em>Stonetop</em>hoz {books}. Az oldalszámok linkek; a kockakifejezések kattintásra gurulnak; vidd az egeret egy link fölé az előnézethez (a teljes tulajdonságblokk mély linknél).",
     "remembers_html": "<strong>Emlékszik.</strong> Pipálj egy négyzetet, válaszolj egy kérdésre, tölts ki egy rést, oszd ki a tulajdonságaidat — a wiki mindet megőrzi, így egy karakterfüzet olyan karakterlap, amelyről tényleg lehet játszani, egy veszély visszaszámlálása vagy egy település fejlesztései pedig megmaradnak a alkalmak között. A könyvek minden kérdőjele és minden kitöltendő helye jegyzetet fogad, és a füzetek dobnak: kattints egy tulajdonságra, hogy +azt a tulajdonságot dobd, vagy a sebzéskockára a sebzéshez. Jelölj meg egy gyengeséget, és a két tulajdonsága magától hátránnyal dob.",
     "defects_html": "Ezeket az oldalakat a könyvek PDF-jeiből emeljük ki automatikusan, ezért <strong>számíts hibákra</strong> — széttört táblázatokra, elveszett vagy megkettőzött szövegre, rossz címsorokra, törött linkekre. Ha találsz egyet, vagy segítenél kijavítani, <a href=\"{issues}\">nyiss issue-t vagy pull requestet a GitHubon</a>.",
-    "license_html": "A könyvek <strong>szövegét</strong> Jeremy Strandberg írta, <a href=\"{license}\" rel=\"license\">CC BY-SA 4.0</a> alatt. A lények zsetonjai: <a href=\"https://2minutetabletop.com/\">2 Minute Tabletop</a>. Kockahangok: <a href=\"https://opengameart.org/content/wooden-dice-on-wodden-table-roll\">Wuzzy</a>, <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\" rel=\"license\">CC0</a>. A közös adatszinkront a <a href=\"https://workers.cloudflare.com/\">Cloudflare</a> adja.",
+    "license_html": "A könyvek <strong>szövegét</strong> Jeremy Strandberg írta, <a href=\"{license}\" rel=\"license\">CC BY-SA 4.0</a> alatt. Zsetonok: <a href=\"https://2minutetabletop.com/\">2 Minute Tabletop</a>, engedéllyel felhasználva. Kockahangok: <a href=\"https://opengameart.org/content/wooden-dice-on-wodden-table-roll\">Wuzzy</a>, <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\" rel=\"license\">CC0</a>. A közös adatszinkront a <a href=\"https://workers.cloudflare.com/\">Cloudflare</a> adja.",
     "doc_title": "Stonetop, webes kiadás",
     "and": "és",
     "intro_html": "<p>A <strong>Stonetop</strong> Jeremy Strandberg asztali szerepjátéka, otthoni fantasy, egy sosemvolt vaskorban. Hárman-öten ültök le — egy KM, a többiek egy etlen kis, elzárt falu hőseit játsszák a világ végén. Ott van rokonotok, mesterségetek, szomszédaitok, akik gyerekként ismertek, és a veszélyek, amelyekkel szembenéztek, az otthont fenyegetik — kalandok között a játék ezért a <a href=\"{homefront}\">hátország</a> felé fordul, ahol a falunak saját karakterfüzete van, és a szereplőkkel együtt nő, szenved és változik. Ez választja el ezt a TTRPG-t a kazamata-fantasy szerepjátékoktól: a hely, amit védtek, az a hely, ahol éltek.</p><p>Alatta Powered by the Apocalypse játék, a <em>Dungeon World</em> csontjaira építve: dobj 2d6-ot plusz egy tulajdonságot — 10+ és a tiétek az út, 7-9 és kerül valamibe, 6- és a KM húz. Ez a wiki a TTRPG két szabálykönyvének ingyenes, kereshető webes kiadása: minden húzás, karakterfüzet, szörny, veszély, település, istenség és arkánum a játékban. Ha új neked a játék, kezdd itt: <a href=\"{welcome}\">Üdvözöl a Stonetop</a>, aztán <a href=\"{playing}\">A játék menete</a> — vagy nézd át a témákat lent.</p>",

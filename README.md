@@ -162,6 +162,23 @@ Jeremy Strandberg and published by Lampblack & Brimstone. Both books' copyright 
 
 That text is reproduced here under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), reflowed from the PDFs into
-HTML, and **the Web Edition is shared under the same license**.
+HTML, and **the Web Edition's text is shared under the same license**.
+
+### Images are not CC licensed
+
+Neither CC BY-SA nor the MIT license covers the images in this repository. Each set is
+under its own terms:
+
+- **Tokens** (`site/images/tokens/`) are © [2 Minute Tabletop](https://2minutetabletop.com/)
+  and used here **by permission**.
+- **Category icons** (`site/images/icons/`) are from [game-icons.net](https://game-icons.net/),
+  [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Their authors are credited in
+  `site/images/icons/README.md`.
+- **The books' artwork and maps** are **not included** at all. The books' copyright page
+  releases only their *text* under CC BY-SA.
+- **Preview cards and favicons** (`site/cards/`, `site/images/favicon*`) are drawn by the
+  generator (`generator/cards.py`) from the page text and the wiki's fonts.
+
+The dice sounds (`site/audio/`) are CC0; see `site/audio/CREDITS.md`.
 
 Not affiliated with or endorsed by Lampblack & Brimstone.

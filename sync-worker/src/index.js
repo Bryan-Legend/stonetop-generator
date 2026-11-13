@@ -42,6 +42,15 @@ function internal(request, token, path) {
   const url = new URL(request.url);
   url.pathname = path;
   url.searchParams.set("__t", token);
+  /* A pull names its cursor in a header rather than in the address, so the
+     address never changes and the browser's cached CORS preflight (cached
+     per URL) is reused — a "?since=" that moved with every change cost a
+     preflight per pull. The object still reads it from the query; older
+     clients still send it there. */
+  const since = request.headers.get("x-stonetop-since");
+  if (since && !url.searchParams.has("since")) {
+    url.searchParams.set("since", since);
+  }
   return new Request(url, request);
 }
 

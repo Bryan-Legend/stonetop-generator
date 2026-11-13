@@ -1403,7 +1403,10 @@ def write_localized_data(
             continue
         # ``text`` is the page's whole text, for search; a hover preview
         # never reads it, and it was half of every language's file.
-        pv[slug] = {**entry, **{k: v for k, v in got.items() if k != "text"}}
+        pv[slug] = {
+            **entry,
+            **{k: v for k, v in got.items() if k not in ("text", "section_names")},
+        }
     docs = []
     for doc in search_docs:
         got = local.get(doc["slug"])
@@ -1416,6 +1419,12 @@ def write_localized_data(
                 "title": got.get("title") or doc["title"],
                 "excerpt": (got.get("excerpt") or "")[:280],
                 "text": got.get("text") or doc["text"],
+                # Section names in this language, same ids as the English
+                # (an id the translation has no name for keeps the English).
+                "sections": [
+                    [sid, (got.get("section_names") or {}).get(sid) or name]
+                    for sid, name in doc.get("sections") or []
+                ],
                 # This page is a sibling, not one directory up.
                 "local": 1,
             }
@@ -1545,6 +1554,8 @@ def write_localized_pages(
                         body, (sections_by_slug or {}).get(slug, [])
                     ),
                     "text": html_to_search_text(body),
+                    # id → name in this language, for the search index only
+                    "section_names": page.get("sections") or {},
                 }
                 # An arcanum's hover popup is the card itself, and the card is
                 # the whole body here, so the translated card is the preview.
@@ -1683,8 +1694,8 @@ HOME_FALLBACK = {
     "license_html": (
         "The books' <strong>text</strong> is by Jeremy Strandberg under "
         '<a href="{license}" rel="license">CC BY-SA 4.0</a>. '
-        'Creature tokens by <a href="https://2minutetabletop.com/">'
-        "2 Minute Tabletop</a>. "
+        'Tokens by <a href="https://2minutetabletop.com/">'
+        "2 Minute Tabletop</a>, used by permission. "
         'Dice sounds by <a href="https://opengameart.org/content/'
         'wooden-dice-on-wodden-table-roll">Wuzzy</a>, '
         '<a href="https://creativecommons.org/publicdomain/zero/1.0/" '

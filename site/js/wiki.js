@@ -466,11 +466,14 @@
     function pull() {
       if (!cfg || pulling) return Promise.resolve();
       pulling = true;
-      var headers = etag ? { "if-none-match": etag } : {};
-      return api(
-        "/v1/state/" + encodeURIComponent(cfg.campaign) + "?since=" + cursor,
-        { headers: headers }
-      )
+      // The cursor travels in a header, not the address: the browser caches
+      // its CORS preflight per URL, and a "?since=" that moved with every
+      // change cost one preflight (a Worker invocation) per pull.
+      var headers = { "x-stonetop-since": String(cursor || 0) };
+      if (etag) headers["if-none-match"] = etag;
+      return api("/v1/state/" + encodeURIComponent(cfg.campaign), {
+        headers: headers,
+      })
         .then(function (res) {
           if (res.status === 304) {
             etag = res.headers.get("etag") || etag;
@@ -2667,14 +2670,46 @@
     return true;
   }
 
+  /** Where the query's words first stand together, whatever whitespace
+   *  (a line break in the index) falls between them; -1 if they never do. */
+  function phraseRegExp(terms) {
+    return new RegExp(
+      terms
+        .map(function (t) {
+          return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        })
+        .join("\\s+"),
+      "g"
+    );
+  }
+
+  function phraseIndex(low, terms) {
+    var m = phraseRegExp(terms).exec(low);
+    return m ? m.index : -1;
+  }
+
+  function phraseCount(low, terms) {
+    var m = low.match(phraseRegExp(terms));
+    return m ? m.length : 0;
+  }
+
+  /** A name compared without a leading article ("The Die of Fate"). */
+  function bareName(s) {
+    return String(s || "").toLowerCase().replace(/\s+/g, " ").trim()
+      .replace(/^(the|a|an) /, "");
+  }
+
   function makeSnippet(text, terms, radius) {
     radius = radius || 42;
     if (!text) return "";
     var low = text.toLowerCase();
-    var best = -1;
-    for (var i = 0; i < terms.length; i++) {
-      var at = low.indexOf(terms[i]);
-      if (at !== -1 && (best === -1 || at < best)) best = at;
+    // The words together first ("die of fate"), then the first of any.
+    var best = terms.length > 1 ? phraseIndex(low, terms) : -1;
+    if (best === -1) {
+      for (var i = 0; i < terms.length; i++) {
+        var at = low.indexOf(terms[i]);
+        if (at !== -1 && (best === -1 || at < best)) best = at;
+      }
     }
     if (best < 0) {
       var head = text.slice(0, radius * 2);
@@ -2743,34 +2778,92 @@
       var current = filter.value.trim();
       if (queryTerms(current).join(" ") !== terms.join(" ")) return;
 
+      // Ranks, best first: a section named for the query (-3), a page
+      // titled it (-2), a section whose name holds the query (-1), a page
+      // whose title holds the words (0), a page with the words together in
+      // its text (0.5, more often first), a page with them scattered (1).
       var hits = [];
       var matchSlugs = {};
+      var phrase = terms.join(" ");
+      var multi = terms.length > 1;
       for (var i = 0; i < index.length; i++) {
         var doc = index[i];
         var titleHay = (doc.title || "").toLowerCase();
-        var textHay = (doc.text || "").toLowerCase();
+        if (doc._low === undefined) doc._low = (doc.text || "").toLowerCase();
+        var textHay = doc._low;
+        // An English entry opens with the title and the section names on
+        // two lines of their own; a snippet is taken from the text after.
+        if (doc._body === undefined) {
+          var nl1 = doc.local ? -1 : textHay.indexOf("\n");
+          var nl2 = nl1 === -1 ? -1 : textHay.indexOf("\n", nl1 + 1);
+          doc._body = nl2 === -1 ? 0 : nl2 + 1;
+        }
+        var bodyText = (doc.text || "").slice(doc._body);
         var titleHit = haystackHasTerms(titleHay, terms);
         var textHit = haystackHasTerms(textHay, terms);
         if (!titleHit && !textHit) continue;
         matchSlugs[String(doc.slug).toLowerCase()] = true;
-        var rank = titleHit ? 0 : 1;
-        // Prefer denser title matches
-        if (titleHit && titleHay === terms.join(" ")) rank = -1;
+        var count = textHit ? (multi ? phraseCount(textHay, terms) : 1) : 0;
+        var rank = titleHit ? 0 : count ? 0.5 : 1;
+        if (titleHit && bareName(titleHay) === bareName(phrase)) rank = -2;
+        var pageHref = doc.href
+          ? hrefFromRoot(doc.href)
+          : doc.local
+            ? doc.slug + ".html"
+            : pageHrefFromSlug(doc.slug);
         hits.push({
           slug: doc.slug,
-          href: doc.href || null,
+          url: pageHref,
           title: doc.title,
           book: doc.book,
           titleHit: titleHit,
           textHit: textHit,
           rank: rank,
+          count: count,
           snippet: textHit
-            ? makeSnippet(doc.text || "", terms)
+            ? makeSnippet(bodyText, terms)
             : escapeHtmlSearch(doc.excerpt || doc.title || ""),
         });
+        var pageHit = hits[hits.length - 1];
+        // The page's sections: one named for the query is where the rule is.
+        var secs = doc.sections || [];
+        var seenNames = {};
+        var low = textHay.slice(doc._body);
+        for (var s = 0; s < secs.length; s++) {
+          var sid = secs[s][0];
+          var sname = secs[s][1] || "";
+          var slow = sname.toLowerCase().replace(/\s+/g, " ");
+          if (!haystackHasTerms(slow, terms)) continue;
+          var exact = bareName(slow) === bareName(phrase);
+          if (!exact && multi && slow.indexOf(phrase) === -1) continue;
+          // a heading and the move card under it share a name: list it once
+          if (seenNames[slow]) continue;
+          seenNames[slow] = true;
+          // the page itself adds nothing under a section named for the query
+          if (exact) pageHit.drop = true;
+          // the snippet from where the section's name stands in the text
+          var at = low.indexOf(slow);
+          hits.push({
+            slug: doc.slug,
+            url: pageHref + "#" + sid,
+            title: doc.title + " › " + sname,
+            book: doc.book,
+            section: true,
+            rank: exact ? -3 : -1,
+            count: 0,
+            snippet: makeSnippet(
+              at >= 0 ? bodyText.slice(at + slow.length) : bodyText,
+              terms
+            ),
+          });
+        }
       }
+      hits = hits.filter(function (h) {
+        return !h.drop;
+      });
       hits.sort(function (a, b) {
         if (a.rank !== b.rank) return a.rank - b.rank;
+        if (a.count !== b.count) return b.count - a.count;
         return (a.title || "").localeCompare(b.title || "");
       });
 
@@ -2828,13 +2921,14 @@
         return;
       }
       var maxShow = 40;
+      var nPages = Object.keys(matchSlugs).length;
       var html = [];
       html.push(
         '<p class="search-results-meta">' +
           escapeHtmlSearch(
-            (hits.length === 1
-              ? UI("search_pages_one", { n: hits.length })
-              : UI("search_pages_many", { n: hits.length })) +
+            (nPages === 1
+              ? UI("search_pages_one", { n: nPages })
+              : UI("search_pages_many", { n: nPages })) +
               (hits.length > maxShow
                 ? UI("search_showing", { n: maxShow })
                 : "")
@@ -2852,7 +2946,9 @@
               : hit.book === "sites"
                 ? "Site"
                 : "");
-        var how = hit.titleHit && hit.textHit
+        var how = hit.section
+          ? "§"
+          : hit.titleHit && hit.textHit
           ? UI("search_in_title_text")
           : hit.titleHit
             ? UI("search_in_title")
@@ -2860,11 +2956,7 @@
         where += (where ? " · " : "") + how;
         html.push(
           '<a class="search-hit" href="' +
-            (hit.href
-              ? hrefFromRoot(hit.href)
-              : hit.local
-                ? hit.slug + ".html"
-                : pageHrefFromSlug(hit.slug)) +
+            hit.url +
             '">' +
             '<span class="search-hit-title">' +
             escapeHtmlSearch(hit.title) +

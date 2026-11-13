@@ -100,6 +100,7 @@ from .structure import (
 from .text import TAG_RE, heading_pages, html_to_search_text, strip_tags
 from .translate import TextMemory, check_alignment, render_translated, tag_lines
 from .reflinks import apply_reference_links
+from .playkit import add_playkit
 
 
 class BuildClock:
@@ -1064,6 +1065,8 @@ def main(argv: list[str] | None = None) -> None:
                     ov, body, slug=slug, link_fn=page_link_fn(lookup, common)
                 )
                 excerpt = override_excerpt(ov) or excerpt
+            # The publisher's site linked; the playkit PDFs a page prints.
+            body = add_playkit(body, slug)
             clock.lap("build: slowest english renders", slug, t_page)
             # The same page in every language that has its corpus translated.
             for locale in lang_targets:
@@ -1203,8 +1206,8 @@ def main(argv: list[str] | None = None) -> None:
             s.get("name") or "" for s in (sections_by_slug.get(slug) or [])
         )
         combined = f"{art['title']}\n{section_names}\n{search_text}".strip()
-        if len(combined) > 80_000:
-            combined = combined[:80_000]
+        # (no length cap: the longest chapters ran past one, and the back
+        # half of Running the Game could not be searched)
         search_docs.append(
             {
                 "slug": slug,
@@ -1212,6 +1215,13 @@ def main(argv: list[str] | None = None) -> None:
                 "book": book_id,
                 "excerpt": (excerpt or "")[:280],
                 "text": combined,
+                # [id, name] of each deep-linkable section, so a search
+                # that names one lands on it.
+                "sections": [
+                    [s["id"], s["name"]]
+                    for s in (sections_by_slug.get(slug) or [])
+                    if s.get("id") and s.get("name")
+                ],
             }
         )
         clock.lap("build: previews + search text", "all pages", t_page)

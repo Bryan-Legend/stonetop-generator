@@ -778,6 +778,10 @@ def should_join(a: str, b: str) -> bool:
     # "544 of the Homefront chapter."): no sentence ends on "page".
     if re.search(r"\bpages?\s*$", a, re.I) and re.match(r"\d", b):
         return True
+    # A web address broken after "www." ("…download these playbooks from
+    # www." + "lampblackandbrimstone.com."): the full stop is the address's.
+    if re.search(r"(?<![\w.])www\.$", a, re.I) and re.match(r"[a-z0-9]", b, re.I):
+        return True
     # Steading requirement group-headers start their own line, never a wrap
     if re.match(r"^(Requires?\b|And then\b|And (?:either|one|any)\b)", b, re.I):
         return False

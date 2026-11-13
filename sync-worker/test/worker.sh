@@ -80,6 +80,15 @@ import sys,json
 rows = json.load(sys.stdin)["rows"]
 print(len(rows), rows[0]["store"] if rows else "")')
 chk "only the new row comes back" "1 stonetop-wiki-map-pins" "$DELTA"
+# The cursor in a header (what wiki.js sends, so the URL never changes and the
+# browser's CORS preflight stays cached) reads exactly as ?since= does.
+HDELTA=$(curl -s -H "authorization: Bearer $GTOK" -H "x-stonetop-since: $CUR" "$B/v1/state/$CID" | python -c '
+import sys,json
+rows = json.load(sys.stdin)["rows"]
+print(len(rows), rows[0]["store"] if rows else "")')
+chk "x-stonetop-since header: only the new row" "1 stonetop-wiki-map-pins" "$HDELTA"
+HCUR=$(curl -s -H "authorization: Bearer $GTOK" -H "x-stonetop-since: 0" "$B/v1/state/$CID" | python -c 'import sys,json;print(json.load(sys.stdin)["cursor"])')
+chk "x-stonetop-since header: 304 once caught up" "304" "$(curl -s -o /dev/null -w '%{http_code}' -H "authorization: Bearer $GTOK" -H "x-stonetop-since: $HCUR" "$B/v1/state/$CID")"
 
 echo "== etag =="
 ET=$(curl -s -D - -o /dev/null -H "authorization: Bearer $GTOK" "$B/v1/state/$CID?since=0" | tr -d '\r' | grep -i '^etag:' | cut -d' ' -f2-)
@@ -111,6 +120,7 @@ chk "too many keys refused" "413" "$(curl -s -o /dev/null -w '%{http_code}' -X P
 
 echo "== cors =="
 chk "preflight from the hosted wiki" "204" "$(curl -s -o /dev/null -w '%{http_code}' -X OPTIONS "$B/v1/state/$CID" -H 'origin: https://stonetop.cc' -H 'access-control-request-method: GET')"
+chk "preflight allows the cursor header" "1" "$(curl -s -D - -o /dev/null -X OPTIONS "$B/v1/state/$CID" -H 'origin: https://stonetop.cc' -H 'access-control-request-method: GET' -H 'access-control-request-headers: authorization, x-stonetop-since' | tr -d '\r' | grep -i '^access-control-allow-headers:' | grep -c 'x-stonetop-since')"
 chk "preflight from a stranger" "403" "$(curl -s -o /dev/null -w '%{http_code}' -X OPTIONS "$B/v1/state/$CID" -H 'origin: https://evil.example' -H 'access-control-request-method: GET')"
 ACAO=$(curl -s -D - -o /dev/null -H "authorization: Bearer $GTOK" -H 'origin: null' "$B/v1/state/$CID?since=0" | tr -d '\r' | grep -i '^access-control-allow-origin:' | cut -d' ' -f2-)
 chk "gm allowed from a file:// page" "null" "$ACAO"

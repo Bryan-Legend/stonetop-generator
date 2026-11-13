@@ -1088,6 +1088,7 @@ def render_translated(
     from .arcana import major_arcana_html, minor_arcana_html
     from .structure import article_html, linkify_pages, set_translation
     from .reflinks import apply_reference_links
+    from .playkit import add_playkit
 
     slug = art["slug"]
     meta = tr.get("meta") or {}
@@ -1150,6 +1151,8 @@ def render_translated(
             body, unlinked = apply_reference_links(body, slug)
             if unlinked:
                 notes.append(f"{where}: reference links not placed: " + "; ".join(unlinked))
+        # The publisher's site linked; the playkit PDFs a page prints.
+        body = add_playkit(body, slug, code)
     finally:
         set_translation(None)
     if has_tags(body):
