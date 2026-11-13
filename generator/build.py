@@ -100,6 +100,7 @@ from .structure import (
 from .text import TAG_RE, heading_pages, html_to_search_text, strip_tags
 from .translate import TextMemory, check_alignment, render_translated, tag_lines
 from .reflinks import apply_reference_links
+from .tokens import class_token_image, token_html
 from .playkit import add_playkit
 
 
@@ -835,6 +836,12 @@ def main(argv: list[str] | None = None) -> None:
         )
         if matched:
             section_navs[art["slug"]] = matched
+    # The bestiary's two lists, in the sidebar (named per language in
+    # chrome.nav: bestiary_strings).
+    section_navs[BESTIARY_SLUG] = [
+        {"id": "by-location", "name": "By Location"},
+        {"id": "alphabetical", "name": "Alphabetical"},
+    ]
     if section_navs:
         print(
             f"  Chapter section nav: {len(section_navs)} pages, "
@@ -1126,8 +1133,12 @@ def main(argv: list[str] | None = None) -> None:
                 cls = "page-title"
                 if 'class="pb-stats"' in body:
                     cls += " pb-title"
+                # A playbook's class, or an insert a character takes on (the
+                # Ghost, the Thrall), shows its iconic token beside its name
+                # (tokens.json, "<slug>#class").
+                tok = token_html(slug, "class", "class-tokens")
                 head = (
-                    f'<h1 class="{cls}">'
+                    f'<h1 class="{cls}">{tok}'
                     f'{html.escape(art.get("title") or "")}</h1>'
                 )
                 # A back-link is chrome above the title, not part of the page.
@@ -1171,6 +1182,8 @@ def main(argv: list[str] | None = None) -> None:
         thumb = None
         if art["kind"] == "maps" and map_images:
             thumb = map_images[0].get("file")
+        # A class's or insert's token stands in the popup as on the page.
+        thumb = thumb or class_token_image(slug)
         previews[slug] = {
             "title": display_title(art),
             "excerpt": excerpt,

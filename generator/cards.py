@@ -45,7 +45,7 @@ from pathlib import Path
 from . import REPO_ROOT
 
 # Bump when the design changes: every card is redrawn.
-DESIGN_VERSION = 3
+DESIGN_VERSION = 3  # a card with a token (job["token"]) hashes its file too
 
 CARDS_DIR = "cards"
 MANIFEST = "manifest.json"
@@ -381,11 +381,11 @@ def _band_label(d, code: str, lines: list[str], band: int, y: float) -> None:
         y += size * 1.15
 
 
-def _encode(img, size: tuple[int, int]) -> bytes:
+def _encode(img, size: tuple[int, int], colors: int = PALETTE) -> bytes:
     from PIL import Image
 
     img = img.resize(size, Image.LANCZOS)
-    q = img.quantize(PALETTE, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+    q = img.quantize(colors, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
     b = io.BytesIO()
     q.save(b, "PNG", optimize=True)
     data = b.getvalue()
@@ -396,6 +396,37 @@ def _encode(img, size: tuple[int, int]) -> bytes:
     except ImportError:
         pass
     return data
+
+
+# A playbook's card carries its class's token (tokens.json "<slug>#class"),
+# read off the page's title: standing at the card's right, the text column
+# narrowed beside it. The figure's colours need more of the palette than the
+# wine gradient does.
+TOKEN_COLORS = 128
+
+
+def _token(job: dict, right: float, bottom: float, h: float) -> tuple:
+    """Paste the job's token, its foot at ``bottom``, its right edge at
+    ``right``, ``h`` tall (logical px). Returns (img_or_None, width)."""
+    path = job.get("token")
+    if not path:
+        return None, 0
+    from PIL import Image
+
+    try:
+        t = Image.open(path).convert("RGBA")
+    except OSError:
+        return None, 0
+    bbox = t.getbbox()
+    if bbox:
+        t = t.crop(bbox)
+    w = h * t.width / t.height
+    t = t.resize((round(w * SS), round(h * SS)), Image.LANCZOS)
+    return t, w
+
+
+def _paste(img, t, x: float, y: float) -> None:
+    img.paste(t, (round(x * SS), round(y * SS)), t)
 
 
 def draw_wide(job: dict) -> bytes:
@@ -412,6 +443,11 @@ def draw_wide(job: dict) -> bytes:
     margin = 64
     x = band + margin
     tw = w - x - margin
+    tok, tok_w = _token(job, w - margin, h - margin, 360)
+    if tok is not None:
+        tok_w = min(tok_w, 300)
+        _paste(img, tok, w - margin + 20 - tok_w, h - 360 - margin + 10)
+        tw -= tok_w + 20
     y = margin + 6
     if job["kicker"]:
         lab = _chain(code, "label", 22)
@@ -446,7 +482,7 @@ def draw_wide(job: dict) -> bytes:
         y += gap
         if y + lead > bottom:
             break
-    return _encode(img, WIDE)
+    return _encode(img, WIDE, TOKEN_COLORS if tok is not None else PALETTE)
 
 
 def _ellipsize_fit(s: str, chain: Chain, width: float) -> str:
@@ -462,7 +498,15 @@ def draw_square(job: dict) -> bytes:
     _stone(d, band, (n - mh) / 2, mh)
     x, m = band + 70, 70
     tw = n - x - m
+    full_w = tw
+    tok, tok_w = _token(job, n - m, n - m, 440)
+    if tok is not None:
+        # Only the title shares the card's height with the figure; the
+        # kicker above it and the edition below keep the full measure.
+        _paste(img, tok, n - m + 30 - tok_w, n - m - 440 - 50)
+        tw -= tok_w - 20
     ch, sz, lines = fit_title(code, job["title"], tw, 4, (230, 200, 176, 156, 140, 124, 110))
+    tw = full_w
     lead = sz * 1.02
     y = (n - lead * len(lines)) / 2 - 10
     if job["kicker"]:
@@ -473,7 +517,7 @@ def draw_square(job: dict) -> bytes:
         y += lead
     ed = _chain(code, "title", 48)
     ed.draw(d, x, n - m - 2, _ellipsize_fit(job["edition"], ed, tw), MUTED)
-    return _encode(img, SQUARE)
+    return _encode(img, SQUARE, TOKEN_COLORS if tok is not None else PALETTE)
 
 
 def render_job(job: dict) -> tuple[str, dict[str, bytes]]:
@@ -586,6 +630,10 @@ def band_lines(edition: str, game: str) -> list[str]:
     return [edition]
 
 
+_TOKEN_RE = re.compile(
+    r'<h1[^>]*>\s*<span class="class-tokens[^"]*"[^>]*>\s*<img[^>]*src="[^"]*images/tokens/([^"/]+)"')
+
+
 def job_for(path: Path, out: Path, ui_cache: dict) -> dict | None:
     rel = path.relative_to(out).as_posix()
     code, slug = page_key(rel)
@@ -623,7 +671,10 @@ def job_for(path: Path, out: Path, ui_cache: dict) -> dict | None:
     bt = (ui.get("book_titles") or {}).get("book1") or ""
     if " — " in bt:
         game = bt.split(" — ", 1)[1]
+    tm = _TOKEN_RE.search(text)
+    token = str(out / "images" / "tokens" / tm.group(1)) if tm else ""
     return {
+        "token": token,
         "key": f"{code}/{slug}",
         "code": code,
         "slug": slug,
@@ -637,6 +688,8 @@ def job_for(path: Path, out: Path, ui_cache: dict) -> dict | None:
 
 def _digest(job: dict) -> str:
     keep = {k: job[k] for k in ("title", "kicker", "paras", "band", "edition")}
+    if job.get("token"):
+        keep["token"] = Path(job["token"]).name
     keep["v"] = DESIGN_VERSION
     return hashlib.sha256(json.dumps(keep, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
 

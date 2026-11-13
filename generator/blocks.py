@@ -218,7 +218,12 @@ def found_in_html(body_html: str) -> list[dict]:
         body_html,
     ):
         kind, block_id = m.group(1), m.group(2) or ""
-        tail = body_html[m.end(): m.end() + 600]
+        # A block's tokens (generator/tokens.py) come before its name, and
+        # four of them run past the 600 characters the name is looked for in.
+        tail = re.sub(
+            r'<span class="stat-tokens.*?</span>', "",
+            body_html[m.end(): m.end() + 3000], count=1, flags=re.S,
+        )[:600]
         hit = re.search(name_res[kind], tail, re.S)
         name = (
             _html.unescape(re.sub(r"<[^>]+>", "", hit.group(1))).strip()

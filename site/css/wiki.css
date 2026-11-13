@@ -1078,22 +1078,58 @@ h3 .book-icon,
   margin: 0.05rem 0;
 }
 /* 2 Minute Tabletop tokens (tokens.json, generator/tokens.py), licensed for the
-   wiki: the figure stands at the block's top right, the text wraps past it. */
-.stat-block .stat-tokens {
+   wiki: the figure stands at the block's top right, the text wraps past it.
+   The block contains its float (flow-root), so a short block grows to the
+   token's height rather than letting it hang into the next block, where it
+   pushed that block's token away from the right edge. */
+.stat-block:has(> .stat-tokens),
+.hazard-block:has(> .stat-tokens) { display: flow-root; }
+.stat-block .stat-tokens,
+.hazard-block .stat-tokens {
   float: right;
   display: flex;
   align-items: flex-end;
   margin: -0.15rem -0.25rem 0.15rem 0.5rem;
+  max-width: 50%;
   pointer-events: none;
 }
-.stat-block .stat-token {
+/* A group of three or more shrinks to fit half the block, so the name and
+   tags still have room beside it. */
+.stat-block .stat-tokens.many .stat-token,
+.hazard-block .stat-tokens.many .stat-token { min-width: 0; flex: 0 1 auto; }
+.stat-block .stat-tokens.many:has(> .stat-token:nth-child(3)) .stat-token,
+.hazard-block .stat-tokens.many:has(> .stat-token:nth-child(3)) .stat-token { height: 84px; }
+.stat-block .stat-token,
+.hazard-block .stat-token {
   height: 130px;
   width: auto;
   max-width: 175px;
   object-fit: contain;
 }
-.stat-block .stat-tokens.many .stat-token { height: 104px; }
-.stat-block .stat-tokens.many .stat-token + .stat-token { margin-left: -24px; }
+.stat-block .stat-tokens.many .stat-token,
+.hazard-block .stat-tokens.many .stat-token { height: 104px; }
+.stat-block .stat-tokens.many .stat-token + .stat-token,
+.hazard-block .stat-tokens.many .stat-token + .stat-token { margin-left: -24px; }
+/* A class's iconic token (tokens.json "<playbook>#class"; also the Ghost,
+   Revenant and Thrall inserts): at the head of its page, standing at the right of the class's name; on Welcome to
+   Stonetop, floated beside the paragraph that introduces the class. */
+.class-tokens {
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+}
+.class-tokens .stat-token { height: 64px; width: auto; object-fit: contain; }
+.class-tokens.many .stat-token + .stat-token { margin-left: -16px; }
+p:has(> .class-tokens) { display: flow-root; }
+p > .class-tokens { float: right; margin: 0 -0.15rem 0.15rem 0.5rem; }
+h1.page-title:has(> .class-tokens) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+h1.page-title > .class-tokens .stat-token { height: 200px; }
 .stat-block .stat-note {
   margin: 0.25rem 0 0;
   color: var(--ink);
@@ -1135,32 +1171,59 @@ h3 .book-icon,
   border-color: rgba(var(--head-rgb), .45);
   color: var(--link-hover);
 }
+/* Tiles: the block's tokens over its name, the whole tile the link to the
+   block; in the A-Z list the page it is on under that. */
 ul.bestiary {
   list-style: none;
-  margin: 0.2rem 0 1rem;
+  margin: 0.3rem 0 1rem;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 0.7rem 0.4rem;
 }
 ul.bestiary li {
-  margin: 0 0 0.2rem;
-  padding-left: 1.4rem;
-  text-indent: -1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   break-inside: avoid;
-  line-height: 1.35;
+  line-height: 1.25;
+  min-width: 0;
 }
-ul.bestiary li .book-icon {
-  width: 1.05em;
-  height: 1.05em;
-  vertical-align: -0.15em;
-  margin-right: 0.35rem;
-  text-indent: 0;
+ul.bestiary a.be-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
 }
-ul.bestiary .be-from {
-  font-size: 0.85em;
+ul.bestiary a.be-tile .be-name {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  font-size: 0.92rem;
+}
+ul.bestiary .be-token {
+  height: 80px;
+  min-width: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+ul.bestiary .be-token img {
+  max-height: 80px;
+  max-width: 80px;
+  width: auto;
+  height: auto;
+}
+ul.bestiary .be-token.many img + img { margin-left: -28px; }
+ul.bestiary .be-token.many img { max-height: 68px; }
+ul.bestiary a.be-from {
+  font-size: 0.78rem;
   color: var(--muted);
+  text-decoration: none;
 }
-ul.bestiary .be-from::before { content: "— "; }
-ul.bestiary .be-from a { color: inherit; }
-ul.bestiary .be-from a:hover { color: var(--link-hover); }
+ul.bestiary a.be-from:hover { color: var(--link-hover); }
+h3.be-page { margin: 1rem 0 0.3rem; }
 
 /* A row's own table, nested in its cell: Ruined Tower's treasure ("2 Some…
    (roll 1d6 or pick)" over "1 …dark ice" to "5-6 …aetherium"), Ustrina's
@@ -2029,6 +2092,14 @@ li.check-item input.wiki-check:checked + span {
   background: var(--bg);
   border: 1px solid var(--rule);
   filter: invert(1) hue-rotate(180deg);
+}
+.wiki-preview .pv-thumb.pv-token {
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  border: 0;
+  background: none;
+  filter: none;
 }
 .wiki-preview .pv-excerpt {
   margin: 0;

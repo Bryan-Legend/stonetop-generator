@@ -1405,6 +1405,24 @@ def render_stat_block(
             in_questions = True
             other.append("Questions")
             continue
+        # The prose under a block may give a lesser creature's stats in
+        # passing — "… useful companions (HP 10;" / "Armor 1; Damage d8;
+        # Instinct to earn their master's respect). And …" (the Shantyara's
+        # apprentices) — which read as the block's own stat lines. Once the
+        # notes have begun, a line carries on a note whose bracket is still
+        # open, and a long sentence is a note whatever stat it names.
+        if other and seen_instinct and not line.startswith(("•", "·", ">")):
+            last = _defmt(other[-1])
+            # …or a quote: 'your instinct becomes "Devotion:' / 'act in the
+            # glasbren's interests."' (the Glasbren).
+            if last.count("(") > last.count(")") or last.count('"') % 2:
+                other[-1] = _cat(other[-1], line)
+                continue
+            if len(line) > 100 and not re.match(
+                r"(damage|hp|instinct|cost|special qualit|armor)\b", low
+            ):
+                other.append(line)
+                continue
         if not tags and re.match(r"^Threat\b", line, re.I):
             tags = line
             continue
@@ -1439,6 +1457,18 @@ def render_stat_block(
                 # "Armor 4 (resilience), 1 vs." / "bronze (blubbery hide)":
                 # what the armor is weaker against is on the next line.
                 or re.search(r"\bvs\.?$", stats[-1].rstrip())
+                # "Instinct to cleanse the world of the" / "Howling Curse":
+                # an Instinct stopping on a little word goes on, before any
+                # move has begun (the Shantyara's became a move).
+                or (
+                    not moves
+                    and re.match(
+                        r"instinct\b.*\b(?:the|of|a|an|to|and|or|their|its|"
+                        r"his|her|for|in|on|with|from|by)$",
+                        stats[-1].strip(),
+                        re.I,
+                    )
+                )
             )
         ):
             stats[-1] = _cat(stats[-1], line)
@@ -1552,6 +1582,11 @@ def render_stat_block(
                 )
                 if is_prose:
                     other.append(line)
+                    continue
+                # "Mercilessly cut down the condemned," / "and any who
+                # protect them": a move wrapping onto a lower-case line.
+                if moves and not other and line[0:1].islower():
+                    moves[-1] = _cat(moves[-1], line)
                     continue
                 if len(line) < 100:
                     moves.append(_same(line.lstrip("•·> ").strip(), line))
@@ -2873,7 +2908,10 @@ def structure_html(
                     haz_name = _shown_name(bare.rstrip(":"))
                     hid = anchors.add(haz_name, caps_label=True)
                     parts_h = [
-                        f'<div class="hazard-block" id="{html.escape(hid)}">',
+                        # (a creature written up as a hazard — the Wasps,
+                        # a Bat Swarm — may carry a token like a stat block)
+                        f'<div class="hazard-block" id="{html.escape(hid)}">'
+                        + token_html(current_slug, hid),
                         f'<h3 class="stat-name">{ic}'
                         f"{html.escape(haz_name)}</h3>",
                     ]

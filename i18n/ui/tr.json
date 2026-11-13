@@ -171,7 +171,9 @@
     "lede": "İki kitaptaki tüm istatistik blokları, A'dan Z'ye – toplam {n}. Bloğun tamamını görmek için bir adın üzerine gel; gitmek için tıkla.",
     "note": "Basılı kitaplarda yok: viki bu listeyi kitapların istatistik bloklarından derler.",
     "excerpt": "İki Stonetop kitabındaki tüm istatistik blokları, A'dan Z'ye – {n} yaratık, ruh ve insan, her biri kendi bloğuna ve sayfasına bağlantılı.",
-    "letters": "Bir harfe git"
+    "letters": "Bir harfe git",
+    "by_location": "Konuma göre",
+    "alphabetical": "Alfabetik"
   },
   "page_words": [
     "s.",

@@ -1136,6 +1136,10 @@ def build_nav_items(
             # Section ids stay English so deep links survive a language
             # switch; only the label the reader sees is translated.
             sec_names = (page_tr or {}).get("sections") or {}
+            if art.get("kind") == "bestiary":
+                bw = bestiary_strings((locale or {}).get("ui"))
+                sec_names = {"by-location": bw["by_location"],
+                             "alphabetical": bw["alphabetical"]}
             sub = []
             for sec in secs:
                 sid = html.escape(sec["id"])
@@ -1524,8 +1528,12 @@ def write_localized_pages(
                 h1_cls += " pb-title"
             # An arcanum carries its name on the card's face, as in English.
             if 'class="arcana-card' not in body:
+                # The class's (or insert's) token, as on the English page.
+                from .tokens import token_html
+                tok = token_html(slug, "class", "class-tokens").replace(
+                    'src="images/', 'src="../images/')
                 body = (
-                    f'<h1 class="{h1_cls}">{html.escape(title)}</h1>\n' + body
+                    f'<h1 class="{h1_cls}">{tok}{html.escape(title)}</h1>\n' + body
                 )
             navs = dict(section_navs)
             html_out = page_shell(
@@ -1547,9 +1555,11 @@ def write_localized_pages(
             written.append(f"{code}/{slug}.html")
             if covered:
                 local_titles[slug] = title
+                from .tokens import class_token_image
                 entry = {
                     "title": title,
                     "excerpt": page.get("description") or "",
+                    "image": class_token_image(slug),
                     "sections": extract_section_html_blocks(
                         body, (sections_by_slug or {}).get(slug, [])
                     ),
@@ -2020,6 +2030,8 @@ def bestiary_article(book2: dict) -> dict:
 
 BESTIARY_FALLBACK = {
     "title": "Bestiary",
+    "by_location": "By Location",
+    "alphabetical": "Alphabetical",
     "lede": (
         "Every stat block in both books, A to Z — {n} of them. Hover a name "
         "for the whole block; click it to go there."
@@ -2157,6 +2169,8 @@ def bestiary_entries(articles: list[dict], previews: dict) -> list[dict]:
                     "name": name,
                     "icon": icon.group(0) if icon else "",
                     "from": display_title(art),
+                    # the books' order: the page's place, then the block's
+                    "order": len(entries),
                 }
             )
     entries.sort(key=lambda e: (_bestiary_key(e["name"]), e["from"]))
@@ -2217,33 +2231,61 @@ def bestiary_html(
             return "letter-other"
         return "letter-" + letter.lower()
 
+    def tile(ent: dict, with_from: bool) -> str:
+        # A tile: the block's tokens (all of a group's) over its name, the
+        # whole of it the link to the block; in the A-Z list, the page it is
+        # on under that.
+        from .tokens import thumb_html
+
+        page = ent.get("page_href") or f'{ent["slug"]}.html'
+        href = f'{page}#{ent["id"]}'
+        lang = ' lang="en"' if ent.get("english") else ""
+        where = (
+            f'<a class="wiki-link be-from" href="{e(page)}" '
+            f'data-slug="{e(ent["slug"])}">{e(ent["from"])}</a>'
+            if with_from else ""
+        )
+        return (
+            f'<li{lang}><a class="wiki-link be-tile" href="{e(href)}" '
+            f'data-slug="{e(ent["slug"])}">'
+            f"{thumb_html(ent['slug'], ent['id'], rel_prefix)}"
+            f'<span class="be-name">{e(ent["name"])}</span></a>{where}</li>'
+        )
+
     parts = [
         f'<h1 class="page-title">{e(words["title"])}</h1>',
         f'<p class="lede">{e(words["lede"])}</p>',
-        f'<p class="be-note">{e(words["note"])}</p>',
+    ]
+    # By location first: a heading per page in the books' order (its title,
+    # linked), then its blocks as the page prints them.
+    parts.append(f'<h2 id="by-location">{e(words["by_location"])}</h2>')
+    by_page: dict[str, list[dict]] = {}
+    for ent in sorted(entries, key=lambda x: x.get("order", 0)):
+        by_page.setdefault(ent["slug"], []).append(ent)
+    for slug, ents in by_page.items():
+        first = ents[0]
+        page = first.get("page_href") or f"{slug}.html"
+        parts.append(
+            f'<h3 class="be-page"><a class="wiki-link" href="{e(page)}" '
+            f'data-slug="{e(slug)}">{e(first["from"])}</a></h3>'
+        )
+        parts.append(
+            '<ul class="bestiary">' + "".join(tile(x, False) for x in ents) + "</ul>"
+        )
+    # Then A-Z, under a letter bar.
+    parts.append(f'<h2 id="alphabetical">{e(words["alphabetical"])}</h2>')
+    parts.append(
         f'<nav class="be-letters" aria-label="{e(words["letters"])}">'
         + "".join(f'<a href="#{e(letter_id(l))}">{e(l)}</a>' for l in letters)
-        + "</nav>",
-    ]
+        + "</nav>"
+    )
     for letter in letters:
-        parts.append(f'<h2 id="{e(letter_id(letter))}">{e(letter)}</h2>')
-        items = []
-        for ent in groups[letter]:
-            page = ent.get("page_href") or f'{ent["slug"]}.html'
-            href = f'{page}#{ent["id"]}'
-            icon = ent["icon"]
-            if rel_prefix:
-                icon = icon.replace('src="images/', f'src="{rel_prefix}images/')
-            lang = ' lang="en"' if ent.get("english") else ""
-            items.append(
-                f"<li{lang}>{icon}"
-                f'<a class="wiki-link" href="{e(href)}" '
-                f'data-slug="{e(ent["slug"])}">{e(ent["name"])}</a> '
-                f'<span class="be-from"><a class="wiki-link" '
-                f'href="{e(page)}" data-slug="{e(ent["slug"])}">'
-                f'{e(ent["from"])}</a></span></li>'
-            )
-        parts.append('<ul class="bestiary">' + "".join(items) + "</ul>")
+        parts.append(f'<h3 id="{e(letter_id(letter))}">{e(letter)}</h3>')
+        parts.append(
+            '<ul class="bestiary">'
+            + "".join(tile(ent, True) for ent in groups[letter])
+            + "</ul>"
+        )
     return "\n".join(parts)
 
 

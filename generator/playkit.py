@@ -165,8 +165,13 @@ def _formats(urls: dict) -> str:
     return " · ".join(_a(url, names.get(k, k)) for k, url in urls.items())
 
 
-def _li(label: str, inner: str) -> str:
-    return f"<li><strong>{html.escape(label)}</strong>: {inner}</li>"
+def _li(label: str, inner: str, page: str | None = None) -> str:
+    """A row: the bold name — linked to its wiki ``page`` when given (the
+    full list names each playbook) — then its PDFs."""
+    name = f"<strong>{html.escape(label)}</strong>"
+    if page:
+        name = f'<a class="wiki-link" href="{page}.html" data-slug="{page}">{name}</a>'
+    return f"<li>{name}: {inner}</li>"
 
 
 def playkit_html(slug: str, code: str | None = None) -> str:
@@ -179,10 +184,10 @@ def playkit_html(slug: str, code: str | None = None) -> str:
     if slug in FULL_LIST:
         items.append(f"<li>{_a(d['all'], _ui('all', 'All nine character playbooks'))}</li>")
         for pb, urls in playbooks.items():
-            items.append(_li(_title(pb), _formats(urls)))
+            items.append(_li(_title(pb), _formats(urls), pb))
         items.append(f"<li>{_a(d['inserts'], _ui('inserts', 'Playbook inserts'))}</li>")
         items.append(_li(_ui("gm", "GM playbook"), _formats(d["gm"])))
-        items.append(_li(_title("steading-playbook"), _formats(d["steading-playbook"])))
+        items.append(_li(_title("steading-playbook"), _formats(d["steading-playbook"]), "steading-playbook"))
         names = {**handout_terms(None), **handout_terms(code)}
         hand = d.get("handouts") or {}
         for key in ("setting-overview", "moves-gear"):
@@ -215,11 +220,70 @@ def playkit_html(slug: str, code: str | None = None) -> str:
     )
 
 
+# Pages that introduce the nine classes, one bold name to a paragraph ("The
+# Blessed is a nature priest…"): each name links to its playbook.
+CLASS_LIST_PAGES = {"welcome-to-stonetop": "book1"}
+CLASSES = ("the-blessed", "the-fox", "the-heavy", "the-judge", "the-lightbearer",
+           "the-marshal", "the-ranger", "the-seeker", "the-would-be-hero")
+
+
+def class_terms(slug: str, code: str | None) -> dict[str, str]:
+    """``{playbook slug: the bold name the page gives it}`` — read off the
+    English corpus, and in a translation off the same line of its corpus
+    translation (the line whose first bold run names the class)."""
+    def body(path):
+        return [l for l in path.read_text(encoding="utf-8").splitlines() if not l.startswith("#")]
+    book = CLASS_LIST_PAGES[slug]
+    en_p = REPO_ROOT / "extracted" / book / f"{slug}.txt"
+    if not en_p.is_file():
+        return {}
+    en = body(en_p)
+    tr = en
+    if code:
+        tr_p = REPO_ROOT / "i18n" / "corpus" / code / book / f"{slug}.txt"
+        if not tr_p.is_file():
+            return {}
+        tr = body(tr_p)
+        if len(tr) != len(en):
+            return {}
+    got: dict[str, str] = {}
+    for i, line in enumerate(en):
+        m = re.match(r"P\t<b>(.*?)</b>", line)
+        if not m:
+            continue
+        key = re.sub(r"[^a-z]+", "-", m.group(1).lower()).strip("-")
+        if key in CLASSES and key not in got:
+            t = re.match(r"P\t<b>(.*?)</b>", tr[i])
+            if t:
+                got[key] = t.group(1).strip()
+    return got
+
+
+def link_classes(body: str, slug: str, code: str | None = None) -> str:
+    """Each class's bold name, the first time, linked to its playbook, with
+    the class's iconic token (when one is chosen) floated beside it."""
+    for target, term in class_terms(slug, code).items():
+        # An apostrophe may be escaped on the page ("L&#x27;Apprenti Héros").
+        esc = re.escape(html.escape(term, quote=False)).replace("'", "(?:'|&#x27;|&#39;)")
+        rx = re.compile(r"<strong>" + esc + r"</strong>")
+        for m in rx.finditer(body):
+            if _inside(body, m.start()):
+                continue
+            from .tokens import token_html
+            body = (body[:m.start()] + token_html(target, "class", "class-tokens")
+                    + f'<a class="wiki-link" href="{target}.html"'
+                    f' data-slug="{target}">' + m.group(0) + "</a>" + body[m.end():])
+            break
+    return body
+
+
 def add_playkit(body: str, slug: str, code: str | None = None) -> str:
     """``body`` with the site, the publisher and the handouts linked, and
     the page's PDFs added — at the end, or before the heading
     ``PLACE_BEFORE`` names."""
     body = link_mentions(body, code)
+    if slug in CLASS_LIST_PAGES:
+        body = link_classes(body, slug, code)
     section = playkit_html(slug, code)
     if not section:
         return body

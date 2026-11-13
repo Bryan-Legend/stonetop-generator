@@ -177,6 +177,8 @@
     "lede": "Všechny bloky statistik z obou knih, od A do Z – celkem {n}. Najeďte na jméno a uvidíte celý blok; kliknutím na něj přejdete.",
     "note": "V tištěných knihách není: wiki sestavuje tento seznam z jejich bloků statistik.",
     "excerpt": "Všechny bloky statistik z obou knih Stonetopu, od A do Z – {n} tvorů, duchů a lidí, každý s odkazem na svůj blok a stránku.",
-    "letters": "Přejít na písmeno"
+    "letters": "Přejít na písmeno",
+    "by_location": "Podle místa",
+    "alphabetical": "Abecedně"
   }
 }

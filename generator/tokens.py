@@ -59,8 +59,12 @@ def out_name(token: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", stem.lower()).strip("-") + ".webp"
 
 
-def token_html(slug: str | None, anchor: str | None) -> str:
-    """The ``<span class="stat-tokens">`` for a stat block, or ``""``."""
+def token_html(slug: str | None, anchor: str | None, wrap: str = "stat-tokens") -> str:
+    """The ``<span class="stat-tokens">`` for a stat block, or ``""``.
+
+    ``wrap`` names the span for other places a token stands: a class's
+    iconic token (``<playbook>#class``) is ``class-tokens``, at the head of
+    its playbook and beside its name on Welcome to Stonetop."""
     if not slug or not anchor:
         return ""
     picked = choices().get(f"{slug}#{anchor}")
@@ -75,7 +79,7 @@ def token_html(slug: str | None, anchor: str | None) -> str:
             f'width="{w}" height="{h}" loading="lazy">'
         )
     many = " many" if len(imgs) > 1 else ""
-    return f'<span class="stat-tokens{many}" aria-hidden="true">{"".join(imgs)}</span>'
+    return f'<span class="{wrap}{many}" aria-hidden="true">{"".join(imgs)}</span>'
 
 
 def _dims(name: str) -> tuple[int, int]:
@@ -141,3 +145,28 @@ def write_images(site: Path) -> None:
     print(f"  tokens: {len(wanted)} images ({made} written, {gone} removed)")
     for t in missing:
         print(f"WARNING: token source missing, no image: {t}")
+
+
+def class_token_image(slug: str | None) -> str | None:
+    """The first token of a class or insert (``<slug>#class``), as a path
+    under ``images/`` — the page's hover-preview thumbnail."""
+    picked = choices().get(f"{slug}#class") if slug else None
+    return f"tokens/{out_name(picked[0])}" if picked else None
+
+
+def thumb_html(slug: str, anchor: str, prefix: str = "") -> str:
+    """A Bestiary tile's figure: every token chosen for the block (a group
+    shows them all, overlapping), or the empty box, so the names line up."""
+    picked = choices().get(f"{slug}#{anchor}")
+    if not picked:
+        return '<span class="be-token" aria-hidden="true"></span>'
+    imgs = []
+    for t in picked:
+        name = out_name(t)
+        w, h = _dims(name)
+        imgs.append(
+            f'<img src="{prefix}{OUT_DIR}/{html.escape(name)}" alt="" '
+            f'width="{w}" height="{h}" loading="lazy">'
+        )
+    many = " many" if len(imgs) > 1 else ""
+    return f'<span class="be-token{many}" aria-hidden="true">{"".join(imgs)}</span>'

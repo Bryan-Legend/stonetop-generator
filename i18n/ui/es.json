@@ -175,6 +175,8 @@
     "lede": "Todos los bloques de estadísticas de ambos libros, de la A a la Z: {n} en total. Pasa el cursor sobre un nombre para ver el bloque entero; haz clic para ir a él.",
     "note": "No está en los libros impresos: la wiki reúne esta lista a partir de sus bloques de estadísticas.",
     "excerpt": "Todos los bloques de estadísticas de los dos libros de Stonetop, de la A a la Z: {n} criaturas, espíritus y personas, cada una enlazada a su bloque y a su página.",
-    "letters": "Ir a una letra"
+    "letters": "Ir a una letra",
+    "by_location": "Por ubicación",
+    "alphabetical": "Alfabético"
   }
 }

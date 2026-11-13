@@ -2469,8 +2469,12 @@
       bubble.classList.remove("pv-arcana");
       let thumb = "";
       if (data.image) {
+        // A class's or insert's token (images/tokens/) is a figure, not
+        // a map: shown whole and in its own colours.
         thumb =
-          '<img class="pv-thumb" src="' +
+          '<img class="pv-thumb' +
+          (data.image.indexOf("tokens/") === 0 ? " pv-token" : "") +
+          '" src="' +
           SCRIPT_BASE +
           "images/" +
           data.image +

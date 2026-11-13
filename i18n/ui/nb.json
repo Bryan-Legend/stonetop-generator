@@ -176,6 +176,8 @@
     "lede": "Hver statistikkblokk i begge bøkene, A til Å – {n} i alt. Hold pekeren over et navn for å se hele blokken; klikk for å gå dit.",
     "note": "Finnes ikke i de trykte bøkene: wikien setter sammen lista fra statistikkblokkene deres.",
     "excerpt": "Hver statistikkblokk i begge Stonetop-bøkene, A til Å – {n} vesener, ånder og mennesker, hver lenket til sin blokk og sin side.",
-    "letters": "Gå til en bokstav"
+    "letters": "Gå til en bokstav",
+    "by_location": "Etter sted",
+    "alphabetical": "Alfabetisk"
   }
 }
