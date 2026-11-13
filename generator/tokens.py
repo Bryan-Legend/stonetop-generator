@@ -25,6 +25,8 @@ TOKENS_FILE = REPO_ROOT / "tokens.json"
 SOURCE_ROOTS = {
     "F": REPO_ROOT / "2 Minute Tabletop" / "Fairbanks - Preferred",
     "D": REPO_ROOT / "2 Minute Tabletop" / "Davy",
+    # Recolours, made by the build from recolors.json (generator/recolor.py).
+    "R": REPO_ROOT / "2 Minute Tabletop" / "Recolors",
 }
 OUT_DIR = "images/tokens"
 SIZE = 400  # longest side kept: the sources are 375px, so the figure at full size
@@ -106,6 +108,9 @@ def configure(site: Path) -> None:
 def write_images(site: Path) -> None:
     """Write ``images/tokens/`` for the chosen tokens; drop the ones no longer
     chosen. A token whose source PNG is missing keeps the image it had."""
+    from .recolor import make_recolors
+
+    make_recolors(SOURCE_ROOTS)
     out = site / OUT_DIR
     wanted: dict[str, str] = {}
     for picked in choices().values():

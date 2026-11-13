@@ -1,0 +1,114 @@
+{
+ "version": 1,
+ "about": "2 Minute Tabletop tokens recoloured for Stonetop. Each key is the recoloured token's path under the R: set (2 Minute Tabletop/Recolors/, made by the build, gitignored); choose it in tokens.json as R:<key>. 'for' names the tokens.json entries the contact sheet offers it on. Format: generator/recolor.py.",
+ "recolors": {
+  "Beast/Blue Magpies.png": {
+   "from": "D:Beast/Swarm of Birds.png",
+   "for": ["the-ruined-tower#blue-magpie"],
+   "note": "The Ruined Tower's blue magpies: 'like big crows with white-and-azure plumage', a horde. The front crow azure, the flock behind it pale blue-white, red eyes dark, the shadow left alone.",
+   "alpha_min": 130, "dark_max": 0.12, "stretch": 2.0,
+   "rules": [
+    {"hue": [0.92, 0.05], "sat_min": 0.45, "val_min": 0.35, "color": [20, 20, 28]},
+    {"sat_min": 0.5, "ramp": [[0, [10, 12, 22]], [0.2, [18, 50, 115]], [0.4, [40, 125, 215]], [0.6, [130, 195, 245]], [1, [255, 255, 255]]]},
+    {"ramp": [[0, [30, 40, 60]], [0.15, [120, 160, 210]], [0.3, [190, 218, 242]], [1, [245, 249, 253]]]}
+   ]
+  },
+  "Construct/Khyagseng 1.png": {
+   "from": "F:Plant/Topiary Lion 1.png",
+   "for": ["rime-lords#khyagseng"],
+   "note": "Rime Lords' khyagseng: dark-ice sculptures of stylized lions, always in pairs. The topiary's green turned to dark blue ice, its shading kept.",
+   "alpha_min": 130, "dark_max": 0.1, "stretch": 1.7,
+   "rules": [
+    {"hue": [0.2, 0.55], "sat_min": 0.15, "ramp": [[0, [6, 8, 18]], [0.35, [18, 34, 70]], [0.55, [42, 78, 132]], [0.7, [96, 140, 192]], [1, [200, 224, 246]]]}
+   ]
+  },
+  "Construct/Khyagseng 2.png": {
+   "from": "F:Plant/Topiary Lion 2.png",
+   "for": ["rime-lords#khyagseng"],
+   "note": "Rime Lords' khyagseng: dark-ice sculptures of stylized lions, always in pairs. The topiary's green turned to dark blue ice, its shading kept.",
+   "alpha_min": 130, "dark_max": 0.1, "stretch": 1.7,
+   "rules": [
+    {"hue": [0.2, 0.55], "sat_min": 0.15, "ramp": [[0, [6, 8, 18]], [0.35, [18, 34, 70]], [0.55, [42, 78, 132]], [0.7, [96, 140, 192]], [1, [200, 224, 246]]]}
+   ]
+  },
+  "Beast/Ghostly Hound 1.png": {
+   "from": "D:Beast/Dire Wolf.png",
+   "for": ["the-pale-hunter#ghostly-hounds"],
+   "note": "The Pale Hunter's hounds: 'savage white dogs'. Davy's Dire Wolf whitened, red eyes kept.",
+   "alpha_min": 130, "dark_max": 0.1, "normalize": [5, 97],
+   "rules": [
+    {"hue": [0.93, 0.04], "sat_min": 0.45, "val_min": 0.3, "keep": true},
+    {"ramp": [[0, [52, 56, 68]], [0.3, [150, 156, 170]], [0.6, [222, 226, 233]], [1, [252, 252, 254]]]}
+   ]
+  },
+  "Beast/Ghostly Hound 2.png": {
+   "from": "D:Fey/Yeth Hound.png",
+   "for": ["the-pale-hunter#ghostly-hounds"],
+   "note": "The Pale Hunter's hounds: 'savage white dogs'. Davy's Yeth Hound whitened, red eyes kept.",
+   "alpha_min": 130, "dark_max": 0.1, "normalize": [5, 97],
+   "rules": [
+    {"hue": [0.93, 0.04], "sat_min": 0.45, "val_min": 0.3, "keep": true},
+    {"ramp": [[0, [52, 56, 68]], [0.3, [150, 156, 170]], [0.6, [222, 226, 233]], [1, [252, 252, 254]]]}
+   ]
+  },
+  "Beast/Ghostly Hound 3.png": {
+   "from": "D:Monstrosity/Worg 2.png",
+   "for": ["the-pale-hunter#ghostly-hounds"],
+   "note": "The Pale Hunter's hounds: 'savage white dogs'. Davy's Worg whitened, red eyes kept.",
+   "alpha_min": 130, "dark_max": 0.1, "normalize": [5, 97],
+   "rules": [
+    {"hue": [0.93, 0.04], "sat_min": 0.45, "val_min": 0.3, "keep": true},
+    {"ramp": [[0, [52, 56, 68]], [0.3, [150, 156, 170]], [0.6, [222, 226, 233]], [1, [252, 252, 254]]]}
+   ]
+  },
+  "Beast/Ghostly Hound 4.png": {
+   "from": "D:Fey/Blink Dog.png",
+   "for": ["the-pale-hunter#ghostly-hounds"],
+   "note": "The Pale Hunter's hounds: 'savage white dogs'. Davy's Blink Dog whitened, red eyes kept.",
+   "alpha_min": 130, "dark_max": 0.13, "normalize": [5, 97],
+   "rules": [
+    {"hue": [0.93, 0.04], "sat_min": 0.45, "val_min": 0.3, "keep": true},
+    {"ramp": [[0, [52, 56, 68]], [0.3, [150, 156, 170]], [0.6, [222, 226, 233]], [1, [252, 252, 254]]]}
+   ]
+  },
+  "Fey/Pale Hunter.png": {
+   "from": "D:Fey/Forest Guardian.png",
+   "for": ["the-pale-hunter#the-pale-hunter"],
+   "note": "The Pale Hunter: pale, white. Davy's Forest Guardian, its moss and green bleached, antlers kept dark.",
+   "alpha_min": 130, "dark_max": 0.1, "normalize": [5, 97],
+   "rules": [
+    {"ramp": [[0, [44, 48, 60]], [0.3, [140, 146, 160]], [0.6, [214, 218, 226]], [1, [250, 250, 252]]]}
+   ]
+  },
+  "Beast/Butcherbird.png": {
+   "from": "D:Beast/Hawk2.png",
+   "for": ["the-great-wood#butcherbird"],
+   "note": "'Black and wine-red plumage'. Davy's Hawk: reds to wine, the rest black, beak and feet kept.",
+   "alpha_min": 130, "dark_max": 0.12,
+   "rules": [
+    {"hue": [0.11, 0.2], "sat_min": 0.55, "keep": true},
+    {"hue": [0.94, 0.045], "sat_min": 0.5, "ramp": [[0, [40, 6, 18]], [0.5, [120, 22, 48]], [1, [175, 45, 75]]]},
+    {"ramp": [[0, [12, 10, 14]], [0.6, [40, 36, 44]], [1, [78, 72, 84]]]}
+   ]
+  },
+  "Beast/Totnatter.png": {
+   "from": "D:Beast/Legendary Snake.png",
+   "for": ["the-dread-river#totnatter"],
+   "note": "'Grey-white rattlesnakes'. Davy's Legendary Snake greyed, tongue kept.",
+   "alpha_min": 130, "dark_max": 0.1, "normalize": [5, 97],
+   "rules": [
+    {"hue": [0.85, 0.05], "sat_min": 0.3, "keep": true},
+    {"ramp": [[0, [58, 58, 60]], [0.35, [150, 150, 148]], [0.7, [218, 216, 210]], [1, [246, 244, 238]]]}
+   ]
+  },
+  "Construct/Bronze Colossus.png": {
+   "from": "D:Construct/Admantine Golem 1.png",
+   "for": ["forge-lords#bronze-colossus"],
+   "note": "'A muscular Forge Lord cast in bronze'. Davy's Adamantine Golem, its iron and lava turned to bronze.",
+   "alpha_min": 130, "dark_max": 0.08, "normalize": [5, 98],
+   "rules": [
+    {"ramp": [[0, [46, 26, 10]], [0.3, [112, 66, 28]], [0.6, [176, 116, 52]], [0.85, [222, 170, 96]], [1, [246, 214, 150]]]}
+   ]
+  }
+ }
+}
