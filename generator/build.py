@@ -142,6 +142,14 @@ class BuildClock:
                 print(f"    {secs:7.2f}s  {key}")
 
 
+# Sections a chapter's sidebar lists beside its printed contents (by id);
+# a leading ">" indents one under the entry above it.
+NAV_EXTRA = {"playing-the-game": [
+    "the-moves", ">basic-moves", ">special-moves", ">follower-moves",
+    ">expedition-moves", ">homefront-moves",
+]}
+
+
 def arcana_back_html(art: dict, ui: dict | None = None) -> str:
     """The link an arcanum's page opens with, back to its hub, and the
     number printed on the card — in the page's language when ``ui`` has it."""
@@ -834,6 +842,16 @@ def main(argv: list[str] | None = None) -> None:
         matched = match_toc_to_sections(
             toc_labels, sections_by_slug.get(art["slug"]) or []
         )
+        extra = NAV_EXTRA.get(art["slug"])
+        if matched and extra:
+            # Listed in the page's own order, the contents' entries and these.
+            want = {m["id"] for m in matched} | {x.lstrip(">") for x in extra}
+            subs = {x[1:] for x in extra if x.startswith(">")}
+            matched = [
+                {"name": s["name"], "id": s["id"], **({"sub": True} if s["id"] in subs else {})}
+                for s in sections_by_slug.get(art["slug"]) or []
+                if s["id"] in want
+            ]
         if matched:
             section_navs[art["slug"]] = matched
     # The bestiary's two lists, in the sidebar (named per language in

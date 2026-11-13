@@ -1144,8 +1144,9 @@ def build_nav_items(
             for sec in secs:
                 sid = html.escape(sec["id"])
                 sname = html.escape(sec_names.get(sec["id"]) or sec["name"])
+                sub_cls = " nav-sub" if sec.get("sub") else ""
                 sub.append(
-                    f'<li class="nav-section">'
+                    f'<li class="nav-section{sub_cls}">'
                     f'<a href="{href}#{sid}">{sname}</a></li>'
                 )
             items.append(

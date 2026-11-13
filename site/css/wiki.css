@@ -528,6 +528,7 @@ html, body {
 .toc li.current li.nav-section a {
   color: var(--ink);
 }
+.toc li.nav-sub a { padding-left: 1.3rem; }  /* under the entry above */
 .toc li.hidden { display: none; }
 
 .arcana-index ol {

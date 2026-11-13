@@ -4439,6 +4439,24 @@ def structure_html(
     return html_body, anchors.sections
 
 
+def _drop_repeated_heads(lines: list[str]) -> list[str]:
+    """Drop a section heading the book prints again over the next column of
+    the same section, with no other heading between (Playing the Game's
+    "Seasonal gains", over each half of its list): one section, not two."""
+    out: list[str] = []
+    last = None
+    for line in lines:
+        if line.startswith(M_H2):
+            name = _defmt(line[len(M_H2):]).strip()
+            if name and name == last:
+                continue
+            last = name
+        elif line.startswith(M_H3):
+            last = None
+        out.append(line)
+    return out
+
+
 def article_html(
     lines: list[str],
     article_title: str,
@@ -4461,6 +4479,7 @@ def article_html(
 
     Returns (body_html, excerpt_text, sections).
     """
+    lines = _drop_repeated_heads(lines)
     body, sections = structure_html(
         lines,
         article_title,
