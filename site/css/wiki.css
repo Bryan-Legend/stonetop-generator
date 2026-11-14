@@ -3818,3 +3818,29 @@ li.inv-item .inv-slots { display: inline-flex; gap: .2rem; flex: none; }
 li.inv-item .inv-slots input.wiki-check { width: 1rem; height: 1rem; accent-color: var(--accent); cursor: pointer; margin: 0; }
 li.inv-item label { cursor: pointer; }
 li.inv-item .wiki-field { flex: 1; }
+
+/* ----- Theme picker (home page, built by js/wiki.js) ----- */
+.theme-picker {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  margin: .2rem 0 .9rem;
+  font-family: var(--font-sans);
+  font-size: var(--text);
+}
+.theme-picker-label { color: var(--muted); margin-right: .2rem; }
+.theme-option {
+  font: inherit;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .15rem .8rem;
+  cursor: pointer;
+}
+.theme-option:hover { border-color: var(--head); }
+.theme-option[aria-checked="true"] {
+  color: var(--bg);
+  background: var(--head);
+  border-color: var(--head);
+}

@@ -1,0 +1,237 @@
+/* "Book" theme — the printed books' look: black ink on white paper, Caslon
+   for the text, Avara for the heads, Fell for the small-caps labels.
+   Loaded after wiki.css by js/wiki.js when the reader picks it
+   (?theme=book, remembered in localStorage "stonetop-wiki-theme";
+   ?theme=default goes back). It overrides wiki.css's variables first and
+   then only the rules that hard-code the dark ground.
+
+   Fonts (all SIL OFL): Avara Bold by Raphaël Bastide / Velvetyne — the
+   books' own heading face; Libre Caslon Text by Impallari Type, standing in
+   for the books' Adobe Caslon Pro; IM FELL English SC by Igino Marini, the
+   Fell Types the books set their table heads in. */
+
+@font-face {
+  font-family: "Avara";
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/avara-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/libre-caslon-text-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("fonts/libre-caslon-text-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/libre-caslon-text-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IM Fell English SC";
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/im-fell-english-sc-latin-400-normal.woff2") format("woff2");
+}
+
+:root {
+  /* Paper and ink. The books print nothing but black on white; the ground
+     is a hair warm so a screen of it is not a lightbox. */
+  --bg: #fdfcf9;
+  --bg-page: #fdfcf9;
+  --bg-elev: #f3f1ec;
+  --bg-hover: #e9e6df;
+  --ink: #111;
+  --muted: #5e5852;
+  --rule: #b9b4ab;
+  /* Structure is black too — the books' page-number plaques, rules and
+     ornamental bands are all solid ink. */
+  --accent: #111;
+  --accent-rgb: 17, 17, 17;
+  --accent-deep: #000;
+  --accent-soft: #f3f1ec;
+  --head: #000;
+  --head-rgb: 0, 0, 0;
+  --link: #000;
+  --link-rgb: 0, 0, 0;
+  --link-hover: #000;
+  --quote: #1c1c1c;
+  --danger: #b01818;
+  /* The reader's own writing: ballpoint on the printed sheet. */
+  --answer: #1f3f8c;
+  --answer-rgb: 31, 63, 140;
+  --card: #fff;
+  --panel: #fff;
+  --card-wash: none;
+  --card-wash-deep: none;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .18);
+  --shadow-soft: 0 1px 4px rgba(0, 0, 0, .12);
+  --shadow-panel: none;
+
+  --font-serif: "Avara", "Libre Caslon Text", Georgia, serif;
+  --font-serif-text: "Libre Caslon Text", "Adobe Caslon Pro", "Big Caslon", Georgia, serif;
+  --font-sans: "Libre Caslon Text", "Adobe Caslon Pro", Georgia, serif;
+  --font-quote: "Libre Caslon Text", Georgia, serif;
+  --font-fell: "IM Fell English SC", "Libre Caslon Text", Georgia, serif;
+  /* Libre Caslon runs wide and tall beside Adobe Caslon; a size down keeps
+     the measure the columns were set for. */
+  --content: 14px;
+  --text: 12.5px;
+  --track-text: 0;
+  --track-display: 0;
+}
+
+html { color-scheme: light; }
+
+::selection { background: #c9d5ee; color: #000; }
+
+/* Avara ships a real bold and nothing else, so heads ask for 700. */
+h1, h2, h3, h4,
+.page-title, .content h1, .content h2, .content h3, .content h4,
+.stat-name, .si-title, .index-card h2, .index-card h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--head);
+}
+
+/* The book rules a section head off with a hairline under it. */
+.content h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: .1em;
+}
+
+/* Bold in the text is the books' cross-reference voice — black, not the
+   dark theme's near-white. */
+.content strong { color: inherit; }
+
+/* Links read as the book's bold cross-references, with a hairline to say
+   they go somewhere. */
+.content a, .wiki-preview a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, .35);
+  text-underline-offset: .15em;
+}
+.content a:hover, .wiki-preview a:hover { text-decoration-color: #000; }
+
+/* Fell small caps for the table heads, as printed. */
+.value-table th, .roll-table th, .value-table caption, .roll-table caption,
+table.fs-table th {
+  font-family: var(--font-fell);
+  font-variant: normal;
+  font-weight: 400;
+}
+
+/* Boxed blocks: the books draw moves, stat blocks and info boxes in a black
+   hairline on the paper, with no fill. */
+.stat-block, .hazard-block, .move-block, .discovery-block, .infobox,
+.steading-improvement, .requirement-block, .follower-sheet,
+.value-table, .roll-table, .index-card {
+  background: #fff;
+  background-image: none;
+  border-color: #111;
+  box-shadow: none;
+}
+.index-card:hover { background: var(--bg-elev); background-image: none; }
+
+/* Plaques (numbered steps, bestiary letters): black with white type, like the
+   page-number badges. */
+.content h2 .step-badge, .content li.pb-step > .step-badge, .be-letters a {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+.be-letters a:hover, .be-letters a:focus-visible { background: #444; color: #fff; }
+
+.skip-link, .map-add[aria-pressed="true"] { color: #fff; }
+
+.toc li.current a {
+  color: #000;
+  background: var(--bg-hover);
+  border-left-color: #000;
+}
+
+.pb-roll:hover, .pb-roll:focus-visible,
+.pb-stat:hover .pb-roll, .pb-track:has(.pb-roll):hover .pb-roll {
+  color: #fff;
+  background: #111;
+  border-color: #000;
+}
+.pb-spin-step:hover { color: #fff; }
+.hp-box.is-filled { background: #111; border-color: #000; }
+.tag.danger { border-color: #e2b4b4; }
+
+.arcana-front { background: #fff; }
+
+/* Scrollbars on paper */
+* { scrollbar-color: #9a958d var(--bg-elev); }
+*::-webkit-scrollbar-thumb { background: #b9b4ab; }
+*::-webkit-scrollbar-thumb:hover { background: #7a756d; }
+
+/* Category icons: solid ink, as printed. */
+.book-icon { filter: brightness(0); opacity: 1; }
+
+/* Preview thumbnails are inverted for the dark ground; on paper they are
+   shown as drawn. */
+.wiki-preview .pv-thumb { filter: none; }
+
+/* Dice: a black plaque with white figures, like the page-number badges.
+   Avara's ascent runs well above its figures, so a box sized off the font
+   rose over the line above; the box is sized off Caslon's figures instead,
+   with the plaque centred on them. */
+button.dice-roll {
+  font-family: var(--font-serif-text);
+  font-weight: 700;
+  color: #fff;
+  background: #111;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: none;
+  line-height: 1;
+  padding: .12em .35em .08em;
+  margin: 0 .05em;
+  vertical-align: baseline;
+}
+button.dice-roll:hover, button.dice-roll:focus-visible {
+  filter: none;
+  background: #3a3a3a;
+}
+
+/* Whole-card links (home page, hubs) carry no underline. */
+.content a.index-card, .content a.index-card * { text-decoration: none; }
+
+/* Arcana: the printed cards are white throughout. The dark theme's
+   translucent black fills turn a muddy mauve on paper, so the reverse, the
+   unlock list, the progress track, the consequences and a bound follower
+   are drawn as hairline boxes instead. */
+.arcana-front { border-bottom: 1px solid #111; }
+.arcana-back-face { background: #fff; }
+.arcana-unlock, .arcana-track, .arcana-follower,
+.wiki-preview .pv-full .arcana-unlock {
+  background: #fff;
+  border: 1px solid #111;
+}
+.arcana-unlock { border-left-width: 3px; }
+
+/* Other tints built on the dark theme's wine: on paper they become grey
+   washes or black-on-black, so they are named outright. */
+.value-table-head th, .roll-table-head, .roll-table-cols .roll-cols-head th {
+  background: none;
+  border-bottom: 1px solid #111;
+}
+.roll-table tr.roll-hit > th, .roll-table tr.roll-hit > td { background: #f1ecd8; }
+.search-hit-snippet mark { background: #f3e7a1; color: #000; }
+.hp-box.is-empty { background: #fff; }
+.pb-spin-step { color: #fff; }
+@keyframes roll-hit-flash {
+  from { background: #e6d98f; }
+  to   { background: #f1ecd8; }
+}

@@ -2,6 +2,55 @@
 (function () {
   "use strict";
 
+  /* ---------- Theme -------------------------------------------------------
+   * "book" is the printed books' look (css/theme-book.css, loaded beside
+   * wiki.css); "default" is the wiki's own dark ground. Picked on the home
+   * page's selector or with ?theme=book / ?theme=default on any address;
+   * remembered in localStorage, never synced.
+   * ---------------------------------------------------------------------- */
+  var THEME_KEY = "stonetop-wiki-theme";
+  var THEMES = ["default", "book"];
+  var themeHref = (function () {
+    var me = document.currentScript && document.currentScript.src;
+    return me ? me.replace(/js\/wiki\.js(\?.*)?$/, "css/theme-book.css") : "";
+  })();
+
+  function currentTheme() {
+    try {
+      var t = localStorage.getItem(THEME_KEY);
+      return THEMES.indexOf(t) > 0 ? t : "default";
+    } catch (e) { return "default"; }
+  }
+
+  function setTheme(theme, remember) {
+    if (THEMES.indexOf(theme) < 0) theme = "default";
+    if (remember) {
+      try {
+        if (theme === "default") localStorage.removeItem(THEME_KEY);
+        else localStorage.setItem(THEME_KEY, theme);
+      } catch (e) {}
+    }
+    var link = document.getElementById("theme-css");
+    if (theme === "book" && themeHref) {
+      if (!link) {
+        link = document.createElement("link");
+        link.id = "theme-css";
+        link.rel = "stylesheet";
+        link.href = themeHref;
+        document.head.appendChild(link);
+      }
+    } else if (link) {
+      link.parentNode.removeChild(link);
+    }
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+
+  (function applyTheme() {
+    var m = /[?&]theme=([a-z-]+)/.exec(location.search);
+    if (m) setTheme(m[1], true);
+    else setTheme(currentTheme(), false);
+  })();
+
   /* ---------- Chrome built in the browser, in the reader's language --------
    *
    * The sidebar, the page title and the article are generated, so the build
@@ -92,7 +141,10 @@
     sync_status_on: "Sharing this campaign with the table",
     sync_status_offline:
       "Sync worker unreachable — changes are saved here and will catch up",
-    sync_status_local: "This browser keeps its own copy"
+    sync_status_local: "This browser keeps its own copy",
+    theme_label: "Theme",
+    theme_default: "Dark",
+    theme_book: "Book"
   };
 
   function UI(key, vars) {
@@ -107,6 +159,43 @@
         : whole;
     });
   }
+
+  /* The home page's theme picker, under its introduction. */
+  function mountThemePicker() {
+    var intro = document.querySelector(".content .index-intro");
+    if (!intro || document.querySelector(".theme-picker")) return;
+    var box = document.createElement("div");
+    box.className = "theme-picker";
+    box.setAttribute("role", "radiogroup");
+    box.setAttribute("aria-label", UI("theme_label"));
+    var label = document.createElement("span");
+    label.className = "theme-picker-label";
+    label.textContent = UI("theme_label");
+    box.appendChild(label);
+    THEMES.forEach(function (t) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "theme-option theme-option-" + t;
+      b.setAttribute("role", "radio");
+      b.setAttribute("data-theme", t);
+      b.textContent = UI("theme_" + t);
+      b.addEventListener("click", function () {
+        setTheme(t, true);
+        sync();
+      });
+      box.appendChild(b);
+    });
+    function sync() {
+      var cur = currentTheme();
+      box.querySelectorAll(".theme-option").forEach(function (b) {
+        b.setAttribute("aria-checked",
+          b.getAttribute("data-theme") === cur ? "true" : "false");
+      });
+    }
+    sync();
+    intro.parentNode.insertBefore(box, intro.nextSibling);
+  }
+  mountThemePicker();
 
   /* The book labels the sidebar already carries, for the search results. */
   function bookLabel(book) {
