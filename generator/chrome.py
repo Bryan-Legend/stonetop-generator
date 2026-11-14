@@ -2450,18 +2450,19 @@ def maps_stub_html(articles: list[dict]) -> str:
     as links. Only slugs this build actually produced are linked.
     """
     have = {a["slug"] for a in articles}
-    lic = (
-        f' (<a href="{html.escape(LICENSE_URL)}" rel="license">CC BY-SA 4.0</a>)'
-    )
+    from .playkit import _link, playkit
+
+    overview = "Setting Overview"
+    url = (playkit().get("handouts") or {}).get("setting-overview")
+    if url:
+        overview = _link(url, overview, "Setting Overview handout (PDF)")
     parts = [
         '<h1 class="page-title">Maps</h1>',
         '<p class="lede">Book II opens with two map spreads: '
         "<strong>The Vicinity</strong> (pages 8-9) and "
         "<strong>The World's End</strong> (pages 10-11).</p>",
-        "<p>The maps are <strong>artwork</strong> — &copy; Lucie Arnoux — and "
-        "this wiki publishes only the books' text" + lic + ", so the drawings "
-        "are not reproduced here. Open the Book II PDF to pages 8-11 for them. "
-        "What follows is what the spreads name, linked to its entry.</p>",
+        "<p>Open the Book II PDF to pages 8-11 to view the maps or you can "
+        f"find them in the {overview}.</p>",
     ]
     for spread in MAPS_SPREADS:
         links = [
