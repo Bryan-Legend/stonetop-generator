@@ -99,11 +99,11 @@
 }
 
 :root {
-  /* Pure black ground under parchment type. Only two hues carry meaning:
+  /* Near-black ground under parchment type. Only two hues carry meaning:
      the #cfbea2 parchment of headings, links and icons, and the #5d142b wine
      that does every structural job — bands, fills, rules, washes. */
-  --bg: #000;
-  --bg-page: #000;
+  --bg: #0e0c0c;
+  --bg-page: #0e0c0c;
   --bg-elev: #1c1a1a;
   --bg-hover: #272220;
   --ink: #eee8df;
