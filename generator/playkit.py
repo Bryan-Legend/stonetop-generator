@@ -198,16 +198,14 @@ def playkit_html(slug: str, code: str | None = None) -> str:
         items.append(f"<li>{_a(d['printing'], _ui('printing', 'Printing instructions'))}</li>")
         if d.get("errata"):
             items.append(f"<li>{_a(d['errata'], _ui('errata', 'Errata'))}</li>")
-    elif slug in playbooks:
-        items.append(_li(_title(slug), _formats(playbooks[slug])))
-        items.append(f"<li>{_a(d['inserts'], _ui('inserts', 'Playbook inserts'))}</li>")
-        items.append(f"<li>{_a(d['printing'], _ui('printing', 'Printing instructions'))}</li>")
-    elif slug == "steading-playbook":
-        items.append(_li(_title(slug), _formats(d[slug])))
-        items.append(f"<li>{_a(d['printing'], _ui('printing', 'Printing instructions'))}</li>")
+    elif slug in playbooks or slug == "steading-playbook":
+        # One line, no heading: "PDF spreads · 1-up · 3-up".
+        urls = playbooks[slug] if slug in playbooks else d[slug]
+        return (f'<p class="playkit" id="playkit-pdfs">{html.escape(_ui("pdf", "PDF"))} '
+                f"{_formats(urls)}</p>")
     elif slug in (d.get("insert_pages") or ()):
-        items.append(f"<li>{_a(d['inserts'], _ui('inserts', 'Playbook inserts'))}</li>")
-        items.append(f"<li>{_a(d['printing'], _ui('printing', 'Printing instructions'))}</li>")
+        return (f'<p class="playkit" id="playkit-pdfs">'
+                f"{_a(d['inserts'], _ui('inserts', 'Playbook inserts'))}</p>")
     else:
         return ""
     folder = _a(d["folder"], _ui("folder", "the whole playkit folder"))
