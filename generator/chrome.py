@@ -891,9 +891,16 @@ def override_excerpt(ov: dict) -> str:
     return ""
 
 
-def is_sheet_body(body: str) -> bool:
-    """A character sheet or a follower sheet is a handout, not an article."""
-    return 'class="pb-stats"' in body or "data-sheet" in body
+def is_sheet_body(body: str, art: dict | None = None) -> bool:
+    """A character sheet or a follower sheet is a handout, not an article.
+
+    So is every other part of a split chapter (Invocations, the Ghost, the
+    Revenant, the Initiates of Danu): a box ticked there is a move you know,
+    whether or not the page carries a stat block.
+    """
+    if 'class="pb-stats"' in body or "data-sheet" in body:
+        return True
+    return bool(art and art.get("hub_slug") and art.get("kind") == "article")
 
 
 def chapter_parts_html(art: dict) -> str:
@@ -1545,7 +1552,12 @@ def write_localized_pages(
                 rel_prefix="../",
                 section_navs=navs,
                 content_class=(
-                    "content playbook" if is_sheet_body(body) else "content"
+                    "content playbook"
+                    if is_sheet_body(
+                        body,
+                        next((a for a in articles if a["slug"] == slug), None),
+                    )
+                    else "content"
                 ),
                 description=page.get("description") or "",
                 locale=locale,

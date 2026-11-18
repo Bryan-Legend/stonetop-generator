@@ -1513,7 +1513,58 @@
      "id": "strengthen-your-bond"
     }
    ],
-   "invocations": [],
+   "invocations": [
+    {
+     "kind": "move-block",
+     "name": "BATH OF HEALING LIGHT",
+     "id": "bath-of-healing-light"
+    },
+    {
+     "kind": "move-block",
+     "name": "BLINDING LIGHT",
+     "id": "blinding-light"
+    },
+    {
+     "kind": "move-block",
+     "name": "CLEANSING LIGHT",
+     "id": "cleansing-light"
+    },
+    {
+     "kind": "move-block",
+     "name": "COLD LIGHT OF DAY",
+     "id": "cold-light-of-day"
+    },
+    {
+     "kind": "move-block",
+     "name": "DANCING LIGHT",
+     "id": "dancing-light"
+    },
+    {
+     "kind": "move-block",
+     "name": "GO BACK TO THE SHADOW",
+     "id": "go-back-to-the-shadow"
+    },
+    {
+     "kind": "move-block",
+     "name": "HOLD BACK THE DARKNESS",
+     "id": "hold-back-the-darkness"
+    },
+    {
+     "kind": "move-block",
+     "name": "MOTH TO A FLAME",
+     "id": "moth-to-a-flame"
+    },
+    {
+     "kind": "move-block",
+     "name": "TERRIBLE AS THE DAWN",
+     "id": "terrible-as-the-dawn"
+    },
+    {
+     "kind": "move-block",
+     "name": "WARMTH OF THE SUN",
+     "id": "warmth-of-the-sun"
+    }
+   ],
    "followers": [],
    "ghost": [
     {

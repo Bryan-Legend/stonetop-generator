@@ -1177,7 +1177,7 @@ def main(argv: list[str] | None = None) -> None:
                 # A character sheet reads differently: a ticked box there
                 # means a move you have, not one you are done with.
                 content_class=(
-                    "content playbook" if is_sheet_body(body) else "content"
+                    "content playbook" if is_sheet_body(body, art) else "content"
                 ),
                 alternates=alternates_for(slug, lang_source, lang_targets),
             )

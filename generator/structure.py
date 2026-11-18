@@ -2479,6 +2479,9 @@ _MOVE_NAME_RE = re.compile(r"^\s*(?:• )?\x04([^\x04\x05]+)\x05")
 # The headings a sheet's moves are listed under: a playbook's Moves, an
 # insert's Terrible Purpose and Consequences.
 _MOVE_HEADS = ("moves", "terrible purpose")
+# Pages that are a list of moves from their first line, under no heading at
+# all: the Lightbearer's Invocations, each ruled off from the next.
+MOVE_LIST_PAGES = {"invocations"}
 
 
 def _is_named_move(line: str) -> bool:
@@ -2502,8 +2505,10 @@ def _is_named_move(line: str) -> bool:
     return name == name.upper() and any(c.isalpha() for c in name)
 
 
-def _under_moves(lines: list[str], i: int) -> bool:
+def _under_moves(lines: list[str], i: int, slug: str = "") -> bool:
     """Whether line ``i`` sits under a heading that lists a sheet's moves."""
+    if slug in MOVE_LIST_PAGES:
+        return True
     for j in range(i - 1, -1, -1):
         for marker in (M_H2, M_H3):
             if lines[j].startswith(marker):
@@ -2722,7 +2727,7 @@ def structure_html(
         if line.startswith("\x02") or (
             line.startswith("• ")
             and _is_named_move(line)
-            and _under_moves(lines, i)
+            and _under_moves(lines, i, current_slug)
         ):
             if line == M_HR:
                 # Collapse consecutive rules; skip under headings (CSS border);
@@ -3212,7 +3217,7 @@ def structure_html(
             if (
                 line.startswith(_CHECK_MARKS + (M_TAKES,))
                 or (line.startswith("• ") and _is_named_move(line))
-            ) and _under_moves(lines, i):
+            ) and _under_moves(lines, i, current_slug):
                 # A playbook's moves: each is a card of its own, holding
                 # everything down to the next move — the outcomes, the
                 # choices, the paragraph after them (Danu's Grasp used to
