@@ -5069,6 +5069,151 @@
     }
   })();
 
+  /* Token viewer. Clicking a token (a stat block's, a class's) opens it
+     filling the screen over a dark backdrop, to turn the laptop round and
+     show the table what they face. A group's tokens (a pair, a mixed band)
+     share one slide, side by side. The gallery is every group in the same
+     page or popup, in reading order: arrows or a swipe step through, Escape
+     or a click on the backdrop closes, F (or the button) asks the browser
+     for real full screen. A token inside a link (a Bestiary tile) stays a
+     link. Delegated from the document, so popups and pages alike are
+     covered without binding. */
+  (function tokenViewer() {
+    var SEL = "img.stat-token";
+    var overlay, imgs, cap, count, prevBtn, nextBtn, list = [], at = 0, lastFocus = null;
+
+    function nameOf(t) {
+      var block = t.closest(".stat-block, .hazard-block, .move-block");
+      var h = block && block.querySelector(".stat-name, h3, h4");
+      if (!h) {
+        var h1 = t.closest("h1");
+        if (h1) h = h1;
+      }
+      if (!h) return "";
+      var c = h.cloneNode(true);
+      c.querySelectorAll(".class-tokens, .stat-tokens, .section-link, img").forEach(function (n) { n.remove(); });
+      return c.textContent.replace(/\s+/g, " ").trim();
+    }
+
+    function build() {
+      if (overlay) return;
+      overlay = document.createElement("div");
+      overlay.className = "token-viewer";
+      overlay.hidden = true;
+      overlay.setAttribute("role", "dialog");
+      overlay.setAttribute("aria-modal", "true");
+      overlay.innerHTML =
+        '<button type="button" class="tv-btn tv-close" aria-label="' + UI("feedback_close") + '" title="Close (Esc)">×</button>' +
+        '<button type="button" class="tv-btn tv-full" aria-label="Full screen" title="Full screen (F)">⛶</button>' +
+        '<button type="button" class="tv-btn tv-prev" aria-label="Previous" title="Previous (←)">‹</button>' +
+        '<figure class="tv-figure"><div class="tv-imgs"></div><figcaption class="tv-cap"></figcaption></figure>' +
+        '<button type="button" class="tv-btn tv-next" aria-label="Next" title="Next (→)">›</button>' +
+        '<span class="tv-count" aria-hidden="true"></span>';
+      document.body.appendChild(overlay);
+      imgs = overlay.querySelector(".tv-imgs");
+      cap = overlay.querySelector(".tv-cap");
+      count = overlay.querySelector(".tv-count");
+      prevBtn = overlay.querySelector(".tv-prev");
+      nextBtn = overlay.querySelector(".tv-next");
+      overlay.addEventListener("click", function (e) {
+        if (e.target === overlay || e.target.classList.contains("tv-figure") || e.target === imgs) close();
+      });
+      overlay.querySelector(".tv-close").addEventListener("click", close);
+      overlay.querySelector(".tv-full").addEventListener("click", toggleFull);
+      prevBtn.addEventListener("click", function () { step(-1); });
+      nextBtn.addEventListener("click", function () { step(1); });
+      document.addEventListener("keydown", function (e) {
+        if (overlay.hidden) return;
+        if (e.key === "Escape") { if (!document.fullscreenElement) close(); }
+        else if (e.key === "ArrowLeft") step(-1);
+        else if (e.key === "ArrowRight" || e.key === " ") step(1);
+        else if (e.key === "f" || e.key === "F") toggleFull();
+        else return;
+        e.preventDefault();
+      });
+      var x0 = null;
+      overlay.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+      overlay.addEventListener("touchend", function (e) {
+        if (x0 === null) return;
+        var dx = e.changedTouches[0].clientX - x0;
+        x0 = null;
+        if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+      });
+      document.addEventListener("fullscreenchange", function () {
+        if (!document.fullscreenElement && overlay.hidden === false) overlay.focus();
+      });
+    }
+
+    function show() {
+      var group = list[at];
+      var name = nameOf(group[0]);
+      imgs.textContent = "";
+      imgs.className = "tv-imgs" + (group.length > 1 ? " many" : "");
+      imgs.style.setProperty("--tv-n", group.length);
+      group.forEach(function (t) {
+        var i = document.createElement("img");
+        i.className = "tv-img";
+        i.src = t.currentSrc || t.src;
+        i.alt = name;
+        imgs.appendChild(i);
+      });
+      cap.textContent = name;
+      cap.hidden = !name;
+      var many = list.length > 1;
+      prevBtn.hidden = nextBtn.hidden = count.hidden = !many;
+      count.textContent = (at + 1) + " / " + list.length;
+    }
+
+    function step(d) {
+      if (list.length < 2) return;
+      at = (at + d + list.length) % list.length;
+      show();
+    }
+
+    function toggleFull() {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else if (overlay.requestFullscreen) overlay.requestFullscreen().catch(function () {});
+    }
+
+    function open(t) {
+      build();
+      var scope = t.closest("#wiki-preview, .wiki-preview") || document.getElementById("main") || document;
+      // One slide per group: the tokens sharing a .stat-tokens/.class-tokens span.
+      var wrapOf = function (n) { return n.closest(".stat-tokens, .class-tokens") || n; };
+      list = [];
+      var seen = [];
+      Array.prototype.forEach.call(scope.querySelectorAll(SEL), function (n) {
+        if (n.closest("a")) return;
+        var w = wrapOf(n), k = seen.indexOf(w);
+        if (k < 0) { seen.push(w); list.push([n]); } else list[k].push(n);
+      });
+      at = Math.max(0, seen.indexOf(wrapOf(t)));
+      if (!list.length) { list = [[t]]; at = 0; }
+      lastFocus = document.activeElement;
+      show();
+      overlay.hidden = false;
+      overlay.tabIndex = -1;
+      overlay.focus();
+      document.documentElement.classList.add("tv-open");
+    }
+
+    function close() {
+      if (!overlay || overlay.hidden) return;
+      if (document.fullscreenElement) document.exitFullscreen();
+      overlay.hidden = true;
+      document.documentElement.classList.remove("tv-open");
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    document.addEventListener("click", function (e) {
+      var t = e.target.closest && e.target.closest(SEL);
+      if (!t || t.closest("a") || t.closest(".token-viewer")) return;
+      e.preventDefault();
+      e.stopPropagation();
+      open(t);
+    }, true);
+  })();
+
   /* The sidebar title links to its directory ("./", so "/" or "/de/" once
      served). Off a disk a directory is a file listing, not a page: name the
      index there. Language links to a directory get the same. */
