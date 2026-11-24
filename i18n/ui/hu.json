@@ -139,7 +139,12 @@
     "sync_the_campaign": "a kampány",
     "sync_status_on": "A kampány meg van osztva az asztallal",
     "sync_status_offline": "A szinkronszerver nem érhető el – a változások itt mentődnek, és később utolérik",
-    "sync_status_local": "Ez a böngésző megtartja a saját másolatát"
+    "sync_status_local": "Ez a böngésző megtartja a saját másolatát",
+    "tv_close": "Bezárás",
+    "tv_full": "Teljes képernyő",
+    "tv_prev": "Előző",
+    "tv_next": "Következő",
+    "tv_open": "Kattints a nagyításhoz"
   },
   "arcana_hub": {
     "title_minor": "C. függelék: Kis arkánumok",

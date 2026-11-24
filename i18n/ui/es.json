@@ -139,7 +139,12 @@
     "sync_the_campaign": "la campaña",
     "sync_status_on": "Compartiendo esta campaña con la mesa",
     "sync_status_offline": "Servidor de sincronización inaccesible: los cambios se guardan aquí y se pondrán al día",
-    "sync_status_local": "Este navegador conserva su propia copia"
+    "sync_status_local": "Este navegador conserva su propia copia",
+    "tv_close": "Cerrar",
+    "tv_full": "Pantalla completa",
+    "tv_prev": "Anterior",
+    "tv_next": "Siguiente",
+    "tv_open": "Haz clic para ampliar"
   },
   "arcana_hub": {
     "title_minor": "Apéndice C: Arcanos menores",

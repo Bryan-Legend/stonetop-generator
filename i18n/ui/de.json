@@ -139,7 +139,12 @@
     "sync_the_campaign": "der Kampagne",
     "sync_status_on": "Diese Kampagne wird mit dem Tisch geteilt",
     "sync_status_offline": "Sync-Server nicht erreichbar – Änderungen werden hier gespeichert und später nachgereicht",
-    "sync_status_local": "Dieser Browser behält seine eigene Kopie"
+    "sync_status_local": "Dieser Browser behält seine eigene Kopie",
+    "tv_close": "Schließen",
+    "tv_full": "Vollbild",
+    "tv_prev": "Zurück",
+    "tv_next": "Weiter",
+    "tv_open": "Zum Vergrößern klicken"
   },
   "arcana_hub": {
     "title_minor": "Anhang C: Kleine Arkana",

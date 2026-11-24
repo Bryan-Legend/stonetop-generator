@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampanya",
     "sync_status_on": "Bu kampanya masayla paylaşılıyor",
     "sync_status_offline": "Eşitleme sunucusuna ulaşılamıyor; değişiklikler burada saklanır ve sonra eşitlenir",
-    "sync_status_local": "Bu tarayıcı kendi kopyasını tutar"
+    "sync_status_local": "Bu tarayıcı kendi kopyasını tutar",
+    "tv_close": "Kapat",
+    "tv_full": "Tam ekran",
+    "tv_prev": "Önceki",
+    "tv_next": "Sonraki",
+    "tv_open": "Büyütmek için tıklayın"
   },
   "arcana_hub": {
     "title_minor": "Ek C: Küçük arkanalar",

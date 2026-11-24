@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampanja",
     "sync_status_on": "Tätä kampanjaa jaetaan pöydän kanssa",
     "sync_status_offline": "Synkronointipalvelin ei vastaa – muutokset tallennetaan tänne ja lähetetään myöhemmin",
-    "sync_status_local": "Tämä selain säilyttää oman kopionsa"
+    "sync_status_local": "Tämä selain säilyttää oman kopionsa",
+    "tv_close": "Sulje",
+    "tv_full": "Koko näyttö",
+    "tv_prev": "Edellinen",
+    "tv_next": "Seuraava",
+    "tv_open": "Suurenna napsauttamalla"
   },
   "arcana_hub": {
     "title_minor": "Liite C: Pienet arkanat",

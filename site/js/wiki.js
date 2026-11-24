@@ -144,7 +144,12 @@
     sync_status_local: "This browser keeps its own copy",
     theme_label: "Theme",
     theme_default: "Dark",
-    theme_book: "Book"
+    theme_book: "Book",
+    tv_close: "Close",
+    tv_full: "Full screen",
+    tv_prev: "Previous",
+    tv_next: "Next",
+    tv_open: "Click to show full screen"
   };
 
   function UI(key, vars) {
@@ -5095,6 +5100,12 @@
       return c.textContent.replace(/\s+/g, " ").trim();
     }
 
+    function btn(cls, key, hint, glyph) {
+      var word = escapeHtml(UI(key));
+      return '<button type="button" class="tv-btn ' + cls + '" aria-label="' + word +
+        '" title="' + word + " (" + hint + ')">' + glyph + "</button>";
+    }
+
     function build() {
       if (overlay) return;
       overlay = document.createElement("div");
@@ -5103,11 +5114,11 @@
       overlay.setAttribute("role", "dialog");
       overlay.setAttribute("aria-modal", "true");
       overlay.innerHTML =
-        '<button type="button" class="tv-btn tv-close" aria-label="' + UI("feedback_close") + '" title="Close (Esc)">×</button>' +
-        '<button type="button" class="tv-btn tv-full" aria-label="Full screen" title="Full screen (F)">⛶</button>' +
-        '<button type="button" class="tv-btn tv-prev" aria-label="Previous" title="Previous (←)">‹</button>' +
+        btn("tv-close", "tv_close", "Esc", "×") +
+        btn("tv-full", "tv_full", "F", "⛶") +
+        btn("tv-prev", "tv_prev", "←", "‹") +
         '<figure class="tv-figure"><div class="tv-imgs"></div><figcaption class="tv-cap"></figcaption></figure>' +
-        '<button type="button" class="tv-btn tv-next" aria-label="Next" title="Next (→)">›</button>' +
+        btn("tv-next", "tv_next", "→", "›") +
         '<span class="tv-count" aria-hidden="true"></span>';
       document.body.appendChild(overlay);
       imgs = overlay.querySelector(".tv-imgs");
@@ -5204,6 +5215,12 @@
       document.documentElement.classList.remove("tv-open");
       if (lastFocus && lastFocus.focus) lastFocus.focus();
     }
+
+    // The token's own tooltip, set on first hover so popups get it too.
+    document.addEventListener("mouseover", function (e) {
+      var t = e.target.closest && e.target.closest(SEL);
+      if (t && !t.title && !t.closest("a")) t.title = UI("tv_open");
+    });
 
     document.addEventListener("click", function (e) {
       var t = e.target.closest && e.target.closest(SEL);

@@ -139,7 +139,12 @@
     "sync_the_campaign": "la campagna",
     "sync_status_on": "Questa campagna è condivisa con il tavolo",
     "sync_status_offline": "Server di sincronizzazione irraggiungibile: le modifiche vengono salvate qui e recuperate dopo",
-    "sync_status_local": "Questo browser conserva la propria copia"
+    "sync_status_local": "Questo browser conserva la propria copia",
+    "tv_close": "Chiudi",
+    "tv_full": "Schermo intero",
+    "tv_prev": "Precedente",
+    "tv_next": "Successivo",
+    "tv_open": "Clicca per ingrandire"
   },
   "arcana_hub": {
     "title_minor": "Appendice C: Arcani minori",

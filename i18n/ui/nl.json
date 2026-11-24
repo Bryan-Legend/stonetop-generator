@@ -139,7 +139,12 @@
     "sync_the_campaign": "de campagne",
     "sync_status_on": "Deze campagne wordt gedeeld met de tafel",
     "sync_status_offline": "Sync-server onbereikbaar – wijzigingen worden hier bewaard en later bijgewerkt",
-    "sync_status_local": "Deze browser houdt zijn eigen kopie"
+    "sync_status_local": "Deze browser houdt zijn eigen kopie",
+    "tv_close": "Sluiten",
+    "tv_full": "Volledig scherm",
+    "tv_prev": "Vorige",
+    "tv_next": "Volgende",
+    "tv_open": "Klik om te vergroten"
   },
   "arcana_hub": {
     "title_minor": "Bijlage C: Kleine arcana",

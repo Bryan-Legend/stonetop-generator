@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampanjen",
     "sync_status_on": "Deler denne kampanjen med bordet",
     "sync_status_offline": "Synkserveren kan ikke nås – endringer lagres her og hentes inn senere",
-    "sync_status_local": "Denne nettleseren beholder sin egen kopi"
+    "sync_status_local": "Denne nettleseren beholder sin egen kopi",
+    "tv_close": "Lukk",
+    "tv_full": "Fullskjerm",
+    "tv_prev": "Forrige",
+    "tv_next": "Neste",
+    "tv_open": "Klikk for å forstørre"
   },
   "arcana_hub": {
     "title_minor": "Vedlegg C: Små arkana",

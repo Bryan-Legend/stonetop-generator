@@ -171,7 +171,12 @@
     "sync_the_campaign": "a campanha",
     "sync_status_on": "Compartilhando esta campanha com a mesa",
     "sync_status_offline": "Servidor de sincronização inacessível: as alterações ficam salvas aqui e serão sincronizadas depois",
-    "sync_status_local": "Este navegador mantém sua própria cópia"
+    "sync_status_local": "Este navegador mantém sua própria cópia",
+    "tv_close": "Fechar",
+    "tv_full": "Tela cheia",
+    "tv_prev": "Anterior",
+    "tv_next": "Próximo",
+    "tv_open": "Clique para ampliar"
   },
   "edition": "Stonetop, edição web",
   "book_titles": {

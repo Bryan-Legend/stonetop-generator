@@ -139,7 +139,12 @@
     "sync_the_campaign": "戰役",
     "sync_status_on": "正在與桌面共享這個戰役",
     "sync_status_offline": "同步伺服器無法連線——變更會儲存在這裡，稍後補上",
-    "sync_status_local": "此瀏覽器保留自己的副本"
+    "sync_status_local": "此瀏覽器保留自己的副本",
+    "tv_close": "關閉",
+    "tv_full": "全螢幕",
+    "tv_prev": "上一個",
+    "tv_next": "下一個",
+    "tv_open": "點擊放大"
   },
   "arcana_hub": {
     "title_minor": "附錄C：小祕寶",

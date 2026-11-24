@@ -139,7 +139,12 @@
     "sync_the_campaign": "战役",
     "sync_status_on": "正在与桌面共享这个战役",
     "sync_status_offline": "同步服务器无法连接——更改会保存在这里，稍后补上",
-    "sync_status_local": "此浏览器保留自己的副本"
+    "sync_status_local": "此浏览器保留自己的副本",
+    "tv_close": "关闭",
+    "tv_full": "全屏",
+    "tv_prev": "上一个",
+    "tv_next": "下一个",
+    "tv_open": "点击放大"
   },
   "arcana_hub": {
     "title_minor": "附录C：小秘宝",

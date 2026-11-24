@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampaň",
     "sync_status_on": "Tato kampaň se sdílí se stolem",
     "sync_status_offline": "Synchronizační server je nedostupný – změny se ukládají zde a dorovnají se později",
-    "sync_status_local": "Tento prohlížeč si nechává vlastní kopii"
+    "sync_status_local": "Tento prohlížeč si nechává vlastní kopii",
+    "tv_close": "Zavřít",
+    "tv_full": "Celá obrazovka",
+    "tv_prev": "Předchozí",
+    "tv_next": "Další",
+    "tv_open": "Kliknutím zvětšíte"
   },
   "arcana_hub": {
     "title_minor": "Příloha C: Malá arkána",

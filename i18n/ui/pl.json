@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampanii",
     "sync_status_on": "Ta kampania jest udostępniana stołowi",
     "sync_status_offline": "Serwer synchronizacji niedostępny – zmiany są zapisywane tutaj i zostaną nadrobione",
-    "sync_status_local": "Ta przeglądarka zachowuje własną kopię"
+    "sync_status_local": "Ta przeglądarka zachowuje własną kopię",
+    "tv_close": "Zamknij",
+    "tv_full": "Pełny ekran",
+    "tv_prev": "Poprzedni",
+    "tv_next": "Następny",
+    "tv_open": "Kliknij, aby powiększyć"
   },
   "arcana_hub": {
     "title_minor": "Dodatek C: Mniejsze arkana",

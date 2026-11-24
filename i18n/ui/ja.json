@@ -139,7 +139,12 @@
     "sync_the_campaign": "キャンペーン",
     "sync_status_on": "このキャンペーンを卓と共有しています",
     "sync_status_offline": "同期サーバーに接続できません——変更はここに保存され、後で追いつきます",
-    "sync_status_local": "このブラウザは自分のコピーを保持します"
+    "sync_status_local": "このブラウザは自分のコピーを保持します",
+    "tv_close": "閉じる",
+    "tv_full": "全画面表示",
+    "tv_prev": "前へ",
+    "tv_next": "次へ",
+    "tv_open": "クリックで拡大"
   },
   "arcana_hub": {
     "title_minor": "付録C：小アルカナム",

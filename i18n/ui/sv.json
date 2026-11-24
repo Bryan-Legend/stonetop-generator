@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampanjen",
     "sync_status_on": "Delar den här kampanjen med bordet",
     "sync_status_offline": "Synkservern kan inte nås – ändringar sparas här och skickas senare",
-    "sync_status_local": "Den här webbläsaren behåller sin egen kopia"
+    "sync_status_local": "Den här webbläsaren behåller sin egen kopia",
+    "tv_close": "Stäng",
+    "tv_full": "Helskärm",
+    "tv_prev": "Föregående",
+    "tv_next": "Nästa",
+    "tv_open": "Klicka för att förstora"
   },
   "arcana_hub": {
     "title_minor": "Bilaga C: Små arkana",

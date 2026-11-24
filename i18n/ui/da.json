@@ -139,7 +139,12 @@
     "sync_the_campaign": "kampagnen",
     "sync_status_on": "Deler denne kampagne med bordet",
     "sync_status_offline": "Synkserveren kan ikke nås – ændringer gemmes her og indhentes senere",
-    "sync_status_local": "Denne browser beholder sin egen kopi"
+    "sync_status_local": "Denne browser beholder sin egen kopi",
+    "tv_close": "Luk",
+    "tv_full": "Fuld skærm",
+    "tv_prev": "Forrige",
+    "tv_next": "Næste",
+    "tv_open": "Klik for at forstørre"
   },
   "arcana_hub": {
     "title_minor": "Bilag C: Små arkana",
